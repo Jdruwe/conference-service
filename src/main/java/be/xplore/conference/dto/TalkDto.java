@@ -1,5 +1,4 @@
 package be.xplore.conference.dto;
 
-public class ConfernceDaysDTO {
-
+public class TalkDto {
 }
