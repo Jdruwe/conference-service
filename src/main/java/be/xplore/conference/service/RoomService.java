@@ -4,6 +4,8 @@ import be.xplore.conference.model.Room;
 import be.xplore.conference.persistence.RoomRepository;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class RoomService {
 
@@ -15,5 +17,9 @@ public class RoomService {
 
     public Room save(Room room) {
         return repo.save(room);
+    }
+
+    public List<Room> loadAll(){
+        return repo.findAll();
     }
 }

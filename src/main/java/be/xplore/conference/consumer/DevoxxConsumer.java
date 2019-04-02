@@ -29,7 +29,6 @@ public class DevoxxConsumer {
     private ModelConverter modelConverter;
     private RoomService roomService;
     private final ObjectMapper objectMapper;
-    private static final Logger LOGGER = LoggerFactory.getLogger(DevoxxConsumer.class);
 
     public DevoxxConsumer(ModelConverter modelConverter, ObjectMapper objectMapper, RoomService roomService) {
         this.modelConverter = modelConverter;
@@ -47,7 +46,6 @@ public class DevoxxConsumer {
         for (Room room : rooms) {
             roomService.save(room);
         }
-        LOGGER.info(String.valueOf(roomsDto.getRooms().size()));
     }
 
     @PostConstruct
@@ -58,8 +56,7 @@ public class DevoxxConsumer {
             RestTemplate restTemplate = new RestTemplate();
             String result = restTemplate.getForObject(url, String.class);
             ScheduleDto schedule = objectMapper.readValue(result, ScheduleDto.class);
-            LOGGER.info(String.valueOf(schedule.getSlots().size()));
-            LOGGER.info(schedule.getSlots().get(0).getDay());
+            // TODO complete or remove this
         }
     }
 }
