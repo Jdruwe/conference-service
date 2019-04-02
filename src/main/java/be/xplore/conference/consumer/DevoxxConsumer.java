@@ -36,7 +36,9 @@ public class DevoxxConsumer {
         this.roomService = roomService;
     }
 
-    @PostConstruct
+    private static final Logger log = LoggerFactory.getLogger(DevoxxConsumer.class);
+    //@PostConstruct
+    // TODO fix postConstruct or scheduler
     private void getRooms() throws IOException {
         String url = apiUrl + roomsUrl;
         RestTemplate restTemplate = new RestTemplate();
@@ -46,9 +48,10 @@ public class DevoxxConsumer {
         for (Room room : rooms) {
             roomService.save(room);
         }
+        log.warn("trigger!!!!!!");
     }
 
-    @PostConstruct
+    //@PostConstruct
     private void getSchedule() throws IOException {
         for (DaysOfTheWeek day : DaysOfTheWeek.values()) {
             String url = apiUrl + scheduleUrl + "/" + day.name().toLowerCase();
