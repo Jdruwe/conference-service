@@ -37,7 +37,7 @@ public class DevoxxConsumer {
     }
 
     private static final Logger log = LoggerFactory.getLogger(DevoxxConsumer.class);
-    //@PostConstruct
+    @PostConstruct
     // TODO fix postConstruct or scheduler
     private void getRooms() throws IOException {
         String url = apiUrl + roomsUrl;
