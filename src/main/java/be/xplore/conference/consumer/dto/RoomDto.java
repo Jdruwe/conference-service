@@ -1,5 +1,6 @@
-package be.xplore.conference.dto;
+package be.xplore.conference.consumer.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,9 +12,10 @@ public class RoomDto {
     private String roomId;
     private Boolean notAllocated;
     private long fromTimeMillis;
+    @JsonProperty("break")
     private BreakDto breakDto;
     private String roomSetup;
-    //    private TalkDto talk;
+    private TalkDto talk;
     private String fromTime;
     private long toTimeMillis;
     private String toTime;

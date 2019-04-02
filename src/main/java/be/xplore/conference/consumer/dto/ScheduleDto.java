@@ -1,16 +1,14 @@
-package be.xplore.conference.dto;
+package be.xplore.conference.consumer.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 
 import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString
 public class ScheduleDto {
-    List<RoomDto> rooms;
+    private List<RoomDto> slots;
 }
