@@ -10,5 +10,5 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ScheduleDto {
-    private List<RoomDto> slots;
+    private List<SlotDto> slots;
 }

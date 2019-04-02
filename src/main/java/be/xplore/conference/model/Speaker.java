@@ -18,5 +18,5 @@ public class Speaker {
     private String firstName;
     private String lastName;
     private String avatarUrl;
-    private String twitterHandle;
+    private String twitter;
 }

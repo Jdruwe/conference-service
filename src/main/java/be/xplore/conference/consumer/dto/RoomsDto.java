@@ -4,12 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class RoomDto {
-    private String id;
-    private String name;
-    private int capacity;
-    private String setup;
+public class RoomsDto {
+    private String content;
+    private List<RoomDto> rooms;
 }

@@ -15,11 +15,18 @@ import java.util.List;
 @NoArgsConstructor
 public class Room {
     @Id
-    String id;
-    String name;
-    int capacity;
-    String setup;
+    private String id;
+    private String name;
+    private int capacity;
+    private String setup;
 
     @OneToMany
-    List<Schedule> schedules;
+    private List<Talk> talks;
+
+    public Room(String id, String name, int capacity, String setup) {
+        this.id = id;
+        this.name = name;
+        this.capacity = capacity;
+        this.setup = setup;
+    }
 }
