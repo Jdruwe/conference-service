@@ -4,18 +4,27 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import java.util.Date;
+import java.util.List;
 
 @Data
+@Entity
 @AllArgsConstructor
 @NoArgsConstructor
 public class Talk {
-    String id;
-    Date startTime;
-    Date endTime;
-    String fromTime;
-    String tiTime;
-    String title;
-    String type;
-    String summary;
+    @Id
+    private String id;
+    private Date startTime;
+    private Date endTime;
+    private String fromTime;
+    private String tiTime;
+    private String title;
+    private String type;
+    private String summary;
+
+    @OneToMany
+    private List<Speaker> speakers;
 }
