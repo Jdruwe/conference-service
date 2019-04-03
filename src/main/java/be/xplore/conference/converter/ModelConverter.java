@@ -2,11 +2,10 @@ package be.xplore.conference.converter;
 
 import be.xplore.conference.consumer.dto.*;
 import be.xplore.conference.model.*;
+import be.xplore.conference.service.RoomService;
 import be.xplore.conference.service.ScheduleService;
 import be.xplore.conference.service.SpeakerService;
 import be.xplore.conference.service.TalkService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.time.Instant;
@@ -22,13 +21,15 @@ public class ModelConverter {
     private TalkService talkService;
     private SpeakerService speakerService;
     private ScheduleService scheduleService;
+    private final RoomService roomService;
 
     public ModelConverter(TalkService talkService,
                           SpeakerService speakerService,
-                          ScheduleService scheduleService) {
+                          ScheduleService scheduleService, RoomService roomService) {
         this.talkService = talkService;
         this.speakerService = speakerService;
         this.scheduleService = scheduleService;
+        this.roomService = roomService;
     }
 
     public List<Room> convertRooms(RoomsDto roomsDto) {
@@ -65,6 +66,7 @@ public class ModelConverter {
             Room room = new Room(slotDto.getRoomId(), slotDto.getRoomName(), slotDto.getRoomCapacity(), slotDto.getRoomSetup(), talks);
             rooms.add(room);
         }
+        rooms.forEach(roomService::save);
         return rooms;
     }
 
