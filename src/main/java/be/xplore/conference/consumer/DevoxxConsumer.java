@@ -8,8 +8,6 @@ import be.xplore.conference.service.ScheduleService;
 import be.xplore.conference.service.SpeakerService;
 import be.xplore.conference.service.TalkService;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
@@ -27,8 +25,6 @@ public class DevoxxConsumer {
     private String scheduleUrl;
     @Value("${devoxx.rooms.api.url}")
     private String roomsUrl;
-    @Value("${devoxx.scheduleForRoomForDay.api.url}")
-    private String scheduleForDayForRoom;
     @Value("${devoxx.speaker.api.url}")
     private String speakerUrl;
 
@@ -71,7 +67,7 @@ public class DevoxxConsumer {
         List<Room> rooms = roomService.loadAll();
         for (DaysOfTheWeek day : DaysOfTheWeek.values()) {
             for (Room room : rooms) {
-                String url = apiUrl + scheduleForDayForRoom + room.getId() + "/" + day.name().toLowerCase();
+                String url = apiUrl + roomsUrl + room.getId() + "/" + day.name().toLowerCase();
                 RestTemplate restTemplate = new RestTemplate();
                 String result = restTemplate.getForObject(url, String.class);
                 ScheduleDto scheduleDto = objectMapper.readValue(result, ScheduleDto.class);
@@ -79,7 +75,7 @@ public class DevoxxConsumer {
                 for (SlotDto slotDto : scheduleDto.getSlots()) {
                     Talk talk = null;
                     if (slotDto.getTalk() != null) {
-                        List<SpeakerInformationDto>  speakerInformationDtos = new ArrayList<>();
+                        List<SpeakerInformationDto> speakerInformationDtos = new ArrayList<>();
                         for (SpeakerDto s : slotDto.getTalk().getSpeakers()) {
                             String link = s.getLink().getHref();
                             String[] splitHrefFromSpeaker = link.split("/");
@@ -103,13 +99,8 @@ public class DevoxxConsumer {
         }
     }
 
-    private static final Logger log = LoggerFactory.getLogger(DevoxxConsumer.class);
-
     private SpeakerInformationDto getSpeakerInformation(String uuid) throws IOException {
         String url = apiUrl + speakerUrl + uuid;
-        log.info("============================");
-        log.warn(url);
-        log.info("============================");
         RestTemplate restTemplate = new RestTemplate();
         String result = restTemplate.getForObject(url, String.class);
         return objectMapper.readValue(result, SpeakerInformationDto.class);
