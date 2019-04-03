@@ -2,10 +2,13 @@ package be.xplore.conference.consumer;
 
 import be.xplore.conference.consumer.dto.RoomsDto;
 import be.xplore.conference.consumer.dto.ScheduleDto;
+import be.xplore.conference.consumer.dto.SlotDto;
+import be.xplore.conference.model.*;
 import be.xplore.conference.parsing.ModelConverter;
-import be.xplore.conference.model.DaysOfTheWeek;
-import be.xplore.conference.model.Room;
 import be.xplore.conference.service.RoomService;
+import be.xplore.conference.service.ScheduleService;
+import be.xplore.conference.service.SpeakerService;
+import be.xplore.conference.service.TalkService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -13,6 +16,7 @@ import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.PostConstruct;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 @Component
@@ -29,13 +33,22 @@ public class DevoxxConsumer {
     private ModelConverter modelConverter;
     private final ObjectMapper objectMapper;
     private RoomService roomService;
+    private ScheduleService scheduleService;
+    private TalkService talkService;
+    private SpeakerService speakerService;
 
     public DevoxxConsumer(ModelConverter modelConverter,
                           ObjectMapper objectMapper,
-                          RoomService roomService) {
+                          RoomService roomService,
+                          ScheduleService scheduleService,
+                          TalkService talkService,
+                          SpeakerService speakerService) {
         this.modelConverter = modelConverter;
         this.objectMapper = objectMapper;
         this.roomService = roomService;
+        this.scheduleService = scheduleService;
+        this.talkService = talkService;
+        this.speakerService = speakerService;
     }
 
     @PostConstruct
@@ -49,10 +62,10 @@ public class DevoxxConsumer {
         for (Room room : rooms) {
             roomService.save(room);
         }
-        this.getScheduleForRoomForDay();
+        this.getSchedules();
     }
 
-    private void getScheduleForRoomForDay() throws IOException {
+    private void getSchedules() throws IOException {
         List<Room> rooms = roomService.loadAll();
         for (DaysOfTheWeek day : DaysOfTheWeek.values()) {
             for (Room room : rooms) {
@@ -60,8 +73,23 @@ public class DevoxxConsumer {
                 RestTemplate restTemplate = new RestTemplate();
                 String result = restTemplate.getForObject(url, String.class);
                 ScheduleDto scheduleDto = objectMapper.readValue(result, ScheduleDto.class);
-                modelConverter.convertSchedule(scheduleDto, day);
-
+                List<Talk> talks = new ArrayList<>();
+                for (SlotDto slotDto : scheduleDto.getSlots()) {
+                    Talk talk = null;
+                    if (slotDto.getTalk() != null) {
+                        List<Speaker> speakers = modelConverter.convertSpeakersForTalk(slotDto.getTalk().getSpeakers());
+                        speakers.forEach(speakerService::save);
+                        talk = modelConverter.convertTalksFromRoom(slotDto, speakers);
+                    }
+                    if (talk != null) {
+                        talkService.save(talk);
+                        talks.add(talk);
+                    }
+                }
+                List<Room> convertedRooms = modelConverter.convertRoomFromScheduleDto(scheduleDto, talks);
+                convertedRooms.forEach(roomService::save);
+                Schedule schedule = modelConverter.convertSchedule(scheduleDto, day, rooms);
+                scheduleService.save(schedule);
             }
         }
     }

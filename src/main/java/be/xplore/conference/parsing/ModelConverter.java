@@ -2,10 +2,6 @@ package be.xplore.conference.parsing;
 
 import be.xplore.conference.consumer.dto.*;
 import be.xplore.conference.model.*;
-import be.xplore.conference.service.RoomService;
-import be.xplore.conference.service.ScheduleService;
-import be.xplore.conference.service.SpeakerService;
-import be.xplore.conference.service.TalkService;
 import org.springframework.stereotype.Component;
 
 import java.time.Instant;
@@ -18,20 +14,6 @@ import java.util.List;
 @Component
 public class ModelConverter {
 
-    private TalkService talkService;
-    private SpeakerService speakerService;
-    private ScheduleService scheduleService;
-    private final RoomService roomService;
-
-    public ModelConverter(TalkService talkService,
-                          SpeakerService speakerService,
-                          ScheduleService scheduleService, RoomService roomService) {
-        this.talkService = talkService;
-        this.speakerService = speakerService;
-        this.scheduleService = scheduleService;
-        this.roomService = roomService;
-    }
-
     public List<Room> convertRooms(RoomsDto roomsDto) {
         List<Room> rooms = new ArrayList<>();
         for (RoomDto roomDto : roomsDto.getRooms()) {
@@ -41,8 +23,7 @@ public class ModelConverter {
         return rooms;
     }
 
-    public Schedule convertSchedule(ScheduleDto scheduleDto, DaysOfTheWeek daysOfTheWeek) {
-        List<Room> rooms = this.convertRoomFromScheduleDto(scheduleDto);
+    public Schedule convertSchedule(ScheduleDto scheduleDto, DaysOfTheWeek daysOfTheWeek, List<Room> rooms) {
         Schedule schedule = new Schedule();
         schedule.setDay(daysOfTheWeek);
         schedule.setRooms(rooms);
@@ -53,16 +34,11 @@ public class ModelConverter {
                     .toLocalDate();
             schedule.setDate(localDate);
         }
-        scheduleService.save(schedule);
         return schedule;
     }
 
-    private List<Room> convertRoomFromScheduleDto(ScheduleDto scheduleDto) {
+    public List<Room> convertRoomFromScheduleDto(ScheduleDto scheduleDto, List<Talk> talks) {
         List<Room> rooms = new ArrayList<>();
-        List<Talk> talks = new ArrayList<>();
-        for (SlotDto slotDto : scheduleDto.getSlots()) {
-            talks.add(convertTalksFromRoom(slotDto));
-        }
         for (SlotDto slotDto : scheduleDto.getSlots()) {
             Room room = new Room(
                     slotDto.getRoomId(),
@@ -73,19 +49,17 @@ public class ModelConverter {
             );
             rooms.add(room);
         }
-        rooms.forEach(roomService::save);
         return rooms;
     }
 
-    private Talk convertTalksFromRoom(SlotDto slotDto) {
+    public Talk convertTalksFromRoom(SlotDto slotDto, List<Speaker> speakers) {
         if (slotDto.getTalk() == null) {
             return null;
         }
         TalkDto talkDto = slotDto.getTalk();
-        List<Speaker> speakers = convertSpeakersForTalk(slotDto.getTalk().getSpeakers());
         Date startTime = new Date(slotDto.getFromTimeMillis());
         Date endTime = new Date(slotDto.getToTimeMillis());
-        Talk talk = new Talk(
+        return new Talk(
                 talkDto.getId(),
                 startTime,
                 endTime,
@@ -95,11 +69,9 @@ public class ModelConverter {
                 talkDto.getTalkType(),
                 talkDto.getSummary(),
                 speakers);
-        talkService.save(talk);
-        return talk;
     }
 
-    private List<Speaker> convertSpeakersForTalk(List<SpeakerDto> speakerDtoList) {
+    public List<Speaker> convertSpeakersForTalk(List<SpeakerDto> speakerDtoList) {
         List<Speaker> speakerList = new ArrayList<>();
         for (SpeakerDto speakerDto : speakerDtoList) {
             String[] splitHrefFromSpeaker = speakerDto.getLink().getHref().split("/");
@@ -111,7 +83,6 @@ public class ModelConverter {
                     speakerDto.getLink().getHref(),
                     speakerDto.getLink().getHref());
             speakerList.add(speaker);
-            speakerService.save(speaker);
         }
         return speakerList;
     }
