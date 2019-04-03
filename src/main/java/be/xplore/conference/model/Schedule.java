@@ -4,7 +4,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -15,7 +18,7 @@ import java.util.List;
 public class Schedule {
     @Id
     @GeneratedValue
-    private Long id_schedule;
+    private Long id;
     private DaysOfTheWeek day;
     private LocalDate date;
 

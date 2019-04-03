@@ -2,7 +2,7 @@ package be.xplore.conference.consumer;
 
 import be.xplore.conference.consumer.dto.RoomsDto;
 import be.xplore.conference.consumer.dto.ScheduleDto;
-import be.xplore.conference.converter.ModelConverter;
+import be.xplore.conference.parsing.ModelConverter;
 import be.xplore.conference.model.DaysOfTheWeek;
 import be.xplore.conference.model.Room;
 import be.xplore.conference.service.RoomService;
