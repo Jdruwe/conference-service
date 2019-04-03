@@ -61,6 +61,7 @@ public class DevoxxConsumer {
                 String result = restTemplate.getForObject(url, String.class);
                 ScheduleDto scheduleDto = objectMapper.readValue(result, ScheduleDto.class);
                 modelConverter.convertSchedule(scheduleDto, day);
+
             }
         }
     }

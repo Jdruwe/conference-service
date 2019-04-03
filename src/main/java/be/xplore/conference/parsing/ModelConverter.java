@@ -47,7 +47,8 @@ public class ModelConverter {
         schedule.setDay(daysOfTheWeek);
         schedule.setRooms(rooms);
         if (scheduleDto.getSlots().size() > 0) {
-            LocalDate localDate = Instant.ofEpochMilli(new Date(scheduleDto.getSlots().get(0).getFromTimeMillis()).getTime())
+            LocalDate localDate = Instant.ofEpochMilli(new Date(scheduleDto.getSlots().get(0).getFromTimeMillis())
+                    .getTime())
                     .atZone(ZoneId.systemDefault())
                     .toLocalDate();
             schedule.setDate(localDate);
@@ -63,7 +64,13 @@ public class ModelConverter {
             talks.add(convertTalksFromRoom(slotDto));
         }
         for (SlotDto slotDto : scheduleDto.getSlots()) {
-            Room room = new Room(slotDto.getRoomId(), slotDto.getRoomName(), slotDto.getRoomCapacity(), slotDto.getRoomSetup(), talks);
+            Room room = new Room(
+                    slotDto.getRoomId(),
+                    slotDto.getRoomName(),
+                    slotDto.getRoomCapacity(),
+                    slotDto.getRoomSetup(),
+                    talks
+            );
             rooms.add(room);
         }
         rooms.forEach(roomService::save);
