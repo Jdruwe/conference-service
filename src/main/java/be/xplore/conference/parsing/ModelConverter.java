@@ -1,9 +1,11 @@
 package be.xplore.conference.parsing;
 
+import be.xplore.conference.consumer.DevoxxConsumer;
 import be.xplore.conference.consumer.dto.*;
 import be.xplore.conference.model.*;
 import org.springframework.stereotype.Component;
 
+import java.io.IOException;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.ZoneId;
@@ -13,6 +15,12 @@ import java.util.List;
 
 @Component
 public class ModelConverter {
+
+    private DevoxxConsumer devoxxConsumer;
+
+    public ModelConverter(DevoxxConsumer devoxxConsumer) {
+        this.devoxxConsumer = devoxxConsumer;
+    }
 
     public List<Room> convertRooms(RoomsDto roomsDto) {
         List<Room> rooms = new ArrayList<>();
@@ -71,17 +79,18 @@ public class ModelConverter {
                 speakers);
     }
 
-    public List<Speaker> convertSpeakersForTalk(List<SpeakerDto> speakerDtoList) {
+    public List<Speaker> convertSpeakersForTalk(List<SpeakerDto> speakerDtoList) throws IOException {
         List<Speaker> speakerList = new ArrayList<>();
         for (SpeakerDto speakerDto : speakerDtoList) {
             String[] splitHrefFromSpeaker = speakerDto.getLink().getHref().split("/");
             String uuidForSpeaker = splitHrefFromSpeaker[splitHrefFromSpeaker.length - 1];
             //TODO make extra call with uuid for data speaker
-            Speaker speaker = new Speaker(uuidForSpeaker,
-                    speakerDto.getName(),
-                    speakerDto.getName(),
-                    speakerDto.getLink().getHref(),
-                    speakerDto.getLink().getHref());
+            SpeakerInformationDto extraSpeakerInformation = devoxxConsumer.getSpeakerInformation(uuidForSpeaker);
+            Speaker speaker = new Speaker(extraSpeakerInformation.getUuid(),
+                    extraSpeakerInformation.getFirstName(),
+                    extraSpeakerInformation.getLastName(),
+                    extraSpeakerInformation.getAvatarURL(),
+                    extraSpeakerInformation.getTwitter());
             speakerList.add(speaker);
         }
         return speakerList;

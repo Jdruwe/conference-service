@@ -1,8 +1,6 @@
 package be.xplore.conference.consumer;
 
-import be.xplore.conference.consumer.dto.RoomsDto;
-import be.xplore.conference.consumer.dto.ScheduleDto;
-import be.xplore.conference.consumer.dto.SlotDto;
+import be.xplore.conference.consumer.dto.*;
 import be.xplore.conference.model.*;
 import be.xplore.conference.parsing.ModelConverter;
 import be.xplore.conference.service.RoomService;
@@ -29,6 +27,8 @@ public class DevoxxConsumer {
     private String roomsUrl;
     @Value("${devoxx.scheduleForRoomForDay.api.url}")
     private String scheduleForDayForRoom;
+    @Value("${devoxx.speaker.api.url}")
+    private String speakerUrl;
 
     private ModelConverter modelConverter;
     private final ObjectMapper objectMapper;
@@ -92,5 +92,12 @@ public class DevoxxConsumer {
                 scheduleService.save(schedule);
             }
         }
+    }
+
+    public SpeakerInformationDto getSpeakerInformation(String uuid) throws IOException {
+        String url = apiUrl + speakerUrl + uuid;
+        RestTemplate restTemplate = new RestTemplate();
+        String result = restTemplate.getForObject(url, String.class);
+        return objectMapper.readValue(result, SpeakerInformationDto.class);
     }
 }
