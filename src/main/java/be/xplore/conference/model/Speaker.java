@@ -14,7 +14,7 @@ import java.util.UUID;
 @NoArgsConstructor
 public class Speaker {
     @Id
-    private UUID uuid;
+    private String uuid;
     private String firstName;
     private String lastName;
     private String avatarUrl;

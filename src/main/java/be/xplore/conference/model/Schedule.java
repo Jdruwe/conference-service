@@ -20,10 +20,6 @@ public class Schedule {
     private Long id;
     private DaysOfTheWeek day;
 
-    public Schedule(DaysOfTheWeek day) {
-        this.day = day;
-    }
-
     @ManyToMany
     private List<Room> rooms;
 }

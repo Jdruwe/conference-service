@@ -4,12 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class LinkDto {
-    private String href;
-    private String rel;
-    private String title;
-    //private String uuid;
+public class SpeakersDto {
+    private List<SpeakerDto> speakerDtos;
 }

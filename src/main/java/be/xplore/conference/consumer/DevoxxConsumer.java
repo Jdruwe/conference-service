@@ -8,6 +8,7 @@ import be.xplore.conference.model.Room;
 import be.xplore.conference.model.Schedule;
 import be.xplore.conference.service.RoomService;
 import be.xplore.conference.service.ScheduleService;
+import be.xplore.conference.service.SpeakerService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,6 +17,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.PostConstruct;
+import java.io.Console;
 import java.io.IOException;
 import java.util.List;
 
@@ -34,19 +36,23 @@ public class DevoxxConsumer {
     private final ObjectMapper objectMapper;
     private RoomService roomService;
     private ScheduleService scheduleService;
+    private SpeakerService speakerService;
+    private static final Logger log = LoggerFactory.getLogger(DevoxxConsumer.class);
 
     public DevoxxConsumer(ModelConverter modelConverter,
                           ObjectMapper objectMapper,
                           RoomService roomService,
-                          ScheduleService scheduleService) {
+                          ScheduleService scheduleService,
+                          SpeakerService speakerService) {
         this.modelConverter = modelConverter;
         this.objectMapper = objectMapper;
         this.roomService = roomService;
         this.scheduleService = scheduleService;
+        this.speakerService = speakerService;
     }
 
     @PostConstruct
-    // TODO fix postConstruct or scheduler
+    // TODO fix postConstruct or scheduler for testing
     private void getRooms() throws IOException {
         String url = apiUrl + roomsUrl;
         RestTemplate restTemplate = new RestTemplate();
@@ -56,21 +62,23 @@ public class DevoxxConsumer {
         for (Room room : rooms) {
             roomService.save(room);
         }
+        this.getScheduleForRoomForDay();
     }
 
-    private static final Logger log = LoggerFactory.getLogger(DevoxxConsumer.class);
-
-    @PostConstruct
     private void getScheduleForRoomForDay() throws IOException {
         List<Room> rooms = roomService.loadAll();
-        for (Room room : rooms) {
-            for (DaysOfTheWeek day : DaysOfTheWeek.values()) {
+        for (DaysOfTheWeek day : DaysOfTheWeek.values()) {
+            for (Room room : rooms) {
                 String url = apiUrl + scheduleForDayForRoom + room.getId() + "/" + day.name().toLowerCase();
                 RestTemplate restTemplate = new RestTemplate();
                 String result = restTemplate.getForObject(url, String.class);
                 ScheduleDto scheduleDto = objectMapper.readValue(result, ScheduleDto.class);
+                log.info("::::::::::::::::::");
+                log.warn(day.name());
+                log.warn(room.getName());
+                log.warn(String.valueOf(scheduleDto.getSlots().size()));
+                log.info("::::::::::::::::::");
                 Schedule schedule = modelConverter.convertSchedule(scheduleDto, day);
-                log.warn(schedule.toString());
                 scheduleService.save(schedule);
                 // TODO complete or remove this method
             }

@@ -20,7 +20,7 @@ public class Talk {
     private Date startTime;
     private Date endTime;
     private String fromTime;
-    private String tiTime;
+    private String toTime;
     private String title;
     private String type;
     private String summary;
