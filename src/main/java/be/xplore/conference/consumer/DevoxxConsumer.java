@@ -5,7 +5,9 @@ import be.xplore.conference.consumer.dto.ScheduleDto;
 import be.xplore.conference.converter.ModelConverter;
 import be.xplore.conference.model.DaysOfTheWeek;
 import be.xplore.conference.model.Room;
+import be.xplore.conference.model.Schedule;
 import be.xplore.conference.service.RoomService;
+import be.xplore.conference.service.ScheduleService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,18 +27,24 @@ public class DevoxxConsumer {
     private String scheduleUrl;
     @Value("${devoxx.rooms.api.url}")
     private String roomsUrl;
+    @Value("${devoxx.scheduleForRoomForDay.api.url}")
+    private String scheduleForDayForRoom;
 
     private ModelConverter modelConverter;
-    private RoomService roomService;
     private final ObjectMapper objectMapper;
+    private RoomService roomService;
+    private ScheduleService scheduleService;
 
-    public DevoxxConsumer(ModelConverter modelConverter, ObjectMapper objectMapper, RoomService roomService) {
+    public DevoxxConsumer(ModelConverter modelConverter,
+                          ObjectMapper objectMapper,
+                          RoomService roomService,
+                          ScheduleService scheduleService) {
         this.modelConverter = modelConverter;
         this.objectMapper = objectMapper;
         this.roomService = roomService;
+        this.scheduleService = scheduleService;
     }
 
-    private static final Logger log = LoggerFactory.getLogger(DevoxxConsumer.class);
     @PostConstruct
     // TODO fix postConstruct or scheduler
     private void getRooms() throws IOException {
@@ -48,18 +56,24 @@ public class DevoxxConsumer {
         for (Room room : rooms) {
             roomService.save(room);
         }
-        log.warn("trigger!!!!!!");
     }
 
-    //@PostConstruct
-    private void getSchedule() throws IOException {
-        for (DaysOfTheWeek day : DaysOfTheWeek.values()) {
-            String url = apiUrl + scheduleUrl + "/" + day.name().toLowerCase();
+    private static final Logger log = LoggerFactory.getLogger(DevoxxConsumer.class);
 
-            RestTemplate restTemplate = new RestTemplate();
-            String result = restTemplate.getForObject(url, String.class);
-            ScheduleDto schedule = objectMapper.readValue(result, ScheduleDto.class);
-            // TODO complete or remove this
+    @PostConstruct
+    private void getScheduleForRoomForDay() throws IOException {
+        List<Room> rooms = roomService.loadAll();
+        for (Room room : rooms) {
+            for (DaysOfTheWeek day : DaysOfTheWeek.values()) {
+                String url = apiUrl + scheduleForDayForRoom + room.getId() + "/" + day.name().toLowerCase();
+                RestTemplate restTemplate = new RestTemplate();
+                String result = restTemplate.getForObject(url, String.class);
+                ScheduleDto scheduleDto = objectMapper.readValue(result, ScheduleDto.class);
+                Schedule schedule = modelConverter.convertSchedule(scheduleDto, day);
+                log.warn(schedule.toString());
+                scheduleService.save(schedule);
+                // TODO complete or remove this method
+            }
         }
     }
 }

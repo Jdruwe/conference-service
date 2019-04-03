@@ -18,7 +18,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Transactional
 public class RoomServiceTest {
 
-    @Autowired
+/*    @Autowired
     private RoomService roomService;
 
     private Room room1;
@@ -42,7 +42,7 @@ public class RoomServiceTest {
     public void testLoadAllRoomsWhenThereAreNon() {
         int amount = roomService.loadAll().size();
         Assert.assertEquals(0, amount);
-    }
+    }*/
 
 
 }
