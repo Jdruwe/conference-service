@@ -4,9 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import java.util.UUID;
 
 @Data
 @Entity
@@ -17,6 +17,7 @@ public class Speaker {
     private String uuid;
     private String firstName;
     private String lastName;
+    @Column(length = 10000)
     private String avatarUrl;
     private String twitter;
 }
