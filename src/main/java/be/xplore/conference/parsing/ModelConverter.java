@@ -1,4 +1,4 @@
-package be.xplore.conference.converter;
+package be.xplore.conference.parsing;
 
 import be.xplore.conference.consumer.dto.*;
 import be.xplore.conference.model.*;
