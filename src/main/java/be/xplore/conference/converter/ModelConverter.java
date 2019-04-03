@@ -90,13 +90,12 @@ public class ModelConverter {
         return talk;
     }
 
-    private static final Logger log = LoggerFactory.getLogger(ModelConverter.class);
-
     private List<Speaker> convertSpeakersForTalk(List<SpeakerDto> speakerDtoList) {
         List<Speaker> speakerList = new ArrayList<>();
         for (SpeakerDto speakerDto : speakerDtoList) {
             String[] splitHrefFromSpeaker = speakerDto.getLink().getHref().split("/");
             String uuidForSpeaker = splitHrefFromSpeaker[splitHrefFromSpeaker.length - 1];
+            //TODO make extra call with uuid for data speaker
             Speaker speaker = new Speaker(uuidForSpeaker,
                     speakerDto.getName(),
                     speakerDto.getName(),
