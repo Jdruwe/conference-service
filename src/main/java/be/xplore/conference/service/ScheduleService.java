@@ -20,7 +20,6 @@ public class ScheduleService {
     }
 
     public Optional<Schedule> loadByDateAndRoom(LocalDate date, String roomId) {
-        // return repo.findByDateAndRoom(date, roomId);
-        return null;
+        return repo.findByDateAndRoom(date, roomId);
     }
 }

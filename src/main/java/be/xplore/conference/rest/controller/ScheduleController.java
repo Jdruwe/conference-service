@@ -2,7 +2,7 @@ package be.xplore.conference.rest.controller;
 
 import be.xplore.conference.excpetion.ScheduleNotFoundException;
 import be.xplore.conference.model.Schedule;
-import be.xplore.conference.rest.dto.RoomScheduleDto;
+import be.xplore.conference.rest.dto.ScheduleDto;
 import be.xplore.conference.service.ScheduleService;
 import org.modelmapper.ModelMapper;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -26,11 +26,11 @@ public class ScheduleController {
         this.modelMapper = modelMapper;
     }
 
-    @GetMapping
-    public ResponseEntity<RoomScheduleDto> getScheduleForRoom(
+    @GetMapping("/{date}/{roomId}")
+    public ResponseEntity<ScheduleDto> getScheduleForRoom(
             @PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate date,
             @PathVariable String roomId) throws ScheduleNotFoundException {
         Schedule schedule = service.loadByDateAndRoom(date, roomId).orElseThrow(ScheduleNotFoundException::new);
-        return ResponseEntity.ok(modelMapper.map(schedule, RoomScheduleDto.class));
+        return ResponseEntity.ok(modelMapper.map(schedule, ScheduleDto.class));
     }
 }

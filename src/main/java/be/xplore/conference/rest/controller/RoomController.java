@@ -25,10 +25,10 @@ public class RoomController {
 
     @GetMapping
     public ResponseEntity<List<RoomDto>> getRooms() {
-        List<RoomDto> roomDtos = roomService.loadAll()
+        List<RoomDto> rooms = roomService.loadAll()
                 .stream()
                 .map(room -> modelMapper.map(room, RoomDto.class))
                 .collect(Collectors.toList());
-        return new ResponseEntity<>(roomDtos, HttpStatus.OK);
+        return new ResponseEntity<>(rooms, HttpStatus.OK);
     }
 }
