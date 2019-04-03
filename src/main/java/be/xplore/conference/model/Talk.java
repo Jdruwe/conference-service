@@ -17,7 +17,7 @@ import java.util.List;
 @NoArgsConstructor
 public class Talk {
     @Id
-    private String id;
+    private String id_talk;
     private Date startTime;
     private Date endTime;
     private String fromTime;
