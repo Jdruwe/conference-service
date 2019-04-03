@@ -17,14 +17,14 @@ import java.util.List;
 @NoArgsConstructor
 public class Talk {
     @Id
-    private String id_talk;
+    private String id;
     private Date startTime;
     private Date endTime;
     private String fromTime;
     private String toTime;
     private String title;
     private String type;
-    @Column( length = 10000 )
+    @Column(length = 10000)
     private String summary;
 
     @ManyToMany

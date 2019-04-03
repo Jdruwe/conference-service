@@ -56,7 +56,7 @@ public class DevoxxConsumer {
         List<Room> rooms = roomService.loadAll();
         for (DaysOfTheWeek day : DaysOfTheWeek.values()) {
             for (Room room : rooms) {
-                String url = apiUrl + scheduleForDayForRoom + room.getId_room() + "/" + day.name().toLowerCase();
+                String url = apiUrl + scheduleForDayForRoom + room.getId() + "/" + day.name().toLowerCase();
                 RestTemplate restTemplate = new RestTemplate();
                 String result = restTemplate.getForObject(url, String.class);
                 ScheduleDto scheduleDto = objectMapper.readValue(result, ScheduleDto.class);

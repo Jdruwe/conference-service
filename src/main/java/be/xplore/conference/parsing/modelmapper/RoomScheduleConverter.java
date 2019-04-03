@@ -10,7 +10,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.stream.Collectors;
 
-@Component
 public class RoomScheduleConverter extends AbstractConverter<Schedule, RoomScheduleDto> {
     private final ModelMapper modelMapper;
 

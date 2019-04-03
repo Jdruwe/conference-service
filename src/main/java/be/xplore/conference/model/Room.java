@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
@@ -16,7 +15,7 @@ import java.util.List;
 @NoArgsConstructor
 public class Room {
     @Id
-    private String id_room;
+    private String id;
     private String name;
     private int capacity;
     private String setup;
@@ -25,7 +24,7 @@ public class Room {
     private List<Talk> talks;
 
     public Room(String id, String name, int capacity, String setup) {
-        this.id_room = id;
+        this.id = id;
         this.name = name;
         this.capacity = capacity;
         this.setup = setup;
