@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
@@ -23,6 +24,7 @@ public class Talk {
     private String toTime;
     private String title;
     private String type;
+    @Column( length = 10000 )
     private String summary;
 
     @ManyToMany

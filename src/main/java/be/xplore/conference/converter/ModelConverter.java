@@ -2,11 +2,16 @@ package be.xplore.conference.converter;
 
 import be.xplore.conference.consumer.dto.*;
 import be.xplore.conference.model.*;
+import be.xplore.conference.service.ScheduleService;
+import be.xplore.conference.service.SpeakerService;
 import be.xplore.conference.service.TalkService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -15,9 +20,15 @@ import java.util.List;
 public class ModelConverter {
 
     private TalkService talkService;
+    private SpeakerService speakerService;
+    private ScheduleService scheduleService;
 
-    public ModelConverter(TalkService talkService) {
+    public ModelConverter(TalkService talkService,
+                          SpeakerService speakerService,
+                          ScheduleService scheduleService) {
         this.talkService = talkService;
+        this.speakerService = speakerService;
+        this.scheduleService = scheduleService;
     }
 
     public List<Room> convertRooms(RoomsDto roomsDto) {
@@ -34,6 +45,13 @@ public class ModelConverter {
         Schedule schedule = new Schedule();
         schedule.setDay(daysOfTheWeek);
         schedule.setRooms(rooms);
+        if (scheduleDto.getSlots().size() > 0) {
+            LocalDate localDate = Instant.ofEpochMilli(new Date(scheduleDto.getSlots().get(0).getFromTimeMillis()).getTime())
+                    .atZone(ZoneId.systemDefault())
+                    .toLocalDate();
+            schedule.setDate(localDate);
+        }
+        scheduleService.save(schedule);
         return schedule;
     }
 
@@ -55,10 +73,6 @@ public class ModelConverter {
             return null;
         }
         TalkDto talkDto = slotDto.getTalk();
-        log.info("==================================");
-        log.warn(talkDto.getId());
-        log.warn(slotDto.getRoomId());
-        log.info("==================================");
         List<Speaker> speakers = convertSpeakersForTalk(slotDto.getTalk().getSpeakers());
         Date startTime = new Date(slotDto.getFromTimeMillis());
         Date endTime = new Date(slotDto.getToTimeMillis());
@@ -89,6 +103,7 @@ public class ModelConverter {
                     speakerDto.getLink().getHref(),
                     speakerDto.getLink().getHref());
             speakerList.add(speaker);
+            speakerService.save(speaker);
         }
         return speakerList;
     }
