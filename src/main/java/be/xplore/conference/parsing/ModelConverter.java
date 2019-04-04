@@ -38,7 +38,7 @@ public class ModelConverter {
         return schedule;
     }
 
-    public List<Room> convertRoomFromScheduleDto(ScheduleDto scheduleDto, List<Talk> talks) {
+    public List<Room> convertRooms(ScheduleDto scheduleDto, List<Talk> talks) {
         List<Room> rooms = new ArrayList<>();
         for (SlotDto slotDto : scheduleDto.getSlots()) {
             Room room = new Room(
@@ -53,7 +53,7 @@ public class ModelConverter {
         return rooms;
     }
 
-    public Talk convertTalksFromRoom(SlotDto slotDto, List<Speaker> speakers) {
+    public Talk convertTalk(SlotDto slotDto, List<Speaker> speakers) {
         if (slotDto.getTalk() == null) {
             return null;
         }
@@ -72,7 +72,7 @@ public class ModelConverter {
                 speakers);
     }
 
-    public List<Speaker> convertSpeakersForTalk(List<SpeakerInformationDto> speakerInformationDtos) {
+    public List<Speaker> convertSpeakersDto(List<SpeakerInformationDto> speakerInformationDtos) {
         List<Speaker> speakerList = new ArrayList<>();
         for (SpeakerInformationDto speakerInformationDto : speakerInformationDtos) {
             Speaker speaker = new Speaker(speakerInformationDto.getUuid(),

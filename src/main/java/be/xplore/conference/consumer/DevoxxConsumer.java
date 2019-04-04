@@ -71,32 +71,37 @@ public class DevoxxConsumer {
                 RestTemplate restTemplate = new RestTemplate();
                 String result = restTemplate.getForObject(url, String.class);
                 ScheduleDto scheduleDto = objectMapper.readValue(result, ScheduleDto.class);
-                List<Talk> talks = new ArrayList<>();
-                for (SlotDto slotDto : scheduleDto.getSlots()) {
-                    Talk talk = null;
-                    if (slotDto.getTalk() != null) {
-                        List<SpeakerInformationDto> speakerInformationDtos = new ArrayList<>();
-                        for (SpeakerDto s : slotDto.getTalk().getSpeakers()) {
-                            String link = s.getLink().getHref();
-                            String[] splitHrefFromSpeaker = link.split("/");
-                            String uuidForSpeaker = splitHrefFromSpeaker[splitHrefFromSpeaker.length - 1];
-                            speakerInformationDtos.add(getSpeakerInformation(uuidForSpeaker));
-                        }
-                        List<Speaker> speakers = modelConverter.convertSpeakersForTalk(speakerInformationDtos);
-                        speakers.forEach(speakerService::save);
-                        talk = modelConverter.convertTalksFromRoom(slotDto, speakers);
-                    }
-                    if (talk != null) {
-                        talkService.save(talk);
-                        talks.add(talk);
-                    }
-                }
-                List<Room> convertedRooms = modelConverter.convertRoomFromScheduleDto(scheduleDto, talks);
+                List<Talk> talks = getTalks(scheduleDto.getSlots());
+                List<Room> convertedRooms = modelConverter.convertRooms(scheduleDto, talks);
                 convertedRooms.forEach(roomService::save);
                 Schedule schedule = modelConverter.convertSchedule(scheduleDto, day, rooms);
                 scheduleService.save(schedule);
             }
         }
+    }
+
+    private List<Talk> getTalks(List<SlotDto> slotDtoList) throws IOException {
+        List<Talk> talks = new ArrayList<>();
+        for (SlotDto slotDto : slotDtoList) {
+            Talk talk = null;
+            if (slotDto.getTalk() != null) {
+                List<SpeakerInformationDto> speakerInformationDtos = new ArrayList<>();
+                for (SpeakerDto s : slotDto.getTalk().getSpeakers()) {
+                    String link = s.getLink().getHref();
+                    String[] UUIDFromHrefFromSpeaker = link.split("/");
+                    String uuidForSpeaker = UUIDFromHrefFromSpeaker[UUIDFromHrefFromSpeaker.length - 1];
+                    speakerInformationDtos.add(getSpeakerInformation(uuidForSpeaker));
+                }
+                List<Speaker> speakers = modelConverter.convertSpeakersDto(speakerInformationDtos);
+                speakers.forEach(speakerService::save);
+                talk = modelConverter.convertTalk(slotDto, speakers);
+            }
+            if (talk != null) {
+                talkService.save(talk);
+                talks.add(talk);
+            }
+        }
+        return talks;
     }
 
     private SpeakerInformationDto getSpeakerInformation(String uuid) throws IOException {
