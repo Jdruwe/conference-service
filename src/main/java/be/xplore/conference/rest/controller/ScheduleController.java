@@ -31,8 +31,12 @@ public class ScheduleController {
             @PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate date,
             @PathVariable String roomId) throws ScheduleNotFoundException {
         Schedule schedule = service.loadByDateAndRoom(date, roomId).orElseThrow(ScheduleNotFoundException::new);
-        
-        ScheduleDto scheduleDto = new ScheduleDto(schedule.getDate(), schedule.getDay(), modelMapper.map(schedule.getRooms().get(0), RoomScheduleDto.class));
+
+        ScheduleDto scheduleDto = new ScheduleDto(
+                schedule.getDate(),
+                schedule.getDay(),
+                modelMapper.map(schedule.getRooms().get(0), // Get first because there is only 1 room anyway
+                        RoomScheduleDto.class));
         return ResponseEntity.ok(scheduleDto);
     }
 }
