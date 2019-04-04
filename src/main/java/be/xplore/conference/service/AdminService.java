@@ -4,6 +4,8 @@ import be.xplore.conference.excpetion.AdminNameAlreadyExistsException;
 import be.xplore.conference.excpetion.EmailAlreadyExistsException;
 import be.xplore.conference.model.Admin;
 import be.xplore.conference.persistence.AdminRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -42,7 +44,6 @@ public class AdminService implements UserDetailsService {
             throw new AdminNameAlreadyExistsException("A player with this playerName already exists.");
         if (repo.existsAdminByEmail(admin.getEmail()))
             throw new EmailAlreadyExistsException("A player with this email already exists.");
-
         admin.setPassword(passwordEncoder.encode(admin.getPassword()));
         return repo.save(admin);
     }
