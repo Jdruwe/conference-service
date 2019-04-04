@@ -1,6 +1,6 @@
 package be.xplore.conference.model;
 
-public enum DaysOfTheWeek {
+public enum DayOfWeek {
     MONDAY,
     TUESDAY,
     WEDNESDAY,

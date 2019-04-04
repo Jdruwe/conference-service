@@ -1,6 +1,6 @@
 package be.xplore.conference.rest.dto;
 
-import be.xplore.conference.model.DaysOfTheWeek;
+import be.xplore.conference.model.DayOfWeek;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -15,6 +15,6 @@ public class RoomScheduleDto {
     private String id;
     private String name;
     private LocalDate date;
-    private DaysOfTheWeek day;
+    private DayOfWeek day;
     private List<TalkDto> talks;
 }

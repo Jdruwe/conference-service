@@ -4,12 +4,11 @@ import be.xplore.conference.consumer.dto.*;
 import be.xplore.conference.model.*;
 import org.springframework.stereotype.Component;
 
-import java.time.Instant;
 import java.time.LocalDate;
-import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Objects;
 
 @Component
 public class ModelConverter {
@@ -23,22 +22,19 @@ public class ModelConverter {
         return rooms;
     }
 
-    public Schedule convertSchedule(ScheduleDto scheduleDto, DaysOfTheWeek daysOfTheWeek, List<Room> rooms) {
-        Schedule schedule = new Schedule();
-        schedule.setDay(daysOfTheWeek);
-        schedule.setRooms(rooms);
-        if (scheduleDto.getSlots().size() > 0) {
-            LocalDate localDate = Instant.ofEpochMilli(new Date(scheduleDto.getSlots().get(0).getFromTimeMillis())
-                    .getTime())
-                    .atZone(ZoneId.systemDefault())
-                    .toLocalDate();
-            schedule.setDate(localDate);
-        }
-        return schedule;
+    public Schedule convertSchedule(LocalDate date, DayOfWeek dayOfWeek, Room room) {
+        return new Schedule(date, dayOfWeek, List.of(room));
     }
 
     public Room addTalksToRoom(Room room, List<Talk> talks) {
-        room.setTalks(talks);
+        if (Objects.nonNull(talks)) {
+            List<Talk> roomTalks = room.getTalks();
+            if (Objects.nonNull(roomTalks)) {
+                room.getTalks().addAll(talks);
+            } else {
+                room.setTalks(talks);
+            }
+        }
         return room;
     }
 

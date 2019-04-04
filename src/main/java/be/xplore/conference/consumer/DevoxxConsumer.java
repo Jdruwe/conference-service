@@ -14,8 +14,12 @@ import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.PostConstruct;
 import java.io.IOException;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Component
 public class DevoxxConsumer {
@@ -57,27 +61,49 @@ public class DevoxxConsumer {
         String result = restTemplate.getForObject(url, String.class);
         RoomsDto roomsDto = objectMapper.readValue(result, RoomsDto.class);
         List<Room> rooms = modelConverter.convertRooms(roomsDto);
-        for (Room room : rooms) {
-            roomService.save(room);
-        }
-        this.getSchedules();
+        rooms.forEach(r -> roomService.save(r));
+        this.getSchedules(rooms);
     }
 
-    private void getSchedules() throws IOException {
-        List<Room> rooms = roomService.loadAll();
+    private void getSchedules(List<Room> rooms) throws IOException {
         for (Room room : rooms) {
-            for (DaysOfTheWeek day : DaysOfTheWeek.values()) {
+            for (DayOfWeek day : DayOfWeek.values()) {
                 String url = apiUrl + roomsUrl + room.getId() + "/" + day.name().toLowerCase();
                 RestTemplate restTemplate = new RestTemplate();
                 String result = restTemplate.getForObject(url, String.class);
                 ScheduleDto scheduleDto = objectMapper.readValue(result, ScheduleDto.class);
-                List<Talk> talks = getTalks(scheduleDto.getSlots());
-                Room roomWithTalks = modelConverter.addTalksToRoom(room, talks);
-                roomService.save(roomWithTalks);
-                Schedule schedule = modelConverter.convertSchedule(scheduleDto, day, rooms);
-                scheduleService.save(schedule);
+                if (scheduleDto.getSlots().size() > 0) {
+                    Room roomWithTalks = addTalksToRoom(scheduleDto, room);
+                    createSchedule(scheduleDto, day, roomWithTalks);
+                }
             }
         }
+    }
+
+    private Room addTalksToRoom(ScheduleDto scheduleDto, Room room) throws IOException {
+        List<Talk> talks = getTalks(scheduleDto.getSlots());
+        Room roomWithTalks = modelConverter.addTalksToRoom(room, talks);
+        return roomService.save(roomWithTalks);
+    }
+
+    private void createSchedule(ScheduleDto scheduleDto, DayOfWeek day, Room room) {
+        long startTimeMillis = scheduleDto.getSlots().get(0).getFromTimeMillis();
+        LocalDate date = convertMillisToDate(startTimeMillis);
+        Optional<Schedule> optionalSchedule = scheduleService.loadById(date);
+        Schedule schedule;
+        if (optionalSchedule.isPresent()) {
+            schedule = optionalSchedule.get();
+            schedule.getRooms().add(room);
+        } else {
+            schedule = modelConverter.convertSchedule(date, day, room);
+        }
+        scheduleService.save(schedule);
+    }
+
+    private LocalDate convertMillisToDate(long millis) {
+        return Instant.ofEpochMilli(millis)
+                .atZone(ZoneId.systemDefault())
+                .toLocalDate();
     }
 
     private List<Talk> getTalks(List<SlotDto> slotDtoList) throws IOException {

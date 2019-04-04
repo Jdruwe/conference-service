@@ -3,10 +3,12 @@ package be.xplore.conference.service;
 import be.xplore.conference.model.Room;
 import be.xplore.conference.persistence.RoomRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 @Service
+@Transactional
 public class RoomService {
 
     private RoomRepository repo;

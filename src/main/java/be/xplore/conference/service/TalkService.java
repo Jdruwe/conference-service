@@ -3,8 +3,10 @@ package be.xplore.conference.service;
 import be.xplore.conference.model.Talk;
 import be.xplore.conference.persistence.TalkRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
+@Transactional
 public class TalkService {
     private TalkRepository repo;
 
