@@ -25,4 +25,10 @@ public class Admin {
     @Email
     private String email;
     private String password;
+
+    public Admin(String adminName, @Email String email, String password) {
+        this.adminName = adminName;
+        this.email = email;
+        this.password = password;
+    }
 }
