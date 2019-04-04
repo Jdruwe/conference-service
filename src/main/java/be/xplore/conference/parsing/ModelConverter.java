@@ -1,6 +1,5 @@
 package be.xplore.conference.parsing;
 
-import be.xplore.conference.consumer.DevoxxConsumer;
 import be.xplore.conference.consumer.dto.*;
 import be.xplore.conference.model.*;
 import org.springframework.stereotype.Component;
@@ -38,19 +37,9 @@ public class ModelConverter {
         return schedule;
     }
 
-    public List<Room> convertRooms(ScheduleDto scheduleDto, List<Talk> talks) {
-        List<Room> rooms = new ArrayList<>();
-        for (SlotDto slotDto : scheduleDto.getSlots()) {
-            Room room = new Room(
-                    slotDto.getRoomId(),
-                    slotDto.getRoomName(),
-                    slotDto.getRoomCapacity(),
-                    slotDto.getRoomSetup(),
-                    talks
-            );
-            rooms.add(room);
-        }
-        return rooms;
+    public Room addTalksToRoom(Room room, List<Talk> talks) {
+        room.setTalks(talks);
+        return room;
     }
 
     public Talk convertTalk(SlotDto slotDto, List<Speaker> speakers) {

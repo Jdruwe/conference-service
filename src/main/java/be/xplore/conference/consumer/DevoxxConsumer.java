@@ -65,15 +65,15 @@ public class DevoxxConsumer {
 
     private void getSchedules() throws IOException {
         List<Room> rooms = roomService.loadAll();
-        for (DaysOfTheWeek day : DaysOfTheWeek.values()) {
-            for (Room room : rooms) {
+        for (Room room : rooms) {
+            for (DaysOfTheWeek day : DaysOfTheWeek.values()) {
                 String url = apiUrl + roomsUrl + room.getId() + "/" + day.name().toLowerCase();
                 RestTemplate restTemplate = new RestTemplate();
                 String result = restTemplate.getForObject(url, String.class);
                 ScheduleDto scheduleDto = objectMapper.readValue(result, ScheduleDto.class);
                 List<Talk> talks = getTalks(scheduleDto.getSlots());
-                List<Room> convertedRooms = modelConverter.convertRooms(scheduleDto, talks);
-                convertedRooms.forEach(roomService::save);
+                Room roomWithTalks = modelConverter.addTalksToRoom(room, talks);
+                roomService.save(roomWithTalks);
                 Schedule schedule = modelConverter.convertSchedule(scheduleDto, day, rooms);
                 scheduleService.save(schedule);
             }
