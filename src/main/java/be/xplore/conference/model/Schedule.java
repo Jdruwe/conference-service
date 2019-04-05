@@ -8,6 +8,7 @@ import lombok.ToString;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -23,4 +24,11 @@ public class Schedule {
 
     @ManyToMany
     private List<Room> rooms;
+    @OneToMany
+    private List<Talk> talks;
+
+    public Schedule(LocalDate date, DayOfWeek day) {
+        this.date = date;
+        this.day = day;
+    }
 }
