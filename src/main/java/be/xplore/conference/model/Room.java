@@ -6,7 +6,8 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToOne;
 import java.util.List;
 
 @Data
@@ -20,8 +21,8 @@ public class Room {
     private int capacity;
     private String setup;
 
-    @OneToMany
-    private List<Talk> talks;
+    @OneToOne
+    private RoomSchedule roomSchedule;
 
     public Room(String id, String name, int capacity, String setup) {
         this.id = id;

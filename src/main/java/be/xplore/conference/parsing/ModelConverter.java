@@ -22,20 +22,20 @@ public class ModelConverter {
         return rooms;
     }
 
-    public Schedule convertSchedule(LocalDate date, DayOfWeek dayOfWeek, Room room) {
-        return new Schedule(date, dayOfWeek, List.of(room));
+    public Schedule convertSchedule(LocalDate date, DayOfWeek dayOfWeek) {
+        return new Schedule(date, dayOfWeek);
     }
 
-    public Room addTalksToRoom(Room room, List<Talk> talks) {
+    public Schedule addTalksToSchedule(Schedule schedule, List<Talk> talks) {
         if (Objects.nonNull(talks)) {
-            List<Talk> roomTalks = room.getTalks();
+            List<Talk> roomTalks = schedule.getTalks();
             if (Objects.nonNull(roomTalks)) {
-                room.getTalks().addAll(talks);
+                schedule.getTalks().addAll(talks);
             } else {
-                room.setTalks(talks);
+                schedule.setTalks(talks);
             }
         }
-        return room;
+        return schedule;
     }
 
     public Talk convertTalk(SlotDto slotDto, List<Speaker> speakers) {
