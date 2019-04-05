@@ -7,11 +7,6 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ParsingConfig {
-//    private final RoomScheduleConverter roomScheduleConverter;
-//
-//    public ParsingConfig(RoomScheduleConverter roomScheduleConverter) {
-//        this.roomScheduleConverter = roomScheduleConverter;
-//    }
 
     @Bean
     public ObjectMapper getObjectMapper() {
@@ -20,8 +15,6 @@ public class ParsingConfig {
 
     @Bean
     public ModelMapper getModelMapper() {
-        ModelMapper modelMapper = new ModelMapper();
-//        modelMapper.addConverter(roomScheduleConverter);
-        return modelMapper;
+        return new ModelMapper();
     }
 }
