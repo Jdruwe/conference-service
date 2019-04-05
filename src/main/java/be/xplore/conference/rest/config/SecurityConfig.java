@@ -61,6 +61,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         conf.addAllowedMethod(HttpMethod.PUT);
         conf.addAllowedMethod(HttpMethod.DELETE);
         conf.addAllowedMethod(HttpMethod.OPTIONS);
+        conf.addAllowedMethod(HttpMethod.GET);
         conf.addExposedHeader("Access-Control-Allow-Origin");
         source.registerCorsConfiguration("/**", conf);
         return source;
@@ -81,6 +82,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .authorizeRequests()
                 .antMatchers("/api/authentication/**")
+                .permitAll()
+                .antMatchers("/api/room/**")
+                .permitAll()
+                .antMatchers("/api/schedule/**")
                 .permitAll()
                 .antMatchers(HttpMethod.POST, "/api/admin")
                 .permitAll()
