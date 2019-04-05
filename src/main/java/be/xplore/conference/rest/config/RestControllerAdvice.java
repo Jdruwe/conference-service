@@ -25,12 +25,12 @@ public class RestControllerAdvice extends ResponseEntityExceptionHandler {
     }
 
     @ExceptionHandler(value = {UsernameNotFoundException.class})
-    public ResponseEntity<?> handlePlayerNotFoundException(UsernameNotFoundException ex, WebRequest request) {
+    public ResponseEntity<?> handleAdminNotFoundException(UsernameNotFoundException ex, WebRequest request) {
         return handleExceptionInternal(ex, ex.getMessage(), new HttpHeaders(), HttpStatus.NOT_FOUND, request);
     }
 
     @ExceptionHandler(value = {AdminNameAlreadyExistsException.class})
-    public ResponseEntity<?> handlePlayerNameAlreadyExistsException(AdminNameAlreadyExistsException ex, WebRequest request) {
+    public ResponseEntity<?> handleAdminNameAlreadyExistsException(AdminNameAlreadyExistsException ex, WebRequest request) {
         return handleExceptionInternal(ex, ex.getMessage(), new HttpHeaders(), HttpStatus.CONFLICT, request);
     }
 }
