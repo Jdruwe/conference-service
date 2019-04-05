@@ -2,8 +2,6 @@ package be.xplore.conference.service;
 
 import be.xplore.conference.model.Schedule;
 import be.xplore.conference.persistence.ScheduleRepository;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -25,9 +23,5 @@ public class ScheduleService {
 
     public Optional<Schedule> loadById(LocalDate date) {
         return repo.findByIdWithRoomProxy(date);
-    }
-
-    public Optional<Schedule> loadByDateAndRoom(LocalDate date, String roomId) {
-        return repo.findByDateAndRoom(date, roomId);
     }
 }

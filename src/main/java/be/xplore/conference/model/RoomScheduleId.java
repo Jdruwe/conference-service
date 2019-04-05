@@ -1,17 +1,13 @@
 package be.xplore.conference.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.Embeddable;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import java.io.Serializable;
 
-@Getter
-@Setter
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Embeddable
