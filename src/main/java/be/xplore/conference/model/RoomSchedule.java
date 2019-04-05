@@ -20,4 +20,8 @@ public class RoomSchedule {
 
     @OneToMany
     private List<Talk> talks;
+
+    public RoomSchedule(RoomScheduleId id) {
+        this.id = id;
+    }
 }
