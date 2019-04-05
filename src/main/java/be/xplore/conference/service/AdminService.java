@@ -47,4 +47,15 @@ public class AdminService implements UserDetailsService {
         admin.setPassword(passwordEncoder.encode(admin.getPassword()));
         return repo.save(admin);
     }
+
+    public Admin loadPlayerThatHasPassword(String playerNameOrEmail) {
+        Admin admin = loadPlayerByPlayerNameOrEmail(playerNameOrEmail);
+        if (admin != null) return admin;
+        throw new UsernameNotFoundException("No players with that name or email were found.");
+    }
+
+    public Admin loadPlayerByPlayerNameOrEmail(String playerNameOrEmail) throws UsernameNotFoundException {
+        Admin admin = repo.findByAdminNameOrEmail(playerNameOrEmail).orElseThrow(() -> new UsernameNotFoundException("No Admin with that name or email were found."));
+        return admin;
+    }
 }
