@@ -20,5 +20,4 @@ public class RoomSchedule {
 
     @OneToMany
     private List<Talk> talks;
-
 }

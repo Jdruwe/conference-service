@@ -3,10 +3,7 @@ package be.xplore.conference.consumer;
 import be.xplore.conference.consumer.dto.*;
 import be.xplore.conference.model.*;
 import be.xplore.conference.parsing.ModelConverter;
-import be.xplore.conference.service.RoomService;
-import be.xplore.conference.service.ScheduleService;
-import be.xplore.conference.service.SpeakerService;
-import be.xplore.conference.service.TalkService;
+import be.xplore.conference.service.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -38,29 +35,57 @@ public class DevoxxConsumer {
     private ScheduleService scheduleService;
     private TalkService talkService;
     private SpeakerService speakerService;
+    private final RoomScheduleService roomScheduleService;
 
     public DevoxxConsumer(ModelConverter modelConverter,
                           ObjectMapper objectMapper,
                           RoomService roomService,
                           ScheduleService scheduleService,
                           TalkService talkService,
-                          SpeakerService speakerService) {
+                          SpeakerService speakerService, RoomScheduleService roomScheduleService) {
         this.modelConverter = modelConverter;
         this.objectMapper = objectMapper;
         this.roomService = roomService;
         this.scheduleService = scheduleService;
         this.talkService = talkService;
         this.speakerService = speakerService;
+        this.roomScheduleService = roomScheduleService;
     }
 
     // TODO fix postConstruct or scheduler for testing
     @PostConstruct
     private void consumeApi() throws IOException {
-        List<Room> rooms = getRooms();
+//        Room room8 = new Room("Room8", "Room 8", 0, "");
+//        Room room5 = new Room("Room5", "Room 5", 0, "");
+//        roomService.save(room8);
+//        roomService.save(room5);
+//
+//        Schedule schedule1 = new Schedule(LocalDate.of(2018, 11, 12), DayOfWeek.MONDAY);
+//        Schedule schedule2 = new Schedule(LocalDate.of(2018, 11, 13), DayOfWeek.TUESDAY);
+//        Schedule schedule3 = new Schedule(LocalDate.of(2018, 11, 14), DayOfWeek.WEDNESDAY);
+//        scheduleService.save(schedule1);
+//        scheduleService.save(schedule2);
+//        scheduleService.save(schedule3);
+//
+//        Talk talk1 = new Talk("Talk 1", new Date(), new Date(), "10", "11", "Talk 1", "Type 1", "Summary", null);
+//        Talk talk2 = new Talk("Talk 2", new Date(), new Date(), "10", "11", "Talk 1", "Type 1", "Summary", null);
+//        Talk talk3 = new Talk("Talk 3", new Date(), new Date(), "10", "11", "Talk 1", "Type 1", "Summary", null);
+//        talkService.save(talk1);
+//        talkService.save(talk2);
+//        talkService.save(talk3);
+//
+//        RoomSchedule roomSchedule1 = new RoomSchedule(new RoomScheduleId(schedule1, room8), List.of(talk1));
+//        RoomSchedule roomSchedule2 = new RoomSchedule(new RoomScheduleId(schedule2, room8), List.of(talk2));
+//        RoomSchedule roomSchedule3 = new RoomSchedule(new RoomScheduleId(schedule1, room5), List.of(talk3));
+//        roomScheduleService.save(roomSchedule1);
+//        roomScheduleService.save(roomSchedule2);
+//        roomScheduleService.save(roomSchedule3);
+
+        List<Room> rooms = getRoomsFromApi();
         getSchedules(rooms);
     }
 
-    private List<Room> getRooms() throws IOException {
+    private List<Room> getRoomsFromApi() throws IOException {
         String url = apiUrl + roomsUrl;
         RestTemplate restTemplate = new RestTemplate();
         String result = restTemplate.getForObject(url, String.class);
@@ -76,7 +101,8 @@ public class DevoxxConsumer {
                 ScheduleDto scheduleDto = getRoomScheduleFromApi(room.getId(), day);
                 if (scheduleDto.getSlots().size() > 0) {
                     Schedule schedule = createSchedule(scheduleDto, day);
-                    addTalksToSchedule(scheduleDto, schedule);
+                    //RoomSchedule roomSchedule
+//                    addTalksToSchedule(scheduleDto, schedule);
                 }
             }
         }
