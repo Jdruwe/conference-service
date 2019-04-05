@@ -29,7 +29,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             Optional<String> jwt = getJwtFromRequest(request);
 
             if (jwt.isPresent() && tokenProvider.validateToken(jwt.get())) {
-                String adminName = tokenProvider.getPlayerNameFromToken(jwt.get());
+                String adminName = tokenProvider.getAdminNameFromToken(jwt.get());
 
                 UserDetails userDetails = adminService.loadUserByUsername(adminName);
                 UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());

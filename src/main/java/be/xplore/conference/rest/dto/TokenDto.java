@@ -9,5 +9,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class TokenDto {
     private String token;
-    private String playerName;
+    private String adminName;
 }

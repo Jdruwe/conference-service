@@ -43,7 +43,7 @@ public class AuthenticationController {
 
     @PostMapping("/login")
     public ResponseEntity<TokenDto> logIn(@RequestBody LoginDto loginDTO) throws UsernameNotFoundException {
-        Admin admin = adminService.loadPlayerThatHasPassword(loginDTO.getAdminNameOrEmail());
+        Admin admin = adminService.loadAdminThatHasPassword(loginDTO.getAdminNameOrEmail());
         String jwt = jwtTokenProvider.authenticateAndGenerateToken(admin.getAdminName(), loginDTO.getPassword());
         return new ResponseEntity<>(new TokenDto(jwt, admin.getAdminName()), HttpStatus.OK);
     }

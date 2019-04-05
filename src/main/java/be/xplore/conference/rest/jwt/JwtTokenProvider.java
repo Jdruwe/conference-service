@@ -36,7 +36,7 @@ public class JwtTokenProvider {
         return generateToken(user.getUsername(), jwtExpirationInMs);
     }
 
-    public String getPlayerNameFromToken(String token) {
+    public String getAdminNameFromToken(String token) {
         Claims claims = Jwts.parser()
                 .setSigningKey(jwtSecret)
                 .parseClaimsJws(token)
@@ -62,23 +62,19 @@ public class JwtTokenProvider {
         return false;
     }
 
-    public String authenticateAndGenerateToken(String playerName, String password) {
+    public String authenticateAndGenerateToken(String adminName, String password) {
         Authentication authentication = authenticationProvider.authenticate(
-                new UsernamePasswordAuthenticationToken(playerName, password));
+                new UsernamePasswordAuthenticationToken(adminName, password));
         SecurityContextHolder.getContext().setAuthentication(authentication);
         return generateTokenFromAuthentication(authentication);
     }
 
-    public String generateToken(String playerNameOrEmail, long expirationInMillis) {
+    public String generateToken(String adminNameOrEmail, long expirationInMillis) {
         return Jwts.builder()
-                .setSubject(playerNameOrEmail)
+                .setSubject(adminNameOrEmail)
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(new Date().getTime() + expirationInMillis))
                 .signWith(SignatureAlgorithm.HS512, jwtSecret)
                 .compact();
-    }
-
-    public String generateLoginToken(String playerNameOrEmail) {
-        return generateToken(playerNameOrEmail, this.jwtExpirationInMs);
     }
 }
