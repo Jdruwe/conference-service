@@ -30,6 +30,12 @@ public class DevoxxConsumer {
     @Value("${devoxx.speaker.api.url}")
     private String speakerUrl;
 
+
+    @Value("${devoxx.settings.isRoomOccupancyOn}")
+    private String isRoomOccupancyOn;
+    @Value("${devoxx.settings.minutesBeforeNextSession}")
+    private String minutesBeforeNextSession;
+
     private final ModelConverter modelConverter;
     private final ApiCallHelper apiHelper;
 
@@ -38,6 +44,8 @@ public class DevoxxConsumer {
     private final TalkService talkService;
     private final SpeakerService speakerService;
     private final RoomScheduleService roomScheduleService;
+    private final SettingsService settingsService;
+
 
     public DevoxxConsumer(ModelConverter modelConverter,
                           ApiCallHelper apiHelper,
@@ -45,7 +53,8 @@ public class DevoxxConsumer {
                           ScheduleService scheduleService,
                           TalkService talkService,
                           SpeakerService speakerService,
-                          RoomScheduleService roomScheduleService) {
+                          RoomScheduleService roomScheduleService,
+                          SettingsService settingsService) {
         this.modelConverter = modelConverter;
         this.apiHelper = apiHelper;
         this.roomService = roomService;
@@ -53,6 +62,7 @@ public class DevoxxConsumer {
         this.talkService = talkService;
         this.speakerService = speakerService;
         this.roomScheduleService = roomScheduleService;
+        this.settingsService = settingsService;
     }
 
     // TODO fix postConstruct or scheduler for testing
@@ -60,6 +70,12 @@ public class DevoxxConsumer {
     private void consumeApi() throws IOException {
         List<Room> rooms = processRooms(getRoomsFromApi());
         processSchedules(rooms);
+        fillSettings();
+    }
+
+    private void fillSettings() {
+        settingsService.save(new Settings("minutesBeforeNextSession", minutesBeforeNextSession));
+        settingsService.save(new Settings("isRoomOccupancyOn", isRoomOccupancyOn));
     }
 
     private RoomsDto getRoomsFromApi() throws IOException {
