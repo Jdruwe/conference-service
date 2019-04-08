@@ -89,6 +89,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .permitAll()
                 .antMatchers(HttpMethod.POST, "/api/admin")
                 .permitAll()
+                //TODO :  change so settings is only for admin
                 .antMatchers( "/api/settings/**")
                 .permitAll()
                 .anyRequest()
