@@ -4,45 +4,40 @@ import be.xplore.conference.model.Settings;
 import be.xplore.conference.rest.dto.ChangeSettingsDto;
 import be.xplore.conference.rest.dto.SettingsDto;
 import be.xplore.conference.service.SettingsService;
-import org.modelmapper.ModelMapper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-import java.util.stream.Collectors;
-
 @RestController
 @RequestMapping("api/settings")
 public class SettingsController {
-    private final ModelMapper modelMapper;
     private SettingsService settingsService;
 
-    public SettingsController(ModelMapper modelMapper, SettingsService settingsService) {
-        this.modelMapper = modelMapper;
+    private final String MINUTES_BEFORE_NEXT_SESSION = "minutesBeforeNextSession";
+    private final String IS_ROOM_OCCUPANCY_ON = "isRoomOccupancyOn";
+
+    public SettingsController(SettingsService settingsService) {
         this.settingsService = settingsService;
     }
 
     @GetMapping
-    public ResponseEntity<List<SettingsDto>> getSettings() {
-        List<SettingsDto> settingsDtos = settingsService.loadAll()
-                .stream()
-                .map(setting -> modelMapper.map(setting, SettingsDto.class))
-                .collect(Collectors.toList());
-        return new ResponseEntity<>(settingsDtos, HttpStatus.OK);
+    public ResponseEntity<SettingsDto> getSettings() {
+        SettingsDto settingsDto = SettingsDto.builder()
+                .minutesBeforeNextSession(Integer.parseInt(settingsService.loadByKey(MINUTES_BEFORE_NEXT_SESSION).getValue()))
+                .isRoomOccupancyOn(Boolean.parseBoolean(settingsService.loadByKey(IS_ROOM_OCCUPANCY_ON).getValue()))
+                .build();
+        return new ResponseEntity<>(settingsDto, HttpStatus.OK);
     }
 
-    private static final Logger log = LoggerFactory.getLogger(SettingsController.class);
-
+    //TODO beautify
     @PutMapping
     public ResponseEntity<ChangeSettingsDto> changeSettings(@RequestBody ChangeSettingsDto changeSettingsDto) {
-        log.info("==================================");
-        log.info(String.valueOf(changeSettingsDto.getMinutesBeforeNextSession()));
-        log.info(String.valueOf(changeSettingsDto.isRoomOccupancyOn()));
-        log.info("==================================");
-        return null;
-        //return new ResponseEntity<>(modelMapper.map(settings, SettingsDto.class), HttpStatus.OK);
+        Settings settings = settingsService.loadByKey(MINUTES_BEFORE_NEXT_SESSION);
+        settings.setValue(String.valueOf(changeSettingsDto.getMinutesBeforeNextSession()));
+        settingsService.save(settings);
+        settings = settingsService.loadByKey(IS_ROOM_OCCUPANCY_ON);
+        settings.setValue(String.valueOf(changeSettingsDto.isRoomOccupancyOn()));
+        settingsService.save(settings);
+        return new ResponseEntity<>(changeSettingsDto, HttpStatus.OK);
     }
 }

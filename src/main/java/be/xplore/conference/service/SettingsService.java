@@ -1,6 +1,5 @@
 package be.xplore.conference.service;
 
-import be.xplore.conference.model.Room;
 import be.xplore.conference.model.Settings;
 import be.xplore.conference.persistence.SettingsRepository;
 import org.springframework.stereotype.Service;
@@ -22,11 +21,11 @@ public class SettingsService {
         return repo.save(settings);
     }
 
-    public List<Settings> loadAll(){
+    public List<Settings> loadAll() {
         return repo.findAll();
     }
 
-    public Settings loadByKey(String key){
+    public Settings loadByKey(String key) {
         return repo.findByKey(key);
     }
 }
