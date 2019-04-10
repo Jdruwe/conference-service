@@ -1,4 +1,4 @@
-image: java:8
+image: gradle:jre11-slim
 
 stages:
     - build
