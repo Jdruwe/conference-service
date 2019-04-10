@@ -1,0 +1,12 @@
+image: java:8
+
+stages:
+    - build
+    - deploy
+
+build:
+    stage: build
+    script: ./gradlew clean build
+    artifacts:
+        paths:
+            - build/libs/*.jar
