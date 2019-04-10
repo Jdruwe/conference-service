@@ -1,5 +1,7 @@
 package be.xplore.conference.service;
 
+import be.xplore.conference.excpetion.RoomAlreadyRegisteredException;
+import be.xplore.conference.excpetion.RoomNotFoundException;
 import be.xplore.conference.model.Room;
 import be.xplore.conference.persistence.RoomRepository;
 import org.springframework.stereotype.Service;
@@ -23,5 +25,9 @@ public class RoomService {
 
     public List<Room> loadAll(){
         return repo.findAll();
+    }
+
+    public Room loadRoomById(String id) throws RoomNotFoundException {
+        return repo.findRoomById(id).orElseThrow(() -> new RoomNotFoundException("This Room does not exist."));
     }
 }
