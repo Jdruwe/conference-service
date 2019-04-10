@@ -2,11 +2,10 @@ image: gradle:jre11-slim
 
 stages:
     - build
-    - deploy
 
-build:
-    stage: build
-    script: ./gradlew clean build
-    artifacts:
-        paths:
-            - build/libs/*.jar
+#build:
+#    stage: build
+#    script: ./gradlew clean build
+#    artifacts:
+#        paths:
+#            - build/libs/*.jar
