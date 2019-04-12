@@ -7,6 +7,7 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Optional;
 
 @Transactional
@@ -17,5 +18,9 @@ public interface ClientRepository extends JpaRepository<Client, Integer> {
 
     @Modifying
     @Query("DELETE FROM Client c WHERE c.room = ?1")
-    void deleteClientByRoom(Room room);
+    int deleteClientByRoom(Room room);
+
+    List<Client> findAll();
+    
+    
 }

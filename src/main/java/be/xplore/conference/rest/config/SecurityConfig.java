@@ -87,7 +87,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .permitAll()
                 .antMatchers("/api/schedule/**")
                 .permitAll()
-                .antMatchers("/api/client/**")
+                .antMatchers(HttpMethod.PATCH,"/api/client/**")
                 .permitAll()
                 .antMatchers(HttpMethod.GET, "/api/settings/**")
                 .permitAll()
