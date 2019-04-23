@@ -13,12 +13,12 @@ import java.util.Optional;
 @Transactional
 public interface ClientRepository extends JpaRepository<Client, Integer> {
 
-    @Query("SELECT c FROM Client c WHERE c.room = ?1")
-    Optional<Client> findClientByRoom(Room room );
+    @Query("SELECT c FROM Client c WHERE c.id = ?1")
+    Optional<Client> findClientById(int id);
 
     @Modifying
-    @Query("DELETE FROM Client c WHERE c.room = ?1")
-    int deleteClientByRoom(Room room);
+    @Query("DELETE FROM Client c WHERE c.id = ?1")
+    int deleteClientById(int id);
 
     List<Client> findAll();
     

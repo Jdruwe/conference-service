@@ -5,6 +5,7 @@ import be.xplore.conference.excpetion.RoomNotFoundException;
 import be.xplore.conference.model.Client;
 import be.xplore.conference.rest.dto.ClientDto;
 import be.xplore.conference.rest.dto.ClientHeartbeatDto;
+import be.xplore.conference.rest.dto.ClientInfoDto;
 import be.xplore.conference.service.ClientService;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
@@ -28,15 +29,27 @@ public class ClientController {
         this.modelMapper = modelMapper;
     }
 
+    private static final Logger log = LoggerFactory.getLogger(ClientController.class);
+
     @PostMapping
-    public ResponseEntity<ClientDto> registerClient(@RequestBody ClientDto clientDto) throws RoomAlreadyRegisteredException, RoomNotFoundException {
-        Client client = new Client(clientDto.getRoom(), clientDto.getLastConnected());
+    public ResponseEntity<ClientDto> registerClient(@RequestBody ClientInfoDto clientInfoDto) throws RoomAlreadyRegisteredException, RoomNotFoundException {
+        Client client = new Client(clientInfoDto.getRoom(), clientInfoDto.getLastConnected());
         this.clientService.save(client);
+        log.info("-------------------------------------------------");
+        log.info("register");
+        log.info(String.valueOf(client.getId()));
+        log.info("-------------------------------------------------");
         return new ResponseEntity<>(modelMapper.map(client, ClientDto.class), HttpStatus.CREATED);
     }
 
     @DeleteMapping
-    public ResponseEntity<Integer> unRegisterClient(@RequestParam String id) throws RoomNotFoundException {
+    public ResponseEntity<Integer> unRegisterClient(@RequestParam int id) {
+        log.info("-------------------------------------------------");
+        log.info("unregister");
+        log.info(String.valueOf(id));
+        log.info("-------------------------------------------------");
+        List<Client> client = this.clientService.loadAll();
+        log.info(String.valueOf(client.size()));
         int result = this.clientService.delete(id);
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
@@ -50,15 +63,13 @@ public class ClientController {
         return new ResponseEntity<>(clientDtos, HttpStatus.OK);
     }
 
-    private static final Logger log = LoggerFactory.getLogger(ClientController.class);
-
     @PatchMapping
     public ResponseEntity<ClientDto> updateHeartbeat(@RequestBody ClientHeartbeatDto clientHeartbeatDto) throws RoomNotFoundException {
-        log.info("Heartbeat update for room "
-                + clientHeartbeatDto.getRoomId() +
+        log.info("Heartbeat update for client "
+                + clientHeartbeatDto.getClientId() +
                 " at time of " +
                 clientHeartbeatDto.getNewDate());
-        Client client = this.clientService.updateLastConnectedTime(clientHeartbeatDto.getRoomId(), clientHeartbeatDto.getNewDate());
-        return new ResponseEntity<>(modelMapper.map(client, ClientDto.class),HttpStatus.OK);
+        Client client = this.clientService.updateLastConnectedTime(clientHeartbeatDto.getClientId(), clientHeartbeatDto.getNewDate());
+        return new ResponseEntity<>(modelMapper.map(client, ClientDto.class), HttpStatus.OK);
     }
 }

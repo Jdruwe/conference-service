@@ -4,8 +4,8 @@ import be.xplore.conference.excpetion.RoomAlreadyRegisteredException;
 import be.xplore.conference.excpetion.RoomNotFoundException;
 import be.xplore.conference.model.Client;
 import be.xplore.conference.model.Room;
-import be.xplore.conference.rest.dto.ClientDto;
 import be.xplore.conference.rest.dto.ClientHeartbeatDto;
+import be.xplore.conference.rest.dto.ClientInfoDto;
 import be.xplore.conference.service.ClientService;
 import be.xplore.conference.service.RoomService;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -52,14 +52,15 @@ public class ClientControllerTest {
     private ClientService clientService;
 
     private Room room;
-    private ClientDto clientDto;
+    private ClientInfoDto clientInfoDto;
+    private Client savedClient;
 
     @Before
     public void setUp() {
         room = new Room("testRoom", "Test room", 850, "setup");
         roomService.save(room);
         Date registeredDate = new Date();
-        clientDto = new ClientDto(room, registeredDate);
+        clientInfoDto = new ClientInfoDto(room, registeredDate);
 
     }
 
@@ -68,7 +69,7 @@ public class ClientControllerTest {
     public void testRegisterClient() throws Exception {
         mockMvc.perform(post("/api/client")
                 .contentType(MediaType.APPLICATION_JSON_UTF8)
-                .content(objectMapper.writeValueAsString(clientDto)))
+                .content(objectMapper.writeValueAsString(clientInfoDto)))
                 .andExpect(status().isCreated())
                 .andExpect(content().string(containsString("testRoom")));
     }
@@ -79,7 +80,7 @@ public class ClientControllerTest {
         registerClientForTesting();
         mockMvc.perform(delete("/api/client")
                 .contentType(MediaType.APPLICATION_JSON_UTF8)
-                .param("id", clientDto.getRoom().getId()))
+                .param("id", String.valueOf(savedClient.getId())))
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("1")));
     }
@@ -97,7 +98,7 @@ public class ClientControllerTest {
     public void testUpdateHeartbeat() throws Exception {
         Date newDate = new Date();
         registerClientForTesting();
-        ClientHeartbeatDto clientHeartbeatDto = new ClientHeartbeatDto(clientDto.getRoom().getId(), newDate);
+        ClientHeartbeatDto clientHeartbeatDto = new ClientHeartbeatDto(savedClient.getId(), clientInfoDto.getRoom().getId(), newDate);
         mockMvc.perform(patch("/api/client")
                 .contentType(MediaType.APPLICATION_JSON_UTF8)
                 .content(objectMapper.writeValueAsString(clientHeartbeatDto)))
@@ -114,6 +115,6 @@ public class ClientControllerTest {
     }
 
     private void registerClientForTesting() throws RoomAlreadyRegisteredException, RoomNotFoundException {
-        clientService.save(modelMapper.map(clientDto, Client.class));
+        savedClient = clientService.save(modelMapper.map(clientInfoDto, Client.class));
     }
 }

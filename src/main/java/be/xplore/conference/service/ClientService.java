@@ -26,16 +26,15 @@ public class ClientService {
     public Client save(Client client) throws RoomAlreadyRegisteredException, RoomNotFoundException {
         Room room = roomService.loadRoomById(client.getRoom().getId());
         client.setRoom(room);
-        if (repo.findClientByRoom(client.getRoom()).isEmpty()) {
+        if (repo.findClientById(client.getId()).isEmpty()) {
             return repo.save(client);
         } else {
             throw new RoomAlreadyRegisteredException("This Room is already in use.");
         }
     }
 
-    public int delete(String id) throws RoomNotFoundException {
-        Room room = roomService.loadRoomById(id);
-        return repo.deleteClientByRoom(room);
+    public int delete(int id) {
+        return repo.deleteClientById(id);
     }
 
 
@@ -43,9 +42,8 @@ public class ClientService {
         return this.repo.findAll();
     }
 
-    public Client updateLastConnectedTime(String roomId, Date newDate) throws RoomNotFoundException {
-        Room room = roomService.loadRoomById(roomId);
-        Client client = this.repo.findClientByRoom(room).orElseThrow(() -> new RoomNotFoundException("No room found!"));
+    public Client updateLastConnectedTime(int id, Date newDate) throws RoomNotFoundException {
+        Client client = this.repo.findClientById(id).orElseThrow(() -> new RoomNotFoundException("No client found!"));
         client.setLastConnected(newDate);
         client = this.repo.save(client);
         return client;

@@ -63,8 +63,8 @@ public class ClientServiceTest {
     @Test
     public void testDelete() throws RoomAlreadyRegisteredException, RoomNotFoundException {
         Client client = new Client(room, date);
-        clientService.save(client);
-        int result = clientService.delete(room.getId());
+        Client savedClient = clientService.save(client);
+        int result = clientService.delete(savedClient.getId());
         assertTrue(result > 0);
         assertEquals(result, 1);
     }
@@ -90,9 +90,9 @@ public class ClientServiceTest {
         Client client = new Client(room, date);
         //waiting to get time difference
         Thread.sleep(2000);
-        clientService.save(client);
+        Client client1 = clientService.save(client);
         Date newDate = new Date();
-        Client updatedClient = clientService.updateLastConnectedTime(room.getId(), newDate);
+        Client updatedClient = clientService.updateLastConnectedTime(client1.getId(), newDate);
         assertEquals(updatedClient.getLastConnected(), newDate);
         assertNotEquals(updatedClient.getLastConnected(), date);
         assertEquals(updatedClient.getRoom(), room);

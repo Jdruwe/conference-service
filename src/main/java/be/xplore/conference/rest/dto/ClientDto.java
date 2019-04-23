@@ -11,6 +11,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ClientDto {
+    private int id;
     private Room room;
     private Date lastConnected;
 }

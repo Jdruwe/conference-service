@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.ManyToOne;
 import java.util.Date;
 
 @Data
@@ -18,7 +18,7 @@ public class Client {
     @Id
     @GeneratedValue
     private int id;
-    @OneToOne
+    @ManyToOne
     private Room room;
     private Date lastConnected;
 
