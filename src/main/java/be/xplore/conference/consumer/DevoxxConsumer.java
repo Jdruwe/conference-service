@@ -2,16 +2,17 @@ package be.xplore.conference.consumer;
 
 import be.xplore.conference.consumer.dto.*;
 import be.xplore.conference.consumer.helper.ApiCallHelper;
+import be.xplore.conference.consumer.helper.dto.ApiResponse;
 import be.xplore.conference.model.*;
 import be.xplore.conference.parsing.ModelConverter;
 import be.xplore.conference.service.*;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
-import javax.annotation.PostConstruct;
 import java.io.IOException;
 import java.time.Instant;
 import java.time.LocalDate;
@@ -24,6 +25,9 @@ import java.util.stream.Collectors;
 
 @Component
 public class DevoxxConsumer {
+
+    private String roomsEtag;
+
     @Value("${devoxx.api.url}")
     private String apiUrl;
     @Value("${devoxx.schedule.api.url}")
@@ -32,7 +36,6 @@ public class DevoxxConsumer {
     private String roomsUrl;
     @Value("${devoxx.speaker.api.url}")
     private String speakerUrl;
-
 
     @Value("${devoxx.settings.isRoomOccupancyOn}")
     private String isRoomOccupancyOn;
@@ -48,6 +51,7 @@ public class DevoxxConsumer {
     private final SpeakerService speakerService;
     private final RoomScheduleService roomScheduleService;
     private final SettingsService settingsService;
+    private final ObjectMapper objectMapper;
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DevoxxConsumer.class);
 
@@ -58,7 +62,7 @@ public class DevoxxConsumer {
                           TalkService talkService,
                           SpeakerService speakerService,
                           RoomScheduleService roomScheduleService,
-                          SettingsService settingsService) {
+                          SettingsService settingsService, ObjectMapper objectMapper) {
         this.modelConverter = modelConverter;
         this.apiHelper = apiHelper;
         this.roomService = roomService;
@@ -67,13 +71,20 @@ public class DevoxxConsumer {
         this.speakerService = speakerService;
         this.roomScheduleService = roomScheduleService;
         this.settingsService = settingsService;
+        this.objectMapper = objectMapper;
+        settingsService.loadByKey("roomsEtag").ifPresent(settings -> roomsEtag = settings.getValue());
     }
 
-    // TODO fix postConstruct or scheduler for testing
-    // @Scheduled(fixedRate = "${query.devoxx.api.delay.minutes}" * 1000L * 60L)
+    @Scheduled(fixedRateString = "${query.api.rate.milliseconds}")
     private void consumeApi() throws IOException {
-        LOGGER.warn("kek");
-        List<Room> rooms = processRooms(getRoomsFromApi());
+//        RoomsDto dto = getRoomsFromApi("2030473898");
+        RoomsDto dto = getRoomsFromApi(roomsEtag);
+        List<Room> rooms;
+        if (Objects.nonNull(dto)) {
+            rooms = processRooms(dto);
+        } else {
+            rooms = roomService.loadAll();
+        }
         processSchedules(rooms);
         fillSettings();
     }
@@ -83,19 +94,31 @@ public class DevoxxConsumer {
         settingsService.save(new Settings("isRoomOccupancyOn", isRoomOccupancyOn));
     }
 
-    private RoomsDto getRoomsFromApi() throws IOException {
+    private RoomsDto getRoomsFromApi(String etag) throws IOException {
         String url = apiUrl + roomsUrl;
-        return apiHelper.queryApi(url, RoomsDto.class);
+        ApiResponse response = apiHelper.queryApi(url, etag, RoomsDto.class);
+        // todo save etag
+        return (RoomsDto) response.getBody();
     }
 
+    // todo fix me
     private ScheduleDto getRoomScheduleFromApi(String roomId, DayOfWeek day) throws IOException {
+        Optional<Room> room = roomService.loadById(roomId);
+        String etag = "";
+        if (room.isPresent()) {
+            etag = room.get().getEtag();
+        }
         String url = apiUrl + roomsUrl + roomId + "/" + day.name().toLowerCase();
-        return apiHelper.queryApi(url, ScheduleDto.class);
+        ApiResponse response = apiHelper.queryApi(url, etag, ScheduleDto.class);
+        // todo save etag
+        return (ScheduleDto) response.getBody();
     }
 
+    // todo fix me
     private SpeakerInformationDto getSpeakerFromApi(String uuid) throws IOException {
         String url = apiUrl + speakerUrl + uuid;
-        return apiHelper.queryApi(url, SpeakerInformationDto.class);
+//        return apiHelper.queryApi(url, SpeakerInformationDto.class);
+        return null;
     }
 
     private List<Room> processRooms(RoomsDto roomsDto) {
@@ -105,17 +128,30 @@ public class DevoxxConsumer {
 
     private void processSchedules(List<Room> rooms) throws IOException {
         for (Room room : rooms) {
-            for (DayOfWeek day : DayOfWeek.values()) {
-                ScheduleDto scheduleDto = getRoomScheduleFromApi(room.getId(), day);
-                if (scheduleDto.getSlots().size() > 0) {
-                    Schedule schedule = createSchedule(scheduleDto, day);
-                    RoomSchedule roomSchedule = new RoomSchedule(new RoomScheduleId(schedule, room));
-                    List<Talk> talks = getTalks(scheduleDto.getSlots());
-                    RoomSchedule roomScheduleWithTalks = addTalksToRoomSchedule(roomSchedule, talks);
-                    roomScheduleService.save(roomScheduleWithTalks);
-                }
-            }
+            createScheduleForRoomForWeek(room);
         }
+    }
+
+    private void createScheduleForRoomForWeek(Room room) throws IOException {
+        for (DayOfWeek day : DayOfWeek.values()) {
+            createScheduleForRoomForDay(room, day);
+        }
+    }
+
+    private void createScheduleForRoomForDay(Room room, DayOfWeek day) throws IOException {
+        ScheduleDto scheduleDto = getRoomScheduleFromApi(room.getId(), day);
+
+        if (scheduleDto.getSlots().size() > 0) {
+            Schedule schedule = createSchedule(scheduleDto, day);
+            List<Talk> talks = getTalks(scheduleDto.getSlots());
+            createRoomSchedule(schedule, room, talks);
+        }
+    }
+
+    private void createRoomSchedule(Schedule schedule, Room room, List<Talk> talks) {
+        RoomSchedule roomSchedule = new RoomSchedule(new RoomScheduleId(schedule, room));
+        RoomSchedule roomScheduleWithTalks = addTalksToRoomSchedule(roomSchedule, talks);
+        roomScheduleService.save(roomScheduleWithTalks);
     }
 
     private Schedule createSchedule(ScheduleDto scheduleDto, DayOfWeek day) {

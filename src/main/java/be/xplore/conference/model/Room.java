@@ -18,6 +18,7 @@ public class Room {
     private String name;
     private int capacity;
     private String setup;
+    private String etag;
 
     @OneToOne
     private RoomSchedule roomSchedule;
