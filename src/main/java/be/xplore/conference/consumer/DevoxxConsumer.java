@@ -5,7 +5,10 @@ import be.xplore.conference.consumer.helper.ApiCallHelper;
 import be.xplore.conference.model.*;
 import be.xplore.conference.parsing.ModelConverter;
 import be.xplore.conference.service.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -46,6 +49,7 @@ public class DevoxxConsumer {
     private final RoomScheduleService roomScheduleService;
     private final SettingsService settingsService;
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(DevoxxConsumer.class);
 
     public DevoxxConsumer(ModelConverter modelConverter,
                           ApiCallHelper apiHelper,
@@ -66,8 +70,9 @@ public class DevoxxConsumer {
     }
 
     // TODO fix postConstruct or scheduler for testing
-    @PostConstruct
+    // @Scheduled(fixedRate = "${query.devoxx.api.delay.minutes}" * 1000L * 60L)
     private void consumeApi() throws IOException {
+        LOGGER.warn("kek");
         List<Room> rooms = processRooms(getRoomsFromApi());
         processSchedules(rooms);
         fillSettings();
