@@ -1,7 +1,7 @@
-image: gradle:jre11-slim
+#image: gradle:jre11-slim
 
-stages:
-    - build
+#stages:
+#    - build
 
 build:
     stage: build
