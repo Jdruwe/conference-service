@@ -14,6 +14,6 @@ public interface RoomScheduleRepository extends JpaRepository<RoomSchedule, Room
     @Query("SELECT rs FROM RoomSchedule  rs WHERE rs.id.room.id = ?2 AND rs.id.schedule.date = ?1")
     Optional<RoomSchedule> findByDateAndRoomId(LocalDate date, String roomId);
 
-    @Query("SELECT rs FROM RoomSchedule  rs WHERE rs.id.room.id = ?2 AND rs.id.schedule.day = ?1")
-    List<RoomSchedule> findByDayAndRoomId(DayOfWeek day, String roomId);
+    @Query("SELECT rs FROM RoomSchedule rs LEFT JOIN FETCH rs.talks WHERE rs.id.room.id = ?2 AND rs.id.schedule.day = ?1")
+    Optional<RoomSchedule> findByDayAndRoomId(DayOfWeek day, String roomId);
 }

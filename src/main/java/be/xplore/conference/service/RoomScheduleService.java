@@ -1,6 +1,7 @@
 package be.xplore.conference.service;
 
 import be.xplore.conference.model.DayOfWeek;
+import be.xplore.conference.model.Room;
 import be.xplore.conference.model.RoomSchedule;
 import be.xplore.conference.persistence.RoomScheduleRepository;
 import org.springframework.stereotype.Service;
@@ -27,7 +28,7 @@ public class RoomScheduleService {
         return repo.findByDateAndRoomId(date, roomId);
     }
 
-    public List<RoomSchedule> loadByDayAndRoomId(DayOfWeek day, String roomId) {
+    public Optional<RoomSchedule> loadByDayAndRoomId(DayOfWeek day, String roomId) {
         return repo.findByDayAndRoomId(day, roomId);
     }
 }

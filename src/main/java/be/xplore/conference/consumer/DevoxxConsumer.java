@@ -125,40 +125,65 @@ public class DevoxxConsumer {
         return rooms.stream().map(roomService::save).collect(Collectors.toList());
     }
 
-    private void processSchedules(List<Room> rooms) throws IOException {
+    private List<RoomSchedule> processSchedules(List<Room> rooms) throws IOException {
+        List<RoomSchedule> roomSchedules = new ArrayList<>();
         for (Room room : rooms) {
-            createScheduleForRoomForWeek(room);
+            roomSchedules.addAll(createScheduleForRoomForWeek(room));
         }
+        return roomSchedules;
     }
 
-    private void createScheduleForRoomForWeek(Room room) throws IOException {
+    private List<RoomSchedule> createScheduleForRoomForWeek(Room room) throws IOException {
+        List<RoomSchedule> roomSchedules = new ArrayList<>();
         for (DayOfWeek day : DayOfWeek.values()) {
-            createScheduleForRoomForDay(room, day);
+            roomSchedules.add(createScheduleForRoomForDay(room, day));
         }
+        return roomSchedules;
     }
 
-    private void createScheduleForRoomForDay(Room room, DayOfWeek day) throws IOException {
-        List<RoomSchedule> schedules = roomScheduleService.loadByDayAndRoomId(day, room.getId());
+    private RoomSchedule createScheduleForRoomForDay(Room room, DayOfWeek day) throws IOException {
+        RoomSchedule rs = null;
+        Optional<RoomSchedule> optionalRs = roomScheduleService.loadByDayAndRoomId(day, room.getId());
         String etag = "";
-        if (schedules.size() > 0) {
-            etag = schedules.get(0).getEtag();
+        if (optionalRs.isPresent()) {
+            etag = optionalRs.get().getEtag();
+            rs = optionalRs.get();
         }
 
         RoomScheduleResponse response = getRoomScheduleFromApi(room.getId(), etag, day);
         ScheduleDto scheduleDto = response.getSchedule();
 
-        if (Objects.nonNull(scheduleDto) && scheduleDto.getSlots().size() > 0) {
-            Schedule schedule = createSchedule(scheduleDto, day);
-            List<Talk> talks = processTalks(scheduleDto.getSlots());
-            createRoomSchedule(schedule, room, talks, response.getEtag());
+        if (Objects.nonNull(scheduleDto)) {
+            if (scheduleDto.getSlots().size() > 0) {
+                Schedule schedule = createSchedule(scheduleDto, day);
+                List<Talk> talks = processTalks(scheduleDto.getSlots());
+                rs = createRoomSchedule(schedule, room, response.getEtag(), talks);
+            }
+        } else if (Objects.nonNull(rs) && Objects.nonNull(rs.getTalks())) {
+            LOGGER.error("kek");
+            LOGGER.error(String.valueOf(rs.getTalks().size()));
+            for (Talk talk : rs.getTalks()) {
+                Optional<Talk> t = talkService.loadById(talk.getId());
+                if (t.isPresent()) {
+                    if (t.get().getSpeakers().size() > 0)
+                        for (Speaker speaker : t.get().getSpeakers()) {
+                            SpeakerResponse speakerResponse = getSpeakerFromApi(speaker.getUuid(), speaker.getEtag());
+                            if (Objects.nonNull(speakerResponse.getSpeakerInformation())) {
+                                speaker = speakerResponse.getSpeakerInformation().toDomain();
+                                speakerService.save(speaker);
+                            }
+                        }
+                }
+            }
         }
+        return rs;
     }
 
-    private void createRoomSchedule(Schedule schedule, Room room, List<Talk> talks, String etag) {
+    private RoomSchedule createRoomSchedule(Schedule schedule, Room room, String etag, List<Talk> talks) {
         RoomSchedule roomSchedule = new RoomSchedule(new RoomScheduleId(schedule, room));
-        RoomSchedule roomScheduleWithTalks = addTalksToRoomSchedule(roomSchedule, talks);
-        roomScheduleWithTalks.setEtag(etag);
-        roomScheduleService.save(roomScheduleWithTalks);
+        addTalksToRoomSchedule(roomSchedule, talks);
+        roomSchedule.setEtag(etag);
+        return roomScheduleService.save(roomSchedule);
     }
 
     private Schedule createSchedule(ScheduleDto scheduleDto, DayOfWeek day) {
@@ -171,6 +196,18 @@ public class DevoxxConsumer {
             Schedule schedule = modelConverter.convertSchedule(date, day);
             return scheduleService.save(schedule);
         }
+    }
+
+    private RoomSchedule addTalksToRoomSchedule(RoomSchedule roomSchedule, List<Talk> talks) {
+        if (Objects.nonNull(talks)) {
+            List<Talk> roomTalks = roomSchedule.getTalks();
+            if (Objects.nonNull(roomTalks)) {
+                roomSchedule.getTalks().addAll(talks);
+            } else {
+                roomSchedule.setTalks(talks);
+            }
+        }
+        return roomSchedule;
     }
 
     private List<Talk> processTalks(List<SlotDto> slotDtoList) throws IOException {
@@ -220,18 +257,6 @@ public class DevoxxConsumer {
             return optionalSpeaker.get().getEtag();
         }
         return "";
-    }
-
-    private RoomSchedule addTalksToRoomSchedule(RoomSchedule roomSchedule, List<Talk> talks) {
-        if (Objects.nonNull(talks)) {
-            List<Talk> roomTalks = roomSchedule.getTalks();
-            if (Objects.nonNull(roomTalks)) {
-                roomSchedule.getTalks().addAll(talks);
-            } else {
-                roomSchedule.setTalks(talks);
-            }
-        }
-        return roomSchedule;
     }
 
     private LocalDate convertMillisToDate(long millis) {

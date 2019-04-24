@@ -35,7 +35,7 @@ public class ApiCallHelper {
         HttpEntity<String> entity = new HttpEntity<>("parameters", headers);
         ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, entity, String.class);
 
-        LOGGER.error(response.getStatusCodeValue() + url);
+        LOGGER.info(response.getStatusCodeValue() + url);
 
         String responseBody = response.getBody();
         T mappedBody = null;
