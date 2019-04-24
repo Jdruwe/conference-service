@@ -3,6 +3,8 @@ package be.xplore.conference.consumer;
 import be.xplore.conference.consumer.dto.*;
 import be.xplore.conference.consumer.helper.ApiCallHelper;
 import be.xplore.conference.consumer.helper.dto.ApiResponse;
+import be.xplore.conference.consumer.helper.dto.RoomScheduleResponse;
+import be.xplore.conference.consumer.helper.dto.SpeakerResponse;
 import be.xplore.conference.model.*;
 import be.xplore.conference.parsing.ModelConverter;
 import be.xplore.conference.service.*;
@@ -51,9 +53,6 @@ public class DevoxxConsumer {
     private final SpeakerService speakerService;
     private final RoomScheduleService roomScheduleService;
     private final SettingsService settingsService;
-    private final ObjectMapper objectMapper;
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(DevoxxConsumer.class);
 
     public DevoxxConsumer(ModelConverter modelConverter,
                           ApiCallHelper apiHelper,
@@ -71,7 +70,6 @@ public class DevoxxConsumer {
         this.speakerService = speakerService;
         this.roomScheduleService = roomScheduleService;
         this.settingsService = settingsService;
-        this.objectMapper = objectMapper;
         settingsService.loadByKey("roomsEtag").ifPresent(settings -> roomsEtag = settings.getValue());
     }
 
@@ -97,28 +95,25 @@ public class DevoxxConsumer {
     private RoomsDto getRoomsFromApi(String etag) throws IOException {
         String url = apiUrl + roomsUrl;
         ApiResponse response = apiHelper.queryApi(url, etag, RoomsDto.class);
-        // todo save etag
+        saveRoomsEtag(response.getETag());
         return (RoomsDto) response.getBody();
     }
 
-    // todo fix me
-    private ScheduleDto getRoomScheduleFromApi(String roomId, DayOfWeek day) throws IOException {
-        Optional<Room> room = roomService.loadById(roomId);
-        String etag = "";
-        if (room.isPresent()) {
-            etag = room.get().getEtag();
-        }
+    private RoomScheduleResponse getRoomScheduleFromApi(String roomId, String etag, DayOfWeek day) throws IOException {
         String url = apiUrl + roomsUrl + roomId + "/" + day.name().toLowerCase();
         ApiResponse response = apiHelper.queryApi(url, etag, ScheduleDto.class);
-        // todo save etag
-        return (ScheduleDto) response.getBody();
+
+        return new RoomScheduleResponse(response.getETag(), (ScheduleDto) response.getBody());
     }
 
-    // todo fix me
-    private SpeakerInformationDto getSpeakerFromApi(String uuid) throws IOException {
+    private SpeakerResponse getSpeakerFromApi(String uuid, String etag) throws IOException {
         String url = apiUrl + speakerUrl + uuid;
-//        return apiHelper.queryApi(url, SpeakerInformationDto.class);
-        return null;
+        ApiResponse response = apiHelper.queryApi(url, etag, SpeakerInformationDto.class);
+        return new SpeakerResponse(response.getETag(), (SpeakerInformationDto) response.getBody());
+    }
+
+    private void saveRoomsEtag(String etag) {
+        settingsService.save(new Settings("roomsEtag", etag));
     }
 
     private List<Room> processRooms(RoomsDto roomsDto) {
@@ -139,13 +134,20 @@ public class DevoxxConsumer {
     }
 
     private void createScheduleForRoomForDay(Room room, DayOfWeek day) throws IOException {
-        ScheduleDto scheduleDto = getRoomScheduleFromApi(room.getId(), day);
+        RoomScheduleResponse response = getRoomScheduleFromApi(room.getId(), room.getEtag(), day);
+        ScheduleDto scheduleDto = response.getSchedule();
+        saveRoomEtag(response.getEtag(), room);
 
         if (scheduleDto.getSlots().size() > 0) {
             Schedule schedule = createSchedule(scheduleDto, day);
-            List<Talk> talks = getTalks(scheduleDto.getSlots());
+            List<Talk> talks = processTalks(scheduleDto.getSlots());
             createRoomSchedule(schedule, room, talks);
         }
+    }
+
+    private void saveRoomEtag(String etag, Room room) {
+        room.setEtag(etag);
+        roomService.save(room);
     }
 
     private void createRoomSchedule(Schedule schedule, Room room, List<Talk> talks) {
@@ -166,28 +168,49 @@ public class DevoxxConsumer {
         }
     }
 
-    private List<Talk> getTalks(List<SlotDto> slotDtoList) throws IOException {
+    private List<Talk> processTalks(List<SlotDto> slotDtoList) throws IOException {
         List<Talk> talks = new ArrayList<>();
-        for (SlotDto slotDto : slotDtoList) {
-            Talk talk = null;
-            if (slotDto.getTalk() != null) {
-                List<SpeakerInformationDto> speakerInformationDtos = new ArrayList<>();
-                for (SpeakerDto s : slotDto.getTalk().getSpeakers()) {
-                    String link = s.getLink().getHref();
-                    String[] UUIDFromHrefFromSpeaker = link.split("/");
-                    String uuidForSpeaker = UUIDFromHrefFromSpeaker[UUIDFromHrefFromSpeaker.length - 1];
-                    speakerInformationDtos.add(getSpeakerFromApi(uuidForSpeaker));
-                }
-                List<Speaker> speakers = modelConverter.convertSpeakersDto(speakerInformationDtos);
-                speakers.forEach(speakerService::save);
-                talk = modelConverter.convertTalk(slotDto, speakers);
-            }
-            if (talk != null) {
-                talkService.save(talk);
-                talks.add(talk);
+        if (Objects.nonNull(slotDtoList)) {
+            for (SlotDto slotDto : slotDtoList) {
+                Talk t = getTalkFromSlot(slotDto);
+                talkService.save(t);
+                talks.add(t);
             }
         }
         return talks;
+    }
+
+    private Talk getTalkFromSlot(SlotDto slot) throws IOException {
+        List<Speaker> speakers = getSpeakersForTalk(slot.getTalk().getSpeakers());
+        return modelConverter.convertTalk(slot, speakers);
+    }
+
+    private List<Speaker> getSpeakersForTalk(List<SpeakerDto> speakerList) throws IOException {
+        List<Speaker> speakers = new ArrayList<>();
+        for (SpeakerDto dto : speakerList) {
+            speakers.add(createSpeaker(dto));
+        }
+        return speakers;
+    }
+
+    private Speaker createSpeaker(SpeakerDto dto) throws IOException {
+        String href = dto.getLink().getHref();
+        String uuid = href.substring(href.lastIndexOf('/'));
+        String etag = getSpeakerEtag(uuid);
+
+        SpeakerResponse response = getSpeakerFromApi(uuid, etag);
+        Speaker s = response.getSpeakerInformation().toDomain();
+        s.setEtag(response.getEtag());
+        return speakerService.save(s);
+    }
+
+    private String getSpeakerEtag(String uuid) {
+        Optional<Speaker> optionalSpeaker = speakerService.loadById(uuid);
+        String etag = "";
+        if (optionalSpeaker.isPresent()) {
+            etag = optionalSpeaker.get().getEtag();
+        }
+        return etag;
     }
 
     private RoomSchedule addTalksToRoomSchedule(RoomSchedule roomSchedule, List<Talk> talks) {

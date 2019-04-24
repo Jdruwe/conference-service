@@ -1,11 +1,10 @@
 package be.xplore.conference.consumer.dto;
 
+import be.xplore.conference.model.Speaker;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.persistence.Column;
 
 @Data
 @AllArgsConstructor
@@ -23,4 +22,14 @@ public class SpeakerInformationDto {
     private String avatarURL;
     private String twitter;
     private String lang;
+
+    public Speaker toDomain() {
+        return Speaker.builder()
+                .uuid(uuid)
+                .firstName(firstName)
+                .lastName(lastName)
+                .avatarUrl(avatarURL)
+                .twitter(twitter)
+                .build();
+    }
 }
