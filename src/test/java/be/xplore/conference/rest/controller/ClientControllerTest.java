@@ -98,7 +98,7 @@ public class ClientControllerTest {
     public void testUpdateHeartbeat() throws Exception {
         Date newDate = new Date();
         registerClientForTesting();
-        ClientHeartbeatDto clientHeartbeatDto = new ClientHeartbeatDto(savedClient.getId(), clientInfoDto.getRoom().getId(), newDate);
+        ClientHeartbeatDto clientHeartbeatDto = new ClientHeartbeatDto(savedClient.getId(), newDate);
         mockMvc.perform(patch("/api/client")
                 .contentType(MediaType.APPLICATION_JSON_UTF8)
                 .content(objectMapper.writeValueAsString(clientHeartbeatDto)))
