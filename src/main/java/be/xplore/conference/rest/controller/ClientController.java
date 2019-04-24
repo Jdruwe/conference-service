@@ -35,19 +35,11 @@ public class ClientController {
     public ResponseEntity<ClientDto> registerClient(@RequestBody ClientInfoDto clientInfoDto) throws RoomAlreadyRegisteredException, RoomNotFoundException {
         Client client = new Client(clientInfoDto.getRoom(), clientInfoDto.getLastConnected());
         this.clientService.save(client);
-        log.info("-------------------------------------------------");
-        log.info("register");
-        log.info(String.valueOf(client.getId()));
-        log.info("-------------------------------------------------");
         return new ResponseEntity<>(modelMapper.map(client, ClientDto.class), HttpStatus.CREATED);
     }
 
     @DeleteMapping
     public ResponseEntity<Integer> unRegisterClient(@RequestParam int id) {
-        log.info("-------------------------------------------------");
-        log.info("unregister");
-        log.info(String.valueOf(id));
-        log.info("-------------------------------------------------");
         List<Client> client = this.clientService.loadAll();
         log.info(String.valueOf(client.size()));
         int result = this.clientService.delete(id);

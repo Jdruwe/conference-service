@@ -11,6 +11,5 @@ import java.util.Date;
 @AllArgsConstructor
 public class ClientHeartbeatDto {
     int clientId;
-    String roomId;
     Date newDate;
 }
