@@ -1,4 +1,4 @@
-package be.xplore.conference.excpetion;
+package be.xplore.conference.exception;
 
 public class RoomScheduleNotFoundException extends Exception {
 }
