@@ -30,7 +30,7 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    
+
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-web'
@@ -43,13 +43,14 @@ dependencies {
     codacy 'com.github.codacy:codacy-coverage-reporter:-SNAPSHOT'
 
     annotationProcessor 'org.projectlombok:lombok'
+    annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"l
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
     testCompile(group: 'org.springframework.security', name: 'spring-security-test', version: '5.1.1.RELEASE')
 
     compile("org.springframework.security.oauth:spring-security-oauth2:2.0.11.RELEASE")
     compile("org.springframework.cloud:spring-cloud-security:1.1.3.RELEASE")
-    
+
 }
 
 jacoco {

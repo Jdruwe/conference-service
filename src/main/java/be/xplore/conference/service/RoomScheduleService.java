@@ -1,11 +1,13 @@
 package be.xplore.conference.service;
 
+import be.xplore.conference.model.DayOfWeek;
 import be.xplore.conference.model.RoomSchedule;
 import be.xplore.conference.persistence.RoomScheduleRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -23,5 +25,9 @@ public class RoomScheduleService {
 
     public Optional<RoomSchedule> loadByDateAndRoomId(LocalDate date, String roomId) {
         return repo.findByDateAndRoomId(date, roomId);
+    }
+
+    public List<RoomSchedule> loadByDayAndRoomId(DayOfWeek day, String roomId) {
+        return repo.findByDayAndRoomId(day, roomId);
     }
 }

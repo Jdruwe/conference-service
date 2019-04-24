@@ -5,13 +5,13 @@ import be.xplore.conference.consumer.helper.ApiCallHelper;
 import be.xplore.conference.consumer.helper.dto.ApiResponse;
 import be.xplore.conference.consumer.helper.dto.RoomScheduleResponse;
 import be.xplore.conference.consumer.helper.dto.SpeakerResponse;
+import be.xplore.conference.consumer.property.DevoxxApiProperties;
 import be.xplore.conference.model.*;
 import be.xplore.conference.parsing.ModelConverter;
+import be.xplore.conference.property.SettingsProperties;
 import be.xplore.conference.service.*;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
@@ -28,21 +28,10 @@ import java.util.stream.Collectors;
 @Component
 public class DevoxxConsumer {
 
-    private String roomsEtag;
+    private static final Logger LOGGER = LoggerFactory.getLogger(DevoxxConsumer.class);
 
-    @Value("${devoxx.api.url}")
-    private String apiUrl;
-    @Value("${devoxx.schedule.api.url}")
-    private String scheduleUrl;
-    @Value("${devoxx.rooms.api.url}")
-    private String roomsUrl;
-    @Value("${devoxx.speaker.api.url}")
-    private String speakerUrl;
-
-    @Value("${devoxx.settings.isRoomOccupancyOn}")
-    private String isRoomOccupancyOn;
-    @Value("${devoxx.settings.minutesBeforeNextSession}")
-    private String minutesBeforeNextSession;
+    private final DevoxxApiProperties apiProperties;
+    private final SettingsProperties settingsProperties;
 
     private final ModelConverter modelConverter;
     private final ApiCallHelper apiHelper;
@@ -61,7 +50,9 @@ public class DevoxxConsumer {
                           TalkService talkService,
                           SpeakerService speakerService,
                           RoomScheduleService roomScheduleService,
-                          SettingsService settingsService, ObjectMapper objectMapper) {
+                          SettingsService settingsService,
+                          DevoxxApiProperties apiProperties,
+                          SettingsProperties settingsProperties) {
         this.modelConverter = modelConverter;
         this.apiHelper = apiHelper;
         this.roomService = roomService;
@@ -70,13 +61,15 @@ public class DevoxxConsumer {
         this.speakerService = speakerService;
         this.roomScheduleService = roomScheduleService;
         this.settingsService = settingsService;
-        settingsService.loadByKey("roomsEtag").ifPresent(settings -> roomsEtag = settings.getValue());
+        this.apiProperties = apiProperties;
+        this.settingsProperties = settingsProperties;
     }
 
-    @Scheduled(fixedRateString = "${query.api.rate.milliseconds}")
+    @Scheduled(fixedRateString = "${settings.queryRateInMilliseconds}")
     private void consumeApi() throws IOException {
-//        RoomsDto dto = getRoomsFromApi("2030473898");
-        RoomsDto dto = getRoomsFromApi(roomsEtag);
+        String etag = getRoomsEtag();
+
+        RoomsDto dto = getRoomsFromApi(etag);
         List<Room> rooms;
         if (Objects.nonNull(dto)) {
             rooms = processRooms(dto);
@@ -85,31 +78,42 @@ public class DevoxxConsumer {
         }
         processSchedules(rooms);
         fillSettings();
+
+        LOGGER.info("Done");
     }
 
     private void fillSettings() {
-        settingsService.save(new Settings("minutesBeforeNextSession", minutesBeforeNextSession));
-        settingsService.save(new Settings("isRoomOccupancyOn", isRoomOccupancyOn));
+        settingsService.save(new Settings("minutesBeforeNextSession", String.valueOf(settingsProperties.getMinutesBeforeNextSession())));
+        settingsService.save(new Settings("isRoomOccupancyOn", String.valueOf(settingsProperties.getQueryRateInMilliseconds())));
     }
 
     private RoomsDto getRoomsFromApi(String etag) throws IOException {
-        String url = apiUrl + roomsUrl;
+        String url = apiProperties.getBaseUrl() + apiProperties.getRooms();
         ApiResponse response = apiHelper.queryApi(url, etag, RoomsDto.class);
         saveRoomsEtag(response.getETag());
         return (RoomsDto) response.getBody();
     }
 
     private RoomScheduleResponse getRoomScheduleFromApi(String roomId, String etag, DayOfWeek day) throws IOException {
-        String url = apiUrl + roomsUrl + roomId + "/" + day.name().toLowerCase();
+        String url = apiProperties.getBaseUrl() + apiProperties.getRooms() + roomId + "/" + day.name().toLowerCase();
         ApiResponse response = apiHelper.queryApi(url, etag, ScheduleDto.class);
 
         return new RoomScheduleResponse(response.getETag(), (ScheduleDto) response.getBody());
     }
 
     private SpeakerResponse getSpeakerFromApi(String uuid, String etag) throws IOException {
-        String url = apiUrl + speakerUrl + uuid;
+        String url = apiProperties.getBaseUrl() + apiProperties.getSpeaker() + uuid;
         ApiResponse response = apiHelper.queryApi(url, etag, SpeakerInformationDto.class);
         return new SpeakerResponse(response.getETag(), (SpeakerInformationDto) response.getBody());
+    }
+
+    private String getRoomsEtag() {
+        Optional<Settings> etagSetting = settingsService.loadByKey("roomsEtag");
+
+        if (etagSetting.isPresent()) {
+            return etagSetting.get().getValue();
+        }
+        return "";
     }
 
     private void saveRoomsEtag(String etag) {
@@ -134,25 +138,26 @@ public class DevoxxConsumer {
     }
 
     private void createScheduleForRoomForDay(Room room, DayOfWeek day) throws IOException {
-        RoomScheduleResponse response = getRoomScheduleFromApi(room.getId(), room.getEtag(), day);
-        ScheduleDto scheduleDto = response.getSchedule();
-        saveRoomEtag(response.getEtag(), room);
+        List<RoomSchedule> schedules = roomScheduleService.loadByDayAndRoomId(day, room.getId());
+        String etag = "";
+        if (schedules.size() > 0) {
+            etag = schedules.get(0).getEtag();
+        }
 
-        if (scheduleDto.getSlots().size() > 0) {
+        RoomScheduleResponse response = getRoomScheduleFromApi(room.getId(), etag, day);
+        ScheduleDto scheduleDto = response.getSchedule();
+
+        if (Objects.nonNull(scheduleDto) && scheduleDto.getSlots().size() > 0) {
             Schedule schedule = createSchedule(scheduleDto, day);
             List<Talk> talks = processTalks(scheduleDto.getSlots());
-            createRoomSchedule(schedule, room, talks);
+            createRoomSchedule(schedule, room, talks, response.getEtag());
         }
     }
 
-    private void saveRoomEtag(String etag, Room room) {
-        room.setEtag(etag);
-        roomService.save(room);
-    }
-
-    private void createRoomSchedule(Schedule schedule, Room room, List<Talk> talks) {
+    private void createRoomSchedule(Schedule schedule, Room room, List<Talk> talks, String etag) {
         RoomSchedule roomSchedule = new RoomSchedule(new RoomScheduleId(schedule, room));
         RoomSchedule roomScheduleWithTalks = addTalksToRoomSchedule(roomSchedule, talks);
+        roomScheduleWithTalks.setEtag(etag);
         roomScheduleService.save(roomScheduleWithTalks);
     }
 
@@ -172,17 +177,22 @@ public class DevoxxConsumer {
         List<Talk> talks = new ArrayList<>();
         if (Objects.nonNull(slotDtoList)) {
             for (SlotDto slotDto : slotDtoList) {
-                Talk t = getTalkFromSlot(slotDto);
-                talkService.save(t);
-                talks.add(t);
+                Optional<Talk> t = getTalkFromSlot(slotDto);
+                if (t.isPresent()) {
+                    talkService.save(t.get());
+                    talks.add(t.get());
+                }
             }
         }
         return talks;
     }
 
-    private Talk getTalkFromSlot(SlotDto slot) throws IOException {
-        List<Speaker> speakers = getSpeakersForTalk(slot.getTalk().getSpeakers());
-        return modelConverter.convertTalk(slot, speakers);
+    private Optional<Talk> getTalkFromSlot(SlotDto slot) throws IOException {
+        if (Objects.nonNull(slot.getTalk())) {
+            List<Speaker> speakers = getSpeakersForTalk(slot.getTalk().getSpeakers());
+            return Optional.of(modelConverter.convertTalk(slot, speakers));
+        }
+        return Optional.empty();
     }
 
     private List<Speaker> getSpeakersForTalk(List<SpeakerDto> speakerList) throws IOException {
@@ -206,11 +216,10 @@ public class DevoxxConsumer {
 
     private String getSpeakerEtag(String uuid) {
         Optional<Speaker> optionalSpeaker = speakerService.loadById(uuid);
-        String etag = "";
         if (optionalSpeaker.isPresent()) {
-            etag = optionalSpeaker.get().getEtag();
+            return optionalSpeaker.get().getEtag();
         }
-        return etag;
+        return "";
     }
 
     private RoomSchedule addTalksToRoomSchedule(RoomSchedule roomSchedule, List<Talk> talks) {

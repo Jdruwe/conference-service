@@ -29,15 +29,13 @@ public class ApiCallHelper {
         RestTemplate restTemplate = new RestTemplate();
 
         HttpHeaders headers = new HttpHeaders();
-        if (!etag.equals("")) {
+        if (Objects.nonNull(etag) && !etag.equals("")) {
             headers.setIfNoneMatch(etag);
         }
         HttpEntity<String> entity = new HttpEntity<>("parameters", headers);
         ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, entity, String.class);
 
-        LOGGER.error(response.getHeaders().toString());
-        LOGGER.error(String.valueOf(response.getStatusCodeValue()));
-        LOGGER.error(response.getBody());
+        LOGGER.error(response.getStatusCodeValue() + url);
 
         String responseBody = response.getBody();
         T mappedBody = null;
