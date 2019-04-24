@@ -1,0 +1,11 @@
+image: gradle:jre11-slim
+
+stages:
+    - build
+
+#build:
+#    stage: build
+#    script: ./gradlew clean build
+#    artifacts:
+#        paths:
+#            - build/libs/*.jar
