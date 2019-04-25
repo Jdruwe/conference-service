@@ -59,7 +59,12 @@ public class ClientControllerTest {
 
     @Before
     public void setUp() {
-        room = new Room("testRoom", "Test room", 850, "setup");
+        room = Room.builder()
+                .id("testRoom")
+                .name("Test room")
+                .capacity(850)
+                .setup("setup")
+                .build();
         roomService.save(room);
         Date registeredDate = new Date();
         clientInfoDto = new ClientInfoDto(room, registeredDate);
