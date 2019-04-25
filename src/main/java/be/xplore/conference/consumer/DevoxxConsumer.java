@@ -15,6 +15,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -56,9 +57,13 @@ public class DevoxxConsumer {
         List<Room> rooms = fillRooms(dto);
         scheduleProcessor.process(rooms);
 
-        fillSettings();
-
         LOGGER.info("Done");
+    }
+
+    @PostConstruct
+    private void fillSettings() {
+        settingsService.save(new Settings("minutesBeforeNextSession", String.valueOf(settingsProperties.getMinutesBeforeNextSession())));
+        settingsService.save(new Settings("isRoomOccupancyOn", String.valueOf(settingsProperties.getIsRoomOccupancyOn())));
     }
 
     private RoomsDto getRoomsFromApi(String etag) {
@@ -69,11 +74,6 @@ public class DevoxxConsumer {
 
     private List<Room> fillRooms(RoomsDto dto) {
         return Objects.nonNull(dto) ? roomProcessor.process(dto) : roomService.loadAll();
-    }
-
-    private void fillSettings() {
-        settingsService.save(new Settings("minutesBeforeNextSession", String.valueOf(settingsProperties.getMinutesBeforeNextSession())));
-        settingsService.save(new Settings("isRoomOccupancyOn", String.valueOf(settingsProperties.getQueryRateInMilliseconds())));
     }
 
     private String getRoomsEtag() {

@@ -11,6 +11,6 @@ import org.springframework.context.annotation.PropertySource;
 @ConfigurationProperties(prefix = "settings")
 public class SettingsProperties {
     private int minutesBeforeNextSession;
-    private boolean isRoomOccupancyOn;
+    private Boolean isRoomOccupancyOn;
     private long queryRateInMilliseconds;
 }
