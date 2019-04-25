@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Data
 @NoArgsConstructor
@@ -13,5 +13,5 @@ import java.util.Date;
 public class ClientDto {
     private int id;
     private Room room;
-    private Date lastConnected;
+    private LocalDateTime lastConnected;
 }

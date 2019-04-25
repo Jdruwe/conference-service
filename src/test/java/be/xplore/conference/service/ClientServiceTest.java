@@ -13,7 +13,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -31,17 +31,17 @@ public class ClientServiceTest {
     private RoomService roomService;
 
     private Room room;
-    private Date date;
+    private LocalDateTime date;
 
     @Before
     public void setUp() {
+        date = LocalDateTime.now();
         room = Room.builder()
                 .id("testRoom")
                 .name("Test room")
                 .capacity(850)
                 .setup("setup")
                 .build();
-        date = new Date();
         roomService.save(room);
     }
 
@@ -110,7 +110,7 @@ public class ClientServiceTest {
         //waiting to get time difference
         Thread.sleep(2000);
         Client client1 = clientService.save(client);
-        Date newDate = new Date();
+        LocalDateTime newDate = LocalDateTime.now();
         Client updatedClient = clientService.updateLastConnectedTime(client1.getId(), newDate);
         assertEquals(updatedClient.getLastConnected(), newDate);
         assertNotEquals(updatedClient.getLastConnected(), date);
