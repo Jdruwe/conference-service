@@ -24,7 +24,7 @@ public class ClientService {
     }
 
     public Client save(Client client) throws RoomAlreadyRegisteredException, RoomNotFoundException {
-        Room room = roomService.loadRoomById(client.getRoom().getId());
+        Room room = roomService.loadById(client.getRoom().getId()).orElseThrow(() -> new RoomNotFoundException("No room found!"));
         client.setRoom(room);
         if (repo.findClientById(client.getId()).isEmpty()) {
             return repo.save(client);

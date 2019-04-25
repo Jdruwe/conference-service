@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Transactional
@@ -25,7 +26,7 @@ public class SettingsService {
         return repo.findAll();
     }
 
-    public Settings loadByKey(String key) {
+    public Optional<Settings> loadByKey(String key) {
         return repo.findByKey(key);
     }
 }
