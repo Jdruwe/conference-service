@@ -1,7 +1,4 @@
-package be.xplore.conference.excpetion;
+package be.xplore.conference.exception;
 
-public class RoomNotFoundException extends Exception {
-    public RoomNotFoundException(String message){
-        super(message);
-    }
+public class RoomNotFoundException extends AbstractNotFoundException {
 }

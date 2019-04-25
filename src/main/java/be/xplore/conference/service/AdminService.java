@@ -30,7 +30,6 @@ public class AdminService implements UserDetailsService {
         return repo.save(admin);
     }
 
-
     @Override
     public UserDetails loadUserByUsername(String AdminNameOrEmail) throws UsernameNotFoundException {
         Admin admin = repo.findByAdminNameOrEmail(AdminNameOrEmail).orElseThrow(() -> new UsernameNotFoundException("No admins with that name or email were found."));
