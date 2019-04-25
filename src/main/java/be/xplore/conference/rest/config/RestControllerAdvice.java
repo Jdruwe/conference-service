@@ -1,9 +1,9 @@
 package be.xplore.conference.rest.config;
 
-import be.xplore.conference.excpetion.AdminNameAlreadyExistsException;
-import be.xplore.conference.excpetion.EmailAlreadyExistsException;
+import be.xplore.conference.exception.AdminNameAlreadyExistsException;
+import be.xplore.conference.exception.EmailAlreadyExistsException;
+import be.xplore.conference.exception.RoomScheduleNotFoundException;
 import be.xplore.conference.excpetion.RoomAlreadyRegisteredException;
-import be.xplore.conference.excpetion.RoomScheduleNotFoundException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

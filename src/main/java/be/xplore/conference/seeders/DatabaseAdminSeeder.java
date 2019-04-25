@@ -1,7 +1,7 @@
 package be.xplore.conference.seeders;
 
-import be.xplore.conference.excpetion.AdminNameAlreadyExistsException;
-import be.xplore.conference.excpetion.EmailAlreadyExistsException;
+import be.xplore.conference.exception.AdminNameAlreadyExistsException;
+import be.xplore.conference.exception.EmailAlreadyExistsException;
 import be.xplore.conference.model.Admin;
 import be.xplore.conference.service.AdminService;
 import org.springframework.stereotype.Component;

@@ -1,6 +1,6 @@
 package be.xplore.conference.service;
 
-import be.xplore.conference.excpetion.RoomScheduleNotFoundException;
+import be.xplore.conference.exception.RoomScheduleNotFoundException;
 import be.xplore.conference.model.RoomSchedule;
 import org.junit.Assert;
 import org.junit.Test;

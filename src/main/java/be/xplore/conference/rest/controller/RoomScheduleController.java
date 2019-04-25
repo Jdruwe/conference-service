@@ -1,6 +1,6 @@
 package be.xplore.conference.rest.controller;
 
-import be.xplore.conference.excpetion.RoomScheduleNotFoundException;
+import be.xplore.conference.exception.RoomScheduleNotFoundException;
 import be.xplore.conference.model.Room;
 import be.xplore.conference.model.RoomSchedule;
 import be.xplore.conference.model.Schedule;
