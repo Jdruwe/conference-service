@@ -1,6 +1,7 @@
 package be.xplore.conference.model;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -9,6 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
 @Data
+@Builder
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
@@ -22,10 +24,4 @@ public class Room {
     @OneToOne
     private RoomSchedule roomSchedule;
 
-    public Room(String id, String name, int capacity, String setup) {
-        this.id = id;
-        this.name = name;
-        this.capacity = capacity;
-        this.setup = setup;
-    }
 }

@@ -35,8 +35,13 @@ public class ClientServiceTest {
 
     @Before
     public void setUp() {
-        room = new Room("testRoom", "Test room", 850, "setup");
         date = LocalDateTime.now();
+        room = Room.builder()
+                .id("testRoom")
+                .name("Test room")
+                .capacity(850)
+                .setup("setup")
+                .build();
         roomService.save(room);
     }
 
@@ -50,7 +55,12 @@ public class ClientServiceTest {
 
     @Test(expected = RoomNotFoundException.class)
     public void testRegisterThrowsExceptionRoomNotFoundException() throws RoomAlreadyRegisteredException, RoomNotFoundException {
-        Room emptyRoom = new Room("doesNotExist", "doesNotExist", 1, "...");
+        Room emptyRoom = Room.builder()
+                .id("doesNotExist")
+                .name("doesNotExist")
+                .capacity(1)
+                .setup("...")
+                .build();
         Client client = new Client(emptyRoom, date);
         clientService.save(client);
     }
@@ -84,7 +94,12 @@ public class ClientServiceTest {
     @Test(expected = RoomNotFoundException.class)
     public void testUpdateLastConnectedTimeThrowsExceptionRoomNotFoundException() throws RoomAlreadyRegisteredException, RoomNotFoundException {
         Client client = new Client(
-                new Room("doesNotExist", "doesNotExist", 1, "..."),
+                Room.builder()
+                        .id("doesNotExist")
+                        .name("doesNotExist")
+                        .capacity(1)
+                        .setup("...")
+                        .build(),
                 date);
         clientService.save(client);
     }

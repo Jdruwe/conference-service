@@ -10,7 +10,12 @@ public class RoomConverter {
     public static List<Room> toRooms(RoomsDto roomsDto) {
         return roomsDto.getRooms()
                 .stream()
-                .map(dto -> new Room(dto.getId(), dto.getName(), dto.getCapacity(), dto.getSetup()))
-                .collect(Collectors.toList());
+                .map(dto -> Room.builder()
+                        .id(dto.getId())
+                        .name(dto.getName())
+                        .capacity(dto.getCapacity())
+                        .setup(dto.getSetup())
+                        .build()
+                ).collect(Collectors.toList());
     }
 }
