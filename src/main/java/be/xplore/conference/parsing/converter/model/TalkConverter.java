@@ -5,14 +5,18 @@ import be.xplore.conference.consumer.dto.TalkDto;
 import be.xplore.conference.model.Speaker;
 import be.xplore.conference.model.Talk;
 
-import java.util.Date;
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.List;
 
 public class TalkConverter {
     public static Talk toTalk(SlotDto slotDto, List<Speaker> speakers) {
         TalkDto talkDto = slotDto.getTalk();
-        Date startTime = new Date(slotDto.getFromTimeMillis());
-        Date endTime = new Date(slotDto.getToTimeMillis());
+        LocalDateTime startTime =
+                LocalDateTime.ofInstant(Instant.ofEpochMilli(slotDto.getFromTimeMillis()), ZoneId.systemDefault());
+        LocalDateTime endTime =
+                LocalDateTime.ofInstant(Instant.ofEpochMilli(slotDto.getToTimeMillis()), ZoneId.systemDefault());
         return Talk.builder()
                 .id(talkDto.getId())
                 .startTime(startTime)
