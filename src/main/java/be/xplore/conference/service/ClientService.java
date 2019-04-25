@@ -8,7 +8,7 @@ import be.xplore.conference.persistence.ClientRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -42,7 +42,7 @@ public class ClientService {
         return this.repo.findAll();
     }
 
-    public Client updateLastConnectedTime(int id, Date newDate) throws RoomNotFoundException {
+    public Client updateLastConnectedTime(int id, LocalDateTime newDate) throws RoomNotFoundException {
         Client client = this.repo.findClientById(id).orElseThrow(() -> new RoomNotFoundException("No client found!"));
         client.setLastConnected(newDate);
         client = this.repo.save(client);

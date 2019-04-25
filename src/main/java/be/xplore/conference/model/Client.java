@@ -8,7 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Data
 @Entity
@@ -20,9 +20,9 @@ public class Client {
     private int id;
     @ManyToOne
     private Room room;
-    private Date lastConnected;
+    private LocalDateTime lastConnected;
 
-    public Client(Room room, Date lastConnected) {
+    public Client(Room room, LocalDateTime lastConnected) {
         this.room = room;
         this.lastConnected = lastConnected;
     }

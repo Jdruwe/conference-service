@@ -24,7 +24,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
@@ -53,17 +53,15 @@ public class ClientControllerTest {
     @Autowired
     private ClientService clientService;
 
-    private Room room;
     private ClientInfoDto clientInfoDto;
     private Client savedClient;
 
     @Before
     public void setUp() {
-        room = new Room("testRoom", "Test room", 850, "setup");
+        Room room = new Room("testRoom", "Test room", 850, "setup");
         roomService.save(room);
-        Date registeredDate = new Date();
+        LocalDateTime registeredDate = LocalDateTime.now();
         clientInfoDto = new ClientInfoDto(room, registeredDate);
-
     }
 
     @Test
@@ -98,7 +96,7 @@ public class ClientControllerTest {
 
     @Test
     public void testUpdateHeartbeat() throws Exception {
-        Date newDate = new Date();
+        LocalDateTime newDate = LocalDateTime.now();
         registerClientForTesting();
         ClientHeartbeatDto clientHeartbeatDto = new ClientHeartbeatDto(savedClient.getId(), newDate);
         mockMvc.perform(patch("/api/client")
@@ -106,7 +104,11 @@ public class ClientControllerTest {
                 .content(objectMapper.writeValueAsString(clientHeartbeatDto)))
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("testRoom")))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.lastConnected").value(newDate));
+                .andExpect(MockMvcResultMatchers.jsonPath("$.lastConnected[0]").value(newDate.getYear()))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.lastConnected[1]").value(newDate.getMonthValue()))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.lastConnected[2]").value(newDate.getDayOfMonth()))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.lastConnected[3]").value(newDate.getHour()))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.lastConnected[4]").value(newDate.getMinute()));
     }
 
     @Test
