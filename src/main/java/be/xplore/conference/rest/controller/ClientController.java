@@ -41,7 +41,6 @@ public class ClientController {
     @DeleteMapping
     public ResponseEntity<Integer> unRegisterClient(@RequestParam int id) {
         List<Client> client = this.clientService.loadAll();
-        log.info(String.valueOf(client.size()));
         int result = this.clientService.delete(id);
         return new ResponseEntity<>(result, HttpStatus.OK);
     }
