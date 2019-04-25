@@ -1,4 +1,4 @@
-package be.xplore.conference.consumer.helper.dto;
+package be.xplore.conference.consumer.api.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
