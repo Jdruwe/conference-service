@@ -5,16 +5,15 @@ import be.xplore.conference.consumer.api.dto.RoomScheduleResponse;
 import be.xplore.conference.consumer.api.dto.SpeakerResponse;
 import be.xplore.conference.consumer.dto.ScheduleDto;
 import be.xplore.conference.model.*;
-import be.xplore.conference.parsing.ModelConverter;
+import be.xplore.conference.parsing.converter.model.ScheduleConverter;
+import be.xplore.conference.parsing.converter.util.MillisConverter;
 import be.xplore.conference.service.RoomScheduleService;
 import be.xplore.conference.service.ScheduleService;
 import be.xplore.conference.service.SpeakerService;
 import be.xplore.conference.service.TalkService;
 import org.springframework.stereotype.Component;
 
-import java.time.Instant;
 import java.time.LocalDate;
-import java.time.ZoneId;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
@@ -30,7 +29,6 @@ public class ScheduleProcessor {
 
     private final TalkProcessor talkProcessor;
 
-    private final ModelConverter modelConverter;
     private final ApiCaller apiCaller;
 
     public ScheduleProcessor(RoomScheduleService roomScheduleService,
@@ -38,14 +36,12 @@ public class ScheduleProcessor {
                              TalkService talkService,
                              SpeakerService speakerService,
                              TalkProcessor talkProcessor,
-                             ModelConverter modelConverter,
                              ApiCaller apiCaller) {
         this.roomScheduleService = roomScheduleService;
         this.scheduleService = scheduleService;
         this.talkService = talkService;
         this.speakerService = speakerService;
         this.talkProcessor = talkProcessor;
-        this.modelConverter = modelConverter;
         this.apiCaller = apiCaller;
     }
 
@@ -134,7 +130,7 @@ public class ScheduleProcessor {
         if (optionalSchedule.isPresent()) {
             return optionalSchedule.get();
         } else {
-            Schedule schedule = modelConverter.convertSchedule(date, day);
+            Schedule schedule = ScheduleConverter.toSchedule(date, day);
             return scheduleService.save(schedule);
         }
     }
@@ -152,12 +148,6 @@ public class ScheduleProcessor {
 
     private LocalDate getStartDate(ScheduleDto scheduleDto) {
         long startTimeMillis = scheduleDto.getSlots().get(0).getFromTimeMillis();
-        return convertMillisToDate(startTimeMillis);
-    }
-
-    private LocalDate convertMillisToDate(long millis) {
-        return Instant.ofEpochMilli(millis)
-                .atZone(ZoneId.systemDefault())
-                .toLocalDate();
+        return MillisConverter.toDate(startTimeMillis);
     }
 }

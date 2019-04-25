@@ -3,7 +3,7 @@ package be.xplore.conference.consumer.processor;
 import be.xplore.conference.consumer.dto.SlotDto;
 import be.xplore.conference.model.Speaker;
 import be.xplore.conference.model.Talk;
-import be.xplore.conference.parsing.ModelConverter;
+import be.xplore.conference.parsing.converter.model.TalkConverter;
 import be.xplore.conference.service.TalkService;
 import org.springframework.stereotype.Component;
 
@@ -18,14 +18,11 @@ public class TalkProcessor {
 
     private final TalkService talkService;
 
-    private final ModelConverter modelConverter;
     private final SpeakerProcessor speakerProcessor;
 
     public TalkProcessor(TalkService talkService,
-                         ModelConverter modelConverter,
                          SpeakerProcessor speakerProcessor) {
         this.talkService = talkService;
-        this.modelConverter = modelConverter;
         this.speakerProcessor = speakerProcessor;
     }
 
@@ -49,7 +46,7 @@ public class TalkProcessor {
     private Optional<Talk> getTalkFromSlot(SlotDto slot) {
         if (Objects.nonNull(slot.getTalk())) {
             List<Speaker> speakers = speakerProcessor.generateForTalk(slot.getTalk().getSpeakers());
-            return Optional.of(modelConverter.convertTalk(slot, speakers));
+            return Optional.of(TalkConverter.toTalk(slot, speakers));
         }
         return Optional.empty();
     }

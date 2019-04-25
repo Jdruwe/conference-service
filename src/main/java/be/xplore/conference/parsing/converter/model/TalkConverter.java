@@ -1,31 +1,15 @@
-package be.xplore.conference.parsing;
+package be.xplore.conference.parsing.converter.model;
 
-import be.xplore.conference.consumer.dto.RoomsDto;
 import be.xplore.conference.consumer.dto.SlotDto;
 import be.xplore.conference.consumer.dto.TalkDto;
-import be.xplore.conference.model.*;
-import org.springframework.stereotype.Component;
+import be.xplore.conference.model.Speaker;
+import be.xplore.conference.model.Talk;
 
-import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
-import java.util.stream.Collectors;
 
-@Component
-public class ModelConverter {
-
-    public List<Room> convertToRooms(RoomsDto roomsDto) {
-        return roomsDto.getRooms()
-                .stream()
-                .map(dto -> new Room(dto.getId(), dto.getName(), dto.getCapacity(), dto.getSetup()))
-                .collect(Collectors.toList());
-    }
-
-    public Schedule convertSchedule(LocalDate date, DayOfWeek dayOfWeek) {
-        return new Schedule(date, dayOfWeek);
-    }
-
-    public Talk convertTalk(SlotDto slotDto, List<Speaker> speakers) {
+public class TalkConverter {
+    public static Talk toTalk(SlotDto slotDto, List<Speaker> speakers) {
         TalkDto talkDto = slotDto.getTalk();
         Date startTime = new Date(slotDto.getFromTimeMillis());
         Date endTime = new Date(slotDto.getToTimeMillis());
