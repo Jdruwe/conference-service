@@ -4,11 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
+import org.hibernate.validator.constraints.UniqueElements;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -20,6 +18,7 @@ import java.util.List;
 public class Schedule {
     @Id
     private LocalDate date;
+    @Column(unique = true)
     private DayOfWeek day;
 
     @ManyToMany

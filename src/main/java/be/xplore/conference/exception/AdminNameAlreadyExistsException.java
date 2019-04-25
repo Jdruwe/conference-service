@@ -1,6 +1,6 @@
 package be.xplore.conference.exception;
 
-public class AdminNameAlreadyExistsException extends Exception {
+public class AdminNameAlreadyExistsException extends RuntimeException {
     public AdminNameAlreadyExistsException(String message){
         super(message);
     }

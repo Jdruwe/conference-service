@@ -3,6 +3,7 @@ package be.xplore.conference.rest.config;
 import be.xplore.conference.exception.AdminNameAlreadyExistsException;
 import be.xplore.conference.exception.EmailAlreadyExistsException;
 import be.xplore.conference.exception.RoomScheduleNotFoundException;
+import be.xplore.conference.excpetion.RoomAlreadyRegisteredException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -31,6 +32,11 @@ public class RestControllerAdvice extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(value = {AdminNameAlreadyExistsException.class})
     public ResponseEntity<?> handleAdminNameAlreadyExistsException(AdminNameAlreadyExistsException ex, WebRequest request) {
+        return handleExceptionInternal(ex, ex.getMessage(), new HttpHeaders(), HttpStatus.CONFLICT, request);
+    }
+
+    @ExceptionHandler(value = {RoomAlreadyRegisteredException.class})
+    public ResponseEntity<?> RoomAlreadyRegisteredException(RoomAlreadyRegisteredException ex, WebRequest request) {
         return handleExceptionInternal(ex, ex.getMessage(), new HttpHeaders(), HttpStatus.CONFLICT, request);
     }
 }

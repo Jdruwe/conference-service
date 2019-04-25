@@ -17,6 +17,7 @@ public class RoomSchedule {
 
     @EmbeddedId
     private RoomScheduleId id;
+    private String etag;
 
     @OneToMany
     private List<Talk> talks;

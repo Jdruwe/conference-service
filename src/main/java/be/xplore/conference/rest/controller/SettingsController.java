@@ -20,22 +20,24 @@ public class SettingsController {
         this.settingsService = settingsService;
     }
 
+    // todo fix optionals get
     @GetMapping
     public ResponseEntity<SettingsDto> getSettings() {
         SettingsDto settingsDto = SettingsDto.builder()
-                .minutesBeforeNextSession(Integer.parseInt(settingsService.loadByKey(MINUTES_BEFORE_NEXT_SESSION).getValue()))
-                .isRoomOccupancyOn(Boolean.parseBoolean(settingsService.loadByKey(IS_ROOM_OCCUPANCY_ON).getValue()))
+                .minutesBeforeNextSession(Integer.parseInt(settingsService.loadByKey(MINUTES_BEFORE_NEXT_SESSION).get().getValue()))
+                .isRoomOccupancyOn(Boolean.parseBoolean(settingsService.loadByKey(IS_ROOM_OCCUPANCY_ON).get().getValue()))
                 .build();
         return new ResponseEntity<>(settingsDto, HttpStatus.OK);
     }
 
     //TODO beautify
+    // todo fix optionals get
     @PutMapping
     public ResponseEntity<ChangeSettingsDto> changeSettings(@RequestBody ChangeSettingsDto changeSettingsDto) {
-        Settings settings = settingsService.loadByKey(MINUTES_BEFORE_NEXT_SESSION);
+        Settings settings = settingsService.loadByKey(MINUTES_BEFORE_NEXT_SESSION).get();
         settings.setValue(String.valueOf(changeSettingsDto.getMinutesBeforeNextSession()));
         settingsService.save(settings);
-        settings = settingsService.loadByKey(IS_ROOM_OCCUPANCY_ON);
+        settings = settingsService.loadByKey(IS_ROOM_OCCUPANCY_ON).get();
         settings.setValue(String.valueOf(changeSettingsDto.isRoomOccupancyOn()));
         settingsService.save(settings);
         return new ResponseEntity<>(changeSettingsDto, HttpStatus.OK);
