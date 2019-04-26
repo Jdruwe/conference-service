@@ -1,7 +1,6 @@
 package be.xplore.conference.rest.controller;
 
-import be.xplore.conference.excpetion.RoomAlreadyRegisteredException;
-import be.xplore.conference.excpetion.RoomNotFoundException;
+import be.xplore.conference.exception.RoomNotFoundException;
 import be.xplore.conference.model.Client;
 import be.xplore.conference.rest.dto.ClientDto;
 import be.xplore.conference.rest.dto.ClientHeartbeatDto;
@@ -32,7 +31,7 @@ public class ClientController {
     private static final Logger log = LoggerFactory.getLogger(ClientController.class);
 
     @PostMapping
-    public ResponseEntity<ClientDto> registerClient(@RequestBody ClientInfoDto clientInfoDto) throws RoomAlreadyRegisteredException, RoomNotFoundException {
+    public ResponseEntity<ClientDto> registerClient(@RequestBody ClientInfoDto clientInfoDto) throws RoomNotFoundException {
         Client client = new Client(clientInfoDto.getRoom(), clientInfoDto.getLastConnected());
         this.clientService.save(client);
         return new ResponseEntity<>(modelMapper.map(client, ClientDto.class), HttpStatus.CREATED);
