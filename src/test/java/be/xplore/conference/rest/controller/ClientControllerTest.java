@@ -109,11 +109,7 @@ public class ClientControllerTest {
                 .content(objectMapper.writeValueAsString(clientHeartbeatDto)))
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("testRoom")))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.lastConnected[0]").value(newDate.getYear()))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.lastConnected[1]").value(newDate.getMonthValue()))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.lastConnected[2]").value(newDate.getDayOfMonth()))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.lastConnected[3]").value(newDate.getHour()))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.lastConnected[4]").value(newDate.getMinute()));
+                .andExpect(MockMvcResultMatchers.jsonPath("$.lastConnected").value(newDate.toString()));
     }
 
     @Test
