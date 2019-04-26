@@ -27,7 +27,7 @@ public class ClientScheduler {
     }
 
     //every 30 minutes 180000
-    @Scheduled(fixedRate = 180000)
+    @Scheduled(fixedRate = 1000)
     private void checkStatusClientsAndSendMail() {
         List<Client> currentClients = clientService.loadAll();
         if (currentClients.size() != 0 && offlineClients != null) {
@@ -43,7 +43,7 @@ public class ClientScheduler {
     private List<Client> checkAllClientsConnectivity(List<Client> currentClients) {
         return currentClients
                 .stream()
-                .filter( c -> ChronoUnit.MILLIS.between(LocalDateTime.now(),  c.getLastConnected()) > 180000)
+                .filter( c -> ChronoUnit.MILLIS.between(LocalDateTime.now(),  c.getLastConnected()) > 1000)
                 .collect(Collectors.toList());
     }
 

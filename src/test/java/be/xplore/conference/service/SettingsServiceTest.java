@@ -32,8 +32,8 @@ public class SettingsServiceTest {
     public void testLoadAll() {
         List<Settings> settingsList = settingsService.loadAll();
         Assert.assertNotNull(settingsList);
-        Assert.assertEquals(4, settingsList.size());
-        Assert.assertTrue(settingsList.get(3).getValue().contains("Test"));
+        Assert.assertEquals(3, settingsList.size());
+        Assert.assertTrue(settingsList.get(2).getValue().contains("Test"));
     }
 
     @Test
@@ -41,7 +41,7 @@ public class SettingsServiceTest {
         settingsService.save(new Settings("testSaveSetting","testSaveSetting"));
         List<Settings> settingsList = settingsService.loadAll();
         Assert.assertNotNull(settingsList);
-        Assert.assertEquals(5, settingsList.size());
-        Assert.assertTrue(settingsList.get(4).getValue().contains("testSaveSetting"));
+        Assert.assertEquals(4, settingsList.size());
+        Assert.assertTrue(settingsList.get(3).getValue().contains("testSaveSetting"));
     }
 }
