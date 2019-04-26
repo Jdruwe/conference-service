@@ -14,8 +14,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Component
-public class ClientCheckerScheduler {
-    private static final Logger log = LoggerFactory.getLogger(ClientCheckerScheduler.class);
+public class ClientScheduler {
 
     private ClientService clientService;
     private EmailSender emailSender;
@@ -23,19 +22,21 @@ public class ClientCheckerScheduler {
     private List<Client> offlineClients = new ArrayList<>();
 
 
-    public ClientCheckerScheduler(ClientService clientService, EmailSender emailSender) {
+    public ClientScheduler(ClientService clientService, EmailSender emailSender) {
         this.clientService = clientService;
         this.emailSender = emailSender;
     }
 
-    //every 30 minutes 180 000
+    //every 30 minutes 180000
     @Scheduled(fixedRate = 180000)
     private void checkStatusClientsAndSendMail() {
         List<Client> currentClients = clientService.loadAll();
         if (currentClients.size() != 0 && offlineClients != null) {
             List<Client> checkedAllClientsOnConnectivity = checkAllClientsConnectivity(currentClients);
             offlineClients = updateOfflineClients(offlineClients, currentClients);
-            sendMail(getCurrentOfflineClients(offlineClients, checkedAllClientsOnConnectivity));
+            if(checkedAllClientsOnConnectivity.size() != 0){
+                sendMail(getCurrentOfflineClients(offlineClients, checkedAllClientsOnConnectivity));
+            }
         }
     }
 
@@ -71,7 +72,10 @@ public class ClientCheckerScheduler {
     }
 
     private void sendMail(List<Client> clients) {
-        emailSender.sendEmail(clients);
-        log.info("email send!");
+        emailSender.sendEmailForOfflineClients(clients);
+    }
+
+    public boolean wasClientOffline(Client clientToCheck){
+        return offlineClients.stream().anyMatch(c -> c.getId() == clientToCheck.getId());
     }
 }
