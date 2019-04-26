@@ -1,7 +1,6 @@
 package be.xplore.conference.exception;
 
 public abstract class AbstractNotFoundException extends RuntimeException {
-
     public AbstractNotFoundException() {
     }
 

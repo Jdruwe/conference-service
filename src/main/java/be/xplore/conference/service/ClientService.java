@@ -1,7 +1,7 @@
 package be.xplore.conference.service;
 
-import be.xplore.conference.excpetion.RoomAlreadyRegisteredException;
-import be.xplore.conference.excpetion.RoomNotFoundException;
+import be.xplore.conference.exception.RoomAlreadyRegisteredException;
+import be.xplore.conference.exception.RoomNotFoundException;
 import be.xplore.conference.model.Client;
 import be.xplore.conference.model.Room;
 import be.xplore.conference.persistence.ClientRepository;
