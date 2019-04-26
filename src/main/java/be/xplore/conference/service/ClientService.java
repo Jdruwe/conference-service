@@ -1,14 +1,14 @@
 package be.xplore.conference.service;
 
-import be.xplore.conference.excpetion.RoomAlreadyRegisteredException;
-import be.xplore.conference.excpetion.RoomNotFoundException;
+import be.xplore.conference.exception.RoomAlreadyRegisteredException;
+import be.xplore.conference.exception.RoomNotFoundException;
 import be.xplore.conference.model.Client;
 import be.xplore.conference.model.Room;
 import be.xplore.conference.persistence.ClientRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -24,7 +24,7 @@ public class ClientService {
     }
 
     public Client save(Client client) throws RoomAlreadyRegisteredException, RoomNotFoundException {
-        Room room = roomService.loadRoomById(client.getRoom().getId());
+        Room room = roomService.loadById(client.getRoom().getId()).orElseThrow(() -> new RoomNotFoundException("No room found!"));
         client.setRoom(room);
         if (repo.findClientById(client.getId()).isEmpty()) {
             return repo.save(client);
@@ -42,7 +42,7 @@ public class ClientService {
         return this.repo.findAll();
     }
 
-    public Client updateLastConnectedTime(int id, Date newDate) throws RoomNotFoundException {
+    public Client updateLastConnectedTime(int id, LocalDateTime newDate) throws RoomNotFoundException {
         Client client = this.repo.findClientById(id).orElseThrow(() -> new RoomNotFoundException("No client found!"));
         client.setLastConnected(newDate);
         client = this.repo.save(client);

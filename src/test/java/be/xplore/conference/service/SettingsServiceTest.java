@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -16,6 +17,7 @@ import java.util.List;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @Transactional
+@ActiveProfiles("test")
 public class SettingsServiceTest {
     @Autowired
     SettingsService settingsService;
@@ -30,8 +32,8 @@ public class SettingsServiceTest {
     public void testLoadAll() {
         List<Settings> settingsList = settingsService.loadAll();
         Assert.assertNotNull(settingsList);
-        Assert.assertEquals(3, settingsList.size());
-        Assert.assertTrue(settingsList.get(2).getValue().contains("Test"));
+        Assert.assertEquals(4, settingsList.size());
+        Assert.assertTrue(settingsList.get(3).getValue().contains("Test"));
     }
 
     @Test
@@ -39,7 +41,7 @@ public class SettingsServiceTest {
         settingsService.save(new Settings("testSaveSetting","testSaveSetting"));
         List<Settings> settingsList = settingsService.loadAll();
         Assert.assertNotNull(settingsList);
-        Assert.assertEquals(4, settingsList.size());
-        Assert.assertTrue(settingsList.get(3).getValue().contains("testSaveSetting"));
+        Assert.assertEquals(5, settingsList.size());
+        Assert.assertTrue(settingsList.get(4).getValue().contains("testSaveSetting"));
     }
 }

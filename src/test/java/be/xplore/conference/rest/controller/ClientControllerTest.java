@@ -1,7 +1,7 @@
 package be.xplore.conference.rest.controller;
 
-import be.xplore.conference.excpetion.RoomAlreadyRegisteredException;
-import be.xplore.conference.excpetion.RoomNotFoundException;
+import be.xplore.conference.exception.RoomAlreadyRegisteredException;
+import be.xplore.conference.exception.RoomNotFoundException;
 import be.xplore.conference.model.Client;
 import be.xplore.conference.model.Room;
 import be.xplore.conference.rest.dto.ClientHeartbeatDto;
@@ -18,12 +18,13 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
@@ -34,6 +35,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @AutoConfigureMockMvc
 @Transactional
+@ActiveProfiles("test")
 public class ClientControllerTest {
 
     @Autowired
@@ -51,17 +53,20 @@ public class ClientControllerTest {
     @Autowired
     private ClientService clientService;
 
-    private Room room;
     private ClientInfoDto clientInfoDto;
     private Client savedClient;
 
     @Before
     public void setUp() {
-        room = new Room("testRoom", "Test room", 850, "setup");
+        Room room = Room.builder()
+                .id("testRoom")
+                .name("Test room")
+                .capacity(850)
+                .setup("setup")
+                .build();
         roomService.save(room);
-        Date registeredDate = new Date();
+        LocalDateTime registeredDate = LocalDateTime.now();
         clientInfoDto = new ClientInfoDto(room, registeredDate);
-
     }
 
     @Test
@@ -96,7 +101,7 @@ public class ClientControllerTest {
 
     @Test
     public void testUpdateHeartbeat() throws Exception {
-        Date newDate = new Date();
+        LocalDateTime newDate = LocalDateTime.of(2019,1,1,1,1,1,1);
         registerClientForTesting();
         ClientHeartbeatDto clientHeartbeatDto = new ClientHeartbeatDto(savedClient.getId(), newDate);
         mockMvc.perform(patch("/api/client")
@@ -104,7 +109,7 @@ public class ClientControllerTest {
                 .content(objectMapper.writeValueAsString(clientHeartbeatDto)))
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("testRoom")))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.lastConnected").value(newDate));
+                .andExpect(MockMvcResultMatchers.jsonPath("$.lastConnected").value(newDate.toString()));
     }
 
     @Test

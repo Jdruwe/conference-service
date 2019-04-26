@@ -1,7 +1,7 @@
 package be.xplore.conference.service;
 
-import be.xplore.conference.excpetion.AdminNameAlreadyExistsException;
-import be.xplore.conference.excpetion.EmailAlreadyExistsException;
+import be.xplore.conference.exception.AdminNameAlreadyExistsException;
+import be.xplore.conference.exception.EmailAlreadyExistsException;
 import be.xplore.conference.model.Admin;
 import be.xplore.conference.persistence.AdminRepository;
 import org.springframework.security.core.userdetails.User;
@@ -29,7 +29,6 @@ public class AdminService implements UserDetailsService {
     public Admin save(Admin admin) {
         return repo.save(admin);
     }
-
 
     @Override
     public UserDetails loadUserByUsername(String AdminNameOrEmail) throws UsernameNotFoundException {

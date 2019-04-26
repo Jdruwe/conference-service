@@ -3,13 +3,12 @@ package be.xplore.conference.schedulers;
 import be.xplore.conference.model.Client;
 import be.xplore.conference.notifications.EmailSender;
 import be.xplore.conference.service.ClientService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -34,32 +33,33 @@ public class ClientScheduler {
         if (currentClients.size() != 0 && offlineClients != null) {
             List<Client> checkedAllClientsOnConnectivity = checkAllClientsConnectivity(currentClients);
             offlineClients = updateOfflineClients(offlineClients, currentClients);
-            if(checkedAllClientsOnConnectivity.size() != 0){
+            if (checkedAllClientsOnConnectivity.size() != 0) {
                 sendMail(getCurrentOfflineClients(offlineClients, checkedAllClientsOnConnectivity));
             }
         }
     }
 
+    // TODO needs testing
     private List<Client> checkAllClientsConnectivity(List<Client> currentClients) {
         return currentClients
                 .stream()
-                .filter(c -> new Date().getTime() - c.getLastConnected().getTime() > 180000)
+                .filter( c -> ChronoUnit.MILLIS.between(LocalDateTime.now(),  c.getLastConnected()) > 180000)
                 .collect(Collectors.toList());
     }
 
     private List<Client> updateOfflineClients(List<Client> offlineClients, List<Client> currentClients) {
-        return findDuplicatesInClientListsById(offlineClients,currentClients);
+        return findDuplicatesInClientListsById(offlineClients, currentClients);
 
     }
 
     private List<Client> getCurrentOfflineClients(List<Client> offlineClients, List<Client> checkedAllClientsOnConnectivity) {
-        List<Client> duplicatesToRemove = findDuplicatesInClientListsById(offlineClients,checkedAllClientsOnConnectivity);
+        List<Client> duplicatesToRemove = findDuplicatesInClientListsById(offlineClients, checkedAllClientsOnConnectivity);
         checkedAllClientsOnConnectivity.removeAll(duplicatesToRemove);
         offlineClients.addAll(checkedAllClientsOnConnectivity);
         return offlineClients;
     }
 
-    private List<Client> findDuplicatesInClientListsById(List<Client> firstClientList, List<Client> secondClientList){
+    private List<Client> findDuplicatesInClientListsById(List<Client> firstClientList, List<Client> secondClientList) {
         List<Client> duplicates = new ArrayList<>();
         for (Client firstClient : firstClientList) {
             for (Client secondClient : secondClientList) {
@@ -75,7 +75,7 @@ public class ClientScheduler {
         emailSender.sendEmailForOfflineClients(clients);
     }
 
-    public boolean wasClientOffline(Client clientToCheck){
+    public boolean wasClientOffline(Client clientToCheck) {
         return offlineClients.stream().anyMatch(c -> c.getId() == clientToCheck.getId());
     }
 }

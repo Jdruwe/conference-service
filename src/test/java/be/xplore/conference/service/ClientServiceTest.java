@@ -1,7 +1,7 @@
 package be.xplore.conference.service;
 
-import be.xplore.conference.excpetion.RoomAlreadyRegisteredException;
-import be.xplore.conference.excpetion.RoomNotFoundException;
+import be.xplore.conference.exception.RoomAlreadyRegisteredException;
+import be.xplore.conference.exception.RoomNotFoundException;
 import be.xplore.conference.model.Client;
 import be.xplore.conference.model.Room;
 import org.junit.Before;
@@ -9,10 +9,11 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -20,6 +21,7 @@ import static org.junit.Assert.*;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @Transactional
+@ActiveProfiles("test")
 public class ClientServiceTest {
 
     @Autowired
@@ -29,12 +31,17 @@ public class ClientServiceTest {
     private RoomService roomService;
 
     private Room room;
-    private Date date;
+    private LocalDateTime date;
 
     @Before
     public void setUp() {
-        room = new Room("testRoom", "Test room", 850, "setup");
-        date = new Date();
+        date = LocalDateTime.now();
+        room = Room.builder()
+                .id("testRoom")
+                .name("Test room")
+                .capacity(850)
+                .setup("setup")
+                .build();
         roomService.save(room);
     }
 
@@ -48,7 +55,12 @@ public class ClientServiceTest {
 
     @Test(expected = RoomNotFoundException.class)
     public void testRegisterThrowsExceptionRoomNotFoundException() throws RoomAlreadyRegisteredException, RoomNotFoundException {
-        Room emptyRoom = new Room();
+        Room emptyRoom = Room.builder()
+                .id("doesNotExist")
+                .name("doesNotExist")
+                .capacity(1)
+                .setup("...")
+                .build();
         Client client = new Client(emptyRoom, date);
         clientService.save(client);
     }
@@ -81,7 +93,14 @@ public class ClientServiceTest {
 
     @Test(expected = RoomNotFoundException.class)
     public void testUpdateLastConnectedTimeThrowsExceptionRoomNotFoundException() throws RoomAlreadyRegisteredException, RoomNotFoundException {
-        Client client = new Client(new Room(), date);
+        Client client = new Client(
+                Room.builder()
+                        .id("doesNotExist")
+                        .name("doesNotExist")
+                        .capacity(1)
+                        .setup("...")
+                        .build(),
+                date);
         clientService.save(client);
     }
 
@@ -91,7 +110,7 @@ public class ClientServiceTest {
         //waiting to get time difference
         Thread.sleep(2000);
         Client client1 = clientService.save(client);
-        Date newDate = new Date();
+        LocalDateTime newDate = LocalDateTime.now();
         Client updatedClient = clientService.updateLastConnectedTime(client1.getId(), newDate);
         assertEquals(updatedClient.getLastConnected(), newDate);
         assertNotEquals(updatedClient.getLastConnected(), date);

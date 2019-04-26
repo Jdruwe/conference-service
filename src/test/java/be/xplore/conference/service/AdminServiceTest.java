@@ -1,13 +1,14 @@
 package be.xplore.conference.service;
 
-import be.xplore.conference.excpetion.AdminNameAlreadyExistsException;
-import be.xplore.conference.excpetion.EmailAlreadyExistsException;
+import be.xplore.conference.exception.AdminNameAlreadyExistsException;
+import be.xplore.conference.exception.EmailAlreadyExistsException;
 import be.xplore.conference.model.Admin;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -16,6 +17,7 @@ import static org.junit.Assert.*;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @Transactional
+@ActiveProfiles("test")
 public class AdminServiceTest {
 
     @Autowired
@@ -23,11 +25,11 @@ public class AdminServiceTest {
 
     @Test
     public void testSave() {
-        Admin admin = new Admin("testAdmin","TestAdmin@test.com","test123");
+        Admin admin = new Admin("testAdmin", "TestAdmin@test.com", "test123");
         Admin savedAdmin = service.save(admin);
-        assertEquals(savedAdmin.getAdminName(),admin.getAdminName());
-        assertEquals(savedAdmin.getEmail(),admin.getEmail());
-        assertEquals(savedAdmin.getPassword(),admin.getPassword());
+        assertEquals(savedAdmin.getAdminName(), admin.getAdminName());
+        assertEquals(savedAdmin.getEmail(), admin.getEmail());
+        assertEquals(savedAdmin.getPassword(), admin.getPassword());
         assertTrue(savedAdmin.getId() > 0);
     }
 
@@ -35,7 +37,7 @@ public class AdminServiceTest {
     public void testLoadUserByUsername() {
         Admin admin = service.loadAdminByAdminNameOrEmail("xploreAdmin");
         assertNotNull(admin);
-        assertEquals(admin.getAdminName(),"xploreAdmin");
+        assertEquals(admin.getAdminName(), "xploreAdmin");
     }
 
     @Test(expected = AdminNameAlreadyExistsException.class)
@@ -47,16 +49,16 @@ public class AdminServiceTest {
 
     @Test(expected = EmailAlreadyExistsException.class)
     public void testRegisterExistingAdminWithEmailThrowsException() throws EmailAlreadyExistsException, AdminNameAlreadyExistsException {
-        Admin admin = new Admin("empty", "admin@xplore.com","empty");
+        Admin admin = new Admin("empty", "admin@xplore.com", "empty");
         service.register(admin);
     }
 
     @Test
     public void testRegister() {
-        Admin admin = new Admin("new","new","new");
+        Admin admin = new Admin("new", "new", "new");
         Admin registeredAdmin = service.save(admin);
         assertNotNull(registeredAdmin);
-        assertEquals(admin,registeredAdmin);
+        assertEquals(admin, registeredAdmin);
     }
 
     @Test(expected = UsernameNotFoundException.class)
@@ -68,7 +70,7 @@ public class AdminServiceTest {
     public void testLoadAdminThatHasPassword() {
         Admin admin = service.loadAdminThatHasPassword("xploreAdmin");
         assertNotNull(admin);
-        assertEquals(admin.getAdminName(),"xploreAdmin");
+        assertEquals(admin.getAdminName(), "xploreAdmin");
     }
 
     @Test(expected = UsernameNotFoundException.class)
@@ -80,6 +82,6 @@ public class AdminServiceTest {
     public void testLoadAdminByAdminNameOrEmail() {
         Admin admin = service.loadAdminByAdminNameOrEmail("xploreAdmin");
         assertNotNull(admin);
-        assertEquals(admin.getAdminName(),"xploreAdmin");
+        assertEquals(admin.getAdminName(), "xploreAdmin");
     }
 }
