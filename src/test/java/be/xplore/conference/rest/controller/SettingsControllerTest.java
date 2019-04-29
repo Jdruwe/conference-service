@@ -1,12 +1,7 @@
 package be.xplore.conference.rest.controller;
 
-import be.xplore.conference.model.Settings;
-import be.xplore.conference.property.SettingsProperties;
 import be.xplore.conference.rest.dto.ChangeSettingsDto;
-import be.xplore.conference.service.AdminService;
-import be.xplore.conference.service.SettingsService;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

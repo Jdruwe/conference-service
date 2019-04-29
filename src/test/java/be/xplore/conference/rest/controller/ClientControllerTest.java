@@ -25,6 +25,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
@@ -101,7 +102,7 @@ public class ClientControllerTest {
 
     @Test
     public void testUpdateHeartbeat() throws Exception {
-        LocalDateTime newDate = LocalDateTime.now();
+        LocalDateTime newDate = LocalDateTime.now().truncatedTo(ChronoUnit.MICROS);
         registerClientForTesting();
         ClientHeartbeatDto clientHeartbeatDto = new ClientHeartbeatDto(savedClient.getId(), newDate);
         mockMvc.perform(patch("/api/client")
@@ -109,7 +110,7 @@ public class ClientControllerTest {
                 .content(objectMapper.writeValueAsString(clientHeartbeatDto)))
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("testRoom")))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.lastConnected").value(newDate.toString()));
+                .andExpect(MockMvcResultMatchers.jsonPath("$.lastConnected").value(newDate.truncatedTo(ChronoUnit.MICROS).toString()));
     }
 
     @Test
