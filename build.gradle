@@ -39,6 +39,8 @@ dependencies {
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.8'
     compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
 
+    compile("org.springframework.boot:spring-boot-starter-mail")
+
     runtimeOnly('com.h2database:h2')
     runtimeOnly 'org.springframework.boot:spring-boot-devtools'
     compileOnly 'org.projectlombok:lombok'
