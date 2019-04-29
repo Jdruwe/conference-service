@@ -1,7 +1,6 @@
 package be.xplore.conference.persistence;
 
 import be.xplore.conference.model.Client;
-import be.xplore.conference.model.Room;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
