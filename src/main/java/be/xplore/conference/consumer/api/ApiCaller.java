@@ -10,6 +10,8 @@ import be.xplore.conference.consumer.dto.ScheduleDto;
 import be.xplore.conference.consumer.dto.SpeakerInformationDto;
 import be.xplore.conference.consumer.property.DevoxxApiProperties;
 import be.xplore.conference.model.DayOfWeek;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
@@ -35,8 +37,10 @@ public class ApiCaller {
         }
     }
 
+    private static final Logger log = LoggerFactory.getLogger(ApiCaller.class);
     public RoomScheduleResponse getRoomSchedule(String roomId, String etag, DayOfWeek day) {
         String url = apiProperties.getBaseUrl() + apiProperties.getRooms() + roomId + "/" + day.name().toLowerCase();
+        log.error(url);
         try {
             ApiResponse response = apiHelper.queryApi(url, etag, ScheduleDto.class);
             return new RoomScheduleResponse(response.getETag(), (ScheduleDto) response.getBody());
