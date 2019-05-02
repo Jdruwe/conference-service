@@ -34,10 +34,8 @@ public class ClientScheduler {
     @Scheduled(fixedRate = 180_000)
     private void checkStatusClientsAndSendMail() {
         List<Client> currentClients = clientService.loadAll();
-        log.error("currentclients:" + currentClients.toString());
         if (currentClients.size() != 0) { //&& offlineClients != null
             List<Client> checkedAllClientsOnConnectivity = checkAllClientsConnectivity(currentClients);
-            log.error(checkedAllClientsOnConnectivity.toString());
             offlineClients = updateOfflineClients(offlineClients, currentClients);
             if (checkedAllClientsOnConnectivity.size() != 0) {
                 sendMail(getCurrentOfflineClients(offlineClients, checkedAllClientsOnConnectivity));
@@ -46,7 +44,6 @@ public class ClientScheduler {
     }
 
     private List<Client> checkAllClientsConnectivity(List<Client> currentClients) {
-        log.error("checkAllClientsConnectivity");
         return currentClients
                 .stream()
                 .filter( c -> ChronoUnit.MILLIS.between(c.getLastConnected(),LocalDateTime.now()) > 180_000)

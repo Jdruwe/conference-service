@@ -15,7 +15,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.ZoneId;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -34,11 +33,13 @@ public class ClientController {
         this.clientService = clientService;
         this.modelMapper = modelMapper;
         this.clientScheduler = clientScheduler;
-        this.emailSender= emailSender;
+        this.emailSender = emailSender;
     }
 
     @PostMapping
     public ResponseEntity<ClientDto> registerClient(@RequestBody ClientInfoDto clientInfoDto) throws RoomNotFoundException {
+        log.error(clientInfoDto.getLastConnected().toString());
+        // TODO .plusHours temp fix, so remove
         Client client = new Client(clientInfoDto.getRoom(), clientInfoDto.getLastConnected().plusHours(2));
         this.clientService.save(client);
         return new ResponseEntity<>(modelMapper.map(client, ClientDto.class), HttpStatus.CREATED);
@@ -66,7 +67,7 @@ public class ClientController {
                 " at time of " +
                 clientHeartbeatDto.getNewDate());
         Client client = this.clientService.updateLastConnectedTime(clientHeartbeatDto.getClientId(), clientHeartbeatDto.getNewDate());
-        if(clientScheduler.wasClientOffline(client)){
+        if (clientScheduler.wasClientOffline(client)) {
             emailSender.sendEmailForReconnectedClient(client);
         }
         return new ResponseEntity<>(modelMapper.map(client, ClientDto.class), HttpStatus.OK);
