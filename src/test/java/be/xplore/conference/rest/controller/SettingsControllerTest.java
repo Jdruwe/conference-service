@@ -1,6 +1,6 @@
 package be.xplore.conference.rest.controller;
 
-import be.xplore.conference.rest.dto.ChangeSettingsDto;
+import be.xplore.conference.rest.dto.SettingsDto;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -43,9 +43,9 @@ public class SettingsControllerTest {
     @Test
     @WithMockUser("xploreAdmin")
     public void testChangeSettings() throws Exception {
-        ChangeSettingsDto changeSettingsDto = new ChangeSettingsDto(7, false);
+        SettingsDto settingsDto = new SettingsDto(7, false);
         mockMvc.perform(put("/api/settings")
-                .content(objectMapper.writeValueAsString(changeSettingsDto))
+                .content(objectMapper.writeValueAsString(settingsDto))
                 .contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("7")))

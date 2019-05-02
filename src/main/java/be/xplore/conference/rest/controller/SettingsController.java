@@ -1,7 +1,7 @@
 package be.xplore.conference.rest.controller;
 
+import be.xplore.conference.exception.SettingNotFoundException;
 import be.xplore.conference.model.Settings;
-import be.xplore.conference.rest.dto.ChangeSettingsDto;
 import be.xplore.conference.rest.dto.SettingsDto;
 import be.xplore.conference.service.SettingsService;
 import org.springframework.http.HttpStatus;
@@ -20,26 +20,37 @@ public class SettingsController {
         this.settingsService = settingsService;
     }
 
-    // todo fix optionals get
     @GetMapping
     public ResponseEntity<SettingsDto> getSettings() {
-        SettingsDto settingsDto = SettingsDto.builder()
-                .minutesBeforeNextSession(Integer.parseInt(settingsService.loadByKey(MINUTES_BEFORE_NEXT_SESSION).get().getValue()))
-                .isRoomOccupancyOn(Boolean.parseBoolean(settingsService.loadByKey(IS_ROOM_OCCUPANCY_ON).get().getValue()))
-                .build();
+        SettingsDto settingsDto = buildDto();
         return new ResponseEntity<>(settingsDto, HttpStatus.OK);
     }
 
-    //TODO beautify
-    // todo fix optionals get
     @PutMapping
-    public ResponseEntity<ChangeSettingsDto> changeSettings(@RequestBody ChangeSettingsDto changeSettingsDto) {
-        Settings settings = settingsService.loadByKey(MINUTES_BEFORE_NEXT_SESSION).get();
-        settings.setValue(String.valueOf(changeSettingsDto.getMinutesBeforeNextSession()));
-        settingsService.save(settings);
-        settings = settingsService.loadByKey(IS_ROOM_OCCUPANCY_ON).get();
-        settings.setValue(String.valueOf(changeSettingsDto.isRoomOccupancyOn()));
-        settingsService.save(settings);
-        return new ResponseEntity<>(changeSettingsDto, HttpStatus.OK);
+    public ResponseEntity<SettingsDto> changeSettings(@RequestBody SettingsDto settingsDto) {
+        Settings minutesBeforeNextSession = settingsService.update(
+                MINUTES_BEFORE_NEXT_SESSION,
+                String.valueOf(settingsDto.getMinutesBeforeNextSession()));
+        Settings roomOccupancy = settingsService.update(
+                IS_ROOM_OCCUPANCY_ON,
+                String.valueOf(settingsDto.isRoomOccupancyOn()));
+
+        settingsDto.setMinutesBeforeNextSession(Integer.parseInt(minutesBeforeNextSession.getValue()));
+        settingsDto.setRoomOccupancyOn(Boolean.parseBoolean(roomOccupancy.getValue()));
+
+        return new ResponseEntity<>(settingsDto, HttpStatus.OK);
+    }
+
+    private SettingsDto buildDto() {
+        return SettingsDto.builder()
+                .minutesBeforeNextSession(
+                        Integer.parseInt(settingsService.loadByKey(MINUTES_BEFORE_NEXT_SESSION)
+                                .orElseThrow(SettingNotFoundException::new)
+                                .getValue()))
+                .isRoomOccupancyOn(
+                        Boolean.parseBoolean(settingsService.loadByKey(IS_ROOM_OCCUPANCY_ON)
+                                .orElseThrow(SettingNotFoundException::new)
+                                .getValue()))
+                .build();
     }
 }
