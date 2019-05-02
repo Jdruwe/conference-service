@@ -32,6 +32,9 @@ public class ClientController {
 
     @PostMapping
     public ResponseEntity<ClientDto> registerClient(@RequestBody ClientInfoDto clientInfoDto) throws RoomNotFoundException {
+        log.error("------------------------------------------------------------");
+        log.error(clientInfoDto.getLastConnected().toString());
+        log.error("------------------------------------------------------------");
         Client client = new Client(clientInfoDto.getRoom(), clientInfoDto.getLastConnected());
         this.clientService.save(client);
         return new ResponseEntity<>(modelMapper.map(client, ClientDto.class), HttpStatus.CREATED);
@@ -39,8 +42,6 @@ public class ClientController {
 
     @DeleteMapping
     public ResponseEntity<Integer> unRegisterClient(@RequestParam int id) {
-        List<Client> client = this.clientService.loadAll();
-        log.info(String.valueOf(client.size()));
         int result = this.clientService.delete(id);
         return new ResponseEntity<>(result, HttpStatus.OK);
     }

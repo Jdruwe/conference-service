@@ -46,8 +46,6 @@ public class TalkProcessorTest {
         wireMockServer.stop();
     }
 
-    private static final Logger log = LoggerFactory.getLogger(TalkProcessorTest.class);
-
     @Test
     public void testTalkProcessing() {
         //configureFor("https://dvbe18.confinabox.com/api/conferences/dvbe18", 8080); https://dvbe18.confinabox.com/api/conferences/dvbe18/rooms/Room5/tuesday
@@ -55,9 +53,6 @@ public class TalkProcessorTest {
         RoomScheduleResponse response = apiCaller.getRoomSchedule("Room5",
                 null,
                 DayOfWeek.TUESDAY);
-        log.error("=========================================================");
-        log.error(response.toString());
-        log.error("=========================================================");
         ScheduleDto scheduleDto = response.getSchedule();
         talkProcessor.process(scheduleDto.getSlots());
     }

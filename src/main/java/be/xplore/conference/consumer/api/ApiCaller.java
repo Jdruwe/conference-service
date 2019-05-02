@@ -37,10 +37,8 @@ public class ApiCaller {
         }
     }
 
-    private static final Logger log = LoggerFactory.getLogger(ApiCaller.class);
     public RoomScheduleResponse getRoomSchedule(String roomId, String etag, DayOfWeek day) {
         String url = apiProperties.getBaseUrl() + apiProperties.getRooms() + roomId + "/" + day.name().toLowerCase();
-        log.error(url);
         try {
             ApiResponse response = apiHelper.queryApi(url, etag, ScheduleDto.class);
             return new RoomScheduleResponse(response.getETag(), (ScheduleDto) response.getBody());
