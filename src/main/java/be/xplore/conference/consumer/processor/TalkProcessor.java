@@ -26,6 +26,7 @@ public class TalkProcessor {
         this.speakerProcessor = speakerProcessor;
     }
 
+
     List<Talk> process(List<SlotDto> slotDtoList) {
         List<Talk> talks = new ArrayList<>();
         if (Objects.nonNull(slotDtoList)) {
