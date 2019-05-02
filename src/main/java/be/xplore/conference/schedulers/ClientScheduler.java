@@ -3,6 +3,8 @@ package be.xplore.conference.schedulers;
 import be.xplore.conference.model.Client;
 import be.xplore.conference.notifications.EmailSender;
 import be.xplore.conference.service.ClientService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
@@ -20,18 +22,22 @@ public class ClientScheduler {
 
     private List<Client> offlineClients = new ArrayList<>();
 
+    private static final Logger log = LoggerFactory.getLogger(ClientScheduler.class);
+
 
     public ClientScheduler(ClientService clientService, EmailSender emailSender) {
         this.clientService = clientService;
         this.emailSender = emailSender;
     }
 
-    //every 30 minutes 180000
-    @Scheduled(fixedRate = 1000)
+    //every 30 minutes = 180_000 ms
+    @Scheduled(fixedRate = 180_000)
     private void checkStatusClientsAndSendMail() {
         List<Client> currentClients = clientService.loadAll();
-        if (currentClients.size() != 0 && offlineClients != null) {
+        log.error("currentclients:" + currentClients.toString());
+        if (currentClients.size() != 0) { //&& offlineClients != null
             List<Client> checkedAllClientsOnConnectivity = checkAllClientsConnectivity(currentClients);
+            log.error(checkedAllClientsOnConnectivity.toString());
             offlineClients = updateOfflineClients(offlineClients, currentClients);
             if (checkedAllClientsOnConnectivity.size() != 0) {
                 sendMail(getCurrentOfflineClients(offlineClients, checkedAllClientsOnConnectivity));
@@ -39,11 +45,11 @@ public class ClientScheduler {
         }
     }
 
-    // TODO needs testing
     private List<Client> checkAllClientsConnectivity(List<Client> currentClients) {
+        log.error("checkAllClientsConnectivity");
         return currentClients
                 .stream()
-                .filter( c -> ChronoUnit.MILLIS.between(LocalDateTime.now(),  c.getLastConnected()) > 1000)
+                .filter( c -> ChronoUnit.MILLIS.between(c.getLastConnected(),LocalDateTime.now()) > 180_000)
                 .collect(Collectors.toList());
     }
 

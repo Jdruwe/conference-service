@@ -15,6 +15,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.ZoneId;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -27,6 +28,8 @@ public class ClientController {
     private ClientScheduler clientScheduler;
     private EmailSender emailSender;
 
+    private static final Logger log = LoggerFactory.getLogger(ClientController.class);
+
     public ClientController(ClientService clientService, ModelMapper modelMapper, ClientScheduler clientScheduler, EmailSender emailSender) {
         this.clientService = clientService;
         this.modelMapper = modelMapper;
@@ -34,11 +37,9 @@ public class ClientController {
         this.emailSender= emailSender;
     }
 
-    private static final Logger log = LoggerFactory.getLogger(ClientController.class);
-
     @PostMapping
     public ResponseEntity<ClientDto> registerClient(@RequestBody ClientInfoDto clientInfoDto) throws RoomNotFoundException {
-        Client client = new Client(clientInfoDto.getRoom(), clientInfoDto.getLastConnected());
+        Client client = new Client(clientInfoDto.getRoom(), clientInfoDto.getLastConnected().plusHours(2));
         this.clientService.save(client);
         return new ResponseEntity<>(modelMapper.map(client, ClientDto.class), HttpStatus.CREATED);
     }

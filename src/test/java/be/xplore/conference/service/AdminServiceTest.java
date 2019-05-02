@@ -12,6 +12,8 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
@@ -49,8 +51,10 @@ public class AdminServiceTest {
 
     @Test(expected = EmailAlreadyExistsException.class)
     public void testRegisterExistingAdminWithEmailThrowsException() throws EmailAlreadyExistsException, AdminNameAlreadyExistsException {
-        Admin admin = new Admin("empty", "admin@xplore.com", "empty");
+        Admin admin = new Admin("empty", "test.admin@xplore.com", "empty");
         service.register(admin);
+        Admin adminWithSameEmail = new Admin("empty2", "test.admin@xplore.com", "empty");
+        service.register(adminWithSameEmail);
     }
 
     @Test
@@ -83,5 +87,13 @@ public class AdminServiceTest {
         Admin admin = service.loadAdminByAdminNameOrEmail("xploreAdmin");
         assertNotNull(admin);
         assertEquals(admin.getAdminName(), "xploreAdmin");
+    }
+
+    @Test
+    public void testLoadAllAdmins(){
+        List<Admin> allAdmins = service.loadAllAdmins();
+        assertNotNull(allAdmins);
+        assertEquals(1,allAdmins.size());
+        assertEquals("xploreAdmin",allAdmins.get(0).getAdminName());
     }
 }
