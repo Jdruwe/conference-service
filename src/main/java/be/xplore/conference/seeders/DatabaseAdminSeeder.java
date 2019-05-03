@@ -22,7 +22,7 @@ public class DatabaseAdminSeeder {
     }
 
     private void seedAdminTable() throws EmailAlreadyExistsException, AdminNameAlreadyExistsException {
-        Admin admin = new Admin("xploreAdmin", "admin@xplore.com", "admin123!");
+        Admin admin = new Admin("xploreAdmin", "admin@xplore.comm", "admin123!");
         adminService.register(admin);
     }
 }

@@ -38,10 +38,17 @@ public class SettingsServiceTest {
 
     @Test
     public void testSaveSetting() {
-        settingsService.save(new Settings("testSaveSetting","testSaveSetting"));
+        settingsService.save(new Settings("testSaveSetting", "testSaveSetting"));
         List<Settings> settingsList = settingsService.loadAll();
         Assert.assertNotNull(settingsList);
         Assert.assertEquals(4, settingsList.size());
         Assert.assertTrue(settingsList.get(3).getValue().contains("testSaveSetting"));
+    }
+
+    @Test
+    public void testUpdateSettings() {
+        Settings updatedSetting = settingsService.update("Test", "newTest");
+        Assert.assertNotNull(updatedSetting);
+        Assert.assertEquals("newTest", updatedSetting.getValue());
     }
 }

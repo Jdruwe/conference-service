@@ -2,9 +2,12 @@ package be.xplore.conference.rest.controller;
 
 import be.xplore.conference.exception.RoomNotFoundException;
 import be.xplore.conference.model.Client;
+import be.xplore.conference.notifications.EmailSender;
 import be.xplore.conference.rest.dto.ClientDto;
 import be.xplore.conference.rest.dto.ClientHeartbeatDto;
 import be.xplore.conference.rest.dto.ClientInfoDto;
+import be.xplore.conference.schedulers.ClientScheduler;
+import be.xplore.conference.schedulers.ClientScheduler;
 import be.xplore.conference.service.ClientService;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
@@ -13,6 +16,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.ZoneId;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -22,20 +26,21 @@ public class ClientController {
 
     private ClientService clientService;
     private ModelMapper modelMapper;
-
-    public ClientController(ClientService clientService, ModelMapper modelMapper) {
-        this.clientService = clientService;
-        this.modelMapper = modelMapper;
-    }
+    private ClientScheduler clientScheduler;
+    private EmailSender emailSender;
 
     private static final Logger log = LoggerFactory.getLogger(ClientController.class);
 
+    public ClientController(ClientService clientService, ModelMapper modelMapper, ClientScheduler clientScheduler, EmailSender emailSender) {
+        this.clientService = clientService;
+        this.modelMapper = modelMapper;
+        this.clientScheduler = clientScheduler;
+        this.emailSender= emailSender;
+    }
+
     @PostMapping
     public ResponseEntity<ClientDto> registerClient(@RequestBody ClientInfoDto clientInfoDto) throws RoomNotFoundException {
-        log.error("------------------------------------------------------------");
-        log.error(clientInfoDto.getLastConnected().toString());
-        log.error("------------------------------------------------------------");
-        Client client = new Client(clientInfoDto.getRoom(), clientInfoDto.getLastConnected());
+        Client client = new Client(clientInfoDto.getRoom(), clientInfoDto.getLastConnected().plusHours(2));
         this.clientService.save(client);
         return new ResponseEntity<>(modelMapper.map(client, ClientDto.class), HttpStatus.CREATED);
     }
@@ -62,6 +67,9 @@ public class ClientController {
                 " at time of " +
                 clientHeartbeatDto.getNewDate());
         Client client = this.clientService.updateLastConnectedTime(clientHeartbeatDto.getClientId(), clientHeartbeatDto.getNewDate());
+        if(clientScheduler.wasClientOffline(client)){
+            emailSender.sendEmailForReconnectedClient(client);
+        }
         return new ResponseEntity<>(modelMapper.map(client, ClientDto.class), HttpStatus.OK);
     }
 }

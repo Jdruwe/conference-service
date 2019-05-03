@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Service
 @Transactional
@@ -53,5 +54,9 @@ public class AdminService implements UserDetailsService {
 
     public Admin loadAdminByAdminNameOrEmail(String adminNameOrEmail) throws UsernameNotFoundException {
         return repo.findByAdminNameOrEmail(adminNameOrEmail).orElseThrow(() -> new UsernameNotFoundException("No admin with that name or email were found."));
+    }
+
+    public List<Admin> loadAllAdmins(){
+        return repo.findAll();
     }
 }
