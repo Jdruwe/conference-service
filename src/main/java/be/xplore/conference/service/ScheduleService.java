@@ -11,7 +11,7 @@ import java.util.Optional;
 @Service
 @Transactional
 public class ScheduleService {
-    private ScheduleRepository repo;
+    private final ScheduleRepository repo;
 
     public ScheduleService(ScheduleRepository repo) {
         this.repo = repo;

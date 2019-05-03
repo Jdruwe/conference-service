@@ -15,8 +15,8 @@ import java.util.List;
 @Transactional
 public class ClientService {
 
-    private ClientRepository repo;
-    private RoomService roomService;
+    private final ClientRepository repo;
+    private final RoomService roomService;
 
     public ClientService(ClientRepository repo, RoomService roomService) {
         this.repo = repo;

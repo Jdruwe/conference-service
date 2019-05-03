@@ -11,7 +11,7 @@ import java.util.Optional;
 @Transactional
 public class SpeakerService {
 
-    private SpeakerRepository repo;
+    private final SpeakerRepository repo;
 
     public SpeakerService(SpeakerRepository repo) {
         this.repo = repo;

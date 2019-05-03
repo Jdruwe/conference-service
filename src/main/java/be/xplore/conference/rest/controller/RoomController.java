@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 @RequestMapping("api/room")
 public class RoomController {
     private final ModelMapper modelMapper;
-    private RoomService roomService;
+    private final RoomService roomService;
 
     public RoomController(ModelMapper modelMapper, RoomService roomService) {
         this.modelMapper = modelMapper;

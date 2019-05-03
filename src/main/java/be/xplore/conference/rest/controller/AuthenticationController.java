@@ -22,8 +22,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("api/authentication")
 public class AuthenticationController {
 
-    private AdminService adminService;
-    private ModelMapper modelMapper;
+    private final AdminService adminService;
+    private final ModelMapper modelMapper;
     private final JwtTokenProvider jwtTokenProvider;
 
     public AuthenticationController(AdminService adminService,

@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("api/settings")
 public class SettingsController {
-    private SettingsService settingsService;
+    private final SettingsService settingsService;
 
-    private final String MINUTES_BEFORE_NEXT_SESSION = "minutesBeforeNextSession";
-    private final String IS_ROOM_OCCUPANCY_ON = "isRoomOccupancyOn";
+    private static final String MINUTES_BEFORE_NEXT_SESSION = "minutesBeforeNextSession";
+    private static final String IS_ROOM_OCCUPANCY_ON = "isRoomOccupancyOn";
 
     public SettingsController(SettingsService settingsService) {
         this.settingsService = settingsService;

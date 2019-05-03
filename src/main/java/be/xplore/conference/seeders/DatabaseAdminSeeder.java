@@ -10,7 +10,7 @@ import javax.annotation.PostConstruct;
 
 @Component
 public class DatabaseAdminSeeder {
-    private AdminService adminService;
+    private final AdminService adminService;
 
     public DatabaseAdminSeeder(AdminService adminService) {
         this.adminService = adminService;

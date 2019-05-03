@@ -9,13 +9,10 @@ import be.xplore.conference.rest.dto.ClientInfoDto;
 import be.xplore.conference.schedulers.ClientScheduler;
 import be.xplore.conference.service.ClientService;
 import org.modelmapper.ModelMapper;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.ZoneId;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -23,18 +20,16 @@ import java.util.stream.Collectors;
 @RequestMapping("api/client")
 public class ClientController {
 
-    private ClientService clientService;
-    private ModelMapper modelMapper;
-    private ClientScheduler clientScheduler;
-    private EmailSender emailSender;
-
-    private static final Logger log = LoggerFactory.getLogger(ClientController.class);
+    private final ClientService clientService;
+    private final ModelMapper modelMapper;
+    private final ClientScheduler clientScheduler;
+    private final EmailSender emailSender;
 
     public ClientController(ClientService clientService, ModelMapper modelMapper, ClientScheduler clientScheduler, EmailSender emailSender) {
         this.clientService = clientService;
         this.modelMapper = modelMapper;
         this.clientScheduler = clientScheduler;
-        this.emailSender= emailSender;
+        this.emailSender = emailSender;
     }
 
     @PostMapping
@@ -61,12 +56,8 @@ public class ClientController {
 
     @PatchMapping
     public ResponseEntity<ClientDto> updateHeartbeat(@RequestBody ClientHeartbeatDto clientHeartbeatDto) throws RoomNotFoundException {
-        log.info("Heartbeat update for client "
-                + clientHeartbeatDto.getClientId() +
-                " at time of " +
-                clientHeartbeatDto.getNewDate());
         Client client = this.clientService.updateLastConnectedTime(clientHeartbeatDto.getClientId(), clientHeartbeatDto.getNewDate());
-        if(clientScheduler.wasClientOffline(client)){
+        if (clientScheduler.wasClientOffline(client)) {
             emailSender.sendEmailForReconnectedClient(client);
         }
         return new ResponseEntity<>(modelMapper.map(client, ClientDto.class), HttpStatus.OK);
