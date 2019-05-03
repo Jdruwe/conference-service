@@ -19,13 +19,14 @@ import java.util.List;
 @Transactional
 @ActiveProfiles("test")
 public class SettingsServiceTest {
+    private static final String TEST = "Test";
+
     @Autowired
     SettingsService settingsService;
 
-
     @Before
     public void setUp() {
-        settingsService.save(new Settings("Test", "Test"));
+        settingsService.save(new Settings(TEST, TEST));
     }
 
     @Test
@@ -33,7 +34,7 @@ public class SettingsServiceTest {
         List<Settings> settingsList = settingsService.loadAll();
         Assert.assertNotNull(settingsList);
         Assert.assertEquals(3, settingsList.size());
-        Assert.assertTrue(settingsList.get(2).getValue().contains("Test"));
+        Assert.assertTrue(settingsList.get(2).getValue().contains(TEST));
     }
 
     @Test
@@ -47,7 +48,7 @@ public class SettingsServiceTest {
 
     @Test
     public void testUpdateSettings() {
-        Settings updatedSetting = settingsService.update("Test", "newTest");
+        Settings updatedSetting = settingsService.update(TEST, "newTest");
         Assert.assertNotNull(updatedSetting);
         Assert.assertEquals("newTest", updatedSetting.getValue());
     }

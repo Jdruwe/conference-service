@@ -10,10 +10,10 @@
 
     <rule ref="category/java/bestpractices.xml">
         <exclude name="AbstractClassWithoutAbstractMethod"/>
-        <exclude name="UnusedPrivateMethod"/>
         <exclude name="JUnitAssertionsShouldIncludeMessage"/>
         <exclude name="JUnitTestContainsTooManyAsserts"/>
         <exclude name="JUnitTestsShouldIncludeAssert"/>
+        <exclude name="UnusedPrivateMethod"/>
     </rule>
 
     <rule ref="category/java/bestpractices.xml/JUnitTestContainsTooManyAsserts">
@@ -30,10 +30,10 @@
     </rule>
 
     <rule ref="category/java/codestyle.xml">
-        <exclude name="ControlStatementBraces"/>
         <exclude name="AtLeastOneConstructor"/>
         <exclude name="CallSuperInConstructor"/>
         <exclude name="CommentDefaultAccessModifier"/>
+        <exclude name="ControlStatementBraces"/>
         <exclude name="DefaultPackage"/>
         <exclude name="LocalVariableCouldBeFinal"/>
         <exclude name="LongVariable"/>
@@ -42,6 +42,7 @@
         <exclude name="ShortClassName"/>
         <exclude name="ShortMethodName"/>
         <exclude name="ShortVariable"/>
+        <exclude name="TooManyStaticImports"/>
         <exclude name="UnnecessaryAnnotationValueElement"/>
     </rule>
 
@@ -51,12 +52,25 @@
         </properties>
     </rule>
 
+    <rule ref="category/java/codestyle.xml/TooManyStaticImports">
+        <properties>
+            <property name="maximumStaticImports" value="5"/>
+        </properties>
+    </rule>
+
     <rule ref="category/java/design.xml">
         <exclude name="AvoidThrowingRawExceptionTypes"/>
         <exclude name="LawOfDemeter"/>
         <exclude name="LoosePackageCoupling"/>
+        <exclude name="SignatureDeclareThrowsException"/>
         <exclude name="TooManyMethods"/>
         <exclude name="UseUtilityClass"/>
+    </rule>
+
+    <rule ref="category/java/design.xml/SignatureDeclareThrowsException">
+        <properties>
+            <property name="IgnoreJUnitCompletely" value="true"/>
+        </properties>
     </rule>
 
     <rule ref="category/java/design.xml/TooManyMethods">
@@ -66,18 +80,18 @@
     </rule>
 
     <rule ref="category/java/errorprone.xml">
+        <exclude name="AvoidLiteralsInIfCondition"/>
         <exclude name="BeanMembersShouldSerialize"/>
         <exclude name="DataflowAnomalyAnalysis"/>
-        <exclude name="AvoidLiteralsInIfCondition"/>
-        <exclude name="UseLocaleWithCaseConversions"/>
         <exclude name="MissingSerialVersionUID"/>
+        <exclude name="UseLocaleWithCaseConversions"/>
     </rule>
 
     <rule ref="category/java/multithreading.xml"/>
 
     <rule ref="category/java/performance.xml">
-        <exclude name="InsufficientStringBufferDeclaration"/>
         <exclude name="ConsecutiveLiteralAppends"/>
+        <exclude name="InsufficientStringBufferDeclaration"/>
     </rule>
 
     <rule ref="category/java/security.xml"/>

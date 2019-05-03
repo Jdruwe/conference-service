@@ -22,6 +22,8 @@ import static org.junit.Assert.*;
 @ActiveProfiles("test")
 public class AdminServiceTest {
 
+    private static final String ADMIN_NAME = "xploreAdmin";
+
     @Autowired
     private AdminService service;
 
@@ -37,14 +39,14 @@ public class AdminServiceTest {
 
     @Test
     public void testLoadUserByUsername() {
-        Admin admin = service.loadAdminByAdminNameOrEmail("xploreAdmin");
+        Admin admin = service.loadAdminByAdminNameOrEmail(ADMIN_NAME);
         assertNotNull(admin);
-        assertEquals(admin.getAdminName(), "xploreAdmin");
+        assertEquals(admin.getAdminName(), ADMIN_NAME);
     }
 
     @Test(expected = AdminNameAlreadyExistsException.class)
     public void testRegisterExistingAdminWithAdminNameThrowsException() throws EmailAlreadyExistsException, AdminNameAlreadyExistsException {
-        Admin admin = service.loadAdminByAdminNameOrEmail("xploreAdmin");
+        Admin admin = service.loadAdminByAdminNameOrEmail(ADMIN_NAME);
         assertNotNull(admin);
         service.register(admin);
     }
@@ -72,9 +74,9 @@ public class AdminServiceTest {
 
     @Test()
     public void testLoadAdminThatHasPassword() {
-        Admin admin = service.loadAdminThatHasPassword("xploreAdmin");
+        Admin admin = service.loadAdminThatHasPassword(ADMIN_NAME);
         assertNotNull(admin);
-        assertEquals(admin.getAdminName(), "xploreAdmin");
+        assertEquals(admin.getAdminName(), ADMIN_NAME);
     }
 
     @Test(expected = UsernameNotFoundException.class)
@@ -84,9 +86,9 @@ public class AdminServiceTest {
 
     @Test()
     public void testLoadAdminByAdminNameOrEmail() {
-        Admin admin = service.loadAdminByAdminNameOrEmail("xploreAdmin");
+        Admin admin = service.loadAdminByAdminNameOrEmail(ADMIN_NAME);
         assertNotNull(admin);
-        assertEquals(admin.getAdminName(), "xploreAdmin");
+        assertEquals(admin.getAdminName(), ADMIN_NAME);
     }
 
     @Test
@@ -94,6 +96,6 @@ public class AdminServiceTest {
         List<Admin> allAdmins = service.loadAllAdmins();
         assertNotNull(allAdmins);
         assertEquals(1,allAdmins.size());
-        assertEquals("xploreAdmin",allAdmins.get(0).getAdminName());
+        assertEquals(ADMIN_NAME,allAdmins.get(0).getAdminName());
     }
 }

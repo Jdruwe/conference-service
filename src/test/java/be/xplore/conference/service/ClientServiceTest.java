@@ -24,9 +24,10 @@ import static org.junit.Assert.*;
 @ActiveProfiles("test")
 public class ClientServiceTest {
 
+    private static final String ROOM_ID_AND_NAME = "doesNotExist";
+
     @Autowired
     private ClientService clientService;
-
     @Autowired
     private RoomService roomService;
 
@@ -56,8 +57,8 @@ public class ClientServiceTest {
     @Test(expected = RoomNotFoundException.class)
     public void testRegisterThrowsExceptionRoomNotFoundException() throws RoomAlreadyRegisteredException, RoomNotFoundException {
         Room emptyRoom = Room.builder()
-                .id("doesNotExist")
-                .name("doesNotExist")
+                .id(ROOM_ID_AND_NAME)
+                .name(ROOM_ID_AND_NAME)
                 .capacity(1)
                 .setup("...")
                 .build();
@@ -95,8 +96,8 @@ public class ClientServiceTest {
     public void testUpdateLastConnectedTimeThrowsExceptionRoomNotFoundException() throws RoomAlreadyRegisteredException, RoomNotFoundException {
         Client client = new Client(
                 Room.builder()
-                        .id("doesNotExist")
-                        .name("doesNotExist")
+                        .id(ROOM_ID_AND_NAME)
+                        .name(ROOM_ID_AND_NAME)
                         .capacity(1)
                         .setup("...")
                         .build(),
