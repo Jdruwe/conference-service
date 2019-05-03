@@ -5,6 +5,7 @@ plugins {
 }
 
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'pmd'
 
 group = 'be.xplore'
 version = '0.0.1-SNAPSHOT'
@@ -54,6 +55,11 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testCompile(group: 'org.springframework.security', name: 'spring-security-test', version: '5.1.1.RELEASE')
+}
+
+pmd {
+    ruleSets = []
+    ruleSetFiles = files('./pmd.xml')
 }
 
 jacoco {

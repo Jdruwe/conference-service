@@ -38,15 +38,13 @@ public class AuthenticationControllerTest {
     @Autowired
     private JwtTokenProvider jwtTokenProvider;
 
-
-    private RegisterDto registerDto;
     private String convertedRegisterDTO;
     private String convertedLoginWithNameDTO;
     private String convertedLoginWithEmailDTO;
 
     @Before
     public void setUp() throws Exception {
-        registerDto = new RegisterDto("Pieter-Jan", "pieterjan.noe@student.kdg.be", "password123");
+        RegisterDto registerDto = new RegisterDto("Pieter-Jan", "pieterjan.noe@student.kdg.be", "password123");
         convertedRegisterDTO = objectMapper.writeValueAsString(registerDto);
         LoginDto loginWithNameDTO = new LoginDto(registerDto.getAdminName(), registerDto.getPassword());
         convertedLoginWithNameDTO = objectMapper.writeValueAsString(loginWithNameDTO);

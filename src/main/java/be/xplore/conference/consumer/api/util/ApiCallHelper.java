@@ -40,7 +40,7 @@ public class ApiCallHelper {
 
     private HttpEntity<String> createEtagHeader(String etag) {
         HttpHeaders headers = new HttpHeaders();
-        if (Objects.nonNull(etag) && !etag.equals("")) {
+        if (!"".equals(etag)) {
             headers.setIfNoneMatch(etag);
         }
         return new HttpEntity<>("parameters", headers);

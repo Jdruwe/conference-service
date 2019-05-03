@@ -39,18 +39,16 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @ActiveProfiles("test")
 public class ClientControllerTest {
 
+    private static final String URL = "/api/client";
+
     @Autowired
     private MockMvc mockMvc;
-
     @Autowired
     private ObjectMapper objectMapper;
-
     @Autowired
     private ModelMapper modelMapper;
-
     @Autowired
     private RoomService roomService;
-
     @Autowired
     private ClientService clientService;
 
@@ -73,7 +71,7 @@ public class ClientControllerTest {
     @Test
     @WithMockUser("xploreAdmin")
     public void testRegisterClient() throws Exception {
-        mockMvc.perform(post("/api/client")
+        mockMvc.perform(post(URL)
                 .contentType(MediaType.APPLICATION_JSON_UTF8)
                 .content(objectMapper.writeValueAsString(clientInfoDto)))
                 .andExpect(status().isCreated())
@@ -84,7 +82,7 @@ public class ClientControllerTest {
     @WithMockUser("xploreAdmin")
     public void testUnRegisterClient() throws Exception {
         registerClientForTesting();
-        mockMvc.perform(delete("/api/client")
+        mockMvc.perform(delete(URL)
                 .contentType(MediaType.APPLICATION_JSON_UTF8)
                 .param("id", String.valueOf(savedClient.getId())))
                 .andExpect(status().isOk())
@@ -94,10 +92,10 @@ public class ClientControllerTest {
     @Test
     @WithMockUser("xploreAdmin")
     public void testGetAllClients() throws Exception {
-        mockMvc.perform(get("/api/client")
+        mockMvc.perform(get(URL)
                 .contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(status().isOk())
-                .andExpect((content().string(containsString("[]"))));
+                .andExpect(content().string(containsString("[]")));
     }
 
     @Test
@@ -105,7 +103,7 @@ public class ClientControllerTest {
         LocalDateTime newDate = LocalDateTime.now().truncatedTo(ChronoUnit.MICROS);
         registerClientForTesting();
         ClientHeartbeatDto clientHeartbeatDto = new ClientHeartbeatDto(savedClient.getId(), newDate);
-        mockMvc.perform(patch("/api/client")
+        mockMvc.perform(patch(URL)
                 .contentType(MediaType.APPLICATION_JSON_UTF8)
                 .content(objectMapper.writeValueAsString(clientHeartbeatDto)))
                 .andExpect(status().isOk())
@@ -115,7 +113,7 @@ public class ClientControllerTest {
 
     @Test
     public void testAuthorizationNeeded() throws Exception {
-        mockMvc.perform(get("/api/client")
+        mockMvc.perform(get(URL)
                 .contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(status().isUnauthorized());
     }

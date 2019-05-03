@@ -5,7 +5,10 @@ stages:
 
 build:
     stage: build
-    script: ./gradlew clean build
+    script:
+        - ./gradlew clean build
+        - ./gradlew pmdMain
+        - ./gradlew pmdTest
     artifacts:
         paths:
             - build/libs/*.jar

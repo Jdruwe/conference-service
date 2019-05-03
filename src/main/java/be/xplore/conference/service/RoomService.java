@@ -12,7 +12,7 @@ import java.util.Optional;
 @Transactional
 public class RoomService {
 
-    private RoomRepository repo;
+    private final RoomRepository repo;
 
     public RoomService(RoomRepository repo) {
         this.repo = repo;

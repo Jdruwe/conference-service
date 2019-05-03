@@ -13,7 +13,7 @@ import java.util.Optional;
 @Transactional
 public class SettingsService {
 
-    private SettingsRepository repo;
+    private final SettingsRepository repo;
 
     public SettingsService(SettingsRepository repo) {
         this.repo = repo;
