@@ -7,9 +7,6 @@ import be.xplore.conference.consumer.dto.RoomsDto;
 import be.xplore.conference.consumer.dto.ScheduleDto;
 import be.xplore.conference.consumer.dto.SpeakerInformationDto;
 import be.xplore.conference.model.DayOfWeek;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ObjectWriter;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.After;
 import org.junit.Assert;
@@ -68,7 +65,7 @@ public class ApiCallerTest {
                 .respond(response()
                         .withStatusCode(HttpStatusCode.OK_200.code())
                         .withHeader(HttpHeaders.ETAG, "v2-791456269257604")
-                        .withBody(readFromClasspath("tuesday-room5.json")));
+                        .withBody(readFromClasspath("tuesday-room-5.json")));
 
         apiCaller.getRoomSchedule("Room5", null, DayOfWeek.TUESDAY);
 
@@ -87,7 +84,7 @@ public class ApiCallerTest {
                 .respond(response()
                         .withStatusCode(HttpStatusCode.OK_200.code())
                         .withHeader(HttpHeaders.ETAG, "v2-791456269257604")
-                        .withBody(readFromClasspath("tuesday-room5.json")));
+                        .withBody(readFromClasspath("tuesday-room-5.json")));
 
         apiCaller.getRoomSchedule("Room5", null, DayOfWeek.TUESDAY);
         apiCaller.getRoomSchedule("Room5", null, DayOfWeek.TUESDAY);
@@ -121,13 +118,13 @@ public class ApiCallerTest {
     }
 
     @Test
-    public void testGetRoomSchedule() throws JsonProcessingException {
+    public void testGetRoomSchedule() {
         new MockServerClient("localhost", 1080)
                 .when(request().withMethod("GET").withPath("/api/conferences/dvbe18/rooms/Room5/tuesday"))
                 .respond(response()
                         .withStatusCode(HttpStatusCode.OK_200.code())
                         .withHeader(HttpHeaders.ETAG, "v2-791456269257604")
-                        .withBody(readFromClasspath("tuesday-room5.json")));
+                        .withBody(readFromClasspath("tuesday-room-5.json")));
 
         RoomScheduleResponse response = apiCaller.getRoomSchedule("Room5", null, DayOfWeek.TUESDAY);
 

@@ -1,10 +1,7 @@
-
 package be.xplore.conference.consumer.processor;
 
-import be.xplore.conference.consumer.dto.SlotDto;
-import be.xplore.conference.model.Talk;
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import be.xplore.conference.consumer.dto.LinkDto;
+import be.xplore.conference.consumer.dto.SpeakerDto;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.After;
 import org.junit.Before;
@@ -26,27 +23,25 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.UncheckedIOException;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.List;
 
-import static junit.framework.TestCase.assertEquals;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockserver.integration.ClientAndServer.startClientAndServer;
 import static org.mockserver.model.HttpRequest.request;
 import static org.mockserver.model.HttpResponse.response;
+
 
 @Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @Transactional
 @ActiveProfiles("test")
-public class TalkProcessorTest {
+public class SpeakerProcessorTest {
+
 
     @Autowired
-    private ObjectMapper objectMapper;
-
-    @Autowired
-    private TalkProcessor talkProcessor;
-
+    private SpeakerProcessor speakerProcessor;
 
     private ClientAndServer mockServer;
 
@@ -61,7 +56,7 @@ public class TalkProcessorTest {
     }
 
     @Test
-    public void testProcessTalks() throws IOException {
+    public void testProcessSpeaker() {
         new MockServerClient("localhost", 1080)
                 .when(request().withMethod("GET").withPath("/api/conferences/dvbe18/speakers/.*"))
                 .respond(response()
@@ -69,19 +64,24 @@ public class TalkProcessorTest {
                         .withHeader(HttpHeaders.ETAG, "v2-791456269257604")
                         .withBody(readFromClasspath("speaker.json")));
 
-        String textForObject = readFromClasspath("slots.json");
-        List<SlotDto> myObjects = objectMapper.readValue(textForObject, new TypeReference<List<SlotDto>>() {
-        });
 
-        List<Talk> process = talkProcessor.process(myObjects);
+        List<SpeakerDto> speakerDtos = new ArrayList<>();
+        speakerDtos.add(new SpeakerDto
+                (new LinkDto
+                        ("http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/05b9d537f1895a60adc4dbc25b6af2d1ef458854",
+                                "http://dvbe18.confinabox.com/api/profile/speaker",
+                                "Stephan Janssen"),
+                        "Stephan Jannssen"));
+        speakerDtos.add(new SpeakerDto
+                (new LinkDto
+                        ("http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/bd2f55b11bacf7aa2791921b48dd589c3567bc81",
+                                "http://dvbe18.confinabox.com/api/profile/speaker",
+                                "Mark Reinhold"),
+                        "Mark Reinhold"));
+        speakerProcessor.generateForTalk(speakerDtos);
 
-        assertThat(process).isNotNull().satisfies(p -> {
-            assertThat(p).hasSize(5);
-            assertThat(p.get(0).getSpeakers()).isNotNull().satisfies(speaker -> {
-                assertThat(speaker).hasSize(2);
-                assertEquals("c36efd6e34dbfa7e4af7869ec4132248215cb717", speaker.get(0).getUuid());
-            });
-        });
+        //TODO: write more asserts
+        assertThat(speakerDtos).isNotNull();
     }
 
     private String readFromClasspath(String filename) {
@@ -91,4 +91,5 @@ public class TalkProcessorTest {
             throw new UncheckedIOException(String.format("Unable to read file from classpath %s", filename), e);
         }
     }
+
 }

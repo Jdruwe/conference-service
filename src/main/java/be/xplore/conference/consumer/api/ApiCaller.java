@@ -19,8 +19,6 @@ import java.io.IOException;
 @Component
 public class ApiCaller {
 
-    private static final Logger log = LoggerFactory.getLogger(ApiCaller.class);
-
     private final DevoxxApiProperties apiProperties;
     private final ApiCallHelper apiHelper;
 

@@ -2,6 +2,8 @@ package be.xplore.conference.consumer.api.util;
 
 import be.xplore.conference.consumer.api.dto.ApiResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -14,7 +16,7 @@ import java.util.Objects;
 
 @Component
 public class ApiCallHelper {
-
+    private static final Logger log = LoggerFactory.getLogger(ApiCallHelper.class);
     private final ObjectMapper objectMapper;
 
     public ApiCallHelper(ObjectMapper objectMapper) {
