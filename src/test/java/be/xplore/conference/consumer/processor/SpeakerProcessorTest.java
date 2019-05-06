@@ -2,6 +2,7 @@ package be.xplore.conference.consumer.processor;
 
 import be.xplore.conference.consumer.dto.LinkDto;
 import be.xplore.conference.consumer.dto.SpeakerDto;
+import be.xplore.conference.model.Speaker;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.After;
 import org.junit.Before;
@@ -26,6 +27,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
+import static junit.framework.TestCase.assertEquals;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockserver.integration.ClientAndServer.startClientAndServer;
 import static org.mockserver.model.HttpRequest.request;
@@ -58,11 +60,18 @@ public class SpeakerProcessorTest {
     @Test
     public void testProcessSpeaker() {
         new MockServerClient("localhost", 1080)
-                .when(request().withMethod("GET").withPath("/api/conferences/dvbe18/speakers/.*"))
+                .when(request().withMethod("GET").withPath("/api/conferences/dvbe18/speakers/05b9d537f1895a60adc4dbc25b6af2d1ef458854"))
                 .respond(response()
                         .withStatusCode(HttpStatusCode.OK_200.code())
                         .withHeader(HttpHeaders.ETAG, "v2-791456269257604")
-                        .withBody(readFromClasspath("speaker.json")));
+                        .withBody(readFromClasspath("stephan-janssen-speaker.json")));
+
+        new MockServerClient("localhost", 1080)
+                .when(request().withMethod("GET").withPath("/api/conferences/dvbe18/speakers/bd2f55b11bacf7aa2791921b48dd589c3567bc81"))
+                .respond(response()
+                        .withStatusCode(HttpStatusCode.OK_200.code())
+                        .withHeader(HttpHeaders.ETAG, "v2-791456269257604")
+                        .withBody(readFromClasspath("mark-reinhold-speaker.json")));
 
 
         List<SpeakerDto> speakerDtos = new ArrayList<>();
@@ -78,10 +87,19 @@ public class SpeakerProcessorTest {
                                 "http://dvbe18.confinabox.com/api/profile/speaker",
                                 "Mark Reinhold"),
                         "Mark Reinhold"));
-        speakerProcessor.generateForTalk(speakerDtos);
+        List<Speaker> speakers = speakerProcessor.generateForTalk(speakerDtos);
 
-        //TODO: write more asserts
-        assertThat(speakerDtos).isNotNull();
+        assertThat(speakers).isNotNull().satisfies(s -> {
+            assertThat(s).hasSize(2);
+            assertThat(s.get(0)).isNotNull().satisfies(speaker -> {
+                assertEquals("stephan",speaker.getFirstName().toLowerCase());
+                assertEquals("05b9d537f1895a60adc4dbc25b6af2d1ef458854",speaker.getUuid());
+            });
+            assertThat(s.get(1)).isNotNull().satisfies(speaker -> {
+                assertEquals("mark",speaker.getFirstName().toLowerCase());
+                assertEquals("bd2f55b11bacf7aa2791921b48dd589c3567bc81",speaker.getUuid());
+            });
+        });
     }
 
     private String readFromClasspath(String filename) {
