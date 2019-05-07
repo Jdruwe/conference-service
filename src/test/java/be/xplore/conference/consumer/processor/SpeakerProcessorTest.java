@@ -59,6 +59,25 @@ public class SpeakerProcessorTest {
 
     @Test
     public void testProcessSpeaker() {
+        setupMockServerExpectations();
+        List<SpeakerDto> speakerDtos = fillSpeakerDtoList();
+
+        List<Speaker> speakers = speakerProcessor.generateForTalk(speakerDtos);
+
+        assertThat(speakers).isNotNull().satisfies(s -> {
+            assertThat(s).hasSize(2);
+            assertThat(s.get(0)).isNotNull().satisfies(speaker -> {
+                assertEquals("stephan", speaker.getFirstName().toLowerCase());
+                assertEquals("05b9d537f1895a60adc4dbc25b6af2d1ef458854", speaker.getUuid());
+            });
+            assertThat(s.get(1)).isNotNull().satisfies(speaker -> {
+                assertEquals("mark", speaker.getFirstName().toLowerCase());
+                assertEquals("bd2f55b11bacf7aa2791921b48dd589c3567bc81", speaker.getUuid());
+            });
+        });
+    }
+
+    private void setupMockServerExpectations() {
         new MockServerClient("localhost", 1080)
                 .when(request().withMethod("GET").withPath("/api/conferences/dvbe18/speakers/05b9d537f1895a60adc4dbc25b6af2d1ef458854"))
                 .respond(response()
@@ -72,8 +91,17 @@ public class SpeakerProcessorTest {
                         .withStatusCode(HttpStatusCode.OK_200.code())
                         .withHeader(HttpHeaders.ETAG, "v2-791456269257604")
                         .withBody(readFromClasspath("mark-reinhold-speaker.json")));
+    }
 
+    private String readFromClasspath(String filename) {
+        try (InputStream in = new ClassPathResource(filename, getClass()).getInputStream()) {
+            return StreamUtils.copyToString(in, StandardCharsets.UTF_8);
+        } catch (IOException e) {
+            throw new UncheckedIOException(String.format("Unable to read file from classpath %s", filename), e);
+        }
+    }
 
+    private List<SpeakerDto> fillSpeakerDtoList() {
         List<SpeakerDto> speakerDtos = new ArrayList<>();
         speakerDtos.add(new SpeakerDto
                 (new LinkDto
@@ -87,27 +115,6 @@ public class SpeakerProcessorTest {
                                 "http://dvbe18.confinabox.com/api/profile/speaker",
                                 "Mark Reinhold"),
                         "Mark Reinhold"));
-        List<Speaker> speakers = speakerProcessor.generateForTalk(speakerDtos);
-
-        assertThat(speakers).isNotNull().satisfies(s -> {
-            assertThat(s).hasSize(2);
-            assertThat(s.get(0)).isNotNull().satisfies(speaker -> {
-                assertEquals("stephan",speaker.getFirstName().toLowerCase());
-                assertEquals("05b9d537f1895a60adc4dbc25b6af2d1ef458854",speaker.getUuid());
-            });
-            assertThat(s.get(1)).isNotNull().satisfies(speaker -> {
-                assertEquals("mark",speaker.getFirstName().toLowerCase());
-                assertEquals("bd2f55b11bacf7aa2791921b48dd589c3567bc81",speaker.getUuid());
-            });
-        });
+        return speakerDtos;
     }
-
-    private String readFromClasspath(String filename) {
-        try (InputStream in = new ClassPathResource(filename, getClass()).getInputStream()) {
-            return StreamUtils.copyToString(in, StandardCharsets.UTF_8);
-        } catch (IOException e) {
-            throw new UncheckedIOException(String.format("Unable to read file from classpath %s", filename), e);
-        }
-    }
-
 }

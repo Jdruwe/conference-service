@@ -31,7 +31,6 @@ public class EmailSender {
             mail.setText(setBodyForOfflineMail(clients).toString());
             mail.setFrom("noReply@devoxx.com");
             sendMailToAllAdmins(mail);
-            log.info("Mail for offline clients send");
         }
     }
 
@@ -41,7 +40,6 @@ public class EmailSender {
         mail.setText(setBodyForReconnectMail(client).toString());
         mail.setFrom("noReply@devoxx.com");
         sendMailToAllAdmins(mail);
-        log.info("Mail for reconnected client send");
     }
 
     private void sendMailToAllAdmins(SimpleMailMessage mailMessage){

@@ -60,10 +60,6 @@ public class ClientController {
 
     @PatchMapping
     public ResponseEntity<ClientDto> updateHeartbeat(@RequestBody ClientHeartbeatDto clientHeartbeatDto) throws RoomNotFoundException {
-        log.info("Heartbeat update for client "
-                + clientHeartbeatDto.getClientId() +
-                " at time of " +
-                clientHeartbeatDto.getNewDate());
         Client client = this.clientService.updateLastConnectedTime(clientHeartbeatDto.getClientId(), clientHeartbeatDto.getNewDate());
         if(clientScheduler.wasClientOffline(client)){
             emailSender.sendEmailForReconnectedClient(client);

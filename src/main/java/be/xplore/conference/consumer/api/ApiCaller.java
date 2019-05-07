@@ -10,8 +10,6 @@ import be.xplore.conference.consumer.dto.ScheduleDto;
 import be.xplore.conference.consumer.dto.SpeakerInformationDto;
 import be.xplore.conference.consumer.property.DevoxxApiProperties;
 import be.xplore.conference.model.DayOfWeek;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;

@@ -1,12 +1,11 @@
+/*package be.xplore.conference.consumer.processor;
 
-package be.xplore.conference.consumer.processor;
-
-import be.xplore.conference.consumer.dto.SlotDto;
-import be.xplore.conference.model.Talk;
+import be.xplore.conference.model.Room;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -28,8 +27,6 @@ import java.io.UncheckedIOException;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
 
-import static junit.framework.TestCase.assertEquals;
-import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockserver.integration.ClientAndServer.startClientAndServer;
 import static org.mockserver.model.HttpRequest.request;
 import static org.mockserver.model.HttpResponse.response;
@@ -39,14 +36,13 @@ import static org.mockserver.model.HttpResponse.response;
 @SpringBootTest
 @Transactional
 @ActiveProfiles("test")
-public class TalkProcessorTest {
+public class ScheduleProcessorTest {
 
     @Autowired
     private ObjectMapper objectMapper;
 
     @Autowired
-    private TalkProcessor talkProcessor;
-
+    private ScheduleProcessor scheduleProcessor;
 
     private ClientAndServer mockServer;
 
@@ -61,7 +57,14 @@ public class TalkProcessorTest {
     }
 
     @Test
-    public void testProcessTalks() throws IOException {
+    public void processSchedule() throws IOException {
+        new MockServerClient("localhost", 1080)
+                .when(request().withMethod("GET").withPath("/api/conferences/dvbe18/rooms/.*"))
+                .respond(response()
+                        .withStatusCode(HttpStatusCode.OK_200.code())
+                        .withHeader(HttpHeaders.ETAG, "v2-791456269257604")
+                        .withBody(readFromClasspath("testing.json")));
+
         new MockServerClient("localhost", 1080)
                 .when(request().withMethod("GET").withPath("/api/conferences/dvbe18/speakers/.*"))
                 .respond(response()
@@ -69,18 +72,20 @@ public class TalkProcessorTest {
                         .withHeader(HttpHeaders.ETAG, "v2-791456269257604")
                         .withBody(readFromClasspath("speaker.json")));
 
-        String textForObject = readFromClasspath("slots.json");
-        List<SlotDto> slotDtoObjects = objectMapper.readValue(textForObject, new TypeReference<List<SlotDto>>() {});
+        new MockServerClient("localhost", 1080)
+                .when(request().withMethod("GET").withPath("api/conferences/dvbe18/speakers/5d72df99a9534dc88b752508970034f37b476ade"))
+                .respond(response()
+                        .withStatusCode(HttpStatusCode.OK_200.code())
+                        .withHeader(HttpHeaders.ETAG, "v2-791456269257604")
+                        .withBody(readFromClasspath("testing2.json")));
 
-        List<Talk> process = talkProcessor.process(slotDtoObjects);
 
-        assertThat(process).isNotNull().satisfies(p -> {
-            assertThat(p).hasSize(5);
-            assertThat(p.get(0).getSpeakers()).isNotNull().satisfies(speaker -> {
-                assertThat(speaker).hasSize(2);
-                assertEquals("c36efd6e34dbfa7e4af7869ec4132248215cb717", speaker.get(0).getUuid());
-            });
+
+        String textForObject = readFromClasspath("list-of-room.json");
+        List<Room> rooms = objectMapper.readValue(textForObject, new TypeReference<List<Room>>() {
         });
+        scheduleProcessor.process(rooms);
+        Assert.assertTrue(true);
     }
 
     private String readFromClasspath(String filename) {
@@ -89,5 +94,5 @@ public class TalkProcessorTest {
         } catch (IOException e) {
             throw new UncheckedIOException(String.format("Unable to read file from classpath %s", filename), e);
         }
-    }
 }
+    }*/
