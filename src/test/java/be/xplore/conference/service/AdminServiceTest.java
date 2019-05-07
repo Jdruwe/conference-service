@@ -72,6 +72,17 @@ public class AdminServiceTest {
         service.loadAdminThatHasPassword("");
     }
 
+    //TODO: look at this test
+/*    @Test(expected = UsernameNotFoundException.class)
+    public void testLoadAdminThatHasPasswordThrowsExceptionWithMessage() {
+        try {
+            service.loadAdminThatHasPassword("");
+        } catch (UsernameNotFoundException e) {
+            assertEquals("No admin with that name or email were found", e.);
+            throw e;
+        }
+    }*/
+
     @Test()
     public void testLoadAdminThatHasPassword() {
         Admin admin = service.loadAdminThatHasPassword(ADMIN_NAME);
