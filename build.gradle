@@ -58,7 +58,8 @@ dependencies {
     
     compile "org.mock-server:mockserver-netty:5.5.1"
 
-    compile "org.slf4j:slf4j-api:${slf4j.version}"
+    compileOnly 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
 }
 
 pmd {
