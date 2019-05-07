@@ -14,7 +14,6 @@ import java.util.List;
 
 @Component
 public class EmailSender {
-    private static final Logger log = LoggerFactory.getLogger(EmailSender.class);
     private final JavaMailSender mailSender;
     private AdminService adminService;
 
