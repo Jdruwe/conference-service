@@ -69,12 +69,12 @@ public class SettingsController {
                         Boolean.parseBoolean(settingsService.loadByKey(IS_ROOM_OCCUPANCY_ON)
                                 .orElseThrow(SettingNotFoundException::new)
                                 .getValue()))
-//                .showMessage(Boolean.parseBoolean(settingsService.loadByKey(SHOW_MESSAGE)
-//                        .ifPresentOrElse();
-//                        .getValue()))
-//                .message(settingsService.loadByKey(MESSAGE)
-//                        .orElseThrow(SettingNotFoundException::new)
-//                        .getValue())
+                .showMessage(Boolean.parseBoolean(settingsService.loadByKey(SHOW_MESSAGE)
+                        .orElseThrow(SettingNotFoundException::new)
+                        .getValue()))
+                .message(settingsService.loadByKey(MESSAGE)
+                        .orElseThrow(SettingNotFoundException::new)
+                        .getValue())
                 .build();
     }
 }
