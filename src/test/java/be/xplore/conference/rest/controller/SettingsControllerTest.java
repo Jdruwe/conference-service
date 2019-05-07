@@ -43,13 +43,15 @@ public class SettingsControllerTest {
     @Test
     @WithMockUser("xploreAdmin")
     public void testChangeSettings() throws Exception {
-        SettingsDto settingsDto = new SettingsDto(7, false);
+        SettingsDto settingsDto = new SettingsDto(7, false, false, "This is a message");
         mockMvc.perform(put("/api/settings")
                 .content(objectMapper.writeValueAsString(settingsDto))
                 .contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("7")))
-                .andExpect(content().string(containsString("false")));
+                .andExpect(content().string(containsString("false")))
+                .andExpect(content().string(containsString("false")))
+                .andExpect(content().string(containsString("This is a message")));
     }
 
 }
