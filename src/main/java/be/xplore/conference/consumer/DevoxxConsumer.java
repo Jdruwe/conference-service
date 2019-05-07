@@ -16,6 +16,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
+import java.io.IOException;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -50,7 +51,7 @@ public class DevoxxConsumer {
     }
 
     @Scheduled(fixedRateString = "${settings.queryRateInMilliseconds}")
-    private void consumeApi() {
+    public void consumeApi() throws IOException {
         String etag = getRoomsEtag();
         RoomsDto dto = getRoomsFromApi(etag);
 
@@ -61,7 +62,7 @@ public class DevoxxConsumer {
     }
 
     @PostConstruct
-    private void fillSettings() {
+    public void fillSettings() {
         settingsService.save(new Settings("minutesBeforeNextSession", String.valueOf(settingsProperties.getMinutesBeforeNextSession())));
         settingsService.save(new Settings("isRoomOccupancyOn", String.valueOf(settingsProperties.getIsRoomOccupancyOn())));
     }
