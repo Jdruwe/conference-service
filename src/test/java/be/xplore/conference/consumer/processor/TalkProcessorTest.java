@@ -5,7 +5,6 @@ import be.xplore.conference.consumer.dto.SlotDto;
 import be.xplore.conference.model.Talk;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.extern.slf4j.Slf4j;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -34,7 +33,6 @@ import static org.mockserver.integration.ClientAndServer.startClientAndServer;
 import static org.mockserver.model.HttpRequest.request;
 import static org.mockserver.model.HttpResponse.response;
 
-@Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @Transactional

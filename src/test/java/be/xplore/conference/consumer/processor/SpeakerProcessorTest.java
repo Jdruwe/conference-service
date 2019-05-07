@@ -3,7 +3,6 @@ package be.xplore.conference.consumer.processor;
 import be.xplore.conference.consumer.dto.LinkDto;
 import be.xplore.conference.consumer.dto.SpeakerDto;
 import be.xplore.conference.model.Speaker;
-import lombok.extern.slf4j.Slf4j;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -33,8 +32,6 @@ import static org.mockserver.integration.ClientAndServer.startClientAndServer;
 import static org.mockserver.model.HttpRequest.request;
 import static org.mockserver.model.HttpResponse.response;
 
-
-@Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @Transactional
@@ -64,14 +61,11 @@ public class SpeakerProcessorTest {
 
         List<Speaker> speakers = speakerProcessor.generateForTalk(speakerDtos);
 
-        assertThat(speakers).isNotNull().satisfies(s -> {
-            assertThat(s).hasSize(2);
+        assertThat(speakers).isNotNull().hasSize(2).satisfies(s -> {
             assertThat(s.get(0)).isNotNull().satisfies(speaker -> {
                 assertEquals("stephan", speaker.getFirstName().toLowerCase());
-                assertEquals("05b9d537f1895a60adc4dbc25b6af2d1ef458854", speaker.getUuid());
             });
             assertThat(s.get(1)).isNotNull().satisfies(speaker -> {
-                assertEquals("mark", speaker.getFirstName().toLowerCase());
                 assertEquals("bd2f55b11bacf7aa2791921b48dd589c3567bc81", speaker.getUuid());
             });
         });

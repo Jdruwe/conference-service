@@ -3,7 +3,6 @@ package be.xplore.conference.consumer.processor;
 import be.xplore.conference.consumer.dto.RoomsDto;
 import be.xplore.conference.model.Room;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -24,7 +23,6 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 
-@Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @Transactional
