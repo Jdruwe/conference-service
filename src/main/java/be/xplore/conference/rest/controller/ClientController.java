@@ -27,8 +27,6 @@ public class ClientController {
     private ClientScheduler clientScheduler;
     private EmailSender emailSender;
 
-    private static final Logger log = LoggerFactory.getLogger(ClientController.class);
-
     public ClientController(ClientService clientService, ModelMapper modelMapper, ClientScheduler clientScheduler, EmailSender emailSender) {
         this.clientService = clientService;
         this.modelMapper = modelMapper;

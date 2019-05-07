@@ -22,9 +22,6 @@ public class ClientScheduler {
 
     private List<Client> offlineClients = new ArrayList<>();
 
-    private static final Logger log = LoggerFactory.getLogger(ClientScheduler.class);
-
-
     public ClientScheduler(ClientService clientService, EmailSender emailSender) {
         this.clientService = clientService;
         this.emailSender = emailSender;

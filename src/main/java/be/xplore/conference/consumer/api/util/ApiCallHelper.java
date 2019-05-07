@@ -16,7 +16,6 @@ import java.util.Objects;
 
 @Component
 public class ApiCallHelper {
-    private static final Logger log = LoggerFactory.getLogger(ApiCallHelper.class);
     private final ObjectMapper objectMapper;
 
     public ApiCallHelper(ObjectMapper objectMapper) {
