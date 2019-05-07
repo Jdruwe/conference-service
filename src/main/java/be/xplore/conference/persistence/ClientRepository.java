@@ -19,7 +19,6 @@ public interface ClientRepository extends JpaRepository<Client, Integer> {
     @Query("DELETE FROM Client c WHERE c.id = ?1")
     int deleteClientById(int id);
 
+    @Override
     List<Client> findAll();
-    
-    
 }

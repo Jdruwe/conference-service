@@ -13,7 +13,7 @@ public class SpeakerInformationDto {
     private String uuid;
     private String bioAsHtml;
     @JsonIgnore
-    private Object AcceptedTalks;
+    private Object acceptedTalks;
     private String company;
     private String bio;
     private String lastName;

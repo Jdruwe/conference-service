@@ -3,8 +3,6 @@ package be.xplore.conference.schedulers;
 import be.xplore.conference.model.Client;
 import be.xplore.conference.notifications.EmailSender;
 import be.xplore.conference.service.ClientService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
@@ -17,8 +15,8 @@ import java.util.stream.Collectors;
 @Component
 public class ClientScheduler {
 
-    private ClientService clientService;
-    private EmailSender emailSender;
+    private final ClientService clientService;
+    private final EmailSender emailSender;
 
     private List<Client> offlineClients = new ArrayList<>();
 
@@ -31,10 +29,10 @@ public class ClientScheduler {
     @Scheduled(fixedRate = 180_000)
     public void checkStatusClientsAndSendMail() {
         List<Client> currentClients = clientService.loadAll();
-        if (currentClients.size() != 0) { //&& offlineClients != null
+        if (!currentClients.isEmpty()) { //&& offlineClients != null
             List<Client> checkedAllClientsOnConnectivity = checkAllClientsConnectivity(currentClients);
             offlineClients = updateOfflineClients(offlineClients, currentClients);
-            if (checkedAllClientsOnConnectivity.size() != 0) {
+            if (!checkedAllClientsOnConnectivity.isEmpty()) {
                 sendMail(getCurrentOfflineClients(offlineClients, checkedAllClientsOnConnectivity));
             }
         }
@@ -43,7 +41,7 @@ public class ClientScheduler {
     private List<Client> checkAllClientsConnectivity(List<Client> currentClients) {
         return currentClients
                 .stream()
-                .filter( c -> ChronoUnit.MILLIS.between(c.getLastConnected(),LocalDateTime.now()) > 180_000)
+                .filter(c -> ChronoUnit.MILLIS.between(c.getLastConnected(), LocalDateTime.now()) > 180_000)
                 .collect(Collectors.toList());
     }
 

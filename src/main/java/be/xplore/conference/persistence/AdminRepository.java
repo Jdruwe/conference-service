@@ -10,7 +10,7 @@ import java.util.Optional;
 @Transactional
 public interface AdminRepository extends JpaRepository<Admin, Long> {
     @Query("SELECT a FROM Admin a WHERE a.adminName = ?1 OR a.email = ?1")
-    Optional<Admin> findByAdminNameOrEmail(String AdminNameOrEmail);
+    Optional<Admin> findByAdminNameOrEmail(String adminNameOrEmail);
 
     boolean existsAdminByAdminName(String adminName);
 

@@ -19,7 +19,7 @@ import java.util.List;
 @Transactional
 public class AdminService implements UserDetailsService {
 
-    private AdminRepository repo;
+    private final AdminRepository repo;
     private final PasswordEncoder passwordEncoder;
 
     public AdminService(AdminRepository repo, PasswordEncoder passwordEncoder) {
@@ -32,8 +32,8 @@ public class AdminService implements UserDetailsService {
     }
 
     @Override
-    public UserDetails loadUserByUsername(String AdminNameOrEmail) throws UsernameNotFoundException {
-        Admin admin = repo.findByAdminNameOrEmail(AdminNameOrEmail).orElseThrow(() -> new UsernameNotFoundException("No admins with that name or email were found."));
+    public UserDetails loadUserByUsername(String adminNameOrEmail) throws UsernameNotFoundException {
+        Admin admin = repo.findByAdminNameOrEmail(adminNameOrEmail).orElseThrow(() -> new UsernameNotFoundException("No admins with that name or email were found."));
         return new User(admin.getAdminName(), admin.getPassword(), new ArrayList<>());
     }
 

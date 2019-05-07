@@ -10,7 +10,7 @@ import java.util.Optional;
 @Service
 @Transactional
 public class TalkService {
-    private TalkRepository repo;
+    private final TalkRepository repo;
 
     public TalkService(TalkRepository repo) {
         this.repo = repo;

@@ -5,6 +5,7 @@ plugins {
 }
 
 apply plugin: 'io.spring.dependency-management'
+apply plugin: 'pmd'
 
 group = 'be.xplore'
 version = '0.0.1-SNAPSHOT'
@@ -59,6 +60,11 @@ dependencies {
     compile "org.mock-server:mockserver-netty:5.5.1"
     //compile group: 'org.mock-server', name: 'mockserver-client-java', version: '5.5.4'
     
+}
+
+pmd {
+    ruleSets = []
+    ruleSetFiles = files('./pmd.xml')
 }
 
 jacoco {
