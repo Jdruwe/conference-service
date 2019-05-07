@@ -63,7 +63,7 @@ public class ScheduleProcessorTest {
                 .respond(response()
                         .withStatusCode(HttpStatusCode.OK_200.code())
                         .withHeader(HttpHeaders.ETAG, "v2-791456269257604")
-                        .withBody(readFromClasspath("testing.json")));
+                        .withBody(readFromClasspath("room8-schedule.json")));
 
         new MockServerClient("localhost", 1080)
                 .when(request().withMethod("GET").withPath("/api/conferences/dvbe18/speakers/.*"))
