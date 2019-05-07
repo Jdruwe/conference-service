@@ -1,6 +1,7 @@
 package be.xplore.conference.rest.controller;
 
-import be.xplore.conference.rest.dto.SettingsDto;
+import be.xplore.conference.rest.dto.MainSettingsDto;
+import be.xplore.conference.rest.dto.NotificationsDto;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -37,21 +38,32 @@ public class SettingsControllerTest {
                 .contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("5")))
-                .andExpect(content().string(containsString("true")));
+                .andExpect(content().string(containsString("true")))
+                .andExpect(content().string(containsString("false")))
+                .andExpect(content().string(containsString("")));
     }
 
     @Test
     @WithMockUser("xploreAdmin")
     public void testChangeSettings() throws Exception {
-        SettingsDto settingsDto = new SettingsDto(7, false, false, "This is a message");
+        var dto = new MainSettingsDto(7, false);
         mockMvc.perform(put("/api/settings")
-                .content(objectMapper.writeValueAsString(settingsDto))
+                .content(objectMapper.writeValueAsString(dto))
                 .contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("7")))
-                .andExpect(content().string(containsString("false")))
-                .andExpect(content().string(containsString("false")))
-                .andExpect(content().string(containsString("This is a message")));
+                .andExpect(content().string(containsString("false")));
     }
 
+    @Test
+    @WithMockUser("xploreAdmin")
+    public void testChangeNotificationSettings() throws Exception {
+        var dto = new NotificationsDto(true, "This is a test message");
+        mockMvc.perform(put("/api/settings/notifications")
+                .content(objectMapper.writeValueAsString(dto))
+                .contentType(MediaType.APPLICATION_JSON_UTF8))
+                .andExpect(status().isOk())
+                .andExpect(content().string(containsString("true")))
+                .andExpect(content().string(containsString("This is a test message")));
+    }
 }

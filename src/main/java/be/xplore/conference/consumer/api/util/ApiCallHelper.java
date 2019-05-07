@@ -2,7 +2,6 @@ package be.xplore.conference.consumer.api.util;
 
 import be.xplore.conference.consumer.api.dto.ApiResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -12,7 +11,6 @@ import org.springframework.web.client.RestTemplate;
 
 import java.io.IOException;
 import java.util.Objects;
-import java.util.logging.Logger;
 
 @Component
 public class ApiCallHelper {
