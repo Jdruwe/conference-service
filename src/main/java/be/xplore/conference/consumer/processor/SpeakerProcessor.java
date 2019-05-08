@@ -6,6 +6,7 @@ import be.xplore.conference.consumer.dto.SpeakerDto;
 import be.xplore.conference.exception.SpeakerNotFoundException;
 import be.xplore.conference.model.Speaker;
 import be.xplore.conference.service.SpeakerService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -13,6 +14,7 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
+@Slf4j
 @Component
 public class SpeakerProcessor {
 
@@ -60,5 +62,4 @@ public class SpeakerProcessor {
         }
         return "";
     }
-
 }

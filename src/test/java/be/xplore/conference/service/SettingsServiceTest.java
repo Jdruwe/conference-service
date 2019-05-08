@@ -22,7 +22,7 @@ public class SettingsServiceTest {
     private static final String TEST = "Test";
 
     @Autowired
-    SettingsService settingsService;
+    private SettingsService settingsService;
 
     @Before
     public void setUp() {

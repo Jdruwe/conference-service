@@ -10,6 +10,6 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ClientHeartbeatDto {
-    int clientId;
-    LocalDateTime newDate;
+    private int clientId;
+    private LocalDateTime newDate;
 }
