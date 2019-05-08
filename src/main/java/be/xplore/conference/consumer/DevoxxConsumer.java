@@ -65,6 +65,8 @@ public class DevoxxConsumer {
     public void fillSettings() {
         settingsService.save(new Settings("minutesBeforeNextSession", String.valueOf(settingsProperties.getMinutesBeforeNextSession())));
         settingsService.save(new Settings("isRoomOccupancyOn", String.valueOf(settingsProperties.getIsRoomOccupancyOn())));
+        settingsService.save(new Settings("message", ""));
+        settingsService.save(new Settings("showMessage", String.valueOf(false)));
     }
 
     private RoomsDto getRoomsFromApi(String etag) {
