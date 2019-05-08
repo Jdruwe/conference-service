@@ -57,9 +57,7 @@ dependencies {
     testCompile(group: 'org.springframework.security', name: 'spring-security-test', version: '5.1.1.RELEASE')
     
     compile "org.mock-server:mockserver-netty:5.5.1"
-
-    compileOnly 'org.projectlombok:lombok:1.18.8'
-    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+    
 }
 
 pmd {
