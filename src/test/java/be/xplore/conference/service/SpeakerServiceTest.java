@@ -34,7 +34,6 @@ public class SpeakerServiceTest {
         Optional<Speaker> savedSpeaker = service.loadById("e14ef4212ffd330e97f9a0ff3420fc27714d4b0d");
         Assert.assertTrue(savedSpeaker.isPresent());
         Assert.assertEquals(savedSpeaker.get().getUuid(),"e14ef4212ffd330e97f9a0ff3420fc27714d4b0d");
-        Assert.assertEquals(savedSpeaker.get().getFirstName(),"José");
         Assert.assertEquals(savedSpeaker.get().getLastName(),"Paumard");
     }
 }
