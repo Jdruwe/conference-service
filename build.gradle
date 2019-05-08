@@ -64,7 +64,7 @@ dependencies {
 
 pmd {
     ruleSets = []
-    ruleSetFiles = files('./pmd.xml')
+    ruleSetFiles = files('./ruleset.xml')
 }
 
 jacoco {
