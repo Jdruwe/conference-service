@@ -25,7 +25,10 @@ public class ClientController {
     private final ClientScheduler clientScheduler;
     private final EmailSender emailSender;
 
-    public ClientController(ClientService clientService, ModelMapper modelMapper, ClientScheduler clientScheduler, EmailSender emailSender) {
+    public ClientController(ClientService clientService,
+                            ModelMapper modelMapper,
+                            ClientScheduler clientScheduler,
+                            EmailSender emailSender) {
         this.clientService = clientService;
         this.modelMapper = modelMapper;
         this.clientScheduler = clientScheduler;
@@ -34,7 +37,7 @@ public class ClientController {
 
     @PostMapping
     public ResponseEntity<ClientDto> registerClient(@RequestBody ClientInfoDto clientInfoDto) throws RoomNotFoundException {
-        Client client = new Client(clientInfoDto.getRoom(), clientInfoDto.getLastConnected().plusHours(2));
+        Client client = new Client(clientInfoDto.getRoom(), clientInfoDto.getLastConnected());
         this.clientService.save(client);
         return new ResponseEntity<>(modelMapper.map(client, ClientDto.class), HttpStatus.CREATED);
     }
@@ -56,7 +59,8 @@ public class ClientController {
 
     @PatchMapping
     public ResponseEntity<ClientDto> updateHeartbeat(@RequestBody ClientHeartbeatDto clientHeartbeatDto) throws RoomNotFoundException {
-        Client client = this.clientService.updateLastConnectedTime(clientHeartbeatDto.getClientId(), clientHeartbeatDto.getNewDate());
+        Client client = this.clientService
+                .updateLastConnectedTime(clientHeartbeatDto.getClientId(), clientHeartbeatDto.getNewDate());
         if (clientScheduler.wasClientOffline(client)) {
             emailSender.sendEmailForReconnectedClient(client);
         }
