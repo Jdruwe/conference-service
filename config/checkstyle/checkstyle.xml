@@ -28,7 +28,9 @@
     <module name="SuppressWarningsFilter"/>
 
     <module name="TreeWalker">
-        <module name="AvoidStarImport"/>
+        <module name="AvoidStarImport">
+            <property name="allowClassImports" value="true"/>
+        </module>
 
         <module name="ConstantName"/>
 
@@ -63,13 +65,13 @@
 
         <module name="IllegalType"/>
 
-        <module name="ImportOrder">
-            <property name="groups" value="*,javax,java"/>
+<!--        <module name="ImportOrder">
             <property name="option" value="bottom"/>
-            <property name="ordered" value="true"/>
+            <property name="groups" value="*,javax,java"/>
+            <property name="ordered" value="false"/>
             <property name="separated" value="true"/>
             <property name="sortStaticImportsAlphabetically" value="true"/>
-        </module>
+        </module>-->
 
         <module name="Indentation">
             <property name="basicOffset" value="4"/>
@@ -137,7 +139,7 @@
 
         <module name="ParameterNumber">
             <property name="ignoreOverriddenMethods" value="true"/>
-            <property name="max" value="3"/>
+            <property name="max" value="4"/>
             <property name="tokens" value="METHOD_DEF"/>
         </module>
 

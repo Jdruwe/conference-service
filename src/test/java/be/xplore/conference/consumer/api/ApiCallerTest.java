@@ -1,7 +1,11 @@
 package be.xplore.conference.consumer.api;
 
-import be.xplore.conference.consumer.api.dto.*;
-import be.xplore.conference.consumer.dto.*;
+import be.xplore.conference.consumer.api.dto.RoomScheduleResponse;
+import be.xplore.conference.consumer.api.dto.RoomsResponse;
+import be.xplore.conference.consumer.api.dto.SpeakerResponse;
+import be.xplore.conference.consumer.dto.RoomsDto;
+import be.xplore.conference.consumer.dto.ScheduleDto;
+import be.xplore.conference.consumer.dto.SpeakerInformationDto;
 import be.xplore.conference.model.DayOfWeek;
 import org.junit.After;
 import org.junit.Assert;
@@ -70,11 +74,9 @@ public class ApiCallerTest {
         apiCaller.getRoomSchedule(ROOM5, null, DayOfWeek.TUESDAY);
 
         new MockServerClient(GETLOCALHOST, 1080)
-                .verify(
-                        request()
+                .verify(request()
                                 .withPath(PATHROOM5TUESDAY),
-                        VerificationTimes.once()
-                );
+                        VerificationTimes.once());
     }
 
     @Test
@@ -93,8 +95,7 @@ public class ApiCallerTest {
                 .verify(
                         request()
                                 .withPath(PATHROOM5TUESDAY),
-                        VerificationTimes.atLeast(2)
-                );
+                        VerificationTimes.atLeast(2));
     }
 
     @Test

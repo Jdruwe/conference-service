@@ -41,17 +41,14 @@ public class SpeakerProcessor {
     private Speaker createSpeaker(SpeakerDto dto) {
         String href = dto.getLink().getHref();
         String uuid = href.substring(href.lastIndexOf('/') + 1);
-        String etag = getSpeakerEtag(uuid);
 
-        Speaker s;
-        SpeakerResponse response = apiCaller.getSpeaker(uuid, etag);
+        SpeakerResponse response = apiCaller.getSpeaker(uuid, getSpeakerEtag(uuid));
         if (Objects.nonNull(response.getSpeakerInformation())) {
-            s = response.getSpeakerInformation().toDomain();
+            Speaker s = response.getSpeakerInformation().toDomain();
             s.setEtag(response.getEtag());
             return speakerService.save(s);
         } else {
-            return speakerService.loadById(uuid)
-                    .orElseThrow(SpeakerNotFoundException::new);
+            return speakerService.loadById(uuid).orElseThrow(SpeakerNotFoundException::new);
         }
     }
 

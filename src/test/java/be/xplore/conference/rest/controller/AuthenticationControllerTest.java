@@ -96,7 +96,8 @@ public class AuthenticationControllerTest {
                     .andReturn()
                     .getResponse()
                     .getContentAsString();
-        } else
+        } else {
             throw new HttpServerErrorException(expectedStatus);
+        }
     }
 }
