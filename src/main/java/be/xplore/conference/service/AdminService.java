@@ -38,17 +38,21 @@ public class AdminService implements UserDetailsService {
     }
 
     public Admin register(Admin admin) throws AdminNameAlreadyExistsException, EmailAlreadyExistsException {
-        if (repo.existsAdminByAdminName(admin.getAdminName()))
+        if (repo.existsAdminByAdminName(admin.getAdminName())) {
             throw new AdminNameAlreadyExistsException("A admin with this adminName already exists.");
-        if (repo.existsAdminByEmail(admin.getEmail()))
+        }
+        if (repo.existsAdminByEmail(admin.getEmail())) {
             throw new EmailAlreadyExistsException("A admin with this email already exists.");
+        }
         admin.setPassword(passwordEncoder.encode(admin.getPassword()));
         return repo.save(admin);
     }
 
     public Admin loadAdminThatHasPassword(String adminNameOrEmail) {
         Admin admin = loadAdminByAdminNameOrEmail(adminNameOrEmail);
-        if (admin != null) return admin;
+        if (admin != null) {
+            return admin;
+        }
         throw new UsernameNotFoundException("No admin with that name or email were found.");
     }
 
@@ -56,7 +60,7 @@ public class AdminService implements UserDetailsService {
         return repo.findByAdminNameOrEmail(adminNameOrEmail).orElseThrow(() -> new UsernameNotFoundException("No admin with that name or email were found."));
     }
 
-    public List<Admin> loadAllAdmins(){
+    public List<Admin> loadAllAdmins() {
         return repo.findAll();
     }
 }

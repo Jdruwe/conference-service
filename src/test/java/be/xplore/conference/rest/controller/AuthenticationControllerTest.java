@@ -80,23 +80,8 @@ public class AuthenticationControllerTest {
                     .andReturn()
                     .getResponse()
                     .getContentAsString();
-        } else if (expectedStatus.equals(HttpStatus.UNAUTHORIZED)) {
-            return mockMvc.perform(post("/api/authentication/login")
-                    .contentType(MediaType.APPLICATION_JSON_UTF8)
-                    .content(jsonString))
-                    .andExpect(status().isUnauthorized())
-                    .andReturn()
-                    .getResponse()
-                    .getContentAsString();
-        } else if (expectedStatus.equals(HttpStatus.FORBIDDEN)) {
-            return mockMvc.perform(post("/api/authentication/login")
-                    .contentType(MediaType.APPLICATION_JSON_UTF8)
-                    .content(jsonString))
-                    .andExpect(status().isForbidden())
-                    .andReturn()
-                    .getResponse()
-                    .getContentAsString();
-        } else
+        }  else {
             throw new HttpServerErrorException(expectedStatus);
+        }
     }
 }

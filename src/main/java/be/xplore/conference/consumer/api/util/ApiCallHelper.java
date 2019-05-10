@@ -32,8 +32,9 @@ public class ApiCallHelper {
     }
 
     private <T> T mapBody(String body, Class<T> mapTo) throws IOException {
-        if (Objects.nonNull(body))
+        if (Objects.nonNull(body)) {
             return objectMapper.readValue(body, mapTo);
+        }
         return null;
     }
 

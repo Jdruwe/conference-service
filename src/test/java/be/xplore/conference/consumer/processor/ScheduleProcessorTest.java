@@ -1,5 +1,5 @@
-/*package be.xplore.conference.consumer.processor;
-
+package be.xplore.conference.consumer.processor;
+/*
 import be.xplore.conference.model.Room;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;

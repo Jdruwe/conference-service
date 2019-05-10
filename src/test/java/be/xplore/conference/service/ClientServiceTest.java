@@ -4,6 +4,7 @@ import be.xplore.conference.exception.RoomAlreadyRegisteredException;
 import be.xplore.conference.exception.RoomNotFoundException;
 import be.xplore.conference.model.Client;
 import be.xplore.conference.model.Room;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,8 +16,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -50,8 +49,8 @@ public class ClientServiceTest {
     public void testSave() throws RoomAlreadyRegisteredException, RoomNotFoundException {
         Client client = new Client(room, date);
         Client savedClient = clientService.save(client);
-        assertNotNull(savedClient);
-        assertEquals(savedClient.getLastConnected(), date);
+        Assert.assertNotNull(savedClient);
+        Assert.assertEquals(savedClient.getLastConnected(), date);
     }
 
     @Test(expected = RoomNotFoundException.class)
@@ -78,8 +77,8 @@ public class ClientServiceTest {
         Client client = new Client(room, date);
         Client savedClient = clientService.save(client);
         int result = clientService.delete(savedClient.getId());
-        assertTrue(result > 0);
-        assertEquals(result, 1);
+        Assert.assertTrue(result > 0);
+        Assert.assertEquals(result, 1);
     }
 
     @Test
@@ -87,9 +86,9 @@ public class ClientServiceTest {
         Client client = new Client(room, date);
         clientService.save(client);
         List<Client> clients = clientService.loadAll();
-        assertNotNull(clients);
-        assertEquals(clients.size(), 1);
-        assertEquals(clients.get(0).getRoom(), room);
+        Assert.assertNotNull(clients);
+        Assert.assertEquals(clients.size(), 1);
+        Assert.assertEquals(clients.get(0).getRoom(), room);
     }
 
     @Test(expected = RoomNotFoundException.class)
@@ -113,9 +112,9 @@ public class ClientServiceTest {
         Client client1 = clientService.save(client);
         LocalDateTime newDate = LocalDateTime.now();
         Client updatedClient = clientService.updateLastConnectedTime(client1.getId(), newDate);
-        assertEquals(updatedClient.getLastConnected(), newDate);
-        assertNotEquals(updatedClient.getLastConnected(), date);
-        assertEquals(updatedClient.getRoom(), room);
+        Assert.assertEquals(updatedClient.getLastConnected(), newDate);
+        Assert.assertNotEquals(updatedClient.getLastConnected(), date);
+        Assert.assertEquals(updatedClient.getRoom(), room);
     }
 
 }

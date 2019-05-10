@@ -2,10 +2,18 @@ plugins {
     id 'org.springframework.boot' version '2.1.3.RELEASE'
     id 'java'
     id 'jacoco'
+    id 'checkstyle'
 }
 
 apply plugin: 'io.spring.dependency-management'
 apply plugin: 'pmd'
+apply plugin: 'checkstyle'
+
+
+checkstyle {
+    toolVersion = "8.18"
+    configFile = file('config/checkstyle/checkstyle.xml')
+}
 
 group = 'be.xplore'
 version = '0.0.1-SNAPSHOT'
@@ -42,7 +50,7 @@ dependencies {
 
     compile("org.springframework.boot:spring-boot-starter-mail")
     compile "org.springframework:spring-context-support:3.0.5.RELEASE"
-    
+
     runtimeOnly('com.h2database:h2')
     runtimeOnly 'org.springframework.boot:spring-boot-devtools'
     compileOnly 'org.projectlombok:lombok'
@@ -55,7 +63,7 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testCompile(group: 'org.springframework.security', name: 'spring-security-test', version: '5.1.1.RELEASE')
-    
+
     compile "org.mock-server:mockserver-netty:5.5.1"
 
     compileOnly 'org.projectlombok:lombok:1.18.8'

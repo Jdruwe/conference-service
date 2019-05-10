@@ -62,7 +62,7 @@ public class JwtTokenProvider {
         return generateTokenFromAuthentication(authentication);
     }
 
-    public String generateToken(String adminNameOrEmail, long expirationInMillis) {
+    private String generateToken(String adminNameOrEmail, long expirationInMillis) {
         return Jwts.builder()
                 .setSubject(adminNameOrEmail)
                 .setIssuedAt(new Date())

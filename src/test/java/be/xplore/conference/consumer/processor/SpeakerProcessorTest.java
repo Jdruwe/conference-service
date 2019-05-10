@@ -97,18 +97,16 @@ public class SpeakerProcessorTest {
 
     private List<SpeakerDto> fillSpeakerDtoList() {
         List<SpeakerDto> speakerDtos = new ArrayList<>();
-        speakerDtos.add(new SpeakerDto
-                (new LinkDto
-                        ("http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/05b9d537f1895a60adc4dbc25b6af2d1ef458854",
-                                "http://dvbe18.confinabox.com/api/profile/speaker",
-                                "Stephan Janssen"),
-                        "Stephan Jannssen"));
-        speakerDtos.add(new SpeakerDto
-                (new LinkDto
-                        ("http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/bd2f55b11bacf7aa2791921b48dd589c3567bc81",
-                                "http://dvbe18.confinabox.com/api/profile/speaker",
-                                "Mark Reinhold"),
-                        "Mark Reinhold"));
+        speakerDtos.add(new SpeakerDto(new LinkDto(
+                "http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/05b9d537f1895a60adc4dbc25b6af2d1ef458854",
+                "http://dvbe18.confinabox.com/api/profile/speaker",
+                "Stephan Janssen"),
+                "Stephan Jannssen"));
+        speakerDtos.add(new SpeakerDto(new LinkDto(
+                "http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/bd2f55b11bacf7aa2791921b48dd589c3567bc81",
+                "http://dvbe18.confinabox.com/api/profile/speaker",
+                "Mark Reinhold"),
+                "Mark Reinhold"));
         return speakerDtos;
     }
 }

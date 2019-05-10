@@ -10,15 +10,16 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+
 @RestController
 @RequestMapping("api/settings")
 public class SettingsController {
-    private final SettingsService settingsService;
-
     private static final String MINUTES_BEFORE_NEXT_SESSION = "minutesBeforeNextSession";
     private static final String IS_ROOM_OCCUPANCY_ON = "isRoomOccupancyOn";
     private static final String SHOW_MESSAGE = "showMessage";
     private static final String MESSAGE = "message";
+
+    private final SettingsService settingsService;
 
     public SettingsController(SettingsService settingsService) {
         this.settingsService = settingsService;
