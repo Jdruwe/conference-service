@@ -1,9 +1,7 @@
 package be.xplore.conference.rest.jwt;
 
 import be.xplore.conference.rest.jwt.property.JwtProperties;
-import io.jsonwebtoken.Claims;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,7 +47,9 @@ public class JwtTokenProvider {
                     .setSigningKey(jwtProperties.getSecret())
                     .parseClaimsJws(authToken);
             return true;
-        } catch (Exception e) {
+        } catch (SignatureException | MalformedJwtException |
+                ExpiredJwtException | UnsupportedJwtException |
+                IllegalArgumentException e) {
             LOGGER.info(e.getMessage());
         }
         return false;
