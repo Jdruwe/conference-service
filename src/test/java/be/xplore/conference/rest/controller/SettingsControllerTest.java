@@ -38,7 +38,7 @@ public class SettingsControllerTest {
                 .contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("5")))
-                .andExpect(content().string(containsString("true")))
+                .andExpect(content().string(containsString("false")))
                 .andExpect(content().string(containsString("false")))
                 .andExpect(content().string(containsString("")));
     }
