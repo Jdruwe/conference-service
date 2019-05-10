@@ -16,7 +16,6 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
-import java.io.IOException;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -50,8 +49,8 @@ public class DevoxxConsumer {
         this.apiCaller = apiCaller;
     }
 
-    @Scheduled(fixedRateString = "${settings.queryRateInMilliseconds}")
-    public void consumeApi() throws IOException {
+    @Scheduled(fixedRateString = "${settings.queryRefreshInterval}")
+    public void consumeApi() {
         String etag = getRoomsEtag();
         RoomsDto dto = getRoomsFromApi(etag);
 
