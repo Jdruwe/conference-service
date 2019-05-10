@@ -1,7 +1,5 @@
 package be.xplore.conference.rest.jwt;
 
-import be.xplore.conference.model.Admin;
-import be.xplore.conference.service.AdminService;
 import io.jsonwebtoken.MalformedJwtException;
 import org.junit.Assert;
 import org.junit.Test;
@@ -30,8 +28,10 @@ public class JwtTokenProviderTest {
 
     @Test
     public void testGetAdminNameFromToken() {
-        String token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ4cGxvcmVBZG1pbiIsImlhdCI6MTU1NzQ5MDU4MSwiZXhwIjoxNTU4MzMwNTgxfQ.H5UeHbQFDNsY70tm0B4l96A7qFnvDpZd3T8QGXC26rbWnMRNCQ4LvYObUJoaAFhyfH3QY8a_d_SB5on_41t7Pg";
+        String token = "eyJhbGciOiJIUzUxMiJ9." +
+                "eyJzdWIiOiJ4cGxvcmVBZG1pbiIsImlhdCI6MTU1NzQ5MDU4MSwiZXhwIjoxNTU4MzMwNTgxfQ." +
+                "H5UeHbQFDNsY70tm0B4l96A7qFnvDpZd3T8QGXC26rbWnMRNCQ4LvYObUJoaAFhyfH3QY8a_d_SB5on_41t7Pg";
         String adminNameFromToken = jwtTokenProvider.getAdminNameFromToken(token);
-        Assert.assertEquals(adminNameFromToken,"xploreAdmin");
+        Assert.assertEquals(adminNameFromToken, "xploreAdmin");
     }
 }

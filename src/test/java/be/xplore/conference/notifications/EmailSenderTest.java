@@ -54,16 +54,14 @@ public class EmailSenderTest {
     }
 
     @Test
-    public void sendEmailForOfflineClients_offlineClients_emailsSend() {
-        System.out.println();
+    public void sendEmailForOfflineClientsOfflineClientsEmailsSend() {
         emailSender.sendEmailForOfflineClients(clients);
         Mockito.verify(javaMailSender).send(getExpectedOfflineMail());
     }
 
 
     @Test
-    public void sendEmailForReconnectedClients_reconnectedClient_emailSend() {
-        System.out.println();
+    public void sendEmailForReconnectedClientsReconnectedClientEmailSend() {
         emailSender.sendEmailForReconnectedClient(clients.get(0));
         Mockito.verify(javaMailSender).send(getExpectedReconnectMail());
     }
