@@ -20,7 +20,7 @@ import java.util.Optional;
 public class TalkServiceTest {
 
     @Autowired
-    TalkService talkService;
+    private TalkService talkService;
 
     @Test
     public void testSaveSetting() {

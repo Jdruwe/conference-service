@@ -14,7 +14,6 @@ import java.util.Objects;
 
 @Component
 public class ApiCallHelper {
-
     private final ObjectMapper objectMapper;
 
     public ApiCallHelper(ObjectMapper objectMapper) {

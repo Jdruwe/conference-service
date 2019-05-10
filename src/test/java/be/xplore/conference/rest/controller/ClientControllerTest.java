@@ -4,7 +4,6 @@ import be.xplore.conference.exception.RoomAlreadyRegisteredException;
 import be.xplore.conference.exception.RoomNotFoundException;
 import be.xplore.conference.model.Client;
 import be.xplore.conference.model.Room;
-import be.xplore.conference.rest.dto.ClientHeartbeatDto;
 import be.xplore.conference.rest.dto.ClientInfoDto;
 import be.xplore.conference.service.ClientService;
 import be.xplore.conference.service.RoomService;
@@ -24,8 +23,9 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.time.LocalDateTime;
-import java.time.temporal.ChronoUnit;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
@@ -40,6 +40,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 public class ClientControllerTest {
 
     private static final String URL = "/api/client";
+    private static final DateTimeFormatter TIME_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssz");
 
     @Autowired
     private MockMvc mockMvc;
@@ -64,16 +65,20 @@ public class ClientControllerTest {
                 .setup("setup")
                 .build();
         roomService.save(room);
-        LocalDateTime registeredDate = LocalDateTime.now();
-        clientInfoDto = new ClientInfoDto(room, registeredDate);
+        ZonedDateTime registeredDate = ZonedDateTime.now();
+        clientInfoDto = new ClientInfoDto(room, registeredDate.toLocalDateTime());
     }
 
     @Test
     @WithMockUser("xploreAdmin")
     public void testRegisterClient() throws Exception {
+        var dto = new RegisterClientTestDto(
+                clientInfoDto.getRoom(),
+                TIME_FORMATTER.format(
+                        ZonedDateTime.of(clientInfoDto.getLastConnected(), ZoneId.of("Europe/Brussels"))));
         mockMvc.perform(post(URL)
                 .contentType(MediaType.APPLICATION_JSON_UTF8)
-                .content(objectMapper.writeValueAsString(clientInfoDto)))
+                .content(objectMapper.writeValueAsString(dto)))
                 .andExpect(status().isCreated())
                 .andExpect(content().string(containsString("testRoom")));
     }
@@ -100,15 +105,19 @@ public class ClientControllerTest {
 
     @Test
     public void testUpdateHeartbeat() throws Exception {
-        LocalDateTime newDate = LocalDateTime.now().truncatedTo(ChronoUnit.MICROS);
+        ZonedDateTime newDate = ZonedDateTime.now();
         registerClientForTesting();
-        ClientHeartbeatDto clientHeartbeatDto = new ClientHeartbeatDto(savedClient.getId(), newDate);
+        UpdateHeartbeatTestDto dto = new UpdateHeartbeatTestDto(savedClient.getId(), TIME_FORMATTER.format(newDate));
         mockMvc.perform(patch(URL)
                 .contentType(MediaType.APPLICATION_JSON_UTF8)
-                .content(objectMapper.writeValueAsString(clientHeartbeatDto)))
+                .content(objectMapper.writeValueAsString(dto)))
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("testRoom")))
-                .andExpect(MockMvcResultMatchers.jsonPath("$.lastConnected").value(newDate.truncatedTo(ChronoUnit.MICROS).toString()));
+                .andExpect(MockMvcResultMatchers.jsonPath("$.lastConnected")
+                        .value(newDate
+                                .toLocalDateTime()
+                                .minusNanos(newDate.getNano())
+                                .toString()));
     }
 
     @Test
@@ -120,5 +129,25 @@ public class ClientControllerTest {
 
     private void registerClientForTesting() throws RoomAlreadyRegisteredException, RoomNotFoundException {
         savedClient = clientService.save(modelMapper.map(clientInfoDto, Client.class));
+    }
+
+    private class UpdateHeartbeatTestDto {
+        public int clientId;
+        public String newDate;
+
+        private UpdateHeartbeatTestDto(int clientId, String newDate) {
+            this.clientId = clientId;
+            this.newDate = newDate;
+        }
+    }
+
+    private class RegisterClientTestDto {
+        public Room room;
+        public String lastConnected;
+
+        private RegisterClientTestDto(Room room, String lastConnected) {
+            this.room = room;
+            this.lastConnected = lastConnected;
+        }
     }
 }

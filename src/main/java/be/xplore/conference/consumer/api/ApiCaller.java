@@ -27,6 +27,7 @@ public class ApiCaller {
 
     public RoomsResponse getRooms(String etag) {
         String url = apiProperties.getBaseUrl() + apiProperties.getRooms();
+
         try {
             ApiResponse response = apiHelper.queryApi(url, etag, RoomsDto.class);
             return new RoomsResponse(response.getETag(), (RoomsDto) response.getBody());

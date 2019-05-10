@@ -20,9 +20,10 @@ import java.util.List;
 @ActiveProfiles("test")
 public class SettingsServiceTest {
     private static final String TEST = "Test";
+    private static final String TEST_SAVE_SETTING = "testSaveSetting";
 
     @Autowired
-    SettingsService settingsService;
+    private SettingsService settingsService;
 
     @Before
     public void setUp() {
@@ -33,17 +34,17 @@ public class SettingsServiceTest {
     public void testLoadAll() {
         List<Settings> settingsList = settingsService.loadAll();
         Assert.assertNotNull(settingsList);
-        Assert.assertEquals(3, settingsList.size());
-        Assert.assertTrue(settingsList.get(2).getValue().contains(TEST));
+        Assert.assertEquals(5, settingsList.size());
+        Assert.assertTrue(settingsList.contains(new Settings(TEST, TEST)));
     }
 
     @Test
     public void testSaveSetting() {
-        settingsService.save(new Settings("testSaveSetting", "testSaveSetting"));
+        settingsService.save(new Settings(TEST_SAVE_SETTING, TEST_SAVE_SETTING));
         List<Settings> settingsList = settingsService.loadAll();
         Assert.assertNotNull(settingsList);
-        Assert.assertEquals(4, settingsList.size());
-        Assert.assertTrue(settingsList.get(3).getValue().contains("testSaveSetting"));
+        Assert.assertEquals(6, settingsList.size());
+        Assert.assertTrue(settingsList.contains(new Settings(TEST_SAVE_SETTING, TEST_SAVE_SETTING)));
     }
 
     @Test

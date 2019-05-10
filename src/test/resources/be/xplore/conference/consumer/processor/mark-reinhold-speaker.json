@@ -1,0 +1,145 @@
+{
+    "uuid": "bd2f55b11bacf7aa2791921b48dd589c3567bc81",
+    "bioAsHtml": "<p>Mark Reinhold is Chief Architect of the Java Platform Group at Oracle.  His past contributions to the platform include character-stream readers and writers, reference objects, shutdown hooks, the NIO high-performance I/O APIs, library generification, service loaders, and the Jigsaw module system.  Mark has held key leadership roles in every Java SE and JDK release since version 1.2, in 1998.  He currently leads the JDK Project in the OpenJDK Community, where he also serves on the Governing Board.  Mark holds a Ph.D. in computer science from the Massachusetts Institute of Technology.</p>\n",
+    "acceptedTalks": [
+        {
+            "talkType": "Conference",
+            "track": "Java Language.label",
+            "links": [
+                {
+                    "href": "http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/YRA-9715",
+                    "rel": "http://dvbe18.confinabox.com/api/profile/talk",
+                    "title": "More details about this talk"
+                },
+                {
+                    "href": "http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/bd2f55b11bacf7aa2791921b48dd589c3567bc81",
+                    "rel": "http://dvbe18.confinabox.com/api/profile/speaker",
+                    "title": "Mark Reinhold"
+                },
+                {
+                    "href": "http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6def69d07b56e2667ec3d3c296fbd35014e10841",
+                    "rel": "http://dvbe18.confinabox.com/api/profile/speaker",
+                    "title": "Brian Goetz"
+                }
+            ],
+            "id": "YRA-9715",
+            "title": "Ask the Java Architects"
+        },
+        {
+            "talkType": "Keynote",
+            "track": "Java Language.label",
+            "links": [
+                {
+                    "href": "http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/CCV-1306",
+                    "rel": "http://dvbe18.confinabox.com/api/profile/talk",
+                    "title": "More details about this talk"
+                },
+                {
+                    "href": "http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/bd2f55b11bacf7aa2791921b48dd589c3567bc81",
+                    "rel": "http://dvbe18.confinabox.com/api/profile/speaker",
+                    "title": "Mark Reinhold"
+                }
+            ],
+            "id": "CCV-1306",
+            "title": "Java in 2018: Change is the Only Constant"
+        },
+        {
+            "talkType": "Conference",
+            "track": "Java Language.label",
+            "links": [
+                {
+                    "href": "http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/IZL-6493",
+                    "rel": "http://dvbe18.confinabox.com/api/profile/talk",
+                    "title": "More details about this talk"
+                },
+                {
+                    "href": "http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/bd2f55b11bacf7aa2791921b48dd589c3567bc81",
+                    "rel": "http://dvbe18.confinabox.com/api/profile/speaker",
+                    "title": "Mark Reinhold"
+                }
+            ],
+            "id": "IZL-6493",
+            "title": "Java, Today and Tomorrow"
+        },
+        {
+            "talkType": "Keynote",
+            "track": "Java Language.label",
+            "links": [
+                {
+                    "href": "http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/VOS-4455",
+                    "rel": "http://dvbe18.confinabox.com/api/profile/talk",
+                    "title": "More details about this talk"
+                },
+                {
+                    "href": "http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/bd2f55b11bacf7aa2791921b48dd589c3567bc81",
+                    "rel": "http://dvbe18.confinabox.com/api/profile/speaker",
+                    "title": "Mark Reinhold"
+                }
+            ],
+            "id": "VOS-4455",
+            "title": "Java in 2018: Change is the Only Constant - Overflow"
+        },
+        {
+            "talkType": "Keynote",
+            "track": "Java Language.label",
+            "links": [
+                {
+                    "href": "http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/YEF-3619",
+                    "rel": "http://dvbe18.confinabox.com/api/profile/talk",
+                    "title": "More details about this talk"
+                },
+                {
+                    "href": "http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/bd2f55b11bacf7aa2791921b48dd589c3567bc81",
+                    "rel": "http://dvbe18.confinabox.com/api/profile/speaker",
+                    "title": "Mark Reinhold"
+                }
+            ],
+            "id": "YEF-3619",
+            "title": "Java in 2018: Change is the Only Constant - Overflow"
+        },
+        {
+            "talkType": "Keynote",
+            "track": "Java Language.label",
+            "links": [
+                {
+                    "href": "http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/VAA-3588",
+                    "rel": "http://dvbe18.confinabox.com/api/profile/talk",
+                    "title": "More details about this talk"
+                },
+                {
+                    "href": "http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/bd2f55b11bacf7aa2791921b48dd589c3567bc81",
+                    "rel": "http://dvbe18.confinabox.com/api/profile/speaker",
+                    "title": "Mark Reinhold"
+                }
+            ],
+            "id": "VAA-3588",
+            "title": " Java in 2018: Change is the Only Constant - Overflow"
+        },
+        {
+            "talkType": "Keynote",
+            "track": "Java Language.label",
+            "links": [
+                {
+                    "href": "http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/FGE-5982",
+                    "rel": "http://dvbe18.confinabox.com/api/profile/talk",
+                    "title": "More details about this talk"
+                },
+                {
+                    "href": "http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/bd2f55b11bacf7aa2791921b48dd589c3567bc81",
+                    "rel": "http://dvbe18.confinabox.com/api/profile/speaker",
+                    "title": "Mark Reinhold"
+                }
+            ],
+            "id": "FGE-5982",
+            "title": "Java in 2018: Change is the Only Constant - Overflow"
+        }
+    ],
+    "company": "Oracle",
+    "bio": "Mark Reinhold is Chief Architect of the Java Platform Group at Oracle.  His past contributions to the platform include character-stream readers and writers, reference objects, shutdown hooks, the NIO high-performance I/O APIs, library generification, service loaders, and the Jigsaw module system.  Mark has held key leadership roles in every Java SE and JDK release since version 1.2, in 1998.  He currently leads the JDK Project in the OpenJDK Community, where he also serves on the Governing Board.  Mark holds a Ph.D. in computer science from the Massachusetts Institute of Technology.",
+    "lastName": "Reinhold",
+    "firstName": "Mark",
+    "blog": null,
+    "avatarURL": "https://pbs.twimg.com/profile_images/1012167014612267010/tpIWebKt_400x400.jpg",
+    "twitter": "@mreinhold",
+    "lang": "fr"
+}

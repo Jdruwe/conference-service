@@ -1,0 +1,32 @@
+{
+    "uuid": "f6be30c224fa250ab01c56d11b043036b51f4599",
+    "bioAsHtml": "<p>Eric&#x27;s a Scala &amp; Akka champion, a global course instructor for Lightbend. Eric began programming in various machine languages some odd 35 years ago, subsequently passing via C and Java to Scala and Akka. Eric&#x27;s glad with the coming of age of Reactive Systems and enjoys helping others learn to build them.</p>\n",
+    "acceptedTalks": [
+        {
+            "talkType": "Conference",
+            "track": "Programming languages.label",
+            "links": [
+                {
+                    "href": "http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/PWG-7081",
+                    "rel": "http://dvbe18.confinabox.com/api/profile/talk",
+                    "title": "More details about this talk"
+                },
+                {
+                    "href": "http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/f6be30c224fa250ab01c56d11b043036b51f4599",
+                    "rel": "http://dvbe18.confinabox.com/api/profile/speaker",
+                    "title": "Eric Loots"
+                }
+            ],
+            "id": "PWG-7081",
+            "title": "Understanding Akka Cluster Through Raspberry-Pi Cluster Visualization"
+        }
+    ],
+    "company": "Lightbend Inc.",
+    "bio": "Eric's a Scala & Akka champion, a global course instructor for Lightbend. Eric began programming in various machine languages some odd 35 years ago, subsequently passing via C and Java to Scala and Akka. Eric's glad with the coming of age of Reactive Systems and enjoys helping others learn to build them.",
+    "lastName": "Loots",
+    "firstName": "Eric",
+    "blog": "https://www.lightbend.com",
+    "avatarURL": "https://lh4.googleusercontent.com/--cVUuQ5h2lY/AAAAAAAAAAI/AAAAAAAAAAA/AB6qoq37ojnAaPAOb8ecDqdg496Nz8LBuA/mo/photo.jpg",
+    "twitter": "@lootser",
+    "lang": "fr"
+}

@@ -50,7 +50,7 @@ public class DevoxxConsumer {
     }
 
     @Scheduled(fixedRateString = "${settings.queryRefreshInterval}")
-    private void consumeApi() {
+    public void consumeApi() {
         String etag = getRoomsEtag();
         RoomsDto dto = getRoomsFromApi(etag);
 
@@ -61,9 +61,11 @@ public class DevoxxConsumer {
     }
 
     @PostConstruct
-    private void fillSettings() {
+    public void fillSettings() {
         settingsService.save(new Settings("minutesBeforeNextSession", String.valueOf(settingsProperties.getMinutesBeforeNextSession())));
         settingsService.save(new Settings("isRoomOccupancyOn", String.valueOf(settingsProperties.getIsRoomOccupancyOn())));
+        settingsService.save(new Settings("message", ""));
+        settingsService.save(new Settings("showMessage", String.valueOf(false)));
     }
 
     private RoomsDto getRoomsFromApi(String etag) {

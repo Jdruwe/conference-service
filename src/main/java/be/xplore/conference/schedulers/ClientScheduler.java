@@ -27,7 +27,7 @@ public class ClientScheduler {
 
     //every 30 minutes = 180_000 ms
     @Scheduled(fixedRate = 180_000)
-    private void checkStatusClientsAndSendMail() {
+    public void checkStatusClientsAndSendMail() {
         List<Client> currentClients = clientService.loadAll();
         if (!currentClients.isEmpty()) { //&& offlineClients != null
             List<Client> checkedAllClientsOnConnectivity = checkAllClientsConnectivity(currentClients);
