@@ -30,6 +30,7 @@
     <module name="TreeWalker">
         <module name="AvoidStarImport">
             <property name="allowClassImports" value="true"/>
+            <property name="allowStaticMemberImports" value="true"/>
         </module>
 
         <module name="ConstantName"/>
@@ -65,13 +66,14 @@
 
         <module name="IllegalType"/>
 
-<!--        <module name="ImportOrder">
+        <module name="ImportOrder">
+            <property name="severity" value="info"/>
             <property name="option" value="bottom"/>
             <property name="groups" value="*,javax,java"/>
-            <property name="ordered" value="false"/>
+            <property name="ordered" value="true"/>
             <property name="separated" value="true"/>
             <property name="sortStaticImportsAlphabetically" value="true"/>
-        </module>-->
+        </module>
 
         <module name="Indentation">
             <property name="basicOffset" value="4"/>
