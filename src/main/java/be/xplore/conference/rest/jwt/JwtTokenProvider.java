@@ -1,10 +1,10 @@
 package be.xplore.conference.rest.jwt;
 
+import be.xplore.conference.rest.jwt.property.JwtProperties;
 import io.jsonwebtoken.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -19,25 +19,23 @@ public class JwtTokenProvider {
     private static final Logger LOGGER = LoggerFactory.getLogger(JwtTokenProvider.class);
 
     private final AuthenticationProvider authenticationProvider;
-
-    @Value("${jwt.secret}")
-    private String jwtSecret;
-    @Value("${jwt.expirationInMillis}")
-    private long jwtExpirationInMs;
+    private final JwtProperties jwtProperties;
 
     @Autowired
-    public JwtTokenProvider(AuthenticationProvider authenticationProvider) {
+    public JwtTokenProvider(AuthenticationProvider authenticationProvider,
+                            JwtProperties jwtProperties) {
         this.authenticationProvider = authenticationProvider;
+        this.jwtProperties = jwtProperties;
     }
 
     private String generateTokenFromAuthentication(Authentication authentication) {
         User user = (User) authentication.getPrincipal();
-        return generateToken(user.getUsername(), jwtExpirationInMs);
+        return generateToken(user.getUsername(), jwtProperties.getExpirationInMillis());
     }
 
     public String getAdminNameFromToken(String token) {
         Claims claims = Jwts.parser()
-                .setSigningKey(jwtSecret)
+                .setSigningKey(jwtProperties.getSecret())
                 .parseClaimsJws(token)
                 .getBody();
         return claims.getSubject();
@@ -45,18 +43,14 @@ public class JwtTokenProvider {
 
     public boolean validateToken(String authToken) {
         try {
-            Jwts.parser().setSigningKey(jwtSecret).parseClaimsJws(authToken);
+            Jwts.parser()
+                    .setSigningKey(jwtProperties.getSecret())
+                    .parseClaimsJws(authToken);
             return true;
-        } catch (SignatureException ex) {
-            LOGGER.warn("Invalid JWT signature");
-        } catch (MalformedJwtException ex) {
-            LOGGER.warn("Invalid JWT token");
-        } catch (ExpiredJwtException ex) {
-            LOGGER.warn("Expired JWT token");
-        } catch (UnsupportedJwtException ex) {
-            LOGGER.warn("Unsupported JWT token");
-        } catch (IllegalArgumentException ex) {
-            LOGGER.warn("JWT claims string is empty.");
+        } catch (SignatureException | MalformedJwtException |
+                ExpiredJwtException | UnsupportedJwtException |
+                IllegalArgumentException e) {
+            LOGGER.info(e.getMessage());
         }
         return false;
     }
@@ -73,7 +67,7 @@ public class JwtTokenProvider {
                 .setSubject(adminNameOrEmail)
                 .setIssuedAt(new Date())
                 .setExpiration(new Date(new Date().getTime() + expirationInMillis))
-                .signWith(SignatureAlgorithm.HS512, jwtSecret)
+                .signWith(SignatureAlgorithm.HS512, jwtProperties.getSecret())
                 .compact();
     }
 }

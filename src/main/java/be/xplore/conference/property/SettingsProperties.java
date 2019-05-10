@@ -5,6 +5,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 
+import java.time.Duration;
+
 @Data
 @Configuration
 @PropertySource("classpath:application.properties")
@@ -12,5 +14,6 @@ import org.springframework.context.annotation.PropertySource;
 public class SettingsProperties {
     private int minutesBeforeNextSession;
     private Boolean isRoomOccupancyOn;
-    private long queryRateInMilliseconds;
+    private Duration queryRefreshInterval;
+    private Duration readableInterval;
 }
