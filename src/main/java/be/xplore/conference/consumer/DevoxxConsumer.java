@@ -49,7 +49,7 @@ public class DevoxxConsumer {
         this.apiCaller = apiCaller;
     }
 
-    @Scheduled(fixedRateString = "${settings.queryRateInMilliseconds}")
+    @Scheduled(fixedRateString = "${settings.queryRefreshInterval}")
     private void consumeApi() {
         String etag = getRoomsEtag();
         RoomsDto dto = getRoomsFromApi(etag);
