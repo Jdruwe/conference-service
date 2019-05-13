@@ -4,7 +4,6 @@ import be.xplore.conference.exception.RoomAlreadyRegisteredException;
 import be.xplore.conference.exception.RoomNotFoundException;
 import be.xplore.conference.model.Client;
 import be.xplore.conference.model.Room;
-import be.xplore.conference.notifications.EmailSender;
 import be.xplore.conference.rest.dto.ClientInfoDto;
 import be.xplore.conference.service.ClientService;
 import be.xplore.conference.service.RoomService;
@@ -16,7 +15,6 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.ActiveProfiles;
@@ -54,19 +52,13 @@ public class ClientControllerTest {
     private RoomService roomService;
     @Autowired
     private ClientService clientService;
-    @Autowired
-    private ClientController clientController;
-
-    @MockBean
-    private EmailSender emailSender;
 
     private ClientInfoDto clientInfoDto;
     private Client savedClient;
-    private Room room;
 
     @Before
     public void setUp() {
-        room = Room.builder()
+        Room room = Room.builder()
                 .id("testRoom")
                 .name("Test room")
                 .capacity(850)
