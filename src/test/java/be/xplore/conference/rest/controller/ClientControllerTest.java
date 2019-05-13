@@ -4,6 +4,9 @@ import be.xplore.conference.exception.RoomAlreadyRegisteredException;
 import be.xplore.conference.exception.RoomNotFoundException;
 import be.xplore.conference.model.Client;
 import be.xplore.conference.model.Room;
+import be.xplore.conference.notifications.EmailSender;
+import be.xplore.conference.rest.dto.ClientDto;
+import be.xplore.conference.rest.dto.ClientHeartbeatDto;
 import be.xplore.conference.rest.dto.ClientInfoDto;
 import be.xplore.conference.service.ClientService;
 import be.xplore.conference.service.RoomService;
@@ -11,11 +14,15 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.Mockito;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -23,6 +30,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
@@ -52,13 +60,19 @@ public class ClientControllerTest {
     private RoomService roomService;
     @Autowired
     private ClientService clientService;
+    @Autowired
+    private ClientController clientController;
+
+    @MockBean
+    private EmailSender emailSender;
 
     private ClientInfoDto clientInfoDto;
     private Client savedClient;
+    private Room room;
 
     @Before
     public void setUp() {
-        Room room = Room.builder()
+        room = Room.builder()
                 .id("testRoom")
                 .name("Test room")
                 .capacity(850)
