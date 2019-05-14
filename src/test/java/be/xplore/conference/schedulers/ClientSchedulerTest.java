@@ -38,12 +38,6 @@ public class ClientSchedulerTest {
     private ModelMapper modelMapper;
 
     @Test
-    public void testCheckStatusClientsAndSendMail(){
-        clientScheduler.checkStatusClientsAndSendMail();
-        Assert.assertTrue(true);
-    }
-
-    @Test
     public void testWasClientOffline(){
         registerTestClients();
         List<Client> clients = clientService.loadAll();

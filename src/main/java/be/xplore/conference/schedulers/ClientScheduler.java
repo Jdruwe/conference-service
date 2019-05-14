@@ -3,13 +3,17 @@ package be.xplore.conference.schedulers;
 import be.xplore.conference.model.Client;
 import be.xplore.conference.notifications.EmailSender;
 import be.xplore.conference.service.ClientService;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledFuture;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 @Component
@@ -17,17 +21,38 @@ public class ClientScheduler {
 
     private final ClientService clientService;
     private final EmailSender emailSender;
+    private final ScheduledExecutorService scheduler;
+
+    private ScheduledFuture<?> scheduledFuture;
 
     private List<Client> offlineClients = new ArrayList<>();
+
 
     public ClientScheduler(ClientService clientService, EmailSender emailSender) {
         this.clientService = clientService;
         this.emailSender = emailSender;
+        this.scheduler = Executors.newScheduledThreadPool(1);
     }
 
-    //every 30 minutes = 180_000 ms
-    @Scheduled(fixedRate = 180_000)
-    public void checkStatusClientsAndSendMail() {
+    @PostConstruct
+    public void startClientScheduler() {
+        startScheduler("30");
+    }
+
+    public void startScheduler(String time) {
+        Runnable task2 = this::checkStatusClientsAndSendMail;
+        scheduledFuture = scheduler.scheduleAtFixedRate(
+                task2,
+                0,
+                Long.parseLong(time),
+                TimeUnit.MINUTES);
+    }
+
+    public void stopScheduler() {
+        scheduledFuture.cancel(true);
+    }
+
+    private void checkStatusClientsAndSendMail() {
         List<Client> currentClients = clientService.loadAll();
         if (!currentClients.isEmpty()) { //&& offlineClients != null
             List<Client> checkedAllClientsOnConnectivity = checkAllClientsConnectivity(currentClients);

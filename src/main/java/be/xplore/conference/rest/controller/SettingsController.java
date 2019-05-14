@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("api/settings")
 public class SettingsController {
     private static final String MINUTES_BEFORE_NEXT_SESSION = "minutesBeforeNextSession";
+    private static final String MAIL_DELAY_FOR_CONNECTION_ISSUES = "mailDelayForConnectionIssues";
     private static final String IS_ROOM_OCCUPANCY_ON = "isRoomOccupancyOn";
     private static final String SHOW_MESSAGE = "showMessage";
     private static final String MESSAGE = "message";
@@ -36,13 +37,16 @@ public class SettingsController {
         Settings minutesBeforeNextSession = settingsService.update(
                 MINUTES_BEFORE_NEXT_SESSION,
                 String.valueOf(dto.getMinutesBeforeNextSession()));
+        Settings mailDelayForConnectionIssues = settingsService.update(
+                MAIL_DELAY_FOR_CONNECTION_ISSUES,
+                String.valueOf(dto.getMailDelayForConnectionIssues()));
         Settings roomOccupancy = settingsService.update(
                 IS_ROOM_OCCUPANCY_ON,
                 String.valueOf(dto.isRoomOccupancyOn()));
 
         dto.setMinutesBeforeNextSession(Integer.parseInt(minutesBeforeNextSession.getValue()));
         dto.setRoomOccupancyOn(Boolean.parseBoolean(roomOccupancy.getValue()));
-
+        dto.setMailDelayForConnectionIssues(Integer.parseInt(mailDelayForConnectionIssues.getValue()));
         return new ResponseEntity<>(dto, HttpStatus.OK);
     }
 
@@ -64,6 +68,10 @@ public class SettingsController {
         return SettingsDto.builder()
                 .minutesBeforeNextSession(
                         Integer.parseInt(settingsService.loadByKey(MINUTES_BEFORE_NEXT_SESSION)
+                                .orElseThrow(SettingNotFoundException::new)
+                                .getValue()))
+                .mailDelayForConnectionIssues(
+                        Integer.parseInt(settingsService.loadByKey(MAIL_DELAY_FOR_CONNECTION_ISSUES)
                                 .orElseThrow(SettingNotFoundException::new)
                                 .getValue()))
                 .isRoomOccupancyOn(

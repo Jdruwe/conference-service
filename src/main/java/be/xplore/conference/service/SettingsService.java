@@ -3,6 +3,7 @@ package be.xplore.conference.service;
 import be.xplore.conference.exception.SettingNotFoundException;
 import be.xplore.conference.model.Settings;
 import be.xplore.conference.persistence.SettingsRepository;
+import be.xplore.conference.schedulers.ClientScheduler;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -13,10 +14,14 @@ import java.util.Optional;
 @Transactional
 public class SettingsService {
 
-    private final SettingsRepository repo;
+    private static final String MAIL_DELAY_FOR_CONNECTION_ISSUES = "mailDelayForConnectionIssues";
 
-    public SettingsService(SettingsRepository repo) {
+    private final SettingsRepository repo;
+    private final ClientScheduler clientScheduler;
+
+    public SettingsService(SettingsRepository repo, ClientScheduler clientScheduler) {
         this.repo = repo;
+        this.clientScheduler = clientScheduler;
     }
 
     public Settings save(Settings settings) {
@@ -34,7 +39,15 @@ public class SettingsService {
     public Settings update(String key, String newValue) {
         Settings settings = loadByKey(key)
                 .orElseThrow(SettingNotFoundException::new);
+        if (!settings.getValue().equals(newValue) && settings.getKey().equals(MAIL_DELAY_FOR_CONNECTION_ISSUES)){
+            resetClientScheduler(newValue);
+        }
         settings.setValue(newValue);
         return save(settings);
+    }
+
+    private void resetClientScheduler(String newValue){
+        clientScheduler.stopScheduler();
+        clientScheduler.startScheduler(newValue);
     }
 }

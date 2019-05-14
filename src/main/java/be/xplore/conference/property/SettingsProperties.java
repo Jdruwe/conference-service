@@ -13,6 +13,7 @@ import java.time.Duration;
 @ConfigurationProperties(prefix = "settings")
 public class SettingsProperties {
     private int minutesBeforeNextSession;
+    private int mailDelayForConnectionIssues;
     private Boolean isRoomOccupancyOn;
     private Duration queryRefreshInterval;
     private Duration readableInterval;
