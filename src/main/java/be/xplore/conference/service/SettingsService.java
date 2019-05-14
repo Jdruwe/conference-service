@@ -14,9 +14,10 @@ import java.util.Optional;
 @Transactional
 public class SettingsService {
 
+    private static final String MAIL_DELAY_FOR_CONNECTION_ISSUES = "mailDelayForConnectionIssues";
+
     private final SettingsRepository repo;
     private final ClientScheduler clientScheduler;
-    private static final String MAIL_DELAY_FOR_CONNECTION_ISSUES = "mailDelayForConnectionIssues";
 
     public SettingsService(SettingsRepository repo, ClientScheduler clientScheduler) {
         this.repo = repo;
