@@ -3,9 +3,9 @@ package be.xplore.conference.schedulers;
 import be.xplore.conference.model.Client;
 import be.xplore.conference.notifications.EmailSender;
 import be.xplore.conference.service.ClientService;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
@@ -25,8 +25,7 @@ public class ClientScheduler {
         this.emailSender = emailSender;
     }
 
-    //every 30 minutes = 180_000 ms
-    @Scheduled(fixedRate = 180_000)
+    @PostConstruct
     public void checkStatusClientsAndSendMail() {
         List<Client> currentClients = clientService.loadAll();
         if (!currentClients.isEmpty()) { //&& offlineClients != null

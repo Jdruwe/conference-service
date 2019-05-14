@@ -46,7 +46,7 @@ public class SettingsControllerTest {
     @Test
     @WithMockUser("xploreAdmin")
     public void testChangeSettings() throws Exception {
-        var dto = new MainSettingsDto(7, false);
+        var dto = new MainSettingsDto(7,30, false);
         mockMvc.perform(put("/api/settings")
                 .content(objectMapper.writeValueAsString(dto))
                 .contentType(MediaType.APPLICATION_JSON_UTF8))

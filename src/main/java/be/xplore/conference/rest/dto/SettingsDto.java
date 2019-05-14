@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class SettingsDto {
     private int minutesBeforeNextSession;
+    private int mailDelayForConnectionIssues;
     private boolean isRoomOccupancyOn;
     private boolean showMessage;
     private String message;
