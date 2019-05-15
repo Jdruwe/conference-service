@@ -70,11 +70,9 @@ public class ApiCallerTest {
         apiCaller.getRoomSchedule(ROOM5, null, DayOfWeek.TUESDAY);
 
         new MockServerClient(GETLOCALHOST, 1080)
-                .verify(
-                        request()
+                .verify(request()
                                 .withPath(PATHROOM5TUESDAY),
-                        VerificationTimes.once()
-                );
+                        VerificationTimes.once());
     }
 
     @Test
@@ -93,8 +91,7 @@ public class ApiCallerTest {
                 .verify(
                         request()
                                 .withPath(PATHROOM5TUESDAY),
-                        VerificationTimes.atLeast(2)
-                );
+                        VerificationTimes.atLeast(2));
     }
 
     @Test

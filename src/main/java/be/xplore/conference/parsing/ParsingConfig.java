@@ -12,7 +12,8 @@ public class ParsingConfig {
 
     @Bean
     public ObjectMapper getObjectMapper() {
-        return new ObjectMapper().registerModule(new JavaTimeModule())
+        return new ObjectMapper()
+                .registerModule(new JavaTimeModule())
                 .configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);
     }
 

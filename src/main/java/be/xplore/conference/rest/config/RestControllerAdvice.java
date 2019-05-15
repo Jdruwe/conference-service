@@ -14,17 +14,17 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 @ControllerAdvice
 public class RestControllerAdvice extends ResponseEntityExceptionHandler {
     @ExceptionHandler(value = {AbstractNotFoundException.class})
-    public ResponseEntity<?> handleRoomScheduleNotFoundException(AbstractNotFoundException ex, WebRequest request) {
+    public ResponseEntity<?> handleNotFoundException(AbstractNotFoundException ex, WebRequest request) {
         return handleExceptionInternal(ex, ex.getMessage(), new HttpHeaders(), HttpStatus.NOT_FOUND, request);
     }
 
     @ExceptionHandler(value = {AbstractAlreadyExistException.class})
-    public ResponseEntity<?> handleEmailAlreadyExistsException(AbstractAlreadyExistException ex, WebRequest request) {
+    public ResponseEntity<?> handleAlreadyExistException(AbstractAlreadyExistException ex, WebRequest request) {
         return handleExceptionInternal(ex, ex.getMessage(), new HttpHeaders(), HttpStatus.CONFLICT, request);
     }
 
     @ExceptionHandler(value = {AbstractAlreadyRegisteredException.class})
-    public ResponseEntity<?> handleEmailAlreadyExistsException(AbstractAlreadyRegisteredException ex, WebRequest request) {
+    public ResponseEntity<?> handleAlreadyRegisteredException(AbstractAlreadyRegisteredException ex, WebRequest request) {
         return handleExceptionInternal(ex, ex.getMessage(), new HttpHeaders(), HttpStatus.CONFLICT, request);
     }
 }

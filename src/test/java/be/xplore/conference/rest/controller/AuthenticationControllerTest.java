@@ -14,6 +14,7 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.security.test.context.support.WithMockUser;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
@@ -53,6 +54,7 @@ public class AuthenticationControllerTest {
     }
 
     @Test
+    @WithMockUser("xploreAdmin")
     public void testRegisterAndLogIn() throws Exception {
         register();
         TokenDto loginWithNameTokenDTO = objectMapper.readValue(logIn(convertedLoginWithNameDTO, HttpStatus.OK), TokenDto.class);
@@ -78,23 +80,8 @@ public class AuthenticationControllerTest {
                     .andReturn()
                     .getResponse()
                     .getContentAsString();
-        } else if (expectedStatus.equals(HttpStatus.UNAUTHORIZED)) {
-            return mockMvc.perform(post("/api/authentication/login")
-                    .contentType(MediaType.APPLICATION_JSON_UTF8)
-                    .content(jsonString))
-                    .andExpect(status().isUnauthorized())
-                    .andReturn()
-                    .getResponse()
-                    .getContentAsString();
-        } else if (expectedStatus.equals(HttpStatus.FORBIDDEN)) {
-            return mockMvc.perform(post("/api/authentication/login")
-                    .contentType(MediaType.APPLICATION_JSON_UTF8)
-                    .content(jsonString))
-                    .andExpect(status().isForbidden())
-                    .andReturn()
-                    .getResponse()
-                    .getContentAsString();
-        } else
+        }  else {
             throw new HttpServerErrorException(expectedStatus);
+        }
     }
 }

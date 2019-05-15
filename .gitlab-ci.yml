@@ -9,6 +9,8 @@ build:
         - ./gradlew clean build
         - ./gradlew pmdMain
         - ./gradlew pmdTest
+        - ./gradlew checkstyleMain
+        - ./gradlew checkstyleTest
     artifacts:
         paths:
             - build/libs/*.jar

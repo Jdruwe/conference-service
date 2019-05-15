@@ -2,7 +2,6 @@
 package be.xplore.conference.consumer.processor;
 
 import be.xplore.conference.consumer.dto.SlotDto;
-import be.xplore.conference.model.Talk;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.After;
@@ -68,11 +67,10 @@ public class TalkProcessorTest {
                         .withBody(readFromClasspath("speaker.json")));
 
         String textForObject = readFromClasspath("slots.json");
-        List<SlotDto> slotDtoObjects = objectMapper.readValue(textForObject, new TypeReference<List<SlotDto>>() {});
+        List<SlotDto> slotDtoObjects = objectMapper.readValue(textForObject, new TypeReference<List<SlotDto>>() {
+        });
 
-        List<Talk> process = talkProcessor.process(slotDtoObjects);
-
-        assertThat(process).isNotNull().satisfies(p -> {
+        assertThat(talkProcessor.process(slotDtoObjects)).isNotNull().satisfies(p -> {
             assertThat(p).hasSize(5);
             assertThat(p.get(0).getSpeakers()).isNotNull().satisfies(speaker -> {
                 assertThat(speaker).hasSize(2);

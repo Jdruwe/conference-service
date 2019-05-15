@@ -38,13 +38,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return new JwtAuthenticationFilter();
     }
 
-    @Override
-    public void configure(AuthenticationManagerBuilder authenticationManagerBuilder) throws Exception {
-        authenticationManagerBuilder
-                .userDetailsService(adminService)
-                .passwordEncoder(passwordEncoder);
-    }
-
     @Bean
     public DaoAuthenticationProvider authProvider() {
         DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
@@ -56,6 +49,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        CorsConfiguration conf = configurationForCors();
+        source.registerCorsConfiguration("/**", conf);
+        return source;
+    }
+
+    private CorsConfiguration configurationForCors() {
         CorsConfiguration conf = new CorsConfiguration().applyPermitDefaultValues();
         conf.addAllowedMethod(HttpMethod.PATCH);
         conf.addAllowedMethod(HttpMethod.PUT);
@@ -63,14 +62,19 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         conf.addAllowedMethod(HttpMethod.OPTIONS);
         conf.addAllowedMethod(HttpMethod.GET);
         conf.addExposedHeader("Access-Control-Allow-Origin");
-        source.registerCorsConfiguration("/**", conf);
-        return source;
+        return conf;
+    }
+
+    @Override
+    public void configure(AuthenticationManagerBuilder authenticationManagerBuilder) throws Exception {
+        authenticationManagerBuilder
+                .userDetailsService(adminService)
+                .passwordEncoder(passwordEncoder);
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http
-                .cors()
+        http.cors()
                 .and()
                 .csrf()
                 .disable()
@@ -81,17 +85,17 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 .and()
                 .authorizeRequests()
-                .antMatchers("/api/authentication/**")
+                .antMatchers("/api/authentication/login")
                 .permitAll()
                 .antMatchers("/api/room/**")
                 .permitAll()
                 .antMatchers("/api/schedule/**")
                 .permitAll()
-                .antMatchers(HttpMethod.POST,"/api/client/**")
+                .antMatchers(HttpMethod.POST, "/api/client/**")
                 .permitAll()
-                .antMatchers(HttpMethod.DELETE,"/api/client/**")
+                .antMatchers(HttpMethod.DELETE, "/api/client/**")
                 .permitAll()
-                .antMatchers(HttpMethod.PATCH,"/api/client/**")
+                .antMatchers(HttpMethod.PATCH, "/api/client/**")
                 .permitAll()
                 .antMatchers(HttpMethod.GET, "/api/settings/**")
                 .permitAll()

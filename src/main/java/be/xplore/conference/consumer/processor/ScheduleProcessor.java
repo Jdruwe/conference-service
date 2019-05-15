@@ -93,8 +93,8 @@ public class ScheduleProcessor {
         for (Speaker speaker : talk.getSpeakers()) {
             SpeakerResponse speakerResponse = apiCaller.getSpeaker(speaker.getUuid(), speaker.getEtag());
             if (Objects.nonNull(speakerResponse.getSpeakerInformation())) {
-                speaker = speakerResponse.getSpeakerInformation().toDomain();
-                speakerService.save(speaker);
+                Speaker s = speakerResponse.getSpeakerInformation().toDomain();
+                speakerService.save(s);
             }
         }
     }
