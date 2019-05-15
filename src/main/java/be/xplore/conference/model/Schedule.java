@@ -21,9 +21,7 @@ public class Schedule {
     private DayOfWeek day;
 
     @ManyToMany
-    private List<Room> rooms;
-    @OneToMany
-    private List<Talk> talks;
+    private List<RoomSchedule> roomSchedules;
 
     public Schedule(LocalDate date, DayOfWeek day) {
         this.date = date;

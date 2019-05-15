@@ -1,0 +1,23 @@
+{
+  "id" : "0f06e25a-5318-4b53-8ca1-73538e9253e2",
+  "name" : "api_conferences_dvbe18_speakers_14607f603130b340dddb453269fa5dbf4cb6761d",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/14607f603130b340dddb453269fa5dbf4cb6761d",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"14607f603130b340dddb453269fa5dbf4cb6761d\",\"bioAsHtml\":\"<p>Adib Saikali is passionate about technology and entrepreneurship from assembly to JavaScript from cold calling to pitching venture capitalists.  He’s been responsible for architecting and  implementing security in a variety of applications.  Adib is an Advisory Platform Architect at Pivotal helping customers build cloud native applications using Spring Cloud, Cloud Foundry, and Kubernetes. Adib is a co-organizer of the Toronto Java User Group and Toronto Cloud Foundry Meetup.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Deep Dive\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/CNS-4429\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/ce0e7c7bc221e512ab776802963ddea755f2d557\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Joe Grandja\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/14607f603130b340dddb453269fa5dbf4cb6761d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Adib Saikali\"}],\"id\":\"CNS-4429\",\"title\":\"Implementing Microservices Security Patterns & Protocols with Spring Deep Dive\"}],\"company\":\"Pivotal\",\"bio\":\"Adib Saikali is passionate about technology and entrepreneurship from assembly to JavaScript from cold calling to pitching venture capitalists.  He’s been responsible for architecting and  implementing security in a variety of applications.  Adib is an Advisory Platform Architect at Pivotal helping customers build cloud native applications using Spring Cloud, Cloud Foundry, and Kubernetes. Adib is a co-organizer of the Toronto Java User Group and Toronto Cloud Foundry Meetup.\",\"lastName\":\"Saikali\",\"firstName\":\"Adib\",\"blog\":\"https://www.linkedin.com/in/adibsaikali/\",\"avatarURL\":\"https://media.licdn.com/dms/image/C4E03AQGz7fRjOMbZCg/profile-displayphoto-shrink_100_100/0?e=1544054400&v=beta&t=2KSXh3IVkrC1SrGuL4vYq3sNqS3NHYQsq6iDQc54HvA\",\"twitter\":\"@asaikali\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1041469237",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:25 GMT"
+    }
+  },
+  "uuid" : "0f06e25a-5318-4b53-8ca1-73538e9253e2",
+  "persistent" : true,
+  "insertionIndex" : 43
+}

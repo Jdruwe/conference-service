@@ -1,0 +1,23 @@
+{
+  "id" : "9e8fa7f6-b751-4767-b269-6b95a7b768be",
+  "name" : "api_conferences_dvbe18_speakers_2bd0c59e013b298412bec2dea29a5e7871fd8b35",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/2bd0c59e013b298412bec2dea29a5e7871fd8b35",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"2bd0c59e013b298412bec2dea29a5e7871fd8b35\",\"bioAsHtml\":\"<p>Hanno Embregts is a Java Developer, Speaker and Teacher at Info Support (the Netherlands). He has over 11 years experience with both front- and back-end development, with a special interest in automating the software development process to the fullest. He likes his work best when it is fast-paced and versatile, which is why he juggles Java development, public speaking and teaching courses at Info Support’s Knowledge Centre. When Hanno doesn’t have access to any kind of computer - which can only be called the most desperate of times - he plays in a band as a lead singer and guitar player. He is also a passionate fan of alternative rock band Switchfoot and Dutch football club Feyenoord.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Ignite\",\"track\":\"Mind the Geek.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/GMA-9130\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/2bd0c59e013b298412bec2dea29a5e7871fd8b35\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Hanno Embregts\"}],\"id\":\"GMA-9130\",\"title\":\"These Songs Would Make Some Great Code Comments\"}],\"company\":\"Info Support\",\"bio\":\"Hanno Embregts is a Java Developer, Speaker and Teacher at Info Support (the Netherlands). He has over 11 years experience with both front- and back-end development, with a special interest in automating the software development process to the fullest. He likes his work best when it is fast-paced and versatile, which is why he juggles Java development, public speaking and teaching courses at Info Support’s Knowledge Centre. When Hanno doesn’t have access to any kind of computer - which can only be called the most desperate of times - he plays in a band as a lead singer and guitar player. He is also a passionate fan of alternative rock band Switchfoot and Dutch football club Feyenoord.\",\"lastName\":\"Embregts\",\"firstName\":\"Hanno\",\"blog\":\"hannotify.github.io\",\"avatarURL\":\"https://www.gravatar.com/avatar/a0afa201916ee3e69ffcf92f12ed2b91\",\"twitter\":\"@hannotify\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "248527309",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:44 GMT"
+    }
+  },
+  "uuid" : "9e8fa7f6-b751-4767-b269-6b95a7b768be",
+  "persistent" : true,
+  "insertionIndex" : 245
+}

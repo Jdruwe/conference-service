@@ -1,0 +1,23 @@
+{
+  "id" : "2937ff47-66a5-4b54-ae6a-50981a39460f",
+  "name" : "api_conferences_dvbe18_speakers_dd478b430a39baacd039f43c9afa192de87f9a64",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/dd478b430a39baacd039f43c9afa192de87f9a64",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"dd478b430a39baacd039f43c9afa192de87f9a64\",\"bioAsHtml\":\"<p>Martin Förtsch is an IT-consultant of TNG Technology Consulting GmbH based in Munich who studied computer sciences. His focus areas are Agile Development (mainly) in Java, Search Engine Technologies, Information Retrieval and Databases. As an Intel Software Innovator and Intel Black Belt Software Developer he is strongly involved in the development of prototypes for e.g. Mixed Reality wearables and other cutting edge technologies. Furthermore, he gives many talks on national and international conferences about Internet of Things, 3D-camera technologies, AI and Test Driven Development as well. He was awarded with the JavaOne Rockstar award and is an author for the technical blog ParrotsOnJava.com.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/XEV-9701\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/dd478b430a39baacd039f43c9afa192de87f9a64\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Martin Förtsch\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/f6b754ab8b25c55a64bf3c13eaa006764605d072\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Thomas Endres\"}],\"id\":\"XEV-9701\",\"title\":\"Stereoscopic Style Transfer AI - Art is not what you see?\"}],\"company\":\"TNG Technology Consulting GmbH\",\"bio\":\"Martin Förtsch is an IT-consultant of TNG Technology Consulting GmbH based in Munich who studied computer sciences. His focus areas are Agile Development (mainly) in Java, Search Engine Technologies, Information Retrieval and Databases. As an Intel Software Innovator and Intel Black Belt Software Developer he is strongly involved in the development of prototypes for e.g. Mixed Reality wearables and other cutting edge technologies. Furthermore, he gives many talks on national and international conferences about Internet of Things, 3D-camera technologies, AI and Test Driven Development as well. He was awarded with the JavaOne Rockstar award and is an author for the technical blog ParrotsOnJava.com.\",\"lastName\":\"Förtsch\",\"firstName\":\"Martin\",\"blog\":\"http://tngtech.com/\",\"avatarURL\":\"http://developer-media.de/wp-content/uploads/2015/04/F%C3%B6rtsch_Martin_dwx15.jpg\",\"twitter\":\"@MartinFoertsch\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "328864266",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:39 GMT"
+    }
+  },
+  "uuid" : "2937ff47-66a5-4b54-ae6a-50981a39460f",
+  "persistent" : true,
+  "insertionIndex" : 193
+}

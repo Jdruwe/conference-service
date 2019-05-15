@@ -1,0 +1,23 @@
+{
+  "id" : "8362f4c2-fbf9-43c5-a0e7-96a8c3eb0f55",
+  "name" : "api_conferences_dvbe18_speakers_e7a0ff8b08e1941ae25541c393dfd255c665d027",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/e7a0ff8b08e1941ae25541c393dfd255c665d027",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"e7a0ff8b08e1941ae25541c393dfd255c665d027\",\"bioAsHtml\":\"<p>Gerald Venzl is a Senior Principal Product Manager for Oracle. During his career Gerald has worked as a Developer, DBA, Performance Tuner, Software Architect, Consultant and Enterprise Architect prior to his current role, while still being active as a developer in his free time. This allowed Gerald to live several different lives in the IT sector, providing him with a solid understanding of the concerns in those individual areas while gaining a holistic view overall. Gerald focuses on advocating how to build systems that provide flexibility yet still meet the needs of the users.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/LGY-4956\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/e7a0ff8b08e1941ae25541c393dfd255c665d027\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Gerald Venzl\"}],\"id\":\"LGY-4956\",\"title\":\"Polyglot Persistence - Which Data Model to pick for your Workload?\"}],\"company\":\"Oracle\",\"bio\":\"Gerald Venzl is a Senior Principal Product Manager for Oracle. During his career Gerald has worked as a Developer, DBA, Performance Tuner, Software Architect, Consultant and Enterprise Architect prior to his current role, while still being active as a developer in his free time. This allowed Gerald to live several different lives in the IT sector, providing him with a solid understanding of the concerns in those individual areas while gaining a holistic view overall. Gerald focuses on advocating how to build systems that provide flexibility yet still meet the needs of the users.\",\"lastName\":\"Venzl\",\"firstName\":\"Gerald\",\"blog\":\"https://geraldonit.com\",\"avatarURL\":\"https://i1.wp.com/www.iloug.org/wp-content/uploads/2017/11/Gerald-Venzl-400x400.png?fit=400%2C400&ssl=1\",\"twitter\":\"@GeraldVenzl\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "538305071",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:48 GMT"
+    }
+  },
+  "uuid" : "8362f4c2-fbf9-43c5-a0e7-96a8c3eb0f55",
+  "persistent" : true,
+  "insertionIndex" : 284
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "0deecbd2-ff0b-4372-a1f6-08142af321da",
+  "name" : "api_conferences_dvbe18_speakers_426f96dcd58ede72af69149e199e356814fd7173",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/426f96dcd58ede72af69149e199e356814fd7173",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"426f96dcd58ede72af69149e199e356814fd7173\",\"bioAsHtml\":\"<p>Chief Envisioner Evangelist\\nGoogle Developer Expert for Cloud/Machine Learning\\nAuthor the Spanish free software book &quot;La Pastilla Roja&quot;\\nOrganizer of Machine Learning Spain and GDG cloud Madrid meetups.\\nFormer President of Hispalinux (Spanish Linux Local User Group)</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/JLW-7651\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/426f96dcd58ede72af69149e199e356814fd7173\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Juantomas Garcia\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6e1e9a41cadfbd26e5090836a9e014fdb23a011f\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Sebastián Jesús Blanes López\"}],\"id\":\"JLW-7651\",\"title\":\"Solving a complex game with AI and all the Google Cloud power\"}],\"company\":\"S|ngular\",\"bio\":\"Chief Envisioner Evangelist\\r\\nGoogle Developer Expert for Cloud/Machine Learning \\r\\nAuthor the Spanish free software book \\\"La Pastilla Roja\\\"\\r\\nOrganizer of Machine Learning Spain and GDG cloud Madrid meetups.\\r\\nFormer President of Hispalinux (Spanish Linux Local User Group) \",\"lastName\":\"Garcia\",\"firstName\":\"Juantomas\",\"blog\":\"http://www.juantomas.net\",\"avatarURL\":\"https://lh3.googleusercontent.com/-QgKxfsO5VXw/AAAAAAAAAAI/AAAAAAAAGwM/r-wNwJrEo_w/photo.jpg\",\"twitter\":\"@juantomas\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1290534282",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:41 GMT"
+    }
+  },
+  "uuid" : "0deecbd2-ff0b-4372-a1f6-08142af321da",
+  "persistent" : true,
+  "insertionIndex" : 223
+}

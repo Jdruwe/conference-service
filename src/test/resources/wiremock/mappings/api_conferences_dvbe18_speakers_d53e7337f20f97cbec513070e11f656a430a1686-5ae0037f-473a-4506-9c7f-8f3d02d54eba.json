@@ -1,0 +1,23 @@
+{
+  "id" : "5ae0037f-473a-4506-9c7f-8f3d02d54eba",
+  "name" : "api_conferences_dvbe18_speakers_d53e7337f20f97cbec513070e11f656a430a1686",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/d53e7337f20f97cbec513070e11f656a430a1686",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"d53e7337f20f97cbec513070e11f656a430a1686\",\"bioAsHtml\":\"<p>Pim is a consultant and software developer at Quintor. His current assignment is a project called StudyBits, where students are given control of their own credentials using the Sovrin network and ledger. In addition, he teaches the Minor Blockchain at Rotterdam University of Applied Sciences</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/RBO-9456\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/d53e7337f20f97cbec513070e11f656a430a1686\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Pim Otte\"}],\"id\":\"RBO-9456\",\"title\":\"Architecting with blockchain for dummies\"}],\"company\":\"Quintor\",\"bio\":\"Pim is a consultant and software developer at Quintor. His current assignment is a project called StudyBits, where students are given control of their own credentials using the Sovrin network and ledger. In addition, he teaches the Minor Blockchain at Rotterdam University of Applied Sciences\",\"lastName\":\"Otte\",\"firstName\":\"Pim\",\"blog\":\"https://www.quintor.nl\",\"avatarURL\":\"https://media.licdn.com/dms/image/C5103AQEjXkn54OpW4g/profile-displayphoto-shrink_200_200/0?e=1544659200&v=beta&t=kHLE5fFE7Eie4mBUcRmG7UO67dMDqbHgMWmuudxFLWY\",\"twitter\":null,\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "180417737",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:41 GMT"
+    }
+  },
+  "uuid" : "5ae0037f-473a-4506-9c7f-8f3d02d54eba",
+  "persistent" : true,
+  "insertionIndex" : 220
+}

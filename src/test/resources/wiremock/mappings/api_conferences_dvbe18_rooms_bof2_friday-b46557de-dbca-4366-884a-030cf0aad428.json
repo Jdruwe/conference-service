@@ -1,0 +1,23 @@
+{
+  "id" : "b46557de-dbca-4366-884a-030cf0aad428",
+  "name" : "api_conferences_dvbe18_rooms_bof2_friday",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/rooms/BOF2/friday",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"slots\":[]}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "v2-20443451406005538",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/schedule>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:35 GMT"
+    }
+  },
+  "uuid" : "b46557de-dbca-4366-884a-030cf0aad428",
+  "persistent" : true,
+  "insertionIndex" : 153
+}

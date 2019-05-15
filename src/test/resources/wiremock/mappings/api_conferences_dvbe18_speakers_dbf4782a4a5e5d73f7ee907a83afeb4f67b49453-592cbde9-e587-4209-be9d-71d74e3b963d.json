@@ -1,0 +1,23 @@
+{
+  "id" : "592cbde9-e587-4209-be9d-71d74e3b963d",
+  "name" : "api_conferences_dvbe18_speakers_dbf4782a4a5e5d73f7ee907a83afeb4f67b49453",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/dbf4782a4a5e5d73f7ee907a83afeb4f67b49453",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"dbf4782a4a5e5d73f7ee907a83afeb4f67b49453\",\"bioAsHtml\":\"<p>Apache Maven PMC member, PMC Chair emeritus\\nApache Comdev, Apache Attic</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Programming languages.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/EVC-1727\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/d1054b975ea621acd5b3c5e38f35ba94a9cf720f\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Robert Scholte\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/d3ff621339c1c31cf3c02c9cf0dd313ee1d66ff4\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Karl Heinz Marbaise\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/dbf4782a4a5e5d73f7ee907a83afeb4f67b49453\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Hervé Boutemy\"}],\"id\":\"EVC-1727\",\"title\":\"Apache Maven BOF\"}],\"company\":null,\"bio\":\"Apache Maven PMC member, PMC Chair emeritus\\r\\nApache Comdev, Apache Attic\",\"lastName\":\"Boutemy\",\"firstName\":\"Hervé\",\"blog\":\"http://people.apache.org/~hboutemy\",\"avatarURL\":\"http://www.gravatar.com/avatar/35b0cc47b5e6d602734c636082d630df\",\"twitter\":\"@hboutemy\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1718832320",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:44 GMT"
+    }
+  },
+  "uuid" : "592cbde9-e587-4209-be9d-71d74e3b963d",
+  "persistent" : true,
+  "insertionIndex" : 242
+}

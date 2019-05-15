@@ -65,7 +65,8 @@ dependencies {
     testCompile(group: 'org.springframework.security', name: 'spring-security-test', version: '5.1.1.RELEASE')
 
     compile "org.mock-server:mockserver-netty:5.5.1"
-    
+
+    testCompile "com.github.tomakehurst:wiremock:2.23.2"
 }
 
 pmd {

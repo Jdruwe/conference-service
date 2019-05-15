@@ -1,0 +1,23 @@
+{
+  "id" : "dc76f911-bac4-4ec2-ba08-d125714f8e55",
+  "name" : "api_conferences_dvbe18_speakers_7fcfbb6e81e94d9f44ba94a57273dab71d279d07",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/7fcfbb6e81e94d9f44ba94a57273dab71d279d07",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"7fcfbb6e81e94d9f44ba94a57273dab71d279d07\",\"bioAsHtml\":\"<p>I&#x27;m a Long time Java developer, nowadays working as a solutions architect with a passion for cloud driven solutions. I keep following the Java community and try to contribute where I can, like providing input to the Eclipse Microprofile project. I also like to visit and share knowledge at conferences to stay informed about what&#x27;s going on in the community.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Ignite\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/WCH-0839\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/7fcfbb6e81e94d9f44ba94a57273dab71d279d07\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Edwin Derks\"}],\"id\":\"WCH-0839\",\"title\":\"Thinking twice about migrating to Serverless\"}],\"company\":\"Ordina JTech\",\"bio\":\"I'm a Long time Java developer, nowadays working as a solutions architect with a passion for cloud driven solutions. I keep following the Java community and try to contribute where I can, like providing input to the Eclipse Microprofile project. I also like to visit and share knowledge at conferences to stay informed about what's going on in the community.\",\"lastName\":\"Derks\",\"firstName\":\"Edwin\",\"blog\":\"https://www.cloudnativesolutions.guru/\",\"avatarURL\":\"https://lh5.googleusercontent.com/-W6WOZQGndVk/AAAAAAAAAAI/AAAAAAAABH4/fHMmS8uIGjw/photo.jpg\",\"twitter\":null,\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1010130600",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:44 GMT"
+    }
+  },
+  "uuid" : "dc76f911-bac4-4ec2-ba08-d125714f8e55",
+  "persistent" : true,
+  "insertionIndex" : 246
+}

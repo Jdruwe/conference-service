@@ -1,0 +1,23 @@
+{
+  "id" : "41d80fb1-68d9-432f-919b-1b2c059813ea",
+  "name" : "api_conferences_dvbe18_speakers_05b697134798104ef19ab9ddd698c6ee770e0bf4",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/05b697134798104ef19ab9ddd698c6ee770e0bf4",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"05b697134798104ef19ab9ddd698c6ee770e0bf4\",\"bioAsHtml\":\"<p>Pratik Patel is  is a software and hardware nerd that loves to build things. He has spoken at various conferences and participates in several local tech groups and startup groups and never met a programming platform he didn&#x27;t like, except for Perl. He currently works at IBM, mostly because of the free cloud credits to mine Bitcoin.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Modern Web & UX.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/THX-2097\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/05b697134798104ef19ab9ddd698c6ee770e0bf4\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Pratik Patel\"}],\"id\":\"THX-2097\",\"title\":\"Vue.js: power and flexiblity\"},{\"talkType\":\"Conference\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/KEC-6864\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/05b697134798104ef19ab9ddd698c6ee770e0bf4\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Pratik Patel\"}],\"id\":\"KEC-6864\",\"title\":\"Applied Machine Learning in the Browser with Tensorflow.js\"}],\"company\":\"TripLingo\",\"bio\":\"Pratik Patel is  is a software and hardware nerd that loves to build things. He has spoken at various conferences and participates in several local tech groups and startup groups and never met a programming platform he didn't like, except for Perl. He currently works at IBM, mostly because of the free cloud credits to mine Bitcoin.\",\"lastName\":\"Patel\",\"firstName\":\"Pratik\",\"blog\":\"https://plus.google.com/107717971082410919749\",\"avatarURL\":\"https://lh3.googleusercontent.com/-zj00NmYykTc/AAAAAAAAAAI/AAAAAAAADm8/h9LWvgSvMRc/photo.jpg\",\"twitter\":\"@prpatel\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "770385595",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:42 GMT"
+    }
+  },
+  "uuid" : "41d80fb1-68d9-432f-919b-1b2c059813ea",
+  "persistent" : true,
+  "insertionIndex" : 230
+}

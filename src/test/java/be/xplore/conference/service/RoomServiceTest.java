@@ -25,18 +25,23 @@ public class RoomServiceTest {
 
     @Before
     public void setUp() {
-        room1 = new Room("room1", "room 1", 105, "conference", new RoomSchedule(null));
+        room1 = Room.builder()
+                .id("room1")
+                .name("room 1")
+                .capacity(105)
+                .setup("conference")
+                .roomSchedule(new RoomSchedule(null)).build();
+    }
+
+    @Test
+    public void testLoadAllRoomsWhenThereAreNon() {
+        int amount = roomService.loadAll().size();
+        Assert.assertEquals(0, amount);
     }
 
     @Test
     public void testSaveRoom() {
         roomService.save(room1);
         Assert.assertTrue(roomService.loadById("room1").isPresent());
-    }
-
-    @Test
-    public void testLoadAllRoomsWhenThereAreNon() {
-        int amount = roomService.loadAll().size();
-        Assert.assertEquals(11, amount);
     }
 }

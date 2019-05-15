@@ -39,9 +39,9 @@ public class RoomProcessorTest {
     @Test
     public void processRooms() throws IOException {
         String textForObject = readFromClasspath("roomsDto.json");
-        RoomsDto myObjects = objectMapper.readValue(textForObject, RoomsDto.class);
+        RoomsDto roomsDto = objectMapper.readValue(textForObject, RoomsDto.class);
 
-        List<Room> process = roomProcessor.process(myObjects);
+        List<Room> process = roomProcessor.process(roomsDto);
         assertThat(process).isNotNull().satisfies(p -> {
             assertThat(p).hasSize(11);
             Assert.assertEquals("Room 8", p.get(0).getName());

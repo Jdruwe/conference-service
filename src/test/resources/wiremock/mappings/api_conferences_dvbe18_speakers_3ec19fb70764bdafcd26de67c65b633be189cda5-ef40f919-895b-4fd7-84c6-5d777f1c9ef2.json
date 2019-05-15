@@ -1,0 +1,23 @@
+{
+  "id" : "ef40f919-895b-4fd7-84c6-5d777f1c9ef2",
+  "name" : "api_conferences_dvbe18_speakers_3ec19fb70764bdafcd26de67c65b633be189cda5",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/3ec19fb70764bdafcd26de67c65b633be189cda5",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"3ec19fb70764bdafcd26de67c65b633be189cda5\",\"bioAsHtml\":\"<p>Rafaëla is a software engineer at Luminis in Amsterdam and driven to solve problems with creative solutions. She is very involved in the development of backend systems in Java with Spring. This is including the surrounded technologies needed to test and monitor the produced applications. In her spare time, she also likes to keep up-to-date with frontend technologies such as Angular 5 and React.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/UVN-2568\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/3ec19fb70764bdafcd26de67c65b633be189cda5\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Rafaëla Breed\"}],\"id\":\"UVN-2568\",\"title\":\"Tracing performance of your service calls with some help of Sleuth, Zipkin & ELK\"}],\"company\":\"Luminis Amsterdam\",\"bio\":\"Rafaëla is a software engineer at Luminis in Amsterdam and driven to solve problems with creative solutions. She is very involved in the development of backend systems in Java with Spring. This is including the surrounded technologies needed to test and monitor the produced applications. In her spare time, she also likes to keep up-to-date with frontend technologies such as Angular 5 and React.\",\"lastName\":\"Breed\",\"firstName\":\"Rafaëla\",\"blog\":null,\"avatarURL\":\"https://www.gravatar.com/avatar/97cac4c3979317d0b854d03504790d3f\",\"twitter\":null,\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1157125777",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:25 GMT"
+    }
+  },
+  "uuid" : "ef40f919-895b-4fd7-84c6-5d777f1c9ef2",
+  "persistent" : true,
+  "insertionIndex" : 38
+}

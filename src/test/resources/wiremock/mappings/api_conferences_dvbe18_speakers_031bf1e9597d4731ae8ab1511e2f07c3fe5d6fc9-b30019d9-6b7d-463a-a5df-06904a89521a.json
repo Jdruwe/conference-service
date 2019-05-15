@@ -1,0 +1,23 @@
+{
+  "id" : "b30019d9-6b7d-463a-a5df-06904a89521a",
+  "name" : "api_conferences_dvbe18_speakers_031bf1e9597d4731ae8ab1511e2f07c3fe5d6fc9",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/031bf1e9597d4731ae8ab1511e2f07c3fe5d6fc9",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"031bf1e9597d4731ae8ab1511e2f07c3fe5d6fc9\",\"bioAsHtml\":\"<p>Sadiq holds a PhD in Autonomous Robotics and has for years consulted for multi-national companies designing and implementing highly scalable intelligent platforms. His experience has included deep learning systems, embedded platforms, desktop and mobile games development.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Mind the Geek.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/ZSJ-3068\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/4bbb7f2cae3ab37825a88d4292ca5b087162c07b\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"RIchard Warburton\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/031bf1e9597d4731ae8ab1511e2f07c3fe5d6fc9\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Sadiq Jaffer\"}],\"id\":\"ZSJ-3068\",\"title\":\"Production Profiling: What, Why and How\"}],\"company\":\"Opsian\",\"bio\":\"Sadiq holds a PhD in Autonomous Robotics and has for years consulted for multi-national companies designing and implementing highly scalable intelligent platforms. His experience has included deep learning systems, embedded platforms, desktop and mobile games development.\",\"lastName\":\"Jaffer\",\"firstName\":\"Sadiq\",\"blog\":\"www.opsian.com\",\"avatarURL\":\"https://lh6.googleusercontent.com/-ZOIy9n_-lEE/AAAAAAAAAAI/AAAAAAAAAAA/AB6qoq1zlTPzaJf1xnbWVe7HK7ngJJUjRQ/mo/photo.jpg\",\"twitter\":\"@sadiqj\",\"lang\":\"en-GB\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1900940226",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:41 GMT"
+    }
+  },
+  "uuid" : "b30019d9-6b7d-463a-a5df-06904a89521a",
+  "persistent" : true,
+  "insertionIndex" : 218
+}

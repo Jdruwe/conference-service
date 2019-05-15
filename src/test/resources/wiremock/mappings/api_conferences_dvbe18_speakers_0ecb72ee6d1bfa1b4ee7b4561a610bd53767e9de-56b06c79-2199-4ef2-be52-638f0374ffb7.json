@@ -1,0 +1,23 @@
+{
+  "id" : "56b06c79-2199-4ef2-be52-638f0374ffb7",
+  "name" : "api_conferences_dvbe18_speakers_0ecb72ee6d1bfa1b4ee7b4561a610bd53767e9de",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/0ecb72ee6d1bfa1b4ee7b4561a610bd53767e9de",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"0ecb72ee6d1bfa1b4ee7b4561a610bd53767e9de\",\"bioAsHtml\":\"<p>Erwin is a Software Architect at Trifork. He designs software solutions based on open source technology and helps teams getting started with their projects. Next to this he is a certified Scrum Master and trainer of several Java courses. He also supervises graduates during their final thesis. Erwin likes to share knowledge by giving workshops and presentations.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/HIW-6563\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/0ecb72ee6d1bfa1b4ee7b4561a610bd53767e9de\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Erwin de Gier\"}],\"id\":\"HIW-6563\",\"title\":\"Optimising Kubernetes deployments with Helm\"}],\"company\":\"Trifork Amsterdam\",\"bio\":\"Erwin is a Software Architect at Trifork. He designs software solutions based on open source technology and helps teams getting started with their projects. Next to this he is a certified Scrum Master and trainer of several Java courses. He also supervises graduates during their final thesis. Erwin likes to share knowledge by giving workshops and presentations.\",\"lastName\":\"de Gier\",\"firstName\":\"Erwin\",\"blog\":\"http://edegier.nl\",\"avatarURL\":\"http://edegier.nl/photos/erwin.jpg\",\"twitter\":\"@erwindeg\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-679302297",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:31 GMT"
+    }
+  },
+  "uuid" : "56b06c79-2199-4ef2-be52-638f0374ffb7",
+  "persistent" : true,
+  "insertionIndex" : 110
+}

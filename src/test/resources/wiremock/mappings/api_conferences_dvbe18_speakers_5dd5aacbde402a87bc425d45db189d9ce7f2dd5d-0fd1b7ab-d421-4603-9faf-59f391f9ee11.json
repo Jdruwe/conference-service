@@ -1,0 +1,23 @@
+{
+  "id" : "0fd1b7ab-d421-4603-9faf-59f391f9ee11",
+  "name" : "api_conferences_dvbe18_speakers_5dd5aacbde402a87bc425d45db189d9ce7f2dd5d",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/5dd5aacbde402a87bc425d45db189d9ce7f2dd5d",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"5dd5aacbde402a87bc425d45db189d9ce7f2dd5d\",\"bioAsHtml\":\"<p>Software Engineer with 10 years of experience. I own two masters in computer science, from a french and a german university. I started my career working in the enterprise software division at HP, and then I moved to consumer apps. I worked for a few years at Twitter solving scalability issues in the infrastructure team. I am now working at Blablacar on the backend of a carpooling app for daily commute.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/GMH-7709\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/5dd5aacbde402a87bc425d45db189d9ce7f2dd5d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Antoine Tollenaere\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/fff0c5b6085b5805cbba76d0de3e08fcbb384e5d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ricardo Lage\"}],\"id\":\"GMH-7709\",\"title\":\"Centralizing Business Logic on the Server: How We Designed Presentation APIs\"}],\"company\":\"Blablacar\",\"bio\":\"Software Engineer with 10 years of experience. I own two masters in computer science, from a french and a german university. I started my career working in the enterprise software division at HP, and then I moved to consumer apps. I worked for a few years at Twitter solving scalability issues in the infrastructure team. I am now working at Blablacar on the backend of a carpooling app for daily commute.\",\"lastName\":\"Tollenaere\",\"firstName\":\"Antoine\",\"blog\":\"https://blablacar.com\",\"avatarURL\":\"https://www.gravatar.com/avatar/c97d55cc6c1f424d0731068519a24e9d\",\"twitter\":\"@antolnar\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "138925066",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:38 GMT"
+    }
+  },
+  "uuid" : "0fd1b7ab-d421-4603-9faf-59f391f9ee11",
+  "persistent" : true,
+  "insertionIndex" : 179
+}

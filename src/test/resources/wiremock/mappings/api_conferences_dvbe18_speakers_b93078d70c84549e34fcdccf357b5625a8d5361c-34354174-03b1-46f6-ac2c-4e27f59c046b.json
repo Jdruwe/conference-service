@@ -1,0 +1,23 @@
+{
+  "id" : "34354174-03b1-46f6-ac2c-4e27f59c046b",
+  "name" : "api_conferences_dvbe18_speakers_b93078d70c84549e34fcdccf357b5625a8d5361c",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/b93078d70c84549e34fcdccf357b5625a8d5361c",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"b93078d70c84549e34fcdccf357b5625a8d5361c\",\"bioAsHtml\":\"<p>Axel Fontaine is the founder and CEO of Boxfuse (boxfuse.com), the easiest way to deploy JVM, Node.js and Go applications to AWS, and the creator of Flyway (flywaydb.org), the open-source tool that makes database migrations easy.</p>\\n<p>Axel is an entrepreneur, a Continuous Delivery expert, an Immutable Infrastructure expert, a Java Champion, a JavaOne Rockstar, a regular speaker at many large international conferences, a trainer and an author.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/GUL-0552\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/b93078d70c84549e34fcdccf357b5625a8d5361c\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Axel Fontaine\"}],\"id\":\"GUL-0552\",\"title\":\"Majestic Modular Monoliths\"}],\"company\":\"Boxfuse GmbH\",\"bio\":\"Axel Fontaine is the founder and CEO of Boxfuse (boxfuse.com), the easiest way to deploy JVM, Node.js and Go applications to AWS, and the creator of Flyway (flywaydb.org), the open-source tool that makes database migrations easy.\\r\\n\\r\\nAxel is an entrepreneur, a Continuous Delivery expert, an Immutable Infrastructure expert, a Java Champion, a JavaOne Rockstar, a regular speaker at many large international conferences, a trainer and an author.\",\"lastName\":\"Fontaine\",\"firstName\":\"Axel\",\"blog\":\"https://boxfuse.com\",\"avatarURL\":\"https://lh6.googleusercontent.com/-c9DYfgXv-OQ/AAAAAAAAAAI/AAAAAAAAAAA/41HvmCQf2wY/photo.jpg\",\"twitter\":\"@axelfontaine\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "2012793222",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:32 GMT"
+    }
+  },
+  "uuid" : "34354174-03b1-46f6-ac2c-4e27f59c046b",
+  "persistent" : true,
+  "insertionIndex" : 115
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "f3e4b805-8289-4c7d-8057-d21a9963ebec",
+  "name" : "api_conferences_dvbe18_speakers_2d5f0f508ec84fc3921c7f15a7c54a39f4f87b62",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/2d5f0f508ec84fc3921c7f15a7c54a39f4f87b62",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"2d5f0f508ec84fc3921c7f15a7c54a39f4f87b62\",\"bioAsHtml\":\"<p>Antoine Detante is architect and developer around Java/Scala/NodeJS technologies in Luxembourg, on projects about Blockchain and Machine Learning.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Mind the Geek.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/MQB-9462\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6211aeda51006fb257c51b607c01155edfbccadf\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Pierre Paci\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/2d5f0f508ec84fc3921c7f15a7c54a39f4f87b62\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Antoine Detante\"}],\"id\":\"MQB-9462\",\"title\":\"Crypto currency, data mining and machine learning, wining combo ?\"}],\"company\":\"InTech S.A.\",\"bio\":\"Antoine Detante is architect and developer around Java/Scala/NodeJS technologies in Luxembourg, on projects about Blockchain and Machine Learning.\\r\\n\",\"lastName\":\"Detante\",\"firstName\":\"Antoine\",\"blog\":\"http://www.intech.lu\",\"avatarURL\":\"http://www.gravatar.com/avatar/4c6818ee88778a1936d3afb15ff938c2\",\"twitter\":\"@antoined\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "469539552",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:30 GMT"
+    }
+  },
+  "uuid" : "f3e4b805-8289-4c7d-8057-d21a9963ebec",
+  "persistent" : true,
+  "insertionIndex" : 100
+}

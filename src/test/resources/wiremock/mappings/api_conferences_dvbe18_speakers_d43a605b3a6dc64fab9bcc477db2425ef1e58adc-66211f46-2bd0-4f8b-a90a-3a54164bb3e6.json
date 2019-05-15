@@ -1,0 +1,23 @@
+{
+  "id" : "66211f46-2bd0-4f8b-a90a-3a54164bb3e6",
+  "name" : "api_conferences_dvbe18_speakers_d43a605b3a6dc64fab9bcc477db2425ef1e58adc",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/d43a605b3a6dc64fab9bcc477db2425ef1e58adc",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"d43a605b3a6dc64fab9bcc477db2425ef1e58adc\",\"bioAsHtml\":\"<p>Erin is Frontend Engineer working on the Google Analytics Suite where she&#x27;s built a set of common components shared by 13 teams. Erin&#x27;s core mission is to help others build stunning apps and meet their business needs by contributing best practices, common infrastructure, and components such as the Angular Material data table.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Modern Web & UX.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/YFD-2317\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/d43a605b3a6dc64fab9bcc477db2425ef1e58adc\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Erin Coughlan\"}],\"id\":\"YFD-2317\",\"title\":\"Upgrading to Angular without ngUpgrade\"}],\"company\":\"Google\",\"bio\":\"Erin is Frontend Engineer working on the Google Analytics Suite where she's built a set of common components shared by 13 teams. Erin's core mission is to help others build stunning apps and meet their business needs by contributing best practices, common infrastructure, and components such as the Angular Material data table.\",\"lastName\":\"Coughlan\",\"firstName\":\"Erin\",\"blog\":null,\"avatarURL\":\"https://pbs.twimg.com/profile_images/1016407802636464128/wgcq2CC2_400x400.jpg\",\"twitter\":\"@ErinCoughlan16\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1129641510",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:40 GMT"
+    }
+  },
+  "uuid" : "66211f46-2bd0-4f8b-a90a-3a54164bb3e6",
+  "persistent" : true,
+  "insertionIndex" : 200
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "f65abc4b-b47d-45f9-96ea-1e491f375f5d",
+  "name" : "api_conferences_dvbe18_speakers_ea94b8f9411d49e58a8175199d1197856e291f99",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/ea94b8f9411d49e58a8175199d1197856e291f99",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"ea94b8f9411d49e58a8175199d1197856e291f99\",\"bioAsHtml\":\"<p>Software Developer/Architect with a passion for Java, Agile development, software design, micro services, cloud, mobile and Virtual/Augmented Reality. Hands-on development, but also experienced on working with multiple teams, management and external stakeholders. Frequent speaker, writer and trainer.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/LSP-5748\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/fe9f9d97f7c0a959e1f94f2020726e31e8cecc5e\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Tim Prijn\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/ea94b8f9411d49e58a8175199d1197856e291f99\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Peter Hendriks\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/0b1260573cfc163d9313ddb11ea5a54b3ab7193f\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ramon Wieleman\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/fc86ee0245cc9db1a0f8dfa10375055bddeaca0d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Richard Kettelerij\"}],\"id\":\"LSP-5748\",\"title\":\"The Java Pub Quiz\"}],\"company\":\"Mindloops\",\"bio\":\"Software Developer/Architect with a passion for Java, Agile development, software design, micro services, cloud, mobile and Virtual/Augmented Reality. Hands-on development, but also experienced on working with multiple teams, management and external stakeholders. Frequent speaker, writer and trainer.\",\"lastName\":\"Hendriks\",\"firstName\":\"Peter\",\"blog\":\"https://www.mindloops.io\",\"avatarURL\":\"https://lh3.googleusercontent.com/-HoihC9Usc54/AAAAAAAAAAI/AAAAAAAAAA4/onf0LoMBEMw/photo.jpg\",\"twitter\":\"@PeterHendriks80\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-103649407",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:45 GMT"
+    }
+  },
+  "uuid" : "f65abc4b-b47d-45f9-96ea-1e491f375f5d",
+  "persistent" : true,
+  "insertionIndex" : 255
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "f207fb13-3fc9-4500-be9f-b03694f431f2",
+  "name" : "api_conferences_dvbe18_speakers_f4d62663a544d0fbc01f78016838f5f411f2580a",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/f4d62663a544d0fbc01f78016838f5f411f2580a",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"f4d62663a544d0fbc01f78016838f5f411f2580a\",\"bioAsHtml\":\"<p>Tech Lead  at Saagie, i&#x27;m also a early adopter of Kanban in France.<br  />\\nCo-funder of conference Lean Kanban France and Codeurs en Seine<br  />\\nRed Coat at Devoxx France</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Hands-on Lab\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/WXY-5778\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/05afda51d686bab49c8687025d0b07b00ce45a0b\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Emmanuel Bernard\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/f4d62663a544d0fbc01f78016838f5f411f2580a\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Guillaume LOURS\"}],\"id\":\"WXY-5778\",\"title\":\"Personal productivity lab: optimizing made personal\"}],\"company\":\"Saagie\",\"bio\":\"Tech Lead  at Saagie, i'm also a early adopter of Kanban in France.  \\r\\nCo-funder of conference Lean Kanban France and Codeurs en Seine  \\r\\nRed Coat at Devoxx France\",\"lastName\":\"LOURS\",\"firstName\":\"Guillaume\",\"blog\":\"http://www.saagie.com\",\"avatarURL\":\"http://www.gravatar.com/avatar/cb17294de56e44d18f1ab0dc966101a7\",\"twitter\":\"@glours\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-825709349",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:34 GMT"
+    }
+  },
+  "uuid" : "f207fb13-3fc9-4500-be9f-b03694f431f2",
+  "persistent" : true,
+  "insertionIndex" : 138
+}

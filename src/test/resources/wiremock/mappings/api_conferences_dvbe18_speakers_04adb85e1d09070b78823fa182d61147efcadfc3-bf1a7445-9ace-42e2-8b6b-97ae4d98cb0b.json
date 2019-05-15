@@ -1,0 +1,23 @@
+{
+  "id" : "bf1a7445-9ace-42e2-8b6b-97ae4d98cb0b",
+  "name" : "api_conferences_dvbe18_speakers_04adb85e1d09070b78823fa182d61147efcadfc3",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/04adb85e1d09070b78823fa182d61147efcadfc3",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"04adb85e1d09070b78823fa182d61147efcadfc3\",\"bioAsHtml\":\"<p>Cyril is an Engineering Manager at DocuSign, where he works closely with the compliance department to make sure that DocuSign products meet European requirements for digitally signing documents. More specifically, he is currently responsible for the digitalisation of the identity verification process while ensuring that DocuSign products are compatible to integrate any trust services providers. Previously, he was leading  the technical issuance of SSL certificates and eID on smart cards.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/OUJ-2379\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/04adb85e1d09070b78823fa182d61147efcadfc3\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Cyril Thirion\"}],\"id\":\"OUJ-2379\",\"title\":\"Digital Signatures and Blockchain: How DocuSign Does It\"}],\"company\":\"DocuSign\",\"bio\":\"Cyril is an Engineering Manager at DocuSign, where he works closely with the compliance department to make sure that DocuSign products meet European requirements for digitally signing documents. More specifically, he is currently responsible for the digitalisation of the identity verification process while ensuring that DocuSign products are compatible to integrate any trust services providers. Previously, he was leading  the technical issuance of SSL certificates and eID on smart cards.\",\"lastName\":\"Thirion\",\"firstName\":\"Cyril\",\"blog\":null,\"avatarURL\":\"https://media.licdn.com/dms/image/C5603AQHt9SBs0a-uug/profile-displayphoto-shrink_200_200/0?e=1543449600&v=beta&t=Thd2M4GRHGZUyuoNBxuUUGghrlosktT5mQFWxvMv7Jg\",\"twitter\":null,\"lang\":\"en\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "206935829",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:40 GMT"
+    }
+  },
+  "uuid" : "bf1a7445-9ace-42e2-8b6b-97ae4d98cb0b",
+  "persistent" : true,
+  "insertionIndex" : 212
+}

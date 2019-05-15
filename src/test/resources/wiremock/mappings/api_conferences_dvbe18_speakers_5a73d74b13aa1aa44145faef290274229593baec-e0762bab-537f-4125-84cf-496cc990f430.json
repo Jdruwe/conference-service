@@ -1,0 +1,23 @@
+{
+  "id" : "e0762bab-537f-4125-84cf-496cc990f430",
+  "name" : "api_conferences_dvbe18_speakers_5a73d74b13aa1aa44145faef290274229593baec",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/5a73d74b13aa1aa44145faef290274229593baec",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"5a73d74b13aa1aa44145faef290274229593baec\",\"bioAsHtml\":\"<p>Father of 3. Trained as a Software Engineer (Technion, Israel), completed Master&#x27;s degree in CS, currently working on my PhD (CS too). Both advanced degrees are centered around the Behavioral Programming paradigm. Worked as a software engineer in companies big and small, and in some startups. Maintains a  software consultancy focused on systems with positive social impact. A fellow at Harvard Institute of Quantitative Social Science, working on data science tools, privacy, and security.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Programming languages.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/ECS-4884\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/5a73d74b13aa1aa44145faef290274229593baec\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Michael Bar-Sinai\"}],\"id\":\"ECS-4884\",\"title\":\"Rethinking Software Systems: A friendly introduction to Behavioral Programming\"}],\"company\":\"BGU/Harvard IQSS/Freelance\",\"bio\":\"Father of 3. Trained as a Software Engineer (Technion, Israel), completed Master's degree in CS, currently working on my PhD (CS too). Both advanced degrees are centered around the Behavioral Programming paradigm. Worked as a software engineer in companies big and small, and in some startups. Maintains a  software consultancy focused on systems with positive social impact. A fellow at Harvard Institute of Quantitative Social Science, working on data science tools, privacy, and security.\",\"lastName\":\"Bar-Sinai\",\"firstName\":\"Michael\",\"blog\":\"mbarsinai.com\",\"avatarURL\":\"http://mbarsinai.com/square-220.jpeg\",\"twitter\":\"@michbarsinai\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1647503883",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:32 GMT"
+    }
+  },
+  "uuid" : "e0762bab-537f-4125-84cf-496cc990f430",
+  "persistent" : true,
+  "insertionIndex" : 122
+}

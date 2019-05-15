@@ -1,0 +1,23 @@
+{
+  "id" : "f487bf8f-3ca2-41d7-941a-d2fe7fcaea61",
+  "name" : "api_conferences_dvbe18_speakers_fd71b90351915730a22a0e5a1e48f1618ad2ff3d",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/fd71b90351915730a22a0e5a1e48f1618ad2ff3d",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"fd71b90351915730a22a0e5a1e48f1618ad2ff3d\",\"bioAsHtml\":\"<p>API Architect, Java craftman specialized on Java SE/EE (Jakarta EE) technologies and API / SOA Management with Governance. Deep knowledge on Maven, Git, Spring ( Core, Boot, Data, MVC,... ), SQL/NoSQL, Containers ( Docker, Swarm,... ), REST architecture,  CQRS, DDD ( Domain Driven Design / Domain Centric Architecture ), Open API. Moreover I ve got experience on HTML 5, CSS 3, JavaScript, AngularJS, NodeJs,...</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/WZW-2858\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/fd71b90351915730a22a0e5a1e48f1618ad2ff3d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Mike Francois\"}],\"id\":\"WZW-2858\",\"title\":\"Monolith 2 MicroServices - Houston we've got a problem !\"}],\"company\":null,\"bio\":\"API Architect, Java craftman specialized on Java SE/EE (Jakarta EE) technologies and API / SOA Management with Governance. Deep knowledge on Maven, Git, Spring ( Core, Boot, Data, MVC,... ), SQL/NoSQL, Containers ( Docker, Swarm,... ), REST architecture,  CQRS, DDD ( Domain Driven Design / Domain Centric Architecture ), Open API. Moreover I ve got experience on HTML 5, CSS 3, JavaScript, AngularJS, NodeJs,...\",\"lastName\":\"Francois\",\"firstName\":\"Mike\",\"blog\":null,\"avatarURL\":\"https://pbs.twimg.com/profile_images/818349489408901120/NRrP-Hak_400x400.jpg\",\"twitter\":\"@mike_francois\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-924891266",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:23 GMT"
+    }
+  },
+  "uuid" : "f487bf8f-3ca2-41d7-941a-d2fe7fcaea61",
+  "persistent" : true,
+  "insertionIndex" : 18
+}

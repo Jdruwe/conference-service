@@ -1,0 +1,23 @@
+{
+  "id" : "8d195ba4-3f04-46e7-988e-da3de7e31ae9",
+  "name" : "api_conferences_dvbe18_speakers_43a8db41c5058ab3c67a26ee8055d8653ff31282",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/43a8db41c5058ab3c67a26ee8055d8653ff31282",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"43a8db41c5058ab3c67a26ee8055d8653ff31282\",\"bioAsHtml\":\"<p>Ruben Boumans is a senior developer at OpenValue. He is a polyglot, working professionally with Java, playing with Python at home and previously has programmed in a ton of other languages. Ruben&#x27;s current love is Rust. He always looks forward to the next hackathon or programming contest.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Hands-on Lab\",\"track\":\"Programming languages.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/RYY-1356\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/43a8db41c5058ab3c67a26ee8055d8653ff31282\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ruben Boumans\"}],\"id\":\"RYY-1356\",\"title\":\"Meet Rust: The speed of C, the comforts of Kotlin\"}],\"company\":\"OpenValue\",\"bio\":\"Ruben Boumans is a senior developer at OpenValue. He is a polyglot, working professionally with Java, playing with Python at home and previously has programmed in a ton of other languages. Ruben's current love is Rust. He always looks forward to the next hackathon or programming contest.\",\"lastName\":\"Boumans\",\"firstName\":\"Ruben\",\"blog\":\"www.openvalue.nl\",\"avatarURL\":\"https://i.imgur.com/xCuPDQc.jpg\",\"twitter\":\"@reb2punt0\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1133743645",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:43 GMT"
+    }
+  },
+  "uuid" : "8d195ba4-3f04-46e7-988e-da3de7e31ae9",
+  "persistent" : true,
+  "insertionIndex" : 238
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "0df38d3b-e2d6-41b6-a074-05d92f5a181f",
+  "name" : "api_conferences_dvbe18_speakers_9136a18c007e3aff9efd4ce9b21bfb5906a89533",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/9136a18c007e3aff9efd4ce9b21bfb5906a89533",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"9136a18c007e3aff9efd4ce9b21bfb5906a89533\",\"bioAsHtml\":\"<p>Ivor Boers is an experienced Java developer who mainly works on large CMS implementations. He has a masters degree in Mechanical Engineering and has been a developer for more than 16 years. He has sailed on many seas from the Baltic sea to the Aegean Sea.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/OGX-2527\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/8ed4f680bfebed370dde93a7dd5954fafd733be9\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Michel Drenthe\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/9136a18c007e3aff9efd4ce9b21bfb5906a89533\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ivor Boers\"}],\"id\":\"OGX-2527\",\"title\":\"Adventures in autonomous sailing\"}],\"company\":\"openweb\",\"bio\":\"Ivor Boers is an experienced Java developer who mainly works on large CMS implementations. He has a masters degree in Mechanical Engineering and has been a developer for more than 16 years. He has sailed on many seas from the Baltic sea to the Aegean Sea.\",\"lastName\":\"Boers\",\"firstName\":\"Ivor\",\"blog\":\"https://www.openweb.nl\",\"avatarURL\":\"https://lh3.googleusercontent.com/-8nseoHuypMg/AAAAAAAAAAI/AAAAAAAAAAc/XXir2hiPj8w/photo.jpg\",\"twitter\":\"@ivorboers\",\"lang\":\"nl-NL\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-2132953865",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:48 GMT"
+    }
+  },
+  "uuid" : "0df38d3b-e2d6-41b6-a074-05d92f5a181f",
+  "persistent" : true,
+  "insertionIndex" : 281
+}

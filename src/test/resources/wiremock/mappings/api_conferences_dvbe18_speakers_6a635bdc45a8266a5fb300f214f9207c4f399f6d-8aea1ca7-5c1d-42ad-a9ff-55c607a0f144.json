@@ -1,0 +1,23 @@
+{
+  "id" : "8aea1ca7-5c1d-42ad-a9ff-55c607a0f144",
+  "name" : "api_conferences_dvbe18_speakers_6a635bdc45a8266a5fb300f214f9207c4f399f6d",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/6a635bdc45a8266a5fb300f214f9207c4f399f6d",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"6a635bdc45a8266a5fb300f214f9207c4f399f6d\",\"bioAsHtml\":\"<p>Developer Advocate at Google for Google Cloud Platform, and PMC chair of the Apache Groovy programming language project.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Mind the Geek.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/NKJ-9530\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/05afda51d686bab49c8687025d0b07b00ce45a0b\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Emmanuel Bernard\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/8af78fa5cf9450329a3ecbceb4038823681de4a7\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Audrey Neveu\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6a635bdc45a8266a5fb300f214f9207c4f399f6d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Guillaume Laforge\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/f3a48bb49697608a0ccd8f8fa1bb08b0f606296b\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Vincent Massol\"}],\"id\":\"NKJ-9530\",\"title\":\"Les Cast Codeurs Podcast: (with|by|for|of) developers\"}],\"company\":\"Google\",\"bio\":\"Developer Advocate at Google for Google Cloud Platform, and PMC chair of the Apache Groovy programming language project.\",\"lastName\":\"Laforge\",\"firstName\":\"Guillaume\",\"blog\":\"http://glaforge.appspot.com\",\"avatarURL\":\"http://www.gravatar.com/avatar/137d3908243acfc30e126615d59d4e6d\",\"twitter\":\"@glaforge\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-576212862",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:45 GMT"
+    }
+  },
+  "uuid" : "8aea1ca7-5c1d-42ad-a9ff-55c607a0f144",
+  "persistent" : true,
+  "insertionIndex" : 261
+}

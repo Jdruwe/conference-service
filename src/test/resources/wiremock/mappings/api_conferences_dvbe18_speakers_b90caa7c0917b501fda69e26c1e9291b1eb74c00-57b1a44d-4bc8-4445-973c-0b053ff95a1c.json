@@ -1,0 +1,23 @@
+{
+  "id" : "57b1a44d-4bc8-4445-973c-0b053ff95a1c",
+  "name" : "api_conferences_dvbe18_speakers_b90caa7c0917b501fda69e26c1e9291b1eb74c00",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/b90caa7c0917b501fda69e26c1e9291b1eb74c00",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"b90caa7c0917b501fda69e26c1e9291b1eb74c00\",\"bioAsHtml\":\"<p>Matti Tahvonen has a long history in Vaadin R&amp;D: developing the core framework from the dark ages of pure JS client side to the GWT era and creating a number of official and unofficial Vaadin add-ons. Nowadays Matti is working as a developer advocate and Vaadin Framework marketing manager for Vaadin, creating lots of PoCs how other cool technologies can be used together with Vaadin to efficiently create stunning web applications. He loves his current position where he can explore new Java related technologies each and every day.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Modern Web .label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/WAA-7208\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/b90caa7c0917b501fda69e26c1e9291b1eb74c00\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Matti Tahvonen\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/fe2be7434f576503529de8d7bee94babefa4cf4f\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Leif Åstrand\"}],\"id\":\"WAA-7208\",\"title\":\"WebSocket based chat app in 10 minutes using Spring Boot, Reactor and Vaadin\"}],\"company\":\"Vaadin\",\"bio\":\"Matti Tahvonen has a long history in Vaadin R&D: developing the core framework from the dark ages of pure JS client side to the GWT era and creating a number of official and unofficial Vaadin add-ons. Nowadays Matti is working as a developer advocate and Vaadin Framework marketing manager for Vaadin, creating lots of PoCs how other cool technologies can be used together with Vaadin to efficiently create stunning web applications. He loves his current position where he can explore new Java related technologies each and every day.\",\"lastName\":\"Tahvonen\",\"firstName\":\"Matti\",\"blog\":\"https://vaadin.com\",\"avatarURL\":\"https://pbs.twimg.com/profile_images/2642704545/a77c0524766c6f3b4be4929f2005e627_400x400.png\",\"twitter\":\"@mattitahvonen\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-170749665",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:29 GMT"
+    }
+  },
+  "uuid" : "57b1a44d-4bc8-4445-973c-0b053ff95a1c",
+  "persistent" : true,
+  "insertionIndex" : 78
+}

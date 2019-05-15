@@ -1,0 +1,23 @@
+{
+  "id" : "24ad2bad-f849-494a-bef2-46de6182946f",
+  "name" : "api_conferences_dvbe18_speakers_0d7fffaa94fefcf89147e425b41ad75c3dad4738",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/0d7fffaa94fefcf89147e425b41ad75c3dad4738",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"0d7fffaa94fefcf89147e425b41ad75c3dad4738\",\"bioAsHtml\":\"<p>Alex is a Software Engineer at Red Hat in Developers group. He is a passionate about Java world, software automation and he believes in the open source software model.</p>\\n<p>Alex is the creator of NoSQLUnit project, member of JSR374 (Java API for JSON Processing) Expert Group, the co-author of Testing Java Microservices book for Manning and contributor of several open source projects. A Java Champion since 2017 and international speaker,  he has talked about new testing techniques for microservices, continuous delivery in 21st century.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/QDR-7433\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/8551616e8ea37d9a0c962b022afc9f6b377790f6\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Dan Allen\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/0d7fffaa94fefcf89147e425b41ad75c3dad4738\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Alex Soto\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/718137d78eb52f6d38f3cbedc350fea9ae2a55e4\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Andres Almiray\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/8a840a35dc6946fe9d5eaf0c0910a53afadaf981\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Hubert SABLONNIÈRE\"}],\"id\":\"QDR-7433\",\"title\":\"Writers Write! The Documentation BOF\"}],\"company\":\"Red Hat\",\"bio\":\"Alex is a Software Engineer at Red Hat in Developers group. He is a passionate about Java world, software automation and he believes in the open source software model.\\r\\n\\r\\nAlex is the creator of NoSQLUnit project, member of JSR374 (Java API for JSON Processing) Expert Group, the co-author of Testing Java Microservices book for Manning and contributor of several open source projects. A Java Champion since 2017 and international speaker,  he has talked about new testing techniques for microservices, continuous delivery in 21st century.\",\"lastName\":\"Soto\",\"firstName\":\"Alex\",\"blog\":\"http://www.lordofthejars.com\",\"avatarURL\":\"https://avatars0.githubusercontent.com/u/1517153?s=400&u=f12991d66885d05a34b545cb33af3f61515703c9&v=4\",\"twitter\":\"@alexsotob\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-355002810",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:43 GMT"
+    }
+  },
+  "uuid" : "24ad2bad-f849-494a-bef2-46de6182946f",
+  "persistent" : true,
+  "insertionIndex" : 239
+}

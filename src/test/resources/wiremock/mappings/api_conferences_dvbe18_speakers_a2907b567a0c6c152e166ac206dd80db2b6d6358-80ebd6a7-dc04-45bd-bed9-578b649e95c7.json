@@ -1,0 +1,23 @@
+{
+  "id" : "80ebd6a7-dc04-45bd-bed9-578b649e95c7",
+  "name" : "api_conferences_dvbe18_speakers_a2907b567a0c6c152e166ac206dd80db2b6d6358",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/a2907b567a0c6c152e166ac206dd80db2b6d6358",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"a2907b567a0c6c152e166ac206dd80db2b6d6358\",\"bioAsHtml\":\"<p>Piet loves to dive deep into stuff. When he&#x27;s done, he will explain it to you with great enthusiasm and humor. Even if the subject is super dry and boring. HTTP/2 internals? Piet breaks out his hacksaw. IoT architecture? Piet creates a drum computer the audience can play with from the comfort of their seats.</p>\\n<p>Why? Because he thinks it is essential that we share what we do and know. That&#x27;s the best way to collectively get better at what we do.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Mobile & IoT.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/IDN-0435\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/a2907b567a0c6c152e166ac206dd80db2b6d6358\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Piet van Dongen\"}],\"id\":\"IDN-0435\",\"title\":\"The Internet of Drums\"}],\"company\":\"Luminis\",\"bio\":\"Piet loves to dive deep into stuff. When he's done, he will explain it to you with great enthusiasm and humor. Even if the subject is super dry and boring. HTTP/2 internals? Piet breaks out his hacksaw. IoT architecture? Piet creates a drum computer the audience can play with from the comfort of their seats.\\r\\n\\r\\nWhy? Because he thinks it is essential that we share what we do and know. That's the best way to collectively get better at what we do.\",\"lastName\":\"van Dongen\",\"firstName\":\"Piet\",\"blog\":\"https://arnhem.luminis.eu/\",\"avatarURL\":\"https://www.gravatar.com/avatar/4b0aedbeed1cde602e6b8efda786fa4b\",\"twitter\":\"@pietvandongen\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "317476910",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:29 GMT"
+    }
+  },
+  "uuid" : "80ebd6a7-dc04-45bd-bed9-578b649e95c7",
+  "persistent" : true,
+  "insertionIndex" : 77
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "ebd74eec-ba4e-4f31-bfaf-9411ee65e641",
+  "name" : "api_conferences_dvbe18_speakers_9997ff47b162dcb9b5c582a5a1798571b0dccdab",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/9997ff47b162dcb9b5c582a5a1798571b0dccdab",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"9997ff47b162dcb9b5c582a5a1798571b0dccdab\",\"bioAsHtml\":\"<p>Bret is a Developer Advocate for Serverless on the Google Cloud Platform team at Google, focusing on serverless products like Google Cloud Functions, App Engine, Firebase, machine learning APIs, and more. He&#x27;s currently an aspiring Node.js developer. Prior to Google, Bret worked as a software engineer in the cloud industry at Rackspace. Before that, he led engineering teams at e-commerce and non-profits and tried his hand at creating two startups. He&#x27;s often on the running trail, volleyball court or kickball field.</p>\\n<p>Bret earned a bachelor’s degree in computer science from Texas A&amp;M University.</p>\\n<p>Reach Bret on Twitter at @bretmcg.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/EHM-4720\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/9997ff47b162dcb9b5c582a5a1798571b0dccdab\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Bret McGowen\"}],\"id\":\"EHM-4720\",\"title\":\"Bring serverless to Kubernetes with new open source tools\"}],\"company\":\"Google\",\"bio\":\"Bret is a Developer Advocate for Serverless on the Google Cloud Platform team at Google, focusing on serverless products like Google Cloud Functions, App Engine, Firebase, machine learning APIs, and more. He's currently an aspiring Node.js developer. Prior to Google, Bret worked as a software engineer in the cloud industry at Rackspace. Before that, he led engineering teams at e-commerce and non-profits and tried his hand at creating two startups. He's often on the running trail, volleyball court or kickball field.\\r\\n\\r\\nBret earned a bachelor’s degree in computer science from Texas A&M University.\\r\\n\\r\\nReach Bret on Twitter at @bretmcg.\",\"lastName\":\"McGowen\",\"firstName\":\"Bret\",\"blog\":\"https://cloud.google.com\",\"avatarURL\":\"https://bretmcg.com/bret-mcgowen.jpg\",\"twitter\":\"@BretMcG\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1031993637",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:27 GMT"
+    }
+  },
+  "uuid" : "ebd74eec-ba4e-4f31-bfaf-9411ee65e641",
+  "persistent" : true,
+  "insertionIndex" : 60
+}

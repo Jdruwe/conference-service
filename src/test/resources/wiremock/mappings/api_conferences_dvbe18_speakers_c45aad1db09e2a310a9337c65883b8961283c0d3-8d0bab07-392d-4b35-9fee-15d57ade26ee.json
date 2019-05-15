@@ -1,0 +1,23 @@
+{
+  "id" : "8d0bab07-392d-4b35-9fee-15d57ade26ee",
+  "name" : "api_conferences_dvbe18_speakers_c45aad1db09e2a310a9337c65883b8961283c0d3",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/c45aad1db09e2a310a9337c65883b8961283c0d3",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"c45aad1db09e2a310a9337c65883b8961283c0d3\",\"bioAsHtml\":\"<p>Fn Project, Serverless, Jakarta EE &amp; Java @ Oracle</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/SUF-5823\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/c45aad1db09e2a310a9337c65883b8961283c0d3\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"David Delabassee\"}],\"id\":\"SUF-5823\",\"title\":\"Serverless Java: Challenges and Triumphs\"}],\"company\":\"@oracle\",\"bio\":\"Fn Project, Serverless, Jakarta EE & Java @ Oracle\",\"lastName\":\"Delabassee\",\"firstName\":\"David\",\"blog\":\"http://twitter.com/@delabassee\",\"avatarURL\":\"http://www.gravatar.com/avatar/9999629551902f546d4817c9840bb9f6\",\"twitter\":\"@delabassee\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "400476328",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:29 GMT"
+    }
+  },
+  "uuid" : "8d0bab07-392d-4b35-9fee-15d57ade26ee",
+  "persistent" : true,
+  "insertionIndex" : 88
+}

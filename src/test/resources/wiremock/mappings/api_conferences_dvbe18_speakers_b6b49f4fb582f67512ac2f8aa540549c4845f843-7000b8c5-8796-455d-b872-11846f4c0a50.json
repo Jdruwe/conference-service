@@ -1,0 +1,23 @@
+{
+  "id" : "7000b8c5-8796-455d-b872-11846f4c0a50",
+  "name" : "api_conferences_dvbe18_speakers_b6b49f4fb582f67512ac2f8aa540549c4845f843",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/b6b49f4fb582f67512ac2f8aa540549c4845f843",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"b6b49f4fb582f67512ac2f8aa540549c4845f843\",\"bioAsHtml\":\"<p>Deepu K Sasidharan is the co-lead of JHipster. He has been part of the core JHipster team from its inception and is an active contributor to the project. He currently works for XebiaLabs, a DevOps software company, as a senior full-stack product developer. Prior to that, he worked at TCS as a technical consultant focusing on innovative solutions for Airlines. He has over 9 years of experience in architecture, design &amp; implementation of enterprise web applications and pre-sales. He is an author and regular conference speaker. He is also a JavaScript and Web technology expert. When not coding, he likes to read about Astronomy and Science.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Server Side Java.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/XCM-6395\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/b6b49f4fb582f67512ac2f8aa540549c4845f843\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Deepu K Sasidharan\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/68f9c9174f46a0a4e7300b299832604c1c973709\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Julien Dubois\"}],\"id\":\"XCM-6395\",\"title\":\"JHipster 5 - What's new and noteworthy\"},{\"talkType\":\"Conference\",\"track\":\"Modern Web & UX.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/YOK-9868\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/b6b49f4fb582f67512ac2f8aa540549c4845f843\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Deepu K Sasidharan\"}],\"id\":\"YOK-9868\",\"title\":\"Why you should love TypeScript - A practical guide\"},{\"talkType\":\"Deep Dive\",\"track\":\"Modern Web .label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/VND-4382\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/b6b49f4fb582f67512ac2f8aa540549c4845f843\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Deepu K Sasidharan\"}],\"id\":\"VND-4382\",\"title\":\"TypeScript: Complete\"}],\"company\":\"@xebialabs\",\"bio\":\"Deepu K Sasidharan is the co-lead of JHipster. He has been part of the core JHipster team from its inception and is an active contributor to the project. He currently works for XebiaLabs, a DevOps software company, as a senior full-stack product developer. Prior to that, he worked at TCS as a technical consultant focusing on innovative solutions for Airlines. He has over 9 years of experience in architecture, design & implementation of enterprise web applications and pre-sales. He is an author and regular conference speaker. He is also a JavaScript and Web technology expert. When not coding, he likes to read about Astronomy and Science.\",\"lastName\":\"K Sasidharan\",\"firstName\":\"Deepu\",\"blog\":\"http://deepu.js.org\",\"avatarURL\":\"https://avatars2.githubusercontent.com/u/1107223?s=400&u=1e1996bece4acee5bbc760a346ce2ba1e8bd2a12&v=4\",\"twitter\":\"@deepu105\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-2097456195",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:25 GMT"
+    }
+  },
+  "uuid" : "7000b8c5-8796-455d-b872-11846f4c0a50",
+  "persistent" : true,
+  "insertionIndex" : 44
+}

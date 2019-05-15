@@ -1,0 +1,23 @@
+{
+  "id" : "f94602b5-cae6-4835-9d5a-6011b7061846",
+  "name" : "api_conferences_dvbe18_speakers_6abf170c2f14b452300d5b52df6818afcb6fcccf",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/6abf170c2f14b452300d5b52df6818afcb6fcccf",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"6abf170c2f14b452300d5b52df6818afcb6fcccf\",\"bioAsHtml\":\"<p>I started working in software delivery in the late 1990s when TDD was something you studied but never did and a pipeline was something for carrying oil. In 2005 I joined a startup and started to feel I could really make a difference. After nearly 10 years I moved on to a career in consultancy with ThoughtWorks. After 3 years I still feel like every day is different. I&#x27;m constantly meeting great people, learning new things, finding new challenges and helping to solve different problems.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/HGA-5787\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6abf170c2f14b452300d5b52df6818afcb6fcccf\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"James Birnie\"}],\"id\":\"HGA-5787\",\"title\":\"Agile is a Dirty Word\"},{\"talkType\":\"Quickie\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/ZWW-0582\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6abf170c2f14b452300d5b52df6818afcb6fcccf\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"James Birnie\"}],\"id\":\"ZWW-0582\",\"title\":\"What Drives your Development?\"}],\"company\":\"Thoughtworks\",\"bio\":\"I started working in software delivery in the late 1990s when TDD was something you studied but never did and a pipeline was something for carrying oil. In 2005 I joined a startup and started to feel I could really make a difference. After nearly 10 years I moved on to a career in consultancy with ThoughtWorks. After 3 years I still feel like every day is different. I'm constantly meeting great people, learning new things, finding new challenges and helping to solve different problems.\",\"lastName\":\"Birnie\",\"firstName\":\"James\",\"blog\":\"http://www.jamesbirnie.com/\",\"avatarURL\":\"https://s3-eu-west-1.amazonaws.com/cfpdevoxx/belgium/speakers/JamesBirnie.jpg\",\"twitter\":\"@RunningChairJB\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-99777167",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:24 GMT"
+    }
+  },
+  "uuid" : "f94602b5-cae6-4835-9d5a-6011b7061846",
+  "persistent" : true,
+  "insertionIndex" : 29
+}

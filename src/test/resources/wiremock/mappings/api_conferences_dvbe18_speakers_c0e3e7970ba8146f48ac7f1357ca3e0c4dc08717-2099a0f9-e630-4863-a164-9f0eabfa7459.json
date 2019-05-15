@@ -1,0 +1,23 @@
+{
+  "id" : "2099a0f9-e630-4863-a164-9f0eabfa7459",
+  "name" : "api_conferences_dvbe18_speakers_c0e3e7970ba8146f48ac7f1357ca3e0c4dc08717",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/c0e3e7970ba8146f48ac7f1357ca3e0c4dc08717",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"c0e3e7970ba8146f48ac7f1357ca3e0c4dc08717\",\"bioAsHtml\":\"<p>Sebastian Daschner is a self-employed Java consultant, author and trainer and is enthusiastic about programming and Java (EE). He is the author of the book ‘Architecting Modern Java EE Applications’. Sebastian is helping to form the standards of Java EE and Jakarta EE, serving in the JAX-RS, JSON-P and Config Expert Groups and collaborating on various open source projects. For his contributions in the Java community and ecosystem he was recognized as a Java Champion, Oracle Developer Champion and double 2016 JavaOne Rockstar. Besides Java, Sebastian is also a heavy user of Linux and Cloud Native technologies. He evangelizes computer science practices on his blog, his newsletters, and on Twitter. He loves to travel —  by plane or motorcycle.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Server Side Java.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/GVB-9579\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/c0e3e7970ba8146f48ac7f1357ca3e0c4dc08717\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Sebastian Daschner\"}],\"id\":\"GVB-9579\",\"title\":\"Java EE, Jakarta EE, MicroProfile, Or Maybe All Of Them?\"}],\"company\":\"Sebastian Daschner - IT-Beratung\",\"bio\":\"Sebastian Daschner is a self-employed Java consultant, author and trainer and is enthusiastic about programming and Java (EE). He is the author of the book ‘Architecting Modern Java EE Applications’. Sebastian is helping to form the standards of Java EE and Jakarta EE, serving in the JAX-RS, JSON-P and Config Expert Groups and collaborating on various open source projects. For his contributions in the Java community and ecosystem he was recognized as a Java Champion, Oracle Developer Champion and double 2016 JavaOne Rockstar. Besides Java, Sebastian is also a heavy user of Linux and Cloud Native technologies. He evangelizes computer science practices on his blog, his newsletters, and on Twitter. He loves to travel —  by plane or motorcycle.\",\"lastName\":\"Daschner\",\"firstName\":\"Sebastian\",\"blog\":\"https://blog.sebastian-daschner.com\",\"avatarURL\":\"https://avatars2.githubusercontent.com/u/6815170?s=400&u=ad2793587ceab62a7d87b4fd309117e58f5d0938&v=4\",\"twitter\":\"@DaschnerS\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-841145957",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:37 GMT"
+    }
+  },
+  "uuid" : "2099a0f9-e630-4863-a164-9f0eabfa7459",
+  "persistent" : true,
+  "insertionIndex" : 176
+}

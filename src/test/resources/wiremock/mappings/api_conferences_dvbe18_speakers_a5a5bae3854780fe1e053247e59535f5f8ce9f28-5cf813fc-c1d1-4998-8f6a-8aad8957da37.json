@@ -1,0 +1,23 @@
+{
+  "id" : "5cf813fc-c1d1-4998-8f6a-8aad8957da37",
+  "name" : "api_conferences_dvbe18_speakers_a5a5bae3854780fe1e053247e59535f5f8ce9f28",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/a5a5bae3854780fe1e053247e59535f5f8ce9f28",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"a5a5bae3854780fe1e053247e59535f5f8ce9f28\",\"bioAsHtml\":\"<p>Amir Rustamzadeh is a classically trained electrical engineer that just couldn&#x27;t shake his urges of building for the web. He&#x27;s experienced in developing mission critical systems for the aerospace industry, and other large enterprises, but now enjoys his days working on Cypress, an open-source tool for building higher quality software for the web.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Hands-on Lab\",\"track\":\"Modern Web & UX.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/IDP-9797\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/a5a5bae3854780fe1e053247e59535f5f8ce9f28\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Amir Rustamzadeh\"}],\"id\":\"IDP-9797\",\"title\":\"Next-Generation End-to-End Testing with Cypress.io\"},{\"talkType\":\"Conference\",\"track\":\"Modern Web & UX.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/UNS-7465\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/a5a5bae3854780fe1e053247e59535f5f8ce9f28\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Amir Rustamzadeh\"}],\"id\":\"UNS-7465\",\"title\":\"Next-Generation Web Application End-to-End Testing\"}],\"company\":\"Cypress.io\",\"bio\":\"Amir Rustamzadeh is a classically trained electrical engineer that just couldn't shake his urges of building for the web. He's experienced in developing mission critical systems for the aerospace industry, and other large enterprises, but now enjoys his days working on Cypress, an open-source tool for building higher quality software for the web.\",\"lastName\":\"Rustamzadeh\",\"firstName\":\"Amir\",\"blog\":\"https://cypress.io\",\"avatarURL\":\"https://lh6.googleusercontent.com/-rZiyyQVjAKo/AAAAAAAAAAI/AAAAAAAAABw/K068h_nkAK8/photo.jpg\",\"twitter\":\"@amirrustam\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1202044819",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:27 GMT"
+    }
+  },
+  "uuid" : "5cf813fc-c1d1-4998-8f6a-8aad8957da37",
+  "persistent" : true,
+  "insertionIndex" : 59
+}

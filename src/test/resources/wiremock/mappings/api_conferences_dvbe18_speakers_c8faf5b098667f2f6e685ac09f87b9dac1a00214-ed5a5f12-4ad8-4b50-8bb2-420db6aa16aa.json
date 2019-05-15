@@ -1,0 +1,23 @@
+{
+  "id" : "ed5a5f12-4ad8-4b50-8bb2-420db6aa16aa",
+  "name" : "api_conferences_dvbe18_speakers_c8faf5b098667f2f6e685ac09f87b9dac1a00214",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/c8faf5b098667f2f6e685ac09f87b9dac1a00214",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"c8faf5b098667f2f6e685ac09f87b9dac1a00214\",\"bioAsHtml\":\"<p>Final year student Ba of Applied Informatics at Erasmus University College Brussels (EhB) - QE Consultant Brightest NV</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/LHF-2794\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/c8faf5b098667f2f6e685ac09f87b9dac1a00214\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Lien Wuyts\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/474eaa09ec5e38ee9c71d1f4a5c73051cdaf7b02\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Jan-Kees van Andel\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/7a1ed3166072356dde9cbb5453540f0d02059921\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Alex Van Boxel\"}],\"id\":\"LHF-2794\",\"title\":\"Grouping the Devoxx/Voxxed speaker via Machine Learning, a students tale\"}],\"company\":\"Brightest NV\",\"bio\":\"Final year student Ba of Applied Informatics at Erasmus University College Brussels (EhB) - QE Consultant Brightest NV\",\"lastName\":\"Wuyts\",\"firstName\":\"Lien\",\"blog\":null,\"avatarURL\":\"https://s.gravatar.com/avatar/e00b7c1f6769b607af9de3e32278a4fa?s=80\",\"twitter\":\"@WuytsLien\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1886933132",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:34 GMT"
+    }
+  },
+  "uuid" : "ed5a5f12-4ad8-4b50-8bb2-420db6aa16aa",
+  "persistent" : true,
+  "insertionIndex" : 140
+}

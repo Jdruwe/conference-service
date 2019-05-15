@@ -1,0 +1,23 @@
+{
+  "id" : "0b00f466-8e0d-4f91-b142-2d66d0f85d19",
+  "name" : "api_conferences_dvbe18_speakers_0a13f99b2cca2bb7202e89490395af14e25f4270",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/0a13f99b2cca2bb7202e89490395af14e25f4270",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"0a13f99b2cca2bb7202e89490395af14e25f4270\",\"bioAsHtml\":\"<p>Alex is a Senior Technical Evangelist at Amazon Web Services, based in Italy.</p>\\n<p>Alex is deeply passionate about web technologies and music. He has been building web products and helping other builders learn from his experience since 2011. His coding love spreads across the Python and the JavaScript communities, and he&#x27;s been contributing to open-source projects such as the Serverless Framework and AWS SAM.</p>\\n<p>He co-organizes the serverless meetup in Milan, as well as ServerlessDays Milan (previously JeffConf).</p>\\n<p>In his free time, Alex loves snowboarding, jogging, traveling, and playing his saxophone.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/RGG-9998\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/0a13f99b2cca2bb7202e89490395af14e25f4270\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Alex Casalboni\"}],\"id\":\"RGG-9998\",\"title\":\"Columnar data formats enabling serverless data analysis at scale\"}],\"company\":\"Amazon Web Services\",\"bio\":\"Alex is a Senior Technical Evangelist at Amazon Web Services, based in Italy.\\r\\n\\r\\nAlex is deeply passionate about web technologies and music. He has been building web products and helping other builders learn from his experience since 2011. His coding love spreads across the Python and the JavaScript communities, and he's been contributing to open-source projects such as the Serverless Framework and AWS SAM.\\r\\n\\r\\nHe co-organizes the serverless meetup in Milan, as well as ServerlessDays Milan (previously JeffConf).\\r\\n\\r\\nIn his free time, Alex loves snowboarding, jogging, traveling, and playing his saxophone.\",\"lastName\":\"Casalboni\",\"firstName\":\"Alex\",\"blog\":\"https://blog.alexcasalboni.com\",\"avatarURL\":\"https://d1.awsstatic.com/Developer%20Marketing/evangelists/alex-casalboni/alex-casalboni-spheres-round.9521aae9138a1307a448f5bf33511f0d6ceeb9b5.png\",\"twitter\":\"@alex_casalboni\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "940705502",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:40 GMT"
+    }
+  },
+  "uuid" : "0b00f466-8e0d-4f91-b142-2d66d0f85d19",
+  "persistent" : true,
+  "insertionIndex" : 202
+}

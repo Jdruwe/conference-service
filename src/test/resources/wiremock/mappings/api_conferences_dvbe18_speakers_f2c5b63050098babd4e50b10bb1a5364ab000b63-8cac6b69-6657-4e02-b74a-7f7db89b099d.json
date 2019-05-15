@@ -1,0 +1,23 @@
+{
+  "id" : "8cac6b69-6657-4e02-b74a-7f7db89b099d",
+  "name" : "api_conferences_dvbe18_speakers_f2c5b63050098babd4e50b10bb1a5364ab000b63",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/f2c5b63050098babd4e50b10bb1a5364ab000b63",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"f2c5b63050098babd4e50b10bb1a5364ab000b63\",\"bioAsHtml\":\"<p>Consultant and Java (SE/EE) enthusiast Adam Bien (adambien.blog) uses Java since JDK 1.0 and still enjoys writing Java code. Adam occasionally organizes Java EE / HTML 5 / JavaScript / WebStandards workshops at Munich’s airport (http://airhacks.com).</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Server Side Java.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/EVU-2342\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/f2c5b63050098babd4e50b10bb1a5364ab000b63\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Adam Bien\"}],\"id\":\"EVU-2342\",\"title\":\"Jakarta EE / MicroProfile + WebStandards, On Stage Hacking  #noslides\"}],\"company\":\"ADAM-BIEN.COM\",\"bio\":\"Consultant and Java (SE/EE) enthusiast Adam Bien (adambien.blog) uses Java since JDK 1.0 and still enjoys writing Java code. Adam occasionally organizes Java EE / HTML 5 / JavaScript / WebStandards workshops at Munich’s airport (http://airhacks.com).\",\"lastName\":\"Bien\",\"firstName\":\"Adam\",\"blog\":\"http://adambien.blog\",\"avatarURL\":\"https://avatars3.githubusercontent.com/u/891845?s=460\",\"twitter\":\"@AdamBien\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "467660711",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:42 GMT"
+    }
+  },
+  "uuid" : "8cac6b69-6657-4e02-b74a-7f7db89b099d",
+  "persistent" : true,
+  "insertionIndex" : 228
+}

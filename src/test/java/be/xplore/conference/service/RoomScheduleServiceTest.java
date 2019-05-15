@@ -31,6 +31,15 @@ public class RoomScheduleServiceTest {
         Assert.assertEquals(date, roomSchedule.getId().getSchedule().getDate());
     }
 
+    @Test(expected = RoomScheduleNotFoundException.class)
+    public void testLoadByDateAndRoomWithWrongRoom() throws RoomScheduleNotFoundException {
+        LocalDate date = LocalDate.of(2018, 11, 12);
+        RoomSchedule roomSchedule = service.loadByDateAndRoomId(date, "Room8000")
+                .orElseThrow(RoomScheduleNotFoundException::new);
+        Assert.assertNotNull(roomSchedule);
+        Assert.assertEquals(date, roomSchedule.getId().getSchedule().getDate());
+    }
+
     @Test
     public void testLoadByDayAndRoom() throws RoomScheduleNotFoundException {
         RoomSchedule roomSchedule = service.loadByDayAndRoomId(DayOfWeek.WEDNESDAY, "Room8")

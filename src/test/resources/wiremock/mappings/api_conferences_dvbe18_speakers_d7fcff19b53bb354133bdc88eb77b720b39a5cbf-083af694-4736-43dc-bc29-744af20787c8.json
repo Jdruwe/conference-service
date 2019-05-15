@@ -1,0 +1,23 @@
+{
+  "id" : "083af694-4736-43dc-bc29-744af20787c8",
+  "name" : "api_conferences_dvbe18_speakers_d7fcff19b53bb354133bdc88eb77b720b39a5cbf",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/d7fcff19b53bb354133bdc88eb77b720b39a5cbf",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"d7fcff19b53bb354133bdc88eb77b720b39a5cbf\",\"bioAsHtml\":\"<p>Paulien is a passionated software engineer in love with readable, reliable and testable code, independent on the language or technology used. The last three years she worked at the Rabobank and bol.com. In december, she joined OpenValue where she works on helping companies setting up better software. In her free time, she like to sport, cycling and swimming in particular. She used to play rugby and nowadays she  is coaching rugby.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Programming languages.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/ZQM-8903\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/d7fcff19b53bb354133bdc88eb77b720b39a5cbf\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Paulien van Alst\"}],\"id\":\"ZQM-8903\",\"title\":\"From Java to Kotlin: the adventures of a smooth migration\"}],\"company\":\"OpenValue\",\"bio\":\"Paulien is a passionated software engineer in love with readable, reliable and testable code, independent on the language or technology used. The last three years she worked at the Rabobank and bol.com. In december, she joined OpenValue where she works on helping companies setting up better software. In her free time, she like to sport, cycling and swimming in particular. She used to play rugby and nowadays she  is coaching rugby.\",\"lastName\":\"van Alst\",\"firstName\":\"Paulien\",\"blog\":\"www.openvalue.nl\",\"avatarURL\":\"https://pbs.twimg.com/profile_images/594447174559092737/XAH_VlsG_400x400.jpg\",\"twitter\":\"@PaulienVanAlst\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-806803006",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:24 GMT"
+    }
+  },
+  "uuid" : "083af694-4736-43dc-bc29-744af20787c8",
+  "persistent" : true,
+  "insertionIndex" : 28
+}

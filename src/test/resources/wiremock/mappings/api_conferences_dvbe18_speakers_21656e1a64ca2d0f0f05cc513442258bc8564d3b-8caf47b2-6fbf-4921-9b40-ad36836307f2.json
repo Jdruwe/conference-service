@@ -1,0 +1,23 @@
+{
+  "id" : "8caf47b2-6fbf-4921-9b40-ad36836307f2",
+  "name" : "api_conferences_dvbe18_speakers_21656e1a64ca2d0f0f05cc513442258bc8564d3b",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/21656e1a64ca2d0f0f05cc513442258bc8564d3b",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"21656e1a64ca2d0f0f05cc513442258bc8564d3b\",\"bioAsHtml\":\"<p>Arun Gupta is a Principal Technologist at Amazon Web Services. He is responsible for the Cloud Native Computing Foundation (CNCF) strategy within AWS, and participates at CNCF Board and technical meetings actively. He particularly enjoys AMA on Containers and Serverless. He has built and led developer communities for several years at Sun, Oracle, Red Hat and Couchbase. He has extensive speaking experience in 40+ countries on myriad topics. Gupta also founded the Devoxx4Kids chapter in the US and continues to promote technology education among children. A prolific blogger, author of several books, an avid runner, a globe trotter, a Docker Captain, a Java Champion, a JUG leader, he is easily accessible at @arungupta on twitter.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/DTR-4199\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/21656e1a64ca2d0f0f05cc513442258bc8564d3b\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Arun Gupta\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/ee65e2019de49624e58688cf9459cea469a29687\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Yishai Galatzer\"}],\"id\":\"DTR-4199\",\"title\":\"Introducing Amazon Corretto\"},{\"talkType\":\"Conference\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/CMU-6611\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/21656e1a64ca2d0f0f05cc513442258bc8564d3b\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Arun Gupta\"}],\"id\":\"CMU-6611\",\"title\":\"Java developer’s journey in Kubernetes land\"}],\"company\":\"Amazon\",\"bio\":\"Arun Gupta is a Principal Technologist at Amazon Web Services. He is responsible for the Cloud Native Computing Foundation (CNCF) strategy within AWS, and participates at CNCF Board and technical meetings actively. He particularly enjoys AMA on Containers and Serverless. He has built and led developer communities for several years at Sun, Oracle, Red Hat and Couchbase. He has extensive speaking experience in 40+ countries on myriad topics. Gupta also founded the Devoxx4Kids chapter in the US and continues to promote technology education among children. A prolific blogger, author of several books, an avid runner, a globe trotter, a Docker Captain, a Java Champion, a JUG leader, he is easily accessible at @arungupta on twitter.\",\"lastName\":\"Gupta\",\"firstName\":\"Arun\",\"blog\":\"https://plus.google.com/101195212405190467512\",\"avatarURL\":\"https://lh6.googleusercontent.com/-gon2JtIuiqI/AAAAAAAAAAI/AAAAAAAAmu8/ejVmjY9FgKY/photo.jpg\",\"twitter\":\"@arungupta\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-385124276",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:24 GMT"
+    }
+  },
+  "uuid" : "8caf47b2-6fbf-4921-9b40-ad36836307f2",
+  "persistent" : true,
+  "insertionIndex" : 21
+}

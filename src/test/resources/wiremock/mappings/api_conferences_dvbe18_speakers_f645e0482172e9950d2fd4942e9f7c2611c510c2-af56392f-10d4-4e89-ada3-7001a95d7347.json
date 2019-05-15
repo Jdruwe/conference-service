@@ -1,0 +1,23 @@
+{
+  "id" : "af56392f-10d4-4e89-ada3-7001a95d7347",
+  "name" : "api_conferences_dvbe18_speakers_f645e0482172e9950d2fd4942e9f7c2611c510c2",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/f645e0482172e9950d2fd4942e9f7c2611c510c2",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"f645e0482172e9950d2fd4942e9f7c2611c510c2\",\"bioAsHtml\":\"<p>Bert Jan is a software craftsman at JPoint in the Netherlands and CTO at OpenValue. He focuses on Java, Continuous Delivery and DevOps. Bert Jan is a Java Champion, Developer Champion, JavaOne Rock Star speaker and leads NLJUG, the Dutch Java User Group. He loves to share his experience by speaking at conferences, writing for the Dutch Java magazine and helping out Devoxx4Kids with teaching kids how to code.<br  />\\nBert Jan is easily reachable on Twitter at @bjschrijver.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/ZGJ-4385\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/8a840a35dc6946fe9d5eaf0c0910a53afadaf981\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Hubert SABLONNIÈRE\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/fb3e59bad2df2b9ad64d276dd3841e7e7e2298ed\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Kuba Marchwicki\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/f645e0482172e9950d2fd4942e9f7c2611c510c2\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Bert Jan Schrijver\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/8551616e8ea37d9a0c962b022afc9f6b377790f6\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Dan Allen\"}],\"id\":\"ZGJ-4385\",\"title\":\"Speakers' BOF\"}],\"company\":\"JPoint, OpenValue\",\"bio\":\"Bert Jan is a software craftsman at JPoint in the Netherlands and CTO at OpenValue. He focuses on Java, Continuous Delivery and DevOps. Bert Jan is a Java Champion, Developer Champion, JavaOne Rock Star speaker and leads NLJUG, the Dutch Java User Group. He loves to share his experience by speaking at conferences, writing for the Dutch Java magazine and helping out Devoxx4Kids with teaching kids how to code.  \\r\\nBert Jan is easily reachable on Twitter at @bjschrijver.\",\"lastName\":\"Schrijver\",\"firstName\":\"Bert Jan\",\"blog\":\"https://www.openvalue.nl\",\"avatarURL\":\"http://bertjan.s3-eu-west-1.amazonaws.com/profile-small.jpg\",\"twitter\":\"@bjschrijver\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "533804795",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:34 GMT"
+    }
+  },
+  "uuid" : "af56392f-10d4-4e89-ada3-7001a95d7347",
+  "persistent" : true,
+  "insertionIndex" : 146
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "17abbd20-bda2-4c1d-90ba-36d12066ba99",
+  "name" : "api_conferences_dvbe18_speakers_dc8c4ba353342825dca80416b1e9176f24c7898c",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/dc8c4ba353342825dca80416b1e9176f24c7898c",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"dc8c4ba353342825dca80416b1e9176f24c7898c\",\"bioAsHtml\":\"<p>I&#x27;ve been in software for about a decade now, originally from an engineering background. I like to work out what&#x27;s really needed, and solve those needs - with or without software. I progressed through technical roles, mostly building distributed architecture, but am also fascinated by process and getting the most from teams - I believe architecture and process have a vital overlap, and this is where I try to operate, helping software teams to get results.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/FEF-2774\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/dc8c4ba353342825dca80416b1e9176f24c7898c\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Richard Wellum\"}],\"id\":\"FEF-2774\",\"title\":\"Programmers: Be more than your code!\"}],\"company\":\"Richard Wellum Software Ltd\",\"bio\":\"I've been in software for about a decade now, originally from an engineering background. I like to work out what's really needed, and solve those needs - with or without software. I progressed through technical roles, mostly building distributed architecture, but am also fascinated by process and getting the most from teams - I believe architecture and process have a vital overlap, and this is where I try to operate, helping software teams to get results.\",\"lastName\":\"Wellum\",\"firstName\":\"Richard\",\"blog\":\"http://richardwellum.com\",\"avatarURL\":\"https://www.gravatar.com/avatar/d118c6b78e6310ee50a8be537773e017\",\"twitter\":\"@RichardW1001\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1095543545",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:24 GMT"
+    }
+  },
+  "uuid" : "17abbd20-bda2-4c1d-90ba-36d12066ba99",
+  "persistent" : true,
+  "insertionIndex" : 25
+}

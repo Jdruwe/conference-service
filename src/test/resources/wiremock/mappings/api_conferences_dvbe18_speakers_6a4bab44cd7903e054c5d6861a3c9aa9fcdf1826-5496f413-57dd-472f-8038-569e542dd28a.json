@@ -1,0 +1,23 @@
+{
+  "id" : "5496f413-57dd-472f-8038-569e542dd28a",
+  "name" : "api_conferences_dvbe18_speakers_6a4bab44cd7903e054c5d6861a3c9aa9fcdf1826",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/6a4bab44cd7903e054c5d6861a3c9aa9fcdf1826",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"6a4bab44cd7903e054c5d6861a3c9aa9fcdf1826\",\"bioAsHtml\":\"<p>Perfectionist. Full stack developer. Likes to make things move using code and some electronics. Challenges the world around him.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Mind the Geek.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/FNP-7703\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6a4bab44cd7903e054c5d6861a3c9aa9fcdf1826\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Paco van Beckhoven\"}],\"id\":\"FNP-7703\",\"title\":\"Keeping your head cool with a serverless voice controlled fan\"}],\"company\":\"OpenValue\",\"bio\":\"Perfectionist. Full stack developer. Likes to make things move using code and some electronics. Challenges the world around him.\",\"lastName\":\"van Beckhoven\",\"firstName\":\"Paco\",\"blog\":\"https://openvalue.nl/\",\"avatarURL\":\"https://lh4.googleusercontent.com/-1XmJ5ACcmBg/AAAAAAAAAAI/AAAAAAAAs7Q/vnQG2c83VQw/photo.jpg\",\"twitter\":\"@DevPaco\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-601055737",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:39 GMT"
+    }
+  },
+  "uuid" : "5496f413-57dd-472f-8038-569e542dd28a",
+  "persistent" : true,
+  "insertionIndex" : 196
+}

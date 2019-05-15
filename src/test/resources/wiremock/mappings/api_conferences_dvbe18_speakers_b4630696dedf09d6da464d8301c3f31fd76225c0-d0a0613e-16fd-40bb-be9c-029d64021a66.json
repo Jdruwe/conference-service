@@ -1,0 +1,23 @@
+{
+  "id" : "d0a0613e-16fd-40bb-be9c-029d64021a66",
+  "name" : "api_conferences_dvbe18_speakers_b4630696dedf09d6da464d8301c3f31fd76225c0",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/b4630696dedf09d6da464d8301c3f31fd76225c0",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"b4630696dedf09d6da464d8301c3f31fd76225c0\",\"bioAsHtml\":\"<p>Antony is a Solution Architect for Confluent in Europe and spends most of his working hours talking to customers all around the world about their Kafka usage, his favourite being aspect being funky Kafka Streams use cases.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/SLG-9616\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/b4630696dedf09d6da464d8301c3f31fd76225c0\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Antony Stubbs\"}],\"id\":\"SLG-9616\",\"title\":\"Beyond the DSL—Unlocking the power of Kafka Streams with the Processor API\"}],\"company\":\"Confluent Inc\",\"bio\":\"Antony is a Solution Architect for Confluent in Europe and spends most of his working hours talking to customers all around the world about their Kafka usage, his favourite being aspect being funky Kafka Streams use cases.\",\"lastName\":\"Stubbs\",\"firstName\":\"Antony\",\"blog\":\"confluent.io\",\"avatarURL\":\"https://en.gravatar.com/userimage/2133133/69cd6dbe8f4d2e32ec28896c92549782?size=200\",\"twitter\":\"@psynikal\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "365919582",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:32 GMT"
+    }
+  },
+  "uuid" : "d0a0613e-16fd-40bb-be9c-029d64021a66",
+  "persistent" : true,
+  "insertionIndex" : 124
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "4746f64f-3b13-476d-8acd-a593479fd431",
+  "name" : "api_conferences_dvbe18_speakers_17ec2e4c9dbcdd0f5eabab51f3df4fcea7ff2336",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/17ec2e4c9dbcdd0f5eabab51f3df4fcea7ff2336",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"17ec2e4c9dbcdd0f5eabab51f3df4fcea7ff2336\",\"bioAsHtml\":\"<p>Konrad is a software engineer at Allegro, a major Polish e-commerce company. He has 20 years of experience in the IT industry in various roles (mostly as developer and technical leader) in software companies. He spent the last 17 years of his career with Java-related technologies. For the past 2 years he&#x27;s used Kotlin as his primary programming language (with delight). He blogs a bit, gives talks and contributes to open source.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Hands-on Lab\",\"track\":\"Programming languages.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/PZF-8039\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/17ec2e4c9dbcdd0f5eabab51f3df4fcea7ff2336\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Konrad Kamiński\"}],\"id\":\"PZF-8039\",\"title\":\"Creating asynchronous applications with Kotlin coroutines\"}],\"company\":\"Allegro.pl\",\"bio\":\"Konrad is a software engineer at Allegro, a major Polish e-commerce company. He has 20 years of experience in the IT industry in various roles (mostly as developer and technical leader) in software companies. He spent the last 17 years of his career with Java-related technologies. For the past 2 years he's used Kotlin as his primary programming language (with delight). He blogs a bit, gives talks and contributes to open source. \",\"lastName\":\"Kamiński\",\"firstName\":\"Konrad\",\"blog\":\"https://allegro.pl\",\"avatarURL\":\"https://sessionize.com/image?f=dc5b9b9d98bc2e170bc0adbf7cf923cc,200,200,True,False,b6-a362-412a-b855-4e1027cf54fd.004fec28-0200-41be-a816-04bf68df439d.png\",\"twitter\":null,\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1268266562",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:43 GMT"
+    }
+  },
+  "uuid" : "4746f64f-3b13-476d-8acd-a593479fd431",
+  "persistent" : true,
+  "insertionIndex" : 237
+}

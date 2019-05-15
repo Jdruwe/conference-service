@@ -1,0 +1,23 @@
+{
+  "id" : "cd9c3ad7-65f9-42d9-92e3-bdca447c97de",
+  "name" : "api_conferences_dvbe18_speakers_2796e347c7b1b17fe7fe16e514660f689e5cb355",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/2796e347c7b1b17fe7fe16e514660f689e5cb355",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"2796e347c7b1b17fe7fe16e514660f689e5cb355\",\"bioAsHtml\":\"<p>Steven van Beelen is the Lead Developer for the Axon Framework at AxonIQ, with a keen interest in new and exciting technologies and methodologies. The last couple of years this interest has chiefly been fulfilled by working on and with the Axon Framework and how it approaches software architecture. This eventually led him to become a part of the AxonIQ team. There, he currently develops the framework, provides training, helps small and large clients build Axon applications, and an active member of the Axon community. Always keen to learn and improve himself in the software space, he reads up on more abstract concepts like domain driven design, messaging patterns and event sourcing. He also keeps himself up to date with more concrete topics</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/RSA-5914\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/82f7c66113c7ce4158be622212bfa2c6bff1ff83\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ben Wilcock\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/2796e347c7b1b17fe7fe16e514660f689e5cb355\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Steven van Beelen\"}],\"id\":\"RSA-5914\",\"title\":\"Pivotal and AxonIQ - Quickstart your Event Driven Architecture\"}],\"company\":\"AxonIQ\",\"bio\":\"Steven van Beelen is the Lead Developer for the Axon Framework at AxonIQ, with a keen interest in new and exciting technologies and methodologies. The last couple of years this interest has chiefly been fulfilled by working on and with the Axon Framework and how it approaches software architecture. This eventually led him to become a part of the AxonIQ team. There, he currently develops the framework, provides training, helps small and large clients build Axon applications, and an active member of the Axon community. Always keen to learn and improve himself in the software space, he reads up on more abstract concepts like domain driven design, messaging patterns and event sourcing. He also keeps himself up to date with more concrete topics \",\"lastName\":\"van Beelen\",\"firstName\":\"Steven\",\"blog\":\"https://axoniq.io/\",\"avatarURL\":\"https://s3-eu-west-1.amazonaws.com/cfpdevoxx/belgium/speakers/StevenvanBeelen.jpg\",\"twitter\":\"@smcvbeelen\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1070080048",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:28 GMT"
+    }
+  },
+  "uuid" : "cd9c3ad7-65f9-42d9-92e3-bdca447c97de",
+  "persistent" : true,
+  "insertionIndex" : 75
+}

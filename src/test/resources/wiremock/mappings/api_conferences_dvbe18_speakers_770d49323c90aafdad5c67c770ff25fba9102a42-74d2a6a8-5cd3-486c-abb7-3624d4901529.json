@@ -1,0 +1,23 @@
+{
+  "id" : "74d2a6a8-5cd3-486c-abb7-3624d4901529",
+  "name" : "api_conferences_dvbe18_speakers_770d49323c90aafdad5c67c770ff25fba9102a42",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/770d49323c90aafdad5c67c770ff25fba9102a42",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"770d49323c90aafdad5c67c770ff25fba9102a42\",\"bioAsHtml\":\"<p>Throughout my 15+ years in software development, I have helped automating highly scalable core workflows at global companies including T-Mobile, Lufthansa and Zalando. I have contributed to various open source workflow engines. I am co-founder and developer advocate of Camunda, an open source software company reinventing workflow automation. I co-authored &quot;Real-Life BPMN,&quot; a popular book about workflow modeling and automation. I regularly speak at conferences and write for various magazines. I am currently focused on new workflow automation paradigms that fit into modern architectures around distributed systems, microservices, domain-driven design, event-driven architecture and reactive systems.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/BIP-8983\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/770d49323c90aafdad5c67c770ff25fba9102a42\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Bernd Rücker\"}],\"id\":\"BIP-8983\",\"title\":\"3 common pitfalls in microservice integration and how to avoid them\"}],\"company\":\"@camunda\",\"bio\":\"Throughout my 15+ years in software development, I have helped automating highly scalable core workflows at global companies including T-Mobile, Lufthansa and Zalando. I have contributed to various open source workflow engines. I am co-founder and developer advocate of Camunda, an open source software company reinventing workflow automation. I co-authored \\\"Real-Life BPMN,\\\" a popular book about workflow modeling and automation. I regularly speak at conferences and write for various magazines. I am currently focused on new workflow automation paradigms that fit into modern architectures around distributed systems, microservices, domain-driven design, event-driven architecture and reactive systems. \",\"lastName\":\"Rücker\",\"firstName\":\"Bernd\",\"blog\":\"http://berndruecker.io/\",\"avatarURL\":\"http://www.gravatar.com/avatar/4619f71443c2a00a87424d3b68a3ae83\",\"twitter\":\"@berndruecker\",\"lang\":\"de\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "193609492",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:37 GMT"
+    }
+  },
+  "uuid" : "74d2a6a8-5cd3-486c-abb7-3624d4901529",
+  "persistent" : true,
+  "insertionIndex" : 178
+}

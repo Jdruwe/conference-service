@@ -1,0 +1,23 @@
+{
+  "id" : "935c2029-6875-4a7c-b7be-d5de79a2abc6",
+  "name" : "api_conferences_dvbe18_speakers_911e2062352e61b9d4913c1b84540b698c014d24",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/911e2062352e61b9d4913c1b84540b698c014d24",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"911e2062352e61b9d4913c1b84540b698c014d24\",\"bioAsHtml\":\"<p>Victor is one of the top Independent Technical Trainers of his country (victorrentea.ro) - he mentored, trained and coached almost 1000 developers of top companies.\\nAt IBM, even though they call him a Lead Architect, he loves to write code each day: he&#x27;s maniac about Clean Code, so prepare for some hard-core refactoring.\\nVictor is Associate Professor of Politehnica University of Bucharest and an active Java community member: organized the largest 3 JUG meetups in Romania.\\nHe&#x27;s a regular conference speaker. His live-coding sessions are insane, lightning-fast but well crafted, full of enthusiasm, insights and take-away tips. Things that he learned the hard way during his 14 years of experience. You&#x27;ll love his sessions!</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/BOZ-9681\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/911e2062352e61b9d4913c1b84540b698c014d24\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Victor Rentea\"}],\"id\":\"BOZ-9681\",\"title\":\"Functional Programming Patterns with Java8\"}],\"company\":\"Independent Trainer\",\"bio\":\"Victor is one of the top Independent Technical Trainers of his country (victorrentea.ro) - he mentored, trained and coached almost 1000 developers of top companies.\\r\\nAt IBM, even though they call him a Lead Architect, he loves to write code each day: he's maniac about Clean Code, so prepare for some hard-core refactoring.\\r\\nVictor is Associate Professor of Politehnica University of Bucharest and an active Java community member: organized the largest 3 JUG meetups in Romania.\\r\\nHe's a regular conference speaker. His live-coding sessions are insane, lightning-fast but well crafted, full of enthusiasm, insights and take-away tips. Things that he learned the hard way during his 14 years of experience. You'll love his sessions!\",\"lastName\":\"Rentea\",\"firstName\":\"Victor\",\"blog\":\"http://www.victorrentea.ro\",\"avatarURL\":\"https://lh3.googleusercontent.com/-6LIVpToyQp8/AAAAAAAAAAI/AAAAAAAAMJU/NU9zLEdWMeQ/photo.jpg\",\"twitter\":\"@victorrentea\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-783867054",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:25 GMT"
+    }
+  },
+  "uuid" : "935c2029-6875-4a7c-b7be-d5de79a2abc6",
+  "persistent" : true,
+  "insertionIndex" : 33
+}

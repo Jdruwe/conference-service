@@ -1,0 +1,23 @@
+{
+  "id" : "a0944383-4987-42ba-84be-9775ed0ffa3d",
+  "name" : "api_conferences_dvbe18_speakers_e2cc91133c04dfc7b519afc0a12059120b8eaeb1",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/e2cc91133c04dfc7b519afc0a12059120b8eaeb1",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"e2cc91133c04dfc7b519afc0a12059120b8eaeb1\",\"bioAsHtml\":\"<p>Heather leads the Java Community standardization efforts at Oracle, and is a leader of the global community driven adoption user group programs. She is Chairperson of the Java Community Process (JCP) program.  In this role she drives the efforts to transform the JCP program and broaden participation and diversity in the community. She is passionate about Java, women in technology and developer communities, serving as an International speaker and community organizer of developer hack days around the world. She resides in the San Francisco Bay Area, California USA and enjoys trying new sports and fitness activities in her free time.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/IPW-2169\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/e2cc91133c04dfc7b519afc0a12059120b8eaeb1\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Heather VanCura\"}],\"id\":\"IPW-2169\",\"title\":\"Diversity and Inclusion - Beyond Women in Tech\"},{\"talkType\":\"Quickie\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/NUM-1584\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/e2cc91133c04dfc7b519afc0a12059120b8eaeb1\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Heather VanCura\"}],\"id\":\"NUM-1584\",\"title\":\"Bringing Java Into the Open\"},{\"talkType\":\"BOF\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/HCZ-9162\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/e2cc91133c04dfc7b519afc0a12059120b8eaeb1\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Heather VanCura\"}],\"id\":\"HCZ-9162\",\"title\":\"Java Community and Developer Careers BoF\"}],\"company\":\"Oracle\",\"bio\":\"Heather leads the Java Community standardization efforts at Oracle, and is a leader of the global community driven adoption user group programs. She is Chairperson of the Java Community Process (JCP) program.  In this role she drives the efforts to transform the JCP program and broaden participation and diversity in the community. She is passionate about Java, women in technology and developer communities, serving as an International speaker and community organizer of developer hack days around the world. She resides in the San Francisco Bay Area, California USA and enjoys trying new sports and fitness activities in her free time.\",\"lastName\":\"VanCura\",\"firstName\":\"Heather\",\"blog\":\"jcp.org\",\"avatarURL\":\"https://lh6.googleusercontent.com/-fsIyqAsGR7A/AAAAAAAAAAI/AAAAAAAAHF8/53CNE4iUs5s/photo.jpg\",\"twitter\":\"@heathervc\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-2019473509",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:30 GMT"
+    }
+  },
+  "uuid" : "a0944383-4987-42ba-84be-9775ed0ffa3d",
+  "persistent" : true,
+  "insertionIndex" : 90
+}

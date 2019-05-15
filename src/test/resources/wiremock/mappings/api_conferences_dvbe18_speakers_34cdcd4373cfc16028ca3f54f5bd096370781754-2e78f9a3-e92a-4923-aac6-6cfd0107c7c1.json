@@ -1,0 +1,23 @@
+{
+  "id" : "2e78f9a3-e92a-4923-aac6-6cfd0107c7c1",
+  "name" : "api_conferences_dvbe18_speakers_34cdcd4373cfc16028ca3f54f5bd096370781754",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/34cdcd4373cfc16028ca3f54f5bd096370781754",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"34cdcd4373cfc16028ca3f54f5bd096370781754\",\"bioAsHtml\":\"<p>Geoffrey De Smet is the founder and lead of OptaPlanner (www.optaplanner.org), the open source A.I. constraint solver in Java that is used across the globe to automatically solve employee rostering, vehicle routing, task assignment, maintenance scheduling and other planning problems.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/FWX-0478\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/34cdcd4373cfc16028ca3f54f5bd096370781754\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Geoffrey De Smet\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/a105b804e93174461454090a16790ca454bb5b7d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Piotr Krzemiński\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/770ddde56d4781a265efd5cea062d59bc0d11f1a\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Viktor Tymoshenko\"}],\"id\":\"FWX-0478\",\"title\":\"The battle of 2 automated conference talk scheduling algorithms for Devoxx\"}],\"company\":\"Red Hat\",\"bio\":\"Geoffrey De Smet is the founder and lead of OptaPlanner (www.optaplanner.org), the open source A.I. constraint solver in Java that is used across the globe to automatically solve employee rostering, vehicle routing, task assignment, maintenance scheduling and other planning problems.\",\"lastName\":\"De Smet\",\"firstName\":\"Geoffrey\",\"blog\":\"https://ge0ffrey.github.io/ge0ffrey-presentations/\",\"avatarURL\":\"https://lh3.googleusercontent.com/-O4hwF7obqpo/AAAAAAAAAAI/AAAAAAAACkE/v_wsdLtXlx0/photo.jpg\",\"twitter\":\"@GeoffreyDeSmet\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-61937163",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:40 GMT"
+    }
+  },
+  "uuid" : "2e78f9a3-e92a-4923-aac6-6cfd0107c7c1",
+  "persistent" : true,
+  "insertionIndex" : 208
+}

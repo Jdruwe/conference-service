@@ -1,0 +1,23 @@
+{
+  "id" : "9290ebf8-1917-41d9-b2e9-50c82e8d4750",
+  "name" : "api_conferences_dvbe18_speakers_4f99dc6aaeb118b9779aa48d2fa9dd967c19956b",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/4f99dc6aaeb118b9779aa48d2fa9dd967c19956b",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"4f99dc6aaeb118b9779aa48d2fa9dd967c19956b\",\"bioAsHtml\":\"<p>I’ve been involved in Product Marketing at JetBrains for 8 years. At JetBrains, we create IDEs for professional developers (IntelliJ IDEA, ReSharper), programming languages (Kotlin) and team tools (TeamCity, YouTrack).\\nI specialize in team tools, project management methodologies and team collaboration. I’m part of the YouTrack team (an issue tracker and agile project management tool) which is used by everyone at JetBrains, from developers to accountants. Apart from product marketing, my role is to help the various team at JetBrains to establish the most productive processes in order to reach their goals and improve collaboration.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/IIE-9549\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/4f99dc6aaeb118b9779aa48d2fa9dd967c19956b\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Valerie Andrianova\"}],\"id\":\"IIE-9549\",\"title\":\"Developing Native Product Vision in Teams and Individuals\"}],\"company\":\"JetBrains\",\"bio\":\"I’ve been involved in Product Marketing at JetBrains for 8 years. At JetBrains, we create IDEs for professional developers (IntelliJ IDEA, ReSharper), programming languages (Kotlin) and team tools (TeamCity, YouTrack). \\r\\nI specialize in team tools, project management methodologies and team collaboration. I’m part of the YouTrack team (an issue tracker and agile project management tool) which is used by everyone at JetBrains, from developers to accountants. Apart from product marketing, my role is to help the various team at JetBrains to establish the most productive processes in order to reach their goals and improve collaboration. \",\"lastName\":\"Andrianova\",\"firstName\":\"Valerie\",\"blog\":\"https://blog.jetbrains.com/youtrack/\",\"avatarURL\":\"https://www.gravatar.com/avatar/959d56c85205595d4505a0ee64e66f04\",\"twitter\":\"@va_leriya\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1276934040",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:40 GMT"
+    }
+  },
+  "uuid" : "9290ebf8-1917-41d9-b2e9-50c82e8d4750",
+  "persistent" : true,
+  "insertionIndex" : 203
+}

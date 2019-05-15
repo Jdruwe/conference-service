@@ -1,0 +1,23 @@
+{
+  "id" : "a423abfc-c262-4caa-ac17-723fc219523f",
+  "name" : "api_conferences_dvbe18_speakers_4017188c2821621bd62e55f9035c7e48733b79c1",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/4017188c2821621bd62e55f9035c7e48733b79c1",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"4017188c2821621bd62e55f9035c7e48733b79c1\",\"bioAsHtml\":\"<p>Michaël Hompus is a Software Architect at Info Support.\\nAs Software Architect he is part of several teams, realizing new and innovative solutions, preferable using the Microsoft Cloud. Michaël has many years of development experience with .NET, Microsoft Azure, Office 365 and Dynamics 365.\\nHis passion is to share knowledge, with colleagues, customers and peers.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Deep Dive\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/HAO-1908\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/96678a1719c019691241d937530700d7c0f58768\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Gert Leenders\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/7a1ed3166072356dde9cbb5453540f0d02059921\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Alex Van Boxel\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/4017188c2821621bd62e55f9035c7e48733b79c1\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Michaël Hompus\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/bb15ab5b46b4a1371708898c04565deec0549c26\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Tim Bogaert\"}],\"id\":\"HAO-1908\",\"title\":\"Cloud - War Stories\"}],\"company\":\"Info Support\",\"bio\":\"Michaël Hompus is a Software Architect at Info Support.\\r\\nAs Software Architect he is part of several teams, realizing new and innovative solutions, preferable using the Microsoft Cloud. Michaël has many years of development experience with .NET, Microsoft Azure, Office 365 and Dynamics 365.\\r\\nHis passion is to share knowledge, with colleagues, customers and peers. \",\"lastName\":\"Hompus\",\"firstName\":\"Michaël\",\"blog\":\"https://blog.hompus.nl\",\"avatarURL\":\"https://www.gravatar.com/avatar/4fefa621e89211dc7577bbb77a378a24\",\"twitter\":\"@eNeRGy164\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-456659650",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:36 GMT"
+    }
+  },
+  "uuid" : "a423abfc-c262-4caa-ac17-723fc219523f",
+  "persistent" : true,
+  "insertionIndex" : 165
+}

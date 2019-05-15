@@ -1,0 +1,23 @@
+{
+  "id" : "1e28de75-71c5-4c08-9959-d2416c8e898f",
+  "name" : "api_conferences_dvbe18_speakers_b32e73d3b070f325d520e8908113abf600da0e0a",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/b32e73d3b070f325d520e8908113abf600da0e0a",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"b32e73d3b070f325d520e8908113abf600da0e0a\",\"bioAsHtml\":\"<p>Emily Jiang is Liberty Architect for MicroProfile and CDI in IBM. Based at IBM&#x27;s Hursley laboratory in the UK, she has worked on the WebSphere Application Server since 2006 and is heavily involved in Java EE implementation in WebSphere Application Server releases. She is a key member of MicroProfile and CDI Expert Group, and leads the specification of MicroProfile Config and Fault Tolerance. Emily is also Config JSR co-spec lead. She regularly speaks at conferences, such as JAX, Voxxed, Devoxx US, Devoxx UK, Devoxx France, DevNexus and EclipseCon.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Server Side Java.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/WJT-1250\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/b32e73d3b070f325d520e8908113abf600da0e0a\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Emily Jiang\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/e5e33035a476a76fcbb80a645b55a9cc524dcdbc\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Antoine Sabot-Durand\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/f67ea85f674b2d160e2d9d35f5f9c9888115568c\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ondro Mihályi\"}],\"id\":\"WJT-1250\",\"title\":\"MicroProfile: Past, Present and Future \"},{\"talkType\":\"Conference\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/IUH-5593\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/b32e73d3b070f325d520e8908113abf600da0e0a\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Emily Jiang\"}],\"id\":\"IUH-5593\",\"title\":\"Secure microservices made easy with MicroProfile JWT\"}],\"company\":\"IBM\",\"bio\":\"Emily Jiang is Liberty Architect for MicroProfile and CDI in IBM. Based at IBM's Hursley laboratory in the UK, she has worked on the WebSphere Application Server since 2006 and is heavily involved in Java EE implementation in WebSphere Application Server releases. She is a key member of MicroProfile and CDI Expert Group, and leads the specification of MicroProfile Config and Fault Tolerance. Emily is also Config JSR co-spec lead. She regularly speaks at conferences, such as JAX, Voxxed, Devoxx US, Devoxx UK, Devoxx France, DevNexus and EclipseCon.\",\"lastName\":\"Jiang\",\"firstName\":\"Emily\",\"blog\":\"http://www.ibm.com\",\"avatarURL\":\"https://avatars1.githubusercontent.com/u/10999780?s=460&v=4\",\"twitter\":\"@emilyfhjiang\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-810215603",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:26 GMT"
+    }
+  },
+  "uuid" : "1e28de75-71c5-4c08-9959-d2416c8e898f",
+  "persistent" : true,
+  "insertionIndex" : 51
+}

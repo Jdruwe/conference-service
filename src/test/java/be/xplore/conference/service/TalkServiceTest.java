@@ -2,6 +2,7 @@ package be.xplore.conference.service;
 
 import be.xplore.conference.model.Talk;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +23,26 @@ public class TalkServiceTest {
     @Autowired
     private TalkService talkService;
 
+    private Talk savedTalk;
+
+    @Before
+    public void init() {
+        LocalDateTime localDateTime = LocalDateTime.now();
+        Talk talkToSafe = Talk.builder()
+                .id("CFL-7665")
+                .startTime(localDateTime.minusDays(15))
+                .endTime(localDateTime.minusDays(13))
+                .fromTime("fromtime")
+                .toTime("totime")
+                .title("title")
+                .type("type")
+                .summary("summary")
+                .speakers(null).build();
+        savedTalk = talkService.save(talkToSafe);
+    }
+
     @Test
-    public void testSaveSetting() {
+    public void testSaveTalk() {
         LocalDateTime localDateTime = LocalDateTime.now();
         Talk talk = talkService.save(new Talk("testTalk", localDateTime.minusDays(5), localDateTime.minusDays(3), "fromtime", "totime", "title", "type", "summary", null));
         Assert.assertNotNull(talk);
@@ -32,7 +51,7 @@ public class TalkServiceTest {
 
     @Test
     public void testLoadByNonExistingID() {
-        Optional<Talk> talk = talkService.loadById("non");
+        Optional<Talk> talk = talkService.loadById("noId");
         Assert.assertTrue(talk.isEmpty());
     }
 
@@ -40,7 +59,6 @@ public class TalkServiceTest {
     public void testLoadById() {
         Optional<Talk> talk = talkService.loadById("CFL-7665");
         Assert.assertTrue(talk.isPresent());
-        Assert.assertEquals("Lambdas and Streams Master Class Part 1",talk.get().getTitle());
-        Assert.assertEquals("Deep Dive",talk.get().getType());
+        Assert.assertEquals(savedTalk, talk.get());
     }
 }

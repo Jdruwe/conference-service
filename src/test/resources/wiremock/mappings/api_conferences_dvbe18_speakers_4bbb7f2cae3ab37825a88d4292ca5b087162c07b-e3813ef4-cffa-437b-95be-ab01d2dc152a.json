@@ -1,0 +1,23 @@
+{
+  "id" : "e3813ef4-cffa-437b-95be-ab01d2dc152a",
+  "name" : "api_conferences_dvbe18_speakers_4bbb7f2cae3ab37825a88d4292ca5b087162c07b",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/4bbb7f2cae3ab37825a88d4292ca5b087162c07b",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"4bbb7f2cae3ab37825a88d4292ca5b087162c07b\",\"bioAsHtml\":\"<p>Richard is a Software Engineer, Teacher and Java Champion. He is the cofounder of Opsian.com and has a long-standing passion for improving Java performance. He’s worked as a developer in different areas including HFT, Static Analysis, Compilers and Network Protocols. He has written the book “Java 8 Lambdas” for O’Reilly and helps developers learn via http://iteratrlearning.com and http://www.pluralsight.com/author/richard-warburton. He is a regular speaker on the conference circuit and holds a PhD in Computer Science from The University of Warwick.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Mind the Geek.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/ZSJ-3068\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/4bbb7f2cae3ab37825a88d4292ca5b087162c07b\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"RIchard Warburton\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/031bf1e9597d4731ae8ab1511e2f07c3fe5d6fc9\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Sadiq Jaffer\"}],\"id\":\"ZSJ-3068\",\"title\":\"Production Profiling: What, Why and How\"}],\"company\":\"Opsian\",\"bio\":\"Richard is a Software Engineer, Teacher and Java Champion. He is the cofounder of Opsian.com and has a long-standing passion for improving Java performance. He’s worked as a developer in different areas including HFT, Static Analysis, Compilers and Network Protocols. He has written the book “Java 8 Lambdas” for O’Reilly and helps developers learn via http://iteratrlearning.com and http://www.pluralsight.com/author/richard-warburton. He is a regular speaker on the conference circuit and holds a PhD in Computer Science from The University of Warwick.\",\"lastName\":\"Warburton\",\"firstName\":\"RIchard\",\"blog\":\"https://www.opsian.com/\",\"avatarURL\":\"http://iteratrlearning.com/images/richard.png\",\"twitter\":\"@richardwarburto\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1119757526",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:41 GMT"
+    }
+  },
+  "uuid" : "e3813ef4-cffa-437b-95be-ab01d2dc152a",
+  "persistent" : true,
+  "insertionIndex" : 217
+}

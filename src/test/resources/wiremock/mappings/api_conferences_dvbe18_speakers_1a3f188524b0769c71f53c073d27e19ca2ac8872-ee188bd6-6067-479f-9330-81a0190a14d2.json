@@ -1,0 +1,23 @@
+{
+  "id" : "ee188bd6-6067-479f-9330-81a0190a14d2",
+  "name" : "api_conferences_dvbe18_speakers_1a3f188524b0769c71f53c073d27e19ca2ac8872",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/1a3f188524b0769c71f53c073d27e19ca2ac8872",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"1a3f188524b0769c71f53c073d27e19ca2ac8872\",\"bioAsHtml\":\"<p>Andrew is an engineer on the developer relations team for Flutter, Google&#x27;s multiplatform SDK for building native apps.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Mobile & IoT.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/ZOL-0451\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/1a3f188524b0769c71f53c073d27e19ca2ac8872\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Andrew Brogdon\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/68b1cd23753859fa55674518f39c85ed44b75174\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Matt Sullivan\"}],\"id\":\"ZOL-0451\",\"title\":\"Building the VoxxedDays App with Flutter \"}],\"company\":\"Google\",\"bio\":\"Andrew is an engineer on the developer relations team for Flutter, Google's multiplatform SDK for building native apps.\",\"lastName\":\"Brogdon\",\"firstName\":\"Andrew\",\"blog\":\"https://flutter.io\",\"avatarURL\":\"https://pbs.twimg.com/profile_images/651444930884186112/9vlhNFlu_400x400.png\",\"twitter\":\"@RedBrogdon\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1547267616",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:29 GMT"
+    }
+  },
+  "uuid" : "ee188bd6-6067-479f-9330-81a0190a14d2",
+  "persistent" : true,
+  "insertionIndex" : 84
+}

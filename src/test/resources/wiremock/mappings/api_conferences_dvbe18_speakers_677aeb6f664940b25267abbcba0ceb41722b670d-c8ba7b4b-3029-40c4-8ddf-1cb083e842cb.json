@@ -1,0 +1,23 @@
+{
+  "id" : "c8ba7b4b-3029-40c4-8ddf-1cb083e842cb",
+  "name" : "api_conferences_dvbe18_speakers_677aeb6f664940b25267abbcba0ceb41722b670d",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/677aeb6f664940b25267abbcba0ceb41722b670d",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"677aeb6f664940b25267abbcba0ceb41722b670d\",\"bioAsHtml\":\"<p>Sven Reimers, based at Lake Constance in southern Germany, works as a systems engineer at Airbus Defence and Space, creating next-generation ground segment software. He has 20 years experience building complex software systems, and more than 15 years experience with Java, going back to its early days. In 2009 Reimers was the winner of the Duke`s Choice Award. Besides his day job, his support for NetBeans got him elected a NetBeans Dream Team member in 2008. With the move to Apache he is now member of the Apache NetBeans (incubating) PPMC. He is also a contributor to OpenJFX and leader and founder of JUG Bodensee. For his long-term commitment to Java and the community, Sven Reimers was named a Java Champion.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Mind the Geek.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/OBJ-5334\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/677aeb6f664940b25267abbcba0ceb41722b670d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Sven Reimers\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/b2a04e177ea96711ae329acc22c030d07870ec21\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Martin Klähn\"}],\"id\":\"OBJ-5334\",\"title\":\"TweetWalls@Devoxx - Today, Tomorrow and Beyond - A Community Get Together'\"}],\"company\":\"Airbus\",\"bio\":\"Sven Reimers, based at Lake Constance in southern Germany, works as a systems engineer at Airbus Defence and Space, creating next-generation ground segment software. He has 20 years experience building complex software systems, and more than 15 years experience with Java, going back to its early days. In 2009 Reimers was the winner of the Duke`s Choice Award. Besides his day job, his support for NetBeans got him elected a NetBeans Dream Team member in 2008. With the move to Apache he is now member of the Apache NetBeans (incubating) PPMC. He is also a contributor to OpenJFX and leader and founder of JUG Bodensee. For his long-term commitment to Java and the community, Sven Reimers was named a Java Champion. \",\"lastName\":\"Reimers\",\"firstName\":\"Sven\",\"blog\":null,\"avatarURL\":\"https://lh3.googleusercontent.com/-Vpj7Ofr9TnM/AAAAAAAAAAI/AAAAAAAAGDQ/7yLaqB4F328/photo.jpg\",\"twitter\":\"@svennb\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1944822426",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:45 GMT"
+    }
+  },
+  "uuid" : "c8ba7b4b-3029-40c4-8ddf-1cb083e842cb",
+  "persistent" : true,
+  "insertionIndex" : 251
+}

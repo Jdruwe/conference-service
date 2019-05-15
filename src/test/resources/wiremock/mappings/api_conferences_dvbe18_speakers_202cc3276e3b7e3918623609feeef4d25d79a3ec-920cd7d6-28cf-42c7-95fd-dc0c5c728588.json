@@ -1,0 +1,23 @@
+{
+  "id" : "920cd7d6-28cf-42c7-95fd-dc0c5c728588",
+  "name" : "api_conferences_dvbe18_speakers_202cc3276e3b7e3918623609feeef4d25d79a3ec",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/202cc3276e3b7e3918623609feeef4d25d79a3ec",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"202cc3276e3b7e3918623609feeef4d25d79a3ec\",\"bioAsHtml\":\"<p>Sander is a Fellow at Luminis in The Netherlands, where he crafts modular and scalable software, most often on the JVM, but with a touch of TypeScript when needed. He also is a Java Champion and author of the O&#x27;Reilly book &#x27;Java 9 Modularity&#x27; (see javamodularity.com). As an avid conference speaker, Sander loves sharing knowledge, also through his blog at http://branchandbound.net and as Pluralsight instructor.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/URM-8627\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/202cc3276e3b7e3918623609feeef4d25d79a3ec\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Sander Mak\"}],\"id\":\"URM-8627\",\"title\":\"Java Modularity: the Year After\"}],\"company\":\"Luminis\",\"bio\":\"Sander is a Fellow at Luminis in The Netherlands, where he crafts modular and scalable software, most often on the JVM, but with a touch of TypeScript when needed. He also is a Java Champion and author of the O'Reilly book 'Java 9 Modularity' (see javamodularity.com). As an avid conference speaker, Sander loves sharing knowledge, also through his blog at http://branchandbound.net and as Pluralsight instructor.\",\"lastName\":\"Mak\",\"firstName\":\"Sander\",\"blog\":\"https://javamodularity.com\",\"avatarURL\":\"https://www.gravatar.com/avatar/54ef231a31560fa88933fcc80edfb718\",\"twitter\":\"@Sander_Mak\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1115272736",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:24 GMT"
+    }
+  },
+  "uuid" : "920cd7d6-28cf-42c7-95fd-dc0c5c728588",
+  "persistent" : true,
+  "insertionIndex" : 24
+}

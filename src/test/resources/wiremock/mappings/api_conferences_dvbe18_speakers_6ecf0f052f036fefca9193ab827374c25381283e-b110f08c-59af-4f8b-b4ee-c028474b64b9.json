@@ -1,0 +1,23 @@
+{
+  "id" : "b110f08c-59af-4f8b-b4ee-c028474b64b9",
+  "name" : "api_conferences_dvbe18_speakers_6ecf0f052f036fefca9193ab827374c25381283e",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/6ecf0f052f036fefca9193ab827374c25381283e",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"6ecf0f052f036fefca9193ab827374c25381283e\",\"bioAsHtml\":\"<p>Oli Gibson has worked with companies, across all sectors, helping them build better products. He has been an entrepreneur, developer and is now a Product &amp; Strategy Consultant at ThoughtWorks. After several startups, his focus shifted towards the enterprise where he now helps organisations transform their business strategy, take an experimental approach to product development and manage cultural transformation.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/TXZ-1793\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6ecf0f052f036fefca9193ab827374c25381283e\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Oli Gibson\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/7e26b7145a391d532523afa4c2283647dc821a4b\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Monira Rhaimi\"}],\"id\":\"TXZ-1793\",\"title\":\"How to build products people care about\"}],\"company\":\"ThoughtWorks\",\"bio\":\"Oli Gibson has worked with companies, across all sectors, helping them build better products. He has been an entrepreneur, developer and is now a Product & Strategy Consultant at ThoughtWorks. After several startups, his focus shifted towards the enterprise where he now helps organisations transform their business strategy, take an experimental approach to product development and manage cultural transformation.\",\"lastName\":\"Gibson\",\"firstName\":\"Oli\",\"blog\":\"https://oligibson.com\",\"avatarURL\":\"https://www.gravatar.com/avatar/f1cffed7207743c5c50d207ee47f7924\",\"twitter\":\"@oligibson\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1834871606",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:33 GMT"
+    }
+  },
+  "uuid" : "b110f08c-59af-4f8b-b4ee-c028474b64b9",
+  "persistent" : true,
+  "insertionIndex" : 127
+}

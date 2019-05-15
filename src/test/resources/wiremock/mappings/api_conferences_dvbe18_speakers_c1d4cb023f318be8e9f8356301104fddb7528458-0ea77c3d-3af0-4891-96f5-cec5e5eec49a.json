@@ -1,0 +1,23 @@
+{
+  "id" : "0ea77c3d-3af0-4891-96f5-cec5e5eec49a",
+  "name" : "api_conferences_dvbe18_speakers_c1d4cb023f318be8e9f8356301104fddb7528458",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/c1d4cb023f318be8e9f8356301104fddb7528458",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"c1d4cb023f318be8e9f8356301104fddb7528458\",\"bioAsHtml\":\"<p>Nick Vanderhoven is an engineer that has been struggling with an identity crisis ever since Java changed the 1.0 AWT event delegation model back in &#x27;97. In the past 15 years, he has been involved in several consultancy projects, startups, fintechs, telecom and governmental institutions. Also as a speaker/teacher. If you need to draw his attention, start talking about SRS Guideline Tetris.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Ignite\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/VGW-0187\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/2c5a6361c9396d7a0df624d828e06fd86abc5435\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Jeroen Horemans\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/c1d4cb023f318be8e9f8356301104fddb7528458\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Nick Vanderhoven\"}],\"id\":\"VGW-0187\",\"title\":\"PAAF : The passive aggressive annotation framework\"}],\"company\":\"CCV\",\"bio\":\"Nick Vanderhoven is an engineer that has been struggling with an identity crisis ever since Java changed the 1.0 AWT event delegation model back in '97. In the past 15 years, he has been involved in several consultancy projects, startups, fintechs, telecom and governmental institutions. Also as a speaker/teacher. If you need to draw his attention, start talking about SRS Guideline Tetris.\",\"lastName\":\"Vanderhoven\",\"firstName\":\"Nick\",\"blog\":\"https://twitter.com/nickvdh\",\"avatarURL\":\"https://pbs.twimg.com/profile_images/829647036630839297/NTrpUQ9F_400x400.jpg\",\"twitter\":\"@nickvdh\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1804176669",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:44 GMT"
+    }
+  },
+  "uuid" : "0ea77c3d-3af0-4891-96f5-cec5e5eec49a",
+  "persistent" : true,
+  "insertionIndex" : 248
+}

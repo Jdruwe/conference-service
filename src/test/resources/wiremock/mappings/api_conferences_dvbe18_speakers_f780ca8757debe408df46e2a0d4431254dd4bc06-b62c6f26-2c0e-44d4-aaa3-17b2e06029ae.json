@@ -1,0 +1,23 @@
+{
+  "id" : "b62c6f26-2c0e-44d4-aaa3-17b2e06029ae",
+  "name" : "api_conferences_dvbe18_speakers_f780ca8757debe408df46e2a0d4431254dd4bc06",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/f780ca8757debe408df46e2a0d4431254dd4bc06",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"f780ca8757debe408df46e2a0d4431254dd4bc06\",\"bioAsHtml\":\"<p>Koffi Alain Sessi is a strategic communicator and tech enthusiast with a passion for using branding and identity development to help tech experts further their personal reach. As Acquisitions Editor at Pluralsight, Koffi has helped tens of Java experts expand their brands and advance their careers through Pluralsight’s curated learning platform. His personal mission is to help people solve real-world problems through the strategic employment of communication.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/OHH-8000\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/f780ca8757debe408df46e2a0d4431254dd4bc06\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Koffi Alain Sessi\"}],\"id\":\"OHH-8000\",\"title\":\"Presentation 2.0: Five ways to engage your audience!\"}],\"company\":\"Pluralsight\",\"bio\":\"Koffi Alain Sessi is a strategic communicator and tech enthusiast with a passion for using branding and identity development to help tech experts further their personal reach. As Acquisitions Editor at Pluralsight, Koffi has helped tens of Java experts expand their brands and advance their careers through Pluralsight’s curated learning platform. His personal mission is to help people solve real-world problems through the strategic employment of communication. \",\"lastName\":\"Sessi\",\"firstName\":\"Koffi Alain\",\"blog\":\"https://aksessi.com/\",\"avatarURL\":\"https://lh3.googleusercontent.com/-WjCY_pA1aRU/AAAAAAAAAAI/AAAAAAAACrw/ZZJMbXeW0lg/photo.jpg\",\"twitter\":\"@aksessi\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-986321886",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:29 GMT"
+    }
+  },
+  "uuid" : "b62c6f26-2c0e-44d4-aaa3-17b2e06029ae",
+  "persistent" : true,
+  "insertionIndex" : 89
+}

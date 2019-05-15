@@ -1,0 +1,23 @@
+{
+  "id" : "c3a2403f-6b37-41c4-af3a-4de08ad327f5",
+  "name" : "api_conferences_dvbe18_speakers_1207f8e3d7f5b1acdfeedcf73a6389d3f7b79230",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/1207f8e3d7f5b1acdfeedcf73a6389d3f7b79230",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"1207f8e3d7f5b1acdfeedcf73a6389d3f7b79230\",\"bioAsHtml\":\"<p>Software engineer with solid experience in large scale software development. Passionate about software development process and technologies. Clean coder, test-driven developer.\\nCurrently working on payments fraud detection infrastructure at Google.\\nPreviously, Alex developed microservice architecture for World leading social casino games, built infrastructure backend services for a unicorn startup in Silicon Valley with 300+ million users and developed trading systems.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/SRU-1991\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/d04310f1a0277d2e0b129390c42dbd09174a2adf\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Mykyta Protsenko\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/1207f8e3d7f5b1acdfeedcf73a6389d3f7b79230\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Alex Borysov\"}],\"id\":\"SRU-1991\",\"title\":\"Break me if you can: practical guide to building fault-tolerant systems (with examples from REST and gRPC polyglot stacks)\"}],\"company\":\"Google\",\"bio\":\"Software engineer with solid experience in large scale software development. Passionate about software development process and technologies. Clean coder, test-driven developer.\\r\\nCurrently working on payments fraud detection infrastructure at Google. \\r\\nPreviously, Alex developed microservice architecture for World leading social casino games, built infrastructure backend services for a unicorn startup in Silicon Valley with 300+ million users and developed trading systems.\\r\\n\\r\\n\",\"lastName\":\"Borysov\",\"firstName\":\"Alex\",\"blog\":null,\"avatarURL\":\"https://i.imgur.com/OZVjPr7.jpg\",\"twitter\":\"@aiborisov\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1855404683",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:27 GMT"
+    }
+  },
+  "uuid" : "c3a2403f-6b37-41c4-af3a-4de08ad327f5",
+  "persistent" : true,
+  "insertionIndex" : 58
+}

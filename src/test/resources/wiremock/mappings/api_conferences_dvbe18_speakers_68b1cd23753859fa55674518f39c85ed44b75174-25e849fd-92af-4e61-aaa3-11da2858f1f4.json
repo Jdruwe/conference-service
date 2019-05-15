@@ -1,0 +1,23 @@
+{
+  "id" : "25e849fd-92af-4e61-aaa3-11da2858f1f4",
+  "name" : "api_conferences_dvbe18_speakers_68b1cd23753859fa55674518f39c85ed44b75174",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/68b1cd23753859fa55674518f39c85ed44b75174",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"68b1cd23753859fa55674518f39c85ed44b75174\",\"bioAsHtml\":\"<p>Matt leads Flutter&#x27;s developer relations from Google’s Mountain View campus. He joined the Flutter team last year, having spent three years working on Android, Wear OS, and Google Fit. Before Google, Matt worked in a diverse range of fields, from bioinformatics to digital cinema. He holds a Ph.D. in Electrical Engineering.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Mobile & IoT.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/ZOL-0451\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/1a3f188524b0769c71f53c073d27e19ca2ac8872\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Andrew Brogdon\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/68b1cd23753859fa55674518f39c85ed44b75174\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Matt Sullivan\"}],\"id\":\"ZOL-0451\",\"title\":\"Building the VoxxedDays App with Flutter \"},{\"talkType\":\"Tools-in-Action\",\"track\":\"Mobile & IoT.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/IJL-5930\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/68b1cd23753859fa55674518f39c85ed44b75174\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Matt Sullivan\"}],\"id\":\"IJL-5930\",\"title\":\"Building the VoxxedDays App with Flutter \"}],\"company\":\"Google\",\"bio\":\"Matt leads Flutter's developer relations from Google’s Mountain View campus. He joined the Flutter team last year, having spent three years working on Android, Wear OS, and Google Fit. Before Google, Matt worked in a diverse range of fields, from bioinformatics to digital cinema. He holds a Ph.D. in Electrical Engineering.\",\"lastName\":\"Sullivan\",\"firstName\":\"Matt\",\"blog\":\"www.flutter.io\",\"avatarURL\":\"https://www.gravatar.com/avatar/ac1de725fe783f91b1fbff542ff6bb7e\",\"twitter\":\"@mjohnsullivan\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1065319319",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:29 GMT"
+    }
+  },
+  "uuid" : "25e849fd-92af-4e61-aaa3-11da2858f1f4",
+  "persistent" : true,
+  "insertionIndex" : 85
+}

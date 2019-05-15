@@ -1,0 +1,23 @@
+{
+  "id" : "c9a5d7e2-8ae5-467d-891f-c88029daaa49",
+  "name" : "api_conferences_dvbe18_speakers_f8caf20b7f6f226bf0637bc8e077d95161561439",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/f8caf20b7f6f226bf0637bc8e077d95161561439",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"f8caf20b7f6f226bf0637bc8e077d95161561439\",\"bioAsHtml\":\"<p>Quentin ADAM is the CEO of Clever Cloud: an IT automation company, running a Platform as a Service allowing you to run java, scala, ruby, node.js, php, python or go applications, with auto scaling and auto healing features. This position allow him to study lots of applications, code, practice, and extract some talks and advises. Regular speaker at various tech conference, he’s focused to help developers to deliver quickly and happily good applications.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/BLA-3308\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/f8caf20b7f6f226bf0637bc8e077d95161561439\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Quentin Adam\"}],\"id\":\"BLA-3308\",\"title\":\"PostgreSQL is the new NoSQL\"}],\"company\":\"Clever Cloud\",\"bio\":\"Quentin ADAM is the CEO of Clever Cloud: an IT automation company, running a Platform as a Service allowing you to run java, scala, ruby, node.js, php, python or go applications, with auto scaling and auto healing features. This position allow him to study lots of applications, code, practice, and extract some talks and advises. Regular speaker at various tech conference, he’s focused to help developers to deliver quickly and happily good applications. \",\"lastName\":\"Adam\",\"firstName\":\"Quentin\",\"blog\":\"https://www.clever-cloud.com/\",\"avatarURL\":\"https://www.gravatar.com/avatar/1a616a1b0ab4fe6ea72cc8d00c8ba4ec\",\"twitter\":\"@waxzce\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "730673624",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:31 GMT"
+    }
+  },
+  "uuid" : "c9a5d7e2-8ae5-467d-891f-c88029daaa49",
+  "persistent" : true,
+  "insertionIndex" : 105
+}

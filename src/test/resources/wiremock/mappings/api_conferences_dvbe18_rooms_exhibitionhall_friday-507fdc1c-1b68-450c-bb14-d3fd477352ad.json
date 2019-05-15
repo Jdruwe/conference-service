@@ -1,0 +1,23 @@
+{
+  "id" : "507fdc1c-1b68-450c-bb14-d3fd477352ad",
+  "name" : "api_conferences_dvbe18_rooms_exhibitionhall_friday",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/rooms/ExhibitionHall/friday",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"slots\":[{\"roomId\":\"ExhibitionHall\",\"notAllocated\":false,\"fromTimeMillis\":1542353400000,\"break\":{\"id\":\"st.11\",\"nameEN\":\"Breakfast\",\"nameFR\":\"Breakfast\",\"room\":{\"id\":\"ExhibitionHall\",\"name\":\"Exhibition Hall\",\"capacity\":2000,\"setup\":\"classroom\",\"recorded\":\"yes\"},\"dayName\":\"friday\",\"startTime\":1542353400000,\"endTime\":1542357000000},\"roomSetup\":\"classroom\",\"talk\":null,\"fromTime\":\"08:30\",\"toTimeMillis\":1542357000000,\"toTime\":\"09:30\",\"roomCapacity\":2000,\"roomName\":\"Exhibition Hall\",\"slotId\":\"st.11\",\"day\":\"friday\"},{\"roomId\":\"ExhibitionHall\",\"notAllocated\":false,\"fromTimeMillis\":1542360000000,\"break\":{\"id\":\"st.12\",\"nameEN\":\"Coffee Break\",\"nameFR\":\"Coffee Break\",\"room\":{\"id\":\"ExhibitionHall\",\"name\":\"Exhibition Hall\",\"capacity\":2000,\"setup\":\"classroom\",\"recorded\":\"yes\"},\"dayName\":\"friday\",\"startTime\":1542360000000,\"endTime\":1542360900000},\"roomSetup\":\"classroom\",\"talk\":null,\"fromTime\":\"10:20\",\"toTimeMillis\":1542360900000,\"toTime\":\"10:35\",\"roomCapacity\":2000,\"roomName\":\"Exhibition Hall\",\"slotId\":\"st.12\",\"day\":\"friday\"},{\"roomId\":\"ExhibitionHall\",\"notAllocated\":false,\"fromTimeMillis\":1542363900000,\"break\":{\"id\":\"st.17\",\"nameEN\":\"Break\",\"nameFR\":\"Break\",\"room\":{\"id\":\"ExhibitionHall\",\"name\":\"Exhibition Hall\",\"capacity\":2000,\"setup\":\"classroom\",\"recorded\":\"yes\"},\"dayName\":\"friday\",\"startTime\":1542363900000,\"endTime\":1542364800000},\"roomSetup\":\"classroom\",\"talk\":null,\"fromTime\":\"11:25\",\"toTimeMillis\":1542364800000,\"toTime\":\"11:40\",\"roomCapacity\":2000,\"roomName\":\"Exhibition Hall\",\"slotId\":\"st.17\",\"day\":\"friday\"},{\"roomId\":\"ExhibitionHall\",\"notAllocated\":false,\"fromTimeMillis\":1542367800000,\"break\":{\"id\":\"st.48\",\"nameEN\":\"Safe travels home\",\"nameFR\":\"Safe travels home\",\"room\":{\"id\":\"ExhibitionHall\",\"name\":\"Exhibition Hall\",\"capacity\":2000,\"setup\":\"classroom\",\"recorded\":\"yes\"},\"dayName\":\"friday\",\"startTime\":1542367800000,\"endTime\":1542371400000},\"roomSetup\":\"classroom\",\"talk\":null,\"fromTime\":\"12:30\",\"toTimeMillis\":1542371400000,\"toTime\":\"13:30\",\"roomCapacity\":2000,\"roomName\":\"Exhibition Hall\",\"slotId\":\"st.48\",\"day\":\"friday\"}]}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "v2--11338652721406005538",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/schedule>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:28 GMT"
+    }
+  },
+  "uuid" : "507fdc1c-1b68-450c-bb14-d3fd477352ad",
+  "persistent" : true,
+  "insertionIndex" : 70
+}

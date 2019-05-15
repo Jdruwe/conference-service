@@ -1,0 +1,23 @@
+{
+  "id" : "319cf7a5-43d6-441e-8168-7bda958b1faa",
+  "name" : "api_conferences_dvbe18_speakers_bce4acb236bd432f576479f6e6d2494c0bdd6e65",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/bce4acb236bd432f576479f6e6d2494c0bdd6e65",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"bce4acb236bd432f576479f6e6d2494c0bdd6e65\",\"bioAsHtml\":\"<p>Romeo Kienzler is Chief Data Scientist and DeepLearning/AI Engineer at IBM Watson IoT and as IBM Certified Senior Architect he helps clients worldwide to solve their data analysis challenges.</p>\\n<p>He holds an M. Sc. (ETH) in Computer Science with specialisation in Information Systems, Bioinformatics and Applied Statistics from the Swiss Federal Institute of Technology Zurich.</p>\\n<p>He works as an Associate Professor for artificial intelligence at a Swiss University and his current research focus is on cloud-scale machine learning and deep learning using open source technologies including TensorFlow, Keras, DeepLearning4J, Apache SystemML and the Apache Spark stack.</p>\\n<p>He also contributes to various open source projects.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Deep Dive\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/YFG-1152\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/bce4acb236bd432f576479f6e6d2494c0bdd6e65\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Romeo Kienzler\"}],\"id\":\"YFG-1152\",\"title\":\"A journey to Build a Distributed Blockchain Application\"},{\"talkType\":\"Hands-on Lab\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/FCN-7579\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/bce4acb236bd432f576479f6e6d2494c0bdd6e65\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Romeo Kienzler\"}],\"id\":\"FCN-7579\",\"title\":\"DeepLearning for Developers - Introduction to DeepLearning with Keras and TensorFlow\"}],\"company\":\"IBM\",\"bio\":\"Romeo Kienzler is Chief Data Scientist and DeepLearning/AI Engineer at IBM Watson IoT and as IBM Certified Senior Architect he helps clients worldwide to solve their data analysis challenges.\\r\\n\\r\\nHe holds an M. Sc. (ETH) in Computer Science with specialisation in Information Systems, Bioinformatics and Applied Statistics from the Swiss Federal Institute of Technology Zurich. \\r\\n\\r\\nHe works as an Associate Professor for artificial intelligence at a Swiss University and his current research focus is on cloud-scale machine learning and deep learning using open source technologies including TensorFlow, Keras, DeepLearning4J, Apache SystemML and the Apache Spark stack. \\r\\n\\r\\nHe also contributes to various open source projects. \",\"lastName\":\"Kienzler\",\"firstName\":\"Romeo\",\"blog\":\"hhttps://developer.ibm.com/author/romeo.kienzler/\",\"avatarURL\":\"https://lh3.googleusercontent.com/-EoxHUs94v8I/AAAAAAAAAAI/AAAAAAAACIA/T65I6REOk4I/photo.jpg\",\"twitter\":\"@romeokienzler\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1525695372",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:30 GMT"
+    }
+  },
+  "uuid" : "319cf7a5-43d6-441e-8168-7bda958b1faa",
+  "persistent" : true,
+  "insertionIndex" : 98
+}

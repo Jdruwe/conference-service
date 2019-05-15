@@ -1,0 +1,23 @@
+{
+  "id" : "37e0c80f-79a2-45bc-86eb-715700b27dc5",
+  "name" : "api_conferences_dvbe18_speakers_6411091b413cbe292a892a0527f4d9086d421857",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/6411091b413cbe292a892a0527f4d9086d421857",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"6411091b413cbe292a892a0527f4d9086d421857\",\"bioAsHtml\":\"<p>Murat Yener is a code geek, open source committer, Java Champion and ex-Google Developer Expert on Android, who is working at Google on Google Home. He is the author of Expert Android Studio and Professional Java EE Design Patterns books from Wiley. He has extensive experience with developing Android, Java, web, JavaEE, and OSGi applications, in addition to teaching courses and mentoring. Murat was an Eclipse committer and one of the initial committers of the Eclipse Libra project. Murat had been a user group leader at GDG Istanbul and in GDG San Francisco, organizing, participating, and speaking at events. He is also a regular speaker at major conferences such as DroidCon, JavaOne and Devoxx.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Mobile & IoT.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/MJD-6193\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6411091b413cbe292a892a0527f4d9086d421857\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Murat Yener\"}],\"id\":\"MJD-6193\",\"title\":\"Home s̶w̶e̶e̶t̶ Google Home: Build a smart(er) home!\"}],\"company\":\"Google\",\"bio\":\"Murat Yener is a code geek, open source committer, Java Champion and ex-Google Developer Expert on Android, who is working at Google on Google Home. He is the author of Expert Android Studio and Professional Java EE Design Patterns books from Wiley. He has extensive experience with developing Android, Java, web, JavaEE, and OSGi applications, in addition to teaching courses and mentoring. Murat was an Eclipse committer and one of the initial committers of the Eclipse Libra project. Murat had been a user group leader at GDG Istanbul and in GDG San Francisco, organizing, participating, and speaking at events. He is also a regular speaker at major conferences such as DroidCon, JavaOne and Devoxx.\",\"lastName\":\"Yener\",\"firstName\":\"Murat\",\"blog\":\"www.devchronicles.com\",\"avatarURL\":\"https://lh4.googleusercontent.com/-RPFXS90xZGI/AAAAAAAAAAI/AAAAAAACslE/QEL4wwy1k9g/photo.jpg\",\"twitter\":\"@yenerm\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-171435157",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:31 GMT"
+    }
+  },
+  "uuid" : "37e0c80f-79a2-45bc-86eb-715700b27dc5",
+  "persistent" : true,
+  "insertionIndex" : 106
+}

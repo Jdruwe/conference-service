@@ -1,0 +1,23 @@
+{
+  "id" : "b6b96b53-951e-4e5e-aa1d-1c68c2db4e40",
+  "name" : "api_conferences_dvbe18_speakers_bd4764498629afe21226d3c565bab675f587b6fa",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/bd4764498629afe21226d3c565bab675f587b6fa",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"bd4764498629afe21226d3c565bab675f587b6fa\",\"bioAsHtml\":\"<p>Corina is a senior test automation consultant, with focus on testing by means of Java, Selenium, TestNG, Spring, Maven, and other cool frameworks and tools. Previous endeavours from her 10+ years testing career include working on navigation devices and in the online gaming industry.\\nShe loves automation and always tries to learn something new, improving her automation skills and spreading the knowledge to her peers.\\nApart from work, Corina is a testing blogger (https://imalittletester.com/), an amateur photographer (https://www.flickr.com/photos/capreoara) and a GitHub contributor (https://github.com/iamalittletester) . She also tweets at @imalittletester.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Programming languages.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/AGU-8136\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/bd4764498629afe21226d3c565bab675f587b6fa\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Corina Pip\"}],\"id\":\"AGU-8136\",\"title\":\"Selenium Tests the Object Oriented Way\"}],\"company\":\"Frequentis\",\"bio\":\"Corina is a senior test automation consultant, with focus on testing by means of Java, Selenium, TestNG, Spring, Maven, and other cool frameworks and tools. Previous endeavours from her 10+ years testing career include working on navigation devices and in the online gaming industry.\\r\\nShe loves automation and always tries to learn something new, improving her automation skills and spreading the knowledge to her peers.\\r\\nApart from work, Corina is a testing blogger (https://imalittletester.com/), an amateur photographer (https://www.flickr.com/photos/capreoara) and a GitHub contributor (https://github.com/iamalittletester) . She also tweets at @imalittletester.\",\"lastName\":\"Pip\",\"firstName\":\"Corina\",\"blog\":\"https://imalittletester.com/\",\"avatarURL\":\"https://pbs.twimg.com/profile_images/852427652086583296/r9w_Rk_Z_400x400.jpg\",\"twitter\":\"@imalittletester\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1137052441",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:30 GMT"
+    }
+  },
+  "uuid" : "b6b96b53-951e-4e5e-aa1d-1c68c2db4e40",
+  "persistent" : true,
+  "insertionIndex" : 101
+}

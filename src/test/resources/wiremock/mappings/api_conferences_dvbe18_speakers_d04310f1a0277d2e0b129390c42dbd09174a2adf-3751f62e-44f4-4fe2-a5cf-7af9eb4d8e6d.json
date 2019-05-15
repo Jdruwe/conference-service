@@ -1,0 +1,23 @@
+{
+  "id" : "3751f62e-44f4-4fe2-a5cf-7af9eb4d8e6d",
+  "name" : "api_conferences_dvbe18_speakers_d04310f1a0277d2e0b129390c42dbd09174a2adf",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/d04310f1a0277d2e0b129390c42dbd09174a2adf",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"d04310f1a0277d2e0b129390c42dbd09174a2adf\",\"bioAsHtml\":\"<p>Software engineer passionate about all things scalable - from coding to deploying to monitoring. Solid experience in building high-performance backends for a variety of applications in leading Silicon Valley companies: from top-rated social mobile games to billing platforms. Author of Henka (Gradle plugin for Terraform, https://github.com/roku-oss/henka).</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/SRU-1991\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/d04310f1a0277d2e0b129390c42dbd09174a2adf\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Mykyta Protsenko\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/1207f8e3d7f5b1acdfeedcf73a6389d3f7b79230\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Alex Borysov\"}],\"id\":\"SRU-1991\",\"title\":\"Break me if you can: practical guide to building fault-tolerant systems (with examples from REST and gRPC polyglot stacks)\"}],\"company\":\"Netflix\",\"bio\":\"Software engineer passionate about all things scalable - from coding to deploying to monitoring. Solid experience in building high-performance backends for a variety of applications in leading Silicon Valley companies: from top-rated social mobile games to billing platforms. Author of Henka (Gradle plugin for Terraform, https://github.com/roku-oss/henka). \",\"lastName\":\"Protsenko\",\"firstName\":\"Mykyta\",\"blog\":\"https://plus.google.com/+MykytaProtsenko\",\"avatarURL\":\"https://lh3.googleusercontent.com/-VtewSISxeKI/AAAAAAAAAAI/AAAAAAAAFlM/XcRA5w-GQNY/photo.jpg\",\"twitter\":\"@mykyta_p\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-299915701",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:27 GMT"
+    }
+  },
+  "uuid" : "3751f62e-44f4-4fe2-a5cf-7af9eb4d8e6d",
+  "persistent" : true,
+  "insertionIndex" : 57
+}

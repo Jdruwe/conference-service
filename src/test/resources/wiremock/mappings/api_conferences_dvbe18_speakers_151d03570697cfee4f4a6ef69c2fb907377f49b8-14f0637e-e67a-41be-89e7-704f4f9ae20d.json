@@ -1,0 +1,23 @@
+{
+  "id" : "14f0637e-e67a-41be-89e7-704f4f9ae20d",
+  "name" : "api_conferences_dvbe18_speakers_151d03570697cfee4f4a6ef69c2fb907377f49b8",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/151d03570697cfee4f4a6ef69c2fb907377f49b8",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"151d03570697cfee4f4a6ef69c2fb907377f49b8\",\"bioAsHtml\":\"<p>Nilay is a Program Manager at Flutter DevRel Team at Google. She has been a board member and community manager at Devoxx4Kids USA and running workshops for kids in Bay Area.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/WPM-1500\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/151d03570697cfee4f4a6ef69c2fb907377f49b8\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Nilay Yener\"}],\"id\":\"WPM-1500\",\"title\":\"How to be a Mentor to Bring More Girls to STEAM?\"}],\"company\":\"Google\",\"bio\":\"Nilay is a Program Manager at Flutter DevRel Team at Google. She has been a board member and community manager at Devoxx4Kids USA and running workshops for kids in Bay Area. \",\"lastName\":\"Yener\",\"firstName\":\"Nilay\",\"blog\":null,\"avatarURL\":\"https://lh5.googleusercontent.com/-AFlpF3GrGmc/AAAAAAAAAAI/AAAAAAAAFm8/72GcYhS1pcA/photo.jpg\",\"twitter\":\"@nlycskn\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-309433520",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:45 GMT"
+    }
+  },
+  "uuid" : "14f0637e-e67a-41be-89e7-704f4f9ae20d",
+  "persistent" : true,
+  "insertionIndex" : 259
+}

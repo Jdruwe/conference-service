@@ -1,0 +1,23 @@
+{
+  "id" : "7de8a043-cfa0-49fd-85a8-a1b6d575ceba",
+  "name" : "api_conferences_dvbe18_speakers_c4a9f157fcf0e4f29df2d01d1b49fd24e12a0714",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/c4a9f157fcf0e4f29df2d01d1b49fd24e12a0714",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"c4a9f157fcf0e4f29df2d01d1b49fd24e12a0714\",\"bioAsHtml\":\"<p>Simon is the Director of Developer Relations at Snyk, a Java Champion since 2014, JavaOne Rockstar speaker in 2014, Duke’s Choice award winner, Virtual JUG founder and organiser and London Java Community co-leader. He is an experienced speaker, having presented at JavaOne, JavaZone, Jfokus, DevoxxUK, DevoxxFR, JavaLand, JMaghreb and many more including many JUG tours. His passion is around user groups and communities. When not traveling, Simon enjoys spending quality time with his family, cooking and eating great food.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/TXS-3593\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/c4a9f157fcf0e4f29df2d01d1b49fd24e12a0714\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Simon Maple\"}],\"id\":\"TXS-3593\",\"title\":\"Switching on DevSecOps\"}],\"company\":\"Snyk\",\"bio\":\"Simon is the Director of Developer Relations at Snyk, a Java Champion since 2014, JavaOne Rockstar speaker in 2014, Duke’s Choice award winner, Virtual JUG founder and organiser and London Java Community co-leader. He is an experienced speaker, having presented at JavaOne, JavaZone, Jfokus, DevoxxUK, DevoxxFR, JavaLand, JMaghreb and many more including many JUG tours. His passion is around user groups and communities. When not traveling, Simon enjoys spending quality time with his family, cooking and eating great food.\",\"lastName\":\"Maple\",\"firstName\":\"Simon\",\"blog\":\"http://snyk.io\",\"avatarURL\":\"https://lh5.googleusercontent.com/-e-JfVzch2nY/AAAAAAAAAAI/AAAAAAAAAO8/OhC7zr1aP9Y/photo.jpg\",\"twitter\":\"@sjmaple\",\"lang\":\"en-GB\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1881211700",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:36 GMT"
+    }
+  },
+  "uuid" : "7de8a043-cfa0-49fd-85a8-a1b6d575ceba",
+  "persistent" : true,
+  "insertionIndex" : 167
+}

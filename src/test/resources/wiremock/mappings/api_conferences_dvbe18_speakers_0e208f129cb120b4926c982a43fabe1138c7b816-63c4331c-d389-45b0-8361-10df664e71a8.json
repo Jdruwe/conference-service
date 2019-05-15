@@ -1,0 +1,23 @@
+{
+  "id" : "63c4331c-d389-45b0-8361-10df664e71a8",
+  "name" : "api_conferences_dvbe18_speakers_0e208f129cb120b4926c982a43fabe1138c7b816",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/0e208f129cb120b4926c982a43fabe1138c7b816",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"0e208f129cb120b4926c982a43fabe1138c7b816\",\"bioAsHtml\":\"<p>Bruno is part of the Azure Cloud Developer Advocacy team at Microsoft and a long-time Java community member.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/NXA-9877\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/0e208f129cb120b4926c982a43fabe1138c7b816\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Bruno Borges\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/d38a0b2d49fec7f66ace5d5817a9359de138a3fa\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Jeff Hollan\"}],\"id\":\"NXA-9877\",\"title\":\"A peek behind the curtain of Serverless\"}],\"company\":\"Microsoft\",\"bio\":\"Bruno is part of the Azure Cloud Developer Advocacy team at Microsoft and a long-time Java community member. \",\"lastName\":\"Borges\",\"firstName\":\"Bruno\",\"blog\":\"https://about.me/brunoborges\",\"avatarURL\":\"https://lh6.googleusercontent.com/-VSsjzcs6Dz8/AAAAAAAAAAI/AAAAAAAAtzI/qawb-nOdS_k/photo.jpg\",\"twitter\":\"@brunoborges\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "702839696",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:48 GMT"
+    }
+  },
+  "uuid" : "63c4331c-d389-45b0-8361-10df664e71a8",
+  "persistent" : true,
+  "insertionIndex" : 285
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "70f5b039-b5a5-4f47-975a-1f7194e0c40a",
+  "name" : "api_conferences_dvbe18_speakers_74f5131beed4f12319f2a40bb89cae9e07541cb3",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/74f5131beed4f12319f2a40bb89cae9e07541cb3",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"74f5131beed4f12319f2a40bb89cae9e07541cb3\",\"bioAsHtml\":\"<p>Alex Rickabaugh is a software engineer at Google, and for the last three years has been a core member of the Angular team. Throughout his time on Angular, Alex has worked on the Service Worker implementation for Progressive Web Apps, server-side rendering support, and a rewrite of the HTTP API. Currently he works on the Angular Compiler, getting it ready for the next generation architecture, Angular Ivy.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Modern Web & UX.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/ENF-9465\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/74f5131beed4f12319f2a40bb89cae9e07541cb3\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Alex Rickabaugh\"}],\"id\":\"ENF-9465\",\"title\":\"An instruction set for the web\"}],\"company\":\"Google, Inc.\",\"bio\":\"Alex Rickabaugh is a software engineer at Google, and for the last three years has been a core member of the Angular team. Throughout his time on Angular, Alex has worked on the Service Worker implementation for Progressive Web Apps, server-side rendering support, and a rewrite of the HTTP API. Currently he works on the Angular Compiler, getting it ready for the next generation architecture, Angular Ivy.\",\"lastName\":\"Rickabaugh\",\"firstName\":\"Alex\",\"blog\":null,\"avatarURL\":\"https://i.imgur.com/fCm12qF.jpg\",\"twitter\":\"@synalx\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1550108757",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:39 GMT"
+    }
+  },
+  "uuid" : "70f5b039-b5a5-4f47-975a-1f7194e0c40a",
+  "persistent" : true,
+  "insertionIndex" : 197
+}

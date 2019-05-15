@@ -1,0 +1,23 @@
+{
+  "id" : "b2a67ac2-f84f-468e-97da-12ac6e8a126d",
+  "name" : "api_conferences_dvbe18_speakers_82f7c66113c7ce4158be622212bfa2c6bff1ff83",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/82f7c66113c7ce4158be622212bfa2c6bff1ff83",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"82f7c66113c7ce4158be622212bfa2c6bff1ff83\",\"bioAsHtml\":\"<p>Ben Wilcock is a Senior Solutions Architect for Pivotal Labs and helps Pivotal’s Fortune 500 clients to go cloud-native using the Pivotal Application Service (PAS) and Pivotal Container Service (PKS). Ben has a passion for CQRS, event sourcing, microservices, cloud, and mobile applications. He&#x27;s also an established technology blogger whose articles have featured in DZone, Java Code Geeks, InfoQ, The Spring Blog and more. You can follow him on Twitter (@benbravo73) and read his blog: https://benwilcock.wordpress.com/</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/RSA-5914\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/82f7c66113c7ce4158be622212bfa2c6bff1ff83\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ben Wilcock\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/2796e347c7b1b17fe7fe16e514660f689e5cb355\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Steven van Beelen\"}],\"id\":\"RSA-5914\",\"title\":\"Pivotal and AxonIQ - Quickstart your Event Driven Architecture\"}],\"company\":\"Pivotal\",\"bio\":\"Ben Wilcock is a Senior Solutions Architect for Pivotal Labs and helps Pivotal’s Fortune 500 clients to go cloud-native using the Pivotal Application Service (PAS) and Pivotal Container Service (PKS). Ben has a passion for CQRS, event sourcing, microservices, cloud, and mobile applications. He's also an established technology blogger whose articles have featured in DZone, Java Code Geeks, InfoQ, The Spring Blog and more. You can follow him on Twitter (@benbravo73) and read his blog: https://benwilcock.wordpress.com/ \",\"lastName\":\"Wilcock\",\"firstName\":\"Ben\",\"blog\":null,\"avatarURL\":\"https://s3-eu-west-1.amazonaws.com/cfpdevoxx/belgium/speakers/BenWilcock.jpg\",\"twitter\":\"@benbravo73\",\"lang\":\"en\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1261870111",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:28 GMT"
+    }
+  },
+  "uuid" : "b2a67ac2-f84f-468e-97da-12ac6e8a126d",
+  "persistent" : true,
+  "insertionIndex" : 74
+}

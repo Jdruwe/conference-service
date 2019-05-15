@@ -1,0 +1,23 @@
+{
+  "id" : "9dc3991a-43e7-43da-8716-39ca8c7ee3ab",
+  "name" : "api_conferences_dvbe18_speakers_41fff4f5cd9c2959c24310d7a1c44cbe2cb19cb6",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/41fff4f5cd9c2959c24310d7a1c44cbe2cb19cb6",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"41fff4f5cd9c2959c24310d7a1c44cbe2cb19cb6\",\"bioAsHtml\":\"<p>Træfik&#x27;s Developer Advocate @ Containous &amp;&amp; Freelancer.\\nFormer Training Engineer @ CloudBees.\\nDocker mentor.\\nHuman stack focused. Rock climber. Passionated. Talk to me !</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/ORO-6131\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/41fff4f5cd9c2959c24310d7a1c44cbe2cb19cb6\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Damien Duportal\"}],\"id\":\"ORO-6131\",\"title\":\"Traefik: A Scalable and Highly Available Edge Router\"}],\"company\":\"@containous\",\"bio\":\"Træfik's Developer Advocate @ Containous && Freelancer.\\r\\nFormer Training Engineer @ CloudBees. \\r\\nDocker mentor. \\r\\nHuman stack focused. Rock climber. Passionated. Talk to me !\\r\\n\",\"lastName\":\"Duportal\",\"firstName\":\"Damien\",\"blog\":\"https://containo.us/\",\"avatarURL\":\"http://www.gravatar.com/avatar/da0509c09b512df9b024325437f76958\",\"twitter\":\"@DamienDuportal\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1935308487",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:35 GMT"
+    }
+  },
+  "uuid" : "9dc3991a-43e7-43da-8716-39ca8c7ee3ab",
+  "persistent" : true,
+  "insertionIndex" : 158
+}

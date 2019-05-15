@@ -1,0 +1,23 @@
+{
+  "id" : "78a37dfe-5ddd-49d6-bc2a-585cd9a1ab69",
+  "name" : "api_conferences_dvbe18_speakers_fff0c5b6085b5805cbba76d0de3e08fcbb384e5d",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/fff0c5b6085b5805cbba76d0de3e08fcbb384e5d",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"fff0c5b6085b5805cbba76d0de3e08fcbb384e5d\",\"bioAsHtml\":\"<p>Ricardo Lage is a software engineer with over 5 years of experience working on mobile apps. Over these years he has worked on his own apps, at Citymapper and currently at BlaBlaCar, where he is leading the Android development of a new service.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/GMH-7709\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/5dd5aacbde402a87bc425d45db189d9ce7f2dd5d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Antoine Tollenaere\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/fff0c5b6085b5805cbba76d0de3e08fcbb384e5d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ricardo Lage\"}],\"id\":\"GMH-7709\",\"title\":\"Centralizing Business Logic on the Server: How We Designed Presentation APIs\"}],\"company\":\"BlaBlaCar\",\"bio\":\"Ricardo Lage is a software engineer with over 5 years of experience working on mobile apps. Over these years he has worked on his own apps, at Citymapper and currently at BlaBlaCar, where he is leading the Android development of a new service. \",\"lastName\":\"Lage\",\"firstName\":\"Ricardo\",\"blog\":null,\"avatarURL\":\"https://www.gravatar.com/avatar/ecbe37507e4bc5ba2c56b9cf3ca5988b\",\"twitter\":\"@riclage\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-371708717",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:38 GMT"
+    }
+  },
+  "uuid" : "78a37dfe-5ddd-49d6-bc2a-585cd9a1ab69",
+  "persistent" : true,
+  "insertionIndex" : 180
+}

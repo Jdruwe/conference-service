@@ -1,0 +1,23 @@
+{
+  "id" : "cc83f04a-eb4d-4d9a-9903-8dc85b197403",
+  "name" : "api_conferences_dvbe18_speakers_518923203253fdad79de57c07b162f72338b6397",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/518923203253fdad79de57c07b162f72338b6397",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"518923203253fdad79de57c07b162f72338b6397\",\"bioAsHtml\":\"<p>Mark Heckler is a Pivotal Principal Technologist &amp; Spring Developer Advocate, conference speaker, published author, &amp; Java Champion focusing upon developing innovative production-ready software at velocity for the Cloud and IoT applications. He has worked with key players in the manufacturing, retail, medical, scientific, telecom, and financial industries and various public sector organizations to develop and deliver critical capabilities on time and on budget. Mark is an open source contributor and author/curator of a developer-focused blog (https://www.thehecklers.com) and an occasionally interesting Twitter account (@mkheck).</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Server Side Java.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/LPH-4584\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/518923203253fdad79de57c07b162f72338b6397\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Mark Heckler\"}],\"id\":\"LPH-4584\",\"title\":\"Full-stack Reactive Java with Project Reactor & Spring Boot 2\"}],\"company\":\"Pivotal\",\"bio\":\"Mark Heckler is a Pivotal Principal Technologist & Spring Developer Advocate, conference speaker, published author, & Java Champion focusing upon developing innovative production-ready software at velocity for the Cloud and IoT applications. He has worked with key players in the manufacturing, retail, medical, scientific, telecom, and financial industries and various public sector organizations to develop and deliver critical capabilities on time and on budget. Mark is an open source contributor and author/curator of a developer-focused blog (https://www.thehecklers.com) and an occasionally interesting Twitter account (@mkheck).\",\"lastName\":\"Heckler\",\"firstName\":\"Mark\",\"blog\":\"https://www.thehecklers.com\",\"avatarURL\":\"http://www.gravatar.com/avatar/394797f95420c4da4c84379f0d0b11c9\",\"twitter\":\"@mkheck\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1867190042",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:24 GMT"
+    }
+  },
+  "uuid" : "cc83f04a-eb4d-4d9a-9903-8dc85b197403",
+  "persistent" : true,
+  "insertionIndex" : 27
+}

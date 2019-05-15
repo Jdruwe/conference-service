@@ -1,0 +1,23 @@
+{
+  "id" : "65999dc2-be0e-4cfa-9d2f-77c1c9f9e44b",
+  "name" : "api_conferences_dvbe18_speakers_14140d38392a8d13e9a6b956b3854c9fca117eb3",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/14140d38392a8d13e9a6b956b3854c9fca117eb3",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"14140d38392a8d13e9a6b956b3854c9fca117eb3\",\"bioAsHtml\":\"<p>Henri Binsztok is the Chief Innovation Officer at WALLIX (Bloomberg: ALLIX:FP), which he joined after the acquisition of MLstate in 2016, a company he founded and led for 8 years. Henri speaks regularly at tech conferences and co-authored the O&#x27;Reilly Book: &quot;Opa: Up and Running&quot;. He created multiple software projects, including awless, a CLI for AWS that is a Winner of InfoWorld Best of Open Source Award 2017 and Top Developer Tool at StackShare; DataPeps, an easy-to-use End-to-End Encryption platform and the Opa language which pioneered several aspects of modern web application programming. Henri holds a PhD in Computer Science from Sorbonne in Paris, France. He received the French Ministry of Research Innovation Award in 2008.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/RSV-7655\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/14140d38392a8d13e9a6b956b3854c9fca117eb3\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Henri Binsztok\"}],\"id\":\"RSV-7655\",\"title\":\"Implement End-to-End Encryption in Your App in Just 50 Minutes\"}],\"company\":\"Wallix\",\"bio\":\"Henri Binsztok is the Chief Innovation Officer at WALLIX (Bloomberg: ALLIX:FP), which he joined after the acquisition of MLstate in 2016, a company he founded and led for 8 years. Henri speaks regularly at tech conferences and co-authored the O'Reilly Book: \\\"Opa: Up and Running\\\". He created multiple software projects, including awless, a CLI for AWS that is a Winner of InfoWorld Best of Open Source Award 2017 and Top Developer Tool at StackShare; DataPeps, an easy-to-use End-to-End Encryption platform and the Opa language which pioneered several aspects of modern web application programming. Henri holds a PhD in Computer Science from Sorbonne in Paris, France. He received the French Ministry of Research Innovation Award in 2008.\",\"lastName\":\"Binsztok\",\"firstName\":\"Henri\",\"blog\":\"https://wallix.com\",\"avatarURL\":\"https://www.gravatar.com/avatar/621666a5b875bb78781c9cdc0baaca9c\",\"twitter\":\"@henri_opa\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-847897099",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:27 GMT"
+    }
+  },
+  "uuid" : "65999dc2-be0e-4cfa-9d2f-77c1c9f9e44b",
+  "persistent" : true,
+  "insertionIndex" : 63
+}

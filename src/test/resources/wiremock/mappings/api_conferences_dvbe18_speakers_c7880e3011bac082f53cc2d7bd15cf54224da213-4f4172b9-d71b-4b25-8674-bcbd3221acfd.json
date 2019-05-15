@@ -1,0 +1,23 @@
+{
+  "id" : "4f4172b9-d71b-4b25-8674-bcbd3221acfd",
+  "name" : "api_conferences_dvbe18_speakers_c7880e3011bac082f53cc2d7bd15cf54224da213",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/c7880e3011bac082f53cc2d7bd15cf54224da213",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"c7880e3011bac082f53cc2d7bd15cf54224da213\",\"bioAsHtml\":\"<p>Sven Peters, Lead Evangelist, has been studying trends in software development for the last 10 years uncovering the cultural attributes to help teams effectively scale and drive innovation. He has 20 years experience in writing code, leading teams, and sharing his experience with thousands of developers at uncountable conferences in 25+ countries.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/QFG-1352\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/c7880e3011bac082f53cc2d7bd15cf54224da213\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Sven Peters\"}],\"id\":\"QFG-1352\",\"title\":\"Less Process, more Guidance with a Team Playbook\"}],\"company\":\"K15t\",\"bio\":\"Sven Peters, Lead Evangelist, has been studying trends in software development for the last 10 years uncovering the cultural attributes to help teams effectively scale and drive innovation. He has 20 years experience in writing code, leading teams, and sharing his experience with thousands of developers at uncountable conferences in 25+ countries.\",\"lastName\":\"Peters\",\"firstName\":\"Sven\",\"blog\":\"http://svenpet.com\",\"avatarURL\":\"https://svensuniverse.files.wordpress.com/2011/02/sven_peters_bio.jpg\",\"twitter\":\"@svenpet\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1134247245",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:48 GMT"
+    }
+  },
+  "uuid" : "4f4172b9-d71b-4b25-8674-bcbd3221acfd",
+  "persistent" : true,
+  "insertionIndex" : 278
+}

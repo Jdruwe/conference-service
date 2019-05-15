@@ -1,0 +1,23 @@
+{
+  "id" : "d6682722-51d3-407d-86b9-70b72c8cd7e9",
+  "name" : "api_conferences_dvbe18_speakers_c199a16d57aaee4d986c65d118d86e1beae5d363",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/c199a16d57aaee4d986c65d118d86e1beae5d363",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"c199a16d57aaee4d986c65d118d86e1beae5d363\",\"bioAsHtml\":\"<p>Roy van Rijn is a software developer at JPoint. He worked on miscellaneous projects and has given talks at conferences including JavaOne, Devoxx, Joy of Coding, J-Fall and J-Spring and many meetups. He blogs at https://www.royvanrijn.com and tweets from @royvanrijn. He is also the leader of the RotterdamJUG.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Mind the Geek.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/VGJ-4911\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/c199a16d57aaee4d986c65d118d86e1beae5d363\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Roy van Rijn\"}],\"id\":\"VGJ-4911\",\"title\":\"Untangling the mysteries of qubits\"}],\"company\":\"JPoint\",\"bio\":\"Roy van Rijn is a software developer at JPoint. He worked on miscellaneous projects and has given talks at conferences including JavaOne, Devoxx, Joy of Coding, J-Fall and J-Spring and many meetups. He blogs at https://www.royvanrijn.com and tweets from @royvanrijn. He is also the leader of the RotterdamJUG.\",\"lastName\":\"van Rijn\",\"firstName\":\"Roy\",\"blog\":\"http://www.royvanrijn.com\",\"avatarURL\":\"https://secure.gravatar.com/avatar/04f202879fdfca1e105d32545de7accb?size=750\",\"twitter\":\"@royvanrijn\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1726814981",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:49 GMT"
+    }
+  },
+  "uuid" : "d6682722-51d3-407d-86b9-70b72c8cd7e9",
+  "persistent" : true,
+  "insertionIndex" : 287
+}

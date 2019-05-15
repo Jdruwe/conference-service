@@ -1,0 +1,23 @@
+{
+  "id" : "0c936c2a-52c4-4bf5-8892-c31e203743d7",
+  "name" : "api_conferences_dvbe18_speakers_d1054b975ea621acd5b3c5e38f35ba94a9cf720f",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/d1054b975ea621acd5b3c5e38f35ba94a9cf720f",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"d1054b975ea621acd5b3c5e38f35ba94a9cf720f\",\"bioAsHtml\":\"<p>Robert is an active committer for Apache Maven and is the current Chairman of this project. On behalf of Maven he was a member of the expert group for JSR-376, aka project Jigsaw. He has done most of the implementations related to the new features since Java 9 that required changes in Maven plugins.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/PWQ-4888\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/d1054b975ea621acd5b3c5e38f35ba94a9cf720f\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Robert Scholte\"}],\"id\":\"PWQ-4888\",\"title\":\"Keeping up with Java made easy with Apache Maven\"},{\"talkType\":\"BOF\",\"track\":\"Programming languages.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/EVC-1727\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/d1054b975ea621acd5b3c5e38f35ba94a9cf720f\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Robert Scholte\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/d3ff621339c1c31cf3c02c9cf0dd313ee1d66ff4\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Karl Heinz Marbaise\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/dbf4782a4a5e5d73f7ee907a83afeb4f67b49453\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Hervé Boutemy\"}],\"id\":\"EVC-1727\",\"title\":\"Apache Maven BOF\"}],\"company\":\"Sourcegrounds\",\"bio\":\"Robert is an active committer for Apache Maven and is the current Chairman of this project. On behalf of Maven he was a member of the expert group for JSR-376, aka project Jigsaw. He has done most of the implementations related to the new features since Java 9 that required changes in Maven plugins.\",\"lastName\":\"Scholte\",\"firstName\":\"Robert\",\"blog\":\"http://rfscholte.wordpress.com\",\"avatarURL\":\"http://www.gravatar.com/avatar/d035aeb839495240c58bbb03992ceda8\",\"twitter\":\"@rfscholte\",\"lang\":\"nl-NL\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "756631760",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:26 GMT"
+    }
+  },
+  "uuid" : "0c936c2a-52c4-4bf5-8892-c31e203743d7",
+  "persistent" : true,
+  "insertionIndex" : 45
+}

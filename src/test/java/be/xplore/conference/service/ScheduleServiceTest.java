@@ -25,11 +25,17 @@ public class ScheduleServiceTest {
     @Autowired
     private ScheduleService scheduleService;
 
+    @Autowired
+    private RoomService roomService;
+
+    @Autowired
+    private SpeakerService speakerService;
+
     private Schedule schedule;
     private LocalDate date;
 
     @Before
-    public void setUp() {
+    public void init() {
         date = LocalDate.of(2018,11,13);
         schedule = new Schedule(date, DayOfWeek.TUESDAY);
     }

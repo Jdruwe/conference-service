@@ -1,0 +1,23 @@
+{
+  "id" : "0b222d50-5df7-4b6f-ba02-a01526a90e7e",
+  "name" : "api_conferences_dvbe18_speakers_94d38a2c38639dd4c38727e62d3b125094244544",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/94d38a2c38639dd4c38727e62d3b125094244544",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"94d38a2c38639dd4c38727e62d3b125094244544\",\"bioAsHtml\":\"<p>Geek, Senior Java architect, Android Dev, Kotlin enthusiast, work @ekito</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Hands-on Lab\",\"track\":\"Mobile & IoT.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/JCX-3863\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/94d38a2c38639dd4c38727e62d3b125094244544\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Laurent Baresse\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/aad30e21bb11c3009996d5cf960b352240f2397c\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Arnaud Giuliani\"}],\"id\":\"JCX-3863\",\"title\":\"Hands-on Android Architecture & Architecture Components\"}],\"company\":\"ekito\",\"bio\":\"Geek, Senior Java architect, Android Dev, Kotlin enthusiast, work @ekito\",\"lastName\":\"Baresse\",\"firstName\":\"Laurent\",\"blog\":\"https://www.ekito.fr/people/\",\"avatarURL\":\"https://lh5.googleusercontent.com/-QaMvBs8U3W4/AAAAAAAAAAI/AAAAAAAAAAo/XlIPb7_VbpU/photo.jpg\",\"twitter\":\"@Baresse\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-2006693116",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:33 GMT"
+    }
+  },
+  "uuid" : "0b222d50-5df7-4b6f-ba02-a01526a90e7e",
+  "persistent" : true,
+  "insertionIndex" : 131
+}

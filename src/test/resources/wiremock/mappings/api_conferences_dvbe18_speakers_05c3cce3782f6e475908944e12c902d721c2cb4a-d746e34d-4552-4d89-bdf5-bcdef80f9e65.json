@@ -1,0 +1,23 @@
+{
+  "id" : "d746e34d-4552-4d89-bdf5-bcdef80f9e65",
+  "name" : "api_conferences_dvbe18_speakers_05c3cce3782f6e475908944e12c902d721c2cb4a",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/05c3cce3782f6e475908944e12c902d721c2cb4a",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"05c3cce3782f6e475908944e12c902d721c2cb4a\",\"bioAsHtml\":\"<p>I am a marketing, developer relations, and product management professional with experience that demonstrates business acumen and a proven track record in strategizing, designing, and implementing the delivery of flagship marketing campaigns/events, software product strategies, and developer relations programs.  My core professional strengths are centered around creating global ecoystem plans, managing and building cross-functional teams, executing programs within budget guidelines, and using social media channels to drive corporate-level goals.</p>\\n\",\"acceptedTalks\":[],\"company\":\"Oracle, Corp\",\"bio\":\"I am a marketing, developer relations, and product management professional with experience that demonstrates business acumen and a proven track record in strategizing, designing, and implementing the delivery of flagship marketing campaigns/events, software product strategies, and developer relations programs.  My core professional strengths are centered around creating global ecoystem plans, managing and building cross-functional teams, executing programs within budget guidelines, and using social media channels to drive corporate-level goals.\",\"lastName\":\"Chander\",\"firstName\":\"Sharat\",\"blog\":\"http://openjdk.java.net/\",\"avatarURL\":\"http://blog.xebia.fr/images/devoxxuk-2014-logo.png\",\"twitter\":\"@Sharat_Chander\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "486006680",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:39 GMT"
+    }
+  },
+  "uuid" : "d746e34d-4552-4d89-bdf5-bcdef80f9e65",
+  "persistent" : true,
+  "insertionIndex" : 195
+}

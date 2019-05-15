@@ -1,0 +1,23 @@
+{
+  "id" : "243ead2e-0127-46b3-a9a7-a8df6d71f3e1",
+  "name" : "api_conferences_dvbe18_speakers_774d0f25362836375298c3a64a95f79195b203b7",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/774d0f25362836375298c3a64a95f79195b203b7",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"774d0f25362836375298c3a64a95f79195b203b7\",\"bioAsHtml\":\"<p>Ruben is a software development consultant at Xebia. He focusses on setting up frontend architectures and improving software development teams.</p>\\n<p>Originally he is a backend developer. Nowadays he leverages his software engineering skills to avoid having to rebuild the frontend every couple of years.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Modern Web & UX.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/XXT-8012\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/774d0f25362836375298c3a64a95f79195b203b7\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ruben Oostinga\"}],\"id\":\"XXT-8012\",\"title\":\"Turn your site into a Progressive Web App in a day\"}],\"company\":\"Xebia\",\"bio\":\"Ruben is a software development consultant at Xebia. He focusses on setting up frontend architectures and improving software development teams.\\r\\n\\r\\nOriginally he is a backend developer. Nowadays he leverages his software engineering skills to avoid having to rebuild the frontend every couple of years.\",\"lastName\":\"Oostinga\",\"firstName\":\"Ruben\",\"blog\":\"http://blog.xebia.com/author/roostinga/\",\"avatarURL\":\"https://www.gravatar.com/avatar/7053dc287dfcae489c9743e93ed87aac\",\"twitter\":\"@RubenOostinga\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1604167467",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:26 GMT"
+    }
+  },
+  "uuid" : "243ead2e-0127-46b3-a9a7-a8df6d71f3e1",
+  "persistent" : true,
+  "insertionIndex" : 47
+}

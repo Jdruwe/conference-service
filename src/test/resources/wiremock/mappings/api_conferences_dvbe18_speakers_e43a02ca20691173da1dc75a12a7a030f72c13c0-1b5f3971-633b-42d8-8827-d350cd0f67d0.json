@@ -1,0 +1,23 @@
+{
+  "id" : "1b5f3971-633b-42d8-8827-d350cd0f67d0",
+  "name" : "api_conferences_dvbe18_speakers_e43a02ca20691173da1dc75a12a7a030f72c13c0",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/e43a02ca20691173da1dc75a12a7a030f72c13c0",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"e43a02ca20691173da1dc75a12a7a030f72c13c0\",\"bioAsHtml\":\"<p>Oleg Šelajev is a developer advocate for the GraalVM project at Oracle Labs, which aims to make programs run faster and developers more productive. He helps to organize VirtualJUG, the online Java User Group, and a GDG chapter in Tartu, Estonia. Became a Java Champion in 2017. Loves pizza and playing chess. Favorite languages: Java, JavaScript, and Python. And Clojure. And Kotlin, and TypeScript. In general, Oleg loves all languages, compilers, and virtual machines.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Programming languages.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/FNS-6849\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/e43a02ca20691173da1dc75a12a7a030f72c13c0\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Oleg Šelajev\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/9d24c928e91ac666d17dca940a22448bc4b49eab\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Thomas Wuerthinger\"}],\"id\":\"FNS-6849\",\"title\":\"GraalVM: Run Programs Faster Anywhere\"},{\"talkType\":\"Deep Dive\",\"track\":\"Programming languages.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/CMV-7114\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/e43a02ca20691173da1dc75a12a7a030f72c13c0\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Oleg Šelajev\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/9d24c928e91ac666d17dca940a22448bc4b49eab\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Thomas Wuerthinger\"}],\"id\":\"CMV-7114\",\"title\":\"Deep dive into using GraalVM for Java and JavaScript developers\"}],\"company\":\"Oracle\",\"bio\":\"Oleg Šelajev is a developer advocate for the GraalVM project at Oracle Labs, which aims to make programs run faster and developers more productive. He helps to organize VirtualJUG, the online Java User Group, and a GDG chapter in Tartu, Estonia. Became a Java Champion in 2017. Loves pizza and playing chess. Favorite languages: Java, JavaScript, and Python. And Clojure. And Kotlin, and TypeScript. In general, Oleg loves all languages, compilers, and virtual machines.\",\"lastName\":\"Šelajev\",\"firstName\":\"Oleg\",\"blog\":\"https://plus.google.com/116361778010526695373\",\"avatarURL\":\"https://s3-eu-west-1.amazonaws.com/cfpdevoxx/belgium/speakers/OlegSelajev.jpeg\",\"twitter\":\"@shelajev\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "756178184",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:35 GMT"
+    }
+  },
+  "uuid" : "1b5f3971-633b-42d8-8827-d350cd0f67d0",
+  "persistent" : true,
+  "insertionIndex" : 155
+}

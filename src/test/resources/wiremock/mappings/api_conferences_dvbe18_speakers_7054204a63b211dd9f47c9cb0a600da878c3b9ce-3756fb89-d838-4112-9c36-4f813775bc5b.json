@@ -1,0 +1,23 @@
+{
+  "id" : "3756fb89-d838-4112-9c36-4f813775bc5b",
+  "name" : "api_conferences_dvbe18_speakers_7054204a63b211dd9f47c9cb0a600da878c3b9ce",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/7054204a63b211dd9f47c9cb0a600da878c3b9ce",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"7054204a63b211dd9f47c9cb0a600da878c3b9ce\",\"bioAsHtml\":\"<p>Developer Advocate for IBM Cloud Runtimes.</p>\\n<p>Long time IBM Java developer, leader and evangelist. DevOps practitioner (what ever that means) . I have been working on IBM Java SDKs and JVMs since Java was less than 1. Also had time to work on other things including representing IBM on various JSRs, being a committer on various open source projects including ones at Apache, Eclipse and OpenJDK. Also member of the Adopt OpenJDK group championing community involvement in OpenJDK. A seasoned speaker and regular presenter at JavaOne and other conferences on technical and software engineering topics.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/YHN-7922\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/7054204a63b211dd9f47c9cb0a600da878c3b9ce\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Steve Poole\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/ac63ccacfadd16102fe70327a20e2faa6933bca6\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Graham Charters\"}],\"id\":\"YHN-7922\",\"title\":\"Are you ready for Cloud Native Java\"},{\"talkType\":\"Conference\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/NAR-5215\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/cdf458af94a18a9ad4553fab5ae89c87483cedc6\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Daniel Bryant\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/7054204a63b211dd9f47c9cb0a600da878c3b9ce\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Steve Poole\"}],\"id\":\"NAR-5215\",\"title\":\"Are You Deploying and Operating with Security in Mind? Cloud, Containers and Collateral Damage\"}],\"company\":\"IBM\",\"bio\":\"Developer Advocate for IBM Cloud Runtimes.\\r\\n\\r\\nLong time IBM Java developer, leader and evangelist. DevOps practitioner (what ever that means) . I have been working on IBM Java SDKs and JVMs since Java was less than 1. Also had time to work on other things including representing IBM on various JSRs, being a committer on various open source projects including ones at Apache, Eclipse and OpenJDK. Also member of the Adopt OpenJDK group championing community involvement in OpenJDK. A seasoned speaker and regular presenter at JavaOne and other conferences on technical and software engineering topics.\",\"lastName\":\"Poole\",\"firstName\":\"Steve\",\"blog\":\"https://www.linkedin.com/in/steve-poole-47780310/detail/recent-activity/shares/\",\"avatarURL\":\"https://papercallio-production.s3.amazonaws.com/uploads/user/avatar/6476/me601x601.jpg\",\"twitter\":\"@spoole167\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1423049517",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:38 GMT"
+    }
+  },
+  "uuid" : "3756fb89-d838-4112-9c36-4f813775bc5b",
+  "persistent" : true,
+  "insertionIndex" : 185
+}

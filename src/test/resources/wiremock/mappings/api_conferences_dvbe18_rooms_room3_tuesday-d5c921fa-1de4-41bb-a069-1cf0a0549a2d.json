@@ -1,0 +1,23 @@
+{
+  "id" : "d5c921fa-1de4-41bb-a069-1cf0a0549a2d",
+  "name" : "api_conferences_dvbe18_rooms_room3_tuesday",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/rooms/Room3/tuesday",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"slots\":[]}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "v2-791456249257604",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/schedule>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:28 GMT"
+    }
+  },
+  "uuid" : "d5c921fa-1de4-41bb-a069-1cf0a0549a2d",
+  "persistent" : true,
+  "insertionIndex" : 72
+}

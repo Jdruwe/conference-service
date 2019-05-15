@@ -1,0 +1,23 @@
+{
+  "id" : "da7943ed-7d9d-4698-9dbf-b5aaa15f098d",
+  "name" : "api_conferences_dvbe18_speakers_ec730bcb63b4b092743263fbd50be260c2a62437",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/ec730bcb63b4b092743263fbd50be260c2a62437",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"ec730bcb63b4b092743263fbd50be260c2a62437\",\"bioAsHtml\":\"<p>Developer for 10 years, I&#x27;m interested in different langages, frameworks or Web technologies… ReactNative, ReactJS, Elastic, Scala, and PWA are currently my daily hobbies.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Modern Web & UX.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/XCZ-7253\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/ec730bcb63b4b092743263fbd50be260c2a62437\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Guillaume Soldera\"}],\"id\":\"XCZ-7253\",\"title\":\"Leaflet: it’s time to leave GoogleMaps\"},{\"talkType\":\"Deep Dive\",\"track\":\"Modern Web & UX.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/RUD-1687\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/ec730bcb63b4b092743263fbd50be260c2a62437\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Guillaume Soldera\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/1c67d2de8e86b5e360bc67885d55a91d8f54f4f1\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Fedi Salah\"}],\"id\":\"RUD-1687\",\"title\":\"Progressive Web Apps in action!\"}],\"company\":\"Serli\",\"bio\":\"Developer for 10 years, I'm interested in different langages, frameworks or Web technologies… ReactNative, ReactJS, Elastic, Scala, and PWA are currently my daily hobbies.\",\"lastName\":\"Soldera\",\"firstName\":\"Guillaume\",\"blog\":\"www.serli.com\",\"avatarURL\":\"https://drive.google.com/uc?export=view&id=1zLDVVpFlAcOXNbtsOKd_zgfoggurSuR8\",\"twitter\":\"@gsoldera\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-248385995",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:32 GMT"
+    }
+  },
+  "uuid" : "da7943ed-7d9d-4698-9dbf-b5aaa15f098d",
+  "persistent" : true,
+  "insertionIndex" : 120
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "300c7550-8797-407f-acfa-9817359f26d7",
+  "name" : "api_conferences_dvbe18_speakers_06664f19ef5e14174e3f4cf8a85ef9be9122348e",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/06664f19ef5e14174e3f4cf8a85ef9be9122348e",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"06664f19ef5e14174e3f4cf8a85ef9be9122348e\",\"bioAsHtml\":\"<p>I have been working for my own company IT Sky Consulting GmbH since 2007, mostly as contractor doing SW development, SW-architecture, and training, including teaching college lectures. I have a sound knowledge of programming languages such as Java, Scala, Cl Perl, Ruby, and C.</p>\\n<p>Born in 1965, I studied Mathematics and Informatics at the University of Karlsruhe. I worked in a research lab for computational methods in mathematics from 1992 to 1995. Since 1995 I have been based in Switzerland and has worked in various IT-related jobs and projects (mostly development, but also training, sw architecture, team lead, project lead, technical project lead, business analysis, testing, system administration, database administration, ...)</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Ignite\",\"track\":\"Mind the Geek.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/HTY-2542\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/06664f19ef5e14174e3f4cf8a85ef9be9122348e\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Karl Brodowsky\"}],\"id\":\"HTY-2542\",\"title\":\"Visiting Belgium: A cyclists perspective\"}],\"company\":\"IT Sky Consulting GmbH\",\"bio\":\"I have been working for my own company IT Sky Consulting GmbH since 2007, mostly as contractor doing SW development, SW-architecture, and training, including teaching college lectures. I have a sound knowledge of programming languages such as Java, Scala, Cl Perl, Ruby, and C.\\r\\n\\r\\nBorn in 1965, I studied Mathematics and Informatics at the University of Karlsruhe. I worked in a research lab for computational methods in mathematics from 1992 to 1995. Since 1995 I have been based in Switzerland and has worked in various IT-related jobs and projects (mostly development, but also training, sw architecture, team lead, project lead, technical project lead, business analysis, testing, system administration, database administration, ...)\",\"lastName\":\"Brodowsky\",\"firstName\":\"Karl\",\"blog\":\"https://brodowsky.it-sky.net/\",\"avatarURL\":\"https://lh5.googleusercontent.com/-KTwP0PpJcdQ/AAAAAAAAAAI/AAAAAAAAAHk/cEHIn4F48Vo/photo.jpg\",\"twitter\":\"@bk1_168\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1911804597",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:44 GMT"
+    }
+  },
+  "uuid" : "300c7550-8797-407f-acfa-9817359f26d7",
+  "persistent" : true,
+  "insertionIndex" : 244
+}

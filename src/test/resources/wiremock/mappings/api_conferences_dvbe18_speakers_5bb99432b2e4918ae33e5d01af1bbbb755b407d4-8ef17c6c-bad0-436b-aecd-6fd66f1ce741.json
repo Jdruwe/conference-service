@@ -1,0 +1,23 @@
+{
+  "id" : "8ef17c6c-bad0-436b-aecd-6fd66f1ce741",
+  "name" : "api_conferences_dvbe18_speakers_5bb99432b2e4918ae33e5d01af1bbbb755b407d4",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/5bb99432b2e4918ae33e5d01af1bbbb755b407d4",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"5bb99432b2e4918ae33e5d01af1bbbb755b407d4\",\"bioAsHtml\":\"<p>I&#x27;m Sam!</p>\\n<p>I&#x27;m a recent graduate of the University of Warwick. Currently, I help make cool things happen with Black Pepper Software in my role as a software developer.</p>\\n<p>When I&#x27;m not working (or nerding out over whatever side-project I&#x27;m working on), I maintain a couple of open-source GitHub repositories for a learning-to-program platform, attend as many hackathons as I can cram into my life, play and watch sports, and solve Rubik&#x27;s cubes as fast as I can.</p>\\n<p>I live and breathe software, and I&#x27;m a huge believer in coding for social good! I love chatting to anyone and everyone, hoping for new viewpoints to look at these problems from!</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/DIP-6064\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/5bb99432b2e4918ae33e5d01af1bbbb755b407d4\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Sam Warner\"}],\"id\":\"DIP-6064\",\"title\":\"Morality and Ethics - Caring is Everything\"}],\"company\":\"Black Pepper Software\",\"bio\":\"I'm Sam!\\r\\n\\r\\nI'm a recent graduate of the University of Warwick. Currently, I help make cool things happen with Black Pepper Software in my role as a software developer.\\r\\n\\r\\nWhen I'm not working (or nerding out over whatever side-project I'm working on), I maintain a couple of open-source GitHub repositories for a learning-to-program platform, attend as many hackathons as I can cram into my life, play and watch sports, and solve Rubik's cubes as fast as I can.\\r\\n\\r\\nI live and breathe software, and I'm a huge believer in coding for social good! I love chatting to anyone and everyone, hoping for new viewpoints to look at these problems from!\",\"lastName\":\"Warner\",\"firstName\":\"Sam\",\"blog\":\"www.blackpepper.co.uk\",\"avatarURL\":\"https://avatars1.githubusercontent.com/u/18708612?s=400&v=4\",\"twitter\":\"@sjwarner_\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-11597364",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:34 GMT"
+    }
+  },
+  "uuid" : "8ef17c6c-bad0-436b-aecd-6fd66f1ce741",
+  "persistent" : true,
+  "insertionIndex" : 139
+}

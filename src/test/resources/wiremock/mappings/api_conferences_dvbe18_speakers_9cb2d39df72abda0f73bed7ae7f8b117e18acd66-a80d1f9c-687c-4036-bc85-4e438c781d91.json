@@ -1,0 +1,23 @@
+{
+  "id" : "a80d1f9c-687c-4036-bc85-4e438c781d91",
+  "name" : "api_conferences_dvbe18_speakers_9cb2d39df72abda0f73bed7ae7f8b117e18acd66",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/9cb2d39df72abda0f73bed7ae7f8b117e18acd66",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"9cb2d39df72abda0f73bed7ae7f8b117e18acd66\",\"bioAsHtml\":\"<p>Principal architect at Senacor Technologies with a history of + 16 years of working in various projects using a bunch of different stacks and environments.</p>\\n<p>Current focus is on migrating architectures and organizations to cloud and serverless platforms.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/ANX-9706\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/9cb2d39df72abda0f73bed7ae7f8b117e18acd66\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"David Schmitz\"}],\"id\":\"ANX-9706\",\"title\":\"Event Sourcing - You are doing it wrong\"}],\"company\":\"Senacor Technologies\",\"bio\":\"Principal architect at Senacor Technologies with a history of + 16 years of working in various projects using a bunch of different stacks and environments.\\r\\n\\r\\nCurrent focus is on migrating architectures and organizations to cloud and serverless platforms.\",\"lastName\":\"Schmitz\",\"firstName\":\"David\",\"blog\":\"https://senacor.com\",\"avatarURL\":\"https://avatars0.githubusercontent.com/u/292282?s=460&v=4\",\"twitter\":\"@koenighotze\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1829085623",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:27 GMT"
+    }
+  },
+  "uuid" : "a80d1f9c-687c-4036-bc85-4e438c781d91",
+  "persistent" : true,
+  "insertionIndex" : 61
+}

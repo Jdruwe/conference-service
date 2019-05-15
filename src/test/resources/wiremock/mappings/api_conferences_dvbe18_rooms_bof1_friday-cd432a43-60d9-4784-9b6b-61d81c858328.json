@@ -1,0 +1,23 @@
+{
+  "id" : "cd432a43-60d9-4784-9b6b-61d81c858328",
+  "name" : "api_conferences_dvbe18_rooms_bof1_friday",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/rooms/BOF1/friday",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"slots\":[{\"roomId\":\"BOF1\",\"notAllocated\":false,\"fromTimeMillis\":1542360900000,\"break\":null,\"roomSetup\":\"classroom\",\"talk\":{\"trackId\":\"Mind the Geek\",\"talkType\":\"BOF\",\"track\":\"Mind the Geek.label\",\"audienceLevel\":\"l1\",\"summaryAsHtml\":\"<p>Now if you don't speak French, that's going to be tough. But if you do understand French, come join the French speaking community for the live event of Les Cast Codeurs podcast.</p>\\n<p>Les Cast Codeurs is a podcast by not so young developers that discuss the state of the Java ecosystem and the development community in general. We give news, we give opinions, we joke, we use 4 spaces for indenting, we use vim, we like strongly coupled monoliths written in weakly statically compiled bash scripts, we like the programming motherfucker manifesto.</p>\\n\",\"id\":\"NKJ-9530\",\"speakers\":[{\"link\":{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/05afda51d686bab49c8687025d0b07b00ce45a0b\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Emmanuel Bernard\"},\"name\":\"Emmanuel Bernard\"},{\"link\":{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/8af78fa5cf9450329a3ecbceb4038823681de4a7\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Audrey Neveu\"},\"name\":\"Audrey Neveu\"},{\"link\":{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6a635bdc45a8266a5fb300f214f9207c4f399f6d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Guillaume Laforge\"},\"name\":\"Guillaume Laforge\"},{\"link\":{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/f3a48bb49697608a0ccd8f8fa1bb08b0f606296b\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Vincent Massol\"},\"name\":\"Vincent Massol\"}],\"title\":\"Les Cast Codeurs Podcast: (with|by|for|of) developers\",\"lang\":\"en\",\"summary\":\"Now if you don't speak French, that's going to be tough. But if you do understand French, come join the French speaking community for the live event of Les Cast Codeurs podcast.\\r\\n\\r\\nLes Cast Codeurs is a podcast by not so young developers that discuss the state of the Java ecosystem and the development community in general. We give news, we give opinions, we joke, we use 4 spaces for indenting, we use vim, we like strongly coupled monoliths written in weakly statically compiled bash scripts, we like the programming motherfucker manifesto.\"},\"fromTime\":\"10:35\",\"toTimeMillis\":1542364500000,\"toTime\":\"11:35\",\"roomCapacity\":70,\"roomName\":\"BOF 1\",\"slotId\":\"bof_BOF1_friday_16_10h35_11h35\",\"day\":\"friday\"}]}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "v2-20443441406005538",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/schedule>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:45 GMT"
+    }
+  },
+  "uuid" : "cd432a43-60d9-4784-9b6b-61d81c858328",
+  "persistent" : true,
+  "insertionIndex" : 260
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "b251bbd1-d90f-40db-8dd2-be61796d63f5",
+  "name" : "api_conferences_dvbe18_speakers_a6998d75a88dfaed52aae5bbbe7f402b5515f85a",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/a6998d75a88dfaed52aae5bbbe7f402b5515f85a",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"a6998d75a88dfaed52aae5bbbe7f402b5515f85a\",\"bioAsHtml\":\"<p>Kevin Rushforth is a member of the Oracle Java Team and is the project lead for the OpenJFX project on OpenJDK.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/PAZ-3181\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/a6998d75a88dfaed52aae5bbbe7f402b5515f85a\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Kevin Rushforth\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/4bd12c1233e3f991ddc936c8cac93e086f834a31\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Johan Vos\"}],\"id\":\"PAZ-3181\",\"title\":\"JavaFX.next\"}],\"company\":\"Oracle\",\"bio\":\"Kevin Rushforth is a member of the Oracle Java Team and is the project lead for the OpenJFX project on OpenJDK.\",\"lastName\":\"Rushforth\",\"firstName\":\"Kevin\",\"blog\":null,\"avatarURL\":\"https://openjfx.io/images/Rushforth.jpg\",\"twitter\":null,\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "2677872",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:33 GMT"
+    }
+  },
+  "uuid" : "b251bbd1-d90f-40db-8dd2-be61796d63f5",
+  "persistent" : true,
+  "insertionIndex" : 133
+}

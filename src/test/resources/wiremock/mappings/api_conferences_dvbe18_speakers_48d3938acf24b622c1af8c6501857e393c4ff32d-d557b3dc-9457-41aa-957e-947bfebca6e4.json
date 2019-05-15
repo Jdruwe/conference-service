@@ -1,0 +1,23 @@
+{
+  "id" : "d557b3dc-9457-41aa-957e-947bfebca6e4",
+  "name" : "api_conferences_dvbe18_speakers_48d3938acf24b622c1af8c6501857e393c4ff32d",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/48d3938acf24b622c1af8c6501857e393c4ff32d",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"48d3938acf24b622c1af8c6501857e393c4ff32d\",\"bioAsHtml\":\"<p>Gerard Maas is a senior software engineer at Lightbend, where he contributes to the Fast Data Platform and focuses on the integration of stream processing technologies. Previously, he held leading roles at several startups and large enterprises, building data science governance, cloud-native IoT platforms, and scalable APIs. He is the coauthor of Stream Processing with Apache Spark from O’Reilly. Gerard is a frequent speaker and contributes to small and large open source projects. In his free time, he tinkers with drones and builds personal IoT projects.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/RUF-4827\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/48d3938acf24b622c1af8c6501857e393c4ff32d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Gerard Maas\"}],\"id\":\"RUF-4827\",\"title\":\"Processing Fast Data with Apache Spark: The Tale of Two Streaming APIs\"}],\"company\":\"Lightbend\",\"bio\":\"Gerard Maas is a senior software engineer at Lightbend, where he contributes to the Fast Data Platform and focuses on the integration of stream processing technologies. Previously, he held leading roles at several startups and large enterprises, building data science governance, cloud-native IoT platforms, and scalable APIs. He is the coauthor of Stream Processing with Apache Spark from O’Reilly. Gerard is a frequent speaker and contributes to small and large open source projects. In his free time, he tinkers with drones and builds personal IoT projects.\",\"lastName\":\"Maas\",\"firstName\":\"Gerard\",\"blog\":\"https://www.lightbend.com/products/fast-data-platform\",\"avatarURL\":\"https://lh6.googleusercontent.com/-OUTPrNFl7DM/AAAAAAAAAAI/AAAAAAAAKCM/x7dM7OgjDcs/photo.jpg\",\"twitter\":\"@maasg\",\"lang\":\"nl\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-361393027",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:32 GMT"
+    }
+  },
+  "uuid" : "d557b3dc-9457-41aa-957e-947bfebca6e4",
+  "persistent" : true,
+  "insertionIndex" : 113
+}

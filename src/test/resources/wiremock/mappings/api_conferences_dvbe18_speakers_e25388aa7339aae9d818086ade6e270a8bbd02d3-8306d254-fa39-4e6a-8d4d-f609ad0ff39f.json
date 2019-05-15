@@ -1,0 +1,23 @@
+{
+  "id" : "8306d254-fa39-4e6a-8d4d-f609ad0ff39f",
+  "name" : "api_conferences_dvbe18_speakers_e25388aa7339aae9d818086ade6e270a8bbd02d3",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/e25388aa7339aae9d818086ade6e270a8bbd02d3",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"e25388aa7339aae9d818086ade6e270a8bbd02d3\",\"bioAsHtml\":\"<p>Senior Software engineer and consultant around JVM and related technologies. Prefer automation over manual configurations. Keen on continuous delivery, unit testing and code simplicity. Interested in developing applications that requires creativity, imagination, fast-learning and zest for putting theory into code.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/HKL-0782\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/e25388aa7339aae9d818086ade6e270a8bbd02d3\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Nakul Mishra\"}],\"id\":\"HKL-0782\",\"title\":\"Demystifying Kafka\"}],\"company\":\"Casumo\",\"bio\":\"Senior Software engineer and consultant around JVM and related technologies. Prefer automation over manual configurations. Keen on continuous delivery, unit testing and code simplicity. Interested in developing applications that requires creativity, imagination, fast-learning and zest for putting theory into code.\",\"lastName\":\"Mishra\",\"firstName\":\"Nakul\",\"blog\":\"http://nklmish.wordpress.com/\",\"avatarURL\":\"https://s3-eu-west-1.amazonaws.com/cfpdevoxx/belgium/speakers/NakulMishra.jpg\",\"twitter\":\"@nklmish\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1485724505",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:32 GMT"
+    }
+  },
+  "uuid" : "8306d254-fa39-4e6a-8d4d-f609ad0ff39f",
+  "persistent" : true,
+  "insertionIndex" : 119
+}

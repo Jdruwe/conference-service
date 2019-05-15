@@ -1,0 +1,23 @@
+{
+  "id" : "70f34e10-cf6d-45eb-b37c-2c9bb16e1e2f",
+  "name" : "api_conferences_dvbe18_speakers_d235d137d2dae3e5ff511bc1b4d1fce34af0f8a7",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/d235d137d2dae3e5ff511bc1b4d1fce34af0f8a7",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"d235d137d2dae3e5ff511bc1b4d1fce34af0f8a7\",\"bioAsHtml\":\"<p>Software Engineer at Microsoft, working on container stuff on Azure. Canadian.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/JHG-7125\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/d235d137d2dae3e5ff511bc1b4d1fce34af0f8a7\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Matthew Fisher\"}],\"id\":\"JHG-7125\",\"title\":\"Helm Yeah! - An Introduction to Helm\"}],\"company\":\"@microsoft\",\"bio\":\"Software Engineer at Microsoft, working on container stuff on Azure. Canadian.\",\"lastName\":\"Fisher\",\"firstName\":\"Matthew\",\"blog\":\"http://blog.bacongobbler.com\",\"avatarURL\":\"https://pbs.twimg.com/profile_images/837901727969898498/Iusaea5m_400x400.jpg\",\"twitter\":\"@bacongobbler\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-672399950",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:31 GMT"
+    }
+  },
+  "uuid" : "70f34e10-cf6d-45eb-b37c-2c9bb16e1e2f",
+  "persistent" : true,
+  "insertionIndex" : 107
+}

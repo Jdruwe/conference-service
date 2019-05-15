@@ -1,0 +1,23 @@
+{
+  "id" : "82482a9f-a1c0-4169-a0d3-8dd2e355c07f",
+  "name" : "api_conferences_dvbe18_speakers_2bdeb54b47c914bbf0fdb00fe4a9c18ac28484a8",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/2bdeb54b47c914bbf0fdb00fe4a9c18ac28484a8",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"2bdeb54b47c914bbf0fdb00fe4a9c18ac28484a8\",\"bioAsHtml\":\"<p>Eugene is a software developer, Ph.D., speaker, and blogger. He is working at JetBrains and contributing to open source. His passion includes software architecture, server-side, clouds and production, programming languages. Eugene speaks and works with Java, Kotlin, Go, .NET, Web, C/C++. He has been a Kotlin fun for years and completed his first production Kotlin code back in 2013</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/UQE-1794\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/2bdeb54b47c914bbf0fdb00fe4a9c18ac28484a8\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Eugene Petrenko\"}],\"id\":\"UQE-1794\",\"title\":\"Opsless DevOps\"},{\"talkType\":\"Deep Dive\",\"track\":\"Programming languages.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/QCM-9359\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/2bdeb54b47c914bbf0fdb00fe4a9c18ac28484a8\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Eugene Petrenko\"}],\"id\":\"QCM-9359\",\"title\":\"Kotlin Deep Dive\"}],\"company\":\"JetBrains\",\"bio\":\"Eugene is a software developer, Ph.D., speaker, and blogger. He is working at JetBrains and contributing to open source. His passion includes software architecture, server-side, clouds and production, programming languages. Eugene speaks and works with Java, Kotlin, Go, .NET, Web, C/C++. He has been a Kotlin fun for years and completed his first production Kotlin code back in 2013\",\"lastName\":\"Petrenko\",\"firstName\":\"Eugene\",\"blog\":\"https://jonnyzzz.com\",\"avatarURL\":\"https://github.com/jonnyzzz/jonnyzzz.com/raw/master/images/ms-icon-310x310.png\",\"twitter\":\"@jonnyzzz\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-730319352",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:36 GMT"
+    }
+  },
+  "uuid" : "82482a9f-a1c0-4169-a0d3-8dd2e355c07f",
+  "persistent" : true,
+  "insertionIndex" : 163
+}

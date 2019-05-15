@@ -1,0 +1,23 @@
+{
+  "id" : "3106d661-3d74-494b-a3ab-c644754f81bc",
+  "name" : "api_conferences_dvbe18_speakers_11fa1c4b33e886d8bf2e0ff2f6df170ff1b1ea7b",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/11fa1c4b33e886d8bf2e0ff2f6df170ff1b1ea7b",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"11fa1c4b33e886d8bf2e0ff2f6df170ff1b1ea7b\",\"bioAsHtml\":\"<p>Vincent is Engineering Manager for Trello at Atlassian, looking after scalability and performance. Before that, he led the team which was responsible for moving Atlassian&#x27;s identity systems towards a microservice architecture. When not thinking about software, Vincent likes a good game of lunchtime soccer in the park with fellow Atlassians.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/TKI-5901\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/11fa1c4b33e886d8bf2e0ff2f6df170ff1b1ea7b\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Vincent Kok\"}],\"id\":\"TKI-5901\",\"title\":\"Why you're failing your remote workers\"}],\"company\":\"Atlassian\",\"bio\":\"Vincent is Engineering Manager for Trello at Atlassian, looking after scalability and performance. Before that, he led the team which was responsible for moving Atlassian's identity systems towards a microservice architecture. When not thinking about software, Vincent likes a good game of lunchtime soccer in the park with fellow Atlassians.\",\"lastName\":\"Kok\",\"firstName\":\"Vincent\",\"blog\":\"www.atlassian.com\",\"avatarURL\":\"https://www.gravatar.com/avatar/cb32049e633ea99d1c5a05dbde91c87e\",\"twitter\":\"@vincentkok\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1520681708",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:42 GMT"
+    }
+  },
+  "uuid" : "3106d661-3d74-494b-a3ab-c644754f81bc",
+  "persistent" : true,
+  "insertionIndex" : 232
+}

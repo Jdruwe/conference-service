@@ -1,0 +1,23 @@
+{
+  "id" : "a75b3bad-91b4-4683-8414-6bb23e4d87d4",
+  "name" : "api_conferences_dvbe18_speakers_e5e33035a476a76fcbb80a645b55a9cc524dcdbc",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/e5e33035a476a76fcbb80a645b55a9cc524dcdbc",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"e5e33035a476a76fcbb80a645b55a9cc524dcdbc\",\"bioAsHtml\":\"<p>Java Champion, CDI 2.0 spec lead, I&#x27;m also involved in MicroProfile and various projects linked to CDI ecosystem development and thus Java EE and EE4J.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Server Side Java.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/WJT-1250\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/b32e73d3b070f325d520e8908113abf600da0e0a\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Emily Jiang\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/e5e33035a476a76fcbb80a645b55a9cc524dcdbc\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Antoine Sabot-Durand\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/f67ea85f674b2d160e2d9d35f5f9c9888115568c\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ondro Mihályi\"}],\"id\":\"WJT-1250\",\"title\":\"MicroProfile: Past, Present and Future \"}],\"company\":\"Red Hat\",\"bio\":\"Java Champion, CDI 2.0 spec lead, I'm also involved in MicroProfile and various projects linked to CDI ecosystem development and thus Java EE and EE4J. \",\"lastName\":\"Sabot-Durand\",\"firstName\":\"Antoine\",\"blog\":\"http://www.next-presso.com\",\"avatarURL\":\"http://www.gravatar.com/avatar/98d0697142b0d75568acf12b2767b01c\",\"twitter\":\"@antoine_sd\",\"lang\":\"fr-FR\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1513072931",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:43 GMT"
+    }
+  },
+  "uuid" : "a75b3bad-91b4-4683-8414-6bb23e4d87d4",
+  "persistent" : true,
+  "insertionIndex" : 235
+}

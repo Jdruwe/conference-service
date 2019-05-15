@@ -1,0 +1,23 @@
+{
+  "id" : "7fa2a289-cb07-4263-aaab-8999d741e25a",
+  "name" : "api_conferences_dvbe18_speakers_9d24c928e91ac666d17dca940a22448bc4b49eab",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/9d24c928e91ac666d17dca940a22448bc4b49eab",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"9d24c928e91ac666d17dca940a22448bc4b49eab\",\"bioAsHtml\":\"<p>Thomas Wuerthinger is a Senior Research Director at Oracle Labs leading programming language implementation teams for languages including Java, JavaScript, Python, Ruby, and R. He is the architect of the GraalVM polyglot runtime. Previously, he worked on the V8 JavaScript engine at Google, and the Maxine research virtual machine at Sun Microsystems. He received a PhD degree from JKU Linz for his research about dynamic code evolution.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Programming languages.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/FNS-6849\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/e43a02ca20691173da1dc75a12a7a030f72c13c0\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Oleg Šelajev\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/9d24c928e91ac666d17dca940a22448bc4b49eab\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Thomas Wuerthinger\"}],\"id\":\"FNS-6849\",\"title\":\"GraalVM: Run Programs Faster Anywhere\"},{\"talkType\":\"Deep Dive\",\"track\":\"Programming languages.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/CMV-7114\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/e43a02ca20691173da1dc75a12a7a030f72c13c0\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Oleg Šelajev\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/9d24c928e91ac666d17dca940a22448bc4b49eab\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Thomas Wuerthinger\"}],\"id\":\"CMV-7114\",\"title\":\"Deep dive into using GraalVM for Java and JavaScript developers\"}],\"company\":\"Oracle Labs\",\"bio\":\"Thomas Wuerthinger is a Senior Research Director at Oracle Labs leading programming language implementation teams for languages including Java, JavaScript, Python, Ruby, and R. He is the architect of the GraalVM polyglot runtime. Previously, he worked on the V8 JavaScript engine at Google, and the Maxine research virtual machine at Sun Microsystems. He received a PhD degree from JKU Linz for his research about dynamic code evolution.\",\"lastName\":\"Wuerthinger\",\"firstName\":\"Thomas\",\"blog\":\"http://www.wuerthinger.net\",\"avatarURL\":\"http://www.gravatar.com/avatar/00d62b08470577c921552e3a8e41632d\",\"twitter\":\"@thomaswue\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-15461699",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:35 GMT"
+    }
+  },
+  "uuid" : "7fa2a289-cb07-4263-aaab-8999d741e25a",
+  "persistent" : true,
+  "insertionIndex" : 156
+}

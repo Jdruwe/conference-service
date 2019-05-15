@@ -1,0 +1,23 @@
+{
+  "id" : "f5a9153e-85e1-4e64-8738-ae790572a302",
+  "name" : "api_conferences_dvbe18_speakers_485043925eca47dd66470b801e45380eb5f816a5",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/485043925eca47dd66470b801e45380eb5f816a5",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"485043925eca47dd66470b801e45380eb5f816a5\",\"bioAsHtml\":\"<p>Joakim is a technical team lead with the Nordic consultancy Knowit, currently digging deep into modernizing the sales and ticketing solutions for rail operators in Norway as well as creating a national travel planning service across all public transport modes. He is passionate about the possibilities of AI/machine learning and building an awesome team culture with his colleagues.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Deep Dive\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/NQB-4188\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/485043925eca47dd66470b801e45380eb5f816a5\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Joakim Lehn\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/ea52c775d6049c9d5e3e327dee8d647e20799a30\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Manu Gopinathan\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/27d1a35d487d530572154257ce4e08de4d3cb870\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Malte Loller-Andersen\"}],\"id\":\"NQB-4188\",\"title\":\"Create Your Own Music Recommendation System Using Machine Learning\"},{\"talkType\":\"Quickie\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/GIM-3918\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/485043925eca47dd66470b801e45380eb5f816a5\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Joakim Lehn\"}],\"id\":\"GIM-3918\",\"title\":\"Machine learning algorithms, choosing the correct algorithm for your problem\"}],\"company\":\"Knowit\",\"bio\":\"Joakim is a technical team lead with the Nordic consultancy Knowit, currently digging deep into modernizing the sales and ticketing solutions for rail operators in Norway as well as creating a national travel planning service across all public transport modes. He is passionate about the possibilities of AI/machine learning and building an awesome team culture with his colleagues. \",\"lastName\":\"Lehn\",\"firstName\":\"Joakim\",\"blog\":null,\"avatarURL\":\"https://www.gravatar.com/avatar/de855e8f68be21aaab4541345ae0380d\",\"twitter\":null,\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1237630559",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:46 GMT"
+    }
+  },
+  "uuid" : "f5a9153e-85e1-4e64-8738-ae790572a302",
+  "persistent" : true,
+  "insertionIndex" : 269
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "9b6b28cd-b825-481b-a7aa-9d0dcd336d94",
+  "name" : "api_conferences_dvbe18_speakers_44a79797e2acb1d1b5e87ecb342788b1642f32f8",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/44a79797e2acb1d1b5e87ecb342788b1642f32f8",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"44a79797e2acb1d1b5e87ecb342788b1642f32f8\",\"bioAsHtml\":\"<p>Ben is a technologist in the Office of CTO at Confluent Inc (a company backing the popular Apache Kafka messaging system). He has two decades of experience in the field and has focused on distributed data infrastructure for the latter half He&#x27;s the author of the book &quot;Designing Event Driven Systems,&quot; O&#x27;Reilly, 2018. Find out more at http://benstopford.com.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/SXM-2997\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/44a79797e2acb1d1b5e87ecb342788b1642f32f8\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ben Stopford\"}],\"id\":\"SXM-2997\",\"title\":\"Streaming Data for the Cloud Native Generation\"}],\"company\":\"Confluent\",\"bio\":\"Ben is a technologist in the Office of CTO at Confluent Inc (a company backing the popular Apache Kafka messaging system). He has two decades of experience in the field and has focused on distributed data infrastructure for the latter half He's the author of the book \\\"Designing Event Driven Systems,\\\" O'Reilly, 2018. Find out more at http://benstopford.com.\",\"lastName\":\"Stopford\",\"firstName\":\"Ben\",\"blog\":null,\"avatarURL\":\"https://pbs.twimg.com/profile_images/725883849004044288/oB82Mxf-_400x400.jpg\",\"twitter\":\"@benstopford\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1683309516",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:49 GMT"
+    }
+  },
+  "uuid" : "9b6b28cd-b825-481b-a7aa-9d0dcd336d94",
+  "persistent" : true,
+  "insertionIndex" : 289
+}

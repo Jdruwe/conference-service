@@ -1,0 +1,23 @@
+{
+  "id" : "d92e0aa6-df43-48e3-8030-dd662ffad0dc",
+  "name" : "api_conferences_dvbe18_speakers_5bbbccbb5e380673139e8b743583a007e87838bf",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/5bbbccbb5e380673139e8b743583a007e87838bf",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"5bbbccbb5e380673139e8b743583a007e87838bf\",\"bioAsHtml\":\"<p>Ron de Jong is a Senior Sales Engineer, part of the Software Integrity Group at Synopsys. Synopsys helps organisations worldwide to build secure, high-quality software faster.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/KBS-3133\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/5bbbccbb5e380673139e8b743583a007e87838bf\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ron De Jong\"}],\"id\":\"KBS-3133\",\"title\":\"Open Source Supply Chains and Consumption Risk - Governance, Containers & Trust\"}],\"company\":\"Synopsys\",\"bio\":\"Ron de Jong is a Senior Sales Engineer, part of the Software Integrity Group at Synopsys. Synopsys helps organisations worldwide to build secure, high-quality software faster.\\r\\n\\r\\n\",\"lastName\":\"De Jong\",\"firstName\":\"Ron\",\"blog\":null,\"avatarURL\":\"https://s3-eu-west-1.amazonaws.com/cfpdevoxx/belgium/speakers/rondejong2.jpg\",\"twitter\":null,\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-417345303",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:40 GMT"
+    }
+  },
+  "uuid" : "d92e0aa6-df43-48e3-8030-dd662ffad0dc",
+  "persistent" : true,
+  "insertionIndex" : 211
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "6e3a4291-866d-4513-82b7-dbe5e04b8d15",
+  "name" : "api_conferences_dvbe18_speakers_f52b2b1edecb0fe4358703c4d6506e76c7f2c4a0",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/f52b2b1edecb0fe4358703c4d6506e76c7f2c4a0",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"f52b2b1edecb0fe4358703c4d6506e76c7f2c4a0\",\"bioAsHtml\":\"<p>Alessandro has been a committed Functional Programmer for 10 years, originally in Haskell and now in Scala. He is a Functional Programming evangelist at ING Bank where he maintains the core libraries and frameworks for the API Platform and trains colleagues in functional and reactive programming with Scala and Akka, and gets excited by opportunities to remove redundant code through abstraction.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/KIB-7932\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/f52b2b1edecb0fe4358703c4d6506e76c7f2c4a0\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Alessandro Vermeulen\"}],\"id\":\"KIB-7932\",\"title\":\"Building a Resilient, Secure, and Maintainable API Platform (using Finagle)\"}],\"company\":\"ING\",\"bio\":\"Alessandro has been a committed Functional Programmer for 10 years, originally in Haskell and now in Scala. He is a Functional Programming evangelist at ING Bank where he maintains the core libraries and frameworks for the API Platform and trains colleagues in functional and reactive programming with Scala and Akka, and gets excited by opportunities to remove redundant code through abstraction.\",\"lastName\":\"Vermeulen\",\"firstName\":\"Alessandro\",\"blog\":null,\"avatarURL\":\"https://eu.scaladays.org/common/images/numbers/6909_1.jpg\",\"twitter\":null,\"lang\":\"en\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-909228715",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:47 GMT"
+    }
+  },
+  "uuid" : "6e3a4291-866d-4513-82b7-dbe5e04b8d15",
+  "persistent" : true,
+  "insertionIndex" : 277
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "16106332-546c-44f6-89b6-688f033d0538",
+  "name" : "api_conferences_dvbe18_speakers_2a900c2cffc420a69e30499847f9b0d1a407c340",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/2a900c2cffc420a69e30499847f9b0d1a407c340",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"2a900c2cffc420a69e30499847f9b0d1a407c340\",\"bioAsHtml\":\"<p>ags likes distributed systems in all shapes and form. Coding since the age of 8, loves simplicity and continuous delivery. While he has written in many languages, he favours the JVM. Since &quot;most software problems are people problems”, he stirs communities, organizes and speaks at conferences (proud to be a JavaONE Rockstar!). He is passionate about all things data, because science! In his spare time… cycling, photography and books. And he is a Java Champion!</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Programming languages.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/GOS-9302\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/2a900c2cffc420a69e30499847f9b0d1a407c340\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Andrzej Grzesik\"}],\"id\":\"GOS-9302\",\"title\":\"Go - one language you should try\"}],\"company\":\"Simudyne\",\"bio\":\"ags likes distributed systems in all shapes and form. Coding since the age of 8, loves simplicity and continuous delivery. While he has written in many languages, he favours the JVM. Since \\\"most software problems are people problems”, he stirs communities, organizes and speaks at conferences (proud to be a JavaONE Rockstar!). He is passionate about all things data, because science! In his spare time… cycling, photography and books. And he is a Java Champion!\",\"lastName\":\"Grzesik\",\"firstName\":\"Andrzej\",\"blog\":\"andrzejgrzesik.info\",\"avatarURL\":\"http://www.gravatar.com/avatar/498838b88051c5a4c8a20b8499bd1b19\",\"twitter\":\"@ags313\",\"lang\":\"en\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1975011963",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:31 GMT"
+    }
+  },
+  "uuid" : "16106332-546c-44f6-89b6-688f033d0538",
+  "persistent" : true,
+  "insertionIndex" : 109
+}

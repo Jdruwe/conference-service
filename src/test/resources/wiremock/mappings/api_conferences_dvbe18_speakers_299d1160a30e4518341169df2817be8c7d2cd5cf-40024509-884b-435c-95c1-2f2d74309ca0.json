@@ -1,0 +1,23 @@
+{
+  "id" : "40024509-884b-435c-95c1-2f2d74309ca0",
+  "name" : "api_conferences_dvbe18_speakers_299d1160a30e4518341169df2817be8c7d2cd5cf",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/299d1160a30e4518341169df2817be8c7d2cd5cf",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"299d1160a30e4518341169df2817be8c7d2cd5cf\",\"bioAsHtml\":\"<p>Alan Bateman is an engineer in the Java Platform Group in Oracle. Alan\\nhas worked on many areas of the JDK including the Java Module System,\\nthe modularization of the JDK itself, and the core libraries and APIs.\\nHe previously worked on many of the tool and profiling APis including\\nthe JSR-163 implementation and other serviceability features. He is\\ncurrently focused on Project Loom which aims to bring delimited\\ncontinuations and fibers to the Java Platform.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/WXO-3228\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/299d1160a30e4518341169df2817be8c7d2cd5cf\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Alan Bateman\"}],\"id\":\"WXO-3228\",\"title\":\"Project Loom: Fibers and Continuations for Java\"}],\"company\":\"Oracle\",\"bio\":\"Alan Bateman is an engineer in the Java Platform Group in Oracle. Alan \\r\\nhas worked on many areas of the JDK including the Java Module System, \\r\\nthe modularization of the JDK itself, and the core libraries and APIs. \\r\\nHe previously worked on many of the tool and profiling APis including \\r\\nthe JSR-163 implementation and other serviceability features. He is \\r\\ncurrently focused on Project Loom which aims to bring delimited \\r\\ncontinuations and fibers to the Java Platform.\",\"lastName\":\"Bateman\",\"firstName\":\"Alan\",\"blog\":null,\"avatarURL\":\"https://s3-eu-west-1.amazonaws.com/cfpdevoxx/belgium/speakers/AlanBateman.jpg\",\"twitter\":null,\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1946048710",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:32 GMT"
+    }
+  },
+  "uuid" : "40024509-884b-435c-95c1-2f2d74309ca0",
+  "persistent" : true,
+  "insertionIndex" : 114
+}

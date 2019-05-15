@@ -1,0 +1,23 @@
+{
+  "id" : "dfc5cb4f-1b42-4b86-a2fd-8fe4ec5d1f25",
+  "name" : "api_conferences_dvbe18_speakers_27d1a35d487d530572154257ce4e08de4d3cb870",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/27d1a35d487d530572154257ce4e08de4d3cb870",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"27d1a35d487d530572154257ce4e08de4d3cb870\",\"bioAsHtml\":\"<p>Malte is a passionate software engineer and IT consultant for the Nordic consultancy Knowit. He spends his time writing code and is currently in charge of Knowits internal Artificial Intelligence group, The Artificial Chapter. Here, he manages summits and workshops, gives presentations and talks about artificial intelligence.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Deep Dive\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/NQB-4188\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/485043925eca47dd66470b801e45380eb5f816a5\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Joakim Lehn\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/ea52c775d6049c9d5e3e327dee8d647e20799a30\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Manu Gopinathan\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/27d1a35d487d530572154257ce4e08de4d3cb870\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Malte Loller-Andersen\"}],\"id\":\"NQB-4188\",\"title\":\"Create Your Own Music Recommendation System Using Machine Learning\"}],\"company\":\"Knowit\",\"bio\":\"Malte is a passionate software engineer and IT consultant for the Nordic consultancy Knowit. He spends his time writing code and is currently in charge of Knowits internal Artificial Intelligence group, The Artificial Chapter. Here, he manages summits and workshops, gives presentations and talks about artificial intelligence. \",\"lastName\":\"Loller-Andersen\",\"firstName\":\"Malte\",\"blog\":\"https://www.knowit.no/\",\"avatarURL\":\"https://lh6.googleusercontent.com/-9OjTZqDUcOc/AAAAAAAAAAI/AAAAAAAAAAA/AAnnY7qrUZPLrXM-XhEbDVmQqb9NtyoHEw/mo/photo.jpg\",\"twitter\":null,\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1565014822",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:47 GMT"
+    }
+  },
+  "uuid" : "dfc5cb4f-1b42-4b86-a2fd-8fe4ec5d1f25",
+  "persistent" : true,
+  "insertionIndex" : 271
+}

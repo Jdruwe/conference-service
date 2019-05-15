@@ -1,0 +1,23 @@
+{
+  "id" : "14ec9578-b97b-4ae3-976a-026f093118ed",
+  "name" : "api_conferences_dvbe18_speakers_bb15ab5b46b4a1371708898c04565deec0549c26",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/bb15ab5b46b4a1371708898c04565deec0549c26",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"bb15ab5b46b4a1371708898c04565deec0549c26\",\"bioAsHtml\":\"<p>Tim Bogaert started his career as a programmer at De Persgroep. He became Lead Architect in 2010 and is Chief Technology Officer since 2015 guiding Technology in an IT department of 50 squads (450 people).</p>\\n<p>He strongly believes technology plays a very important role in delivering business value.\\nDuring his career he noticed there was a lack on good training opportunities in Europe which close the gap between the theory in the books and doing it in practice. For that reason he&#x27;s giving these workshops to make sure better software is being shipped at https://www.intherealworld.io</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Deep Dive\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/HAO-1908\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/96678a1719c019691241d937530700d7c0f58768\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Gert Leenders\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/7a1ed3166072356dde9cbb5453540f0d02059921\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Alex Van Boxel\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/4017188c2821621bd62e55f9035c7e48733b79c1\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Michaël Hompus\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/bb15ab5b46b4a1371708898c04565deec0549c26\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Tim Bogaert\"}],\"id\":\"HAO-1908\",\"title\":\"Cloud - War Stories\"}],\"company\":\"De Persgroep\",\"bio\":\"Tim Bogaert started his career as a programmer at De Persgroep. He became Lead Architect in 2010 and is Chief Technology Officer since 2015 guiding Technology in an IT department of 50 squads (450 people).\\r\\n\\r\\nHe strongly believes technology plays a very important role in delivering business value. \\r\\nDuring his career he noticed there was a lack on good training opportunities in Europe which close the gap between the theory in the books and doing it in practice. For that reason he's giving these workshops to make sure better software is being shipped at https://www.intherealworld.io\",\"lastName\":\"Bogaert\",\"firstName\":\"Tim\",\"blog\":\"https://www.intherealworld.io\",\"avatarURL\":\"https://intherealworld.io/img/me.jpg\",\"twitter\":\"@bogguard\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1653952638",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:36 GMT"
+    }
+  },
+  "uuid" : "14ec9578-b97b-4ae3-976a-026f093118ed",
+  "persistent" : true,
+  "insertionIndex" : 166
+}

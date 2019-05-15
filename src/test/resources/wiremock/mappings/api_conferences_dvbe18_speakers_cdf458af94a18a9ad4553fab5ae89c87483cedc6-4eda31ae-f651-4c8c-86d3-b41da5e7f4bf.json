@@ -1,0 +1,23 @@
+{
+  "id" : "4eda31ae-f651-4c8c-86d3-b41da5e7f4bf",
+  "name" : "api_conferences_dvbe18_speakers_cdf458af94a18a9ad4553fab5ae89c87483cedc6",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/cdf458af94a18a9ad4553fab5ae89c87483cedc6",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"cdf458af94a18a9ad4553fab5ae89c87483cedc6\",\"bioAsHtml\":\"<p>Daniel Bryant works as an Independent Technical Consultant and Product Architect at Datawire. He currently specialises in enabling continuous delivery within organisations through the identification of value streams, creation of build pipelines, and implementation of effective testing strategies. Daniel’s technical expertise focuses on ‘DevOps’ tooling, cloud/container platforms, and microservice implementations. He is also a Java Champion, contributes to several open source projects, writes for InfoQ, O’Reilly, and Voxxed, and regularly presents at international conferences such as OSCON, QCon and JavaOne.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/NAR-5215\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/cdf458af94a18a9ad4553fab5ae89c87483cedc6\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Daniel Bryant\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/7054204a63b211dd9f47c9cb0a600da878c3b9ce\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Steve Poole\"}],\"id\":\"NAR-5215\",\"title\":\"Are You Deploying and Operating with Security in Mind? Cloud, Containers and Collateral Damage\"}],\"company\":\"Big Picture Tech\",\"bio\":\"Daniel Bryant works as an Independent Technical Consultant and Product Architect at Datawire. He currently specialises in enabling continuous delivery within organisations through the identification of value streams, creation of build pipelines, and implementation of effective testing strategies. Daniel’s technical expertise focuses on ‘DevOps’ tooling, cloud/container platforms, and microservice implementations. He is also a Java Champion, contributes to several open source projects, writes for InfoQ, O’Reilly, and Voxxed, and regularly presents at international conferences such as OSCON, QCon and JavaOne.\",\"lastName\":\"Bryant\",\"firstName\":\"Daniel\",\"blog\":null,\"avatarURL\":\"https://pbs.twimg.com/profile_images/430332736444715008/anlaqRmz_400x400.jpeg\",\"twitter\":\"@danielbryantuk\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-855594659",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:38 GMT"
+    }
+  },
+  "uuid" : "4eda31ae-f651-4c8c-86d3-b41da5e7f4bf",
+  "persistent" : true,
+  "insertionIndex" : 184
+}

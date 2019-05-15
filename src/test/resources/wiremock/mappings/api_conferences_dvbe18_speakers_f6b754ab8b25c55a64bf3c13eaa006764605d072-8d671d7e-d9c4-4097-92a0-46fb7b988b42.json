@@ -1,0 +1,23 @@
+{
+  "id" : "8d671d7e-d9c4-4097-92a0-46fb7b988b42",
+  "name" : "api_conferences_dvbe18_speakers_f6b754ab8b25c55a64bf3c13eaa006764605d072",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/f6b754ab8b25c55a64bf3c13eaa006764605d072",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"f6b754ab8b25c55a64bf3c13eaa006764605d072\",\"bioAsHtml\":\"<p>Thomas Endres is an IT consultant working for TNG Technology Consulting in Munich. Besides his normal work for the customer he is creating various prototypes like a see-through Augmented Reality device or a telepresence robotics system with the company&#x27;s hardware hacking team. In his spare time, he is working on gesture control applications, i.e. for controlling quadrocopters with bare hands. But he is also involved in other open source projects written in Java, C# and all kinds of JavaScript languages.</p>\\n<p>Thomas studied IT at the TU Munich and is passionate about software development. As an Intel Software Innovator and Black Belt, he is promoting new technologies like AR/VR and AI around the world. He has received a JavaOne Rockstar Award.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/XEV-9701\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/dd478b430a39baacd039f43c9afa192de87f9a64\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Martin Förtsch\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/f6b754ab8b25c55a64bf3c13eaa006764605d072\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Thomas Endres\"}],\"id\":\"XEV-9701\",\"title\":\"Stereoscopic Style Transfer AI - Art is not what you see?\"}],\"company\":\"TNG Technology Consulting GmbH\",\"bio\":\"Thomas Endres is an IT consultant working for TNG Technology Consulting in Munich. Besides his normal work for the customer he is creating various prototypes like a see-through Augmented Reality device or a telepresence robotics system with the company's hardware hacking team. In his spare time, he is working on gesture control applications, i.e. for controlling quadrocopters with bare hands. But he is also involved in other open source projects written in Java, C# and all kinds of JavaScript languages.\\r\\n\\r\\nThomas studied IT at the TU Munich and is passionate about software development. As an Intel Software Innovator and Black Belt, he is promoting new technologies like AR/VR and AI around the world. He has received a JavaOne Rockstar Award.\",\"lastName\":\"Endres\",\"firstName\":\"Thomas\",\"blog\":\"thomas.endres@tngtech.com\",\"avatarURL\":\"https://secure.gravatar.com/avatar/804516d025c94ef763dcbf43fc6806eb\",\"twitter\":\"@originalOne1984\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-623224235",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:39 GMT"
+    }
+  },
+  "uuid" : "8d671d7e-d9c4-4097-92a0-46fb7b988b42",
+  "persistent" : true,
+  "insertionIndex" : 194
+}
