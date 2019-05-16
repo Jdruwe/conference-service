@@ -41,7 +41,9 @@ public class SpeakerServiceTest {
 
     @Test
     public void testSaveSpeaker() {
-        Speaker speaker = new Speaker("uuidfortesting", "tester", "tester", "/*", "twitter", "bla");
+        Speaker speaker = Speaker.builder().uuid("uuidfortesting").firstName("tester").lastName("tester")
+                .avatarUrl("/*").twitter("twitter").etag("bla").build();
+
         Speaker savedSpeaker = service.save(speaker);
         Assert.assertNotNull(savedSpeaker);
         Assert.assertEquals(speaker, savedSpeaker);
