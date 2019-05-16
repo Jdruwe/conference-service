@@ -1,0 +1,23 @@
+{
+  "id" : "29eec4a2-3830-4514-8737-d1d45644045f",
+  "name" : "api_conferences_dvbe18_speakers_fa17bb8246e76e8c9f8bc99c89673b069a0a508d",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/fa17bb8246e76e8c9f8bc99c89673b069a0a508d",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"fa17bb8246e76e8c9f8bc99c89673b069a0a508d\",\"bioAsHtml\":\"<p>I&#x27;ve always been bad at guessing what might be important for a biography. I started working for Provinzial right after school and completed my bachelors degree two years ago.\\nDuring most of that time i worked with Java-based technologies and learned to love the language (always with a few points of spite of course). But i never got hung up on a single language. So far i dabbled with Scala, C#, Ruby, C++, Python and quite a few more exotic ones. Which is also the reason why i&#x27;m concentrating more on Kotlin right now, as it combines my interests in both old and new beautifully. At the same time i&#x27;m also enjoying some frontend development with Node, Angular and Typescript right now. So a healthy mix all in all ;)</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Programming languages.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/GBB-7040\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/fa17bb8246e76e8c9f8bc99c89673b069a0a508d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Simon Schell\"}],\"id\":\"GBB-7040\",\"title\":\"Evil Inspiration for Kotlin\"}],\"company\":\"Provinzial Rheinland Versicherung AG\",\"bio\":\"I've always been bad at guessing what might be important for a biography. I started working for Provinzial right after school and completed my bachelors degree two years ago.\\r\\nDuring most of that time i worked with Java-based technologies and learned to love the language (always with a few points of spite of course). But i never got hung up on a single language. So far i dabbled with Scala, C#, Ruby, C++, Python and quite a few more exotic ones. Which is also the reason why i'm concentrating more on Kotlin right now, as it combines my interests in both old and new beautifully. At the same time i'm also enjoying some frontend development with Node, Angular and Typescript right now. So a healthy mix all in all ;)\",\"lastName\":\"Schell\",\"firstName\":\"Simon\",\"blog\":\"https://technopoolis.com/\",\"avatarURL\":\"https://raw.githubusercontent.com/SoSayethSimon/Evil-Kotlin-Quicksession/master/images/others/profilbild.jpg\",\"twitter\":\"@SoSayethSimon\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "2055187503",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:37 GMT"
+    }
+  },
+  "uuid" : "29eec4a2-3830-4514-8737-d1d45644045f",
+  "persistent" : true,
+  "insertionIndex" : 173
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "88be9b47-68ea-4da0-869c-89f7a7811125",
+  "name" : "api_conferences_dvbe18_speakers_2915ce1f84a7b90a7eec6fdf5cb209ccad724e48",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/2915ce1f84a7b90a7eec6fdf5cb209ccad724e48",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"2915ce1f84a7b90a7eec6fdf5cb209ccad724e48\",\"bioAsHtml\":\"<p>Tom is an independent Java and Kotlin developer from The Netherlands. Over the past 10 years he has worked on commercial and non-commercial projects in sectors including government, banking, mobility and publishing. Aside from coding he enjoys playing bass guitar in a local band and expanding his culinary horizon. You can follow him on Twitter: @tomwetjens.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/YNH-3520\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/2915ce1f84a7b90a7eec6fdf5cb209ccad724e48\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Tom Wetjens\"}],\"id\":\"YNH-3520\",\"title\":\"4 Ways to deal with Fear Of Missing Out\"}],\"company\":\"wetjens.com\",\"bio\":\"Tom is an independent Java and Kotlin developer from The Netherlands. Over the past 10 years he has worked on commercial and non-commercial projects in sectors including government, banking, mobility and publishing. Aside from coding he enjoys playing bass guitar in a local band and expanding his culinary horizon. You can follow him on Twitter: @tomwetjens.\",\"lastName\":\"Wetjens\",\"firstName\":\"Tom\",\"blog\":\"https://wetjens.com\",\"avatarURL\":\"https://www.gravatar.com/avatar/8d95c25e83ff957c2162015f32eeb887\",\"twitter\":\"@tomwetjens\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-411478965",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:24 GMT"
+    }
+  },
+  "uuid" : "88be9b47-68ea-4da0-869c-89f7a7811125",
+  "persistent" : true,
+  "insertionIndex" : 26
+}

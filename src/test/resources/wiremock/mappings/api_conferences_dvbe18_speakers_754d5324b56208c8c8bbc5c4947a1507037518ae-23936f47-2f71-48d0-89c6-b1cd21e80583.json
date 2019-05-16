@@ -1,0 +1,23 @@
+{
+  "id" : "23936f47-2f71-48d0-89c6-b1cd21e80583",
+  "name" : "api_conferences_dvbe18_speakers_754d5324b56208c8c8bbc5c4947a1507037518ae",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/754d5324b56208c8c8bbc5c4947a1507037518ae",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"754d5324b56208c8c8bbc5c4947a1507037518ae\",\"bioAsHtml\":\"<p>As an avid developer that genuinely enjoys being able to use my expertise to solve problems, I have found myself moving away from using technology as the sole way to solve problems and instead towards using technology as one option in an ever growing toolkit. From initially taking a big interest in the conversations front-end development provides to moving to various corners of the .NET stack, I have gained many cross cutting skills that are technologically agnostic and applicable in a wide array of situations, both in work and out of it. Hopefully sharing this knowledge with others can go someway in making the world a happier place to be :)</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/EUU-0069\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/754d5324b56208c8c8bbc5c4947a1507037518ae\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Nathan Murados\"}],\"id\":\"EUU-0069\",\"title\":\"Into the unknown: The power of admitting we don't know... yet\"}],\"company\":\"agilelabs.io\",\"bio\":\"As an avid developer that genuinely enjoys being able to use my expertise to solve problems, I have found myself moving away from using technology as the sole way to solve problems and instead towards using technology as one option in an ever growing toolkit. From initially taking a big interest in the conversations front-end development provides to moving to various corners of the .NET stack, I have gained many cross cutting skills that are technologically agnostic and applicable in a wide array of situations, both in work and out of it. Hopefully sharing this knowledge with others can go someway in making the world a happier place to be :)\",\"lastName\":\"Murados\",\"firstName\":\"Nathan\",\"blog\":\"http://agilelabs.io\",\"avatarURL\":\"https://s.gravatar.com/avatar/b96856648af3bfdd5f15c0f32e90eec9\",\"twitter\":\"@themuradonian\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1133779889",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:31 GMT"
+    }
+  },
+  "uuid" : "23936f47-2f71-48d0-89c6-b1cd21e80583",
+  "persistent" : true,
+  "insertionIndex" : 111
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "96fb888e-6f8a-4e4f-b671-c9705099a0c2",
+  "name" : "api_conferences_dvbe18_speakers_4a65ac0ef5d538e6543827b982baacab9d343963",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/4a65ac0ef5d538e6543827b982baacab9d343963",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"4a65ac0ef5d538e6543827b982baacab9d343963\",\"bioAsHtml\":\"<p>Erik works as senior software engineer in a data science team. He is passionate about coding and high quality software. In his spare time, he enjoys installing gadgets in his smart home and creating software to link them all together. His latest pet project is creating an adventure room for his kids, full of interactive IoT elements.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Mind the Geek.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/CON-1402\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/4a65ac0ef5d538e6543827b982baacab9d343963\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Erik Mulder\"}],\"id\":\"CON-1402\",\"title\":\"Create your own Digital Adventure Room\"}],\"company\":\"QSD\",\"bio\":\"Erik works as senior software engineer in a data science team. He is passionate about coding and high quality software. In his spare time, he enjoys installing gadgets in his smart home and creating software to link them all together. His latest pet project is creating an adventure room for his kids, full of interactive IoT elements.\\r\\n\",\"lastName\":\"Mulder\",\"firstName\":\"Erik\",\"blog\":null,\"avatarURL\":\"https://avatars2.githubusercontent.com/u/2169239?s=460&v=4\",\"twitter\":null,\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1107743028",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:32 GMT"
+    }
+  },
+  "uuid" : "96fb888e-6f8a-4e4f-b671-c9705099a0c2",
+  "persistent" : true,
+  "insertionIndex" : 121
+}

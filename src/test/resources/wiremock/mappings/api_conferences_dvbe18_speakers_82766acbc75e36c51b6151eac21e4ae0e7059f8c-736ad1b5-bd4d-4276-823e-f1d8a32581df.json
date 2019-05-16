@@ -1,0 +1,23 @@
+{
+  "id" : "736ad1b5-bd4d-4276-823e-f1d8a32581df",
+  "name" : "api_conferences_dvbe18_speakers_82766acbc75e36c51b6151eac21e4ae0e7059f8c",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/82766acbc75e36c51b6151eac21e4ae0e7059f8c",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"82766acbc75e36c51b6151eac21e4ae0e7059f8c\",\"bioAsHtml\":\"<p>Louis Jacomet has been perfecting his knowledge of Java for more than 15 years. Always a developer at heart, his role evolved over the last years to include technical team leading, coaching and some management.\\nIn addition to the bits and bytes, Louis is interested in people management skills mandatory to create a productive project team.\\nTo complete the buzzword bingo, Louis is interested in agile practices for the visibility, communication and result orientation it promotes.\\nAfter working remotely from Belgium for Terracotta, with a focus on Ehcache, Louis is now part of the Gradle build tool team.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Deep Dive\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/UAH-5130\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/9041552b955554c4fe4907f127e164d9395af163\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Cédric Champeau\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/82766acbc75e36c51b6151eac21e4ae0e7059f8c\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Louis Jacomet\"}],\"id\":\"UAH-5130\",\"title\":\"Switching to Gradle: maturity, performance, and pleasure!\"}],\"company\":\"Gradle, Inc.\",\"bio\":\"Louis Jacomet has been perfecting his knowledge of Java for more than 15 years. Always a developer at heart, his role evolved over the last years to include technical team leading, coaching and some management.\\r\\nIn addition to the bits and bytes, Louis is interested in people management skills mandatory to create a productive project team.\\r\\nTo complete the buzzword bingo, Louis is interested in agile practices for the visibility, communication and result orientation it promotes.\\r\\nAfter working remotely from Belgium for Terracotta, with a focus on Ehcache, Louis is now part of the Gradle build tool team.\",\"lastName\":\"Jacomet\",\"firstName\":\"Louis\",\"blog\":\"https://plus.google.com/+LouisJacomet\",\"avatarURL\":\"https://lh5.googleusercontent.com/-P4xRAGKGrYk/AAAAAAAAAAI/AAAAAAAAFKc/8sMXG3Vi-t4/photo.jpg\",\"twitter\":\"@ljacomet\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "807045700",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:30 GMT"
+    }
+  },
+  "uuid" : "736ad1b5-bd4d-4276-823e-f1d8a32581df",
+  "persistent" : true,
+  "insertionIndex" : 97
+}

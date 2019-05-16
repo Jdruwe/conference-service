@@ -1,0 +1,23 @@
+{
+  "id" : "68874613-3eb2-4b83-804e-a0199779f230",
+  "name" : "api_conferences_dvbe18_speakers_13eb124313d5f0750ea53e7882cb76e8d9925549",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/13eb124313d5f0750ea53e7882cb76e8d9925549",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"13eb124313d5f0750ea53e7882cb76e8d9925549\",\"bioAsHtml\":\"<p>More than ten years expertise in software development, mainly acquired in the different business sectors of the European Commission (taxation and excise products, agriculture, justice, dissemination of the official EU publications) as well as collaborating with industry leaders of the private sector (telecommunication, horeca, automotive, heatlhcare...).</p>\\n<p>Sharp knowledge in the elaboration of complex architecture systems settled in the context of strategic projects.</p>\\n<p>Strong people management skills gained in multilingual and international environments (on-shore, near-shore and off-shore collaboration models).</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Modern Web & UX.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/WOD-6376\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/13eb124313d5f0750ea53e7882cb76e8d9925549\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"François Gengler\"}],\"id\":\"WOD-6376\",\"title\":\"Reactive Web applications with Spring WebFlux & Couchbase\"}],\"company\":\"ARHS\",\"bio\":\"More than ten years expertise in software development, mainly acquired in the different business sectors of the European Commission (taxation and excise products, agriculture, justice, dissemination of the official EU publications) as well as collaborating with industry leaders of the private sector (telecommunication, horeca, automotive, heatlhcare...).\\r\\n\\r\\nSharp knowledge in the elaboration of complex architecture systems settled in the context of strategic projects.\\r\\n\\r\\nStrong people management skills gained in multilingual and international environments (on-shore, near-shore and off-shore collaboration models).\",\"lastName\":\"Gengler\",\"firstName\":\"François\",\"blog\":\"https://github.com/genglefr\",\"avatarURL\":\"https://lh5.googleusercontent.com/-1zVQ4E5O2N0/AAAAAAAAAAI/AAAAAAAABMI/IU2cABJiPlo/photo.jpg\",\"twitter\":\"@genglefr\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-840705630",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:27 GMT"
+    }
+  },
+  "uuid" : "68874613-3eb2-4b83-804e-a0199779f230",
+  "persistent" : true,
+  "insertionIndex" : 56
+}

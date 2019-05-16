@@ -1,0 +1,23 @@
+{
+  "id" : "f925f3af-98d6-47fb-a497-8168818a3de2",
+  "name" : "api_conferences_dvbe18_speakers_68f9c9174f46a0a4e7300b299832604c1c973709",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/68f9c9174f46a0a4e7300b299832604c1c973709",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"68f9c9174f46a0a4e7300b299832604c1c973709\",\"bioAsHtml\":\"<p>Creator &amp; lead developer of JHipster</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Server Side Java.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/XCM-6395\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/b6b49f4fb582f67512ac2f8aa540549c4845f843\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Deepu K Sasidharan\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/68f9c9174f46a0a4e7300b299832604c1c973709\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Julien Dubois\"}],\"id\":\"XCM-6395\",\"title\":\"JHipster 5 - What's new and noteworthy\"}],\"company\":\"Ippon Technologies\",\"bio\":\"Creator & lead developer of JHipster\",\"lastName\":\"Dubois\",\"firstName\":\"Julien\",\"blog\":\"https://plus.google.com/+JulienDubois\",\"avatarURL\":\"https://lh5.googleusercontent.com/-GUJq9wKrV8A/AAAAAAAAAAI/AAAAAAAABkI/H_CG66GUv1c/photo.jpg\",\"twitter\":\"@juliendubois\",\"lang\":\"fr-FR\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1475880857",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:37 GMT"
+    }
+  },
+  "uuid" : "f925f3af-98d6-47fb-a497-8168818a3de2",
+  "persistent" : true,
+  "insertionIndex" : 175
+}

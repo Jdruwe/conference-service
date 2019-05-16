@@ -1,0 +1,23 @@
+{
+  "id" : "dd47bd0e-e339-4995-a9f3-6b25623077d7",
+  "name" : "api_conferences_dvbe18_speakers_fe2be7434f576503529de8d7bee94babefa4cf4f",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/fe2be7434f576503529de8d7bee94babefa4cf4f",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"fe2be7434f576503529de8d7bee94babefa4cf4f\",\"bioAsHtml\":\"<p>Leif works as a product architect at Vaadin, with focus on bridging the gap between Java and the web.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Modern Web .label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/WAA-7208\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/b90caa7c0917b501fda69e26c1e9291b1eb74c00\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Matti Tahvonen\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/fe2be7434f576503529de8d7bee94babefa4cf4f\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Leif Åstrand\"}],\"id\":\"WAA-7208\",\"title\":\"WebSocket based chat app in 10 minutes using Spring Boot, Reactor and Vaadin\"}],\"company\":\"Vaadin\",\"bio\":\"Leif works as a product architect at Vaadin, with focus on bridging the gap between Java and the web.\",\"lastName\":\"Åstrand\",\"firstName\":\"Leif\",\"blog\":\"https://vaadin.com/\",\"avatarURL\":\"https://lh4.googleusercontent.com/-IfN_dcqfjII/AAAAAAAAAAI/AAAAAAAAAVk/nRGHW37hVgE/photo.jpg\",\"twitter\":\"@leifastrand\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1101720807",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:29 GMT"
+    }
+  },
+  "uuid" : "dd47bd0e-e339-4995-a9f3-6b25623077d7",
+  "persistent" : true,
+  "insertionIndex" : 79
+}

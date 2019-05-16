@@ -1,0 +1,23 @@
+{
+  "id" : "4069091d-465b-45d1-bf4f-2a0bbccb698a",
+  "name" : "api_conferences_dvbe18_speakers_7e5e21c2f5c83b30c6820362f100ca536c61a5de",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/7e5e21c2f5c83b30c6820362f100ca536c61a5de",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"7e5e21c2f5c83b30c6820362f100ca536c61a5de\",\"bioAsHtml\":\"<p>I run Docker in Docker in Docker...</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/XSD-5283\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/7e5e21c2f5c83b30c6820362f100ca536c61a5de\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"David Gageot\"}],\"id\":\"XSD-5283\",\"title\":\"Google Open-Source Container Tools: Life of a happy developer in a container world\"},{\"talkType\":\"Conference\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/NME-5763\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/7e5e21c2f5c83b30c6820362f100ca536c61a5de\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"David Gageot\"}],\"id\":\"NME-5763\",\"title\":\"Istio, we have a problem! Understanding and fixing bugs with a service-mesh\"}],\"company\":\"Google\",\"bio\":\"I run Docker in Docker in Docker...\",\"lastName\":\"Gageot\",\"firstName\":\"David\",\"blog\":\"http://blog.javabien.net/\",\"avatarURL\":\"http://www.gravatar.com/avatar/f0887bf6175ba40dca795eb37883a8cf\",\"twitter\":\"@dgageot\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "502027314",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:37 GMT"
+    }
+  },
+  "uuid" : "4069091d-465b-45d1-bf4f-2a0bbccb698a",
+  "persistent" : true,
+  "insertionIndex" : 174
+}

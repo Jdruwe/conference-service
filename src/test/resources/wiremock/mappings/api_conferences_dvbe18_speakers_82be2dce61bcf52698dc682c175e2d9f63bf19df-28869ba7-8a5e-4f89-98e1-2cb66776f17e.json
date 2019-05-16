@@ -1,0 +1,23 @@
+{
+  "id" : "28869ba7-8a5e-4f89-98e1-2cb66776f17e",
+  "name" : "api_conferences_dvbe18_speakers_82be2dce61bcf52698dc682c175e2d9f63bf19df",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/82be2dce61bcf52698dc682c175e2d9f63bf19df",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"82be2dce61bcf52698dc682c175e2d9f63bf19df\",\"bioAsHtml\":\"<p>Developper for more than 10 years, I&#x27;m passionated to the new technologies, agility, software craftsmanship and many other things.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/DCX-1230\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/82be2dce61bcf52698dc682c175e2d9f63bf19df\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Bowie Brotosumpeno\"}],\"id\":\"DCX-1230\",\"title\":\"How to run Spring Boot with Jshell (and take advantage on it)\"}],\"company\":\"Egencia\",\"bio\":\"Developper for more than 10 years, I'm passionated to the new technologies, agility, software craftsmanship and many other things. \",\"lastName\":\"Brotosumpeno\",\"firstName\":\"Bowie\",\"blog\":\"www.kalenderjawa.com\",\"avatarURL\":\"https://avatars2.githubusercontent.com/u/7349662?s=460&v=4\",\"twitter\":\"@bosangjay\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "23864874",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:27 GMT"
+    }
+  },
+  "uuid" : "28869ba7-8a5e-4f89-98e1-2cb66776f17e",
+  "persistent" : true,
+  "insertionIndex" : 55
+}

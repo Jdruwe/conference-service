@@ -1,0 +1,23 @@
+{
+  "id" : "874eb45b-b9e8-46ef-b921-06d5a977eb94",
+  "name" : "api_conferences_dvbe18_speakers_39589d3fb28398f13c05d7ea77e7496627274be4",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/39589d3fb28398f13c05d7ea77e7496627274be4",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"39589d3fb28398f13c05d7ea77e7496627274be4\",\"bioAsHtml\":\"<p>Jeroen has a real passion to build things, which continuously challenges him to experiment and learn. In the process, he refocussed his master in Electrical engineering to become an Android developer. Starting off with highly technical prototypes for Wi-Fi connected products, he has built his own file-sharing platform (Wi-FileTransfer). Currently, he is an Android GDE and the lead Android developer at Philips Hue.</p>\\n<p>One of a kind, never-been-done-before apps are what he enjoys most. So far Jeroen helped realize four huge connected products, various high profile apps, actively contributes to open source and loves interacting with the Android community. He is a passionate blogger and enjoys speaking at conferences.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Mobile & IoT.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/YXD-0794\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/39589d3fb28398f13c05d7ea77e7496627274be4\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Jeroen Mols\"}],\"id\":\"YXD-0794\",\"title\":\"Write awesome tests\"}],\"company\":\"Philips Hue\",\"bio\":\"Jeroen has a real passion to build things, which continuously challenges him to experiment and learn. In the process, he refocussed his master in Electrical engineering to become an Android developer. Starting off with highly technical prototypes for Wi-Fi connected products, he has built his own file-sharing platform (Wi-FileTransfer). Currently, he is an Android GDE and the lead Android developer at Philips Hue.\\r\\n\\r\\nOne of a kind, never-been-done-before apps are what he enjoys most. So far Jeroen helped realize four huge connected products, various high profile apps, actively contributes to open source and loves interacting with the Android community. He is a passionate blogger and enjoys speaking at conferences.\\r\\n\",\"lastName\":\"Mols\",\"firstName\":\"Jeroen\",\"blog\":\"https://jeroenmols.com\",\"avatarURL\":\"https://www.gravatar.com/avatar/83ba4449cf9195bd87dc11cb784acc6c?s=1024\",\"twitter\":\"@molsjeroen\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1432869203",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:33 GMT"
+    }
+  },
+  "uuid" : "874eb45b-b9e8-46ef-b921-06d5a977eb94",
+  "persistent" : true,
+  "insertionIndex" : 125
+}

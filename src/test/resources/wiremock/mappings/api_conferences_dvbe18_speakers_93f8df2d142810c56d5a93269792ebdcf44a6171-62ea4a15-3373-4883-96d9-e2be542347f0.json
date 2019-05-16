@@ -1,0 +1,23 @@
+{
+  "id" : "62ea4a15-3373-4883-96d9-e2be542347f0",
+  "name" : "api_conferences_dvbe18_speakers_93f8df2d142810c56d5a93269792ebdcf44a6171",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/93f8df2d142810c56d5a93269792ebdcf44a6171",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"93f8df2d142810c56d5a93269792ebdcf44a6171\",\"bioAsHtml\":\"<p>Matt is a software engineer at Tetrate, working on Istio-related products. He&#x27;s been doing Dev, sometimes with added Ops, for 10 years. His idea of &quot;full-stack&quot; is Linux, Kubernetes, and now Istio too. He&#x27;s given several talks and workshops on Kubernetes and Istio, and is a co-organiser of the Istio London meetup.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Deep Dive\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/OLG-3924\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/93f8df2d142810c56d5a93269792ebdcf44a6171\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Matt Turner\"}],\"id\":\"OLG-3924\",\"title\":\"Life of a packet through Istio\"}],\"company\":\"Tetrate\",\"bio\":\"Matt is a software engineer at Tetrate, working on Istio-related products. He's been doing Dev, sometimes with added Ops, for 10 years. His idea of \\\"full-stack\\\" is Linux, Kubernetes, and now Istio too. He's given several talks and workshops on Kubernetes and Istio, and is a co-organiser of the Istio London meetup.\",\"lastName\":\"Turner\",\"firstName\":\"Matt\",\"blog\":\"https://mt165.co.uk\",\"avatarURL\":\"https://lh5.googleusercontent.com/-c2TDYPWtdDg/AAAAAAAAAAI/AAAAAAAAAB0/ViwwWfSMtp4/photo.jpg\",\"twitter\":\"@mt165pro\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1616292283",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:35 GMT"
+    }
+  },
+  "uuid" : "62ea4a15-3373-4883-96d9-e2be542347f0",
+  "persistent" : true,
+  "insertionIndex" : 157
+}

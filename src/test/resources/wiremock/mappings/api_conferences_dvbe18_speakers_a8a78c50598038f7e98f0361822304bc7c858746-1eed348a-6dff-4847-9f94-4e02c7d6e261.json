@@ -1,0 +1,23 @@
+{
+  "id" : "1eed348a-6dff-4847-9f94-4e02c7d6e261",
+  "name" : "api_conferences_dvbe18_speakers_a8a78c50598038f7e98f0361822304bc7c858746",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/a8a78c50598038f7e98f0361822304bc7c858746",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"a8a78c50598038f7e98f0361822304bc7c858746\",\"bioAsHtml\":\"<p>Miro is a VP of Engineering at DNAstack, where he builds a leading genomics cloud platform. He is a Java enthusiast with expertise in distributed systems and middleware, passionate about genetics and making meaningful software. Miro is the creator of the largest search and discovery engine of human genetic data, and the author of a book on parallelization of genomic queries. In his spare time, he blogs and contributes to several open-source projects.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/YZA-8319\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/a8a78c50598038f7e98f0361822304bc7c858746\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Miro Cupak\"}],\"id\":\"YZA-8319\",\"title\":\"Exploring reactive programming in Java\"}],\"company\":\"DNAstack\",\"bio\":\"Miro is a VP of Engineering at DNAstack, where he builds a leading genomics cloud platform. He is a Java enthusiast with expertise in distributed systems and middleware, passionate about genetics and making meaningful software. Miro is the creator of the largest search and discovery engine of human genetic data, and the author of a book on parallelization of genomic queries. In his spare time, he blogs and contributes to several open-source projects.\\r\\n\",\"lastName\":\"Cupak\",\"firstName\":\"Miro\",\"blog\":\"https://mirocupak.com\",\"avatarURL\":\"https://lh3.googleusercontent.com/-3nFkOwGrmC0/AAAAAAAAAAI/AAAAAAAABio/AJRvo84IIk8/photo.jpg\",\"twitter\":\"@mirocupak\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1647416899",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:24 GMT"
+    }
+  },
+  "uuid" : "1eed348a-6dff-4847-9f94-4e02c7d6e261",
+  "persistent" : true,
+  "insertionIndex" : 30
+}

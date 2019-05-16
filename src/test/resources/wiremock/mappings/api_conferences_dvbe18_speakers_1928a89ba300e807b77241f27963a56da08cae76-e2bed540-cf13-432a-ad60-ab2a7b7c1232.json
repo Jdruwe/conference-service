@@ -1,0 +1,23 @@
+{
+  "id" : "e2bed540-cf13-432a-ad60-ab2a7b7c1232",
+  "name" : "api_conferences_dvbe18_speakers_1928a89ba300e807b77241f27963a56da08cae76",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/1928a89ba300e807b77241f27963a56da08cae76",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"1928a89ba300e807b77241f27963a56da08cae76\",\"bioAsHtml\":\"<p>Ana-Maria Mihălceanu is a custom application development enthusiast, Trailhead Ranger and a constant adopter of challenging technical scenarios. Some of her older experiments are available on Dzone.\\nIn 2016, as tech passionate for cloud application development she achieved IBM Certified Application Developer - Cloud Platform v1. Since then, she has enriched her cloud expertise by learning and certifying as a Salesforce Developer and attained a better understanding on how to integrate different types of cloud offerings.  As a result, she would like to share with the audience one of her recent experiments.\\nOther passions? The knowledge hunt through reading and growing fashion skills through shopping.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/MTP-5918\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/1928a89ba300e807b77241f27963a56da08cae76\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ana-maria Mihalceanu\"}],\"id\":\"MTP-5918\",\"title\":\"Project Jigsaw and OSGI: Microkernel architecture in the spotlight\"}],\"company\":null,\"bio\":\"Ana-Maria Mihălceanu is a custom application development enthusiast, Trailhead Ranger and a constant adopter of challenging technical scenarios. Some of her older experiments are available on Dzone. \\r\\nIn 2016, as tech passionate for cloud application development she achieved IBM Certified Application Developer - Cloud Platform v1. Since then, she has enriched her cloud expertise by learning and certifying as a Salesforce Developer and attained a better understanding on how to integrate different types of cloud offerings.  As a result, she would like to share with the audience one of her recent experiments.\\r\\nOther passions? The knowledge hunt through reading and growing fashion skills through shopping.\",\"lastName\":\"Mihalceanu\",\"firstName\":\"Ana-maria\",\"blog\":\"http://dzone.com/users/ammbra\",\"avatarURL\":\"https://pbs.twimg.com/profile_images/877481998696280064/4xFRqHIq_400x400.jpg\",\"twitter\":\"@ammbra1508\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "330950284",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:41 GMT"
+    }
+  },
+  "uuid" : "e2bed540-cf13-432a-ad60-ab2a7b7c1232",
+  "persistent" : true,
+  "insertionIndex" : 219
+}

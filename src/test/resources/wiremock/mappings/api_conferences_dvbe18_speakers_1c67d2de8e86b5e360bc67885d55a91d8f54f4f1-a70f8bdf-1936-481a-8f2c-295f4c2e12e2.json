@@ -1,0 +1,23 @@
+{
+  "id" : "a70f8bdf-1936-481a-8f2c-295f4c2e12e2",
+  "name" : "api_conferences_dvbe18_speakers_1c67d2de8e86b5e360bc67885d55a91d8f54f4f1",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/1c67d2de8e86b5e360bc67885d55a91d8f54f4f1",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"1c67d2de8e86b5e360bc67885d55a91d8f54f4f1\",\"bioAsHtml\":\"<p>Software Engineer, Experimented JAVA and Web developer, Scala and functional programming enthusiast, Huge Metal Fan, And also a Spartan racer</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Deep Dive\",\"track\":\"Modern Web & UX.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/RUD-1687\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/ec730bcb63b4b092743263fbd50be260c2a62437\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Guillaume Soldera\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/1c67d2de8e86b5e360bc67885d55a91d8f54f4f1\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Fedi Salah\"}],\"id\":\"RUD-1687\",\"title\":\"Progressive Web Apps in action!\"}],\"company\":\"SERLI\",\"bio\":\"Software Engineer, Experimented JAVA and Web developer, Scala and functional programming enthusiast, Huge Metal Fan, And also a Spartan racer\",\"lastName\":\"Salah\",\"firstName\":\"Fedi\",\"blog\":null,\"avatarURL\":\"https://pbs.twimg.com/profile_images/810508344825933824/lLJWIKSh_400x400.jpg\",\"twitter\":\"@fedysalah\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1277836826",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:46 GMT"
+    }
+  },
+  "uuid" : "a70f8bdf-1936-481a-8f2c-295f4c2e12e2",
+  "persistent" : true,
+  "insertionIndex" : 268
+}

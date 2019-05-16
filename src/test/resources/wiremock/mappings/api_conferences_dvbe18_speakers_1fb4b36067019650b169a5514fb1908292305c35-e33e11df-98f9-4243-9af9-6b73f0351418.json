@@ -1,0 +1,23 @@
+{
+  "id" : "e33e11df-98f9-4243-9af9-6b73f0351418",
+  "name" : "api_conferences_dvbe18_speakers_1fb4b36067019650b169a5514fb1908292305c35",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/1fb4b36067019650b169a5514fb1908292305c35",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"1fb4b36067019650b169a5514fb1908292305c35\",\"bioAsHtml\":\"<p>Currently working as Lead Engineer at NN CSH, developing a compliant AWS platform at a large scale and delivering services (like docker cluster as a service, runners) and products across the whole company (via selfservice). Also developing and delivering the tooling to do so.</p>\\n<p>In depth experience with Python, Linux RedHat6/7, CentOS7, Docker, Kubernetes, Websphere Liberty Profile/Tomcat, Java (Spring) and lots of AWS services like EC2, VPC, Lambda, Step Functions, ECS, API Gateway etc. Hands on experience with development tools like Git, Packer, Serverless, SAM, Ansible, Terraform, CloudFormation, Concourse, GitlabCI, XLdeploy etc. AWS certified, Python certified, Docker certified.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/QZY-5499\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/07162e8d688cbca41c7415ebea3164603f30dd08\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Jaap Kabbedijk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/1fb4b36067019650b169a5514fb1908292305c35\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Gijsbert van Renswoude\"}],\"id\":\"QZY-5499\",\"title\":\"Managing CI/CD on AWS at scale\"}],\"company\":\"Nationale-Nederlanden\",\"bio\":\"Currently working as Lead Engineer at NN CSH, developing a compliant AWS platform at a large scale and delivering services (like docker cluster as a service, runners) and products across the whole company (via selfservice). Also developing and delivering the tooling to do so. \\r\\n\\r\\nIn depth experience with Python, Linux RedHat6/7, CentOS7, Docker, Kubernetes, Websphere Liberty Profile/Tomcat, Java (Spring) and lots of AWS services like EC2, VPC, Lambda, Step Functions, ECS, API Gateway etc. Hands on experience with development tools like Git, Packer, Serverless, SAM, Ansible, Terraform, CloudFormation, Concourse, GitlabCI, XLdeploy etc. AWS certified, Python certified, Docker certified.\",\"lastName\":\"van Renswoude\",\"firstName\":\"Gijsbert\",\"blog\":\"https://www.linkedin.com/in/gijsbert-van-renswoude-0081913b/\",\"avatarURL\":\"https://avatars0.githubusercontent.com/u/26709481?s=400&u=87e192d3439901bf4e31855f1313c8c00ba09290&v=4\",\"twitter\":null,\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-87032043",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:38 GMT"
+    }
+  },
+  "uuid" : "e33e11df-98f9-4243-9af9-6b73f0351418",
+  "persistent" : true,
+  "insertionIndex" : 183
+}

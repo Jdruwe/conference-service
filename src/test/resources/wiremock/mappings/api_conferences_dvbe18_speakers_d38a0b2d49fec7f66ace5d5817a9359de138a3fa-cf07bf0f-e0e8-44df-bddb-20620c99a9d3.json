@@ -1,0 +1,23 @@
+{
+  "id" : "cf07bf0f-e0e8-44df-bddb-20620c99a9d3",
+  "name" : "api_conferences_dvbe18_speakers_d38a0b2d49fec7f66ace5d5817a9359de138a3fa",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/d38a0b2d49fec7f66ace5d5817a9359de138a3fa",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"d38a0b2d49fec7f66ace5d5817a9359de138a3fa\",\"bioAsHtml\":\"<p>Jeff Hollan is Senior Product Manager for Azure Functions.  He was one of the original members of the Azure serverless team.  He has expertise around serverless, AI, and IoT.  He is known for his demo-filled and entertaining talks from around the world.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/NXA-9877\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/0e208f129cb120b4926c982a43fabe1138c7b816\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Bruno Borges\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/d38a0b2d49fec7f66ace5d5817a9359de138a3fa\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Jeff Hollan\"}],\"id\":\"NXA-9877\",\"title\":\"A peek behind the curtain of Serverless\"}],\"company\":\"Microsoft\",\"bio\":\"Jeff Hollan is Senior Product Manager for Azure Functions.  He was one of the original members of the Azure serverless team.  He has expertise around serverless, AI, and IoT.  He is known for his demo-filled and entertaining talks from around the world.\",\"lastName\":\"Hollan\",\"firstName\":\"Jeff\",\"blog\":\"https://hollan.io\",\"avatarURL\":\"http://www.gravatar.com/avatar/e39a60b31c52b4dc8e93badaa598c0a0\",\"twitter\":\"@jeffhollan\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1623474112",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:48 GMT"
+    }
+  },
+  "uuid" : "cf07bf0f-e0e8-44df-bddb-20620c99a9d3",
+  "persistent" : true,
+  "insertionIndex" : 286
+}

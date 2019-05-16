@@ -5,7 +5,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -21,9 +24,7 @@ public class Schedule {
     private DayOfWeek day;
 
     @ManyToMany
-    private List<Room> rooms;
-    @OneToMany
-    private List<Talk> talks;
+    private List<RoomSchedule> roomSchedules;
 
     public Schedule(LocalDate date, DayOfWeek day) {
         this.date = date;

@@ -1,0 +1,23 @@
+{
+  "id" : "b3d52fe9-401a-45f5-b2ae-3f91a59325c8",
+  "name" : "api_conferences_dvbe18_speakers_fb3e59bad2df2b9ad64d276dd3841e7e7e2298ed",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/fb3e59bad2df2b9ad64d276dd3841e7e7e2298ed",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"fb3e59bad2df2b9ad64d276dd3841e7e7e2298ed\",\"bioAsHtml\":\"<p>Jakub is a software craftsman with over a decade of commercial experience in programming, wearing multiple hats, getting hands dirty in multiple environments. Some languages, some frameworks, blah blah blah - doesn’t really matter. Architect, programmer, manager, technical trainer, tech lead, wannabe entrepreneur, JUG leader. There is a fair chance he does non of those right.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/ZGJ-4385\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/8a840a35dc6946fe9d5eaf0c0910a53afadaf981\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Hubert SABLONNIÈRE\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/fb3e59bad2df2b9ad64d276dd3841e7e7e2298ed\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Kuba Marchwicki\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/f645e0482172e9950d2fd4942e9f7c2611c510c2\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Bert Jan Schrijver\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/8551616e8ea37d9a0c962b022afc9f6b377790f6\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Dan Allen\"}],\"id\":\"ZGJ-4385\",\"title\":\"Speakers' BOF\"}],\"company\":null,\"bio\":\"Jakub is a software craftsman with over a decade of commercial experience in programming, wearing multiple hats, getting hands dirty in multiple environments. Some languages, some frameworks, blah blah blah - doesn’t really matter. Architect, programmer, manager, technical trainer, tech lead, wannabe entrepreneur, JUG leader. There is a fair chance he does non of those right.\",\"lastName\":\"Marchwicki\",\"firstName\":\"Kuba\",\"blog\":\"http://jakub.marchwicki.pl\",\"avatarURL\":\"https://pl.gravatar.com/userimage/17704581/7f28c2fd29802d7fc491e7383c5b5f34.jpg?size=600\",\"twitter\":\"@kubem\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-349343118",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:34 GMT"
+    }
+  },
+  "uuid" : "b3d52fe9-401a-45f5-b2ae-3f91a59325c8",
+  "persistent" : true,
+  "insertionIndex" : 145
+}

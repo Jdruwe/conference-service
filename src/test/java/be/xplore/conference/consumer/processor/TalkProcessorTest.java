@@ -38,18 +38,19 @@ import static org.mockserver.model.HttpResponse.response;
 @ActiveProfiles("test")
 public class TalkProcessorTest {
 
+    private static final int PORT = 9999;
+
     @Autowired
     private ObjectMapper objectMapper;
 
     @Autowired
     private TalkProcessor talkProcessor;
 
-
     private ClientAndServer mockServer;
 
     @Before
     public void startMockServer() {
-        mockServer = startClientAndServer(1080);
+        mockServer = startClientAndServer(PORT);
     }
 
     @After
@@ -59,7 +60,7 @@ public class TalkProcessorTest {
 
     @Test
     public void testProcessTalks() throws IOException {
-        new MockServerClient("localhost", 1080)
+        new MockServerClient("localhost", PORT)
                 .when(request().withMethod("GET").withPath("/api/conferences/dvbe18/speakers/.*"))
                 .respond(response()
                         .withStatusCode(HttpStatusCode.OK_200.code())

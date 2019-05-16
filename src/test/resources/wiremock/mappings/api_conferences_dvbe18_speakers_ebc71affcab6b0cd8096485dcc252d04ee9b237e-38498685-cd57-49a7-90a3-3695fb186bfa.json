@@ -1,0 +1,23 @@
+{
+  "id" : "38498685-cd57-49a7-90a3-3695fb186bfa",
+  "name" : "api_conferences_dvbe18_speakers_ebc71affcab6b0cd8096485dcc252d04ee9b237e",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/ebc71affcab6b0cd8096485dcc252d04ee9b237e",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"ebc71affcab6b0cd8096485dcc252d04ee9b237e\",\"bioAsHtml\":\"<p>Ryan Cuprak is an CPG &amp; Retail, Formulation R&amp;D Development Senior Manager at Dassault Systemes, co-author EJB in Action 2nd Edition from Manning and the NetBeans Certification Guide from McGrall-Hill. He is also president of the Connecticut Java Users Group since 2003. Ryan is a JavaOne Rockstar Presenter. At Dassault Systemes he works on the ENOVIA Enginuity chemical formulation software and is involved in desktop and backend server development as well as client data migrations. Prior to joining DS, Ryan worked for a distributed computing company, TurboWorx, and also Eastman Kodak’s Molecular imaging Systems group, now part of Burker. Ryan earned a BS in computer science and biology from Loyola University Chicago.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/GVB-7806\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/ebc71affcab6b0cd8096485dcc252d04ee9b237e\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ryan Cuprak\"}],\"id\":\"GVB-7806\",\"title\":\"Exploring Java Heap Dumps\"}],\"company\":\"Dassault Systemes\",\"bio\":\"Ryan Cuprak is an CPG & Retail, Formulation R&D Development Senior Manager at Dassault Systemes, co-author EJB in Action 2nd Edition from Manning and the NetBeans Certification Guide from McGrall-Hill. He is also president of the Connecticut Java Users Group since 2003. Ryan is a JavaOne Rockstar Presenter. At Dassault Systemes he works on the ENOVIA Enginuity chemical formulation software and is involved in desktop and backend server development as well as client data migrations. Prior to joining DS, Ryan worked for a distributed computing company, TurboWorx, and also Eastman Kodak’s Molecular imaging Systems group, now part of Burker. Ryan earned a BS in computer science and biology from Loyola University Chicago.\",\"lastName\":\"Cuprak\",\"firstName\":\"Ryan\",\"blog\":\"https://www.cuprak.info\",\"avatarURL\":\"https://lh6.googleusercontent.com/-HBRQvDEcopw/AAAAAAAAAAI/AAAAAAAAAFA/VKu5fglX3OE/photo.jpg\",\"twitter\":\"@ctjava\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1581075838",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:25 GMT"
+    }
+  },
+  "uuid" : "38498685-cd57-49a7-90a3-3695fb186bfa",
+  "persistent" : true,
+  "insertionIndex" : 40
+}

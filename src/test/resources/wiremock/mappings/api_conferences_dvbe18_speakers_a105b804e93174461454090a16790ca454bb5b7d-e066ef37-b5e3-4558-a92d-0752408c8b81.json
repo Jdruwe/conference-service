@@ -1,0 +1,23 @@
+{
+  "id" : "e066ef37-b5e3-4558-a92d-0752408c8b81",
+  "name" : "api_conferences_dvbe18_speakers_a105b804e93174461454090a16790ca454bb5b7d",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/a105b804e93174461454090a16790ca454bb5b7d",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"a105b804e93174461454090a16790ca454bb5b7d\",\"bioAsHtml\":\"<p>Piotr is a software engineer with strong computer science background. In a daily job he prefers to use strongly typed functional languages. With over 15 years of total software development experience, having his hands dirty in many different technologies, he started coding Scala professionally in 2014. Interested in theory of programming languages, optimization algorithms, software architectures and development processes in wider context. Contributor to various open source projects, leading few of them, e.g. Chimney - Scala library for boilerplate-free data transformations. In his free time he plays acoustic guitar and tries to be not the worst tennis player on the court.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/FWX-0478\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/34cdcd4373cfc16028ca3f54f5bd096370781754\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Geoffrey De Smet\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/a105b804e93174461454090a16790ca454bb5b7d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Piotr Krzemiński\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/770ddde56d4781a265efd5cea062d59bc0d11f1a\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Viktor Tymoshenko\"}],\"id\":\"FWX-0478\",\"title\":\"The battle of 2 automated conference talk scheduling algorithms for Devoxx\"}],\"company\":null,\"bio\":\"Piotr is a software engineer with strong computer science background. In a daily job he prefers to use strongly typed functional languages. With over 15 years of total software development experience, having his hands dirty in many different technologies, he started coding Scala professionally in 2014. Interested in theory of programming languages, optimization algorithms, software architectures and development processes in wider context. Contributor to various open source projects, leading few of them, e.g. Chimney - Scala library for boilerplate-free data transformations. In his free time he plays acoustic guitar and tries to be not the worst tennis player on the court.\",\"lastName\":\"Krzemiński\",\"firstName\":\"Piotr\",\"blog\":\"https://www.noconf.io\",\"avatarURL\":\"https://pbs.twimg.com/profile_images/1043182987548999681/Yk7GjwUG_400x400.jpg\",\"twitter\":\"@pkrzemin\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-413478814",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:40 GMT"
+    }
+  },
+  "uuid" : "e066ef37-b5e3-4558-a92d-0752408c8b81",
+  "persistent" : true,
+  "insertionIndex" : 209
+}

@@ -58,7 +58,6 @@ public class ScheduleProcessor {
 
     private void createScheduleForRoomForDay(Room room, DayOfWeek day) {
         RoomSchedule rs = getRoomSchedule(day, room.getId());
-
         RoomScheduleResponse response = apiCaller.getRoomSchedule(room.getId(),
                 getRoomScheduleEtag(rs),
                 day);

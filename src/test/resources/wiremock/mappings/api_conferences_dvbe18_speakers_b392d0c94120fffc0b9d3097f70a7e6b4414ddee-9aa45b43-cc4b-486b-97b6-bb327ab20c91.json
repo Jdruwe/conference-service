@@ -1,0 +1,23 @@
+{
+  "id" : "9aa45b43-cc4b-486b-97b6-bb327ab20c91",
+  "name" : "api_conferences_dvbe18_speakers_b392d0c94120fffc0b9d3097f70a7e6b4414ddee",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/b392d0c94120fffc0b9d3097f70a7e6b4414ddee",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"b392d0c94120fffc0b9d3097f70a7e6b4414ddee\",\"bioAsHtml\":\"<p>Dieter is a Principal Consultant at Ordina Belgium.</p>\\n<p>He has about 11 years of consulting experience and is Practice Manager Cloud Automation.</p>\\n<p>During his career, he has worked in very different environments, ranging from the banking, distribution and government industry to the world of telecommunications, healthcare and big pharma.</p>\\n<p>When he started his career developing monolith applications running on obsolete application servers, he never could have dreamed how dramatically the world of software would change. Currently, he&#x27;s working on the digital transformation of companies with a DevOps mindset, moving towards a microservice architecture and deploying cloud-native applications to Kubernetes based offerings on AWS, Azure or GCP.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/HGK-0737\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/b392d0c94120fffc0b9d3097f70a7e6b4414ddee\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Dieter Hubau\"}],\"id\":\"HGK-0737\",\"title\":\"Visualizing Mandelbrot fractals using Riff and Spring Cloud Function\"}],\"company\":\"Ordina Belgium\",\"bio\":\"Dieter is a Principal Consultant at Ordina Belgium.\\r\\n\\r\\nHe has about 11 years of consulting experience and is Practice Manager Cloud Automation.\\r\\n\\r\\nDuring his career, he has worked in very different environments, ranging from the banking, distribution and government industry to the world of telecommunications, healthcare and big pharma.\\r\\n\\r\\nWhen he started his career developing monolith applications running on obsolete application servers, he never could have dreamed how dramatically the world of software would change. Currently, he's working on the digital transformation of companies with a DevOps mindset, moving towards a microservice architecture and deploying cloud-native applications to Kubernetes based offerings on AWS, Azure or GCP.\",\"lastName\":\"Hubau\",\"firstName\":\"Dieter\",\"blog\":\"https://ordina-jworks.github.io\",\"avatarURL\":\"http://www.gravatar.com/avatar/01d81296f03047d723fd47501681e549\",\"twitter\":\"@dhubau\",\"lang\":\"nl-NL\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1418625724",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:29 GMT"
+    }
+  },
+  "uuid" : "9aa45b43-cc4b-486b-97b6-bb327ab20c91",
+  "persistent" : true,
+  "insertionIndex" : 76
+}

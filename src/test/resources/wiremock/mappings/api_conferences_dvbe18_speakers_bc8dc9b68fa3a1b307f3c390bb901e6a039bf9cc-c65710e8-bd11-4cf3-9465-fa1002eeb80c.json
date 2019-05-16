@@ -1,0 +1,23 @@
+{
+  "id" : "c65710e8-bd11-4cf3-9465-fa1002eeb80c",
+  "name" : "api_conferences_dvbe18_speakers_bc8dc9b68fa3a1b307f3c390bb901e6a039bf9cc",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/bc8dc9b68fa3a1b307f3c390bb901e6a039bf9cc",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"bc8dc9b68fa3a1b307f3c390bb901e6a039bf9cc\",\"bioAsHtml\":\"<p>Technical agitator at Apside, Christophe preaches good practices on various IT projects and universities in the Touraine region. Converted to computer science 15 years ago after a doctorate in neurobiology, he actively contributes to Java communities by having been co-responsible for the Java section of the developpez.com site but also by participating in conferences and having founded the JUG Towers in 2008.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Mobile & IoT.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/LWB-1541\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/bc8dc9b68fa3a1b307f3c390bb901e6a039bf9cc\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Christophe Jollivet\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/a02192acb0341950ed3c5d275761fb0e3229eee9\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Sébastien Laporte\"}],\"id\":\"LWB-1541\",\"title\":\"Connected sensors and data visualization to measure hardness at work\"}],\"company\":\"Apside\",\"bio\":\"Technical agitator at Apside, Christophe preaches good practices on various IT projects and universities in the Touraine region. Converted to computer science 15 years ago after a doctorate in neurobiology, he actively contributes to Java communities by having been co-responsible for the Java section of the developpez.com site but also by participating in conferences and having founded the JUG Towers in 2008.\",\"lastName\":\"Jollivet\",\"firstName\":\"Christophe\",\"blog\":\"https://plus.google.com/+ChristopheJollivet\",\"avatarURL\":\"https://lh3.googleusercontent.com/-3sUzAaUN01o/AAAAAAAAAAI/AAAAAAAACzE/6Nekr6L7RSk/photo.jpg\",\"twitter\":\"@jollivetc\",\"lang\":\"fr-FR\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1900810056",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:29 GMT"
+    }
+  },
+  "uuid" : "c65710e8-bd11-4cf3-9465-fa1002eeb80c",
+  "persistent" : true,
+  "insertionIndex" : 80
+}

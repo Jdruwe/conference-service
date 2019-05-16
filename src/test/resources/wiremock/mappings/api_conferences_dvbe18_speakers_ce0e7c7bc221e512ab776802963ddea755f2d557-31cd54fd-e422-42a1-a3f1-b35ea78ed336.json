@@ -1,0 +1,23 @@
+{
+  "id" : "31cd54fd-e422-42a1-a3f1-b35ea78ed336",
+  "name" : "api_conferences_dvbe18_speakers_ce0e7c7bc221e512ab776802963ddea755f2d557",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/ce0e7c7bc221e512ab776802963ddea755f2d557",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"ce0e7c7bc221e512ab776802963ddea755f2d557\",\"bioAsHtml\":\"<p>Joe Grandja is a core committer on the Spring Security team. He has been leading the efforts in building the next generation of OAuth 2.0, OpenID Connect 1.0, and JOSE framework support in Spring Security 5.</p>\\n<p>Joe has over 20 years of industry experience in the role of Solution Architect, System Architect, Software Engineer and Consultant. His past experience has been mainly focused in the Financial Services sector in the Toronto, Canada area. He has successfully designed, built and delivered enterprise grade banking applications/platforms in the Personal/Commercial and Brokerage/Investing divisions. He has worked closely with the InfoSec teams within the banks to ensure security and regulatory compliance.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Deep Dive\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/CNS-4429\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/ce0e7c7bc221e512ab776802963ddea755f2d557\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Joe Grandja\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/14607f603130b340dddb453269fa5dbf4cb6761d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Adib Saikali\"}],\"id\":\"CNS-4429\",\"title\":\"Implementing Microservices Security Patterns & Protocols with Spring Deep Dive\"}],\"company\":\"Pivotal\",\"bio\":\"Joe Grandja is a core committer on the Spring Security team. He has been leading the efforts in building the next generation of OAuth 2.0, OpenID Connect 1.0, and JOSE framework support in Spring Security 5.\\r\\n\\r\\nJoe has over 20 years of industry experience in the role of Solution Architect, System Architect, Software Engineer and Consultant. His past experience has been mainly focused in the Financial Services sector in the Toronto, Canada area. He has successfully designed, built and delivered enterprise grade banking applications/platforms in the Personal/Commercial and Brokerage/Investing divisions. He has worked closely with the InfoSec teams within the banks to ensure security and regulatory compliance.\\r\\n\",\"lastName\":\"Grandja\",\"firstName\":\"Joe\",\"blog\":\"https://spring.io/team\",\"avatarURL\":\"https://lh3.googleusercontent.com/-0UoQsbTLIA4/AAAAAAAAAAI/AAAAAAAAAZc/yQh0S5AnfYc/photo.jpg\",\"twitter\":\"@joe_grandja\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "192269346",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:25 GMT"
+    }
+  },
+  "uuid" : "31cd54fd-e422-42a1-a3f1-b35ea78ed336",
+  "persistent" : true,
+  "insertionIndex" : 42
+}

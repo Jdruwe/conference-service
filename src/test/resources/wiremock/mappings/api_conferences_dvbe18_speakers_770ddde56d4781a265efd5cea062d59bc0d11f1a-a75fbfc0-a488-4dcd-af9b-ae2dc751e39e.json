@@ -1,0 +1,23 @@
+{
+  "id" : "a75fbfc0-a488-4dcd-af9b-ae2dc751e39e",
+  "name" : "api_conferences_dvbe18_speakers_770ddde56d4781a265efd5cea062d59bc0d11f1a",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/770ddde56d4781a265efd5cea062d59bc0d11f1a",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"770ddde56d4781a265efd5cea062d59bc0d11f1a\",\"bioAsHtml\":\"<p>Viktor&#x27;s jorney with commercial software development has started in 2010. Since then, he has tried different roles: C++ developer, scrum master, product owner, founder. Combination of solid management experience and passion to FP has given birth to https://www.noconf.io, where Viktor codes in Elm in his free time.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/FWX-0478\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/34cdcd4373cfc16028ca3f54f5bd096370781754\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Geoffrey De Smet\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/a105b804e93174461454090a16790ca454bb5b7d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Piotr Krzemiński\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/770ddde56d4781a265efd5cea062d59bc0d11f1a\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Viktor Tymoshenko\"}],\"id\":\"FWX-0478\",\"title\":\"The battle of 2 automated conference talk scheduling algorithms for Devoxx\"}],\"company\":\"NoConf\",\"bio\":\"Viktor's jorney with commercial software development has started in 2010. Since then, he has tried different roles: C++ developer, scrum master, product owner, founder. Combination of solid management experience and passion to FP has given birth to https://www.noconf.io, where Viktor codes in Elm in his free time.\",\"lastName\":\"Tymoshenko\",\"firstName\":\"Viktor\",\"blog\":\"https://www.noconf.io/\",\"avatarURL\":\"https://pbs.twimg.com/profile_images/1043979415926050816/dGqXqbl9_400x400.jpg\",\"twitter\":\"@_tymoshen\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-292129091",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:40 GMT"
+    }
+  },
+  "uuid" : "a75fbfc0-a488-4dcd-af9b-ae2dc751e39e",
+  "persistent" : true,
+  "insertionIndex" : 210
+}

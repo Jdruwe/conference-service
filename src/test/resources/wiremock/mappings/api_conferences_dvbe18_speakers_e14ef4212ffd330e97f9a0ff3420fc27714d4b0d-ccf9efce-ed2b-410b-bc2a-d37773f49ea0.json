@@ -1,0 +1,23 @@
+{
+  "id" : "ccf9efce-ed2b-410b-bc2a-d37773f49ea0",
+  "name" : "api_conferences_dvbe18_speakers_e14ef4212ffd330e97f9a0ff3420fc27714d4b0d",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/e14ef4212ffd330e97f9a0ff3420fc27714d4b0d",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"e14ef4212ffd330e97f9a0ff3420fc27714d4b0d\",\"bioAsHtml\":\"<p>José is a developer, architect, application designer and instructor with 20 years experience in Java technologies and software craftsmanship. He is an assistant professor in Paris. He is a recognized expert, Java Champion and Java Rockstar. His recent work includes Java 8, lambda expressions, the Stream API and concurrent programming.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Deep Dive\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/BLI-5468\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/e14ef4212ffd330e97f9a0ff3420fc27714d4b0d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"José Paumard\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/a733dc53923e5acd86780590978c563ce1e2582e\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Stuart Marks\"}],\"id\":\"BLI-5468\",\"title\":\"Lambdas and Streams Master Class Part 2\"},{\"talkType\":\"Deep Dive\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/CFL-7665\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/e14ef4212ffd330e97f9a0ff3420fc27714d4b0d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"José Paumard\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/a733dc53923e5acd86780590978c563ce1e2582e\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Stuart Marks\"}],\"id\":\"CFL-7665\",\"title\":\"Lambdas and Streams Master Class Part 1\"}],\"company\":\"JPEFI\",\"bio\":\"José is a developer, architect, application designer and instructor with 20 years experience in Java technologies and software craftsmanship. He is an assistant professor in Paris. He is a recognized expert, Java Champion and Java Rockstar. His recent work includes Java 8, lambda expressions, the Stream API and concurrent programming.\",\"lastName\":\"Paumard\",\"firstName\":\"José\",\"blog\":\"http://blog.paumard.org/\",\"avatarURL\":\"https://lh6.googleusercontent.com/-f2MnMLouFlA/AAAAAAAAAAI/AAAAAAAAMHE/CVS84gQlfu8/photo.jpg\",\"twitter\":\"@JosePaumard\",\"lang\":\"fr-FR\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1353053867",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:22 GMT"
+    }
+  },
+  "uuid" : "ccf9efce-ed2b-410b-bc2a-d37773f49ea0",
+  "persistent" : true,
+  "insertionIndex" : 2
+}

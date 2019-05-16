@@ -1,0 +1,23 @@
+{
+  "id" : "7a85aa0f-bdc0-4564-a46b-fb13085c696d",
+  "name" : "api_conferences_dvbe18_speakers_55e2fb75fa1fd0270646a491cded06957368bb9f",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/55e2fb75fa1fd0270646a491cded06957368bb9f",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"55e2fb75fa1fd0270646a491cded06957368bb9f\",\"bioAsHtml\":\"<p>Eric Bottard is a core committer on the riff project, working at Pivotal. After hacking on enterprise projects for more than ten years, embracing Spring from day one, he joined the soon-to-become Pivotal division at VMware, working on Cloud Foundry and then Spring Cloud Data Flow.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Deep Dive\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/ASZ-5494\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/326f957b5bf291676606231592f9b91701075d89\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ray Tsang\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/55e2fb75fa1fd0270646a491cded06957368bb9f\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Eric Bottard\"}],\"id\":\"ASZ-5494\",\"title\":\"Beyond Kubernetes - Managing Applications and Functions with Knative, riff, and Spring Cloud Functions\"}],\"company\":\"Pivotal\",\"bio\":\"Eric Bottard is a core committer on the riff project, working at Pivotal. After hacking on enterprise projects for more than ten years, embracing Spring from day one, he joined the soon-to-become Pivotal division at VMware, working on Cloud Foundry and then Spring Cloud Data Flow. \",\"lastName\":\"Bottard\",\"firstName\":\"Eric\",\"blog\":null,\"avatarURL\":\"http://www.gravatar.com/avatar/917fa776e40325e488d52571546353a5\",\"twitter\":\"@ebottard\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-32900041",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:25 GMT"
+    }
+  },
+  "uuid" : "7a85aa0f-bdc0-4564-a46b-fb13085c696d",
+  "persistent" : true,
+  "insertionIndex" : 37
+}

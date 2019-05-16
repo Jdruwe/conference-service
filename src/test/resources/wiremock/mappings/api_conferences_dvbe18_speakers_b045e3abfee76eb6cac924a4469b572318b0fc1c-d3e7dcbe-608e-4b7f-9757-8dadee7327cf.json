@@ -1,0 +1,23 @@
+{
+  "id" : "d3e7dcbe-608e-4b7f-9757-8dadee7327cf",
+  "name" : "api_conferences_dvbe18_speakers_b045e3abfee76eb6cac924a4469b572318b0fc1c",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/b045e3abfee76eb6cac924a4469b572318b0fc1c",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"b045e3abfee76eb6cac924a4469b572318b0fc1c\",\"bioAsHtml\":\"<p>Android Developer who’s been working on the platform since the past 2 years and an avid tech blogger, Harshit is passionate about anything and everything related to android.\\nHe was one of the first Google certified Android developers in India and is currently an Android Instructor at CodingBlocks, a startup in New Delhi.\\nBeing an Open Source enthusiast he’s also been a part of various programs like Google Summer of Code and Google Code In in the past.\\nRight now Harshit is working with Udacity and Coding Blocks, a startup in New Delhi focusing on creating more employable talent.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Mobile & IoT.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/YMX-5931\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/b045e3abfee76eb6cac924a4469b572318b0fc1c\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Harshit Dwivedi\"}],\"id\":\"YMX-5931\",\"title\":\"Firebase ML Kit : Machine Learning made easy\"}],\"company\":\"@coding-blocks\",\"bio\":\"Android Developer who’s been working on the platform since the past 2 years and an avid tech blogger, Harshit is passionate about anything and everything related to android.\\r\\nHe was one of the first Google certified Android developers in India and is currently an Android Instructor at CodingBlocks, a startup in New Delhi.\\r\\nBeing an Open Source enthusiast he’s also been a part of various programs like Google Summer of Code and Google Code In in the past.\\r\\nRight now Harshit is working with Udacity and Coding Blocks, a startup in New Delhi focusing on creating more employable talent.\",\"lastName\":\"Dwivedi\",\"firstName\":\"Harshit\",\"blog\":\"https://harshit.app/\",\"avatarURL\":\"http://www.gravatar.com/avatar/b7a9019a4a2ff2b370331fed12abb790\",\"twitter\":null,\"lang\":\"en-IN\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1537564104",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:46 GMT"
+    }
+  },
+  "uuid" : "d3e7dcbe-608e-4b7f-9757-8dadee7327cf",
+  "persistent" : true,
+  "insertionIndex" : 266
+}

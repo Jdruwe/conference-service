@@ -1,0 +1,23 @@
+{
+  "id" : "f5112666-fae1-4847-9175-1a81bc7f290e",
+  "name" : "api_conferences_dvbe18_speakers_ee65e2019de49624e58688cf9459cea469a29687",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/ee65e2019de49624e58688cf9459cea469a29687",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"ee65e2019de49624e58688cf9459cea469a29687\",\"bioAsHtml\":\"<p>I&#x27;m the manager for the JDK team in AWS.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/DTR-4199\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/21656e1a64ca2d0f0f05cc513442258bc8564d3b\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Arun Gupta\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/ee65e2019de49624e58688cf9459cea469a29687\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Yishai Galatzer\"}],\"id\":\"DTR-4199\",\"title\":\"Introducing Amazon Corretto\"}],\"company\":\"Amazon\",\"bio\":\"I'm the manager for the JDK team in AWS.\",\"lastName\":\"Galatzer\",\"firstName\":\"Yishai\",\"blog\":null,\"avatarURL\":\"http://blog.xebia.fr/images/devoxxuk-2014-logo.png\",\"twitter\":\"@yigalatz\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1126801843",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:32 GMT"
+    }
+  },
+  "uuid" : "f5112666-fae1-4847-9175-1a81bc7f290e",
+  "persistent" : true,
+  "insertionIndex" : 118
+}

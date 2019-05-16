@@ -1,0 +1,23 @@
+{
+  "id" : "0c8a7c30-c274-4467-ac47-6ac600ead9ee",
+  "name" : "api_conferences_dvbe18_speakers_ff24d00a2dc5b5dd2700c009eb2aa82587667101",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/ff24d00a2dc5b5dd2700c009eb2aa82587667101",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"ff24d00a2dc5b5dd2700c009eb2aa82587667101\",\"bioAsHtml\":\"<p>Joe runs the Java experience on Heroku.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/SOK-9080\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/ff24d00a2dc5b5dd2700c009eb2aa82587667101\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Joe Kutner\"}],\"id\":\"SOK-9080\",\"title\":\"10 Mistakes Hackers Want You to Make\"}],\"company\":\"Heroku\",\"bio\":\"Joe runs the Java experience on Heroku.\",\"lastName\":\"Kutner\",\"firstName\":\"Joe\",\"blog\":\"https://heroku.com\",\"avatarURL\":\"https://www.gravatar.com/avatar/abf2c321be67e74e86c3b83e871593f0\",\"twitter\":\"@codefinger\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1691812165",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:24 GMT"
+    }
+  },
+  "uuid" : "0c8a7c30-c274-4467-ac47-6ac600ead9ee",
+  "persistent" : true,
+  "insertionIndex" : 23
+}

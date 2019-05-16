@@ -1,0 +1,23 @@
+{
+  "id" : "c3d32ef1-776e-4a70-95da-0f5c73fe7b0c",
+  "name" : "api_conferences_dvbe18_speakers_ff0eb37df830d5236a41d278f7d71c98461d775f",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/ff0eb37df830d5236a41d278f7d71c98461d775f",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"ff0eb37df830d5236a41d278f7d71c98461d775f\",\"bioAsHtml\":\"<p>Grzegorz Piwowarek is a hands-on tech lead at @CasumoTech, a trainer at @bottega_it, a blogger at 4comprehension.com.</p>\\n<p>He was professionally involved in projects involving systems integration, image recognition, and recently in highly-scalable, distributed solutions.</p>\\n<p>Besides software development, he is a professional yo-yo player and a guitarist in a progressive metal band - Visions of Tondal.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/WDP-2014\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/ff0eb37df830d5236a41d278f7d71c98461d775f\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Grzegorz Piwowarek\"}],\"id\":\"WDP-2014\",\"title\":\"Functional Exception Handling in Java with Vavr\"}],\"company\":\"@CasumoTech\",\"bio\":\"Grzegorz Piwowarek is a hands-on tech lead at @CasumoTech, a trainer at @bottega_it, a blogger at 4comprehension.com.\\r\\n\\r\\nHe was professionally involved in projects involving systems integration, image recognition, and recently in highly-scalable, distributed solutions. \\r\\n\\r\\nBesides software development, he is a professional yo-yo player and a guitarist in a progressive metal band - Visions of Tondal.\",\"lastName\":\"Piwowarek\",\"firstName\":\"Grzegorz\",\"blog\":\"http://4comprehension.com\",\"avatarURL\":\"http://www.gravatar.com/avatar/629fdde67cb23f9d3799635d89c7b250\",\"twitter\":\"@pivovarit\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1142501949",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:22 GMT"
+    }
+  },
+  "uuid" : "c3d32ef1-776e-4a70-95da-0f5c73fe7b0c",
+  "persistent" : true,
+  "insertionIndex" : 5
+}

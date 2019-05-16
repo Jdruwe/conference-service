@@ -1,0 +1,23 @@
+{
+  "id" : "57ed3745-6006-499f-aa69-f473fe2759ae",
+  "name" : "api_conferences_dvbe18_speakers_7600b5b536b12c53214ccccdb9ddc970af51aa36",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/7600b5b536b12c53214ccccdb9ddc970af51aa36",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"7600b5b536b12c53214ccccdb9ddc970af51aa36\",\"bioAsHtml\":\"<p>Robyn Larsen is a front-end developer, entrepreneur, and speaker.\\nRobyn is also an active community member who advises numerous startups across multiple industries and frequently mentors women in tech and STEM. She is is a member of the Technical Advisory Group (TAG) with Microsoft and Avalanche Canada. She builds tools for entrepreneurs on the International team at Shopify, is co-founder of Zona Fitness Academy, and teaches Zero to Launch workshops for entrepreneurs through Embrk, She is a globe trotting, adrenaline junkie currently living the remote dream in Revelstoke, British Columbia.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Modern Web & UX.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/QKC-0204\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/7600b5b536b12c53214ccccdb9ddc970af51aa36\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Robyn Larsen\"}],\"id\":\"QKC-0204\",\"title\":\"Down the SVG Rabbit Hole: Advanced SVG Effects & Optimized Workflow\"}],\"company\":\"Shopify\",\"bio\":\"Robyn Larsen is a front-end developer, entrepreneur, and speaker.\\r\\nRobyn is also an active community member who advises numerous startups across multiple industries and frequently mentors women in tech and STEM. She is is a member of the Technical Advisory Group (TAG) with Microsoft and Avalanche Canada. She builds tools for entrepreneurs on the International team at Shopify, is co-founder of Zona Fitness Academy, and teaches Zero to Launch workshops for entrepreneurs through Embrk, She is a globe trotting, adrenaline junkie currently living the remote dream in Revelstoke, British Columbia. \",\"lastName\":\"Larsen\",\"firstName\":\"Robyn\",\"blog\":\"http://www.robynlarsen.ca/\",\"avatarURL\":\"https://dvbe18.confinabox.com/profilePicture/7600b5b536b12c53214ccccdb9ddc970af51aa36\",\"twitter\":\"@robyn_larsen\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1694742528",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:30 GMT"
+    }
+  },
+  "uuid" : "57ed3745-6006-499f-aa69-f473fe2759ae",
+  "persistent" : true,
+  "insertionIndex" : 94
+}

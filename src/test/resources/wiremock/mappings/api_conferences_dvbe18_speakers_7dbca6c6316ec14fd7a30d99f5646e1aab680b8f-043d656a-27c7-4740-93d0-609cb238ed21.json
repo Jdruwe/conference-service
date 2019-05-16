@@ -1,0 +1,23 @@
+{
+  "id" : "043d656a-27c7-4740-93d0-609cb238ed21",
+  "name" : "api_conferences_dvbe18_speakers_7dbca6c6316ec14fd7a30d99f5646e1aab680b8f",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/7dbca6c6316ec14fd7a30d99f5646e1aab680b8f",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"7dbca6c6316ec14fd7a30d99f5646e1aab680b8f\",\"bioAsHtml\":\"<p>Principal DevOps Consultant.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/HHU-4629\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/7dbca6c6316ec14fd7a30d99f5646e1aab680b8f\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Michael Hüttermann\"}],\"id\":\"HHU-4629\",\"title\":\"DevOps: State of the Union\"},{\"talkType\":\"Tools-in-Action\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/QIF-9171\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/7dbca6c6316ec14fd7a30d99f5646e1aab680b8f\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Michael Hüttermann\"}],\"id\":\"QIF-9171\",\"title\":\"The Silence of the Lambs: Inspecting Source Code and Binaries, in Continuous Delivery Pipelines \"}],\"company\":\"http://huettermann.net\",\"bio\":\"Principal DevOps Consultant.\",\"lastName\":\"Hüttermann\",\"firstName\":\"Michael\",\"blog\":\"michael@huettermann.net\",\"avatarURL\":\"https://www.gravatar.com/avatar/db7334bc3ec4e3038beb0cbe6957f42d\",\"twitter\":\"@huettermann\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1873743804",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:35 GMT"
+    }
+  },
+  "uuid" : "043d656a-27c7-4740-93d0-609cb238ed21",
+  "persistent" : true,
+  "insertionIndex" : 159
+}

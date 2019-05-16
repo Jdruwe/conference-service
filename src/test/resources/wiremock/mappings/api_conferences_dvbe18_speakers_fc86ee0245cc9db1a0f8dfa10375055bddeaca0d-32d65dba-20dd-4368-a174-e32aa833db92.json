@@ -1,0 +1,23 @@
+{
+  "id" : "32d65dba-20dd-4368-a174-e32aa833db92",
+  "name" : "api_conferences_dvbe18_speakers_fc86ee0245cc9db1a0f8dfa10375055bddeaca0d",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/fc86ee0245cc9db1a0f8dfa10375055bddeaca0d",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"fc86ee0245cc9db1a0f8dfa10375055bddeaca0d\",\"bioAsHtml\":\"<p>Richard Kettelerij is co-founder and hands-on software architect at Mindloops. He’s a strong promoter of agile/devops practices and a regular open source contributor. Currently Richard is busy developing big data solutions in a large scale private cloud environment.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/LSP-5748\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/fe9f9d97f7c0a959e1f94f2020726e31e8cecc5e\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Tim Prijn\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/ea94b8f9411d49e58a8175199d1197856e291f99\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Peter Hendriks\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/0b1260573cfc163d9313ddb11ea5a54b3ab7193f\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ramon Wieleman\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/fc86ee0245cc9db1a0f8dfa10375055bddeaca0d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Richard Kettelerij\"}],\"id\":\"LSP-5748\",\"title\":\"The Java Pub Quiz\"}],\"company\":\"Mindloops\",\"bio\":\"Richard Kettelerij is co-founder and hands-on software architect at Mindloops. He’s a strong promoter of agile/devops practices and a regular open source contributor. Currently Richard is busy developing big data solutions in a large scale private cloud environment.\",\"lastName\":\"Kettelerij\",\"firstName\":\"Richard\",\"blog\":\"https://mindloops.nl\",\"avatarURL\":\"http://www.gravatar.com/avatar/0f67064dabeaf03ac03fc54d7f7a770a\",\"twitter\":\"@rkettelerij\",\"lang\":\"nl\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-254004226",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:45 GMT"
+    }
+  },
+  "uuid" : "32d65dba-20dd-4368-a174-e32aa833db92",
+  "persistent" : true,
+  "insertionIndex" : 257
+}

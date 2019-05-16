@@ -14,8 +14,10 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Embeddable
 public class RoomScheduleId implements Serializable {
+
     @ManyToOne
     private Schedule schedule;
+
     @OneToOne
     private Room room;
 }

@@ -1,0 +1,23 @@
+{
+  "id" : "350fe739-ebf2-4912-a8f1-71448ef74d71",
+  "name" : "api_conferences_dvbe18_speakers_07162e8d688cbca41c7415ebea3164603f30dd08",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/07162e8d688cbca41c7415ebea3164603f30dd08",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"07162e8d688cbca41c7415ebea3164603f30dd08\",\"bioAsHtml\":\"<p>Jaap is a Cloud Expert and DevOps Consultant working for Xebia and currently acting as the Product Owner of the Nationale Nederlanden AWS Platform.</p>\\n<p>As a DevOps consultant he focuses on helping organizations creating better software products. His expertise is on DevOps transformations and he likes to combine the importance of good software craftmanship with a strong emphasis on maximizing software product value.</p>\\n<p>In his Product Owner role at Nationale Nederlanden he is responsible for the AWS Platform development team and the adoption of the platform by approximately 200 internal development teams worldwide. Additionally his task is to motivate those teams in understanding the Agile and DevOps principles.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/QZY-5499\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/07162e8d688cbca41c7415ebea3164603f30dd08\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Jaap Kabbedijk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/1fb4b36067019650b169a5514fb1908292305c35\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Gijsbert van Renswoude\"}],\"id\":\"QZY-5499\",\"title\":\"Managing CI/CD on AWS at scale\"}],\"company\":\"Xebia\",\"bio\":\"Jaap is a Cloud Expert and DevOps Consultant working for Xebia and currently acting as the Product Owner of the Nationale Nederlanden AWS Platform. \\r\\n\\r\\nAs a DevOps consultant he focuses on helping organizations creating better software products. His expertise is on DevOps transformations and he likes to combine the importance of good software craftmanship with a strong emphasis on maximizing software product value.\\r\\n\\r\\nIn his Product Owner role at Nationale Nederlanden he is responsible for the AWS Platform development team and the adoption of the platform by approximately 200 internal development teams worldwide. Additionally his task is to motivate those teams in understanding the Agile and DevOps principles.\",\"lastName\":\"Kabbedijk\",\"firstName\":\"Jaap\",\"blog\":\"www.xebia.com\",\"avatarURL\":\"https://pbs.twimg.com/profile_images/1008020255485112321/uA2CQic5_400x400.jpg\",\"twitter\":\"@jkabbedijk\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-399764218",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:38 GMT"
+    }
+  },
+  "uuid" : "350fe739-ebf2-4912-a8f1-71448ef74d71",
+  "persistent" : true,
+  "insertionIndex" : 182
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "7a4c84ca-ff38-47d1-9d87-89ff22b59b23",
+  "name" : "api_conferences_dvbe18_speakers_ac63ccacfadd16102fe70327a20e2faa6933bca6",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/ac63ccacfadd16102fe70327a20e2faa6933bca6",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"ac63ccacfadd16102fe70327a20e2faa6933bca6\",\"bioAsHtml\":\"<p>Graham is an IBM Senior Technical Staff Member and WebSphere Applications Server Developer Advocacy Lead based at IBM&#x27;s R&amp;D Laboratory in Hursley, UK. He takes a keen interest in emerging technologies and practices and in particular programming models. His past exploits include establishing and contributing to open source projects at PHP and Apache and participation in, and leading, industry standards at OASIS and the OSGi Alliance.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/LJT-6211\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/8107d6242333f09d50f5cabe954fa611c2215c31\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Mike Thompson\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/ac63ccacfadd16102fe70327a20e2faa6933bca6\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Graham Charters\"}],\"id\":\"LJT-6211\",\"title\":\"Optimizing Spring Boot apps for Docker\"},{\"talkType\":\"Conference\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/YHN-7922\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/7054204a63b211dd9f47c9cb0a600da878c3b9ce\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Steve Poole\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/ac63ccacfadd16102fe70327a20e2faa6933bca6\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Graham Charters\"}],\"id\":\"YHN-7922\",\"title\":\"Are you ready for Cloud Native Java\"}],\"company\":\"IBM\",\"bio\":\"Graham is an IBM Senior Technical Staff Member and WebSphere Applications Server Developer Advocacy Lead based at IBM's R&D Laboratory in Hursley, UK. He takes a keen interest in emerging technologies and practices and in particular programming models. His past exploits include establishing and contributing to open source projects at PHP and Apache and participation in, and leading, industry standards at OASIS and the OSGi Alliance.\",\"lastName\":\"Charters\",\"firstName\":\"Graham\",\"blog\":\"http://www.grahamcharters.name/\",\"avatarURL\":\"https://lh6.googleusercontent.com/-xQRx_Bv6WyI/AAAAAAAAAAI/AAAAAAAAAMw/AHLHm3Yb15M/photo.jpg\",\"twitter\":\"@gcharters\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1135621395",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:23 GMT"
+    }
+  },
+  "uuid" : "7a4c84ca-ff38-47d1-9d87-89ff22b59b23",
+  "persistent" : true,
+  "insertionIndex" : 11
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "170100a7-396e-4480-9636-c8aa2ab5c6bd",
+  "name" : "api_conferences_dvbe18_speakers_2c5a6361c9396d7a0df624d828e06fd86abc5435",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/2c5a6361c9396d7a0df624d828e06fd86abc5435",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"2c5a6361c9396d7a0df624d828e06fd86abc5435\",\"bioAsHtml\":\"<p>I&#x27;m a freelance java developer with a focus on good testable code and new technologies.</p>\\n<p>Specialties: Java, Hibernate, Spring</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Ignite\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/VGW-0187\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/2c5a6361c9396d7a0df624d828e06fd86abc5435\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Jeroen Horemans\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/c1d4cb023f318be8e9f8356301104fddb7528458\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Nick Vanderhoven\"}],\"id\":\"VGW-0187\",\"title\":\"PAAF : The passive aggressive annotation framework\"}],\"company\":\"Hypernation\",\"bio\":\"I'm a freelance java developer with a focus on good testable code and new technologies.\\r\\n\\r\\nSpecialties: Java, Hibernate, Spring\",\"lastName\":\"Horemans\",\"firstName\":\"Jeroen\",\"blog\":null,\"avatarURL\":\"http://blog.xebia.fr/images/devoxxuk-2014-logo.png\",\"twitter\":\"@Hypernations\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-970987725",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:44 GMT"
+    }
+  },
+  "uuid" : "170100a7-396e-4480-9636-c8aa2ab5c6bd",
+  "persistent" : true,
+  "insertionIndex" : 247
+}

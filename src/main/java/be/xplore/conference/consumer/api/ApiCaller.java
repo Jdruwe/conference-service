@@ -26,9 +26,8 @@ public class ApiCaller {
     }
 
     public RoomsResponse getRooms(String etag) {
-        String url = apiProperties.getBaseUrl() + apiProperties.getRooms();
-
         try {
+            String url = apiProperties.getBaseUrl() + apiProperties.getRooms();
             ApiResponse response = apiHelper.queryApi(url, etag, RoomsDto.class);
             return new RoomsResponse(response.getETag(), (RoomsDto) response.getBody());
         } catch (IOException e) {
@@ -37,8 +36,8 @@ public class ApiCaller {
     }
 
     public RoomScheduleResponse getRoomSchedule(String roomId, String etag, DayOfWeek day) {
-        String url = apiProperties.getBaseUrl() + apiProperties.getRooms() + roomId + "/" + day.name().toLowerCase();
         try {
+            String url = apiProperties.getBaseUrl() + apiProperties.getRooms() + roomId + "/" + day.name().toLowerCase();
             ApiResponse response = apiHelper.queryApi(url, etag, ScheduleDto.class);
             return new RoomScheduleResponse(response.getETag(), (ScheduleDto) response.getBody());
         } catch (IOException e) {

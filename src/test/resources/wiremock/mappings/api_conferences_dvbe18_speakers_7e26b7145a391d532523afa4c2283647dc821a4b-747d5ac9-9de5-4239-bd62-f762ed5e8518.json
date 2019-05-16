@@ -1,0 +1,23 @@
+{
+  "id" : "747d5ac9-9de5-4239-bd62-f762ed5e8518",
+  "name" : "api_conferences_dvbe18_speakers_7e26b7145a391d532523afa4c2283647dc821a4b",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/7e26b7145a391d532523afa4c2283647dc821a4b",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"7e26b7145a391d532523afa4c2283647dc821a4b\",\"bioAsHtml\":\"<p>Monira Rhaimi has worked across multiple roles from software engineer to product manager, in different regions of the world. Having experienced many different environments, teams and cultures, she developed a passion for product management, lean and agile practices and culture change in organisations.\\nCurrently working for ThoughtWorks as a Product Consultant, she has the opportunity to practice her craft and deepen her learnings while helping teams start a change.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/TXZ-1793\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6ecf0f052f036fefca9193ab827374c25381283e\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Oli Gibson\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/7e26b7145a391d532523afa4c2283647dc821a4b\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Monira Rhaimi\"}],\"id\":\"TXZ-1793\",\"title\":\"How to build products people care about\"}],\"company\":\"Thoughtworks\",\"bio\":\"Monira Rhaimi has worked across multiple roles from software engineer to product manager, in different regions of the world. Having experienced many different environments, teams and cultures, she developed a passion for product management, lean and agile practices and culture change in organisations.\\r\\nCurrently working for ThoughtWorks as a Product Consultant, she has the opportunity to practice her craft and deepen her learnings while helping teams start a change.\",\"lastName\":\"Rhaimi\",\"firstName\":\"Monira\",\"blog\":null,\"avatarURL\":\"https://pbs.twimg.com/profile_images/1022590528330915841/H5dBaCpG_400x400.jpg\",\"twitter\":\"@monirarhaimi\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "35672458",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:33 GMT"
+    }
+  },
+  "uuid" : "747d5ac9-9de5-4239-bd62-f762ed5e8518",
+  "persistent" : true,
+  "insertionIndex" : 128
+}

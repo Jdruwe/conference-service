@@ -1,0 +1,23 @@
+{
+  "id" : "12bf4f97-181a-467e-8006-567866d80475",
+  "name" : "api_conferences_dvbe18_speakers_8107d6242333f09d50f5cabe954fa611c2215c31",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/8107d6242333f09d50f5cabe954fa611c2215c31",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"8107d6242333f09d50f5cabe954fa611c2215c31\",\"bioAsHtml\":\"<p>Developer, Architect, Evangelist, and whatever else I&#x27;m doing at the moment</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/LJT-6211\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/8107d6242333f09d50f5cabe954fa611c2215c31\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Mike Thompson\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/ac63ccacfadd16102fe70327a20e2faa6933bca6\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Graham Charters\"}],\"id\":\"LJT-6211\",\"title\":\"Optimizing Spring Boot apps for Docker\"}],\"company\":\"IBM\",\"bio\":\"Developer, Architect, Evangelist, and whatever else I'm doing at the moment\",\"lastName\":\"Thompson\",\"firstName\":\"Mike\",\"blog\":null,\"avatarURL\":\"http://www.gravatar.com/avatar/bc0dcca4d3d893e5a20773dfa5a23d95\",\"twitter\":\"@barecode\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-938639111",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:23 GMT"
+    }
+  },
+  "uuid" : "12bf4f97-181a-467e-8006-567866d80475",
+  "persistent" : true,
+  "insertionIndex" : 10
+}

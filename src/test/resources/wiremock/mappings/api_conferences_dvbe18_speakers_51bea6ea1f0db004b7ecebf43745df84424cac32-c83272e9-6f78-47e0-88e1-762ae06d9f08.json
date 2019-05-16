@@ -1,0 +1,23 @@
+{
+  "id" : "c83272e9-6f78-47e0-88e1-762ae06d9f08",
+  "name" : "api_conferences_dvbe18_speakers_51bea6ea1f0db004b7ecebf43745df84424cac32",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/51bea6ea1f0db004b7ecebf43745df84424cac32",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"51bea6ea1f0db004b7ecebf43745df84424cac32\",\"bioAsHtml\":\"<p>Erik is a member of the HotSpot Garbage Collection team at Oracle who has been working on HotSpot for over five years. He is an OpenJDK Reviewer, and a contributor to the ZGC project.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/DPN-3235\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/51bea6ea1f0db004b7ecebf43745df84424cac32\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Erik Österlund\"}],\"id\":\"DPN-3235\",\"title\":\"The Z Garbage Collector\"}],\"company\":\"Oracle\",\"bio\":\"Erik is a member of the HotSpot Garbage Collection team at Oracle who has been working on HotSpot for over five years. He is an OpenJDK Reviewer, and a contributor to the ZGC project.\",\"lastName\":\"Österlund\",\"firstName\":\"Erik\",\"blog\":null,\"avatarURL\":\"http://blog.xebia.fr/images/devoxxuk-2014-logo.png\",\"twitter\":null,\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "622477648",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:28 GMT"
+    }
+  },
+  "uuid" : "c83272e9-6f78-47e0-88e1-762ae06d9f08",
+  "persistent" : true,
+  "insertionIndex" : 65
+}

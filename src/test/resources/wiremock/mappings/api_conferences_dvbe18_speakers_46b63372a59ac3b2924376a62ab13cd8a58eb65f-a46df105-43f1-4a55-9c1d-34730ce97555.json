@@ -1,0 +1,23 @@
+{
+  "id" : "a46df105-43f1-4a55-9c1d-34730ce97555",
+  "name" : "api_conferences_dvbe18_speakers_46b63372a59ac3b2924376a62ab13cd8a58eb65f",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/46b63372a59ac3b2924376a62ab13cd8a58eb65f",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"46b63372a59ac3b2924376a62ab13cd8a58eb65f\",\"bioAsHtml\":\"<p>Sustainable productivity coach and developer.</p>\\n<p>I help development teams to achieve sustainable productivity by adapting eXtreme Programming to their context and special difficulties.</p>\\n<p>I am currently technical coach at Murex.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/VUM-5564\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/46b63372a59ac3b2924376a62ab13cd8a58eb65f\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Philippe Bourgau\"}],\"id\":\"VUM-5564\",\"title\":\"Boost your teamwork with Randoris\"}],\"company\":\"Murex\",\"bio\":\"Sustainable productivity coach and developer.\\r\\n\\r\\nI help development teams to achieve sustainable productivity by adapting eXtreme Programming to their context and special difficulties.\\r\\n\\r\\nI am currently technical coach at Murex.\",\"lastName\":\"Bourgau\",\"firstName\":\"Philippe\",\"blog\":\"http://philippe.bourgau.net\",\"avatarURL\":\"http://www.gravatar.com/avatar/686399bd630ecc9381e4dfec8720816e\",\"twitter\":\"@pbourgau\",\"lang\":\"fr-FR\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "695814692",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:37 GMT"
+    }
+  },
+  "uuid" : "a46df105-43f1-4a55-9c1d-34730ce97555",
+  "persistent" : true,
+  "insertionIndex" : 172
+}

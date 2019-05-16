@@ -1,0 +1,23 @@
+{
+  "id" : "4761001d-acc4-4480-9bf8-fb424195f518",
+  "name" : "api_conferences_dvbe18_speakers_6211aeda51006fb257c51b607c01155edfbccadf",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/6211aeda51006fb257c51b607c01155edfbccadf",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"6211aeda51006fb257c51b607c01155edfbccadf\",\"bioAsHtml\":\"<p>Machine Learning engineer and sticker lover\\nfind me on twitter @pierre_paci</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Mind the Geek.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/MQB-9462\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6211aeda51006fb257c51b607c01155edfbccadf\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Pierre Paci\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/2d5f0f508ec84fc3921c7f15a7c54a39f4f87b62\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Antoine Detante\"}],\"id\":\"MQB-9462\",\"title\":\"Crypto currency, data mining and machine learning, wining combo ?\"}],\"company\":\"intech\",\"bio\":\"Machine Learning engineer and sticker lover\\r\\nfind me on twitter @pierre_paci\\r\\n\",\"lastName\":\"Paci\",\"firstName\":\"Pierre\",\"blog\":\"www.intech.lu\",\"avatarURL\":\"https://s3-eu-west-1.amazonaws.com/cfpdevoxx/belgium/speakers/PierrePaci.jpeg\",\"twitter\":\"@pierre_paci\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1270362675",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:30 GMT"
+    }
+  },
+  "uuid" : "4761001d-acc4-4480-9bf8-fb424195f518",
+  "persistent" : true,
+  "insertionIndex" : 99
+}

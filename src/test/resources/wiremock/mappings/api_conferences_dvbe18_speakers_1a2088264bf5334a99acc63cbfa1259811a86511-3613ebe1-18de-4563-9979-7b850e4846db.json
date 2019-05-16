@@ -1,0 +1,23 @@
+{
+  "id" : "3613ebe1-18de-4563-9979-7b850e4846db",
+  "name" : "api_conferences_dvbe18_speakers_1a2088264bf5334a99acc63cbfa1259811a86511",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/1a2088264bf5334a99acc63cbfa1259811a86511",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"1a2088264bf5334a99acc63cbfa1259811a86511\",\"bioAsHtml\":\"<p>Frank Poncelet is the Operations Architect for Xplore group Merelbeke.</p>\\n<p>He has have been working for more then 20 years in software development, started his career and community participation with Java in The Belgian Air force a long time ago.</p>\\n<p>Currently he is the head of operations for the Merelbeke office, his core mission is helping developers to create high quality software for the clients of Xplore group and exploring new technologies and techniques for them to use.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Mobile & IoT.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/OZS-8242\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/1a2088264bf5334a99acc63cbfa1259811a86511\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Frank Poncelet\"}],\"id\":\"OZS-8242\",\"title\":\"Moe Szyslak vs The Balmer peak\"}],\"company\":\"Xplore Group\",\"bio\":\"Frank Poncelet is the Operations Architect for Xplore group Merelbeke.\\r\\n\\r\\nHe has have been working for more then 20 years in software development, started his career and community participation with Java in The Belgian Air force a long time ago.\\r\\n\\r\\nCurrently he is the head of operations for the Merelbeke office, his core mission is helping developers to create high quality software for the clients of Xplore group and exploring new technologies and techniques for them to use.\",\"lastName\":\"Poncelet\",\"firstName\":\"Frank\",\"blog\":null,\"avatarURL\":\"https://pbs.twimg.com/profile_images/909794528772673536/19LgIr6i_400x400.jpg\",\"twitter\":null,\"lang\":\"en\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-339889114",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:40 GMT"
+    }
+  },
+  "uuid" : "3613ebe1-18de-4563-9979-7b850e4846db",
+  "persistent" : true,
+  "insertionIndex" : 207
+}

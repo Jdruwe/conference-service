@@ -1,0 +1,23 @@
+{
+  "id" : "62360c21-e0f1-469f-a239-3c15028869aa",
+  "name" : "api_conferences_dvbe18_speakers_5d72df99a9534dc88b752508970034f37b476ade",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/5d72df99a9534dc88b752508970034f37b476ade",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"5d72df99a9534dc88b752508970034f37b476ade\",\"bioAsHtml\":\"<p>A professional software developer by day, a nerd... Well, all the time, really. I love programming, I also love talking and thinking about programming. I&#x27;m fascinated by the culture surrounding programming and I immerse myself in that culture. And I like sharing what I have learned.\\nI&#x27;ve spoken at conferences several times before about a range of different topics - some of them very technical, some of them less so. Mixing it up, that keeps it interesting for both me and my audience. Any you can be sure that everything I talk about is something that I&#x27;m really passionate about.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/EHE-0587\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/5d72df99a9534dc88b752508970034f37b476ade\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Alasdair Collinson\"}],\"id\":\"EHE-0587\",\"title\":\"Functional Programming in Java - When, Why and How?\"}],\"company\":\"Senacor Technologies AG\",\"bio\":\"A professional software developer by day, a nerd... Well, all the time, really. I love programming, I also love talking and thinking about programming. I'm fascinated by the culture surrounding programming and I immerse myself in that culture. And I like sharing what I have learned.\\r\\nI've spoken at conferences several times before about a range of different topics - some of them very technical, some of them less so. Mixing it up, that keeps it interesting for both me and my audience. Any you can be sure that everything I talk about is something that I'm really passionate about.\",\"lastName\":\"Collinson\",\"firstName\":\"Alasdair\",\"blog\":\"https://blog.senacor.com/\",\"avatarURL\":\"https://owncloud.senacor.com/index.php/apps/files_sharing/ajax/publicpreview.php?x=3360&y=1206&a=true&file=Alasdair%2520Collinson%2520face.png&t=O78wR8Mz323m4MA&scalingup=0\",\"twitter\":\"@blalasaadri\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1671664863",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:22 GMT"
+    }
+  },
+  "uuid" : "62360c21-e0f1-469f-a239-3c15028869aa",
+  "persistent" : true,
+  "insertionIndex" : 7
+}

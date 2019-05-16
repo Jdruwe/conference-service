@@ -1,0 +1,23 @@
+{
+  "id" : "6df53260-242e-4de7-ad2d-98909acd11f8",
+  "name" : "api_conferences_dvbe18_speakers_7189f4a2dfb7199ed684a781cce2d82f99e6e596",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/7189f4a2dfb7199ed684a781cce2d82f99e6e596",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"7189f4a2dfb7199ed684a781cce2d82f99e6e596\",\"bioAsHtml\":\"<p>Working for more than 8 years as a java consultant, now working on blockchain technologies at FundRequest.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/MKA-5385\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/7189f4a2dfb7199ed684a781cce2d82f99e6e596\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Davy Van Roy\"}],\"id\":\"MKA-5385\",\"title\":\"Building blockchain apps with zero knowledge\"}],\"company\":\"FundRequest\",\"bio\":\"Working for more than 8 years as a java consultant, now working on blockchain technologies at FundRequest. \",\"lastName\":\"Van Roy\",\"firstName\":\"Davy\",\"blog\":\"https://fundrequest.io\",\"avatarURL\":\"https://s3-eu-west-1.amazonaws.com/cfpdevoxx/belgium/speakers/DavyVanRoyV2.jpg\",\"twitter\":\"@DavyVanRoy\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "30491798",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:49 GMT"
+    }
+  },
+  "uuid" : "6df53260-242e-4de7-ad2d-98909acd11f8",
+  "persistent" : true,
+  "insertionIndex" : 290
+}

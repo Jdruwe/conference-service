@@ -1,0 +1,23 @@
+{
+  "id" : "d7f7f6c8-76e8-4c66-af6d-9e6b48c936ef",
+  "name" : "api_conferences_dvbe18_speakers_9c4e10457a0950fc9300795c9e18924f873b5360",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/9c4e10457a0950fc9300795c9e18924f873b5360",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"9c4e10457a0950fc9300795c9e18924f873b5360\",\"bioAsHtml\":\"<p>Stéphane works on Spring Boot, Spring Framework &amp; start.spring.io at Pivotal. During his free time, he loves traveling around the World.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Server Side Java.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/JRS-5586\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6474d6c1ad9cd22c652613af6555b6bcebe4a0ab\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Simon Baslé\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/683566fa384c408462fd6d187a442889ecddccd5\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Juergen Hoeller\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/9c4e10457a0950fc9300795c9e18924f873b5360\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Stéphane Nicoll\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/996af8485b077fbc3bb8fc027e689ff1b5d88a9a\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Sébastien Deleuze\"}],\"id\":\"JRS-5586\",\"title\":\"The Spring BOF\"}],\"company\":\"Pivotal\",\"bio\":\"Stéphane works on Spring Boot, Spring Framework & start.spring.io at Pivotal. During his free time, he loves traveling around the World.\",\"lastName\":\"Nicoll\",\"firstName\":\"Stéphane\",\"blog\":\"https://about.me/snicoll\",\"avatarURL\":\"http://www.gravatar.com/avatar/33d0963a20138828608f3f61927545b8\",\"twitter\":\"@snicoll\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1193158449",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:44 GMT"
+    }
+  },
+  "uuid" : "d7f7f6c8-76e8-4c66-af6d-9e6b48c936ef",
+  "persistent" : true,
+  "insertionIndex" : 250
+}

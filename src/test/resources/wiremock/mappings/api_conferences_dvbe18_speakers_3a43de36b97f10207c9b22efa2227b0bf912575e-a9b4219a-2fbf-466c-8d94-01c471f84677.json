@@ -1,0 +1,23 @@
+{
+  "id" : "a9b4219a-2fbf-466c-8d94-01c471f84677",
+  "name" : "api_conferences_dvbe18_speakers_3a43de36b97f10207c9b22efa2227b0bf912575e",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/3a43de36b97f10207c9b22efa2227b0bf912575e",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"3a43de36b97f10207c9b22efa2227b0bf912575e\",\"bioAsHtml\":\"<ul>\\n<li>Being agile, creative, positive, team player, with vision and common sense are my basic principles, not only in work but also in life.</li>\\n<li>Architecting and building distributed, reliable, scalable, and maintainable systems is my passion.</li>\\n<li>Did you say Operational Excellence and Best Practices? You had my curiosity but now you have my attention</li>\\n<li>Able to bring value on project startups, project integration/maintenance/scaling/robustness and legacy systems.</li>\\n<li>Able to provide research, since during my academic career I have produced a number of articles which have been published in international journals/conferences</li>\\n<li>Give talks/trainings for Scrum, Chaos Engineering, NoSQL, ThreadConcurrency and lately for Improv at work and life!</li>\\n</ul>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/NXW-2049\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/3a43de36b97f10207c9b22efa2227b0bf912575e\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Alexandros Zotos\"}],\"id\":\"NXW-2049\",\"title\":\"Ways of improv-ing work and life [#DifferentKindOfTalk] \"}],\"company\":\"Amazon\",\"bio\":\"- Being agile, creative, positive, team player, with vision and common sense are my basic principles, not only in work but also in life. \\r\\n- Architecting and building distributed, reliable, scalable, and maintainable systems is my passion.\\r\\n- Did you say Operational Excellence and Best Practices? You had my curiosity but now you have my attention\\r\\n- Able to bring value on project startups, project integration/maintenance/scaling/robustness and legacy systems.\\r\\n- Able to provide research, since during my academic career I have produced a number of articles which have been published in international journals/conferences\\r\\n- Give talks/trainings for Scrum, Chaos Engineering, NoSQL, ThreadConcurrency and lately for Improv at work and life!\",\"lastName\":\"Zotos\",\"firstName\":\"Alexandros\",\"blog\":null,\"avatarURL\":\"https://pbs.twimg.com/profile_images/1052662381187358720/zwpaMMhZ_400x400.jpg\",\"twitter\":null,\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "177281510",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:47 GMT"
+    }
+  },
+  "uuid" : "a9b4219a-2fbf-466c-8d94-01c471f84677",
+  "persistent" : true,
+  "insertionIndex" : 274
+}

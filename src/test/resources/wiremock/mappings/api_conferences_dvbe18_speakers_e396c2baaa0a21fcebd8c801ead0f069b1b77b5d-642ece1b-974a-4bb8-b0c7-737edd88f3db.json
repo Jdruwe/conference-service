@@ -1,0 +1,23 @@
+{
+  "id" : "642ece1b-974a-4bb8-b0c7-737edd88f3db",
+  "name" : "api_conferences_dvbe18_speakers_e396c2baaa0a21fcebd8c801ead0f069b1b77b5d",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/e396c2baaa0a21fcebd8c801ead0f069b1b77b5d",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"e396c2baaa0a21fcebd8c801ead0f069b1b77b5d\",\"bioAsHtml\":\"<p>Senior Software Developer @ Apple.</p>\\n<p>Core contributor to the netty.io project @ https://github.com/Scottmitch.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Server Side Java.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/UHZ-1226\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/e396c2baaa0a21fcebd8c801ead0f069b1b77b5d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Scott Mitchell\"}],\"id\":\"UHZ-1226\",\"title\":\"Enabling Microservices @ Apple\"}],\"company\":\"Apple, Inc.\",\"bio\":\"Senior Software Developer @ Apple.\\r\\n\\r\\nCore contributor to the netty.io project @ https://github.com/Scottmitch.\",\"lastName\":\"Mitchell\",\"firstName\":\"Scott\",\"blog\":\"https://plus.google.com/108945594348272561318\",\"avatarURL\":\"https://pbs.twimg.com/profile_images/1056424292382961664/-AzeTndR_400x400.jpg\",\"twitter\":\"@Scott_mitch_\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1914589452",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:47 GMT"
+    }
+  },
+  "uuid" : "642ece1b-974a-4bb8-b0c7-737edd88f3db",
+  "persistent" : true,
+  "insertionIndex" : 276
+}

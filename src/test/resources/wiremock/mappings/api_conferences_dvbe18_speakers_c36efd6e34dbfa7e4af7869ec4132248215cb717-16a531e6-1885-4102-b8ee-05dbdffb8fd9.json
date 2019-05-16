@@ -1,0 +1,23 @@
+{
+  "id" : "16a531e6-1885-4102-b8ee-05dbdffb8fd9",
+  "name" : "api_conferences_dvbe18_speakers_c36efd6e34dbfa7e4af7869ec4132248215cb717",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/c36efd6e34dbfa7e4af7869ec4132248215cb717",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"c36efd6e34dbfa7e4af7869ec4132248215cb717\",\"bioAsHtml\":\"<p>Adnan graduated Theoretical Computer Science at Faculty of Natural Science and Mathematics in Sarajevo and works as Senior Software Engineer at Java Language Zone with 6 years of experience in Java enterprise world. He mostly works on improving, optimizing and scaling Data Access Layer REST web services and data analytic platforms.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/QXC-3597\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/c36efd6e34dbfa7e4af7869ec4132248215cb717\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Adnan Isajbegovic\"}],\"id\":\"QXC-3597\",\"title\":\"Java Mission Control 6.0+\"}],\"company\":\"Tacta\",\"bio\":\"Adnan graduated Theoretical Computer Science at Faculty of Natural Science and Mathematics in Sarajevo and works as Senior Software Engineer at Java Language Zone with 6 years of experience in Java enterprise world. He mostly works on improving, optimizing and scaling Data Access Layer REST web services and data analytic platforms.\",\"lastName\":\"Isajbegovic\",\"firstName\":\"Adnan\",\"blog\":\"www.tacta.io\",\"avatarURL\":\"https://pbs.twimg.com/profile_images/921679843456057345/qVYptejF_400x400.jpg\",\"twitter\":\"@NTManiac\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1957428014",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:26 GMT"
+    }
+  },
+  "uuid" : "16a531e6-1885-4102-b8ee-05dbdffb8fd9",
+  "persistent" : true,
+  "insertionIndex" : 46
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "994215a9-9bab-4aae-84eb-074598f9472e",
+  "name" : "api_conferences_dvbe18_speakers_813877751b36813246ddf5336298adb8047ead5d",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/813877751b36813246ddf5336298adb8047ead5d",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"813877751b36813246ddf5336298adb8047ead5d\",\"bioAsHtml\":\"<p>Robin is a Developer Advocate at Confluent, the company founded by the creators of Apache Kafka, as well as an Oracle ACE Director and Developer Champion. His career has always involved data, from the old worlds of COBOL and DB2, through the worlds of Oracle and Hadoop, and into the current world with Kafka. His particular interests are analytics, systems architecture, performance testing and optimization. He blogs at http://cnfl.io/rmoff and http://rmoff.net/ (and previously http://ritt.md/rmoff) and can be found tweeting grumpy geek thoughts as @rmoff. Outside of work he enjoys drinking good beer and eating fried breakfasts, although generally not at the same time.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/BVD-3316\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/813877751b36813246ddf5336298adb8047ead5d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Robin Moffatt\"}],\"id\":\"BVD-3316\",\"title\":\"Apache Kafka and KSQL in Action : Let’s Build a Streaming Data Pipeline!\"},{\"talkType\":\"Conference\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/SAN-6621\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/813877751b36813246ddf5336298adb8047ead5d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Robin Moffatt\"}],\"id\":\"SAN-6621\",\"title\":\"Embrace the Anarchy : Apache Kafka’s Role in Modern Data Architectures\"}],\"company\":\"Confluent\",\"bio\":\"Robin is a Developer Advocate at Confluent, the company founded by the creators of Apache Kafka, as well as an Oracle ACE Director and Developer Champion. His career has always involved data, from the old worlds of COBOL and DB2, through the worlds of Oracle and Hadoop, and into the current world with Kafka. His particular interests are analytics, systems architecture, performance testing and optimization. He blogs at http://cnfl.io/rmoff and http://rmoff.net/ (and previously http://ritt.md/rmoff) and can be found tweeting grumpy geek thoughts as @rmoff. Outside of work he enjoys drinking good beer and eating fried breakfasts, although generally not at the same time. \",\"lastName\":\"Moffatt\",\"firstName\":\"Robin\",\"blog\":\"https://rmoff.net\",\"avatarURL\":\"https://rmoff.net/content/images/2018/05/robin-moffatt-600px.jpg\",\"twitter\":\"@rmoff\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "346194227",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:23 GMT"
+    }
+  },
+  "uuid" : "994215a9-9bab-4aae-84eb-074598f9472e",
+  "persistent" : true,
+  "insertionIndex" : 12
+}

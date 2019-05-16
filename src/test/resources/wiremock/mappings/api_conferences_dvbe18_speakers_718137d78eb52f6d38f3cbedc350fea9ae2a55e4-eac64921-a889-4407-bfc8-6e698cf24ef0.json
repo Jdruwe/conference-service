@@ -1,0 +1,23 @@
+{
+  "id" : "eac64921-a889-4407-bfc8-6e698cf24ef0",
+  "name" : "api_conferences_dvbe18_speakers_718137d78eb52f6d38f3cbedc350fea9ae2a55e4",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/718137d78eb52f6d38f3cbedc350fea9ae2a55e4",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"718137d78eb52f6d38f3cbedc350fea9ae2a55e4\",\"bioAsHtml\":\"<p>JSR377 Spec lead, Groovy aficionado, Griffon &amp; Basilisk project lead, Java Champion, JavaOne Rockstar, Hackergarten, https://www.patreon.com/aalmiray</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Hands-on Lab\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/IPS-5375\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/718137d78eb52f6d38f3cbedc350fea9ae2a55e4\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Andres Almiray\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/84d532805a306d2d49d47c1a3880fa0d2b4a24b2\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ixchel Ruiz\"}],\"id\":\"IPS-5375\",\"title\":\"Hackergarten\"},{\"talkType\":\"BOF\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/QDR-7433\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/8551616e8ea37d9a0c962b022afc9f6b377790f6\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Dan Allen\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/0d7fffaa94fefcf89147e425b41ad75c3dad4738\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Alex Soto\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/718137d78eb52f6d38f3cbedc350fea9ae2a55e4\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Andres Almiray\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/8a840a35dc6946fe9d5eaf0c0910a53afadaf981\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Hubert SABLONNIÈRE\"}],\"id\":\"QDR-7433\",\"title\":\"Writers Write! The Documentation BOF\"}],\"company\":\"Trivadis AG\",\"bio\":\"JSR377 Spec lead, Groovy aficionado, Griffon & Basilisk project lead, Java Champion, JavaOne Rockstar, Hackergarten, https://www.patreon.com/aalmiray\",\"lastName\":\"Almiray\",\"firstName\":\"Andres\",\"blog\":\"http://andresalmiray.com/\",\"avatarURL\":\"https://en.gravatar.com/userimage/3198072/e9bf46a7b9af34f649bdd72aa75ccf74.jpg?size=200\",\"twitter\":\"@aalmiray\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1929164819",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:43 GMT"
+    }
+  },
+  "uuid" : "eac64921-a889-4407-bfc8-6e698cf24ef0",
+  "persistent" : true,
+  "insertionIndex" : 240
+}

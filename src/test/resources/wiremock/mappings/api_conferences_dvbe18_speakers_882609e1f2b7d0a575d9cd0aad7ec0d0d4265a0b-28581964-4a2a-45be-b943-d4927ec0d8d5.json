@@ -1,0 +1,23 @@
+{
+  "id" : "28581964-4a2a-45be-b943-d4927ec0d8d5",
+  "name" : "api_conferences_dvbe18_speakers_882609e1f2b7d0a575d9cd0aad7ec0d0d4265a0b",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/882609e1f2b7d0a575d9cd0aad7ec0d0d4265a0b",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"882609e1f2b7d0a575d9cd0aad7ec0d0d4265a0b\",\"bioAsHtml\":\"<p>Doug is is a freelance mobile performance expert, having helped thousands of developers speed up their mobile apps and websites.  A Google Developer Expert and the author of O’Reilly’s “High Performance Android Apps,” Doug has spoken at developer conferences in the US and Europe, and blogs regularly at dougsillars.com. He is currently working as a freelance digital nomad, traveling with his family in Europe.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Modern Web & UX.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/AST-3167\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/882609e1f2b7d0a575d9cd0aad7ec0d0d4265a0b\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Doug Sillars\"}],\"id\":\"AST-3167\",\"title\":\"Fast and Beautiful: Modern Image Delivery Techniques\"}],\"company\":\"Freelance\",\"bio\":\"Doug is is a freelance mobile performance expert, having helped thousands of developers speed up their mobile apps and websites.  A Google Developer Expert and the author of O’Reilly’s “High Performance Android Apps,” Doug has spoken at developer conferences in the US and Europe, and blogs regularly at dougsillars.com. He is currently working as a freelance digital nomad, traveling with his family in Europe.\",\"lastName\":\"Sillars\",\"firstName\":\"Doug\",\"blog\":\"dougsillars.com\",\"avatarURL\":\"http://www.gravatar.com/avatar/70633802ce502d2fa8b587c725227c06\",\"twitter\":\"@dougsillars\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-2102607436",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:42 GMT"
+    }
+  },
+  "uuid" : "28581964-4a2a-45be-b943-d4927ec0d8d5",
+  "persistent" : true,
+  "insertionIndex" : 231
+}

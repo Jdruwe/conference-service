@@ -1,0 +1,23 @@
+{
+  "id" : "2db3a250-2851-45ae-abb2-236e0651c9c7",
+  "name" : "api_conferences_dvbe18_speakers_683566fa384c408462fd6d187a442889ecddccd5",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/683566fa384c408462fd6d187a442889ecddccd5",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"683566fa384c408462fd6d187a442889ecddccd5\",\"bioAsHtml\":\"<p>Juergen Hoeller is co-founder of the Spring Framework open source project and has been serving as the project lead and release manager for the core framework since 2003. Juergen is an experienced software architect and consultant with outstanding expertise in code organization, transaction management and enterprise messaging.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Server Side Java.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/LND-1450\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/683566fa384c408462fd6d187a442889ecddccd5\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Juergen Hoeller\"}],\"id\":\"LND-1450\",\"title\":\"15 Years of Spring (in 15 Minutes)\"},{\"talkType\":\"Conference\",\"track\":\"Server Side Java.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/RMO-3587\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/683566fa384c408462fd6d187a442889ecddccd5\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Juergen Hoeller\"}],\"id\":\"RMO-3587\",\"title\":\"Spring Framework 5.1 on JDK 8 & 11\"},{\"talkType\":\"BOF\",\"track\":\"Server Side Java.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/JRS-5586\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6474d6c1ad9cd22c652613af6555b6bcebe4a0ab\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Simon Baslé\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/683566fa384c408462fd6d187a442889ecddccd5\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Juergen Hoeller\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/9c4e10457a0950fc9300795c9e18924f873b5360\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Stéphane Nicoll\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/996af8485b077fbc3bb8fc027e689ff1b5d88a9a\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Sébastien Deleuze\"}],\"id\":\"JRS-5586\",\"title\":\"The Spring BOF\"}],\"company\":\"Pivotal\",\"bio\":\"Juergen Hoeller is co-founder of the Spring Framework open source project and has been serving as the project lead and release manager for the core framework since 2003. Juergen is an experienced software architect and consultant with outstanding expertise in code organization, transaction management and enterprise messaging.\",\"lastName\":\"Hoeller\",\"firstName\":\"Juergen\",\"blog\":\"https://spring.io/blog\",\"avatarURL\":\"https://www.gravatar.com/avatar/ba9686d8c567aabedc1b7f8b6a7fb3d6\",\"twitter\":\"@springjuergen\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "50158345",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:24 GMT"
+    }
+  },
+  "uuid" : "2db3a250-2851-45ae-abb2-236e0651c9c7",
+  "persistent" : true,
+  "insertionIndex" : 20
+}

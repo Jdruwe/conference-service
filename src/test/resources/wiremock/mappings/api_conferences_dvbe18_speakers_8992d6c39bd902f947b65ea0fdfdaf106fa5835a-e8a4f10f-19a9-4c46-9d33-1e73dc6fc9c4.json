@@ -1,0 +1,23 @@
+{
+  "id" : "e8a4f10f-19a9-4c46-9d33-1e73dc6fc9c4",
+  "name" : "api_conferences_dvbe18_speakers_8992d6c39bd902f947b65ea0fdfdaf106fa5835a",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/8992d6c39bd902f947b65ea0fdfdaf106fa5835a",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"8992d6c39bd902f947b65ea0fdfdaf106fa5835a\",\"bioAsHtml\":\"<p>Passionate problem solver with 10+ years experience in software design. Expert in artificial intelligence, data analysis, computer vision and robotics. Currently involved in projects related to self-driving cars in TomTom.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/PKK-6948\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/8992d6c39bd902f947b65ea0fdfdaf106fa5835a\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Krzysztof Kudrynski\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/80262325062fa7c266f32af05720abe1c072a5b3\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Błażej Kubiak\"}],\"id\":\"PKK-6948\",\"title\":\"Deep Learning in Computer Vision\"}],\"company\":\"Tomtom\",\"bio\":\"Passionate problem solver with 10+ years experience in software design. Expert in artificial intelligence, data analysis, computer vision and robotics. Currently involved in projects related to self-driving cars in TomTom.\",\"lastName\":\"Kudrynski\",\"firstName\":\"Krzysztof\",\"blog\":\"https://www.linkedin.com/in/krzysztof-kudrynski-b49a8344/\",\"avatarURL\":\"https://pbs.twimg.com/profile_images/725303614479147008/V38I57lN_400x400.jpg\",\"twitter\":\"@kriskudrynski\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-447689058",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:29 GMT"
+    }
+  },
+  "uuid" : "e8a4f10f-19a9-4c46-9d33-1e73dc6fc9c4",
+  "persistent" : true,
+  "insertionIndex" : 86
+}

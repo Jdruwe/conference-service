@@ -1,0 +1,23 @@
+{
+  "id" : "77bc989e-93c7-4511-aa78-0c1434017814",
+  "name" : "api_conferences_dvbe18_speakers_8af78fa5cf9450329a3ecbceb4038823681de4a7",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/8af78fa5cf9450329a3ecbceb4038823681de4a7",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"8af78fa5cf9450329a3ecbceb4038823681de4a7\",\"bioAsHtml\":\"<p>Audrey is full-stack developer, specialised in APIs. Heavily involved in the French wide Java Community, she’s part of Devoxx4Kids, a not-for-profit global initiative to get children coding, Devoxx France and Les Cast Codeurs, a french podcast on Java, but not only.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Mind the Geek.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/NKJ-9530\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/05afda51d686bab49c8687025d0b07b00ce45a0b\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Emmanuel Bernard\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/8af78fa5cf9450329a3ecbceb4038823681de4a7\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Audrey Neveu\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6a635bdc45a8266a5fb300f214f9207c4f399f6d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Guillaume Laforge\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/f3a48bb49697608a0ccd8f8fa1bb08b0f606296b\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Vincent Massol\"}],\"id\":\"NKJ-9530\",\"title\":\"Les Cast Codeurs Podcast: (with|by|for|of) developers\"},{\"talkType\":\"Tools-in-Action\",\"track\":\"Modern Web & UX.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/HLB-1428\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/8af78fa5cf9450329a3ecbceb4038823681de4a7\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Audrey Neveu\"}],\"id\":\"HLB-1428\",\"title\":\"Micro Frontend: the microservice puzzle extended to frontend.\"}],\"company\":\"Saagie\",\"bio\":\"Audrey is full-stack developer, specialised in APIs. Heavily involved in the French wide Java Community, she’s part of Devoxx4Kids, a not-for-profit global initiative to get children coding, Devoxx France and Les Cast Codeurs, a french podcast on Java, but not only.\",\"lastName\":\"Neveu\",\"firstName\":\"Audrey\",\"blog\":null,\"avatarURL\":\"https://www.gravatar.com/avatar/7e357ae5b0366a29f1f54434791ddefd\",\"twitter\":\"@Audrey_Neveu\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1996426292",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:36 GMT"
+    }
+  },
+  "uuid" : "77bc989e-93c7-4511-aa78-0c1434017814",
+  "persistent" : true,
+  "insertionIndex" : 168
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "3a5e027f-ef71-414a-972e-74b5ea837c5f",
+  "name" : "api_conferences_dvbe18_speakers_4c2cc06bee1eef61b5bc866fe1be1fc97af31945",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/4c2cc06bee1eef61b5bc866fe1be1fc97af31945",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"4c2cc06bee1eef61b5bc866fe1be1fc97af31945\",\"bioAsHtml\":\"<p>Laurent Picard is a software engineer passionate about software, hardware, science and anything shaping the future. Laurent works at Google in Paris, focusing on Google Cloud Platform. In a previous life, he pioneered the ebook industry, co-created the 1st European ebook reader, and co-founded Bookeen. Laurent ecstatically enjoys exploring cloud technologies and sharing his discoveries.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/TWL-3859\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/4c2cc06bee1eef61b5bc866fe1be1fc97af31945\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Laurent Picard\"}],\"id\":\"TWL-3859\",\"title\":\"AutoML + ML APIs = machine learning for all developers\"}],\"company\":\"Google\",\"bio\":\"Laurent Picard is a software engineer passionate about software, hardware, science and anything shaping the future. Laurent works at Google in Paris, focusing on Google Cloud Platform. In a previous life, he pioneered the ebook industry, co-created the 1st European ebook reader, and co-founded Bookeen. Laurent ecstatically enjoys exploring cloud technologies and sharing his discoveries.\\r\\n\\r\\n\",\"lastName\":\"Picard\",\"firstName\":\"Laurent\",\"blog\":\"https://medium.com/@PicardParis\",\"avatarURL\":\"https://s.gravatar.com/avatar/7e6a435700dda6cdb22105d601f20892?s=500\",\"twitter\":\"@PicardParis\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "108201853",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:37 GMT"
+    }
+  },
+  "uuid" : "3a5e027f-ef71-414a-972e-74b5ea837c5f",
+  "persistent" : true,
+  "insertionIndex" : 171
+}

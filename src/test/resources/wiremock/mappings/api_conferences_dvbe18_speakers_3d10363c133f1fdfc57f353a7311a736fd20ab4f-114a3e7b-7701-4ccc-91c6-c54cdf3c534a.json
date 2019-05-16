@@ -1,0 +1,23 @@
+{
+  "id" : "114a3e7b-7701-4ccc-91c6-c54cdf3c534a",
+  "name" : "api_conferences_dvbe18_speakers_3d10363c133f1fdfc57f353a7311a736fd20ab4f",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/3d10363c133f1fdfc57f353a7311a736fd20ab4f",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"3d10363c133f1fdfc57f353a7311a736fd20ab4f\",\"bioAsHtml\":\"<p>BigData hacker,</p>\\n<p>Passionate developer/engineer in BigData environments. Current active at the Port of Rotterdam and enabling them to become the smartest harbor in the world.</p>\\n<p>Being a dyslexic person it is almost impossible for me to think inside the box. The visual representation I create in my head makes it possible to communicate my ideas by means of drawings and pictures allowing multiple levels to connect to my train of thought.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/WBZ-0306\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/3d10363c133f1fdfc57f353a7311a736fd20ab4f\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Pieter Van Der Meer\"}],\"id\":\"WBZ-0306\",\"title\":\"The dyslexic programmer, creativity did not kill the cat\"}],\"company\":\"Dataworkz\",\"bio\":\"BigData hacker, \\r\\n\\r\\nPassionate developer/engineer in BigData environments. Current active at the Port of Rotterdam and enabling them to become the smartest harbor in the world.\\r\\n\\r\\nBeing a dyslexic person it is almost impossible for me to think inside the box. The visual representation I create in my head makes it possible to communicate my ideas by means of drawings and pictures allowing multiple levels to connect to my train of thought.\",\"lastName\":\"Van Der Meer\",\"firstName\":\"Pieter\",\"blog\":\"https://www.elucidator.nl\",\"avatarURL\":\"https://www.elucidator.nl/content/images/2015/01/pieter-van-der-meer-2.jpg\",\"twitter\":\"@Pieni_NL\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "11382625",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:47 GMT"
+    }
+  },
+  "uuid" : "114a3e7b-7701-4ccc-91c6-c54cdf3c534a",
+  "persistent" : true,
+  "insertionIndex" : 275
+}

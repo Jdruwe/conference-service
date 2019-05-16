@@ -1,0 +1,23 @@
+{
+  "id" : "62a97119-ca8a-4a2e-ac4a-00b45f172045",
+  "name" : "api_conferences_dvbe18_speakers_9041552b955554c4fe4907f127e164d9395af163",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/9041552b955554c4fe4907f127e164d9395af163",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"9041552b955554c4fe4907f127e164d9395af163\",\"bioAsHtml\":\"<p>Cédric Champeau is a software engineer at Gradle, Inc. , where he is currently focused on implementing next generation dependency management features. He also worked on improving the performance of the build tool. He is committer of Apache Groovy and spent more than 3 years developing full time the language at Pivotal, where he implemented features like the static compiler, traits, Android support, AST transformations or type checking extensions.</p>\\n<p>Prior to that, he spent several years in the industry as a user, where he used Groovy in multiple industrial contexts including DSLs for natural language processing, scripting or even workflows.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Mobile & IoT.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/VFH-6802\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/9041552b955554c4fe4907f127e164d9395af163\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Cédric Champeau\"}],\"id\":\"VFH-6802\",\"title\":\"Improving Android Build Performance\"},{\"talkType\":\"Deep Dive\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/UAH-5130\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/9041552b955554c4fe4907f127e164d9395af163\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Cédric Champeau\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/82766acbc75e36c51b6151eac21e4ae0e7059f8c\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Louis Jacomet\"}],\"id\":\"UAH-5130\",\"title\":\"Switching to Gradle: maturity, performance, and pleasure!\"}],\"company\":\"Gradle, Inc\",\"bio\":\"Cédric Champeau is a software engineer at Gradle, Inc. , where he is currently focused on implementing next generation dependency management features. He also worked on improving the performance of the build tool. He is committer of Apache Groovy and spent more than 3 years developing full time the language at Pivotal, where he implemented features like the static compiler, traits, Android support, AST transformations or type checking extensions.\\r\\n\\r\\nPrior to that, he spent several years in the industry as a user, where he used Groovy in multiple industrial contexts including DSLs for natural language processing, scripting or even workflows.\",\"lastName\":\"Champeau\",\"firstName\":\"Cédric\",\"blog\":\"https://melix.github.io/blog\",\"avatarURL\":\"https://www.gradlesummit.com/s/images/bio/53370_Champeau_20120713_165101_medium_sq.jpg\",\"twitter\":\"@CedricChampeau\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1079373379",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:30 GMT"
+    }
+  },
+  "uuid" : "62a97119-ca8a-4a2e-ac4a-00b45f172045",
+  "persistent" : true,
+  "insertionIndex" : 93
+}

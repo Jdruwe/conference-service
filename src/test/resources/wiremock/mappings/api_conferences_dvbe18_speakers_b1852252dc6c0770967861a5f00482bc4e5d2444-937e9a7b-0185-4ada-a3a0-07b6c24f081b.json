@@ -1,0 +1,23 @@
+{
+  "id" : "937e9a7b-0185-4ada-a3a0-07b6c24f081b",
+  "name" : "api_conferences_dvbe18_speakers_b1852252dc6c0770967861a5f00482bc4e5d2444",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/b1852252dc6c0770967861a5f00482bc4e5d2444",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"b1852252dc6c0770967861a5f00482bc4e5d2444\",\"bioAsHtml\":\"<p>Jason is a technical evangelist at Datadog, where he works to inspire developers and ops engineers with the power of metrics and monitoring. Previously, he was the community manager for DevOps &amp; Performance at O’Reilly Media and a software engineer at MongoDB. He’s currently exploring the world while living as a nomad and would love to hear about the part of the world that you call home.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/MVM-1794\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/b1852252dc6c0770967861a5f00482bc4e5d2444\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Jason Yee\"}],\"id\":\"MVM-1794\",\"title\":\"Better Canary Deploys with Kubernetes and Istio\"}],\"company\":\"Datadog\",\"bio\":\"Jason is a technical evangelist at Datadog, where he works to inspire developers and ops engineers with the power of metrics and monitoring. Previously, he was the community manager for DevOps & Performance at O’Reilly Media and a software engineer at MongoDB. He’s currently exploring the world while living as a nomad and would love to hear about the part of the world that you call home.\",\"lastName\":\"Yee\",\"firstName\":\"Jason\",\"blog\":\"https://www.datadoghq.com\",\"avatarURL\":\"https://lh5.googleusercontent.com/-ofSxPhBah90/AAAAAAAAAAI/AAAAAAAAASU/0mwgDuBM5bY/photo.jpg\",\"twitter\":\"@gitbisect\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-2070413186",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:28 GMT"
+    }
+  },
+  "uuid" : "937e9a7b-0185-4ada-a3a0-07b6c24f081b",
+  "persistent" : true,
+  "insertionIndex" : 64
+}

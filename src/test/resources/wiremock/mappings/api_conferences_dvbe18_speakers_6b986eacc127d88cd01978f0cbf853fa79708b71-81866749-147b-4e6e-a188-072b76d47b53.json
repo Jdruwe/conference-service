@@ -1,0 +1,23 @@
+{
+  "id" : "81866749-147b-4e6e-a188-072b76d47b53",
+  "name" : "api_conferences_dvbe18_speakers_6b986eacc127d88cd01978f0cbf853fa79708b71",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/6b986eacc127d88cd01978f0cbf853fa79708b71",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"6b986eacc127d88cd01978f0cbf853fa79708b71\",\"bioAsHtml\":\"<p>Software Engineer for Blue4IT working consultancy based on mainly Java projects for the Top-100 companies in the Netherlands. Passionate about Java, (Pure) Functional Programming and Cybersecurity. Co-writer on the published Research paper: Plagiarism Detection for Haskell with Holmes. Besides being an engineer he is a Reservist at the Royal Netherlands Air Force and a Taekwondo Master.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/WWU-4466\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6b986eacc127d88cd01978f0cbf853fa79708b71\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Brian Vermeer\"}],\"id\":\"WWU-4466\",\"title\":\"Code style: what kind of coder are you\"},{\"talkType\":\"Conference\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/SXS-0514\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6b986eacc127d88cd01978f0cbf853fa79708b71\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Brian Vermeer\"}],\"id\":\"SXS-0514\",\"title\":\"Common mistakes made in Functional Java\"}],\"company\":\"Blue4IT\",\"bio\":\"Software Engineer for Blue4IT working consultancy based on mainly Java projects for the Top-100 companies in the Netherlands. Passionate about Java, (Pure) Functional Programming and Cybersecurity. Co-writer on the published Research paper: Plagiarism Detection for Haskell with Holmes. Besides being an engineer he is a Reservist at the Royal Netherlands Air Force and a Taekwondo Master.\",\"lastName\":\"Vermeer\",\"firstName\":\"Brian\",\"blog\":\"http://www.brianvermeer.nl\",\"avatarURL\":\"http://www.brianvermeer.nl/brian_OCO_400x400.jpg\",\"twitter\":\"@BrianVerm\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1189873250",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:33 GMT"
+    }
+  },
+  "uuid" : "81866749-147b-4e6e-a188-072b76d47b53",
+  "persistent" : true,
+  "insertionIndex" : 135
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "9c3ca3e8-da5d-40dd-a157-7ff7ea16ed25",
+  "name" : "api_conferences_dvbe18_speakers_2172f94ba3e3cef5e533958379002a7095467ddc",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/2172f94ba3e3cef5e533958379002a7095467ddc",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"2172f94ba3e3cef5e533958379002a7095467ddc\",\"bioAsHtml\":\"<p>lecturer in applied computer science</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/JDV-5869\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/2172f94ba3e3cef5e533958379002a7095467ddc\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Kasper Cools\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/ca40289712cebf526b73a6a05cf72030d907b8fb\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Stefaan Haspeslagh\"}],\"id\":\"JDV-5869\",\"title\":\"Deep learning, Devoxx crowd counting in realtime\"}],\"company\":\"Countr\",\"bio\":\"lecturer in applied computer science\",\"lastName\":\"Cools\",\"firstName\":\"Kasper\",\"blog\":\"countr.ai\",\"avatarURL\":\"https://avatars0.githubusercontent.com/u/6785037?s=460&v=4\",\"twitter\":null,\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "956314778",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:48 GMT"
+    }
+  },
+  "uuid" : "9c3ca3e8-da5d-40dd-a157-7ff7ea16ed25",
+  "persistent" : true,
+  "insertionIndex" : 283
+}

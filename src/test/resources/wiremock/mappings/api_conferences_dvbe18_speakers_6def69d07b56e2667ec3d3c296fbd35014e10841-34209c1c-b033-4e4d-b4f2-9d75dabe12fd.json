@@ -1,0 +1,23 @@
+{
+  "id" : "34209c1c-b033-4e4d-b4f2-9d75dabe12fd",
+  "name" : "api_conferences_dvbe18_speakers_6def69d07b56e2667ec3d3c296fbd35014e10841",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/6def69d07b56e2667ec3d3c296fbd35014e10841",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"6def69d07b56e2667ec3d3c296fbd35014e10841\",\"bioAsHtml\":\"<p>Brian Goetz is the Java Language Architect at Oracle.  He is the author of the best-selling book &quot;Java Concurrency in Practice&quot; and is a frequent presenter at major industry conferences.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/YRA-9715\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/bd2f55b11bacf7aa2791921b48dd589c3567bc81\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Mark Reinhold\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6def69d07b56e2667ec3d3c296fbd35014e10841\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Brian Goetz\"}],\"id\":\"YRA-9715\",\"title\":\"Ask the Java Architects\"},{\"talkType\":\"Keynote\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/ZLX-5595\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6def69d07b56e2667ec3d3c296fbd35014e10841\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Brian Goetz\"}],\"id\":\"ZLX-5595\",\"title\":\"FP vs OOP: Choose Two\"},{\"talkType\":\"Conference\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/CFW-9146\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6def69d07b56e2667ec3d3c296fbd35014e10841\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Brian Goetz\"}],\"id\":\"CFW-9146\",\"title\":\"Java Futures, Devoxx 2018 Edition\"}],\"company\":\"Oracle\",\"bio\":\"Brian Goetz is the Java Language Architect at Oracle.  He is the author of the best-selling book \\\"Java Concurrency in Practice\\\" and is a frequent presenter at major industry conferences.\",\"lastName\":\"Goetz\",\"firstName\":\"Brian\",\"blog\":null,\"avatarURL\":\"https://d3s75c3xtnyqxt.cloudfront.net/sites/default/files/styles/img-single-track/public/10094934084_2006994711.jpg\",\"twitter\":\"@BrianGoetz\",\"lang\":\"en\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-330290260",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:25 GMT"
+    }
+  },
+  "uuid" : "34209c1c-b033-4e4d-b4f2-9d75dabe12fd",
+  "persistent" : true,
+  "insertionIndex" : 32
+}

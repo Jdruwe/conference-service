@@ -66,8 +66,7 @@ dependencies {
 
     compile "org.mock-server:mockserver-netty:5.5.1"
 
-    compileOnly 'org.projectlombok:lombok:1.18.8'
-    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+    testCompile "com.github.tomakehurst:wiremock:2.23.2"
 }
 
 pmd {

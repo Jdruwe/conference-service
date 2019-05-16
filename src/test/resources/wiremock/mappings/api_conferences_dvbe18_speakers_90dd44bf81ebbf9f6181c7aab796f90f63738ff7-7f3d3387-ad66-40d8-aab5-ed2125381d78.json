@@ -1,0 +1,23 @@
+{
+  "id" : "7f3d3387-ad66-40d8-aab5-ed2125381d78",
+  "name" : "api_conferences_dvbe18_speakers_90dd44bf81ebbf9f6181c7aab796f90f63738ff7",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/90dd44bf81ebbf9f6181c7aab796f90f63738ff7",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"90dd44bf81ebbf9f6181c7aab796f90f63738ff7\",\"bioAsHtml\":\"<p>Full of enthusiasm for innovation, and passionate about the way technology and creativity can provide a solution for complex business problems.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/UNX-4400\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/90dd44bf81ebbf9f6181c7aab796f90f63738ff7\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Maxim Novak\"}],\"id\":\"UNX-4400\",\"title\":\"A Better Approach for Testing Micro-Services – Introducing: Test Kits in Practice\"}],\"company\":\"Wix\",\"bio\":\"Full of enthusiasm for innovation, and passionate about the way technology and creativity can provide a solution for complex business problems.\",\"lastName\":\"Novak\",\"firstName\":\"Maxim\",\"blog\":\"http://maxondev.com\",\"avatarURL\":\"http://www.gravatar.com/avatar/fda55ee5c0da54ac713140223db94bb8\",\"twitter\":null,\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1669259525",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:26 GMT"
+    }
+  },
+  "uuid" : "7f3d3387-ad66-40d8-aab5-ed2125381d78",
+  "persistent" : true,
+  "insertionIndex" : 52
+}

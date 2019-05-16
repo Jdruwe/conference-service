@@ -1,0 +1,23 @@
+{
+  "id" : "cd66cd6f-d536-44e8-a994-4acfa989b41f",
+  "name" : "api_conferences_dvbe18_speakers_d2fd0a69f8cbf47c3c05f33fc93ca59b4df47dc0",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/d2fd0a69f8cbf47c3c05f33fc93ca59b4df47dc0",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"d2fd0a69f8cbf47c3c05f33fc93ca59b4df47dc0\",\"bioAsHtml\":\"<p>Valentin is a senior developer for backends, databases, cloud architecture, performance, algorithms, and UX.\\nHe currently works as a DA (developer advocate) for Google Cloud Platform.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/ZCZ-7641\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/d2fd0a69f8cbf47c3c05f33fc93ca59b4df47dc0\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Valentin Deleplace\"}],\"id\":\"ZCZ-7641\",\"title\":\"Computer vision: British clay\"},{\"talkType\":\"Deep Dive\",\"track\":\"Programming languages.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/FLJ-4831\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/d2fd0a69f8cbf47c3c05f33fc93ca59b4df47dc0\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Valentin Deleplace\"}],\"id\":\"FLJ-4831\",\"title\":\"MADPIG: Measure and deepen performance in Go\"}],\"company\":\"Google\",\"bio\":\"Valentin is a senior developer for backends, databases, cloud architecture, performance, algorithms, and UX.\\r\\nHe currently works as a DA (developer advocate) for Google Cloud Platform.\",\"lastName\":\"Deleplace\",\"firstName\":\"Valentin\",\"blog\":\"https://cloudplatform.googleblog.com/\",\"avatarURL\":\"https://storage.googleapis.com/deleplace-sandbox/photo/val.jpg\",\"twitter\":\"@val_deleplace\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1347305982",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:36 GMT"
+    }
+  },
+  "uuid" : "cd66cd6f-d536-44e8-a994-4acfa989b41f",
+  "persistent" : true,
+  "insertionIndex" : 169
+}

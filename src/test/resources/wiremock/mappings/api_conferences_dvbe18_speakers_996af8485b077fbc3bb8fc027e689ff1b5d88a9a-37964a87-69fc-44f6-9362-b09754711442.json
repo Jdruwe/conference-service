@@ -1,0 +1,23 @@
+{
+  "id" : "37964a87-69fc-44f6-9362-b09754711442",
+  "name" : "api_conferences_dvbe18_speakers_996af8485b077fbc3bb8fc027e689ff1b5d88a9a",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/996af8485b077fbc3bb8fc027e689ff1b5d88a9a",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"996af8485b077fbc3bb8fc027e689ff1b5d88a9a\",\"bioAsHtml\":\"<p>Sébastien is a Spring Framework and Reactor committer at Pivotal. He mostly works on Kotlin support across Spring portfolio, and on Web and Reactive topics. He is also part of MiXiT conference staff crew.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Programming languages.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/TZU-3777\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/996af8485b077fbc3bb8fc027e689ff1b5d88a9a\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Sébastien Deleuze\"}],\"id\":\"TZU-3777\",\"title\":\"Spring Boot with Kotlin, functional configuration and GraalVM\"},{\"talkType\":\"BOF\",\"track\":\"Server Side Java.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/JRS-5586\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6474d6c1ad9cd22c652613af6555b6bcebe4a0ab\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Simon Baslé\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/683566fa384c408462fd6d187a442889ecddccd5\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Juergen Hoeller\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/9c4e10457a0950fc9300795c9e18924f873b5360\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Stéphane Nicoll\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/996af8485b077fbc3bb8fc027e689ff1b5d88a9a\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Sébastien Deleuze\"}],\"id\":\"JRS-5586\",\"title\":\"The Spring BOF\"}],\"company\":\"Pivotal\",\"bio\":\"Sébastien is a Spring Framework and Reactor committer at Pivotal. He mostly works on Kotlin support across Spring portfolio, and on Web and Reactive topics. He is also part of MiXiT conference staff crew.\",\"lastName\":\"Deleuze\",\"firstName\":\"Sébastien\",\"blog\":\"https://spring.io\",\"avatarURL\":\"https://lh4.googleusercontent.com/-l5aj1wUwNSM/AAAAAAAAAAI/AAAAAAAAAH8/iUDQdtUOg40/photo.jpg\",\"twitter\":\"@sdeleuze\",\"lang\":\"fr-FR\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-349705760",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:41 GMT"
+    }
+  },
+  "uuid" : "37964a87-69fc-44f6-9362-b09754711442",
+  "persistent" : true,
+  "insertionIndex" : 222
+}

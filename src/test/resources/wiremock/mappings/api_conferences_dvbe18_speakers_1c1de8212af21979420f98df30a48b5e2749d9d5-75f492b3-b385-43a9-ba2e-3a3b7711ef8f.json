@@ -1,0 +1,23 @@
+{
+  "id" : "75f492b3-b385-43a9-ba2e-3a3b7711ef8f",
+  "name" : "api_conferences_dvbe18_speakers_1c1de8212af21979420f98df30a48b5e2749d9d5",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/1c1de8212af21979420f98df30a48b5e2749d9d5",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"1c1de8212af21979420f98df30a48b5e2749d9d5\",\"bioAsHtml\":\"<p>I have been working for 13 years with software development, started my career and community participation with Java in Brazil. I&#x27;m a curious developer that likes tiny devices (mobile and embedded), I&#x27;ve already developed using Java ME, Android and now working as a Developer Advocate on the Actions on Google team, helping developers to create high quality Actions for the Google Assistant platform.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Mobile & IoT.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/IRG-2483\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/1c1de8212af21979420f98df30a48b5e2749d9d5\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Antonio Marin Neto\"}],\"id\":\"IRG-2483\",\"title\":\"Integrating your Android app with Actions on Google for the Google Assistant\"}],\"company\":\"Google\",\"bio\":\"I have been working for 13 years with software development, started my career and community participation with Java in Brazil. I'm a curious developer that likes tiny devices (mobile and embedded), I've already developed using Java ME, Android and now working as a Developer Advocate on the Actions on Google team, helping developers to create high quality Actions for the Google Assistant platform.\",\"lastName\":\"Marin Neto\",\"firstName\":\"Antonio\",\"blog\":\"www.netomarin.io\",\"avatarURL\":\"http://bit.ly/headshot-netomarin\",\"twitter\":\"@netomarin\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1219578720",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:29 GMT"
+    }
+  },
+  "uuid" : "75f492b3-b385-43a9-ba2e-3a3b7711ef8f",
+  "persistent" : true,
+  "insertionIndex" : 82
+}

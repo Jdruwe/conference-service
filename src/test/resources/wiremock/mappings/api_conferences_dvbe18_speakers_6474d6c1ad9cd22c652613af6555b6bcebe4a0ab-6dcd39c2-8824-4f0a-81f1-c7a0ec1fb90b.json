@@ -1,0 +1,23 @@
+{
+  "id" : "6dcd39c2-8824-4f0a-81f1-c7a0ec1fb90b",
+  "name" : "api_conferences_dvbe18_speakers_6474d6c1ad9cd22c652613af6555b6bcebe4a0ab",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/6474d6c1ad9cd22c652613af6555b6bcebe4a0ab",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"6474d6c1ad9cd22c652613af6555b6bcebe4a0ab\",\"bioAsHtml\":\"<p>Project Reactor maintainer, fan of all reactive things :)</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Server Side Java.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/JRS-5586\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6474d6c1ad9cd22c652613af6555b6bcebe4a0ab\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Simon Baslé\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/683566fa384c408462fd6d187a442889ecddccd5\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Juergen Hoeller\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/9c4e10457a0950fc9300795c9e18924f873b5360\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Stéphane Nicoll\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/996af8485b077fbc3bb8fc027e689ff1b5d88a9a\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Sébastien Deleuze\"}],\"id\":\"JRS-5586\",\"title\":\"The Spring BOF\"},{\"talkType\":\"Conference\",\"track\":\"Server Side Java.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/TZJ-2808\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6474d6c1ad9cd22c652613af6555b6bcebe4a0ab\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Simon Baslé\"}],\"id\":\"TZJ-2808\",\"title\":\"Flight of the Flux: a look at Reactor's execution model\"}],\"company\":\"Pivotal\",\"bio\":\"Project Reactor maintainer, fan of all reactive things :)\",\"lastName\":\"Baslé\",\"firstName\":\"Simon\",\"blog\":null,\"avatarURL\":\"https://lh4.googleusercontent.com/-Y5ypf4CTH2Q/AAAAAAAAAAI/AAAAAAAAAIs/WYNWIILBui8/photo.jpg\",\"twitter\":\"@simonbasle\",\"lang\":\"fr-FR\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1357054254",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:44 GMT"
+    }
+  },
+  "uuid" : "6dcd39c2-8824-4f0a-81f1-c7a0ec1fb90b",
+  "persistent" : true,
+  "insertionIndex" : 249
+}

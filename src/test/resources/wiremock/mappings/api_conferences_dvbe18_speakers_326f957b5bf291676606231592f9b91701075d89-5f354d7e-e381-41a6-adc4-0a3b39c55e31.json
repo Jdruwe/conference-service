@@ -1,0 +1,23 @@
+{
+  "id" : "5f354d7e-e381-41a6-adc4-0a3b39c55e31",
+  "name" : "api_conferences_dvbe18_speakers_326f957b5bf291676606231592f9b91701075d89",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/326f957b5bf291676606231592f9b91701075d89",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"326f957b5bf291676606231592f9b91701075d89\",\"bioAsHtml\":\"<p>Ray is a Developer Advocate for the Google Cloud Platform. Ray had extensive hands on cross-industry enterprise systems integration delivery and management experiences during his time at Accenture, managed full stack application development, DevOps, and ITOps. Ray specialized in middleware, big data, and PaaS products during his time at Red Hat while contributing to open source projects, such as Infinispan. Aside from technology, Ray enjoys traveling and adventures.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Deep Dive\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/ASZ-5494\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/326f957b5bf291676606231592f9b91701075d89\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ray Tsang\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/55e2fb75fa1fd0270646a491cded06957368bb9f\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Eric Bottard\"}],\"id\":\"ASZ-5494\",\"title\":\"Beyond Kubernetes - Managing Applications and Functions with Knative, riff, and Spring Cloud Functions\"},{\"talkType\":\"Hands-on Lab\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/UWC-9994\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/326f957b5bf291676606231592f9b91701075d89\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ray Tsang\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/9c16dcabf384efe94a630541975e5c37503797ca\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ryan Knight\"}],\"id\":\"UWC-9994\",\"title\":\"Making Microservices Micro with Istio Service Mesh\"}],\"company\":\"Google\",\"bio\":\"Ray is a Developer Advocate for the Google Cloud Platform. Ray had extensive hands on cross-industry enterprise systems integration delivery and management experiences during his time at Accenture, managed full stack application development, DevOps, and ITOps. Ray specialized in middleware, big data, and PaaS products during his time at Red Hat while contributing to open source projects, such as Infinispan. Aside from technology, Ray enjoys traveling and adventures.\",\"lastName\":\"Tsang\",\"firstName\":\"Ray\",\"blog\":\"https://plus.google.com/+RayTsang\",\"avatarURL\":\"https://pbs.twimg.com/profile_images/520392325818621952/EpPGuHIY_400x400.jpeg\",\"twitter\":\"@saturnism\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1197968801",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:25 GMT"
+    }
+  },
+  "uuid" : "5f354d7e-e381-41a6-adc4-0a3b39c55e31",
+  "persistent" : true,
+  "insertionIndex" : 36
+}

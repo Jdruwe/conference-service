@@ -1,0 +1,23 @@
+{
+  "id" : "acac679c-77a4-470f-be02-e4e87096d8bc",
+  "name" : "api_conferences_dvbe18_speakers_7c55cebea3d51ecdce70d3ae5af047f1177c6f6c",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/7c55cebea3d51ecdce70d3ae5af047f1177c6f6c",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"7c55cebea3d51ecdce70d3ae5af047f1177c6f6c\",\"bioAsHtml\":\"<p>I lead the Android and Java Developer Experience Team at Uber. I am very passionate about tooling, infrastructure and build systems for building apps at scale.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Mobile & IoT.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/ILW-5611\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/7c55cebea3d51ecdce70d3ae5af047f1177c6f6c\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Gautam Korlam\"}],\"id\":\"ILW-5611\",\"title\":\"Dude, Where's My Build? Android CI/CD at Uber\"}],\"company\":\"Uber\",\"bio\":\"I lead the Android and Java Developer Experience Team at Uber. I am very passionate about tooling, infrastructure and build systems for building apps at scale.\",\"lastName\":\"Korlam\",\"firstName\":\"Gautam\",\"blog\":null,\"avatarURL\":\"https://www.gravatar.com/avatar/3f9ebfb254c56d281d91bbee960219a8\",\"twitter\":\"@kageiit\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "811653400",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:46 GMT"
+    }
+  },
+  "uuid" : "acac679c-77a4-470f-be02-e4e87096d8bc",
+  "persistent" : true,
+  "insertionIndex" : 265
+}

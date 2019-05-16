@@ -1,0 +1,23 @@
+{
+  "id" : "6dc1ecb3-6fbe-42da-8558-b7bf7a3f5d43",
+  "name" : "api_conferences_dvbe18_speakers_4bd12c1233e3f991ddc936c8cac93e086f834a31",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/4bd12c1233e3f991ddc936c8cac93e086f834a31",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"4bd12c1233e3f991ddc936c8cac93e086f834a31\",\"bioAsHtml\":\"<p>Johan Vos started to work with Java in 1995. He was part of the Blackdown team helping port Java to Linux. With LodgON, the company he co-founded, he is mainly working on Java based solutions for social networking software. Because he can&#x27;t make a choice between embedded development and enterprise development, his main focus is on end-to-end Java, combining the strengths of back-end systems and embedded devices. His favourite technologies are currently Java EE / Glassfish at the backend and JavaFX at the front-end. Johan is a Java Champion, a member of the BeJUG steering group and he is a JCP member. You can read his blog at http://blogs.lodgon.com/johan and follow his tweets at http://twitter.com/johanvos</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/PAZ-3181\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/a6998d75a88dfaed52aae5bbbe7f402b5515f85a\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Kevin Rushforth\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/4bd12c1233e3f991ddc936c8cac93e086f834a31\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Johan Vos\"}],\"id\":\"PAZ-3181\",\"title\":\"JavaFX.next\"}],\"company\":\"Gluon\",\"bio\":\"Johan Vos started to work with Java in 1995. He was part of the Blackdown team helping port Java to Linux. With LodgON, the company he co-founded, he is mainly working on Java based solutions for social networking software. Because he can't make a choice between embedded development and enterprise development, his main focus is on end-to-end Java, combining the strengths of back-end systems and embedded devices. His favourite technologies are currently Java EE / Glassfish at the backend and JavaFX at the front-end. Johan is a Java Champion, a member of the BeJUG steering group and he is a JCP member. You can read his blog at http://blogs.lodgon.com/johan and follow his tweets at http://twitter.com/johanvos\",\"lastName\":\"Vos\",\"firstName\":\"Johan\",\"blog\":\"https://plus.google.com/+JohanVosJava\",\"avatarURL\":\"https://lh4.googleusercontent.com/-5fu-qu4Ig7c/AAAAAAAAAAI/AAAAAAAAAEs/VB1PKNPy2Hk/photo.jpg\",\"twitter\":\"@johanvos\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-53200393",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:33 GMT"
+    }
+  },
+  "uuid" : "6dc1ecb3-6fbe-42da-8558-b7bf7a3f5d43",
+  "persistent" : true,
+  "insertionIndex" : 134
+}

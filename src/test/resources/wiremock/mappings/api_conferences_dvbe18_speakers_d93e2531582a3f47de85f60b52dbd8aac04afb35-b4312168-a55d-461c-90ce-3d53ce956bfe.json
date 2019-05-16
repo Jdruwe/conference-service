@@ -1,0 +1,23 @@
+{
+  "id" : "b4312168-a55d-461c-90ce-3d53ce956bfe",
+  "name" : "api_conferences_dvbe18_speakers_d93e2531582a3f47de85f60b52dbd8aac04afb35",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/d93e2531582a3f47de85f60b52dbd8aac04afb35",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"d93e2531582a3f47de85f60b52dbd8aac04afb35\",\"bioAsHtml\":\"<p>Former Java developer for SERLI/Codenvy I&#x27;m now trying to find the right way to the cloud at Sopra Banking Software.</p>\\n<p>I&#x27;m part of a team dedicated to automation. I love Git as much as shell scripts and automating as much as trappist beers.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/TOW-7592\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/d93e2531582a3f47de85f60b52dbd8aac04afb35\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Stéphane Tournié\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/5ff931f7cb9b9ddbda86b842319541e60203b55c\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Etienne Vrignaud\"}],\"id\":\"TOW-7592\",\"title\":\"Power of cloud dev environments for your legacy projects\"}],\"company\":\"Sopra Banking Software\",\"bio\":\"Former Java developer for SERLI/Codenvy I'm now trying to find the right way to the cloud at Sopra Banking Software.\\r\\n\\r\\nI'm part of a team dedicated to automation. I love Git as much as shell scripts and automating as much as trappist beers.\",\"lastName\":\"Tournié\",\"firstName\":\"Stéphane\",\"blog\":null,\"avatarURL\":\"https://avatars3.githubusercontent.com/u/4410012?s=400&v=4\",\"twitter\":\"@sttournie\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-2100418053",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:35 GMT"
+    }
+  },
+  "uuid" : "b4312168-a55d-461c-90ce-3d53ce956bfe",
+  "persistent" : true,
+  "insertionIndex" : 160
+}

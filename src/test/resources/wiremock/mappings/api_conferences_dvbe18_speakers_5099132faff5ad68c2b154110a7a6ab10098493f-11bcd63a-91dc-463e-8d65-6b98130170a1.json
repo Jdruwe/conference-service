@@ -1,0 +1,23 @@
+{
+  "id" : "11bcd63a-91dc-463e-8d65-6b98130170a1",
+  "name" : "api_conferences_dvbe18_speakers_5099132faff5ad68c2b154110a7a6ab10098493f",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/5099132faff5ad68c2b154110a7a6ab10098493f",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"5099132faff5ad68c2b154110a7a6ab10098493f\",\"bioAsHtml\":\"<p>Twitter: @roesslerj\\nDedicated developer &amp; computer scientist, speaker, founder of ReTest (retest.org).</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/KQX-4133\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/5099132faff5ad68c2b154110a7a6ab10098493f\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Jeremias Rößler\"}],\"id\":\"KQX-4133\",\"title\":\"How to apply AI to testing\"}],\"company\":\"@retest\",\"bio\":\"Twitter: @roesslerj\\r\\nDedicated developer & computer scientist, speaker, founder of ReTest (retest.org).\",\"lastName\":\"Rößler\",\"firstName\":\"Jeremias\",\"blog\":\"http://retest.org\",\"avatarURL\":\"http://www.gravatar.com/avatar/09dbeb1373fa4fdb8dfd9a84cba6c03b\",\"twitter\":\"@roesslerj\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-2002464623",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:38 GMT"
+    }
+  },
+  "uuid" : "11bcd63a-91dc-463e-8d65-6b98130170a1",
+  "persistent" : true,
+  "insertionIndex" : 188
+}

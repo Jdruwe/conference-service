@@ -1,0 +1,23 @@
+{
+  "id" : "c9820891-acfa-401a-afaf-70b97284b352",
+  "name" : "api_conferences_dvbe18_speakers_fe9f9d97f7c0a959e1f94f2020726e31e8cecc5e",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/fe9f9d97f7c0a959e1f94f2020726e31e8cecc5e",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"fe9f9d97f7c0a959e1f94f2020726e31e8cecc5e\",\"bioAsHtml\":\"<p>Tim is Software Engineer and co-founder of Mindloops</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/LSP-5748\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/fe9f9d97f7c0a959e1f94f2020726e31e8cecc5e\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Tim Prijn\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/ea94b8f9411d49e58a8175199d1197856e291f99\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Peter Hendriks\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/0b1260573cfc163d9313ddb11ea5a54b3ab7193f\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ramon Wieleman\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/fc86ee0245cc9db1a0f8dfa10375055bddeaca0d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Richard Kettelerij\"}],\"id\":\"LSP-5748\",\"title\":\"The Java Pub Quiz\"}],\"company\":\"Mindloops\",\"bio\":\"Tim is Software Engineer and co-founder of Mindloops\",\"lastName\":\"Prijn\",\"firstName\":\"Tim\",\"blog\":\"https://mindloops.io/\",\"avatarURL\":\"https://www.gravatar.com/avatar/ae8d52c1928f48b98282bf69950aaeec\",\"twitter\":null,\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1668202469",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:45 GMT"
+    }
+  },
+  "uuid" : "c9820891-acfa-401a-afaf-70b97284b352",
+  "persistent" : true,
+  "insertionIndex" : 254
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "057f36f7-9860-42ba-affc-849302cf40ea",
+  "name" : "api_conferences_dvbe18_speakers_05b9d537f1895a60adc4dbc25b6af2d1ef458854",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/05b9d537f1895a60adc4dbc25b6af2d1ef458854",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"05b9d537f1895a60adc4dbc25b6af2d1ef458854\",\"bioAsHtml\":\"<p>Founder of Devoxx</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Keynote\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/BGE-3228\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/05b9d537f1895a60adc4dbc25b6af2d1ef458854\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Stephan Janssen\"}],\"id\":\"BGE-3228\",\"title\":\"Welcome - Overflow\"},{\"talkType\":\"Keynote\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/GUV-9712\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/05b9d537f1895a60adc4dbc25b6af2d1ef458854\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Stephan Janssen\"}],\"id\":\"GUV-9712\",\"title\":\"Welcome - Overflow\"},{\"talkType\":\"Keynote\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/HRI-0501\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/05b9d537f1895a60adc4dbc25b6af2d1ef458854\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Stephan Janssen\"}],\"id\":\"HRI-0501\",\"title\":\"Welcome\"},{\"talkType\":\"Keynote\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/EBQ-9546\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/05b9d537f1895a60adc4dbc25b6af2d1ef458854\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Stephan Janssen\"}],\"id\":\"EBQ-9546\",\"title\":\"Welcome - Overflow\"},{\"talkType\":\"Keynote\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/NMJ-6152\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/05b9d537f1895a60adc4dbc25b6af2d1ef458854\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Stephan Janssen\"}],\"id\":\"NMJ-6152\",\"title\":\"Welcome - Overflow\"}],\"company\":\"Devoxx\",\"bio\":\"Founder of Devoxx\",\"lastName\":\"Janssen\",\"firstName\":\"Stephan\",\"blog\":null,\"avatarURL\":\"https://lh3.googleusercontent.com/-j9_eSHtCsqA/AAAAAAAAAAI/AAAAAAAAJRY/5Zw5yZvAzT4/s640-il/photo.jpg\",\"twitter\":\"@stephan007\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-2050428794",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:23 GMT"
+    }
+  },
+  "uuid" : "057f36f7-9860-42ba-affc-849302cf40ea",
+  "persistent" : true,
+  "insertionIndex" : 15
+}

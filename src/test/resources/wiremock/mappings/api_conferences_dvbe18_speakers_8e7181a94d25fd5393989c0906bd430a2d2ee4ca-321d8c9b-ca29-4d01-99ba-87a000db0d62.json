@@ -1,0 +1,23 @@
+{
+  "id" : "321d8c9b-ca29-4d01-99ba-87a000db0d62",
+  "name" : "api_conferences_dvbe18_speakers_8e7181a94d25fd5393989c0906bd430a2d2ee4ca",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/8e7181a94d25fd5393989c0906bd430a2d2ee4ca",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"8e7181a94d25fd5393989c0906bd430a2d2ee4ca\",\"bioAsHtml\":\"<p>I have been working in the telecoms field within Orange for 15 years. After spending half of my career on server side developments related to voice communications (H.323, IMS, Intelligent Network), I switched to mobile development on Android. Today, I enjoy cultivating this dual experience and investigate issues happening at the boundary.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Mobile & IoT.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/HDU-1733\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/8e7181a94d25fd5393989c0906bd430a2d2ee4ca\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Pierre Crépieux\"}],\"id\":\"HDU-1733\",\"title\":\"Energy, latency: I love you, me neither\"}],\"company\":\"Orange\",\"bio\":\"I have been working in the telecoms field within Orange for 15 years. After spending half of my career on server side developments related to voice communications (H.323, IMS, Intelligent Network), I switched to mobile development on Android. Today, I enjoy cultivating this dual experience and investigate issues happening at the boundary.\",\"lastName\":\"Crépieux\",\"firstName\":\"Pierre\",\"blog\":null,\"avatarURL\":\"https://fr.gravatar.com/userimage/32722828/19245aa9282325600ae512198e75cfaf.jpg?size=200\",\"twitter\":\"@PCrepieux\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "264976511",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:40 GMT"
+    }
+  },
+  "uuid" : "321d8c9b-ca29-4d01-99ba-87a000db0d62",
+  "persistent" : true,
+  "insertionIndex" : 206
+}

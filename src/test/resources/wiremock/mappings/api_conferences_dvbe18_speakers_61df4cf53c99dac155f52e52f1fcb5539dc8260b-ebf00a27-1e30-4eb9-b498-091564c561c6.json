@@ -1,0 +1,23 @@
+{
+  "id" : "ebf00a27-1e30-4eb9-b498-091564c561c6",
+  "name" : "api_conferences_dvbe18_speakers_61df4cf53c99dac155f52e52f1fcb5539dc8260b",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/61df4cf53c99dac155f52e52f1fcb5539dc8260b",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"61df4cf53c99dac155f52e52f1fcb5539dc8260b\",\"bioAsHtml\":\"<p>Michael Coté works at Pivotal on the advocate team. He’s been an industry analyst at  RedMonk and 451 Research, worked in corporate strategy and M&amp;A at Dell in software and cloud, and was a programmer for a decade before all that. He does several weekly (mostly) tech podcasts, writes a column on Agile &amp; DevOps for The Register, blogs at Cote.io, and is @cote in Twitter.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/ASN-9274\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/61df4cf53c99dac155f52e52f1fcb5539dc8260b\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Michael Cote\"}],\"id\":\"ASN-9274\",\"title\":\"Rethinking enterprise architecture for DevOps, agile, & cloud native organizations\"}],\"company\":\"Pivotal\",\"bio\":\"Michael Coté works at Pivotal on the advocate team. He’s been an industry analyst at  RedMonk and 451 Research, worked in corporate strategy and M&A at Dell in software and cloud, and was a programmer for a decade before all that. He does several weekly (mostly) tech podcasts, writes a column on Agile & DevOps for The Register, blogs at Cote.io, and is @cote in Twitter.\",\"lastName\":\"Cote\",\"firstName\":\"Michael\",\"blog\":\"http://cote.io\",\"avatarURL\":\"https://c1.staticflickr.com/5/4231/35710249762_d88676a2cc_b_d.jpg\",\"twitter\":\"@cote\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "507403118",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:32 GMT"
+    }
+  },
+  "uuid" : "ebf00a27-1e30-4eb9-b498-091564c561c6",
+  "persistent" : true,
+  "insertionIndex" : 112
+}

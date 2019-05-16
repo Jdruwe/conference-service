@@ -1,0 +1,23 @@
+{
+  "id" : "c56a6440-ec4d-46dc-8d59-b0d9035dbeb6",
+  "name" : "api_conferences_dvbe18_speakers_aad30e21bb11c3009996d5cf960b352240f2397c",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/aad30e21bb11c3009996d5cf960b352240f2397c",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"aad30e21bb11c3009996d5cf960b352240f2397c\",\"bioAsHtml\":\"<p>Software developer for more than 11 years. I work at ekito (French tech studio) since 2012. I have one hand in Android development and the other in Kotlin/Java backend stuff. My current hot topics are Kotlin and the reactive programming.</p>\\n<p>I&#x27;m a speaker since 2016. I talk mostly about Kotlin: https://medium.com/@giuliani.arnaud/presentations-6b91f53899ac</p>\\n<p>I&#x27;ve launched the Koin project, a lightweight dependency injection framework for Kotlin - https://insert-koin.io</p>\\n<p>I regularly write articles on medium https://medium.com/@giuliani.arnaud/ or on ekito&#x27;s blog https://www.ekito.fr/people/arnaud-giuliani/</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Hands-on Lab\",\"track\":\"Mobile & IoT.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/JCX-3863\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/94d38a2c38639dd4c38727e62d3b125094244544\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Laurent Baresse\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/aad30e21bb11c3009996d5cf960b352240f2397c\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Arnaud Giuliani\"}],\"id\":\"JCX-3863\",\"title\":\"Hands-on Android Architecture & Architecture Components\"}],\"company\":\"ekito\",\"bio\":\"Software developer for more than 11 years. I work at ekito (French tech studio) since 2012. I have one hand in Android development and the other in Kotlin/Java backend stuff. My current hot topics are Kotlin and the reactive programming. \\r\\n\\r\\nI'm a speaker since 2016. I talk mostly about Kotlin: https://medium.com/@giuliani.arnaud/presentations-6b91f53899ac\\r\\n\\r\\nI've launched the Koin project, a lightweight dependency injection framework for Kotlin - https://insert-koin.io\\r\\n\\r\\nI regularly write articles on medium https://medium.com/@giuliani.arnaud/ or on ekito's blog https://www.ekito.fr/people/arnaud-giuliani/\",\"lastName\":\"Giuliani\",\"firstName\":\"Arnaud\",\"blog\":\"www.ekito.fr/people\",\"avatarURL\":\"https://lh5.googleusercontent.com/-eQ0KKUvy0no/AAAAAAAAAAI/AAAAAAAAAfo/EJcJA5QpIIw/photo.jpg\",\"twitter\":\"@arnogiu\",\"lang\":\"fr-FR\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-393344967",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:33 GMT"
+    }
+  },
+  "uuid" : "c56a6440-ec4d-46dc-8d59-b0d9035dbeb6",
+  "persistent" : true,
+  "insertionIndex" : 132
+}

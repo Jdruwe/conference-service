@@ -1,5 +1,8 @@
 package be.xplore.conference.rest.controller;
 
+import be.xplore.conference.model.Room;
+import be.xplore.conference.service.RoomService;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +12,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.transaction.annotation.Transactional;
 
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -19,10 +23,21 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @SpringBootTest
 @AutoConfigureMockMvc
 @ActiveProfiles("test")
+@Transactional
 public class RoomControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
+
+    @Autowired
+    private RoomService roomService;
+
+    @Before
+    public void init(){
+        roomService.save(new Room("Room8","Room 8",5,"setup",null));
+        roomService.save(new Room("Room7","Room 7",5,"setup",null));
+        roomService.save(new Room("Room6","Room 6",5,"setup",null));
+    }
 
 
     @Test
@@ -31,17 +46,8 @@ public class RoomControllerTest {
                 .contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("Room8")))
-                .andExpect(content().string(containsString("Room5")))
-                .andExpect(content().string(containsString("ExhibitionHall")))
-                .andExpect(content().string(containsString("Room3")))
-                .andExpect(content().string(containsString("Room9")))
-                .andExpect(content().string(containsString("BOF2")))
-                .andExpect(content().string(containsString("Room6")))
-                .andExpect(content().string(containsString("Room10")))
                 .andExpect(content().string(containsString("Room7")))
-                .andExpect(content().string(containsString("BOF1")))
-                .andExpect(content().string(containsString("Room4")));
-
+                .andExpect(content().string(containsString("Room6")));
     }
 
 }

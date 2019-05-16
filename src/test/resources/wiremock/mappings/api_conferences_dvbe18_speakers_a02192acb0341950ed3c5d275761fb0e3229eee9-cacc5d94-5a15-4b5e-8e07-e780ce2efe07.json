@@ -1,0 +1,23 @@
+{
+  "id" : "cacc5d94-5a15-4b5e-8e07-e780ce2efe07",
+  "name" : "api_conferences_dvbe18_speakers_a02192acb0341950ed3c5d275761fb0e3229eee9",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/a02192acb0341950ed3c5d275761fb0e3229eee9",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"a02192acb0341950ed3c5d275761fb0e3229eee9\",\"bioAsHtml\":\"<p>Swiss knife engineer interested in development, sys admin and networks but also IoT and home automation</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Mobile & IoT.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/LWB-1541\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/bc8dc9b68fa3a1b307f3c390bb901e6a039bf9cc\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Christophe Jollivet\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/a02192acb0341950ed3c5d275761fb0e3229eee9\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Sébastien Laporte\"}],\"id\":\"LWB-1541\",\"title\":\"Connected sensors and data visualization to measure hardness at work\"}],\"company\":\"Apside TOP\",\"bio\":\"Swiss knife engineer interested in development, sys admin and networks but also IoT and home automation\",\"lastName\":\"Laporte\",\"firstName\":\"Sébastien\",\"blog\":null,\"avatarURL\":\"https://lh4.googleusercontent.com/-rcg2VixcAOI/AAAAAAAAAAI/AAAAAAAAAU0/ok41TDTqyeY/photo.jpg\",\"twitter\":\"@seb__laporte\",\"lang\":\"fr-FR\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1408041681",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:29 GMT"
+    }
+  },
+  "uuid" : "cacc5d94-5a15-4b5e-8e07-e780ce2efe07",
+  "persistent" : true,
+  "insertionIndex" : 81
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "01869f16-8c9a-409e-9b79-f3d9014d0c06",
+  "name" : "api_conferences_dvbe18_rooms_exhibitionhall_monday",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/rooms/ExhibitionHall/monday",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"slots\":[{\"roomId\":\"ExhibitionHall\",\"notAllocated\":false,\"fromTimeMillis\":1542007800000,\"break\":{\"id\":\"st.20\",\"nameEN\":\"Registration & Breakfast\",\"nameFR\":\"Registration & Breakfast\",\"room\":{\"id\":\"ExhibitionHall\",\"name\":\"Exhibition Hall\",\"capacity\":2000,\"setup\":\"classroom\",\"recorded\":\"yes\"},\"dayName\":\"monday\",\"startTime\":1542007800000,\"endTime\":1542011400000},\"roomSetup\":\"classroom\",\"talk\":null,\"fromTime\":\"08:30\",\"toTimeMillis\":1542011400000,\"toTime\":\"09:30\",\"roomCapacity\":2000,\"roomName\":\"Exhibition Hall\",\"slotId\":\"st.20\",\"day\":\"monday\"},{\"roomId\":\"ExhibitionHall\",\"notAllocated\":false,\"fromTimeMillis\":1542022200000,\"break\":{\"id\":\"st.15\",\"nameEN\":\"Lunch\",\"nameFR\":\"Lunch\",\"room\":{\"id\":\"ExhibitionHall\",\"name\":\"Exhibition Hall\",\"capacity\":2000,\"setup\":\"classroom\",\"recorded\":\"yes\"},\"dayName\":\"monday\",\"startTime\":1542022200000,\"endTime\":1542025800000},\"roomSetup\":\"classroom\",\"talk\":null,\"fromTime\":\"12:30\",\"toTimeMillis\":1542025800000,\"toTime\":\"13:30\",\"roomCapacity\":2000,\"roomName\":\"Exhibition Hall\",\"slotId\":\"st.15\",\"day\":\"monday\"},{\"roomId\":\"ExhibitionHall\",\"notAllocated\":false,\"fromTimeMillis\":1542036600000,\"break\":{\"id\":\"st.12\",\"nameEN\":\"Coffee Break\",\"nameFR\":\"Coffee Break\",\"room\":{\"id\":\"ExhibitionHall\",\"name\":\"Exhibition Hall\",\"capacity\":2000,\"setup\":\"classroom\",\"recorded\":\"yes\"},\"dayName\":\"monday\",\"startTime\":1542036600000,\"endTime\":1542037500000},\"roomSetup\":\"classroom\",\"talk\":null,\"fromTime\":\"16:30\",\"toTimeMillis\":1542037500000,\"toTime\":\"16:45\",\"roomCapacity\":2000,\"roomName\":\"Exhibition Hall\",\"slotId\":\"st.12\",\"day\":\"monday\"},{\"roomId\":\"ExhibitionHall\",\"notAllocated\":false,\"fromTimeMillis\":1542039300000,\"break\":{\"id\":\"st.17\",\"nameEN\":\"Break\",\"nameFR\":\"Break\",\"room\":{\"id\":\"ExhibitionHall\",\"name\":\"Exhibition Hall\",\"capacity\":2000,\"setup\":\"classroom\",\"recorded\":\"yes\"},\"dayName\":\"monday\",\"startTime\":1542039300000,\"endTime\":1542040200000},\"roomSetup\":\"classroom\",\"talk\":null,\"fromTime\":\"17:15\",\"toTimeMillis\":1542040200000,\"toTime\":\"17:30\",\"roomCapacity\":2000,\"roomName\":\"Exhibition Hall\",\"slotId\":\"st.17\",\"day\":\"monday\"},{\"roomId\":\"ExhibitionHall\",\"notAllocated\":false,\"fromTimeMillis\":1542042000000,\"break\":{\"id\":\"st.17\",\"nameEN\":\"Break\",\"nameFR\":\"Break\",\"room\":{\"id\":\"ExhibitionHall\",\"name\":\"Exhibition Hall\",\"capacity\":2000,\"setup\":\"classroom\",\"recorded\":\"yes\"},\"dayName\":\"monday\",\"startTime\":1542042000000,\"endTime\":1542042900000},\"roomSetup\":\"classroom\",\"talk\":null,\"fromTime\":\"18:00\",\"toTimeMillis\":1542042900000,\"toTime\":\"18:15\",\"roomCapacity\":2000,\"roomName\":\"Exhibition Hall\",\"slotId\":\"st.17\",\"day\":\"monday\"},{\"roomId\":\"ExhibitionHall\",\"notAllocated\":false,\"fromTimeMillis\":1542044700000,\"break\":{\"id\":\"st.17\",\"nameEN\":\"Break\",\"nameFR\":\"Break\",\"room\":{\"id\":\"ExhibitionHall\",\"name\":\"Exhibition Hall\",\"capacity\":2000,\"setup\":\"classroom\",\"recorded\":\"yes\"},\"dayName\":\"monday\",\"startTime\":1542044700000,\"endTime\":1542045600000},\"roomSetup\":\"classroom\",\"talk\":null,\"fromTime\":\"18:45\",\"toTimeMillis\":1542045600000,\"toTime\":\"19:00\",\"roomCapacity\":2000,\"roomName\":\"Exhibition Hall\",\"slotId\":\"st.17\",\"day\":\"monday\"}]}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "v2--1133865272-1498252496",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/schedule>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:28 GMT"
+    }
+  },
+  "uuid" : "01869f16-8c9a-409e-9b79-f3d9014d0c06",
+  "persistent" : true,
+  "insertionIndex" : 66
+}

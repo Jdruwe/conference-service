@@ -1,0 +1,23 @@
+{
+  "id" : "085f941a-9b0a-43c3-a014-7b02da16cfa7",
+  "name" : "api_conferences_dvbe18_speakers_9d249681193d71fab73c83dd2f9b6563a01ac581",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/9d249681193d71fab73c83dd2f9b6563a01ac581",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"9d249681193d71fab73c83dd2f9b6563a01ac581\",\"bioAsHtml\":\"<p>Nishant is a Sr.Android Engineer at Soundbrenner in Berlin, Germany and an open source enthusiast who spends his time doodling when not hacking on Android. He is a caffeine-dependent life-form and can be found either talking about android libraries or advocating that coffee is the elixir of life at community gatherings.</p>\\n<p>He has been part of 2 startups in the past (Founding Team Member at\\nOmniLabs, Inc. and one of the first employees at Silverpush) with experience in Android SDK Engineering and Audio Digital Signal Processing(DSP) on Android.\\nWhile working at his past company (Silverpush), he developed the company’s patented UAB (Unique Audio Beacon) Technology.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Mobile & IoT.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/OBY-2356\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/9d249681193d71fab73c83dd2f9b6563a01ac581\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Nishant Srivastava\"}],\"id\":\"OBY-2356\",\"title\":\"Things I wish I knew when I started building Android Libraries - Vol 2\"}],\"company\":\"Soundbrenner\",\"bio\":\"Nishant is a Sr.Android Engineer at Soundbrenner in Berlin, Germany and an open source enthusiast who spends his time doodling when not hacking on Android. He is a caffeine-dependent life-form and can be found either talking about android libraries or advocating that coffee is the elixir of life at community gatherings.\\r\\n\\r\\nHe has been part of 2 startups in the past (Founding Team Member at\\r\\nOmniLabs, Inc. and one of the first employees at Silverpush) with experience in Android SDK Engineering and Audio Digital Signal Processing(DSP) on Android.\\r\\nWhile working at his past company (Silverpush), he developed the company’s patented UAB (Unique Audio Beacon) Technology.\",\"lastName\":\"Srivastava\",\"firstName\":\"Nishant\",\"blog\":\"http://nisrulz.com/\",\"avatarURL\":\"https://lh4.googleusercontent.com/-K8eCVkIweKw/AAAAAAAAAAI/AAAAAAAAt_M/EpYzyr01xmw/photo.jpg\",\"twitter\":\"@nisrulz\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "554785929",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:30 GMT"
+    }
+  },
+  "uuid" : "085f941a-9b0a-43c3-a014-7b02da16cfa7",
+  "persistent" : true,
+  "insertionIndex" : 91
+}

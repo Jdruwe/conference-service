@@ -1,0 +1,23 @@
+{
+  "id" : "45903e50-d05f-4762-9fc8-603c6be28731",
+  "name" : "api_conferences_dvbe18_speakers_25bda30f3b8379886dcdb3229520375bb564f37a",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/25bda30f3b8379886dcdb3229520375bb564f37a",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"25bda30f3b8379886dcdb3229520375bb564f37a\",\"bioAsHtml\":\"<p>I work on Jenkins X to help developers automate their CI/CD for cloud native applications and help them go faster.</p>\\n<p>I also created Groovy &amp; Apache Camel</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/QKX-9175\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/25bda30f3b8379886dcdb3229520375bb564f37a\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"James Strachan\"}],\"id\":\"QKX-9175\",\"title\":\"Accelerate your CI/CD on Kubernetes with Jenkins X \"}],\"company\":\"CloudBees\",\"bio\":\"I work on Jenkins X to help developers automate their CI/CD for cloud native applications and help them go faster.\\r\\n\\r\\nI also created Groovy & Apache Camel\",\"lastName\":\"Strachan\",\"firstName\":\"James\",\"blog\":\"https://medium.com/@jstrachan/\",\"avatarURL\":\"http://www.gravatar.com/avatar/64dbbbeb960d4014b28cd64d73340d94\",\"twitter\":\"@jstrachan\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "589340464",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:32 GMT"
+    }
+  },
+  "uuid" : "45903e50-d05f-4762-9fc8-603c6be28731",
+  "persistent" : true,
+  "insertionIndex" : 117
+}

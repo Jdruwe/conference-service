@@ -1,0 +1,23 @@
+{
+  "id" : "bab736ff-d4bb-4180-a785-b14cd7ea66c9",
+  "name" : "api_conferences_dvbe18_speakers_8ed4f680bfebed370dde93a7dd5954fafd733be9",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/8ed4f680bfebed370dde93a7dd5954fafd733be9",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"8ed4f680bfebed370dde93a7dd5954fafd733be9\",\"bioAsHtml\":\"<p>Michel Drenthe is an experienced Java developer who mainly works on automated builds. He has a bachelor degree in software engineering and has been developing for 7 years. Has sailed once on the Loosdrechtse Plassen.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/OGX-2527\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/8ed4f680bfebed370dde93a7dd5954fafd733be9\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Michel Drenthe\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/9136a18c007e3aff9efd4ce9b21bfb5906a89533\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ivor Boers\"}],\"id\":\"OGX-2527\",\"title\":\"Adventures in autonomous sailing\"}],\"company\":\"OpenWeb\",\"bio\":\"Michel Drenthe is an experienced Java developer who mainly works on automated builds. He has a bachelor degree in software engineering and has been developing for 7 years. Has sailed once on the Loosdrechtse Plassen.\",\"lastName\":\"Drenthe\",\"firstName\":\"Michel\",\"blog\":\"https://www.openweb.nl\",\"avatarURL\":\"https://lh5.googleusercontent.com/-kJRsInglGGY/AAAAAAAAAAI/AAAAAAAAAEA/lvx_PBCcDnc/photo.jpg\",\"twitter\":\"@The_MiXeD\",\"lang\":\"nl-NL\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1110049256",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:48 GMT"
+    }
+  },
+  "uuid" : "bab736ff-d4bb-4180-a785-b14cd7ea66c9",
+  "persistent" : true,
+  "insertionIndex" : 280
+}

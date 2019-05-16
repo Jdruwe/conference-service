@@ -1,0 +1,23 @@
+{
+  "id" : "3fd6cf23-b401-4c46-abc9-64db0284e503",
+  "name" : "api_conferences_dvbe18_speakers_81204e28f5a343c4f9812c91835b0ac8bffb763a",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/81204e28f5a343c4f9812c91835b0ac8bffb763a",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"81204e28f5a343c4f9812c91835b0ac8bffb763a\",\"bioAsHtml\":\"<p>Bojan is an experienced developer with a healthy interest in new takes on old problems, from programming paradigms (like functional-reactive), to innovative approaches to API design (like GraphQL).\\nHe&#x27;s one of the most active members of the GraphQL/Java community, an RPG nerd, a newbie alchemist, and a wannabe traveler.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Programming languages.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/SMQ-6460\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/81204e28f5a343c4f9812c91835b0ac8bffb763a\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Bojan Tomić\"}],\"id\":\"SMQ-6460\",\"title\":\"Your GraphQL field guide\"},{\"talkType\":\"Tools-in-Action\",\"track\":\"Programming languages.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/ROJ-4211\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/81204e28f5a343c4f9812c91835b0ac8bffb763a\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Bojan Tomić\"}],\"id\":\"ROJ-4211\",\"title\":\"GraphQL SPQR: The fastest route to GraphQL\"}],\"company\":\"ING\",\"bio\":\"Bojan is an experienced developer with a healthy interest in new takes on old problems, from programming paradigms (like functional-reactive), to innovative approaches to API design (like GraphQL).\\r\\nHe's one of the most active members of the GraphQL/Java community, an RPG nerd, a newbie alchemist, and a wannabe traveler.\",\"lastName\":\"Tomić\",\"firstName\":\"Bojan\",\"blog\":\"http://leangen.io\",\"avatarURL\":\"https://raw.githubusercontent.com/howtographql/howtographql/master/src/assets/graphics/contributors/bojan.jpg\",\"twitter\":\"@kaqqao\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1777310008",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:30 GMT"
+    }
+  },
+  "uuid" : "3fd6cf23-b401-4c46-abc9-64db0284e503",
+  "persistent" : true,
+  "insertionIndex" : 102
+}

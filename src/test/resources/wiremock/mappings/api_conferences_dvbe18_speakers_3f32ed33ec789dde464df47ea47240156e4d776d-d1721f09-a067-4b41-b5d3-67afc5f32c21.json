@@ -1,0 +1,23 @@
+{
+  "id" : "d1721f09-a067-4b41-b5d3-67afc5f32c21",
+  "name" : "api_conferences_dvbe18_speakers_3f32ed33ec789dde464df47ea47240156e4d776d",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/3f32ed33ec789dde464df47ea47240156e4d776d",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"3f32ed33ec789dde464df47ea47240156e4d776d\",\"bioAsHtml\":\"<p>Passionate developer, I strongly believe in Java &amp; JEE and do my best to participate in the OSS effort : http://oss.brouillard.fr.\\nFeel free to contact me.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/DBF-1594\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/3f32ed33ec789dde464df47ea47240156e4d776d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Matthieu Brouillard\"}],\"id\":\"DBF-1594\",\"title\":\"project versioning like a git\"}],\"company\":\"AGFA Healthcare\",\"bio\":\"Passionate developer, I strongly believe in Java & JEE and do my best to participate in the OSS effort : http://oss.brouillard.fr.\\r\\nFeel free to contact me.\",\"lastName\":\"Brouillard\",\"firstName\":\"Matthieu\",\"blog\":\"http://blog.matthieu.brouillard.fr/\",\"avatarURL\":\"http://www.gravatar.com/avatar/8961b6245a03235ad444f8a11a6df359\",\"twitter\":\"@alightinthefog\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-231274613",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:26 GMT"
+    }
+  },
+  "uuid" : "d1721f09-a067-4b41-b5d3-67afc5f32c21",
+  "persistent" : true,
+  "insertionIndex" : 49
+}

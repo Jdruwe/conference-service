@@ -1,0 +1,23 @@
+{
+  "id" : "08b61443-c2eb-4bbe-a5f0-0958df988c2d",
+  "name" : "api_conferences_dvbe18_speakers_44637da87c19cc989783b834193f940a7db2f366",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/44637da87c19cc989783b834193f940a7db2f366",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"44637da87c19cc989783b834193f940a7db2f366\",\"bioAsHtml\":\"<p>Java and Sun Microsystem veteran, now at Google focusing on GCP, Serverless, and Java</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/GCS-2598\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/44637da87c19cc989783b834193f940a7db2f366\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Alexis Moussine-Pouchkine\"}],\"id\":\"GCS-2598\",\"title\":\"Google Serverless: Cloud Functions and beyond...\"},{\"talkType\":\"Tools-in-Action\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/JJC-9386\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/44637da87c19cc989783b834193f940a7db2f366\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Alexis Moussine-Pouchkine\"}],\"id\":\"JJC-9386\",\"title\":\"DevOps in a serverless world - best practices and tools\"}],\"company\":\"Google\",\"bio\":\"Java and Sun Microsystem veteran, now at Google focusing on GCP, Serverless, and Java\",\"lastName\":\"Moussine-Pouchkine\",\"firstName\":\"Alexis\",\"blog\":\"https://plus.google.com/+AlexisMP\",\"avatarURL\":\"https://lh4.googleusercontent.com/-lhM21yfjURo/AAAAAAAAAAI/AAAAAAAAU44/ZvWlMXFvwpc/photo.jpg\",\"twitter\":\"@alexismp\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1597630300",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:46 GMT"
+    }
+  },
+  "uuid" : "08b61443-c2eb-4bbe-a5f0-0958df988c2d",
+  "persistent" : true,
+  "insertionIndex" : 264
+}

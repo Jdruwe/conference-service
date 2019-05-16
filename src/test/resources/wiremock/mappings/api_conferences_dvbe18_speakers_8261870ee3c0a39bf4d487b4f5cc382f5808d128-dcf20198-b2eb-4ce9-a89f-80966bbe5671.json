@@ -1,0 +1,23 @@
+{
+  "id" : "dcf20198-b2eb-4ce9-a89f-80966bbe5671",
+  "name" : "api_conferences_dvbe18_speakers_8261870ee3c0a39bf4d487b4f5cc382f5808d128",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/8261870ee3c0a39bf4d487b4f5cc382f5808d128",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"8261870ee3c0a39bf4d487b4f5cc382f5808d128\",\"bioAsHtml\":\"<p>Marek is an experienced software developer. During his professional career spanning more than 10 years, he worked with technologies like .NET, C#, Android, Java, Big Data or Scala. Marek is simply a computer geek, specifically fascinated by the ever-growing influence of theoretical foundations of computer science on the IT industry.</p>\\n<p>Today it is not his career that is important though, because Marek also realized recently, that a passion can easily turn into an obsession which blinds us from the truth - that there is more to life than coding. And this idea, he believes, is worth spreading among fellow IT geeks.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Mind the Geek.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/WQH-2475\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/8261870ee3c0a39bf4d487b4f5cc382f5808d128\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Marek Stój\"}],\"id\":\"WQH-2475\",\"title\":\"Sitting Considered Deadly\"}],\"company\":\"ImmSoft\",\"bio\":\"Marek is an experienced software developer. During his professional career spanning more than 10 years, he worked with technologies like .NET, C#, Android, Java, Big Data or Scala. Marek is simply a computer geek, specifically fascinated by the ever-growing influence of theoretical foundations of computer science on the IT industry.\\r\\n\\r\\nToday it is not his career that is important though, because Marek also realized recently, that a passion can easily turn into an obsession which blinds us from the truth - that there is more to life than coding. And this idea, he believes, is worth spreading among fellow IT geeks.\\r\\n\",\"lastName\":\"Stój\",\"firstName\":\"Marek\",\"blog\":\"http://www.marekstoj.com/\",\"avatarURL\":\"https://www.gravatar.com/avatar/1fe4904857798affa9b7e130ee165042\",\"twitter\":\"@MarekStoj\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-580522510",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:40 GMT"
+    }
+  },
+  "uuid" : "dcf20198-b2eb-4ce9-a89f-80966bbe5671",
+  "persistent" : true,
+  "insertionIndex" : 199
+}

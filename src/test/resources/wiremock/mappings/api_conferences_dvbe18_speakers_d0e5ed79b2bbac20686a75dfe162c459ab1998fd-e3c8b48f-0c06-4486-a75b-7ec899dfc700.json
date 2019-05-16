@@ -1,0 +1,23 @@
+{
+  "id" : "e3c8b48f-0c06-4486-a75b-7ec899dfc700",
+  "name" : "api_conferences_dvbe18_speakers_d0e5ed79b2bbac20686a75dfe162c459ab1998fd",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/d0e5ed79b2bbac20686a75dfe162c459ab1998fd",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"d0e5ed79b2bbac20686a75dfe162c459ab1998fd\",\"bioAsHtml\":\"<p>Graeme Rocher, co-founder of the Grails and Micronaut frameworks and co-author of The Definitive Guide to Grails, serves as Technical Lead for the OCI Grails &amp; Micronaut team.</p>\\n<p>Graeme has worked in the software development field for more than 20 years and has expertise in Grails, Groovy, Web Development, Dynamic Languages, and the JVM.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Server Side Java.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/BZV-3566\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/d0e5ed79b2bbac20686a75dfe162c459ab1998fd\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Graeme Rocher\"}],\"id\":\"BZV-3566\",\"title\":\"Introduction to Micronaut: Lightweight Microservices with Ahead of Time Compilation\"}],\"company\":\"objectcomputing\",\"bio\":\"Graeme Rocher, co-founder of the Grails and Micronaut frameworks and co-author of The Definitive Guide to Grails, serves as Technical Lead for the OCI Grails & Micronaut team.\\r\\n\\r\\nGraeme has worked in the software development field for more than 20 years and has expertise in Grails, Groovy, Web Development, Dynamic Languages, and the JVM.\",\"lastName\":\"Rocher\",\"firstName\":\"Graeme\",\"blog\":null,\"avatarURL\":\"https://cfp.gr8conf.org/profile/img/54\",\"twitter\":\"@graemerocher\",\"lang\":\"en\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1606996816",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:38 GMT"
+    }
+  },
+  "uuid" : "e3c8b48f-0c06-4486-a75b-7ec899dfc700",
+  "persistent" : true,
+  "insertionIndex" : 181
+}

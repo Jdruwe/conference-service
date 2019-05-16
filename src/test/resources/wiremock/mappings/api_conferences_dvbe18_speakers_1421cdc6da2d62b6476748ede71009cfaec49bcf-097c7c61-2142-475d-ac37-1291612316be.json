@@ -1,0 +1,23 @@
+{
+  "id" : "097c7c61-2142-475d-ac37-1291612316be",
+  "name" : "api_conferences_dvbe18_speakers_1421cdc6da2d62b6476748ede71009cfaec49bcf",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/1421cdc6da2d62b6476748ede71009cfaec49bcf",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"1421cdc6da2d62b6476748ede71009cfaec49bcf\",\"bioAsHtml\":\"<p>Álvaro is a passionate developer and agile enthusiast with over 18 years of experience. He now works as a Software Engineer at Object Computing (OCI), the company leading Groovy, Grails and Micronaut open-source development.</p>\\n<p>Before working at OCI, he spent some years working in different industries like gambling games (Odobo) and fintech (4Finance). Prior to that, he created his own company, Salenda, in 2005, a software factory and Atlassian Solution Partner headquartered in Madrid, Spain. Previously, he worked at companies like IBM BCS, BEA Systems or Sun Microsystems.</p>\\n<p>Álvaro is a speaker at conferences like GeeCON, JavaLand, JavaZone and Codemotion. He has also written several Grails plugins, including Spring Security REST.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Hands-on Lab\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/DTX-6550\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/1421cdc6da2d62b6476748ede71009cfaec49bcf\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Alvaro Sanchez-Mariscal\"}],\"id\":\"DTX-6550\",\"title\":\"Learn Micronaut: a reactive microservices framework for the JVM\"},{\"talkType\":\"Tools-in-Action\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/RYF-0932\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/1421cdc6da2d62b6476748ede71009cfaec49bcf\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Alvaro Sanchez-Mariscal\"}],\"id\":\"RYF-0932\",\"title\":\"Server-less functions with Micronaut\"}],\"company\":\"Object Computing, Inc\",\"bio\":\"Álvaro is a passionate developer and agile enthusiast with over 18 years of experience. He now works as a Software Engineer at Object Computing (OCI), the company leading Groovy, Grails and Micronaut open-source development.\\r\\n\\r\\nBefore working at OCI, he spent some years working in different industries like gambling games (Odobo) and fintech (4Finance). Prior to that, he created his own company, Salenda, in 2005, a software factory and Atlassian Solution Partner headquartered in Madrid, Spain. Previously, he worked at companies like IBM BCS, BEA Systems or Sun Microsystems.\\r\\n\\r\\nÁlvaro is a speaker at conferences like GeeCON, JavaLand, JavaZone and Codemotion. He has also written several Grails plugins, including Spring Security REST.\",\"lastName\":\"Sanchez-Mariscal\",\"firstName\":\"Alvaro\",\"blog\":\"http://alvarosanchez.github.io/\",\"avatarURL\":\"https://pbs.twimg.com/profile_images/910521107161210881/rEBx2R6y.jpg\",\"twitter\":\"@alvaro_sanchez\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1684794634",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:25 GMT"
+    }
+  },
+  "uuid" : "097c7c61-2142-475d-ac37-1291612316be",
+  "persistent" : true,
+  "insertionIndex" : 39
+}

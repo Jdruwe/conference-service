@@ -1,0 +1,23 @@
+{
+  "id" : "2f206ce2-52e9-4b73-9b9a-12e52046b9cf",
+  "name" : "api_conferences_dvbe18_speakers_6e1e9a41cadfbd26e5090836a9e014fdb23a011f",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/6e1e9a41cadfbd26e5090836a9e014fdb23a011f",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"6e1e9a41cadfbd26e5090836a9e014fdb23a011f\",\"bioAsHtml\":\"<p>16+ years of experience, 7+ as project manager, in a multinational IT company, working in bank, industry and telecommunications sectors.</p>\\n<p>Currently I’m fully focused on API Management and the API Economy generated around it.</p>\\n<p>In my spare time I maintain VigasocoSDL , a fork of Vigasoco (A complete disassembly of the original Z80 code for the Amstrad CPC of the classic computer video game &quot;La abadía del crimen) and a rewrite of it in C++  made by Manuel Abadia) using SDL to port and run the game in every system with SDL libs and a modern c++ compiler. Right now, there are versions for PlayStation2, DreamCast, Linux, Mac and Windows :-)</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/JLW-7651\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/426f96dcd58ede72af69149e199e356814fd7173\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Juantomas Garcia\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6e1e9a41cadfbd26e5090836a9e014fdb23a011f\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Sebastián Jesús Blanes López\"}],\"id\":\"JLW-7651\",\"title\":\"Solving a complex game with AI and all the Google Cloud power\"}],\"company\":null,\"bio\":\"16+ years of experience, 7+ as project manager, in a multinational IT company, working in bank, industry and telecommunications sectors.\\r\\n\\r\\nCurrently I’m fully focused on API Management and the API Economy generated around it.\\r\\n\\r\\nIn my spare time I maintain VigasocoSDL , a fork of Vigasoco (A complete disassembly of the original Z80 code for the Amstrad CPC of the classic computer video game \\\"La abadía del crimen) and a rewrite of it in C++  made by Manuel Abadia) using SDL to port and run the game in every system with SDL libs and a modern c++ compiler. Right now, there are versions for PlayStation2, DreamCast, Linux, Mac and Windows :-)\",\"lastName\":\"Blanes López\",\"firstName\":\"Sebastián Jesús\",\"blog\":\"https://luzbel.github.io/Cuaderno-de-bitacora/\",\"avatarURL\":\"https://pbs.twimg.com/profile_images/714917430594768897/fQYxxlZl_400x400.jpg\",\"twitter\":\"@vigasocosdl\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "813697005",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:41 GMT"
+    }
+  },
+  "uuid" : "2f206ce2-52e9-4b73-9b9a-12e52046b9cf",
+  "persistent" : true,
+  "insertionIndex" : 224
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "5c0a867c-24a4-4015-a4f7-0662352ee9b6",
+  "name" : "api_conferences_dvbe18_speakers_70a37b119941970358f02ee9a30a18587550ff38",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/70a37b119941970358f02ee9a30a18587550ff38",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"70a37b119941970358f02ee9a30a18587550ff38\",\"bioAsHtml\":\"<p>A lifelong developer advocate, community organizer, and technology evangelist, Burr Sutter is a featured speaker at technology events around the globe—from Bangalore to Brussels and Berlin to Beijing (and most parts in between)—he is currently Red Hat’s Director of Developer Experience. A Java Champion since 2005 and former president of the Atlanta Java User Group, Burr founded the DevNexus conference—now the second largest Java event in the U.S.—with the aim of making access to the world’s leading developers affordable to the developer community. When not speaking abroad, Burr is also the passionate creator and orchestrator of highly-interactive live demo keynotes at Red Hat Summit, the company’s premier annual event.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Deep Dive\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/HTS-1046\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/70a37b119941970358f02ee9a30a18587550ff38\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Burr Sutter\"}],\"id\":\"HTS-1046\",\"title\":\"9 Steps to Awesome with Kubernetes\"},{\"talkType\":\"Conference\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/RIK-1487\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/70a37b119941970358f02ee9a30a18587550ff38\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Burr Sutter\"}],\"id\":\"RIK-1487\",\"title\":\"Kubernetes: Your Next Java Application Server\"}],\"company\":\"Red Hat\",\"bio\":\"A lifelong developer advocate, community organizer, and technology evangelist, Burr Sutter is a featured speaker at technology events around the globe—from Bangalore to Brussels and Berlin to Beijing (and most parts in between)—he is currently Red Hat’s Director of Developer Experience. A Java Champion since 2005 and former president of the Atlanta Java User Group, Burr founded the DevNexus conference—now the second largest Java event in the U.S.—with the aim of making access to the world’s leading developers affordable to the developer community. When not speaking abroad, Burr is also the passionate creator and orchestrator of highly-interactive live demo keynotes at Red Hat Summit, the company’s premier annual event.\",\"lastName\":\"Sutter\",\"firstName\":\"Burr\",\"blog\":\"https://burrsutter.com\",\"avatarURL\":\"http://burrsutter.com/wp-content/uploads/2016/12/2016_BS_Headshot_400x400_SDMbkgrnd_mosaic.png\",\"twitter\":\"@burrsutter\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "962726444",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:25 GMT"
+    }
+  },
+  "uuid" : "5c0a867c-24a4-4015-a4f7-0662352ee9b6",
+  "persistent" : true,
+  "insertionIndex" : 35
+}

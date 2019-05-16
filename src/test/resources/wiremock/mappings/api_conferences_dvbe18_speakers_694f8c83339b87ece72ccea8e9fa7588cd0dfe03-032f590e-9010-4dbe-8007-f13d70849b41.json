@@ -1,0 +1,23 @@
+{
+  "id" : "032f590e-9010-4dbe-8007-f13d70849b41",
+  "name" : "api_conferences_dvbe18_speakers_694f8c83339b87ece72ccea8e9fa7588cd0dfe03",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/694f8c83339b87ece72ccea8e9fa7588cd0dfe03",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"694f8c83339b87ece72ccea8e9fa7588cd0dfe03\",\"bioAsHtml\":\"<p>With more than 15 years of enterprise Java experience, I am familiar with all the usual technologies in the Java EE software development world. My expertise includes Angular, JSF, JAX-RS, JPA, Hibernate, EJB 3.x and several Spring frameworks.  Since the advent of functional languages on the JVM, I have started working on Big and Fast Data technologies using with Python, Java and Scala. Outside work I am actively contributing to the Java Meetup in Groningen (NL), where we&#x27;ve hosted evening sessions about Angular, Ionic, Kotlin, with more to come.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/YFV-9396\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/694f8c83339b87ece72ccea8e9fa7588cd0dfe03\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Erik-Berndt Scheper\"}],\"id\":\"YFV-9396\",\"title\":\"Bust the burglars: Machine Learning with TensorFlow and Apache Kafka\"}],\"company\":\"Ordina J-Tech\",\"bio\":\"With more than 15 years of enterprise Java experience, I am familiar with all the usual technologies in the Java EE software development world. My expertise includes Angular, JSF, JAX-RS, JPA, Hibernate, EJB 3.x and several Spring frameworks.  Since the advent of functional languages on the JVM, I have started working on Big and Fast Data technologies using with Python, Java and Scala. Outside work I am actively contributing to the Java Meetup in Groningen (NL), where we've hosted evening sessions about Angular, Ionic, Kotlin, with more to come.\",\"lastName\":\"Scheper\",\"firstName\":\"Erik-Berndt\",\"blog\":\"https://ordina-jtech.github.io/\",\"avatarURL\":\"https://gravatar.com/avatar/53ee0e29febaf3f1522fcda24747ee0f\",\"twitter\":\"@fbascheper\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "157864294",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:35 GMT"
+    }
+  },
+  "uuid" : "032f590e-9010-4dbe-8007-f13d70849b41",
+  "persistent" : true,
+  "insertionIndex" : 152
+}

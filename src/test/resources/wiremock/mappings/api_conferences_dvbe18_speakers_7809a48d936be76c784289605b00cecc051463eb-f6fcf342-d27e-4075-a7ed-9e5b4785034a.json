@@ -1,0 +1,23 @@
+{
+  "id" : "f6fcf342-d27e-4075-a7ed-9e5b4785034a",
+  "name" : "api_conferences_dvbe18_speakers_7809a48d936be76c784289605b00cecc051463eb",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/7809a48d936be76c784289605b00cecc051463eb",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"7809a48d936be76c784289605b00cecc051463eb\",\"bioAsHtml\":\"<p>Started coding at 8, wrote enterprise software at 17, went for a PhD, did some teaching at uni and never stopped learning or sharing knowledge since.</p>\\n<p>I&#x27;m passionate about software engineering, especially about performance, code parallelization, good practices for code reliability and Deep Learning !</p>\\n<p>Currently Lead Software Architect at Forcepoint, working on our management platform for enterprise firewalls, especially our &quot;Big Data&quot; processing subsystem.</p>\\n<p>I&#x27;m also co-lead of the Riviera JUG and the Riviera DEV conference [www.rivieradev.fr/].</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Deep Dive\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/PXQ-6368\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/7809a48d936be76c784289605b00cecc051463eb\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Yannis Bres\"}],\"id\":\"PXQ-6368\",\"title\":\"From 0 to Deep Learning in 3 hours\"}],\"company\":\"Forcepoint\",\"bio\":\"Started coding at 8, wrote enterprise software at 17, went for a PhD, did some teaching at uni and never stopped learning or sharing knowledge since.\\r\\n\\r\\nI'm passionate about software engineering, especially about performance, code parallelization, good practices for code reliability and Deep Learning !\\r\\n\\r\\nCurrently Lead Software Architect at Forcepoint, working on our management platform for enterprise firewalls, especially our \\\"Big Data\\\" processing subsystem.\\r\\n\\r\\nI'm also co-lead of the Riviera JUG and the Riviera DEV conference [www.rivieradev.fr/].\",\"lastName\":\"Bres\",\"firstName\":\"Yannis\",\"blog\":\"https://www.linkedin.com/in/yannisbres\",\"avatarURL\":\"http://www.yaya.fr/Pictures/Yannis.750x750.jpg\",\"twitter\":\"@YannisBres\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1033355931",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:31 GMT"
+    }
+  },
+  "uuid" : "f6fcf342-d27e-4075-a7ed-9e5b4785034a",
+  "persistent" : true,
+  "insertionIndex" : 104
+}

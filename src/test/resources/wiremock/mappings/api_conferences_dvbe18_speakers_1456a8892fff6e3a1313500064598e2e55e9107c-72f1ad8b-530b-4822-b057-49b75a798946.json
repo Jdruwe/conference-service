@@ -1,0 +1,23 @@
+{
+  "id" : "72f1ad8b-530b-4822-b057-49b75a798946",
+  "name" : "api_conferences_dvbe18_speakers_1456a8892fff6e3a1313500064598e2e55e9107c",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/1456a8892fff6e3a1313500064598e2e55e9107c",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"1456a8892fff6e3a1313500064598e2e55e9107c\",\"bioAsHtml\":\"<p>I am Technical Evangelist with AWS - Coding, Speaking, having fun :-)</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/NDV-3586\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/1456a8892fff6e3a1313500064598e2e55e9107c\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Adrian Hornsby\"}],\"id\":\"NDV-3586\",\"title\":\"Patterns for building resilient software systems\"}],\"company\":\"Amazon Web Services\",\"bio\":\"I am Technical Evangelist with AWS - Coding, Speaking, having fun :-)\",\"lastName\":\"Hornsby\",\"firstName\":\"Adrian\",\"blog\":\"https://medium.com/@adhorn\",\"avatarURL\":\"http://www.gravatar.com/avatar/e6c942c0f8e6042fbd47fcd3c4113b90\",\"twitter\":\"@adhorn\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1533504389",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:23 GMT"
+    }
+  },
+  "uuid" : "72f1ad8b-530b-4822-b057-49b75a798946",
+  "persistent" : true,
+  "insertionIndex" : 19
+}

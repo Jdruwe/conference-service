@@ -29,8 +29,8 @@ public class ScheduleServiceTest {
     private LocalDate date;
 
     @Before
-    public void setUp() {
-        date = LocalDate.of(2018,11,13);
+    public void init() {
+        date = LocalDate.of(2018, 11, 13);
         schedule = new Schedule(date, DayOfWeek.TUESDAY);
     }
 
@@ -45,7 +45,7 @@ public class ScheduleServiceTest {
         scheduleService.save(schedule);
         Optional<Schedule> loadedSchedule = scheduleService.loadById(date);
         Assert.assertTrue(loadedSchedule.isPresent());
-        Assert.assertEquals(schedule,loadedSchedule.get());
+        Assert.assertEquals(schedule, loadedSchedule.get());
     }
 
 }

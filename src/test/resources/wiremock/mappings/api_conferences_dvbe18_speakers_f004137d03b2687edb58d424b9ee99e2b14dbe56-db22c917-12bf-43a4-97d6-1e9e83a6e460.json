@@ -1,0 +1,23 @@
+{
+  "id" : "db22c917-12bf-43a4-97d6-1e9e83a6e460",
+  "name" : "api_conferences_dvbe18_speakers_f004137d03b2687edb58d424b9ee99e2b14dbe56",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/f004137d03b2687edb58d424b9ee99e2b14dbe56",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"f004137d03b2687edb58d424b9ee99e2b14dbe56\",\"bioAsHtml\":\"<p>Nicolai is a thirty year old boy, as the narrator would put it (if he squints), who has found his passion in software development. He constantly reads, thinks, and writes about it, and codes for a living as well as for fun.</p>\\n<p>Nicolai is a freelancing developer, author, and trainer. He wrote The Java Module System with Manning (https://tiny.cc/jms), blogs about software development on codefx.org, has a YouTube channel (https://youtube.com/c/codefx), and is a long-tail contributor to several open source projects. You can hire him for all kinds of things (https://tiny.cc/nipafx).</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/NUP-3481\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/f004137d03b2687edb58d424b9ee99e2b14dbe56\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Nicolai Parlog\"}],\"id\":\"NUP-3481\",\"title\":\"To JAR Hell And Back - A Live Migration to Java 11\"}],\"company\":\"CodeFX\",\"bio\":\"Nicolai is a thirty year old boy, as the narrator would put it (if he squints), who has found his passion in software development. He constantly reads, thinks, and writes about it, and codes for a living as well as for fun.\\r\\n\\r\\nNicolai is a freelancing developer, author, and trainer. He wrote The Java Module System with Manning (https://tiny.cc/jms), blogs about software development on codefx.org, has a YouTube channel (https://youtube.com/c/codefx), and is a long-tail contributor to several open source projects. You can hire him for all kinds of things (https://tiny.cc/nipafx).\\r\\n\",\"lastName\":\"Parlog\",\"firstName\":\"Nicolai\",\"blog\":\"http://codefx.org\",\"avatarURL\":\"https://www.gravatar.com/avatar/13eee0ac5d38daea3d6ca6aa6efea5b3\",\"twitter\":\"@nipafx\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-705049449",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:23 GMT"
+    }
+  },
+  "uuid" : "db22c917-12bf-43a4-97d6-1e9e83a6e460",
+  "persistent" : true,
+  "insertionIndex" : 17
+}

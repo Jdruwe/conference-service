@@ -1,0 +1,23 @@
+{
+  "id" : "9e22784b-f4d5-4297-be31-de509224131b",
+  "name" : "api_conferences_dvbe18_speakers_d6717e57a0254827b240950d9c69cf4c49c1cc43",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/d6717e57a0254827b240950d9c69cf4c49c1cc43",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"d6717e57a0254827b240950d9c69cf4c49c1cc43\",\"bioAsHtml\":\"<p>I&#x27;ve worked as a software developer and architect for more than a decade. Besides working I like talking and writing about technologies. I&#x27;ve written a couple of books on Scala, REST, D3 and Three.js and currently work as a fullstack engineer on a Scala and React project.</p>\\n<p>I&#x27;m a big fan of creating data visualisations using D3 and Three.js, since they provide a great set of tools to make sense of data. A number of the stuff I created can be seen on my blog at http://www.smartjava.org.</p>\\n<p>Basically I like talking, writing and discussing about technology. Whether it is frontend, backend or DevOps and cloud related.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Modern Web & UX.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/HTB-7213\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/d6717e57a0254827b240950d9c69cf4c49c1cc43\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Jos Dirksen\"}],\"id\":\"HTB-7213\",\"title\":\"Three.js, easy 3D in your browser for when two dimensions just aren't enough\"}],\"company\":\"Smartjava\",\"bio\":\"I've worked as a software developer and architect for more than a decade. Besides working I like talking and writing about technologies. I've written a couple of books on Scala, REST, D3 and Three.js and currently work as a fullstack engineer on a Scala and React project.\\r\\n\\r\\nI'm a big fan of creating data visualisations using D3 and Three.js, since they provide a great set of tools to make sense of data. A number of the stuff I created can be seen on my blog at http://www.smartjava.org.\\r\\n\\r\\nBasically I like talking, writing and discussing about technology. Whether it is frontend, backend or DevOps and cloud related.\",\"lastName\":\"Dirksen\",\"firstName\":\"Jos\",\"blog\":\"http://www.smartjava.org\",\"avatarURL\":\"https://www.gravatar.com/avatar/1335d0e53b310b0e77c9f374c03b2ce4\",\"twitter\":\"@josdirksen\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-564998012",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:42 GMT"
+    }
+  },
+  "uuid" : "9e22784b-f4d5-4297-be31-de509224131b",
+  "persistent" : true,
+  "insertionIndex" : 226
+}

@@ -42,6 +42,7 @@ public class ApiCallerTest {
     private static final String ROOM5 = "Room5";
     private static final String GETLOCALHOST = "localhost";
     private static final String GET = "GET";
+    private static final int PORT = 9999;
 
     @Autowired
     private ApiCaller apiCaller;
@@ -50,7 +51,7 @@ public class ApiCallerTest {
 
     @Before
     public void startMockServer() {
-        mockServer = startClientAndServer(1080);
+        mockServer = startClientAndServer(PORT);
     }
 
     @After
@@ -60,7 +61,7 @@ public class ApiCallerTest {
 
     @Test
     public void testApiCallIsMadeOnce() {
-        new MockServerClient(GETLOCALHOST, 1080)
+        new MockServerClient(GETLOCALHOST, PORT)
                 .when(request().withMethod(GET).withPath(PATHROOM5TUESDAY))
                 .respond(response()
                         .withStatusCode(HttpStatusCode.OK_200.code())
@@ -69,7 +70,7 @@ public class ApiCallerTest {
 
         apiCaller.getRoomSchedule(ROOM5, null, DayOfWeek.TUESDAY);
 
-        new MockServerClient(GETLOCALHOST, 1080)
+        new MockServerClient(GETLOCALHOST, PORT)
                 .verify(request()
                                 .withPath(PATHROOM5TUESDAY),
                         VerificationTimes.once());
@@ -77,7 +78,7 @@ public class ApiCallerTest {
 
     @Test
     public void testApiCallIsMadeAtLeastTwice() {
-        new MockServerClient(GETLOCALHOST, 1080)
+        new MockServerClient(GETLOCALHOST, PORT)
                 .when(request().withMethod(GET).withPath(PATHROOM5TUESDAY))
                 .respond(response()
                         .withStatusCode(HttpStatusCode.OK_200.code())
@@ -87,7 +88,7 @@ public class ApiCallerTest {
         apiCaller.getRoomSchedule(ROOM5, null, DayOfWeek.TUESDAY);
         apiCaller.getRoomSchedule(ROOM5, null, DayOfWeek.TUESDAY);
 
-        new MockServerClient(GETLOCALHOST, 1080)
+        new MockServerClient(GETLOCALHOST, PORT)
                 .verify(
                         request()
                                 .withPath(PATHROOM5TUESDAY),
@@ -96,7 +97,7 @@ public class ApiCallerTest {
 
     @Test
     public void testGetRooms() {
-        new MockServerClient(GETLOCALHOST, 1080)
+        new MockServerClient(GETLOCALHOST, PORT)
                 .when(request().withMethod(GET).withPath("/api/conferences/dvbe18/rooms/"))
                 .respond(response()
                         .withStatusCode(HttpStatusCode.OK_200.code())
@@ -116,7 +117,7 @@ public class ApiCallerTest {
 
     @Test
     public void testGetRoomSchedule() {
-        new MockServerClient(GETLOCALHOST, 1080)
+        new MockServerClient(GETLOCALHOST, PORT)
                 .when(request().withMethod(GET).withPath(PATHROOM5TUESDAY))
                 .respond(response()
                         .withStatusCode(HttpStatusCode.OK_200.code())
@@ -136,7 +137,7 @@ public class ApiCallerTest {
 
     @Test
     public void testGetSpeaker() {
-        new MockServerClient(GETLOCALHOST, 1080)
+        new MockServerClient(GETLOCALHOST, PORT)
                 .when(request().withMethod(GET).withPath("/api/conferences/dvbe18/speakers/f6be30c224fa250ab01c56d11b043036b51f4599"))
                 .respond(response()
                         .withStatusCode(HttpStatusCode.OK_200.code())

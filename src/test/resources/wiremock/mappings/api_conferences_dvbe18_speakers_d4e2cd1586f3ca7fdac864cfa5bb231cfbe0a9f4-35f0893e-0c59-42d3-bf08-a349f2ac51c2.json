@@ -1,0 +1,23 @@
+{
+  "id" : "35f0893e-0c59-42d3-bf08-a349f2ac51c2",
+  "name" : "api_conferences_dvbe18_speakers_d4e2cd1586f3ca7fdac864cfa5bb231cfbe0a9f4",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/d4e2cd1586f3ca7fdac864cfa5bb231cfbe0a9f4",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"d4e2cd1586f3ca7fdac864cfa5bb231cfbe0a9f4\",\"bioAsHtml\":\"<p>Senior Java developer with more than 12 years of experience designing, developing and maintaining Android, Java SE/EE and Spring applications. Strong focus on getting things done with the Agile mindset.\\nLove to share knowledge on the latest Java language, EE and Spring improvements by giving workshops and talks as well as participating in them.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Quickie\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/TUR-0907\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/d4e2cd1586f3ca7fdac864cfa5bb231cfbe0a9f4\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Johan Hutting\"}],\"id\":\"TUR-0907\",\"title\":\"Improve your Agile skills by participating in gamejams\"}],\"company\":\"Ordina J-Tech\",\"bio\":\"Senior Java developer with more than 12 years of experience designing, developing and maintaining Android, Java SE/EE and Spring applications. Strong focus on getting things done with the Agile mindset. \\r\\nLove to share knowledge on the latest Java language, EE and Spring improvements by giving workshops and talks as well as participating in them.\",\"lastName\":\"Hutting\",\"firstName\":\"Johan\",\"blog\":\"https://www.ordina.nl\",\"avatarURL\":\"http://littlebluefrog.nl/JJH/Devoxx2018.jpg\",\"twitter\":\"@fbascheper\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1548385300",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:42 GMT"
+    }
+  },
+  "uuid" : "35f0893e-0c59-42d3-bf08-a349f2ac51c2",
+  "persistent" : true,
+  "insertionIndex" : 229
+}

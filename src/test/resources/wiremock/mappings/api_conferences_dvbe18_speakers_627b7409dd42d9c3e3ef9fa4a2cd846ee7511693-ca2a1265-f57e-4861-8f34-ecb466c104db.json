@@ -1,0 +1,23 @@
+{
+  "id" : "ca2a1265-f57e-4861-8f34-ecb466c104db",
+  "name" : "api_conferences_dvbe18_speakers_627b7409dd42d9c3e3ef9fa4a2cd846ee7511693",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/627b7409dd42d9c3e3ef9fa4a2cd846ee7511693",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"627b7409dd42d9c3e3ef9fa4a2cd846ee7511693\",\"bioAsHtml\":\"<p>Andrey Falko was a Principal Software Engineer at Salesforce for 9 years, where he built and scaled CI systems for three different groups. Use cases have been large systems such as Salesforce&#x27;s flagship CRM product, a virtual machine and container management system, and more recently, SOA components across Salesforce Technology and Products. Andrey started at Lyft in August, where he&#x27;s a software engineer on Data Platforms, starting out with the Streaming team and focused on reliability and scale.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/XKV-0635\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/627b7409dd42d9c3e3ef9fa4a2cd846ee7511693\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Andrey Falko\"}],\"id\":\"XKV-0635\",\"title\":\"Auto-Cascading Security Updates Through Docker Images\"}],\"company\":\"Lyft\",\"bio\":\"Andrey Falko was a Principal Software Engineer at Salesforce for 9 years, where he built and scaled CI systems for three different groups. Use cases have been large systems such as Salesforce's flagship CRM product, a virtual machine and container management system, and more recently, SOA components across Salesforce Technology and Products. Andrey started at Lyft in August, where he's a software engineer on Data Platforms, starting out with the Streaming team and focused on reliability and scale.\",\"lastName\":\"Falko\",\"firstName\":\"Andrey\",\"blog\":null,\"avatarURL\":\"https://s3-eu-west-1.amazonaws.com/cfpdevoxx/belgium/speakers/AndreyFalko.jpg\",\"twitter\":null,\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1962331879",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:47 GMT"
+    }
+  },
+  "uuid" : "ca2a1265-f57e-4861-8f34-ecb466c104db",
+  "persistent" : true,
+  "insertionIndex" : 272
+}

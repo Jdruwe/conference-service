@@ -1,0 +1,23 @@
+{
+  "id" : "36010af4-417f-4ff4-913c-1cb63c47c4fc",
+  "name" : "api_conferences_dvbe18_speakers_2419e1d62fbb5a0604f662c768d03a9df78beb23",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/2419e1d62fbb5a0604f662c768d03a9df78beb23",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"2419e1d62fbb5a0604f662c768d03a9df78beb23\",\"bioAsHtml\":\"<p>Iván is a Software Engineer and Systems Administrator with 14 years of experience. He is a member of the Grails and Micronaut teams at Object Computing, Inc. (OCI). He discovered Grails 8 years ago and since then he develops almost exclusively using Groovy and Java. He is the creator of some Grails plugins like Postgresql-Extensions and Slug-Generator.</p>\\n<p>He&#x27;s also the coordinator of the Madrid Groovy User Group (@madridgug), the organizer of the Greach Conference (http://greachconf.com) and a frequent speaker at conferences like SpringOne 2GX, GR8Conf, Greach, Codemotion, GeeCon, Spring IO, RigaDevDays, JavaCro,...</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Server Side Java.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/SMW-4629\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/2419e1d62fbb5a0604f662c768d03a9df78beb23\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Iván López\"}],\"id\":\"SMW-4629\",\"title\":\"Micronaut in Action!\"}],\"company\":\"Object Computing, Inc. (OCI)\",\"bio\":\"Iván is a Software Engineer and Systems Administrator with 14 years of experience. He is a member of the Grails and Micronaut teams at Object Computing, Inc. (OCI). He discovered Grails 8 years ago and since then he develops almost exclusively using Groovy and Java. He is the creator of some Grails plugins like Postgresql-Extensions and Slug-Generator.\\r\\n\\r\\nHe's also the coordinator of the Madrid Groovy User Group (@madridgug), the organizer of the Greach Conference (http://greachconf.com) and a frequent speaker at conferences like SpringOne 2GX, GR8Conf, Greach, Codemotion, GeeCon, Spring IO, RigaDevDays, JavaCro,...\",\"lastName\":\"López\",\"firstName\":\"Iván\",\"blog\":\"https://objectcomputing.com\",\"avatarURL\":\"http://www.gravatar.com/avatar/f465a8eb2a03e6832a95354bf6dc1577\",\"twitter\":\"@ilopmar\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-2124174335",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:42 GMT"
+    }
+  },
+  "uuid" : "36010af4-417f-4ff4-913c-1cb63c47c4fc",
+  "persistent" : true,
+  "insertionIndex" : 227
+}

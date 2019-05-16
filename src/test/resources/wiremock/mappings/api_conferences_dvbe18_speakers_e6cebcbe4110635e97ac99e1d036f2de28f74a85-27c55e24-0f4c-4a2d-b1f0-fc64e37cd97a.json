@@ -1,0 +1,23 @@
+{
+  "id" : "27c55e24-0f4c-4a2d-b1f0-fc64e37cd97a",
+  "name" : "api_conferences_dvbe18_speakers_e6cebcbe4110635e97ac99e1d036f2de28f74a85",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/e6cebcbe4110635e97ac99e1d036f2de28f74a85",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"e6cebcbe4110635e97ac99e1d036f2de28f74a85\",\"bioAsHtml\":\"<p>Maurizio Cimadamore is a compiler engineer who has been working in the language and tools team at Oracle (and, previously, Sun Microsystems) for the last 11 years. Over the years he has contributed to many features of the Java Programming Language, such as diamond inference, lambda expressions and local variable inference.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/CUL-8526\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/e6cebcbe4110635e97ac99e1d036f2de28f74a85\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Maurizio Cimadamore\"}],\"id\":\"CUL-8526\",\"title\":\"Panama: A Foreign Policy for Java\"}],\"company\":\"Oracle\",\"bio\":\"Maurizio Cimadamore is a compiler engineer who has been working in the language and tools team at Oracle (and, previously, Sun Microsystems) for the last 11 years. Over the years he has contributed to many features of the Java Programming Language, such as diamond inference, lambda expressions and local variable inference.\\r\\n\",\"lastName\":\"Cimadamore\",\"firstName\":\"Maurizio\",\"blog\":null,\"avatarURL\":\"http://blog.xebia.fr/images/devoxxuk-2014-logo.png\",\"twitter\":null,\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1955194720",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:39 GMT"
+    }
+  },
+  "uuid" : "27c55e24-0f4c-4a2d-b1f0-fc64e37cd97a",
+  "persistent" : true,
+  "insertionIndex" : 198
+}

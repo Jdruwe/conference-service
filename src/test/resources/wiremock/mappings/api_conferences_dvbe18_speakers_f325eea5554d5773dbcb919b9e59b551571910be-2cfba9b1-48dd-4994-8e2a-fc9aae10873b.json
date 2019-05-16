@@ -1,0 +1,23 @@
+{
+  "id" : "2cfba9b1-48dd-4994-8e2a-fc9aae10873b",
+  "name" : "api_conferences_dvbe18_speakers_f325eea5554d5773dbcb919b9e59b551571910be",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/f325eea5554d5773dbcb919b9e59b551571910be",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"f325eea5554d5773dbcb919b9e59b551571910be\",\"bioAsHtml\":\"<p>Senior Lead Developer for Société Générale, I&#x27;m an active evangelist on &quot;value creation&quot; focused methodologies, such as DDD/Hexagonal Architecture, l&#x27;XP and Kanban #NoEstimates.</p>\\n<p>As an OWASP fundation member, I strive to convey the DevSecOps mindset to the community.\\nI set up several Continuous Security pipelines at companies scale.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Architecture & Security.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/FSN-9751\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/f325eea5554d5773dbcb919b9e59b551571910be\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Julien Topçu\"}],\"id\":\"FSN-9751\",\"title\":\"Find and Track the hidden vulnerabilities inside your dependencies\"},{\"talkType\":\"Quickie\",\"track\":\"Methodology & Culture.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/AVV-0576\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/f325eea5554d5773dbcb919b9e59b551571910be\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Julien Topçu\"}],\"id\":\"AVV-0576\",\"title\":\"Developers, you should stop estimating your tasks! #noEstimates\"}],\"company\":\"Société Générale & OWASP fundation member\",\"bio\":\"Senior Lead Developer for Société Générale, I'm an active evangelist on \\\"value creation\\\" focused methodologies, such as DDD/Hexagonal Architecture, l'XP and Kanban #NoEstimates.\\r\\n\\r\\nAs an OWASP fundation member, I strive to convey the DevSecOps mindset to the community.\\r\\n I set up several Continuous Security pipelines at companies scale.\",\"lastName\":\"Topçu\",\"firstName\":\"Julien\",\"blog\":\"https://beyondxscratch.wordpress.com/\",\"avatarURL\":\"https://www.gravatar.com/avatar/610f3914d9b392b389657823719f09dd\",\"twitter\":\"@JulienTopcu\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1934022635",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:23 GMT"
+    }
+  },
+  "uuid" : "2cfba9b1-48dd-4994-8e2a-fc9aae10873b",
+  "persistent" : true,
+  "insertionIndex" : 13
+}

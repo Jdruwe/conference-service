@@ -1,0 +1,23 @@
+{
+  "id" : "b58b7abe-1b9e-444f-a1c4-a5d3f4cad946",
+  "name" : "api_conferences_dvbe18_speakers_5ff931f7cb9b9ddbda86b842319541e60203b55c",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/5ff931f7cb9b9ddbda86b842319541e60203b55c",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"5ff931f7cb9b9ddbda86b842319541e60203b55c\",\"bioAsHtml\":\"<p>Full stack architect and Git evangelist using GitOps in my day to day work.</p>\\n<p><a href=\\\"https://github.com/evrignaud/fim\\\">Fim OpenSource project</a><br  />\\n<a href=\\\"https://www.linkedin.com/in/etienne-vrignaud-630810a9/\\\">My LinkedIn profile</a></p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Tools-in-Action\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/TOW-7592\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/d93e2531582a3f47de85f60b52dbd8aac04afb35\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Stéphane Tournié\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/5ff931f7cb9b9ddbda86b842319541e60203b55c\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Etienne Vrignaud\"}],\"id\":\"TOW-7592\",\"title\":\"Power of cloud dev environments for your legacy projects\"}],\"company\":\"Sopra Banking Software\",\"bio\":\"Full stack architect and Git evangelist using GitOps in my day to day work.\\r\\n\\r\\n[Fim OpenSource project](https://github.com/evrignaud/fim)  \\r\\n[My LinkedIn profile](https://www.linkedin.com/in/etienne-vrignaud-630810a9/)\\r\\n\",\"lastName\":\"Vrignaud\",\"firstName\":\"Etienne\",\"blog\":\"https://github.com/evrignaud\",\"avatarURL\":\"https://github.com/evrignaud/hireme/raw/master/avatar.png\",\"twitter\":\"@evrignaud\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-989077031",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:35 GMT"
+    }
+  },
+  "uuid" : "b58b7abe-1b9e-444f-a1c4-a5d3f4cad946",
+  "persistent" : true,
+  "insertionIndex" : 161
+}

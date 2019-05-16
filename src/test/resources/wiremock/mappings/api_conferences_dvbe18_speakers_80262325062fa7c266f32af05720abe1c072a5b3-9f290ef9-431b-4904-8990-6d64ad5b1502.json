@@ -1,0 +1,23 @@
+{
+  "id" : "9f290ef9-431b-4904-8990-6d64ad5b1502",
+  "name" : "api_conferences_dvbe18_speakers_80262325062fa7c266f32af05720abe1c072a5b3",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/80262325062fa7c266f32af05720abe1c072a5b3",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"80262325062fa7c266f32af05720abe1c072a5b3\",\"bioAsHtml\":\"<p>Blazej is enthusiast of all aspects of big data processing and all technologies that bring this enthusiasm from dream into reality – like CUDA.\\nFor over ten years he has been involved in many challenging projects related to image and laser data processing. He is the author of automated traffic signs detection and recognition system. Blazej is co-author of Road DNA positioning concept and patent application.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/PKK-6948\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/8992d6c39bd902f947b65ea0fdfdaf106fa5835a\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Krzysztof Kudrynski\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/80262325062fa7c266f32af05720abe1c072a5b3\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Błażej Kubiak\"}],\"id\":\"PKK-6948\",\"title\":\"Deep Learning in Computer Vision\"}],\"company\":\"TomTom\",\"bio\":\"Blazej is enthusiast of all aspects of big data processing and all technologies that bring this enthusiasm from dream into reality – like CUDA.\\r\\nFor over ten years he has been involved in many challenging projects related to image and laser data processing. He is the author of automated traffic signs detection and recognition system. Blazej is co-author of Road DNA positioning concept and patent application.\",\"lastName\":\"Kubiak\",\"firstName\":\"Błażej\",\"blog\":\"tomtom.com\",\"avatarURL\":\"https://media.licdn.com/dms/image/C4E03AQFIGLP-a7rNnQ/profile-displayphoto-shrink_800_800/0?e=1547683200&v=beta&t=bfJdPce-mnrVoQ1NBYhuP4NHAclQgHKTL2MtKjI8mKA\",\"twitter\":\"@blazkubiak\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-1476705141",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:29 GMT"
+    }
+  },
+  "uuid" : "9f290ef9-431b-4904-8990-6d64ad5b1502",
+  "persistent" : true,
+  "insertionIndex" : 87
+}

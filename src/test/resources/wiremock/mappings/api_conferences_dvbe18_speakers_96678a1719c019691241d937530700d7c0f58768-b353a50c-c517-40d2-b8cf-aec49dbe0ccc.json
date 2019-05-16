@@ -1,0 +1,23 @@
+{
+  "id" : "b353a50c-c517-40d2-b8cf-aec49dbe0ccc",
+  "name" : "api_conferences_dvbe18_speakers_96678a1719c019691241d937530700d7c0f58768",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/96678a1719c019691241d937530700d7c0f58768",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"96678a1719c019691241d937530700d7c0f58768\",\"bioAsHtml\":\"<p>Gert Leenders is a Cloud Solution Architect at ‘De Persgroep’.</p>\\n<p>He loves Java, Python and Go. Gert has a DevOps mindset and a focus on Cloud Computing, AWS in particular. Furthermore he’s an enthusiast of Infrastructure as Code in general.</p>\\n<p>When it comes to architecture Gert’s current interest goes to Serverless, Resilience Engineering, GitOps, Microservices and Containers.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Deep Dive\",\"track\":\"Cloud, Containers & Infrastructure.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/HAO-1908\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/96678a1719c019691241d937530700d7c0f58768\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Gert Leenders\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/7a1ed3166072356dde9cbb5453540f0d02059921\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Alex Van Boxel\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/4017188c2821621bd62e55f9035c7e48733b79c1\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Michaël Hompus\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/bb15ab5b46b4a1371708898c04565deec0549c26\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Tim Bogaert\"}],\"id\":\"HAO-1908\",\"title\":\"Cloud - War Stories\"}],\"company\":\"Pixxis\",\"bio\":\"Gert Leenders is a Cloud Solution Architect at ‘De Persgroep’.\\r\\n\\r\\nHe loves Java, Python and Go. Gert has a DevOps mindset and a focus on Cloud Computing, AWS in particular. Furthermore he’s an enthusiast of Infrastructure as Code in general. \\r\\n\\r\\nWhen it comes to architecture Gert’s current interest goes to Serverless, Resilience Engineering, GitOps, Microservices and Containers.\",\"lastName\":\"Leenders\",\"firstName\":\"Gert\",\"blog\":\"https://www.pixxis.be/\",\"avatarURL\":\"https://s3-eu-west-1.amazonaws.com/glnds.io/images/0U1A4955.jpg\",\"twitter\":\"@glnds\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1070578745",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:36 GMT"
+    }
+  },
+  "uuid" : "b353a50c-c517-40d2-b8cf-aec49dbe0ccc",
+  "persistent" : true,
+  "insertionIndex" : 164
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "67249fc5-859f-4a54-8f8b-3616ec3fdc1e",
+  "name" : "api_conferences_dvbe18_speakers_f3a48bb49697608a0ccd8f8fa1bb08b0f606296b",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/f3a48bb49697608a0ccd8f8fa1bb08b0f606296b",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"f3a48bb49697608a0ccd8f8fa1bb08b0f606296b\",\"bioAsHtml\":\"<ul>\\n<li>https://about.me/vmassol</li>\\n<li>What I do/did: https://bit.ly/2KzKRkU</li>\\n<li>My past public activities: https://bit.ly/2IBs1bs</li>\\n</ul>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Mind the Geek.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/NKJ-9530\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/05afda51d686bab49c8687025d0b07b00ce45a0b\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Emmanuel Bernard\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/8af78fa5cf9450329a3ecbceb4038823681de4a7\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Audrey Neveu\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/6a635bdc45a8266a5fb300f214f9207c4f399f6d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Guillaume Laforge\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/f3a48bb49697608a0ccd8f8fa1bb08b0f606296b\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Vincent Massol\"}],\"id\":\"NKJ-9530\",\"title\":\"Les Cast Codeurs Podcast: (with|by|for|of) developers\"}],\"company\":\"XWiki SAS\",\"bio\":\"* https://about.me/vmassol\\r\\n* What I do/did: https://bit.ly/2KzKRkU\\r\\n* My past public activities: https://bit.ly/2IBs1bs\",\"lastName\":\"Massol\",\"firstName\":\"Vincent\",\"blog\":\"http://massol.net\",\"avatarURL\":\"http://www.gravatar.com/avatar/0b17060fd5b56172e81e4bfbbcb438e0\",\"twitter\":\"@vmassol\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1796555040",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:46 GMT"
+    }
+  },
+  "uuid" : "67249fc5-859f-4a54-8f8b-3616ec3fdc1e",
+  "persistent" : true,
+  "insertionIndex" : 262
+}

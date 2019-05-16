@@ -1,0 +1,23 @@
+{
+  "id" : "44ac5a7c-2696-424b-9367-8bc648496f4c",
+  "name" : "api_conferences_dvbe18_speakers_b2a04e177ea96711ae329acc22c030d07870ec21",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/b2a04e177ea96711ae329acc22c030d07870ec21",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"b2a04e177ea96711ae329acc22c030d07870ec21\",\"bioAsHtml\":\"<p>Martin Klähn, based at Lake Constance in southern Germany, works as a Software Developer at Airbus Defence and Space creating next generation ground segment software. His experience lies in building complex software system developed with Java. This encompasses work on 2009 winner of the Duke’s Choice Award in Network Solution category for ND SatCom Satellite Communication Management Software. His support of NetBeans got him elected to the NetBeans Dream Team in 2014 and with the move to Apache elected as a member of the Apache NetBeans (incubating) PPMC. He is a cofounder of JUG Bodensee.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Mind the Geek.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/OBJ-5334\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/677aeb6f664940b25267abbcba0ceb41722b670d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Sven Reimers\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/b2a04e177ea96711ae329acc22c030d07870ec21\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Martin Klähn\"}],\"id\":\"OBJ-5334\",\"title\":\"TweetWalls@Devoxx - Today, Tomorrow and Beyond - A Community Get Together'\"}],\"company\":\"Airbus\",\"bio\":\"Martin Klähn, based at Lake Constance in southern Germany, works as a Software Developer at Airbus Defence and Space creating next generation ground segment software. His experience lies in building complex software system developed with Java. This encompasses work on 2009 winner of the Duke’s Choice Award in Network Solution category for ND SatCom Satellite Communication Management Software. His support of NetBeans got him elected to the NetBeans Dream Team in 2014 and with the move to Apache elected as a member of the Apache NetBeans (incubating) PPMC. He is a cofounder of JUG Bodensee.\",\"lastName\":\"Klähn\",\"firstName\":\"Martin\",\"blog\":null,\"avatarURL\":\"https://www.gravatar.com/avatar/bcff709c30e19de83842bcd168fdaa80\",\"twitter\":\"@Martin_NB\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-554546191",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:45 GMT"
+    }
+  },
+  "uuid" : "44ac5a7c-2696-424b-9367-8bc648496f4c",
+  "persistent" : true,
+  "insertionIndex" : 252
+}

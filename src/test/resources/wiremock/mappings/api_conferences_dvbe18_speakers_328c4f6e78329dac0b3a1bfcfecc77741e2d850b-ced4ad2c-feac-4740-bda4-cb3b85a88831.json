@@ -1,0 +1,23 @@
+{
+  "id" : "ced4ad2c-feac-4740-bda4-cb3b85a88831",
+  "name" : "api_conferences_dvbe18_speakers_328c4f6e78329dac0b3a1bfcfecc77741e2d850b",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/328c4f6e78329dac0b3a1bfcfecc77741e2d850b",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"328c4f6e78329dac0b3a1bfcfecc77741e2d850b\",\"bioAsHtml\":\"<p>Cloud Native tech and DevOps advocate. Diverse 15 year experience in IT industry developing custom applications and added value services on top of SAP. DIYhard hobbyist maker and a motorcycle enthusiast. Organiser of several Finnish Championship Road Racing, Enduro and Motocross events. Part of the Enduro World Championship timekeeping team for the Finnish GP.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Mind the Geek.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/MOC-8655\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/328c4f6e78329dac0b3a1bfcfecc77741e2d850b\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Erno Venäläinen\"}],\"id\":\"MOC-8655\",\"title\":\"Hack your ride\"}],\"company\":\"Oracle\",\"bio\":\"Cloud Native tech and DevOps advocate. Diverse 15 year experience in IT industry developing custom applications and added value services on top of SAP. DIYhard hobbyist maker and a motorcycle enthusiast. Organiser of several Finnish Championship Road Racing, Enduro and Motocross events. Part of the Enduro World Championship timekeeping team for the Finnish GP.\",\"lastName\":\"Venäläinen\",\"firstName\":\"Erno\",\"blog\":null,\"avatarURL\":\"https://objectstorage.eu-frankfurt-1.oraclecloud.com/n/oci_core_emea_sc_mannisto/b/img/o/erno-bg.jpg\",\"twitter\":\"@venalainene\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-324726497",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:40 GMT"
+    }
+  },
+  "uuid" : "ced4ad2c-feac-4740-bda4-cb3b85a88831",
+  "persistent" : true,
+  "insertionIndex" : 204
+}

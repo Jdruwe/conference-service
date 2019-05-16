@@ -1,0 +1,23 @@
+{
+  "id" : "40a7b2aa-0409-4e93-bba9-679de8b7ac9a",
+  "name" : "api_conferences_dvbe18_speakers_474eaa09ec5e38ee9c71d1f4a5c73051cdaf7b02",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/474eaa09ec5e38ee9c71d1f4a5c73051cdaf7b02",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"474eaa09ec5e38ee9c71d1f4a5c73051cdaf7b02\",\"bioAsHtml\":\"<p>Software Architect @ JPoint in The Netherlands. I love all aspects of Java/Scala and web development: Architecture, quality, methodology, infrastructure, security.</p>\\n<p>Besides my day job, I like to experiment with new technology, and contribute to the Open Source community. I&#x27;m a committer and PMC at Apache MyFaces and commit regularly on various projects. Besides coding, I&#x27;m part of the Devoxx team and I like to talk about tech stuff...</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Big Data & Machine Learning.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/LHF-2794\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/c8faf5b098667f2f6e685ac09f87b9dac1a00214\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Lien Wuyts\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/474eaa09ec5e38ee9c71d1f4a5c73051cdaf7b02\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Jan-Kees van Andel\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/7a1ed3166072356dde9cbb5453540f0d02059921\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Alex Van Boxel\"}],\"id\":\"LHF-2794\",\"title\":\"Grouping the Devoxx/Voxxed speaker via Machine Learning, a students tale\"}],\"company\":\"JPoint\",\"bio\":\"Software Architect @ JPoint in The Netherlands. I love all aspects of Java/Scala and web development: Architecture, quality, methodology, infrastructure, security.\\r\\n\\r\\nBesides my day job, I like to experiment with new technology, and contribute to the Open Source community. I'm a committer and PMC at Apache MyFaces and commit regularly on various projects. Besides coding, I'm part of the Devoxx team and I like to talk about tech stuff...\",\"lastName\":\"van Andel\",\"firstName\":\"Jan-Kees\",\"blog\":\"https://plus.google.com/101288057922600800945\",\"avatarURL\":\"http://www.gravatar.com/avatar/3aad130eab0c6ad8705a2ef76283b657.png\",\"twitter\":\"@jankeesvanandel\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "2056338292",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:34 GMT"
+    }
+  },
+  "uuid" : "40a7b2aa-0409-4e93-bba9-679de8b7ac9a",
+  "persistent" : true,
+  "insertionIndex" : 141
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "4578b25a-909e-459c-bb1a-c461cee324dd",
+  "name" : "api_conferences_dvbe18_speakers_310c22bc883bdb4e264531c4863345d37ef5eaea",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/310c22bc883bdb4e264531c4863345d37ef5eaea",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"310c22bc883bdb4e264531c4863345d37ef5eaea\",\"bioAsHtml\":\"<p>Charlie is a software developer at ThoughtWorks in Sydney. She is passionate about creative coding and building interactive prototypes mixing science, art and technology. She also spends time giving back to the community by mentoring new developers, contributing to open-source projects and speaking at events.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"Conference\",\"track\":\"Modern Web & UX.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/KRD-3778\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/310c22bc883bdb4e264531c4863345d37ef5eaea\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Charlie Gerard\"}],\"id\":\"KRD-3778\",\"title\":\"Mind control in JavaScript and experimenting with evolving interactions\"}],\"company\":\"ThoughtWorks\",\"bio\":\"Charlie is a software developer at ThoughtWorks in Sydney. She is passionate about creative coding and building interactive prototypes mixing science, art and technology. She also spends time giving back to the community by mentoring new developers, contributing to open-source projects and speaking at events.\",\"lastName\":\"Gerard\",\"firstName\":\"Charlie\",\"blog\":\"charliegerard.github.io\",\"avatarURL\":\"http://www.gravatar.com/avatar/af288eef29fe7fc5dfaabe9c944d17fc\",\"twitter\":\"@devdevcharlie\",\"lang\":\"en-US\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "-127020977",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:38 GMT"
+    }
+  },
+  "uuid" : "4578b25a-909e-459c-bb1a-c461cee324dd",
+  "persistent" : true,
+  "insertionIndex" : 187
+}

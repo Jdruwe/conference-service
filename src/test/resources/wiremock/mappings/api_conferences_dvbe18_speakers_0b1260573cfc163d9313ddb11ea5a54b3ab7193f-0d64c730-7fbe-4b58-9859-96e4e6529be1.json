@@ -1,0 +1,23 @@
+{
+  "id" : "0d64c730-7fbe-4b58-9859-96e4e6529be1",
+  "name" : "api_conferences_dvbe18_speakers_0b1260573cfc163d9313ddb11ea5a54b3ab7193f",
+  "request" : {
+    "url" : "/api/conferences/dvbe18/speakers/0b1260573cfc163d9313ddb11ea5a54b3ab7193f",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"uuid\":\"0b1260573cfc163d9313ddb11ea5a54b3ab7193f\",\"bioAsHtml\":\"<p>Ramon Wieleman is founder of Code Nomads, Board member of the AmsterdamJUG, a StiBON-certified beer taster and home brewer. He brews his own beer at home and enjoys the process, passion and craftsmanship that’s needed to make the perfect beer. Ramon has been engaged with the Dutch Java community since 2013, while working as a community manager for the NLJUG in the past and being a board member for the AmsterdamJUG since 2018.</p>\\n\",\"acceptedTalks\":[{\"talkType\":\"BOF\",\"track\":\"Java Language.label\",\"links\":[{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/talks/LSP-5748\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/talk\",\"title\":\"More details about this talk\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/fe9f9d97f7c0a959e1f94f2020726e31e8cecc5e\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Tim Prijn\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/ea94b8f9411d49e58a8175199d1197856e291f99\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Peter Hendriks\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/0b1260573cfc163d9313ddb11ea5a54b3ab7193f\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Ramon Wieleman\"},{\"href\":\"http://dvbe18.confinabox.com/api/conferences/dvbe18/speakers/fc86ee0245cc9db1a0f8dfa10375055bddeaca0d\",\"rel\":\"http://dvbe18.confinabox.com/api/profile/speaker\",\"title\":\"Richard Kettelerij\"}],\"id\":\"LSP-5748\",\"title\":\"The Java Pub Quiz\"}],\"company\":\"Code Nomads\",\"bio\":\"Ramon Wieleman is founder of Code Nomads, Board member of the AmsterdamJUG, a StiBON-certified beer taster and home brewer. He brews his own beer at home and enjoys the process, passion and craftsmanship that’s needed to make the perfect beer. Ramon has been engaged with the Dutch Java community since 2013, while working as a community manager for the NLJUG in the past and being a board member for the AmsterdamJUG since 2018. \",\"lastName\":\"Wieleman\",\"firstName\":\"Ramon\",\"blog\":\"https://www.codenomads.nl\",\"avatarURL\":\"https://pbs.twimg.com/profile_images/757178511996153857/0p1uZbfu_400x400.jpg\",\"twitter\":\"@r_wieleman\",\"lang\":\"fr\"}",
+    "headers" : {
+      "Content-Type" : "application/json; charset=utf-8",
+      "Etag" : "1994605125",
+      "Links" : "<http://dvbe18.confinabox.com/api/profile/speaker>; rel=\"profile\"",
+      "Vary" : "Accept-Encoding",
+      "X-No-Access" : "no-origin",
+      "Date" : "Wed, 15 May 2019 10:17:45 GMT"
+    }
+  },
+  "uuid" : "0d64c730-7fbe-4b58-9859-96e4e6529be1",
+  "persistent" : true,
+  "insertionIndex" : 256
+}
