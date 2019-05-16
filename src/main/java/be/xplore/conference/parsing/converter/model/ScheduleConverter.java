@@ -2,6 +2,7 @@ package be.xplore.conference.parsing.converter.model;
 
 import be.xplore.conference.model.DayOfWeek;
 import be.xplore.conference.model.Schedule;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 
