@@ -8,7 +8,6 @@ import be.xplore.conference.rest.dto.RoomDto;
 import be.xplore.conference.rest.dto.RoomScheduleDto;
 import be.xplore.conference.rest.dto.TalkDto;
 import be.xplore.conference.service.RoomScheduleService;
-import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
@@ -22,7 +21,6 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("api/schedule")
-@Slf4j
 public class RoomScheduleController {
     private final RoomScheduleService service;
     private final ModelMapper modelMapper;
@@ -36,7 +34,6 @@ public class RoomScheduleController {
     public ResponseEntity<RoomScheduleDto> getScheduleForRoom(
             @PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate date,
             @PathVariable String roomId) throws RoomScheduleNotFoundException {
-
         RoomSchedule roomSchedule = service.loadByDateAndRoomId(date, roomId).orElseThrow(RoomScheduleNotFoundException::new);
         Schedule schedule = roomSchedule.getId().getSchedule();
         Room room = roomSchedule.getId().getRoom();

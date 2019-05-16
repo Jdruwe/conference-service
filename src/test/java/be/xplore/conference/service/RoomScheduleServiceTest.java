@@ -1,9 +1,9 @@
 package be.xplore.conference.service;
 
 import be.xplore.conference.exception.RoomScheduleNotFoundException;
-import be.xplore.conference.model.DayOfWeek;
-import be.xplore.conference.model.RoomSchedule;
+import be.xplore.conference.model.*;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,19 +13,46 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @Transactional
 @ActiveProfiles("test")
 public class RoomScheduleServiceTest {
+
     @Autowired
     private RoomScheduleService service;
 
+    @Autowired
+    private RoomScheduleService roomScheduleService;
+
+    @Autowired
+    private ScheduleService scheduleService;
+
+    @Autowired
+    private TalkService talkService;
+
+    @Autowired
+    private RoomService roomService;
+
+    private final LocalDate date = LocalDate.of(2018, 11, 14);
+    private Room room;
+
+    @Before
+    public void init() {
+        Room room1 = initRoom();
+        Schedule schedule = initSchedule();
+        List<Talk> talks = initTalkList();
+        RoomSchedule roomSchedule = new RoomSchedule(new RoomScheduleId(schedule, room1), "123-A", talks);
+        roomScheduleService.save(roomSchedule);
+    }
+
     @Test
     public void testLoadByDateAndRoom() throws RoomScheduleNotFoundException {
-        LocalDate date = LocalDate.of(2018, 11, 12);
-        RoomSchedule roomSchedule = service.loadByDateAndRoomId(date, "Room8")
+        RoomSchedule roomSchedule = service.loadByDateAndRoomId(date, room.getId())
                 .orElseThrow(RoomScheduleNotFoundException::new);
         Assert.assertNotNull(roomSchedule);
         Assert.assertEquals(date, roomSchedule.getId().getSchedule().getDate());
@@ -33,7 +60,6 @@ public class RoomScheduleServiceTest {
 
     @Test(expected = RoomScheduleNotFoundException.class)
     public void testLoadByDateAndRoomWithWrongRoom() throws RoomScheduleNotFoundException {
-        LocalDate date = LocalDate.of(2018, 11, 12);
         RoomSchedule roomSchedule = service.loadByDateAndRoomId(date, "Room8000")
                 .orElseThrow(RoomScheduleNotFoundException::new);
         Assert.assertNotNull(roomSchedule);
@@ -42,21 +68,52 @@ public class RoomScheduleServiceTest {
 
     @Test
     public void testLoadByDayAndRoom() throws RoomScheduleNotFoundException {
-        RoomSchedule roomSchedule = service.loadByDayAndRoomId(DayOfWeek.WEDNESDAY, "Room8")
+        RoomSchedule roomSchedule = service.loadByDayAndRoomId(DayOfWeek.valueOf(date.getDayOfWeek().name()), room.getId())
                 .orElseThrow(RoomScheduleNotFoundException::new);
         Assert.assertNotNull(roomSchedule);
-        Assert.assertEquals(java.time.DayOfWeek.WEDNESDAY, roomSchedule.getId().getSchedule().getDate().getDayOfWeek());
+        Assert.assertEquals(java.time.DayOfWeek.valueOf(date.getDayOfWeek().name()), roomSchedule.getId().getSchedule().getDate().getDayOfWeek());
     }
 
 
     @Test
     public void testSaveRoomSchedule() throws RoomScheduleNotFoundException {
-        LocalDate date = LocalDate.of(2018, 11, 12);
-        RoomSchedule roomSchedule = service.loadByDateAndRoomId(date, "Room8").orElseThrow(RoomScheduleNotFoundException::new);
+        RoomSchedule roomSchedule = service.loadByDateAndRoomId(date, room.getId()).orElseThrow(RoomScheduleNotFoundException::new);
         roomSchedule.setEtag("testing");
         RoomSchedule savedRoomSchedule = service.save(roomSchedule);
         Assert.assertNotNull(savedRoomSchedule);
         Assert.assertEquals(roomSchedule.getEtag(),"testing");
+    }
+
+    private Room initRoom() {
+        room = Room.builder()
+                .id("Room10")
+                .name("room 10")
+                .capacity(105)
+                .setup("conference").build();
+        return roomService.save(room);
+    }
+
+    private Schedule initSchedule() {
+        Schedule schedule = new Schedule(date, DayOfWeek.valueOf(String.valueOf(date.getDayOfWeek())));
+        return scheduleService.save(schedule);
+    }
+
+    private List<Talk> initTalkList() {
+        LocalDateTime localDateTime = LocalDateTime.now();
+        Talk talkToSafe = Talk.builder()
+                .id("DDD-7665")
+                .startTime(localDateTime.minusDays(15))
+                .endTime(localDateTime.minusDays(13))
+                .fromTime("fromtime")
+                .toTime("totime")
+                .title("title")
+                .type("type")
+                .summary("summary")
+                .speakers(null).build();
+        Talk savedTalk = talkService.save(talkToSafe);
+        List<Talk> talks = new ArrayList<>();
+        talks.add(savedTalk);
+        return talks;
     }
 }
 

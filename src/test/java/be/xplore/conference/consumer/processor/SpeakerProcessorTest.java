@@ -38,16 +38,16 @@ import static org.mockserver.model.HttpResponse.response;
 @ActiveProfiles("test")
 public class SpeakerProcessorTest {
 
+    private static final int PORT = 9999;
 
     @Autowired
     private SpeakerProcessor speakerProcessor;
 
     private ClientAndServer mockServer;
-    private int port = 9999;
 
     @Before
     public void startMockServer() {
-        mockServer = startClientAndServer(port);
+        mockServer = startClientAndServer(PORT);
     }
 
     @After
@@ -73,14 +73,14 @@ public class SpeakerProcessorTest {
     }
 
     private void setupMockServerExpectations() {
-        new MockServerClient("localhost", port)
+        new MockServerClient("localhost", PORT)
                 .when(request().withMethod("GET").withPath("/api/conferences/dvbe18/speakers/05b9d537f1895a60adc4dbc25b6af2d1ef458854"))
                 .respond(response()
                         .withStatusCode(HttpStatusCode.OK_200.code())
                         .withHeader(HttpHeaders.ETAG, "v2-791456269257604")
                         .withBody(readFromClasspath("stephan-janssen-speaker.json")));
 
-        new MockServerClient("localhost", port)
+        new MockServerClient("localhost", PORT)
                 .when(request().withMethod("GET").withPath("/api/conferences/dvbe18/speakers/bd2f55b11bacf7aa2791921b48dd589c3567bc81"))
                 .respond(response()
                         .withStatusCode(HttpStatusCode.OK_200.code())

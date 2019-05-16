@@ -10,12 +10,8 @@ import be.xplore.conference.consumer.dto.ScheduleDto;
 import be.xplore.conference.consumer.dto.SpeakerInformationDto;
 import be.xplore.conference.consumer.property.DevoxxApiProperties;
 import be.xplore.conference.model.DayOfWeek;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 
 @Component

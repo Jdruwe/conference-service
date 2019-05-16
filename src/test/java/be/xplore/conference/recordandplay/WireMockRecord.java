@@ -1,4 +1,4 @@
-package be.xplore.conference.RecordAndPlay;
+package be.xplore.conference.recordandplay;
 
 import com.github.tomakehurst.wiremock.WireMockServer;
 import com.github.tomakehurst.wiremock.common.SingleRootFileSource;
@@ -17,7 +17,8 @@ import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.options
 
 public class WireMockRecord {
     private static final Logger LOG = LoggerFactory.getLogger(WireMockRecord.class);
-
+    private static final int PORT = 9999;
+    private static final String IP = "127.0.0.1";
     private static final long ONE_MB = 1024L * 1024L;
 
     /**
@@ -38,21 +39,18 @@ public class WireMockRecord {
             try {
                 Scanner scanner = new Scanner(new File("record-url.txt"));
                 while (scanner.hasNextLine()) {
-                    String line = scanner.nextLine();
-                    // process the line
-                    new RestTemplate().getForEntity("http://localhost:9999/api" + line, String.class);
+                    new RestTemplate().getForEntity("http://localhost:9999/api" + scanner.nextLine(), String.class);
                 }
             } catch (FileNotFoundException ignored) {
             }
-
             server.stopRecording();
         });
     }
 
     private static void withServer(Consumer<WireMockServer> consumer) {
         WireMockServer server = new WireMockServer(options()
-                .bindAddress("127.0.0.1")
-                .port(9999)
+                .bindAddress(IP)
+                .port(PORT)
                 .fileSource(new SingleRootFileSource(Paths.get("src", "test", "resources", "wiremock").toFile())));
 
         try {

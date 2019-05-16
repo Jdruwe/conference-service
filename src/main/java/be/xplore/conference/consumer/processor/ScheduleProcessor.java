@@ -11,7 +11,6 @@ import be.xplore.conference.service.RoomScheduleService;
 import be.xplore.conference.service.ScheduleService;
 import be.xplore.conference.service.SpeakerService;
 import be.xplore.conference.service.TalkService;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;

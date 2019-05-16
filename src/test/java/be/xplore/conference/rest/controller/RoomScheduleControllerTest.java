@@ -5,7 +5,6 @@ import be.xplore.conference.service.RoomScheduleService;
 import be.xplore.conference.service.RoomService;
 import be.xplore.conference.service.ScheduleService;
 import be.xplore.conference.service.TalkService;
-import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -33,7 +32,6 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 @ActiveProfiles("test")
 @Transactional
-@Slf4j
 public class RoomScheduleControllerTest {
 
     @Autowired
@@ -51,21 +49,52 @@ public class RoomScheduleControllerTest {
     @Autowired
     private RoomService roomService;
 
-    private RoomSchedule roomSchedule;
+    private Room room;
+
 
     @Before
     public void init() {
-        Room room1 = Room.builder()
-                .id("room10")
+        Room room1 = initRoom();
+        Schedule schedule = initSchedule();
+        List<Talk> talks = initTalkList();
+        RoomSchedule roomSchedule = new RoomSchedule(new RoomScheduleId(schedule, room1), "123-A", talks);
+        roomScheduleService.save(roomSchedule);
+    }
+
+    @Test
+    public void testGetScheduleForRoom() throws Exception {
+        mockMvc.perform(get("/api/schedule/2018-11-12/Room10")
+                .contentType(MediaType.APPLICATION_JSON_UTF8))
+                .andExpect(status().isOk())
+                .andExpect(content().string(containsString(room.getId())))
+                .andExpect(content().string(containsString("2018")))
+                .andExpect(content().string(containsString("11")))
+                .andExpect(content().string(containsString("12")));
+    }
+
+    @Test
+    public void testGetNonExistingScheduleForRoom() throws Exception {
+        mockMvc.perform(get("/api/schedule/2012-11-12/Room87")
+                .contentType(MediaType.APPLICATION_JSON_UTF8))
+                .andExpect(status().isNotFound());
+    }
+
+    private Room initRoom() {
+        room = Room.builder()
+                .id("Room10")
                 .name("room 10")
                 .capacity(105)
                 .setup("conference").build();
-        roomService.save(room1);
+        return roomService.save(room);
+    }
 
+    private Schedule initSchedule() {
         LocalDate date = LocalDate.of(2018, 11, 12);
         Schedule schedule = new Schedule(date, DayOfWeek.TUESDAY);
-        scheduleService.save(schedule);
+        return scheduleService.save(schedule);
+    }
 
+    private List<Talk> initTalkList() {
         LocalDateTime localDateTime = LocalDateTime.now();
         Talk talkToSafe = Talk.builder()
                 .id("DDD-7665")
@@ -80,29 +109,6 @@ public class RoomScheduleControllerTest {
         Talk savedTalk = talkService.save(talkToSafe);
         List<Talk> talks = new ArrayList<>();
         talks.add(savedTalk);
-
-        roomSchedule = new RoomSchedule(new RoomScheduleId(schedule, room1), "123-A", talks);
-        roomScheduleService.save(roomSchedule);
-    }
-
-    @Test
-    public void testGetScheduleForRoom() throws Exception {
-        RoomSchedule save = roomScheduleService.save(roomSchedule);
-        log.error(save.toString());
-        log.error("-----------------------------------------------");
-        mockMvc.perform(get("/api/schedule/2018-11-12/Room10")
-                .contentType(MediaType.APPLICATION_JSON_UTF8))
-                .andExpect(status().isOk())
-                .andExpect(content().string(containsString("Room10")))
-                .andExpect(content().string(containsString("2018")))
-                .andExpect(content().string(containsString("11")))
-                .andExpect(content().string(containsString("12")));
-    }
-
-    @Test
-    public void testGetNonExistingScheduleForRoom() throws Exception {
-        mockMvc.perform(get("/api/schedule/2012-11-12/Room87")
-                .contentType(MediaType.APPLICATION_JSON_UTF8))
-                .andExpect(status().isNotFound());
+        return talks;
     }
 }

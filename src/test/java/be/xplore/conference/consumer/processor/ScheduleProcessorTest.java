@@ -8,7 +8,6 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.tomakehurst.wiremock.common.SingleRootFileSource;
 import com.github.tomakehurst.wiremock.junit.WireMockClassRule;
-import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.ClassRule;
@@ -37,8 +36,12 @@ import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.options
 @SpringBootTest
 @Transactional
 @ActiveProfiles("test")
-@Slf4j
 public class ScheduleProcessorTest {
+
+    @ClassRule
+    public static final WireMockClassRule WIRE_MOCK = new WireMockClassRule(options()
+            .fileSource(new SingleRootFileSource(Paths.get("src", "test", "resources", "wiremock").toFile()))
+            .port(9999));
 
     @Autowired
     private ObjectMapper objectMapper;
@@ -52,10 +55,6 @@ public class ScheduleProcessorTest {
     @Autowired
     private ScheduleService scheduleService;
 
-    @ClassRule
-    public static final WireMockClassRule WIRE_MOCK = new WireMockClassRule(options()
-            .fileSource(new SingleRootFileSource(Paths.get("src", "test", "resources", "wiremock").toFile()))
-            .port(9999));
 
     @Before
     public void init() throws IOException {
@@ -63,20 +62,25 @@ public class ScheduleProcessorTest {
     }
 
     @Test
-    public void processSchedule() throws IOException {
-        String textForObject = readFromClasspath("list-of-room.json");
-        List<Room> rooms = objectMapper.readValue(textForObject, new TypeReference<List<Room>>() {
-        });
-        scheduleProcessor.process(rooms);
+    public void canProcessSchedule() throws IOException {
+        processRooms();
         Assert.assertTrue(true);
     }
 
     @Test
-    public void testing(){
-        LocalDateTime localDate = LocalDateTime.of(2018, 11, 16,0,0);
+    public void scheduleIsInDatabase() throws IOException {
+        processRooms();
+        LocalDateTime localDate = LocalDateTime.of(2018, 11, 12, 0, 0);
         Optional<Schedule> schedule = scheduleService.loadById(localDate.toLocalDate());
-        Assert.assertEquals(false,schedule.isPresent());
+        Assert.assertTrue(schedule.isPresent());
 
+    }
+
+    private void processRooms() throws IOException {
+        String textForObject = readFromClasspath("list-of-room.json");
+        List<Room> rooms = objectMapper.readValue(textForObject, new TypeReference<List<Room>>() {
+        });
+        scheduleProcessor.process(rooms);
     }
 
     private void processRoomsForForeignKey() throws IOException {

@@ -1,4 +1,4 @@
-package be.xplore.conference.RecordAndPlay;
+package be.xplore.conference.recordandplay;
 
 import com.github.tomakehurst.wiremock.common.SingleRootFileSource;
 import com.github.tomakehurst.wiremock.junit.WireMockClassRule;
@@ -6,8 +6,7 @@ import org.junit.Assert;
 import org.junit.ClassRule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,23 +27,24 @@ import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.options
 @Transactional
 @ActiveProfiles("test")
 public class WireMockReplay {
-    private static final Logger log = LoggerFactory.getLogger(WireMockReplay.class);
-    private static final String baseUrl = "http://localhost:9999/api";
+    private static final int PORT = 9999;
 
     @ClassRule
     public static final WireMockClassRule WIRE_MOCK = new WireMockClassRule(options()
             .fileSource(new SingleRootFileSource(Paths.get("src", "test", "resources", "wiremock").toFile()))
-            .port(9999));
+            .port(PORT));
+
+    @Value("${devoxx.api.base-url}")
+    private String baseUrl;
 
     @Test
-    public void WireMockCanReplay() {
+    public void wireMockCanReplayWithHTTP200() {
         try {
             Scanner scanner = new Scanner(new File("record-url.txt"));
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
                 new RestTemplate().getForEntity(baseUrl + line, String.class);
                 ResponseEntity<String> entity = new RestTemplate().getForEntity(baseUrl + line, String.class);
-                log.error(entity.toString());
                 Assert.assertEquals(HttpStatus.OK, entity.getStatusCode());
                 Assert.assertNotNull(entity.getBody());
             }

@@ -14,6 +14,7 @@
         <exclude name="JUnitTestContainsTooManyAsserts"/>
         <exclude name="JUnitTestsShouldIncludeAssert"/>
         <exclude name="UnusedPrivateMethod"/>
+        <exclude name="AvoidUsingHardCodedIP"/>
     </rule>
 
     <rule ref="category/java/bestpractices.xml/JUnitTestContainsTooManyAsserts">
@@ -94,6 +95,7 @@
     <rule ref="category/java/performance.xml">
         <exclude name="ConsecutiveLiteralAppends"/>
         <exclude name="InsufficientStringBufferDeclaration"/>
+        <exclude name="AvoidInstantiatingObjectsInLoops"/>
     </rule>
 
     <rule ref="category/java/security.xml"/>

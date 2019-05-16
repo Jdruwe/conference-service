@@ -38,19 +38,19 @@ import static org.mockserver.model.HttpResponse.response;
 @ActiveProfiles("test")
 public class TalkProcessorTest {
 
+    private static final int PORT = 9999;
+
     @Autowired
     private ObjectMapper objectMapper;
 
     @Autowired
     private TalkProcessor talkProcessor;
 
-
     private ClientAndServer mockServer;
-    private int port = 9999;
 
     @Before
     public void startMockServer() {
-        mockServer = startClientAndServer(port);
+        mockServer = startClientAndServer(PORT);
     }
 
     @After
@@ -60,7 +60,7 @@ public class TalkProcessorTest {
 
     @Test
     public void testProcessTalks() throws IOException {
-        new MockServerClient("localhost", port)
+        new MockServerClient("localhost", PORT)
                 .when(request().withMethod("GET").withPath("/api/conferences/dvbe18/speakers/.*"))
                 .respond(response()
                         .withStatusCode(HttpStatusCode.OK_200.code())
@@ -68,7 +68,8 @@ public class TalkProcessorTest {
                         .withBody(readFromClasspath("speaker.json")));
 
         String textForObject = readFromClasspath("slots.json");
-        List<SlotDto> slotDtoObjects = objectMapper.readValue(textForObject, new TypeReference<List<SlotDto>>() {});
+        List<SlotDto> slotDtoObjects = objectMapper.readValue(textForObject, new TypeReference<List<SlotDto>>() {
+        });
 
         assertThat(talkProcessor.process(slotDtoObjects)).isNotNull().satisfies(p -> {
             assertThat(p).hasSize(5);

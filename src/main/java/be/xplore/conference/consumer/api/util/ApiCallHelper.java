@@ -2,7 +2,6 @@ package be.xplore.conference.consumer.api.util;
 
 import be.xplore.conference.consumer.api.dto.ApiResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -10,14 +9,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Objects;
 
 @Component
-@Slf4j
 public class ApiCallHelper {
     private final ObjectMapper objectMapper;
 
@@ -26,7 +21,6 @@ public class ApiCallHelper {
     }
 
     public <T> ApiResponse queryApi(String url, String etag, Class<T> mapTo) throws IOException {
-        log.error(url);
         RestTemplate restTemplate = new RestTemplate();
         ResponseEntity<String> response = restTemplate.exchange(url,
                 HttpMethod.GET,
