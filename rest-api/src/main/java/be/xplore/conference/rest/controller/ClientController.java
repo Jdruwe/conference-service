@@ -1,7 +1,7 @@
 package be.xplore.conference.rest.controller;
 
-import be.xplore.conference.Client;
 import be.xplore.conference.exception.RoomNotFoundException;
+import be.xplore.conference.model.Client;
 import be.xplore.conference.notifications.EmailSender;
 import be.xplore.conference.rest.dto.ClientDto;
 import be.xplore.conference.rest.dto.ClientHeartbeatDto;
@@ -11,6 +11,7 @@ import be.xplore.conference.service.ClientService;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.stream.Collectors;

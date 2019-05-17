@@ -1,0 +1,10 @@
+apply plugin: "org.springframework.boot"
+
+ext.moduleName = "be.xplore.conference.rest.api"
+
+dependencies {
+    implementation(
+            project(":domain"),
+            "org.springframework.boot:spring-boot-starter-data-jpa"
+    )
+}

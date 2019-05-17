@@ -1,0 +1,10 @@
+apply plugin: "org.springframework.boot"
+
+ext.moduleName = "be.xplore.conference.domain"
+
+dependencies {
+    implementation(
+            "org.projectlombok:lombok:1.18.8",
+            "org.springframework.boot:spring-boot-starter-data-jpa"
+    )
+}

@@ -1,6 +1,6 @@
 package be.xplore.conference.rest.dto;
 
-import be.xplore.conference.Room;
+import be.xplore.conference.model.Room;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Data;

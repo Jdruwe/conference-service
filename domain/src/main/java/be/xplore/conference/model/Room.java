@@ -1,6 +1,5 @@
 package be.xplore.conference.model;
 
-import be.xplore.conference.model.schedule.RoomSchedule;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

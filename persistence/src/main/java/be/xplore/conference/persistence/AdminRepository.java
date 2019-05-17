@@ -1,6 +1,5 @@
 package be.xplore.conference.persistence;
 
-import be.xplore.conference.model.auth.Admin;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.transaction.annotation.Transactional;

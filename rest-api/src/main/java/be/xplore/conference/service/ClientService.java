@@ -1,10 +1,9 @@
 package be.xplore.conference.service;
 
-import be.xplore.conference.Client;
-import be.xplore.conference.Room;
 import be.xplore.conference.exception.RoomAlreadyRegisteredException;
 import be.xplore.conference.exception.RoomNotFoundException;
-import be.xplore.conference.persistence.ClientRepository;
+import be.xplore.conference.model.Client;
+import be.xplore.conference.model.Room;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
