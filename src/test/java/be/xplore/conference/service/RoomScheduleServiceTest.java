@@ -1,7 +1,12 @@
 package be.xplore.conference.service;
 
 import be.xplore.conference.exception.RoomScheduleNotFoundException;
-import be.xplore.conference.model.*;
+import be.xplore.conference.model.DayOfWeek;
+import be.xplore.conference.model.Room;
+import be.xplore.conference.model.RoomSchedule;
+import be.xplore.conference.model.RoomScheduleId;
+import be.xplore.conference.model.Schedule;
+import be.xplore.conference.model.Talk;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
