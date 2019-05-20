@@ -28,9 +28,7 @@ public class JwtTokenProviderTest {
 
     @Test
     public void testGetAdminNameFromToken() {
-        String token = "eyJhbGciOiJIUzUxMiJ9." +
-                "eyJzdWIiOiJ4cGxvcmVBZG1pbiIsImlhdCI6MTU1NzQ5MDU4MSwiZXhwIjoxNTU4MzMwNTgxfQ." +
-                "H5UeHbQFDNsY70tm0B4l96A7qFnvDpZd3T8QGXC26rbWnMRNCQ4LvYObUJoaAFhyfH3QY8a_d_SB5on_41t7Pg";
+        String token = jwtTokenProvider.authenticateAndGenerateToken("xploreAdmin", "admin123!");
         String adminNameFromToken = jwtTokenProvider.getAdminNameFromToken(token);
         Assert.assertEquals(adminNameFromToken, "xploreAdmin");
     }
