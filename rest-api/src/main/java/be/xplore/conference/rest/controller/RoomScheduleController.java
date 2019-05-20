@@ -1,7 +1,7 @@
 package be.xplore.conference.rest.controller;
 
-import be.xplore.conference.Room;
 import be.xplore.conference.exception.RoomScheduleNotFoundException;
+import be.xplore.conference.model.Room;
 import be.xplore.conference.model.schedule.RoomSchedule;
 import be.xplore.conference.model.schedule.Schedule;
 import be.xplore.conference.rest.dto.RoomDto;
@@ -34,7 +34,8 @@ public class RoomScheduleController {
     public ResponseEntity<RoomScheduleDto> getScheduleForRoom(
             @PathVariable @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate date,
             @PathVariable String roomId) throws RoomScheduleNotFoundException {
-        RoomSchedule roomSchedule = service.loadByDateAndRoomId(date, roomId).orElseThrow(RoomScheduleNotFoundException::new);
+        RoomSchedule roomSchedule = service.loadByDateAndRoomId(date, roomId)
+                .orElseThrow(RoomScheduleNotFoundException::new);
         Schedule schedule = roomSchedule.getId().getSchedule();
         Room room = roomSchedule.getId().getRoom();
         RoomScheduleDto dto = new RoomScheduleDto(

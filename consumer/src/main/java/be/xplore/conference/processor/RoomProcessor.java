@@ -1,8 +1,8 @@
 package be.xplore.conference.processor;
 
-import be.xplore.conference.Room;
-import be.xplore.conference.consumer.dto.RoomsDto;
-import be.xplore.conference.parsing.converter.model.RoomConverter;
+import be.xplore.conference.converter.model.RoomConverter;
+import be.xplore.conference.dto.RoomsDto;
+import be.xplore.conference.model.Room;
 import be.xplore.conference.service.RoomService;
 import org.springframework.stereotype.Component;
 

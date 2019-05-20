@@ -1,6 +1,6 @@
 package be.xplore.conference.api.dto;
 
-import be.xplore.conference.consumer.dto.RoomsDto;
+import be.xplore.conference.dto.RoomsDto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

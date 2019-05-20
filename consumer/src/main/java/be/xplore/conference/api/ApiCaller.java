@@ -1,15 +1,15 @@
 package be.xplore.conference.api;
 
-import be.xplore.conference.DayOfWeek;
-import be.xplore.conference.consumer.api.dto.ApiResponse;
-import be.xplore.conference.consumer.api.dto.RoomScheduleResponse;
-import be.xplore.conference.consumer.api.dto.RoomsResponse;
-import be.xplore.conference.consumer.api.dto.SpeakerResponse;
-import be.xplore.conference.consumer.api.util.ApiCallHelper;
-import be.xplore.conference.consumer.dto.RoomsDto;
-import be.xplore.conference.consumer.dto.ScheduleDto;
-import be.xplore.conference.consumer.dto.SpeakerInformationDto;
-import be.xplore.conference.consumer.property.DevoxxApiProperties;
+import be.xplore.conference.api.dto.ApiResponse;
+import be.xplore.conference.api.dto.RoomScheduleResponse;
+import be.xplore.conference.api.dto.RoomsResponse;
+import be.xplore.conference.api.dto.SpeakerResponse;
+import be.xplore.conference.api.util.ApiCallHelper;
+import be.xplore.conference.dto.RoomsDto;
+import be.xplore.conference.dto.ScheduleDto;
+import be.xplore.conference.dto.SpeakerInformationDto;
+import be.xplore.conference.model.DayOfWeek;
+import be.xplore.conference.property.DevoxxApiProperties;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;

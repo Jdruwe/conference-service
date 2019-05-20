@@ -1,6 +1,6 @@
 package be.xplore.conference.api.dto;
 
-import be.xplore.conference.consumer.dto.ScheduleDto;
+import be.xplore.conference.dto.ScheduleDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

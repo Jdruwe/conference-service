@@ -1,17 +1,24 @@
 package be.xplore.conference.rest.controller;
 
+import be.xplore.conference.exception.ClientNotFoundException;
 import be.xplore.conference.exception.RoomNotFoundException;
 import be.xplore.conference.model.Client;
 import be.xplore.conference.notifications.EmailSender;
 import be.xplore.conference.rest.dto.ClientDto;
 import be.xplore.conference.rest.dto.ClientHeartbeatDto;
 import be.xplore.conference.rest.dto.ClientInfoDto;
-import be.xplore.conference.schedulers.ClientScheduler;
 import be.xplore.conference.service.ClientService;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -58,12 +65,16 @@ public class ClientController {
     }
 
     @PatchMapping
-    public ResponseEntity<ClientDto> updateHeartbeat(@RequestBody ClientHeartbeatDto clientHeartbeatDto) throws RoomNotFoundException {
-        Client client = this.clientService
-                .updateLastConnectedTime(clientHeartbeatDto.getClientId(), clientHeartbeatDto.getNewDate());
-        if (clientScheduler.wasClientOffline(client)) {
+    public ResponseEntity<ClientDto> updateHeartbeat(@RequestBody ClientHeartbeatDto clientHeartbeatDto) {
+        List<Client> clients = this.clientService.loadOfflineClients();
+        Client client = this.clientService.loadById(clientHeartbeatDto.getClientId())
+                .orElseThrow(ClientNotFoundException::new);
+        if (clients.contains(client)) {
             emailSender.sendEmailForReconnectedClient(client);
         }
-        return new ResponseEntity<>(modelMapper.map(client, ClientDto.class), HttpStatus.OK);
+        Client updatedClient = this.clientService
+                .updateLastConnectedTime(clientHeartbeatDto.getClientId(), clientHeartbeatDto.getNewDate());
+
+        return new ResponseEntity<>(modelMapper.map(updatedClient, ClientDto.class), HttpStatus.OK);
     }
 }

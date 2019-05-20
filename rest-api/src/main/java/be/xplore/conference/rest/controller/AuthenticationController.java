@@ -36,9 +36,9 @@ public class AuthenticationController {
 
     @PostMapping("/register")
     public ResponseEntity<AdminDto> register(@RequestBody RegisterDto registerDto) throws EmailAlreadyExistsException, AdminNameAlreadyExistsException {
-        Admin adminToRegister = new Admin(registerDto.getAdminName(),registerDto.getEmail(),registerDto.getPassword());
+        Admin adminToRegister = new Admin(registerDto.getAdminName(), registerDto.getEmail(), registerDto.getPassword());
         Admin registeredAdmin = adminService.register(adminToRegister);
-        return  new ResponseEntity<>(modelMapper.map(registeredAdmin, AdminDto.class), HttpStatus.CREATED);
+        return new ResponseEntity<>(modelMapper.map(registeredAdmin, AdminDto.class), HttpStatus.CREATED);
     }
 
     @PostMapping("/login")

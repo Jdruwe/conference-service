@@ -1,6 +1,6 @@
 package be.xplore.conference.api.util;
 
-import be.xplore.conference.consumer.api.dto.ApiResponse;
+import be.xplore.conference.api.dto.ApiResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;

@@ -1,6 +1,6 @@
 package be.xplore.conference.rest.dto;
 
-import be.xplore.conference.DayOfWeek;
+import be.xplore.conference.model.DayOfWeek;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

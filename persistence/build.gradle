@@ -1,10 +1,13 @@
 apply plugin: "org.springframework.boot"
 
-ext.moduleName = "be.xplore.conference.rest.api"
+ext.moduleName = "be.xplore.conference.persistence"
 
 dependencies {
     implementation(
             project(":domain"),
-            "org.springframework.boot:spring-boot-starter-data-jpa"
+            "org.springframework.boot:spring-boot-starter-data-jpa",
     )
+
+    compileOnly "org.projectlombok:lombok:1.18.8"
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
 }

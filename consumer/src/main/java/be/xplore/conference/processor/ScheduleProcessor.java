@@ -1,15 +1,15 @@
 package be.xplore.conference.processor;
 
-import be.xplore.conference.DayOfWeek;
-import be.xplore.conference.Room;
-import be.xplore.conference.Speaker;
-import be.xplore.conference.Talk;
-import be.xplore.conference.consumer.api.ApiCaller;
-import be.xplore.conference.consumer.api.dto.RoomScheduleResponse;
-import be.xplore.conference.consumer.api.dto.SpeakerResponse;
-import be.xplore.conference.consumer.dto.ScheduleDto;
-import be.xplore.conference.parsing.converter.model.ScheduleConverter;
-import be.xplore.conference.parsing.converter.util.MillisConverter;
+import be.xplore.conference.api.ApiCaller;
+import be.xplore.conference.api.dto.RoomScheduleResponse;
+import be.xplore.conference.api.dto.SpeakerResponse;
+import be.xplore.conference.converter.model.ScheduleConverter;
+import be.xplore.conference.converter.util.MillisConverter;
+import be.xplore.conference.dto.ScheduleDto;
+import be.xplore.conference.model.DayOfWeek;
+import be.xplore.conference.model.Room;
+import be.xplore.conference.model.Speaker;
+import be.xplore.conference.model.Talk;
 import be.xplore.conference.model.schedule.RoomSchedule;
 import be.xplore.conference.model.schedule.RoomScheduleId;
 import be.xplore.conference.model.schedule.Schedule;

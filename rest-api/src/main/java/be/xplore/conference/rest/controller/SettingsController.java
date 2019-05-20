@@ -1,13 +1,18 @@
 package be.xplore.conference.rest.controller;
 
-import be.xplore.conference.Settings;
 import be.xplore.conference.exception.SettingNotFoundException;
+import be.xplore.conference.model.Settings;
 import be.xplore.conference.rest.dto.MainSettingsDto;
 import be.xplore.conference.rest.dto.NotificationsDto;
 import be.xplore.conference.rest.dto.SettingsDto;
 import be.xplore.conference.service.SettingsService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController

@@ -1,12 +1,12 @@
 package be.xplore.conference;
 
-import be.xplore.conference.Room;
-import be.xplore.conference.Settings;
-import be.xplore.conference.consumer.api.ApiCaller;
-import be.xplore.conference.consumer.api.dto.RoomsResponse;
-import be.xplore.conference.consumer.dto.RoomsDto;
-import be.xplore.conference.consumer.processor.RoomProcessor;
-import be.xplore.conference.consumer.processor.ScheduleProcessor;
+import be.xplore.conference.api.ApiCaller;
+import be.xplore.conference.api.dto.RoomsResponse;
+import be.xplore.conference.dto.RoomsDto;
+import be.xplore.conference.model.Room;
+import be.xplore.conference.model.Settings;
+import be.xplore.conference.processor.RoomProcessor;
+import be.xplore.conference.processor.ScheduleProcessor;
 import be.xplore.conference.property.SettingsProperties;
 import be.xplore.conference.service.RoomService;
 import be.xplore.conference.service.SettingsService;
@@ -66,7 +66,7 @@ public class DevoxxConsumer {
         settingsService.save(new Settings("isRoomOccupancyOn", String.valueOf(settingsProperties.getIsRoomOccupancyOn())));
         settingsService.save(new Settings("message", ""));
         settingsService.save(new Settings("showMessage", String.valueOf(false)));
-        settingsService.save(new Settings("mailDelayForConnectionIssues",String.valueOf(settingsProperties.getMailDelayForConnectionIssues())));
+        settingsService.save(new Settings("mailDelayForConnectionIssues", String.valueOf(settingsProperties.getMailDelayForConnectionIssues())));
     }
 
     private RoomsDto getRoomsFromApi(String etag) {

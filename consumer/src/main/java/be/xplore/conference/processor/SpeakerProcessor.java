@@ -1,10 +1,10 @@
 package be.xplore.conference.processor;
 
-import be.xplore.conference.Speaker;
-import be.xplore.conference.consumer.api.ApiCaller;
-import be.xplore.conference.consumer.api.dto.SpeakerResponse;
-import be.xplore.conference.consumer.dto.SpeakerDto;
+import be.xplore.conference.api.ApiCaller;
+import be.xplore.conference.api.dto.SpeakerResponse;
+import be.xplore.conference.dto.SpeakerDto;
 import be.xplore.conference.exception.SpeakerNotFoundException;
+import be.xplore.conference.model.Speaker;
 import be.xplore.conference.service.SpeakerService;
 import org.springframework.stereotype.Component;
 

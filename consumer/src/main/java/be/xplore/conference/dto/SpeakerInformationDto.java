@@ -1,6 +1,6 @@
 package be.xplore.conference.dto;
 
-import be.xplore.conference.Speaker;
+import be.xplore.conference.model.Speaker;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;

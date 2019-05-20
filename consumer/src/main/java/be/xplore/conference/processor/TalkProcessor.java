@@ -1,9 +1,9 @@
 package be.xplore.conference.processor;
 
-import be.xplore.conference.Speaker;
-import be.xplore.conference.Talk;
-import be.xplore.conference.consumer.dto.SlotDto;
-import be.xplore.conference.parsing.converter.model.TalkConverter;
+import be.xplore.conference.converter.model.TalkConverter;
+import be.xplore.conference.dto.SlotDto;
+import be.xplore.conference.model.Speaker;
+import be.xplore.conference.model.Talk;
 import be.xplore.conference.service.TalkService;
 import org.springframework.stereotype.Component;
 
@@ -25,7 +25,6 @@ public class TalkProcessor {
         this.talkService = talkService;
         this.speakerProcessor = speakerProcessor;
     }
-
 
     List<Talk> process(List<SlotDto> slotDtoList) {
         List<Talk> talks = new ArrayList<>();
