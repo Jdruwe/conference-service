@@ -1,7 +1,11 @@
 package be.xplore.conference.consumer.api;
 
-import be.xplore.conference.consumer.api.dto.*;
-import be.xplore.conference.consumer.dto.*;
+import be.xplore.conference.consumer.api.dto.RoomScheduleResponse;
+import be.xplore.conference.consumer.api.dto.RoomsResponse;
+import be.xplore.conference.consumer.api.dto.SpeakerResponse;
+import be.xplore.conference.consumer.dto.RoomsDto;
+import be.xplore.conference.consumer.dto.ScheduleDto;
+import be.xplore.conference.consumer.dto.SpeakerInformationDto;
 import be.xplore.conference.model.DayOfWeek;
 import org.junit.After;
 import org.junit.Assert;

@@ -1,6 +1,11 @@
 package be.xplore.conference.rest.controller;
 
-import be.xplore.conference.model.*;
+import be.xplore.conference.model.DayOfWeek;
+import be.xplore.conference.model.Room;
+import be.xplore.conference.model.RoomSchedule;
+import be.xplore.conference.model.RoomScheduleId;
+import be.xplore.conference.model.Schedule;
+import be.xplore.conference.model.Talk;
 import be.xplore.conference.service.RoomScheduleService;
 import be.xplore.conference.service.RoomService;
 import be.xplore.conference.service.ScheduleService;
