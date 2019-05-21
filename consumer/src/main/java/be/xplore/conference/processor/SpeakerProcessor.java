@@ -26,7 +26,7 @@ public class SpeakerProcessor {
         this.apiCaller = apiCaller;
     }
 
-    List<Speaker> generateForTalk(List<SpeakerDto> speakerList) {
+    public List<Speaker> generateForTalk(List<SpeakerDto> speakerList) {
         return createSpeakers(speakerList);
     }
 
