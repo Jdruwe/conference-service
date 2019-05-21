@@ -3,7 +3,8 @@ apply plugin: "org.springframework.boot"
 ext.moduleName = "be.xplore.conference.consumer"
 
 dependencies {
-    implementation ":domain"
+    implementation(project(":domain"))
+
     compileOnly "org.projectlombok:lombok:1.18.8"
     annotationProcessor 'org.projectlombok:lombok:1.18.8'
     implementation "org.springframework.boot:spring-boot-starter-web"
