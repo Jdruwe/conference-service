@@ -1,12 +1,13 @@
 package be.xplore.conference.rest.controller;
 
+import be.xplore.conference.EmailSender;
 import be.xplore.conference.exception.ClientNotFoundException;
 import be.xplore.conference.exception.RoomNotFoundException;
 import be.xplore.conference.model.Client;
-import be.xplore.conference.notifications.EmailSender;
 import be.xplore.conference.rest.dto.ClientDto;
 import be.xplore.conference.rest.dto.ClientHeartbeatDto;
 import be.xplore.conference.rest.dto.ClientInfoDto;
+import be.xplore.conference.scheduler.ClientScheduler;
 import be.xplore.conference.service.ClientService;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;

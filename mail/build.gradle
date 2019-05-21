@@ -4,9 +4,10 @@ ext.moduleName = "be.xplore.conference.mail"
 
 dependencies {
     implementation(
-            project(":domain")
+            project(":domain"),
+            "org.springframework.boot:spring-boot-starter-security"
     )
-    
+
     implementation "org.springframework.boot:spring-boot-starter-mail"
 
     compileOnly "org.projectlombok:lombok:1.18.8"

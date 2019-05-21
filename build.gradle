@@ -17,7 +17,6 @@ subprojects {
     apply plugin: "pmd"
     apply plugin: "checkstyle"
     apply plugin: "jacoco"
-    apply plugin: "checkstyle"
 
     group = "be.xplore"
     version = "0.0.1"
@@ -27,13 +26,13 @@ subprojects {
     repositories {
         mavenCentral()
     }
-    
+
     configurations {
         compileOnly {
             extendsFrom annotationProcessor
         }
     }
-
+    
     configurations { codacy }
 
     checkstyle {

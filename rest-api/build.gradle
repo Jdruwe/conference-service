@@ -4,7 +4,8 @@ ext.moduleName = "be.xplore.conference.rest.api"
 
 dependencies {
     implementation(
-            project(":domain")
+            project(":domain"),
+            project(":mail")
     )
 
     compileOnly "org.projectlombok:lombok:1.18.8"
