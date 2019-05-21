@@ -7,6 +7,7 @@ dependencies {
     compile project(":consumer")
     compile project(":rest-api")
     compile project(":persistence")
+    compile project(":mail")
 
     codacy "com.github.codacy:codacy-coverage-reporter:-SNAPSHOT"
 
@@ -20,10 +21,9 @@ dependencies {
 
     testCompile "com.github.tomakehurst:wiremock:2.23.2"
     testImplementation "org.springframework.boot:spring-boot-starter-test"
+    testCompile(group: "org.springframework.security", name: "spring-security-test", version: "5.1.1.RELEASE")
+    testCompile project(":domain")
 
     runtimeOnly "org.springframework.boot:spring-boot-devtools"
     annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
-    
-    compileOnly "org.projectlombok:lombok:1.18.8"
-    annotationProcessor 'org.projectlombok:lombok:1.18.8'
 }

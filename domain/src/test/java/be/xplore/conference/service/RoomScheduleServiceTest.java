@@ -1,7 +1,12 @@
 package be.xplore.conference.service;
 
 import be.xplore.conference.exception.RoomScheduleNotFoundException;
-import be.xplore.conference.model.*;
+import be.xplore.conference.model.DayOfWeek;
+import be.xplore.conference.model.Room;
+import be.xplore.conference.model.Talk;
+import be.xplore.conference.model.schedule.RoomSchedule;
+import be.xplore.conference.model.schedule.RoomScheduleId;
+import be.xplore.conference.model.schedule.Schedule;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -81,7 +86,7 @@ public class RoomScheduleServiceTest {
         roomSchedule.setEtag("testing");
         RoomSchedule savedRoomSchedule = service.save(roomSchedule);
         Assert.assertNotNull(savedRoomSchedule);
-        Assert.assertEquals(roomSchedule.getEtag(),"testing");
+        Assert.assertEquals(roomSchedule.getEtag(), "testing");
     }
 
     private Room initRoom() {

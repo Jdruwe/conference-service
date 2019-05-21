@@ -3,13 +3,9 @@ apply plugin: "org.springframework.boot"
 ext.moduleName = "be.xplore.conference.mail"
 
 dependencies {
+    compile project(":domain")
     implementation(
-            project(":domain"),
-            "org.springframework.boot:spring-boot-starter-security"
+            "org.springframework.boot:spring-boot-starter-security",
+            "org.springframework.boot:spring-boot-starter-mail"
     )
-
-    implementation "org.springframework.boot:spring-boot-starter-mail"
-
-    compileOnly "org.projectlombok:lombok:1.18.8"
-    annotationProcessor 'org.projectlombok:lombok:1.18.8'
 }

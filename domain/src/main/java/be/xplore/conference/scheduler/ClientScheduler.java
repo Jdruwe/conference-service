@@ -21,7 +21,6 @@ public class ClientScheduler {
 
     private ScheduledFuture<?> scheduledFuture;
 
-    // todo look at this
     @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     public ClientScheduler(ClientService clientService, List<ClientEventListener> listeners) {
         this.clientService = clientService;
@@ -31,7 +30,7 @@ public class ClientScheduler {
 
     @PostConstruct
     public void startClientScheduler() {
-        startScheduler("30");
+        startScheduler("1");
     }
 
     public void startScheduler(String time) {

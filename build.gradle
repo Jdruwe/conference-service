@@ -32,7 +32,7 @@ subprojects {
             extendsFrom annotationProcessor
         }
     }
-    
+
     configurations { codacy }
 
     checkstyle {

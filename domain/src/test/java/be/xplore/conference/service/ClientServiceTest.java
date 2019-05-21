@@ -2,8 +2,8 @@ package be.xplore.conference.service;
 
 import be.xplore.conference.exception.RoomAlreadyRegisteredException;
 import be.xplore.conference.exception.RoomNotFoundException;
-import be.xplore.conference.Client;
-import be.xplore.conference.Room;
+import be.xplore.conference.model.Client;
+import be.xplore.conference.model.Room;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

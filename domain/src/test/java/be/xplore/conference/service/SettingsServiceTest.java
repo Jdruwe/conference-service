@@ -1,6 +1,6 @@
 package be.xplore.conference.service;
 
-import be.xplore.conference.Settings;
+import be.xplore.conference.model.Settings;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

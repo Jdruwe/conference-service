@@ -1,8 +1,8 @@
 package be.xplore.conference.rest.controller;
 
-import be.xplore.conference.EmailSender;
 import be.xplore.conference.exception.ClientNotFoundException;
 import be.xplore.conference.exception.RoomNotFoundException;
+import be.xplore.conference.listener.ClientEventListener;
 import be.xplore.conference.model.Client;
 import be.xplore.conference.rest.dto.ClientDto;
 import be.xplore.conference.rest.dto.ClientHeartbeatDto;
@@ -30,17 +30,15 @@ public class ClientController {
 
     private final ClientService clientService;
     private final ModelMapper modelMapper;
-    private final ClientScheduler clientScheduler;
-    private final EmailSender emailSender;
+    private final List<ClientEventListener> listeners;
 
+    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     public ClientController(ClientService clientService,
                             ModelMapper modelMapper,
-                            ClientScheduler clientScheduler,
-                            EmailSender emailSender) {
+                            List<ClientEventListener> listeners) {
         this.clientService = clientService;
         this.modelMapper = modelMapper;
-        this.clientScheduler = clientScheduler;
-        this.emailSender = emailSender;
+        this.listeners = listeners;
     }
 
     @PostMapping
@@ -67,15 +65,19 @@ public class ClientController {
 
     @PatchMapping
     public ResponseEntity<ClientDto> updateHeartbeat(@RequestBody ClientHeartbeatDto clientHeartbeatDto) {
-        List<Client> clients = this.clientService.loadOfflineClients();
+        List<Client> offlineClients = this.clientService.loadOfflineClients();
         Client client = this.clientService.loadById(clientHeartbeatDto.getClientId())
                 .orElseThrow(ClientNotFoundException::new);
-        if (clients.contains(client)) {
-            emailSender.sendEmailForReconnectedClient(client);
+        if (offlineClients.contains(client)) {
+            notifyListeners(offlineClients);
         }
         Client updatedClient = this.clientService
                 .updateLastConnectedTime(clientHeartbeatDto.getClientId(), clientHeartbeatDto.getNewDate());
 
         return new ResponseEntity<>(modelMapper.map(updatedClient, ClientDto.class), HttpStatus.OK);
+    }
+
+    private void notifyListeners(List<Client> clients) {
+        listeners.forEach(l -> l.onOfflineClients(clients));
     }
 }

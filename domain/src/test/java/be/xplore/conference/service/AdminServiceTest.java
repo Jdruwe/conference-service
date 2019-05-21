@@ -91,10 +91,10 @@ public class AdminServiceTest {
     }
 
     @Test
-    public void testLoadAllAdmins(){
+    public void testLoadAllAdmins() {
         List<Admin> allAdmins = service.loadAllAdmins();
         Assert.assertNotNull(allAdmins);
-        Assert.assertEquals(1,allAdmins.size());
-        Assert.assertEquals(ADMIN_NAME,allAdmins.get(0).getAdminName());
+        Assert.assertEquals(1, allAdmins.size());
+        Assert.assertEquals(ADMIN_NAME, allAdmins.get(0).getAdminName());
     }
 }

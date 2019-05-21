@@ -1,6 +1,6 @@
 package be.xplore.conference.service;
 
-import be.xplore.conference.DayOfWeek;
+import be.xplore.conference.model.DayOfWeek;
 import be.xplore.conference.model.schedule.Schedule;
 import org.junit.Assert;
 import org.junit.Before;

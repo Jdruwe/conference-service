@@ -1,6 +1,6 @@
 package be.xplore.conference.service;
 
-import be.xplore.conference.Room;
+import be.xplore.conference.model.Room;
 import be.xplore.conference.model.schedule.RoomSchedule;
 import org.junit.Assert;
 import org.junit.Before;

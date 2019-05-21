@@ -1,6 +1,6 @@
 package be.xplore.conference.service;
 
-import be.xplore.conference.Talk;
+import be.xplore.conference.model.Talk;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
