@@ -30,7 +30,7 @@ public class ClientScheduler {
 
     @PostConstruct
     public void startClientScheduler() {
-        startScheduler("1");
+        startScheduler("30");
     }
 
     public void startScheduler(String time) {

@@ -15,6 +15,7 @@ dependencies {
     implementation "org.springframework.boot:spring-boot-starter-actuator"
     implementation "org.springframework.boot:spring-boot-starter-data-jpa"
     implementation "org.springframework.boot:spring-boot-starter-web"
+    implementation 'org.springframework.boot:spring-boot-starter-mail'
 
     compile "org.mock-server:mockserver-netty:5.5.1"
     compile "org.springframework:spring-context-support:3.0.5.RELEASE"

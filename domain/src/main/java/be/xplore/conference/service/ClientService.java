@@ -1,5 +1,6 @@
 package be.xplore.conference.service;
 
+import be.xplore.conference.exception.ClientNotFoundException;
 import be.xplore.conference.exception.RoomAlreadyRegisteredException;
 import be.xplore.conference.exception.RoomNotFoundException;
 import be.xplore.conference.model.Client;
@@ -17,7 +18,6 @@ import java.util.stream.Collectors;
 @Service
 @Transactional
 public class ClientService {
-
     private final ClientRepository repo;
     private final RoomService roomService;
 
@@ -52,7 +52,7 @@ public class ClientService {
 
     public Client updateLastConnectedTime(int id, LocalDateTime newDate) throws RoomNotFoundException {
         Client client = this.repo.findClientById(id)
-                .orElseThrow(() -> new RoomNotFoundException("No client found!"));
+                .orElseThrow(ClientNotFoundException::new);
         client.setLastConnected(newDate);
         client = this.repo.save(client);
         return client;

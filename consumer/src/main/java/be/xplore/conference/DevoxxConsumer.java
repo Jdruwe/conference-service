@@ -57,7 +57,7 @@ public class DevoxxConsumer {
         List<Room> rooms = fillRooms(dto);
         scheduleProcessor.process(rooms);
 
-        LOGGER.info("Done");
+        LOGGER.info("Consumer schedule finished.");
     }
 
     @PostConstruct

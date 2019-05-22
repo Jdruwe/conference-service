@@ -4,12 +4,9 @@ import be.xplore.conference.listener.ClientEventListener;
 import be.xplore.conference.model.Client;
 import be.xplore.conference.model.auth.Admin;
 import be.xplore.conference.service.AdminService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,8 +15,6 @@ import java.util.List;
 public class EmailSender implements ClientEventListener {
     private final JavaMailSender mailSender;
     private final AdminService adminService;
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(EmailSender.class);
 
     @Autowired
     public EmailSender(JavaMailSender mailSender, AdminService adminService) {
@@ -69,7 +64,7 @@ public class EmailSender implements ClientEventListener {
     private StringBuilder createBodyForReconnectMail(Client client) {
         StringBuilder textForMail = new StringBuilder();
         textForMail.append("Hello there,\n\n")
-                .append("Client for room: ")
+                .append("Client for ")
                 .append(client.getRoom().getName())
                 .append(" came back online!")
                 .append("\n\nKind regards");
@@ -78,13 +73,11 @@ public class EmailSender implements ClientEventListener {
 
     @Override
     public void onOfflineClients(List<Client> offlineClients) {
-        LOGGER.error("Offline clients");
         this.sendEmailForOfflineClients(offlineClients);
     }
 
     @Override
     public void onReconnectedClient(Client reconnectedClient) {
-        LOGGER.error("Reconnected clients");
         this.sendEmailForReconnectedClient(reconnectedClient);
     }
 }

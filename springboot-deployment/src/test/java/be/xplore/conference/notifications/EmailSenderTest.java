@@ -91,7 +91,7 @@ public class EmailSenderTest {
         mail.setFrom("noReply@devoxx.com");
         mail.setText("Hello there,\n" +
                 "\n" +
-                "Client for room: Test room came back online!\n" +
+                "Client for Test room came back online!\n" +
                 "\n" +
                 "Kind regards");
         return mail;
