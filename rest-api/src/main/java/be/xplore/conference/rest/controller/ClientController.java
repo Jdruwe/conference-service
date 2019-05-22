@@ -30,7 +30,6 @@ public class ClientController {
     private final ModelMapper modelMapper;
     private final List<ClientEventListener> listeners;
 
-    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     public ClientController(ClientService clientService,
                             ModelMapper modelMapper,
                             List<ClientEventListener> listeners) {

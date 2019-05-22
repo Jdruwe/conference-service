@@ -21,7 +21,6 @@ public class ClientScheduler {
 
     private ScheduledFuture<?> scheduledFuture;
 
-    @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
     public ClientScheduler(ClientService clientService, List<ClientEventListener> listeners) {
         this.clientService = clientService;
         this.listeners = listeners;
