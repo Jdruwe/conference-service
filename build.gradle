@@ -59,7 +59,7 @@ subprojects {
             csv.enabled = false
         }
     }
-
+    
     task sendCoverageToCodacy(type: JavaExec, dependsOn: jacocoTestReport) {
         main = "com.codacy.CodacyCoverageReporter"
         classpath = configurations.codacy
@@ -68,7 +68,7 @@ subprojects {
                 "-l",
                 "Java",
                 "-r",
-                "${buildDir}/reports/jacoco/test/jacocoTestReport.xml"
+                "${rootDir}/reports/jacoco/test/jacocoTestReport.xml"
         ]
     }
 
