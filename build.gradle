@@ -45,7 +45,7 @@ subprojects {
 
     pmd {
         ruleSets = []
-        ruleSetFiles = files("config/pmd/ruleset.xml")
+        ruleSetFiles = files("${rootDir}/config/pmd/ruleset.xml")
     }
 
     jacoco {
