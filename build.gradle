@@ -68,7 +68,7 @@ subprojects {
                 "-l",
                 "Java",
                 "-r",
-                "${rootDir}/reports/jacoco/test/jacocoTestReport.xml"
+                "${buildDir}/reports/jacoco/test/jacocoTestReport.xml"
         ]
     }
 
