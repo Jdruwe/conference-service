@@ -17,6 +17,9 @@ subprojects {
     apply plugin: "pmd"
     apply plugin: "checkstyle"
     apply plugin: "jacoco"
+    apply plugin: "application"
+
+    mainClassName = 'be.xplore.conference.ConferenceApplication'
 
     group = "be.xplore"
     version = "0.0.1"

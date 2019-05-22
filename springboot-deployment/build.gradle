@@ -2,10 +2,6 @@ apply plugin: "org.springframework.boot"
 
 ext.moduleName = "be.xplore.conference.spring.boot.deployment"
 
-springBoot {
-    mainClassName = 'be.xplore.conference.ConferenceApplication'
-}
-
 dependencies {
     compile project(":domain")
     compile project(":consumer")
