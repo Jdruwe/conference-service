@@ -40,7 +40,7 @@ subprojects {
 
     checkstyle {
         toolVersion = "8.18"
-        configFile = file("config/checkstyle/checkstyle.xml")
+        configFile = file("${rootDir}/config/checkstyle/checkstyle.xml")
     }
 
     pmd {
