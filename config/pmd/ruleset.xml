@@ -55,7 +55,7 @@
 
     <rule ref="category/java/codestyle.xml/TooManyStaticImports">
         <properties>
-            <property name="maximumStaticImports" value="5"/>
+            <property name="maximumStaticImports" value="8"/>
         </properties>
     </rule>
 
@@ -66,6 +66,7 @@
         <exclude name="SignatureDeclareThrowsException"/>
         <exclude name="TooManyMethods"/>
         <exclude name="UseUtilityClass"/>
+        <exclude name="ExcessiveImports"/>
     </rule>
 
     <rule ref="category/java/design.xml/SignatureDeclareThrowsException">
