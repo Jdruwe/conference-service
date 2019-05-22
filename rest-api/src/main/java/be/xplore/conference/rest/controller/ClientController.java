@@ -65,10 +65,8 @@ public class ClientController {
     public ResponseEntity<ClientDto> updateHeartbeat(@RequestBody ClientHeartbeatDto clientHeartbeatDto) {
         List<Client> offlineClients = this.clientService.loadOfflineClients();
         Optional<Client> client = this.clientService.loadById(clientHeartbeatDto.getClientId());
-        if (client.isPresent()) {
-            if (offlineClients.contains(client.get())) {
-                notifyListeners(client.get());
-            }
+        if (client.isPresent() && offlineClients.contains(client.get())) {
+            notifyListeners(client.get());
         }
         Client updatedClient = this.clientService
                 .updateLastConnectedTime(clientHeartbeatDto.getClientId(), clientHeartbeatDto.getNewDate());
