@@ -27,12 +27,9 @@ heroku-push:
     image: docker:latest
     script:
         - docker build -f Dockerfile --iidfile imageid.txt -t registry.heroku.com/conference-service .
-        - docker logout registry.heroku.com
-        - docker login -u _ -p $HEROKU_API_KEY registry.heroku.com
+        - docker login --username=_ --password=$HEROKU_API_KEY registry.heroku.com
         - docker push registry.heroku.com/conference-service
         - apk add --no-cache curl
         - echo "Docker Image ID is $(cat imageid.txt)"
         - |-
             curl -X PATCH https://api.heroku.com/apps/conference-service/formation --header "Content-Type: application/json" --header "Accept: application/vnd.heroku+json; version=3.docker-releases" --header "Authorization: Bearer ${HEROKU_API_KEY}" --data '{ "updates": [ { "type": "web", "docker_image": "'$(cat imageid.txt)'" } ] }'
-
-
