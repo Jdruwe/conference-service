@@ -1,5 +1,4 @@
 image: gradle:jre11-slim
-
 services:
     - docker:dind
 
@@ -28,7 +27,7 @@ heroku-push:
     image: docker:latest
     script:
         - docker build -f Dockerfile --iidfile imageid.txt -t registry.heroku.com/conference-service .
-        - docker login --username=_ --password=$HEROKU_API_KEY registry.heroku.com
+        - docker login --username=_ --password=${HEROKU_API_KEY} registry.heroku.com
         - docker push registry.heroku.com/conference-service
         - apk add --no-cache curl
         - echo "Docker Image ID is $(cat imageid.txt)"
