@@ -1,4 +1,5 @@
 image: gradle:jre11-slim
+
 services:
     - docker:dind
 
