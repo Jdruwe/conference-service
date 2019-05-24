@@ -29,7 +29,7 @@ heroku-push:
     script:
         - docker login -u _ -p $HEROKU_API_KEY registry.heroku.com
         - docker build -f Dockerfile --iidfile imageid.txt -t registry.heroku.com/conference-service .
-        - docker push registry.heroku.com/conference-service
+        - docker push registry.heroku.com/conference-service --privileged
         - apk add --no-cache curl
         - echo "Docker Image ID is $(cat imageid.txt)"
         - |-
