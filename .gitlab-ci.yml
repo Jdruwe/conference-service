@@ -27,7 +27,7 @@ heroku-push:
     stage: deploy
     image: docker:latest
     script:
-        - docker login -u _ -p $HEROKU_API_KEY registry.heroku.com
+        - docker login -u _ -p ${HEROKU_API_KEY} registry.heroku.com
         - docker build -f Dockerfile --iidfile imageid.txt -t registry.heroku.com/conference-service .
         - docker push registry.heroku.com/conference-service
         - apk add --no-cache curl
