@@ -40,9 +40,9 @@ public class ClientScheduler {
     }
 
     public void startScheduler(String time) {
-        Runnable task2 = this::checkStatusClientsAndSendMail;
+        Runnable task = this::checkStatusClientsAndSendMail;
         scheduledFuture = scheduler.scheduleAtFixedRate(
-                task2,
+                task,
                 0,
                 Long.parseLong(time),
                 TimeUnit.MINUTES);
