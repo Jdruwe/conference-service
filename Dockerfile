@@ -1,4 +1,4 @@
-FROM openjdk:13-jdk-alpine
+FROM openjdk:11-jdk-alpine
 VOLUME /tmp
 ADD /build/libs/conference-0.0.1-SNAPSHOT.jar app.jar
 RUN adduser -D myuser
