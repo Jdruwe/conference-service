@@ -3,6 +3,7 @@ package be.xplore.conference.schedulers;
 import be.xplore.conference.model.Client;
 import be.xplore.conference.notifications.EmailSender;
 import be.xplore.conference.service.ClientService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -17,6 +18,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 @Component
+@Slf4j
 public class ClientScheduler {
 
     private final ClientService clientService;
@@ -40,9 +42,9 @@ public class ClientScheduler {
     }
 
     public void startScheduler(String time) {
-        Runnable task2 = this::checkStatusClientsAndSendMail;
+        Runnable task = this::checkStatusClientsAndSendMail;
         scheduledFuture = scheduler.scheduleAtFixedRate(
-                task2,
+                task,
                 0,
                 Long.parseLong(time),
                 TimeUnit.MINUTES);

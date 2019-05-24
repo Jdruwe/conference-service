@@ -6,6 +6,7 @@ import be.xplore.conference.rest.dto.MainSettingsDto;
 import be.xplore.conference.rest.dto.NotificationsDto;
 import be.xplore.conference.rest.dto.SettingsDto;
 import be.xplore.conference.service.SettingsService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("api/settings")
+@Slf4j
 public class SettingsController {
     private static final String MINUTES_BEFORE_NEXT_SESSION = "minutesBeforeNextSession";
     private static final String MAIL_DELAY_FOR_CONNECTION_ISSUES = "mailDelayForConnectionIssues";
