@@ -1,4 +1,4 @@
-image: docker:dind
+image: docker:latest
 services:
     - docker:dind
 
@@ -11,8 +11,8 @@ stages:
     - deploy
 
 build:
-    image: java:8-jdk
     stage: build
+    image: gradle:jre11-slim
     script:
         - ./gradlew clean build
         - ./gradlew pmdMain
