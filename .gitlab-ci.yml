@@ -22,7 +22,7 @@ build:
         paths:
             - build/libs/*.jar
 
-heroku-push:
+deploy:
     stage: deploy
     image: docker:latest
     script:
