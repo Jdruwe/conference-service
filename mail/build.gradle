@@ -1,6 +1,12 @@
 apply plugin: "org.springframework.boot"
 
-ext.moduleName = "be.xplore.conference.mail"
+bootJar {
+    enabled = false
+}
+
+jar {
+    enabled = true
+}
 
 dependencies {
     compile project(":domain")

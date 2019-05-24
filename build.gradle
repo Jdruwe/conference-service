@@ -1,8 +1,6 @@
 buildscript {
     repositories {
         mavenCentral()
-        maven { url "https://jitpack.io" }
-        maven { url "http://dl.bintray.com/typesafe/maven-releases" }
     }
 
     dependencies {
@@ -16,8 +14,11 @@ subprojects {
     apply plugin: "io.spring.dependency-management"
     apply plugin: "pmd"
     apply plugin: "checkstyle"
-    apply plugin: "jacoco"
     apply plugin: "application"
+
+    repositories {
+        mavenCentral()
+    }
 
     mainClassName = 'be.xplore.conference.ConferenceApplication'
 
@@ -26,17 +27,11 @@ subprojects {
     sourceCompatibility = 11
     targetCompatibility = 11
 
-    repositories {
-        mavenCentral()
-    }
-
     configurations {
         compileOnly {
             extendsFrom annotationProcessor
         }
     }
-
-    configurations { codacy }
 
     checkstyle {
         toolVersion = "8.18"
@@ -47,31 +42,70 @@ subprojects {
         ruleSets = []
         ruleSetFiles = files("${rootDir}/config/pmd/ruleset.xml")
     }
-
-    jacoco {
-        toolVersion = "0.8.3"
-    }
-
-    jacocoTestReport {
-        reports {
-            html.enabled = true
-            xml.enabled = true
-            csv.enabled = false
-        }
-    }
-    
-    task sendCoverageToCodacy(type: JavaExec, dependsOn: jacocoTestReport) {
-        main = "com.codacy.CodacyCoverageReporter"
-        classpath = configurations.codacy
-        args = [
-                "report",
-                "-l",
-                "Java",
-                "-r",
-                "${buildDir}/reports/jacoco/test/jacocoTestReport.xml"
-        ]
-    }
-
-    test.finalizedBy jacocoTestReport
-    jacocoTestReport.finalizedBy sendCoverageToCodacy
 }
+
+
+//subprojects {
+//    apply plugin: "java-library"
+//    apply plugin: "io.spring.dependency-management"
+////    apply plugin: "pmd"
+////    apply plugin: "checkstyle"
+////    apply plugin: "jacoco"
+//    apply plugin: "application"
+//
+//    mainClassName = 'be.xplore.conference.ConferenceApplication'
+//
+//    group = "be.xplore"
+//    version = "0.0.1"
+//    sourceCompatibility = 11
+//    targetCompatibility = 11
+//
+//    repositories {
+//        mavenCentral()
+//    }
+//
+//    configurations {
+//        compileOnly {
+//            extendsFrom annotationProcessor
+//        }
+//    }
+//
+////    configurations { codacy }
+//
+////    checkstyle {
+////        toolVersion = "8.18"
+////        configFile = file("${rootDir}/config/checkstyle/checkstyle.xml")
+////    }
+//
+////    pmd {
+////        ruleSets = []
+////        ruleSetFiles = files("${rootDir}/config/pmd/ruleset.xml")
+////    }
+//
+////    jacoco {
+////        toolVersion = "0.8.3"
+////    }
+////
+////    jacocoTestReport {
+////        reports {
+////            html.enabled = true
+////            xml.enabled = true
+////            csv.enabled = false
+////        }
+////    }
+////
+////    task sendCoverageToCodacy(type: JavaExec, dependsOn: jacocoTestReport) {
+////        main = "com.codacy.CodacyCoverageReporter"
+////        classpath = configurations.codacy
+////        args = [
+////                "report",
+////                "-l",
+////                "Java",
+////                "-r",
+////                "${buildDir}/reports/jacoco/test/jacocoTestReport.xml"
+////        ]
+////    }
+////
+////    test.finalizedBy jacocoTestReport
+////    jacocoTestReport.finalizedBy sendCoverageToCodacy
+//}
